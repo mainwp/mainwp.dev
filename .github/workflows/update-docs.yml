@@ -1,0 +1,46 @@
+name: Update Documentation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          extensions: dom, curl, json
+
+      - name: Clone MainWP repositories
+        run: |
+          mkdir -p source
+          git clone https://github.com/mainwp/mainwp.git source/mainwp
+          git clone https://github.com/mainwp/mainwp-child.git source/mainwp-child
+
+      - name: Install code-reference
+        run: |
+          mkdir -p tools
+          git clone https://github.com/woocommerce/code-reference.git tools/code-reference
+          cd tools/code-reference
+          composer install
+
+      - name: Build documentation
+        run: |
+          ./build.sh
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add docs
+          git commit -m "Update documentation" || echo "No changes to commit"
+          git push

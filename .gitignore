@@ -1,0 +1,10 @@
+# Ignore temporary build files
+tools/code-reference/build/
+
+# Ignore composer files in tools
+tools/code-reference/vendor/
+tools/code-reference/composer.lock
+
+# Ignore source repositories (we don't want to commit these to mainwp.dev)
+source/mainwp/.git/
+source/mainwp-child/.git/
