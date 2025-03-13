@@ -34,7 +34,7 @@ build_docs() {
   fi
   
   # Build the documentation - using a placeholder version since we're not downloading
-  ./deploy.sh --source-version "1.0.0" --github-repo "mainwp/$REPO_NAME" --build-only --no-download
+  ./deploy.sh --source-version "1.0.0" --github-repo "mainwp/$REPO_NAME" --default-package "MainWP" --build-only --no-download
   
   # Copy the built files to the output directory
   if [ -d "$CODE_REF_DIR/build/api" ]; then
