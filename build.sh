@@ -21,17 +21,23 @@ build_docs() {
   # Navigate to code reference tool
   cd "$CODE_REF_DIR"
   
+  # Create a backup of the original phpdoc.xml
+  cp phpdoc.xml phpdoc.xml.backup
+  
   # Update phpdoc.xml to point to the correct repository
   sed -i '' "s|<directory>.*</directory>|<directory>$REPO_PATH</directory>|" phpdoc.xml
   
   # Update ignore patterns if provided
   if [ ! -z "$IGNORE_PATTERNS" ]; then
-    # Remove existing ignore-patterns section
-    sed -i '' '/<ignore-patterns>/,/<\/ignore-patterns>/d' phpdoc.xml || true
+    # Remove existing ignore patterns within <files> section
+    sed -i '' '/<files>/,/<\/files>/s/<ignore>.*<\/ignore>//g' phpdoc.xml
     
-    # Add new ignore-patterns section before the closing </phpdocumentor> tag
-    sed -i '' "s|</phpdocumentor>|<ignore-patterns>\n$IGNORE_PATTERNS\n</ignore-patterns>\n</phpdocumentor>|" phpdoc.xml
+    # Add new ignore patterns before the closing </files> tag
+    sed -i '' "s|</files>|$IGNORE_PATTERNS\n</files>|" phpdoc.xml
   fi
+  
+  echo "Updated phpdoc.xml for $REPO_NAME:"
+  cat phpdoc.xml
   
   # Build the documentation - using a placeholder version since we're not downloading
   ./deploy.sh --source-version "1.0.0" --github-repo "mainwp/$REPO_NAME" --default-package "MainWP" --build-only --no-download
@@ -45,11 +51,16 @@ build_docs() {
     echo "Error: Build directory not found"
     exit 1
   fi
+  
+  # Restore the original phpdoc.xml
+  mv phpdoc.xml.backup phpdoc.xml
 }
 
 # Define ignore patterns for each repository
-MAINWP_IGNORES="<ignore>*/tests/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>"
-MAINWP_CHILD_IGNORES="<ignore>*/tests/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>\n<ignore>*/assets/*</ignore>\n<ignore>*/libs/external/*</ignore>"
+MAINWP_IGNORES="<ignore>*/assets/*</ignore>\n<ignore>*/languages/*</ignore>\n<ignore>*/libs/*</ignore>\n<ignore>*/tests/*</ignore>\n<ignore>*/docs/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>"
+
+# More comprehensive ignore patterns for MainWP Child
+MAINWP_CHILD_IGNORES="<ignore>*/assets/*</ignore>\n<ignore>*/languages/*</ignore>\n<ignore>*/libs/*</ignore>\n<ignore>*/tests/*</ignore>\n<ignore>*/docs/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>"
 
 # Update repositories to the latest version
 echo "Updating MainWP repositories..."
