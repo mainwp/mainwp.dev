@@ -87,7 +87,7 @@ Each entry includes:
     KEY meta_log_id (meta_log_id),
     KEY meta_key (meta_key(191))
 
-- 🟢 **Added** [v5.4.0.3 - March 2025]: New hook  `mainwp_auto_updates_sync_data_before_run` to enable/disable sync site before auto updates process run, default is enable - true. Use the hook to disable sync data before run auto updates for some dashboard have problem with sync site before run auto updates.
+- 🟢 **Added** [v5.4.1 - March 2025]: New hook  `mainwp_auto_updates_sync_data_before_run` to enable/disable sync site before auto updates process run, default is enable - true. Use the hook to disable sync data before run auto updates for some dashboard have problem with sync site before run auto updates.
 
 ### Favorites extension
 - 🟢 **Added** [v5.2 - March 2025]: Added new actions
@@ -184,3 +184,12 @@ Each entry includes:
         },
 		.....
 
+
+
+# March 14, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - March 2025]: Added new filters
+`mainwp_site_changes_table_pages_length` To support custom Pages lenght of Site Changes table.
