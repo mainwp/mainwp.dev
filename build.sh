@@ -39,8 +39,9 @@ build_docs() {
   echo "Updated phpdoc.xml for $REPO_NAME:"
   cat phpdoc.xml
   
-  # Build the documentation - using a placeholder version since we're not downloading
-  ./deploy.sh --source-version "1.0.0" --github-repo "mainwp/$REPO_NAME" --default-package "MainWP" --build-only --no-download
+  # Run PHPDocumentor in Docker with PHP 8.1
+  echo "Running PHPDocumentor in Docker with PHP 8.1..."
+  docker run --rm -v /Users/denni1/Documents/GitHub:/Users/denni1/Documents/GitHub -w "$CODE_REF_DIR" php:8.1-cli php vendor/bin/phpdoc --config=phpdoc.xml
   
   # Copy the built files to the output directory
   if [ -d "$CODE_REF_DIR/build/api" ]; then
