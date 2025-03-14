@@ -3,8 +3,10 @@
 # Directory setup - all relative to the script location
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 CODE_REF_DIR="$SCRIPT_DIR/tools/code-reference"
-MAINWP_DIR="$SCRIPT_DIR/source/mainwp"
-MAINWP_CHILD_DIR="$SCRIPT_DIR/source/mainwp-child"
+
+# Use the actual repository locations instead of the empty source directories
+MAINWP_DIR="/Users/denni1/Documents/GitHub/mainwp/mainwp"
+MAINWP_CHILD_DIR="/Users/denni1/Documents/GitHub/mainwp/mainwp-child"
 OUTPUT_DIR="$SCRIPT_DIR/code-docs"
 
 # Create output directory if it doesn't exist
@@ -17,6 +19,7 @@ build_docs() {
   IGNORE_PATTERNS=$3
   
   echo "Building documentation for $REPO_NAME..."
+  echo "Source directory: $REPO_PATH"
   
   # Navigate to code reference tool
   cd "$CODE_REF_DIR"
@@ -58,15 +61,15 @@ build_docs() {
 }
 
 # Define ignore patterns for each repository
-MAINWP_IGNORES="<ignore>*/assets/*</ignore>\n<ignore>*/languages/*</ignore>\n<ignore>*/libs/*</ignore>\n<ignore>*/tests/*</ignore>\n<ignore>*/docs/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>"
+MAINWP_IGNORES="<ignore>*/assets/*</ignore>\n<ignore>*/languages/*</ignore>\n<ignore>*/vendor/*</ignore>\n<ignore>*/tests/*</ignore>\n<ignore>*/docs/*</ignore>\n<ignore>*/node_modules/*</ignore>"
 
 # More comprehensive ignore patterns for MainWP Child
-MAINWP_CHILD_IGNORES="<ignore>*/assets/*</ignore>\n<ignore>*/languages/*</ignore>\n<ignore>*/libs/*</ignore>\n<ignore>*/tests/*</ignore>\n<ignore>*/docs/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>"
+MAINWP_CHILD_IGNORES="<ignore>*/assets/*</ignore>\n<ignore>*/languages/*</ignore>\n<ignore>*/vendor/*</ignore>\n<ignore>*/tests/*</ignore>\n<ignore>*/docs/*</ignore>\n<ignore>*/node_modules/*</ignore>"
 
-# Update repositories to the latest version
-echo "Updating MainWP repositories..."
-cd "$MAINWP_DIR" && git pull origin master
-cd "$MAINWP_CHILD_DIR" && git pull origin master
+# Skip git pulls since we're using different directories
+# echo "Updating MainWP repositories..."
+# cd "$MAINWP_DIR" && git pull origin master
+# cd "$MAINWP_CHILD_DIR" && git pull origin master
 
 # Build documentation for MainWP Dashboard
 build_docs "mainwp" "$MAINWP_DIR" "$MAINWP_IGNORES"
@@ -77,7 +80,7 @@ build_docs "mainwp-child" "$MAINWP_CHILD_DIR" "$MAINWP_CHILD_IGNORES"
 # Commit changes to mainwp.dev
 cd "$SCRIPT_DIR"
 git add .
-git commit -m "Update code reference documentation"
+git commit -m "Update code reference documentation with correct source paths"
 git push origin main
 
 echo "Documentation build complete!"
