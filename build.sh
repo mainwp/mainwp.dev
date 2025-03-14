@@ -23,36 +23,24 @@ build_docs() {
   # Navigate to code reference tool
   cd "$CODE_REF_DIR"
   
-  # Create a backup of the original phpdoc.xml
-  cp phpdoc.xml phpdoc.xml.backup
+  # Create a temporary phpdoc config file based on phpdoc-final.xml
+  cp "$CODE_REF_DIR/phpdoc-final.xml" "$CODE_REF_DIR/phpdoc-temp.xml"
   
-  # Update phpdoc.xml to point to the correct repository
-  sed -i '' "s|<directory>.*</directory>|<directory>$REPO_PATH</directory>|" phpdoc.xml
-  
-  # Update ignore patterns if provided
-  if [ ! -z "$IGNORE_PATTERNS" ]; then
-    # Remove existing ignore patterns within <files> section
-    sed -i '' '/<files>/,/<\/files>/s/<ignore>.*<\/ignore>//g' phpdoc.xml
-    
-    # Add new ignore patterns before the closing </files> tag
-    sed -i '' "s|</files>|$IGNORE_PATTERNS\n</files>|" phpdoc.xml
-  fi
+  # Update the source path in the config
+  sed -i '' "s|<source dsn=\"file:///app/source/.*\">|<source dsn=\"file:///app/source/$REPO_NAME\">|" "$CODE_REF_DIR/phpdoc-temp.xml"
   
   # Update the title
-  sed -i '' "s|<title>.*</title>|<title>MainWP $REPO_NAME Code Reference</title>|" phpdoc.xml
+  sed -i '' "s|<title>.*</title>|<title>MainWP $REPO_NAME Code Reference</title>|" "$CODE_REF_DIR/phpdoc-temp.xml"
   
-  echo "Updated phpdoc.xml for $REPO_NAME:"
-  cat phpdoc.xml
+  # Update the default package name
+  sed -i '' "s|<default-package-name>.*</default-package-name>|<default-package-name>$DEFAULT_PACKAGE</default-package-name>|" "$CODE_REF_DIR/phpdoc-temp.xml"
   
-  # Run PHPDocumentor in Docker with PHP 8.1 with proper flags
+  echo "Updated phpdoc-temp.xml for $REPO_NAME:"
+  cat "$CODE_REF_DIR/phpdoc-temp.xml"
+  
+  # Run PHPDocumentor in Docker with PHP 8.1
   echo "Running PHPDocumentor in Docker with PHP 8.1..."
-  docker run --rm -v /Users/denni1/Documents/GitHub:/Users/denni1/Documents/GitHub -w "$CODE_REF_DIR" php:8.1-cli php vendor/bin/phpdoc run --template="default" --sourcecode --defaultpackagename="$DEFAULT_PACKAGE"
-  
-  # Run hook generator script (if it exists)
-  if [ -f "$CODE_REF_DIR/generate-hook-docs.php" ]; then
-    echo "Running hook generator..."
-    docker run --rm -v /Users/denni1/Documents/GitHub:/Users/denni1/Documents/GitHub -w "$CODE_REF_DIR" php:8.1-cli php generate-hook-docs.php
-  fi
+  docker run --rm -v "$SCRIPT_DIR:/app" -w "/app/tools/code-reference" php:8.1-cli php vendor/bin/phpdoc run --config=phpdoc-temp.xml -v
   
   # Copy the built files to the output directory
   if [ -d "$CODE_REF_DIR/build/api" ]; then
@@ -64,21 +52,15 @@ build_docs() {
     exit 1
   fi
   
-  # Restore the original phpdoc.xml
-  mv phpdoc.xml.backup phpdoc.xml
+  # Clean up
+  rm "$CODE_REF_DIR/phpdoc-temp.xml"
 }
 
-# Define ignore patterns for each repository - keep excluding external libraries
-MAINWP_IGNORES="<ignore>*/assets/*</ignore>\n<ignore>*/languages/*</ignore>\n<ignore>*/vendor/*</ignore>\n<ignore>*/tests/*</ignore>\n<ignore>*/docs/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/libs/*</ignore>\n<ignore>*phpseclib*</ignore>\n<ignore>*ParagonIE*</ignore>\n<ignore>*Composer*</ignore>\n<ignore>*composer*</ignore>"
-
-# Same comprehensive ignore patterns for MainWP Child
-MAINWP_CHILD_IGNORES="<ignore>*/assets/*</ignore>\n<ignore>*/languages/*</ignore>\n<ignore>*/vendor/*</ignore>\n<ignore>*/tests/*</ignore>\n<ignore>*/docs/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/libs/*</ignore>\n<ignore>*phpseclib*</ignore>\n<ignore>*ParagonIE*</ignore>\n<ignore>*Composer*</ignore>\n<ignore>*composer*</ignore>"
-
 # Build documentation for MainWP Dashboard
-build_docs "mainwp" "$MAINWP_DIR" "$MAINWP_IGNORES" "MainWP"
+build_docs "mainwp" "$MAINWP_DIR" "" "MainWP"
 
 # Build documentation for MainWP Child
-build_docs "mainwp-child" "$MAINWP_CHILD_DIR" "$MAINWP_CHILD_IGNORES" "MainWP"
+build_docs "mainwp-child" "$MAINWP_CHILD_DIR" "" "MainWP"
 
 # Commit changes to mainwp.dev
 cd "$SCRIPT_DIR"
