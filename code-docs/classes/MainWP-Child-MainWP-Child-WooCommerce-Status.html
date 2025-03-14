@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MainWP Dashboard Code Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">MainWP Dashboard Code Reference</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                        <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/mainwp.html"><abbr title="\MainWP">MainWP</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/mainwp-child.html"><abbr title="\MainWP\Child">Child</abbr></a></li>
+                                    </ul>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/composer.html"><abbr title="\Composer">Composer</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/composer-autoload.html"><abbr title="\Composer\Autoload">Autoload</abbr></a></li>
+                                    </ul>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/paragonie.html"><abbr title="\ParagonIE">ParagonIE</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/paragonie-constanttime.html"><abbr title="\ParagonIE\ConstantTime">ConstantTime</abbr></a></li>
+                                    </ul>
+                            <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/phpseclib3.html"><abbr title="\phpseclib3">phpseclib3</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/phpseclib3-common.html"><abbr title="\phpseclib3\Common">Common</abbr></a></li>
+                                            <li><a href="namespaces/phpseclib3-crypt.html"><abbr title="\phpseclib3\Crypt">Crypt</abbr></a></li>
+                                            <li><a href="namespaces/phpseclib3-exception.html"><abbr title="\phpseclib3\Exception">Exception</abbr></a></li>
+                                            <li><a href="namespaces/phpseclib3-file.html"><abbr title="\phpseclib3\File">File</abbr></a></li>
+                                            <li><a href="namespaces/phpseclib3-math.html"><abbr title="\phpseclib3\Math">Math</abbr></a></li>
+                                            <li><a href="namespaces/phpseclib3-net.html"><abbr title="\phpseclib3\Net">Net</abbr></a></li>
+                                            <li><a href="namespaces/phpseclib3-system.html"><abbr title="\phpseclib3\System">System</abbr></a></li>
+                                    </ul>
+                        </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/MainWP.html"><abbr title="\MainWP">MainWP</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/MainWP-Child.html"><abbr title="\MainWP\Child">Child</abbr></a></li>
+                                    <li><a href="packages/MainWP-ChildCreditsPlugin.html"><abbr title="\MainWP\ChildCreditsPlugin">ChildCreditsPlugin</abbr></a></li>
+                                    <li><a href="packages/MainWP-Dashboard.html"><abbr title="\MainWP\Dashboard">Dashboard</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/MainWPChild.html"><abbr title="\MainWPChild">MainWPChild</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/ParagonIE.html"><abbr title="\ParagonIE">ParagonIE</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/ParagonIE-ConstantTime.html"><abbr title="\ParagonIE\ConstantTime">ConstantTime</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Mainwp.html"><abbr title="\Mainwp">Mainwp</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/Mainwp-Child.html"><abbr title="\Mainwp\Child">Child</abbr></a></li>
+                            </ul>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/mainwp.html">MainWP</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/mainwp-child.html">Child</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    MainWP_Child_WooCommerce_Status
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/MainWP.html">MainWP</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/MainWP-ChildCreditsPlugin.html">ChildCreditsPlugin</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/MainWP-ChildCreditsPlugin-NameWooCommercePluginURIhttpswoocommerce.html">NameWooCommercePluginURIhttpswoocommerce</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/MainWP-ChildCreditsPlugin-NameWooCommercePluginURIhttpswoocommerce-comAuthorAutomatticAuthorURIhttpswoocommerce.html">comAuthorAutomatticAuthorURIhttpswoocommerce</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/MainWP-ChildCreditsPlugin-NameWooCommercePluginURIhttpswoocommerce-comAuthorAutomatticAuthorURIhttpswoocommerce-com.html">com</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+</aside>
+
+            <p class="phpdocumentor-summary">Class MainWP_Child_WooCommerce_Status</p>
+
+    <section class="phpdocumentor-description"><p>MainWP WooCommerce Status Extension handler.</p>
+</section>
+
+
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#property_instance">$instance</a>
+    <span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd>Public static variable to hold the single instance of the class.</dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method___construct">__construct()</a>
+    <span>
+                                                    &nbsp;: mixed
+                        </span>
+</dt>
+<dd>MainWP_Child_WooCommerce_Status constructor.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_action">action()</a>
+    <span>
+                                                    &nbsp;: mixed
+                        </span>
+</dt>
+<dd>MainWP Child Woocommerce actions: sync_data, report_data, update_wc_db.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_check_db_update">check_db_update()</a>
+    <span>
+                                                    &nbsp;: bool
+                        </span>
+</dt>
+<dd>Check if woocomerce DB needs to be updated.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_child_deactivation">child_deactivation()</a>
+    <span>
+                                                    &nbsp;: mixed
+                        </span>
+</dt>
+<dd>MainWP Child Plugin deactivation hooks.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_sales_data">get_sales_data()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Get sales data.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_top_seller">get_top_seller()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Get top seller.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_top_sellers_report">get_top_sellers_report()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Get top seller.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_total_sales">get_total_sales()</a>
+    <span>
+                                                    &nbsp;: int
+                        </span>
+</dt>
+<dd>Get total sales.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_woocom_analytics">get_woocom_analytics()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Get Woocommerce 8 analytics.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_woocom_data">get_woocom_data()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Get Woocommerce data.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_woocom_reports">get_woocom_reports()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Get Woocommerce 8 reports.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_woocom_reports_old">get_woocom_reports_old()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Get Woocommerce reports old.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_instance">instance()</a>
+    <span>
+                                                    &nbsp;: mixed
+                        </span>
+</dt>
+<dd>Method instance()</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_is_version_220">is_version_220()</a>
+    <span>
+                                                    &nbsp;: bool|int
+                        </span>
+</dt>
+<dd>Compare woocommerce versions.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_report_data">report_data()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Woocommerce report data.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_report_data_two">report_data_two()</a>
+    <span>
+                                                    &nbsp;: mixed
+                        </span>
+</dt>
+<dd>Sync Woocomerce data for specific date range.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_sync_data">sync_data()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, mixed&gt;
+                        </span>
+</dt>
+<dd>Sync Woocommerce data.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_sync_data_two">sync_data_two()</a>
+    <span>
+                                                    &nbsp;: mixed
+                        </span>
+</dt>
+<dd>Sync Woocommerce data for current month.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_update_wc_db">update_wc_db()</a>
+    <span>
+                                                    &nbsp;: array&lt;string|int, string&gt;
+                        </span>
+</dt>
+<dd>Update Woocommerce Database.</dd>
+
+        </dl>
+
+
+
+        
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_instance">
+        $instance
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#property_instance" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Public static variable to hold the single instance of the class.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$instance</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">57</span>
+</aside>
+
+        <p class="phpdocumentor-summary">MainWP_Child_WooCommerce_Status constructor.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Run any time class is called.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_action">
+        action()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_action" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">72</span>
+</aside>
+
+        <p class="phpdocumentor-summary">MainWP Child Woocommerce actions: sync_data, report_data, update_wc_db.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">action</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">uses</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/MainWP-Child-MainWP-Helper.html#method_write"><abbr title="\MainWP\Child\MainWP_Helper::write()">MainWP_Helper::write()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_check_db_update">
+        check_db_update()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_check_db_update" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">356</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check if woocomerce DB needs to be updated.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">check_db_update</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>true|false.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_child_deactivation">
+        child_deactivation()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_child_deactivation" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+</aside>
+
+        <p class="phpdocumentor-summary">MainWP Child Plugin deactivation hooks.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">child_deactivation</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_sales_data">
+        get_sales_data()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_sales_data" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">763</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get sales data.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_sales_data</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Start Date.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>End Date.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Sales data.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_top_seller">
+        get_top_seller()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_top_seller" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">371</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get top seller.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_top_seller</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Start Date.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>End Date.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$information Woocommerce data grabed.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_top_sellers_report">
+        get_top_sellers_report()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_top_sellers_report" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">630</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get top seller.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_top_sellers_report</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Start Date.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>End Date.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$information Woocommerce data grabed.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_total_sales">
+        get_total_sales()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_total_sales" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">695</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get total sales.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_total_sales</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Start Date.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>End Date.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$total_sales Total sales.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_woocom_analytics">
+        get_woocom_analytics()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_woocom_analytics" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">724</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get Woocommerce 8 analytics.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_woocom_analytics</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Start Date.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>End Date.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$information Woocommerce data grabed.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_woocom_data">
+        get_woocom_data()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_woocom_data" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">476</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get Woocommerce data.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_woocom_data</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Start Date.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>End Date.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$information Woocommerce data grabed.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_woocom_reports">
+        get_woocom_reports()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_woocom_reports" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">433</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get Woocommerce 8 reports.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_woocom_reports</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Start Date.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>End Date.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$information Woocommerce data grabed.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_woocom_reports_old">
+        get_woocom_reports_old()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_get_woocom_reports_old" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">498</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get Woocommerce reports old.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_woocom_reports_old</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start_date</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$end_date</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$start_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Start Date.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$end_date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>End Date.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$information Woocommerce data grabed.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_instance">
+        instance()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_instance" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Method instance()</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">instance</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>Create a public static instance.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Class instance.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_is_version_220">
+        is_version_220()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_is_version_220" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">109</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Compare woocommerce versions.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">is_version_220</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|int</span></code>
+
+        <section class="phpdocumentor-description"><p>By default, version_compare returns -1 if the first version is lower than the second,
+0 if they are equal, and 1 if the second is lower.
+When using the optional operator argument, the function will return true if the relationship is
+the one specified by the operator, false otherwise.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool|int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Comparison response.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_report_data">
+        report_data()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_report_data" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">225</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Woocommerce report data.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">report_data</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$information Woocommerce data grabed.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_report_data_two">
+        report_data_two()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_report_data_two" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">342</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Sync Woocomerce data for specific date range.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">report_data_two</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_sync_data">
+        sync_data()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_sync_data" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Sync Woocommerce data.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">sync_data</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>$information Woocommerce data grabed.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_sync_data_two">
+        sync_data_two()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_sync_data_two" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">329</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Sync Woocommerce data for current month.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">sync_data_two</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_update_wc_db">
+        update_wc_db()
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#method_update_wc_db" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="class/class-mainwp-child-woocommerce-status.php"><a href="files/class-class-mainwp-child-woocommerce-status.html"><abbr title="class/class-mainwp-child-woocommerce-status.php">class-mainwp-child-woocommerce-status.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">594</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Update Woocommerce Database.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">update_wc_db</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Success.</p>
+</section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="classes/MainWP-Child-MainWP-Child-WooCommerce-Status.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>
