@@ -49,7 +49,7 @@ build_docs() {
 
 # Define ignore patterns for each repository
 MAINWP_IGNORES="<ignore>*/tests/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>"
-MAINWP_CHILD_IGNORES="<ignore>*/tests/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>\n<ignore>*/assets/*</ignore>\n<ignore>*/libs/external/*</ignore>"
+MAINWP_CHILD_IGNORES="<ignore>*/tests/*</ignore>\n<ignore>*/node_modules/*</ignore>\n<ignore>*/vendor/*</ignore>\n<ignore>*/assets/*</ignore>\n<ignore>*/libs/external/*</ignore>\n<ignore>*/libs/phpseclib/*</ignore>\n<ignore>*phpseclib*</ignore>\n<ignore>*ParagonIE*</ignore>\n<ignore>*Composer*</ignore>\n<ignore>*composer*</ignore>"
 
 # Update repositories to the latest version
 echo "Updating MainWP repositories..."
