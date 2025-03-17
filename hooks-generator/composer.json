@@ -1,0 +1,8 @@
+{
+    "name": "mainwp/hooks-generator",
+    "description": "MainWP Hooks Documentation Generator",
+    "type": "project",
+    "require": {
+        "pronamic/wp-documentor": "^1.4.0"
+    }
+}

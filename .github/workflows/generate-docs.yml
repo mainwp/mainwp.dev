@@ -1,0 +1,74 @@
+name: Generate Documentation
+
+on:
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
+  push:
+    tags:
+      - 'v*'  # Run on version tags
+  repository_dispatch:
+    types: [mainwp-dashboard-update, mainwp-child-update]  # Triggered by webhooks from source repositories
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          extensions: mbstring, xml
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: |
+          composer install
+          cd hooks-generator
+          composer install
+      
+      - name: Clone source repositories
+        run: |
+          git clone https://github.com/mainwp/mainwp.git sources/mainwp-dashboard
+          git clone https://github.com/mainwp/mainwp-child.git sources/mainwp-child
+      
+      - name: Generate API documentation
+        run: |
+          ./generate-docs.sh
+        continue-on-error: true
+      
+      - name: Generate and categorize hooks documentation
+        run: |
+          cd hooks-generator
+          ./generate-categorized-hooks.sh
+        continue-on-error: true
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add source-code/ mainwp-hooks/
+          git commit -m "Update documentation" || echo "No changes to commit"
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          force_orphan: true
+          exclude_assets: '.github,hooks-generator,sources,vendor,composer.*'

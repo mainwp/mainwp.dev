@@ -4,10 +4,13 @@ MainWP.dev is a dedicated platform for developers working with MainWP, offering 
 
 ## Project Structure
 
-- `source-code/dashboard/` - Generated documentation for MainWP Dashboard
-- `source-code/child/` - Generated documentation for MainWP Child
+- `source-code/dashboard/` - Generated API documentation for MainWP Dashboard
+- `source-code/child/` - Generated API documentation for MainWP Child
+- `mainwp-hooks/` - Generated hooks documentation (actions and filters)
 - `phpdoc/` - phpDocumentor configuration files
+- `hooks-generator/` - Scripts for generating and categorizing hooks documentation
 - `sources/` - Source repositories for documentation generation
+- `.github/workflows/` - GitHub Actions workflows for automation
 
 ## Setup Instructions
 
@@ -38,17 +41,54 @@ MainWP.dev is a dedicated platform for developers working with MainWP, offering 
 
 ### Generating Documentation
 
-To generate documentation for the MainWP Dashboard:
+#### API Documentation
+
+To generate API documentation for the MainWP Dashboard:
 
 ```
 vendor/bin/phpdoc -c phpdoc/dashboard.xml
 ```
 
-To generate documentation for the MainWP Child:
+To generate API documentation for the MainWP Child:
 
 ```
 vendor/bin/phpdoc -c phpdoc/child.xml
 ```
+
+Or use the provided script to generate both:
+
+```
+./generate-docs.sh
+```
+
+#### Hooks Documentation
+
+To generate hooks documentation:
+
+1. Install dependencies in the hooks-generator directory:
+   ```
+   cd hooks-generator
+   composer install
+   ```
+
+2. Run the hooks generation script:
+   ```
+   ./generate-hooks.sh
+   ```
+
+3. To generate categorized hooks documentation:
+   ```
+   ./generate-categorized-hooks.sh
+   ```
+
+#### Automated Documentation Generation
+
+The documentation is automatically generated and deployed using GitHub Actions:
+
+1. On a weekly schedule (Sunday at midnight UTC)
+2. When a new version tag is pushed
+3. When manually triggered via the GitHub Actions workflow
+4. When changes are detected in the source repositories (via webhook)
 
 ## Directory Structure
 

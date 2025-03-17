@@ -26,21 +26,29 @@
 
 6. **Directory Structure Verification**: Confirmed the directory structure is working correctly with source-code/dashboard and source-code/child for the generated documentation.
 
+7. **Hooks Documentation Implementation**: Created a system for generating and categorizing hooks documentation using Pronamic WP Documentor and a custom Python script.
+
+8. **GitHub Actions Workflows**: Implemented GitHub Actions workflows for automating the documentation generation and deployment process.
+
+9. **Functional Categorization**: Organized hooks into developer-friendly functional categories like Site Management, Updates & Maintenance, Content Management, etc.
+
 ## Next Steps
 
-1. **Implement GitHub Actions Workflows**: Create the workflow files that will automate the documentation generation and deployment process.
+1. **Set Up GitHub Pages**: Configure GitHub Pages for hosting the generated documentation.
 
-2. **Set Up GitHub Pages**: Configure GitHub Pages for hosting the generated documentation.
+2. **Enhance Error Handling**: Improve error handling and logging for the automated process.
 
-3. **Enhance Error Handling**: Improve error handling and logging for the automated process.
+3. **Test GitHub Actions Workflows**: Test the GitHub Actions workflows to ensure they work correctly.
 
-4. **Develop Additional Documentation Sections**: Plan and implement REST API documentation and hooks reference sections.
+4. **Develop Additional Documentation Sections**: Plan and implement REST API documentation sections.
 
 5. **Optimize Documentation Generation**: Address warnings and errors in the documentation generation process, such as the PlantUML diagram generation and file name length issues.
 
 6. **Create Implementation and Maintenance Documentation**: Provide step-by-step instructions for implementation and maintenance of the documentation system.
 
 7. **Explore Custom Templates**: Investigate custom phpDocumentor templates for better integration with the MainWP brand.
+
+8. **Refine Hooks Categorization**: Review and refine the automatic categorization of hooks to ensure they are properly organized.
 
 ## Active Decisions and Considerations
 
