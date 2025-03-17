@@ -22,6 +22,9 @@
                 <path>assets/**/*</path>
                 <path>*.min.js</path>
                 <path>*.min.css</path>
+                <path>libs/phpseclib/vendor/phpseclib/**/*</path>
+                <path>libs/phpseclib/vendor/paragonie/**/*</path>
+                <path>libs/phpseclib/vendor/composer/**/*</path>
             </ignore>
             <extensions>
                 <extension>php</extension>
