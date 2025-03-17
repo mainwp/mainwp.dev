@@ -1,0 +1,36 @@
+# Cline's Learning Journal
+
+## Project Overview
+This project is for creating a documentation platform (MainWP.dev) for developers working with MainWP, using phpDocumentor 3.7.1 and GitHub Actions for automation.
+
+## Technology Stack
+- PHP (for the MainWP ecosystem being documented)
+- phpDocumentor 3.7.1 (for documentation generation)
+- GitHub Actions (for automation)
+- GitHub Pages (for hosting)
+- HTML/CSS/JavaScript (for custom content)
+- Markdown (for supplementary documentation)
+- XML (for configuration files)
+- Git (for version control)
+
+## Project Structure
+- The documentation will be organized in subdirectories for generated API documentation
+- The main directory will be preserved for custom content and developer resources
+- GitHub Actions workflows will monitor source repositories and trigger documentation updates
+
+## Workflow Patterns
+- When making changes to the documentation system, focus on maintaining the automation workflow
+- When configuring phpDocumentor, ensure appropriate exclusions for dependencies
+- When implementing GitHub Actions, prioritize error handling and logging
+- When developing custom content, ensure it complements the generated documentation
+
+## Code Style Preferences
+- Follow PHPDoc standards for any PHP code
+- Use clear, descriptive naming for files and directories
+- Maintain separation between generated documentation and custom content
+
+## Documentation Practices
+- Document all configuration settings
+- Provide clear instructions for implementation and maintenance
+- Include troubleshooting guides for common issues
+- Ensure cross-referencing between related documentation sections

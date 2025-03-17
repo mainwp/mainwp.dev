@@ -1,0 +1,20 @@
+# Development directories
+node_modules/
+.git/
+dist/
+build/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Never ignore these
+!memory-bank/
+!.clinerules
+
+# Environment files
+.env
+.env.*

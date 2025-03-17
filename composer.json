@@ -1,0 +1,8 @@
+{
+    "name": "mainwp/mainwp-dev",
+    "description": "MainWP Developer Documentation",
+    "type": "project",
+    "require": {
+        "phpdocumentor/phpdocumentor": "^3.7.1"
+    }
+}
