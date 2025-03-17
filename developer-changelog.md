@@ -193,3 +193,14 @@ Each entry includes:
 ### MainWP Dashboard
 - 🟢 **Added** [v5.4.1 - March 2025]: Added new filters
 `mainwp_site_changes_table_pages_length` To support custom Pages lenght of Site Changes table.
+
+
+# March 18, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - March 2025]: Added new params for non-mainwp-changes REST API endpoint
+- 'page' - Page number
+- 'per_page' - Items per page.
+- 'source' - Source changes: Available values are 'wpadmin', 'dashboard', 'all', or leave empty (default is 'wpadmin').
