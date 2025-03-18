@@ -46,7 +46,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'backwpup'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-wp-up.php](class/class-mainwp-child-back-wp-up.php), [line 307](class/class-mainwp-child-back-wp-up.php#L307-L314)
+Source: [class/class-mainwp-child-back-wp-up.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php), [line 307](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php#L307)
 
 
 
@@ -55,7 +55,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-child-back-wp-up.php](class/
 *Get Child Site Stats.*
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 141](class/class-mainwp-child-stats.php#L141-L358)
+Source: [class/class-mainwp-child-stats.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php), [line 141](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php#L141)
 
 
 
@@ -76,7 +76,7 @@ Version | Description
 ------- | -----------
 `5.1` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-helper.php](class/class-mainwp-helper.php), [line 72](class/class-mainwp-helper.php#L72-L77)
+Source: [class/class-mainwp-helper.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-helper.php), [line 72](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-helper.php#L72)
 
 
 
@@ -97,7 +97,7 @@ Version | Description
 ------- | -----------
 `4.4.0.3` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-helper.php](class/class-mainwp-helper.php), [line 94](class/class-mainwp-helper.php#L94-L99)
+Source: [class/class-mainwp-helper.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-helper.php), [line 94](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-helper.php#L94)
 
 
 
@@ -106,7 +106,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-helper.php](class/class-main
 *Purge Nginx Helper cache.*
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 716](class/class-mainwp-child-cache-purge.php#L716-L729)
+Source: [class/class-mainwp-child-cache-purge.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-cache-purge.php), [line 716](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-cache-purge.php#L716)
 
 
 
@@ -115,7 +115,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class
 *Purge WP Fastest Cache.*
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 818](class/class-mainwp-child-cache-purge.php#L818-L831)
+Source: [class/class-mainwp-child-cache-purge.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-cache-purge.php), [line 818](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-cache-purge.php#L818)
 
 
 
@@ -135,7 +135,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$args` | `array` | Array of additional function arguments to be passed to apply_filters().
 
-Source: [../sources/mainwp-child/includes/functions.php](includes/functions.php), [line 169](includes/functions.php#L169-L189)
+Source: [includes/functions.php](https://github.com/mainwp/mainwp-child/blob/master/includes/functions.php), [line 169](https://github.com/mainwp/mainwp-child/blob/master/includes/functions.php#L169)
 
 
 
@@ -147,7 +147,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('completed', 'processing', 'on-hold')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 145](class/class-mainwp-child-woocommerce-status.php#L145-L145)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 145](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L145)
 
 
 
@@ -159,7 +159,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('completed', 'processing', 'on-hold')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 168](class/class-mainwp-child-woocommerce-status.php#L168-L168)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 168](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L168)
 
 
 
@@ -173,7 +173,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$data` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 113](class/class-mainwp-child-woocommerce-status.php#L113-L213)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 113](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L113)
 
 
 
@@ -185,7 +185,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('completed', 'processing', 'on-hold')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 258](class/class-mainwp-child-woocommerce-status.php#L258-L258)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 258](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L258)
 
 
 
@@ -197,7 +197,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('completed', 'processing', 'on-hold')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 277](class/class-mainwp-child-woocommerce-status.php#L277-L277)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 277](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L277)
 
 
 
@@ -211,7 +211,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$data` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 220](class/class-mainwp-child-woocommerce-status.php#L220-L319)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 220](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L220)
 
 
 
@@ -223,7 +223,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('completed', 'processing', 'on-hold')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 522](class/class-mainwp-child-woocommerce-status.php#L522-L522)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 522](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L522)
 
 
 
@@ -235,7 +235,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$query` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 527](class/class-mainwp-child-woocommerce-status.php#L527-L527)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 527](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L527)
 
 
 
@@ -247,7 +247,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('completed', 'processing', 'on-hold')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 536](class/class-mainwp-child-woocommerce-status.php#L536-L536)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 536](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L536)
 
 
 
@@ -261,7 +261,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$data` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-woocommerce-status.php](class/class-mainwp-child-woocommerce-status.php), [line 490](class/class-mainwp-child-woocommerce-status.php#L490-L585)
+Source: [class/class-mainwp-child-woocommerce-status.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php), [line 490](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-woocommerce-status.php#L490)
 
 
 
@@ -282,7 +282,7 @@ Version | Description
 ------- | -----------
 `2.8.0` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-misc.php](class/class-mainwp-child-misc.php), [line 557](class/class-mainwp-child-misc.php#L557-L565)
+Source: [class/class-mainwp-child-misc.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-misc.php), [line 557](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-misc.php#L557)
 
 
 
@@ -303,7 +303,7 @@ Version | Description
 ------- | -----------
 `2.8.0` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-misc.php](class/class-mainwp-child-misc.php), [line 572](class/class-mainwp-child-misc.php#L572-L580)
+Source: [class/class-mainwp-child-misc.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-misc.php), [line 572](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-misc.php#L572)
 
 
 
@@ -319,7 +319,7 @@ Argument | Type | Description
 `'4.0.7.1'` |  | 
 `'mainwp_site_sync_others_data'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 466](class/class-mainwp-child-stats.php#L466-L482)
+Source: [class/class-mainwp-child-stats.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php), [line 466](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php#L466)
 
 
 
@@ -334,7 +334,7 @@ Argument | Type | Description
 `$information` | `array` | Child Site Stats array.
 `$othersData` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 466](class/class-mainwp-child-stats.php#L466-L483)
+Source: [class/class-mainwp-child-stats.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php), [line 466](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php#L466)
 
 
 
@@ -350,7 +350,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$uniqueId` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-helper.php](class/class-mainwp-helper.php), [line 744](class/class-mainwp-helper.php#L744-L757)
+Source: [class/class-mainwp-helper.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-helper.php), [line 744](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-helper.php#L744)
 
 
 
@@ -366,7 +366,7 @@ Argument | Type | Description
 `$email` |  | 
 `$from` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-utility.php](class/class-mainwp-utility.php), [line 740](class/class-mainwp-utility.php#L740-L774)
+Source: [class/class-mainwp-utility.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-utility.php), [line 740](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-utility.php#L740)
 
 
 

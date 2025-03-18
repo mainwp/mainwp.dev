@@ -37,7 +37,7 @@ Argument | Type | Description
 `$version` | `string` | The version of WordPress that deprecated the hook.
 `$message` | `string` | Optional. A message regarding the change. Default empty.
 
-Source: [../sources/mainwp-child/includes/functions.php](includes/functions.php), [line 169](includes/functions.php#L169-L188)
+Source: [includes/functions.php](https://github.com/mainwp/mainwp-child/blob/master/includes/functions.php), [line 169](https://github.com/mainwp/mainwp-child/blob/master/includes/functions.php#L169)
 
 
 
@@ -51,7 +51,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'wptimecapsule'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 998](class/class-mainwp-child-timecapsule.php#L998-L1008)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 998](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L998)
 
 
 
@@ -67,7 +67,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'wordfence'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-wordfence.php](class/class-mainwp-child-wordfence.php), [line 300](class/class-mainwp-child-wordfence.php#L300-L306)
+Source: [class/class-mainwp-child-wordfence.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wordfence.php), [line 300](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wordfence.php#L300)
 
 
 
@@ -81,7 +81,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$data['revision_limit']` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 1674](class/class-mainwp-child-timecapsule.php#L1674-L1702)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 1674](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L1674)
 
 
 
@@ -103,7 +103,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-branding.php](class/class-mainwp-child-branding.php), [line 106](class/class-mainwp-child-branding.php#L106-L113)
+Source: [class/class-mainwp-child-branding.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding.php), [line 106](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding.php#L106)
 
 
 

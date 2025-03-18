@@ -44,7 +44,7 @@ Hooks related to general settings and system configuration.
 Runs any time class is called.
 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 82](class/class-mainwp-system.php#L82-L135)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 82](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L82)
 
 
 
@@ -59,7 +59,7 @@ Argument | Type | Description
 `$params` | `array` | params.
 `$sql` | `string` | query.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-db.php](class/class-mainwp-db.php), [line 3242](class/class-mainwp-db.php#L3242-L3252)
+Source: [class/class-mainwp-db.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db.php), [line 3242](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db.php#L3242)
 
 
 
@@ -82,7 +82,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.php](class/class-mainwp-notification-settings.php), [line 76](class/class-mainwp-notification-settings.php#L76-L83)
+Source: [class/class-mainwp-notification-settings.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php), [line 76](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php#L76)
 
 
 
@@ -104,7 +104,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.php](class/class-mainwp-notification-settings.php), [line 87](class/class-mainwp-notification-settings.php#L87-L94)
+Source: [class/class-mainwp-notification-settings.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php), [line 87](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php#L87)
 
 
 
@@ -121,7 +121,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.php](class/class-mainwp-notification-settings.php), [line 175](class/class-mainwp-notification-settings.php#L175-L182)
+Source: [class/class-mainwp-notification-settings.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php), [line 175](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php#L175)
 
 
 
@@ -132,7 +132,7 @@ Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.ph
 Renders the extension settings page.
 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/pages/page-cost-tracker-settings.php](modules/cost-tracker/pages/page-cost-tracker-settings.php), [line 88](modules/cost-tracker/pages/page-cost-tracker-settings.php#L88-L343)
+Source: [modules/cost-tracker/pages/page-cost-tracker-settings.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-settings.php), [line 88](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-settings.php#L88)
 
 
 
@@ -154,7 +154,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 454](pages/page-mainwp-settings.php#L454-L461)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 454](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L454)
 
 
 
@@ -176,7 +176,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 585](pages/page-mainwp-settings.php#L585-L592)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 585](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L585)
 
 
 
@@ -193,7 +193,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 631](pages/page-mainwp-settings.php#L631-L638)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 631](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L631)
 
 
 
@@ -210,7 +210,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 906](pages/page-mainwp-settings.php#L906-L913)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 906](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L906)
 
 
 
@@ -232,7 +232,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 1319](pages/page-mainwp-settings.php#L1319-L1326)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 1319](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L1319)
 
 
 
@@ -254,7 +254,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 1373](pages/page-mainwp-settings.php#L1373-L1380)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 1373](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L1373)
 
 
 
@@ -271,7 +271,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 1401](pages/page-mainwp-settings.php#L1401-L1408)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 1401](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L1401)
 
 
 
@@ -288,7 +288,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 1680](pages/page-mainwp-settings.php#L1680-L1687)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 1680](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L1680)
 
 
 
@@ -309,7 +309,7 @@ Version | Description
 ------- | -----------
 `5.2` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 2393](pages/page-mainwp-settings.php#L2393-L2404)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 2393](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L2393)
 
 
 
@@ -333,7 +333,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-sites.php](pages/page-mainwp-manage-sites.php), [line 1898](pages/page-mainwp-manage-sites.php#L1898-L1905)
+Source: [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1898](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1898)
 
 
 
@@ -355,7 +355,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-sites.php](pages/page-mainwp-manage-sites.php), [line 1911](pages/page-mainwp-manage-sites.php#L1911-L1918)
+Source: [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1911](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1911)
 
 
 
@@ -372,7 +372,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1601](pages/page-mainwp-server-information.php#L1601-L1608)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1601](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1601)
 
 
 
@@ -389,7 +389,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1639](pages/page-mainwp-server-information.php#L1639-L1646)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1639](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1639)
 
 
 
@@ -405,7 +405,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$options` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 297](class/class-mainwp-system.php#L297-L380)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 297](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L297)
 
 
 
@@ -421,7 +421,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$all_opts` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-admin.php](modules/cost-tracker/classes/class-cost-tracker-admin.php), [line 552](modules/cost-tracker/classes/class-cost-tracker-admin.php#L552-L590)
+Source: [modules/cost-tracker/classes/class-cost-tracker-admin.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-admin.php), [line 552](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-admin.php#L552)
 
 
 
@@ -440,7 +440,7 @@ Argument | Type | Description
 `$render_indi` | `bool` | to render indication.
 `$default_val` | `mixed` | default value directly.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings-indicator.php](pages/page-mainwp-settings-indicator.php), [line 72](pages/page-mainwp-settings-indicator.php#L72-L92)
+Source: [pages/page-mainwp-settings-indicator.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings-indicator.php), [line 72](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings-indicator.php#L72)
 
 
 
@@ -459,7 +459,7 @@ Argument | Type | Description
 `$render_indi` | `bool` | to render indication.
 `$type` | `string` | setting type to get default value.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings-indicator.php](pages/page-mainwp-settings-indicator.php), [line 99](pages/page-mainwp-settings-indicator.php#L99-L115)
+Source: [pages/page-mainwp-settings-indicator.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings-indicator.php), [line 99](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings-indicator.php#L99)
 
 
 
@@ -475,7 +475,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-install-bulk.php](pages/page-mainwp-install-bulk.php), [line 379](pages/page-mainwp-install-bulk.php#L379-L386)
+Source: [pages/page-mainwp-install-bulk.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-install-bulk.php), [line 379](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-install-bulk.php#L379)
 
 
 

@@ -239,7 +239,7 @@ Argument | Type | Description
 `$post_id` | `int` | Post ID.
 `wp_unslash($_POST['post_category'])` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-meta-boxes.php](class/class-mainwp-meta-boxes.php), [line 109](class/class-mainwp-meta-boxes.php#L109-L148)
+Source: [class/class-mainwp-meta-boxes.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-meta-boxes.php), [line 109](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-meta-boxes.php#L109)
 
 
 
@@ -257,7 +257,7 @@ Argument | Type | Description
 `$post_type` | `string` | Post type.
 `wp_strip_all_tags(wp_unslash($_POST['add_tags']))` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-meta-boxes.php](class/class-mainwp-meta-boxes.php), [line 168](class/class-mainwp-meta-boxes.php#L168-L179)
+Source: [class/class-mainwp-meta-boxes.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-meta-boxes.php), [line 168](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-meta-boxes.php#L168)
 
 
 
@@ -281,7 +281,7 @@ Version | Description
 ------- | -----------
 `4.5.1.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-actions-handler.php](class/class-mainwp-actions-handler.php), [line 51](class/class-mainwp-actions-handler.php#L51-L56)
+Source: [class/class-mainwp-actions-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-actions-handler.php), [line 51](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-actions-handler.php#L51)
 
 
 
@@ -303,7 +303,7 @@ Argument | Type | Description
 `$taskId` |  | 
 `$unique` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-backup-handler.php](class/class-mainwp-backup-handler.php), [line 28](class/class-mainwp-backup-handler.php#L28-L512)
+Source: [class/class-mainwp-backup-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-backup-handler.php), [line 28](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-backup-handler.php#L28)
 
 
 
@@ -320,7 +320,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 782](class/class-mainwp-ui.php#L782-L789)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 782](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L782)
 
 
 
@@ -342,7 +342,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 799](class/class-mainwp-ui.php#L799-L808)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 799](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L799)
 
 
 
@@ -353,7 +353,7 @@ Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-main
 Render page navigation.
 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1439](class/class-mainwp-ui.php#L1439-L1519)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1439](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1439)
 
 
 
@@ -369,7 +369,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$post_id` | `int` | Post ID.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-bulk-post.php](class/class-mainwp-bulk-post.php), [line 158](class/class-mainwp-bulk-post.php#L158-L167)
+Source: [class/class-mainwp-bulk-post.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php), [line 158](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php#L158)
 
 
 
@@ -391,7 +391,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-bulk-post.php](class/class-mainwp-bulk-post.php), [line 172](class/class-mainwp-bulk-post.php#L172-L181)
+Source: [class/class-mainwp-bulk-post.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php), [line 172](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php#L172)
 
 
 
@@ -407,7 +407,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$post_id` | `int` | Post ID.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-bulk-post.php](class/class-mainwp-bulk-post.php), [line 227](class/class-mainwp-bulk-post.php#L227-L236)
+Source: [class/class-mainwp-bulk-post.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php), [line 227](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php#L227)
 
 
 
@@ -429,7 +429,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-bulk-post.php](class/class-mainwp-bulk-post.php), [line 241](class/class-mainwp-bulk-post.php#L241-L250)
+Source: [class/class-mainwp-bulk-post.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php), [line 241](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php#L241)
 
 
 
@@ -440,7 +440,7 @@ Source: [../sources/mainwp-dashboard/class/class-mainwp-bulk-post.php](class/cla
 Register "Bulkpost" and "Bulkpage" custom post types.
 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-bulk-post.php](class/class-mainwp-bulk-post.php), [line 256](class/class-mainwp-bulk-post.php#L256-L368)
+Source: [class/class-mainwp-bulk-post.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php), [line 256](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php#L256)
 
 
 
@@ -451,7 +451,7 @@ Source: [../sources/mainwp-dashboard/class/class-mainwp-bulk-post.php](class/cla
 Fires at the bottom of MainWP content.
 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-view.php](class/class-mainwp-system-view.php), [line 1020](class/class-mainwp-system-view.php#L1020-L1027)
+Source: [class/class-mainwp-system-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-view.php), [line 1020](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-view.php#L1020)
 
 
 
@@ -467,7 +467,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'ApiBackups'` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-settings.php](modules/api-backups/classes/class-api-backups-settings.php), [line 76](modules/api-backups/classes/class-api-backups-settings.php#L76-L88)
+Source: [modules/api-backups/classes/class-api-backups-settings.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-settings.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-settings.php#L76)
 
 
 
@@ -483,7 +483,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'ApiBackups'` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-settings.php](modules/api-backups/classes/class-api-backups-settings.php), [line 76](modules/api-backups/classes/class-api-backups-settings.php#L76-L108)
+Source: [modules/api-backups/classes/class-api-backups-settings.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-settings.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-settings.php#L76)
 
 
 
@@ -499,7 +499,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'ApiBackups'` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-overview.php](modules/api-backups/classes/class-api-backups-overview.php), [line 76](modules/api-backups/classes/class-api-backups-overview.php#L76-L82)
+Source: [modules/api-backups/classes/class-api-backups-overview.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-overview.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-overview.php#L76)
 
 
 
@@ -515,7 +515,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'ApiBackups'` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-overview.php](modules/api-backups/classes/class-api-backups-overview.php), [line 76](modules/api-backups/classes/class-api-backups-overview.php#L76-L103)
+Source: [modules/api-backups/classes/class-api-backups-overview.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-overview.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-overview.php#L76)
 
 
 
@@ -529,7 +529,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'Insights'` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-settings.php](modules/logs/classes/class-log-settings.php), [line 164](modules/logs/classes/class-log-settings.php#L164-L165)
+Source: [modules/logs/classes/class-log-settings.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-settings.php), [line 164](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-settings.php#L164)
 
 
 
@@ -543,7 +543,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'Insights'` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-settings.php](modules/logs/classes/class-log-settings.php), [line 263](modules/logs/classes/class-log-settings.php#L263-L264)
+Source: [modules/logs/classes/class-log-settings.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-settings.php), [line 263](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-settings.php#L263)
 
 
 
@@ -564,7 +564,7 @@ Version | Description
 ------- | -----------
 `5.0` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-admin.php](modules/cost-tracker/classes/class-cost-tracker-admin.php), [line 874](modules/cost-tracker/classes/class-cost-tracker-admin.php#L874-L885)
+Source: [modules/cost-tracker/classes/class-cost-tracker-admin.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-admin.php), [line 874](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-admin.php#L874)
 
 
 
@@ -575,7 +575,7 @@ Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tra
 Renders the actions bar on the Dashboard tab.
 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/pages/page-cost-tracker-dashboard.php](modules/cost-tracker/pages/page-cost-tracker-dashboard.php), [line 1110](modules/cost-tracker/pages/page-cost-tracker-dashboard.php#L1110-L1125)
+Source: [modules/cost-tracker/pages/page-cost-tracker-dashboard.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-dashboard.php), [line 1110](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-dashboard.php#L1110)
 
 
 
@@ -586,7 +586,7 @@ Source: [../sources/mainwp-dashboard/modules/cost-tracker/pages/page-cost-tracke
 Renders the actions bar on the Dashboard tab.
 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/pages/page-cost-tracker-dashboard.php](modules/cost-tracker/pages/page-cost-tracker-dashboard.php), [line 1110](modules/cost-tracker/pages/page-cost-tracker-dashboard.php#L1110-L1129)
+Source: [modules/cost-tracker/pages/page-cost-tracker-dashboard.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-dashboard.php), [line 1110](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-dashboard.php#L1110)
 
 
 
@@ -603,7 +603,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 1995](pages/page-mainwp-settings.php#L1995-L2002)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 1995](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L1995)
 
 
 
@@ -620,7 +620,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 2132](pages/page-mainwp-settings.php#L2132-L2139)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 2132](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L2132)
 
 
 
@@ -636,7 +636,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$p_id` | `int` | Page ID.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 447](pages/page-mainwp-post-page-handler.php#L447-L456)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 447](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L447)
 
 
 
@@ -652,7 +652,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$post_id` | `int` | Post or Page ID.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 419](pages/page-mainwp-post-page-handler.php#L419-L480)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 419](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L419)
 
 
 
@@ -670,7 +670,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_post_posting_post'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 588](pages/page-mainwp-post-page-handler.php#L588-L819)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 588](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L588)
 
 
 
@@ -688,7 +688,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_bulkposting_done'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 588](pages/page-mainwp-post-page-handler.php#L588-L820)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 588](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L588)
 
 
 
@@ -706,7 +706,7 @@ Argument | Type | Description
 `$output->added_id[$website->id]` |  | 
 `$links` | `array` | Links.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 822](pages/page-mainwp-post-page-handler.php#L822-L833)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 822](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L822)
 
 
 
@@ -724,7 +724,7 @@ Argument | Type | Description
 `$website` | `object` | Object containing child site data.
 `$output` | `array` | Output data.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 835](pages/page-mainwp-post-page-handler.php#L835-L846)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 835](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L835)
 
 
 
@@ -735,7 +735,7 @@ Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pa
 Render the page content.
 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 539](pages/page-mainwp-post.php#L539-L583)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 539](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L539)
 
 
 
@@ -755,7 +755,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 588](pages/page-mainwp-post.php#L588-L598)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 588](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L588)
 
 
 
@@ -772,7 +772,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 603](pages/page-mainwp-post.php#L603-L610)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 603](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L603)
 
 
 
@@ -789,7 +789,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 615](pages/page-mainwp-post.php#L615-L622)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 615](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L615)
 
 
 
@@ -806,7 +806,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 640](pages/page-mainwp-post.php#L640-L647)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 640](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L640)
 
 
 
@@ -823,7 +823,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 651](pages/page-mainwp-post.php#L651-L658)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L651)
 
 
 
@@ -840,7 +840,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 674](pages/page-mainwp-post.php#L674-L681)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 674](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L674)
 
 
 
@@ -857,7 +857,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 689](pages/page-mainwp-post.php#L689-L696)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 689](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L689)
 
 
 
@@ -874,7 +874,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 719](pages/page-mainwp-post.php#L719-L726)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 719](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L719)
 
 
 
@@ -891,7 +891,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 738](pages/page-mainwp-post.php#L738-L745)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 738](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L738)
 
 
 
@@ -908,7 +908,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 754](pages/page-mainwp-post.php#L754-L761)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 754](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L754)
 
 
 
@@ -925,7 +925,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 765](pages/page-mainwp-post.php#L765-L772)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 765](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L765)
 
 
 
@@ -942,7 +942,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 934](pages/page-mainwp-post.php#L934-L941)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 934](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L934)
 
 
 
@@ -959,7 +959,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 948](pages/page-mainwp-post.php#L948-L955)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 948](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L948)
 
 
 
@@ -976,7 +976,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 992](pages/page-mainwp-post.php#L992-L999)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 992](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L992)
 
 
 
@@ -999,7 +999,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1353](pages/page-mainwp-post.php#L1353-L1363)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1353](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1353)
 
 
 
@@ -1016,7 +1016,7 @@ Argument | Type | Description
 `$post` |  | 
 `$child_to_dash_array` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1282](pages/page-mainwp-post.php#L1282-L1455)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1282](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1282)
 
 
 
@@ -1042,7 +1042,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1460](pages/page-mainwp-post.php#L1460-L1473)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1460](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1460)
 
 
 
@@ -1056,7 +1056,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$post` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2009](pages/page-mainwp-post.php#L2009-L2108)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2009](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2009)
 
 
 
@@ -1070,7 +1070,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$post` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2009](pages/page-mainwp-post.php#L2009-L2150)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2009](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2009)
 
 
 
@@ -1087,7 +1087,7 @@ Argument | Type | Description
 `$post` | `object` | Object containing the Post data.
 `$post_type` | `string` | Post type.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2233](pages/page-mainwp-post.php#L2233-L2241)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2233](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2233)
 
 
 
@@ -1104,7 +1104,7 @@ Argument | Type | Description
 `$post_type` | `string` | Post type.
 `$post` | `object` | Object containing the Post data.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2247](pages/page-mainwp-post.php#L2247-L2257)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2247](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2247)
 
 
 
@@ -1119,7 +1119,7 @@ Argument | Type | Description
 `$post` |  | 
 `$post_type` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2009](pages/page-mainwp-post.php#L2009-L2287)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2009](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2009)
 
 
 
@@ -1142,7 +1142,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2318](pages/page-mainwp-post.php#L2318-L2328)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2318](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2318)
 
 
 
@@ -1159,7 +1159,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2341](pages/page-mainwp-post.php#L2341-L2348)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2341](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2341)
 
 
 
@@ -1180,7 +1180,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2743](pages/page-mainwp-post.php#L2743-L2754)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2743](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2743)
 
 
 
@@ -1201,7 +1201,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-overview.php](pages/page-mainwp-overview.php), [line 445](pages/page-mainwp-overview.php#L445-L456)
+Source: [pages/page-mainwp-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php), [line 445](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php#L445)
 
 
 
@@ -1218,7 +1218,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1137](pages/page-mainwp-server-information.php#L1137-L1144)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1137](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1137)
 
 
 
@@ -1234,7 +1234,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'ManageGroups'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-groups.php](pages/page-mainwp-manage-groups.php), [line 293](pages/page-mainwp-manage-groups.php#L293-L300)
+Source: [pages/page-mainwp-manage-groups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php), [line 293](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php#L293)
 
 
 
@@ -1250,7 +1250,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'ManageGroups'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-groups.php](pages/page-mainwp-manage-groups.php), [line 474](pages/page-mainwp-manage-groups.php#L474-L481)
+Source: [pages/page-mainwp-manage-groups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php), [line 474](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php#L474)
 
 
 
@@ -1266,7 +1266,7 @@ Argument | Type | Description
 `'newpost'` |  | 
 `$information['other_data']['new_post_data']` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-add.php](pages/page-mainwp-bulk-add.php), [line 34](pages/page-mainwp-bulk-add.php#L34-L57)
+Source: [pages/page-mainwp-bulk-add.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-add.php), [line 34](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-add.php#L34)
 
 
 
@@ -1277,7 +1277,7 @@ Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-add.php](pages/page-
 Render Setup Wizard's header.
 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-setup-wizard.php](pages/page-mainwp-setup-wizard.php), [line 203](pages/page-mainwp-setup-wizard.php#L203-L234)
+Source: [pages/page-mainwp-setup-wizard.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-setup-wizard.php), [line 203](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-setup-wizard.php#L203)
 
 
 
@@ -1286,7 +1286,7 @@ Source: [../sources/mainwp-dashboard/pages/page-mainwp-setup-wizard.php](pages/p
 *Method render_extensions_groups()*
 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pages/page-mainwp-extensions-groups.php), [line 921](pages/page-mainwp-extensions-groups.php#L921-L968)
+Source: [pages/page-mainwp-extensions-groups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-groups.php), [line 921](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-groups.php#L921)
 
 
 
@@ -1295,7 +1295,7 @@ Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pa
 *Method render_extensions_groups()*
 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pages/page-mainwp-extensions-groups.php), [line 921](pages/page-mainwp-extensions-groups.php#L921-L1086)
+Source: [pages/page-mainwp-extensions-groups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-groups.php), [line 921](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-groups.php#L921)
 
 
 
@@ -1304,7 +1304,7 @@ Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pa
 *Renders Bulk Page Manager.*
 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 434](pages/page-mainwp-page.php#L434-L474)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 434](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L434)
 
 
 
@@ -1324,7 +1324,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 479](pages/page-mainwp-page.php#L479-L489)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 479](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L479)
 
 
 
@@ -1341,7 +1341,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 494](pages/page-mainwp-page.php#L494-L501)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 494](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L494)
 
 
 
@@ -1358,7 +1358,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 506](pages/page-mainwp-page.php#L506-L513)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 506](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L506)
 
 
 
@@ -1375,7 +1375,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 531](pages/page-mainwp-page.php#L531-L538)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 531](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L531)
 
 
 
@@ -1392,7 +1392,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 542](pages/page-mainwp-page.php#L542-L549)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 542](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L542)
 
 
 
@@ -1409,7 +1409,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 565](pages/page-mainwp-page.php#L565-L572)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 565](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L565)
 
 
 
@@ -1426,7 +1426,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 580](pages/page-mainwp-page.php#L580-L587)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 580](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L580)
 
 
 
@@ -1443,7 +1443,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 610](pages/page-mainwp-page.php#L610-L617)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 610](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L610)
 
 
 
@@ -1460,7 +1460,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 624](pages/page-mainwp-page.php#L624-L631)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 624](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L624)
 
 
 
@@ -1477,7 +1477,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 640](pages/page-mainwp-page.php#L640-L647)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 640](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L640)
 
 
 
@@ -1494,7 +1494,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 651](pages/page-mainwp-page.php#L651-L658)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L651)
 
 
 
@@ -1511,7 +1511,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 793](pages/page-mainwp-page.php#L793-L800)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 793](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L793)
 
 
 
@@ -1528,7 +1528,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 807](pages/page-mainwp-page.php#L807-L814)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 807](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L807)
 
 
 
@@ -1545,7 +1545,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 842](pages/page-mainwp-page.php#L842-L849)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 842](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L842)
 
 
 
@@ -1568,7 +1568,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1146](pages/page-mainwp-page.php#L1146-L1156)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1146](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1146)
 
 
 
@@ -1584,7 +1584,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$page` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1095](pages/page-mainwp-page.php#L1095-L1221)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1095](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1095)
 
 
 
@@ -1610,7 +1610,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1233](pages/page-mainwp-page.php#L1233-L1246)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1233](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1233)
 
 
 
@@ -1626,7 +1626,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$post_id` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1427](pages/page-mainwp-page.php#L1427-L1436)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1427](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1427)
 
 
 
@@ -1644,7 +1644,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_post_posting_page'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1385](pages/page-mainwp-page.php#L1385-L1619)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1385](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1385)
 
 
 
@@ -1662,7 +1662,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_bulkposting_done'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1385](pages/page-mainwp-page.php#L1385-L1620)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1385](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1385)
 
 
 
@@ -1680,7 +1680,7 @@ Argument | Type | Description
 `$output->added_id[$website->id]` |  | 
 `$links` | `array` | Links.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1622](pages/page-mainwp-page.php#L1622-L1633)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1622](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1622)
 
 
 
@@ -1698,7 +1698,7 @@ Argument | Type | Description
 `$website` | `object` | Object containing child site data.
 `$output` | `array` | Output data.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1635](pages/page-mainwp-page.php#L1635-L1646)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1635](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1635)
 
 
 
@@ -1714,7 +1714,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$id` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1385](pages/page-mainwp-page.php#L1385-L1703)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1385](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1385)
 
 
 
@@ -1735,7 +1735,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1741](pages/page-mainwp-page.php#L1741-L1752)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1741](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1741)
 
 
 
@@ -1749,7 +1749,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'MonitoringSites'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-monitoring.php](pages/page-mainwp-monitoring.php), [line 291](pages/page-mainwp-monitoring.php#L291-L292)
+Source: [pages/page-mainwp-monitoring.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-monitoring.php), [line 291](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-monitoring.php#L291)
 
 
 
@@ -1763,7 +1763,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'MonitoringSites'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-monitoring.php](pages/page-mainwp-monitoring.php), [line 306](pages/page-mainwp-monitoring.php#L306-L307)
+Source: [pages/page-mainwp-monitoring.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-monitoring.php), [line 306](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-monitoring.php#L306)
 
 
 
@@ -1779,7 +1779,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'managesites'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-screenshots.php](pages/page-mainwp-manage-screenshots.php), [line 215](pages/page-mainwp-manage-screenshots.php#L215-L222)
+Source: [pages/page-mainwp-manage-screenshots.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-screenshots.php), [line 215](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-screenshots.php#L215)
 
 
 
@@ -1795,7 +1795,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'managesites'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-screenshots.php](pages/page-mainwp-manage-screenshots.php), [line 446](pages/page-mainwp-manage-screenshots.php#L446-L453)
+Source: [pages/page-mainwp-manage-screenshots.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-screenshots.php), [line 446](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-screenshots.php#L446)
 
 
 
@@ -1812,7 +1812,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 125](widgets/widget-mainwp-recent-posts.php#L125-L132)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 125](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L125)
 
 
 
@@ -1829,7 +1829,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 144](widgets/widget-mainwp-recent-posts.php#L144-L151)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 144](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L144)
 
 
 
@@ -1846,7 +1846,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 163](widgets/widget-mainwp-recent-posts.php#L163-L170)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 163](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L163)
 
 
 
@@ -1869,7 +1869,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 233](widgets/widget-mainwp-recent-posts.php#L233-L243)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 233](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L233)
 
 
 
@@ -1892,7 +1892,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 292](widgets/widget-mainwp-recent-posts.php#L292-L302)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 292](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L292)
 
 
 
@@ -1915,7 +1915,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 327](widgets/widget-mainwp-recent-posts.php#L327-L337)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 327](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L327)
 
 
 
@@ -1938,7 +1938,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 383](widgets/widget-mainwp-recent-posts.php#L383-L393)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 383](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L383)
 
 
 
@@ -1961,7 +1961,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 418](widgets/widget-mainwp-recent-posts.php#L418-L428)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 418](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L418)
 
 
 
@@ -1984,7 +1984,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 474](widgets/widget-mainwp-recent-posts.php#L474-L484)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 474](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L474)
 
 
 
@@ -2007,7 +2007,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 509](widgets/widget-mainwp-recent-posts.php#L509-L519)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 509](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L509)
 
 
 
@@ -2030,7 +2030,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 566](widgets/widget-mainwp-recent-posts.php#L566-L576)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 566](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L566)
 
 
 
@@ -2053,7 +2053,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 601](widgets/widget-mainwp-recent-posts.php#L601-L611)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 601](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L601)
 
 
 
@@ -2076,7 +2076,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 656](widgets/widget-mainwp-recent-posts.php#L656-L666)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 656](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L656)
 
 
 
@@ -2101,7 +2101,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 772](widgets/widget-mainwp-recent-posts.php#L772-L779)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 772](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L772)
 
 
 
@@ -2126,7 +2126,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 795](widgets/widget-mainwp-recent-posts.php#L795-L801)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 795](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L795)
 
 
 
@@ -2143,7 +2143,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 119](widgets/widget-mainwp-recent-pages.php#L119-L126)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 119](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L119)
 
 
 
@@ -2160,7 +2160,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 139](widgets/widget-mainwp-recent-pages.php#L139-L146)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 139](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L139)
 
 
 
@@ -2177,7 +2177,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 159](widgets/widget-mainwp-recent-pages.php#L159-L166)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 159](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L159)
 
 
 
@@ -2200,7 +2200,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 229](widgets/widget-mainwp-recent-pages.php#L229-L239)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 229](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L229)
 
 
 
@@ -2223,7 +2223,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 289](widgets/widget-mainwp-recent-pages.php#L289-L299)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 289](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L289)
 
 
 
@@ -2246,7 +2246,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 324](widgets/widget-mainwp-recent-pages.php#L324-L334)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 324](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L324)
 
 
 
@@ -2269,7 +2269,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 381](widgets/widget-mainwp-recent-pages.php#L381-L391)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 381](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L381)
 
 
 
@@ -2292,7 +2292,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 415](widgets/widget-mainwp-recent-pages.php#L415-L425)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 415](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L415)
 
 
 
@@ -2315,7 +2315,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 472](widgets/widget-mainwp-recent-pages.php#L472-L482)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 472](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L472)
 
 
 
@@ -2338,7 +2338,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 507](widgets/widget-mainwp-recent-pages.php#L507-L517)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 507](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L507)
 
 
 
@@ -2361,7 +2361,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 565](widgets/widget-mainwp-recent-pages.php#L565-L575)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 565](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L565)
 
 
 
@@ -2384,7 +2384,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 600](widgets/widget-mainwp-recent-pages.php#L600-L610)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 600](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L600)
 
 
 
@@ -2407,7 +2407,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 655](widgets/widget-mainwp-recent-pages.php#L655-L665)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 655](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L655)
 
 ## Filters
 
@@ -2425,7 +2425,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$load_gridstack` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 766](class/class-mainwp-system.php#L766-L882)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 766](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L766)
 
 
 
@@ -2447,7 +2447,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 488](class/class-mainwp-ui.php#L488-L495)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 488](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L488)
 
 
 
@@ -2470,7 +2470,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 505](class/class-mainwp-ui.php#L505-L512)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 505](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L505)
 
 
 
@@ -2492,7 +2492,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 516](class/class-mainwp-ui.php#L516-L523)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 516](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L516)
 
 
 
@@ -2509,7 +2509,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sidebar_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1273](class/class-mainwp-ui.php#L1273-L1286)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1273](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1273)
 
 
 
@@ -2526,7 +2526,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sidebar_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1273](class/class-mainwp-ui.php#L1273-L1287)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1273](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1273)
 
 
 
@@ -2549,7 +2549,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1449](class/class-mainwp-ui.php#L1449-L1456)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1449](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1449)
 
 
 
@@ -2565,7 +2565,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sidebar_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 2421](class/class-mainwp-ui.php#L2421-L2477)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 2421](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L2421)
 
 
 
@@ -2581,7 +2581,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sidebar_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 2421](class/class-mainwp-ui.php#L2421-L2478)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 2421](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L2421)
 
 
 
@@ -2598,7 +2598,7 @@ Argument | Type | Description
 `$location` |  | 
 `$post_id` | `int` | Post ID.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-bulk-post.php](class/class-mainwp-bulk-post.php), [line 56](class/class-mainwp-bulk-post.php#L56-L65)
+Source: [class/class-mainwp-bulk-post.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php), [line 56](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-bulk-post.php#L56)
 
 
 
@@ -2622,7 +2622,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification.php](class/class-mainwp-notification.php), [line 210](class/class-mainwp-notification.php#L210-L220)
+Source: [class/class-mainwp-notification.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification.php), [line 210](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification.php#L210)
 
 
 
@@ -2640,7 +2640,7 @@ Argument | Type | Description
 `$email` | `string` | send to email.
 `$subject` | `string` | email content.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification.php](class/class-mainwp-notification.php), [line 317](class/class-mainwp-notification.php#L317-L337)
+Source: [class/class-mainwp-notification.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification.php), [line 317](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification.php#L317)
 
 
 
@@ -2654,7 +2654,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$class_string` | `mixed` | MainWP CSS Class attributes.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-view.php](class/class-mainwp-system-view.php), [line 944](class/class-mainwp-system-view.php#L944-L991)
+Source: [class/class-mainwp-system-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-view.php), [line 944](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-view.php#L944)
 
 
 
@@ -2673,7 +2673,7 @@ Argument | Type | Description
 `$what` | `mixed` | What we are posting.
 `$params` | `null` | Post parameters.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 361](class/class-mainwp-connect.php#L361-L393)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php), [line 361](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php#L361)
 
 
 
@@ -2687,7 +2687,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `5` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 421](class/class-mainwp-connect.php#L421-L422)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php), [line 421](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php#L421)
 
 
 
@@ -2704,7 +2704,7 @@ Argument | Type | Description
 `// NOSONAR - not IP.
 'mainwp_pre_posting_posts'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 784](class/class-mainwp-connect.php#L784-L801)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php), [line 784](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php#L784)
 
 
 
@@ -2727,7 +2727,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 803](class/class-mainwp-connect.php#L803-L818)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php), [line 803](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php#L803)
 
 
 
@@ -2746,7 +2746,7 @@ Argument | Type | Description
 `$parentKey` | `string` | Parent Menu Slug.
 `$slug` | `mixed` | SubPage Slug.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 479](class/class-mainwp-menu.php#L479-L497)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 479](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L479)
 
 
 
@@ -2763,7 +2763,7 @@ Argument | Type | Description
 `$extension_name` |  | 
 `$extension_name_raw` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-extensions-view.php](class/class-mainwp-extensions-view.php), [line 50](class/class-mainwp-extensions-view.php#L50-L71)
+Source: [class/class-mainwp-extensions-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-extensions-view.php), [line 50](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-extensions-view.php#L50)
 
 
 
@@ -2788,7 +2788,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-template.php](class/class-mainwp-notification-template.php), [line 210](class/class-mainwp-notification-template.php#L210-L217)
+Source: [class/class-mainwp-notification-template.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-template.php), [line 210](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-template.php#L210)
 
 
 
@@ -2813,7 +2813,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-template.php](class/class-mainwp-notification-template.php), [line 219](class/class-mainwp-notification-template.php#L219-L226)
+Source: [class/class-mainwp-notification-template.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-template.php), [line 219](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-template.php#L219)
 
 
 
@@ -2827,7 +2827,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-admin.php](modules/api-backups/classes/class-api-backups-admin.php), [line 234](modules/api-backups/classes/class-api-backups-admin.php#L234-L237)
+Source: [modules/api-backups/classes/class-api-backups-admin.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-admin.php), [line 234](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-admin.php#L234)
 
 
 
@@ -2841,7 +2841,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-admin.php](modules/cost-tracker/classes/class-cost-tracker-admin.php), [line 292](modules/cost-tracker/classes/class-cost-tracker-admin.php#L292-L295)
+Source: [modules/cost-tracker/classes/class-cost-tracker-admin.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-admin.php), [line 292](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-admin.php#L292)
 
 
 
@@ -2857,7 +2857,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$note` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-admin.php](modules/cost-tracker/classes/class-cost-tracker-admin.php), [line 441](modules/cost-tracker/classes/class-cost-tracker-admin.php#L441-L478)
+Source: [modules/cost-tracker/classes/class-cost-tracker-admin.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-admin.php), [line 441](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-admin.php#L441)
 
 
 
@@ -2873,7 +2873,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$note` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/pages/page-cost-tracker-dashboard.php](modules/cost-tracker/pages/page-cost-tracker-dashboard.php), [line 745](modules/cost-tracker/pages/page-cost-tracker-dashboard.php#L745-L786)
+Source: [modules/cost-tracker/pages/page-cost-tracker-dashboard.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-dashboard.php), [line 745](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-dashboard.php#L745)
 
 
 
@@ -2889,7 +2889,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$note` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/pages/page-cost-tracker-dashboard.php](modules/cost-tracker/pages/page-cost-tracker-dashboard.php), [line 947](modules/cost-tracker/pages/page-cost-tracker-dashboard.php#L947-L959)
+Source: [modules/cost-tracker/pages/page-cost-tracker-dashboard.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-dashboard.php), [line 947](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-dashboard.php#L947)
 
 
 
@@ -2903,7 +2903,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$cost->note` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/rest-api/version1/class-cost-tracker-rest-api-handle-v1.php](modules/cost-tracker/rest-api/version1/class-cost-tracker-rest-api-handle-v1.php), [line 127](modules/cost-tracker/rest-api/version1/class-cost-tracker-rest-api-handle-v1.php#L127-L190)
+Source: [modules/cost-tracker/rest-api/version1/class-cost-tracker-rest-api-handle-v1.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/rest-api/version1/class-cost-tracker-rest-api-handle-v1.php), [line 127](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/rest-api/version1/class-cost-tracker-rest-api-handle-v1.php#L127)
 
 
 
@@ -2917,7 +2917,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$note` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php](modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php), [line 296](modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php#L296-L330)
+Source: [modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php), [line 296](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php#L296)
 
 
 
@@ -2935,7 +2935,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getsubpages_settings'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 211](pages/page-mainwp-settings.php#L211-L218)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 211](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L211)
 
 
 
@@ -2949,7 +2949,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sub_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 137](pages/page-mainwp-settings.php#L137-L219)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 137](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L137)
 
 
 
@@ -2961,7 +2961,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array(esc_html__('F j, Y'), 'Y-m-d', 'm/d/Y', 'd/m/Y')` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 1139](pages/page-mainwp-settings.php#L1139-L1139)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 1139](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L1139)
 
 
 
@@ -2973,7 +2973,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array(esc_html__('g:i a'), 'g:i A', 'H:i')` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 1179](pages/page-mainwp-settings.php#L1179-L1179)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 1179](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L1179)
 
 
 
@@ -2987,7 +2987,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `true` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings.php](pages/page-mainwp-settings.php), [line 1953](pages/page-mainwp-settings.php#L1953-L2004)
+Source: [pages/page-mainwp-settings.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php), [line 1953](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings.php#L1953)
 
 
 
@@ -3005,7 +3005,7 @@ Argument | Type | Description
 `$website` |  | 
 `$_REQUEST` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 156](pages/page-mainwp-post-page-handler.php#L156-L244)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 156](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L156)
 
 
 
@@ -3021,7 +3021,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 396](pages/page-mainwp-post-page-handler.php#L396-L408)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 396](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L396)
 
 
 
@@ -3038,7 +3038,7 @@ Argument | Type | Description
 `$selected_by` |  | 
 `$id` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 588](pages/page-mainwp-post-page-handler.php#L588-L626)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 588](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L588)
 
 
 
@@ -3055,7 +3055,7 @@ Argument | Type | Description
 `$selected_sites` |  | 
 `$id` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 588](pages/page-mainwp-post-page-handler.php#L588-L634)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 588](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L588)
 
 
 
@@ -3072,7 +3072,7 @@ Argument | Type | Description
 `$selected_clients` |  | 
 `$id` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 588](pages/page-mainwp-post-page-handler.php#L588-L636)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 588](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L588)
 
 
 
@@ -3089,7 +3089,7 @@ Argument | Type | Description
 `$post_status` |  | 
 `$id` | `int` | Post ID.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 682](pages/page-mainwp-post-page-handler.php#L682-L691)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 682](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L682)
 
 
 
@@ -3107,7 +3107,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_after_posting_bulkpost_result'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 850](pages/page-mainwp-post-page-handler.php#L850-L861)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 850](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L850)
 
 
 
@@ -3126,7 +3126,7 @@ Argument | Type | Description
 `$dbwebsites` |  | 
 `$output` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 588](pages/page-mainwp-post-page-handler.php#L588-L866)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 588](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L588)
 
 
 
@@ -3143,7 +3143,7 @@ Argument | Type | Description
 `true` |  | 
 `$posting_succeed` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 588](pages/page-mainwp-post-page-handler.php#L588-L907)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 588](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L588)
 
 
 
@@ -3161,7 +3161,7 @@ Argument | Type | Description
 `$information['my_post']` |  | 
 `$websiteId` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post-page-handler.php](pages/page-mainwp-post-page-handler.php), [line 953](pages/page-mainwp-post-page-handler.php#L953-L1008)
+Source: [pages/page-mainwp-post-page-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php), [line 953](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post-page-handler.php#L953)
 
 
 
@@ -3177,7 +3177,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sub_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client.php](pages/page-mainwp-client.php), [line 79](pages/page-mainwp-client.php#L79-L141)
+Source: [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 79](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L79)
 
 
 
@@ -3195,7 +3195,7 @@ Argument | Type | Description
 `$field` | `string` | setting field to get default value.
 `$general` | `bool` | general setting.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-settings-indicator.php](pages/page-mainwp-settings-indicator.php), [line 216](pages/page-mainwp-settings-indicator.php#L216-L265)
+Source: [pages/page-mainwp-settings-indicator.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings-indicator.php), [line 216](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-settings-indicator.php#L216)
 
 
 
@@ -3213,7 +3213,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getcustompage_backups'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 102](pages/page-mainwp-manage-backups.php#L102-L109)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 102](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L102)
 
 
 
@@ -3227,7 +3227,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$customPage` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 90](pages/page-mainwp-manage-backups.php#L90-L110)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 90](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L90)
 
 
 
@@ -3243,7 +3243,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getsubpages_backups'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 90](pages/page-mainwp-manage-backups.php#L90-L144)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 90](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L90)
 
 
 
@@ -3257,7 +3257,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sub_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 90](pages/page-mainwp-manage-backups.php#L90-L145)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 90](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L90)
 
 
 
@@ -3275,7 +3275,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getsubpages_post'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 78](pages/page-mainwp-post.php#L78-L123)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 78](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L78)
 
 
 
@@ -3291,7 +3291,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sub_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 78](pages/page-mainwp-post.php#L78-L124)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 78](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L78)
 
 
 
@@ -3305,7 +3305,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 151](pages/page-mainwp-post.php#L151-L157)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 151](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L151)
 
 
 
@@ -3321,7 +3321,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `0` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 539](pages/page-mainwp-post.php#L539-L732)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 539](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L539)
 
 
 
@@ -3343,7 +3343,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 871](pages/page-mainwp-post.php#L871-L878)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 871](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L871)
 
 
 
@@ -3365,7 +3365,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1012](pages/page-mainwp-post.php#L1012-L1019)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1012](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1012)
 
 
 
@@ -3387,7 +3387,7 @@ Version | Description
 ------- | -----------
 `3.4` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1221](pages/page-mainwp-post.php#L1221-L1228)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1221](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1221)
 
 
 
@@ -3411,7 +3411,7 @@ Version | Description
 ------- | -----------
 `4.4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1568](pages/page-mainwp-post.php#L1568-L1579)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1568](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1568)
 
 
 
@@ -3432,7 +3432,7 @@ Version | Description
 ------- | -----------
 `2.1.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1582](pages/page-mainwp-post.php#L1582-L1590)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1582](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1582)
 
 
 
@@ -3459,7 +3459,7 @@ Version | Description
 ------- | -----------
 `4.4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1704](pages/page-mainwp-post.php#L1704-L1721)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1704](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1704)
 
 
 
@@ -3483,7 +3483,7 @@ Version | Description
 `3.5.0` | Added the `$post_id` parameter.
 `2.9.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 1761](pages/page-mainwp-post.php#L1761-L1772)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 1761](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L1761)
 
 
 
@@ -3499,7 +3499,7 @@ Argument | Type | Description
 `$post_id` | `mixed` | Post ID.
 `$post_type` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2009](pages/page-mainwp-post.php#L2009-L2035)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2009](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2009)
 
 
 
@@ -3514,7 +3514,7 @@ Argument | Type | Description
 `$note_title` |  | 
 `$post` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2009](pages/page-mainwp-post.php#L2009-L2078)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2009](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2009)
 
 
 
@@ -3529,7 +3529,7 @@ Argument | Type | Description
 `false` |  | 
 `$post` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-post.php](pages/page-mainwp-post.php), [line 2009](pages/page-mainwp-post.php#L2009-L2174)
+Source: [pages/page-mainwp-post.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php), [line 2009](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-post.php#L2009)
 
 
 
@@ -3545,7 +3545,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getsubpages_sites'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-sites.php](pages/page-mainwp-manage-sites.php), [line 178](pages/page-mainwp-manage-sites.php#L178-L241)
+Source: [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 178](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L178)
 
 
 
@@ -3559,7 +3559,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sub_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-sites.php](pages/page-mainwp-manage-sites.php), [line 178](pages/page-mainwp-manage-sites.php#L178-L242)
+Source: [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 178](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L178)
 
 
 
@@ -3575,7 +3575,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-rest-api-page.php](pages/page-mainwp-rest-api-page.php), [line 116](pages/page-mainwp-rest-api-page.php#L116-L123)
+Source: [pages/page-mainwp-rest-api-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-rest-api-page.php), [line 116](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-rest-api-page.php#L116)
 
 
 
@@ -3599,7 +3599,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-security-issues.php](pages/page-mainwp-security-issues.php), [line 346](pages/page-mainwp-security-issues.php#L346-L358)
+Source: [pages/page-mainwp-security-issues.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-security-issues.php), [line 346](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-security-issues.php#L346)
 
 
 
@@ -3615,7 +3615,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getsubpages_user'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 114](pages/page-mainwp-user.php#L114-L119)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 114](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L114)
 
 
 
@@ -3631,7 +3631,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sub_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 68](pages/page-mainwp-user.php#L68-L120)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 68](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L68)
 
 
 
@@ -3649,7 +3649,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getsubpages_server'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 141](pages/page-mainwp-server-information.php#L141-L148)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 141](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L141)
 
 
 
@@ -3665,7 +3665,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sub_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 36](pages/page-mainwp-server-information.php#L36-L149)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 36](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L36)
 
 
 
@@ -3679,7 +3679,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$cron_jobs` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1000](pages/page-mainwp-server-information.php#L1000-L1042)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1000](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1000)
 
 
 
@@ -3695,7 +3695,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array($error_log)` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1528](pages/page-mainwp-server-information.php#L1528-L1535)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1528](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1528)
 
 
 
@@ -3711,7 +3711,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `100` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1537](pages/page-mainwp-server-information.php#L1537-L1544)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1537](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1537)
 
 
 
@@ -3725,7 +3725,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `true` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1651](pages/page-mainwp-server-information.php#L1651-L1684)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1651)
 
 
 
@@ -3739,7 +3739,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$specific_default` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1651](pages/page-mainwp-server-information.php#L1651-L1703)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1651)
 
 
 
@@ -3753,7 +3753,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$specific_logs` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1651](pages/page-mainwp-server-information.php#L1651-L1704)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1651)
 
 
 
@@ -3767,7 +3767,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `true` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1651](pages/page-mainwp-server-information.php#L1651-L1759)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1651)
 
 
 
@@ -3781,7 +3781,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `static::$subPages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-groups.php](pages/page-mainwp-manage-groups.php), [line 85](pages/page-mainwp-manage-groups.php#L85-L90)
+Source: [pages/page-mainwp-manage-groups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php), [line 85](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php#L85)
 
 
 
@@ -3799,7 +3799,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getsubpages_page'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 81](pages/page-mainwp-page.php#L81-L111)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 81](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L81)
 
 
 
@@ -3815,7 +3815,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sub_pages` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 81](pages/page-mainwp-page.php#L81-L112)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 81](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L81)
 
 
 
@@ -3837,7 +3837,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 862](pages/page-mainwp-page.php#L862-L869)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 862](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L862)
 
 
 
@@ -3859,7 +3859,7 @@ Version | Description
 ------- | -----------
 `3.4` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1047](pages/page-mainwp-page.php#L1047-L1054)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1047](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1047)
 
 
 
@@ -3876,7 +3876,7 @@ Argument | Type | Description
 `$post_status` |  | 
 `$id` | `int` | Page ID.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1469](pages/page-mainwp-page.php#L1469-L1478)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1469](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1469)
 
 
 
@@ -3893,7 +3893,7 @@ Argument | Type | Description
 `$post_data` |  | 
 `$id` | `int` | Page ID.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1602](pages/page-mainwp-page.php#L1602-L1611)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1602](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1602)
 
 
 
@@ -3911,7 +3911,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_after_posting_bulkpage_result'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1650](pages/page-mainwp-page.php#L1650-L1661)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1650](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1650)
 
 
 
@@ -3930,7 +3930,7 @@ Argument | Type | Description
 `$dbwebsites` |  | 
 `$output` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 1385](pages/page-mainwp-page.php#L1385-L1662)
+Source: [pages/page-mainwp-page.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php), [line 1385](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-page.php#L1385)
 
 
 
@@ -3952,7 +3952,7 @@ Version | Description
 ------- | -----------
 `4.1.8` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-screenshots.php](pages/page-mainwp-manage-screenshots.php), [line 247](pages/page-mainwp-manage-screenshots.php#L247-L254)
+Source: [pages/page-mainwp-manage-screenshots.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-screenshots.php), [line 247](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-screenshots.php#L247)
 
 
 
@@ -3974,7 +3974,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 50](widgets/widget-mainwp-recent-posts.php#L50-L57)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 50](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L50)
 
 
 
@@ -3986,7 +3986,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Recent Posts', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-posts.php](widgets/widget-mainwp-recent-posts.php), [line 189](widgets/widget-mainwp-recent-posts.php#L189-L189)
+Source: [widgets/widget-mainwp-recent-posts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php), [line 189](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-posts.php#L189)
 
 
 
@@ -4000,7 +4000,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `5` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 50](widgets/widget-mainwp-recent-pages.php#L50-L51)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 50](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L50)
 
 
 
@@ -4012,7 +4012,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Recent Pages', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-recent-pages.php](widgets/widget-mainwp-recent-pages.php), [line 185](widgets/widget-mainwp-recent-pages.php#L185-L185)
+Source: [widgets/widget-mainwp-recent-pages.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php), [line 185](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-recent-pages.php#L185)
 
 
 <p align="center"><a href="https://github.com/pronamic/wp-documentor"><img src="https://cdn.jsdelivr.net/gh/pronamic/wp-documentor@main/logos/pronamic-wp-documentor.svgo-min.svg" alt="Pronamic WordPress Documentor" width="32" height="32"></a><br><em>Generated by <a href="https://github.com/pronamic/wp-documentor">Pronamic WordPress Documentor</a> <code>1.2.0</code></em><p>

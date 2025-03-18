@@ -10,7 +10,6 @@ Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
 
 ## Hooks in this Category
 
-- [`mainwp-activated`](#mainwp-activated) - MainWP_System constructor.
 - [`deprecated_hook_run`](#deprecated_hook_run) - Display a deprecated notice for old hooks.
 - [`mainwp_before_log_data`](#mainwp_before_log_data) - Method log_to_db()
 - [`mainwp_before_seclect_sites`](#mainwp_before_seclect_sites) - Action: mainwp_before_seclect_sites
@@ -26,7 +25,6 @@ Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
 - [`mainwp_screen_options_modal_bottom`](#mainwp_screen_options_modal_bottom) - Action: mainwp_screen_options_modal_bottom
 - [`mainwp-sitestable-prepared-items`](#mainwp-sitestable-prepared-items) - Action is being replaced with mainwp_sitestable_prepared_items
 - [`mainwp_sitestable_prepared_items`](#mainwp_sitestable_prepared_items) - Action: mainwp_sitestable_prepared_items
-- [`mainwp_cronload_action`](#mainwp_cronload_action) - Action: mainwp_cronload_action
 - [`mainwp_admin_menu`](#mainwp_admin_menu) - Action: mainwp_admin_menu
 - [`mainwp_admin_menu_sub`](#mainwp_admin_menu_sub) - Action: mainwp_admin_menu_sub
 - [`before_mainwp_menu`](#before_mainwp_menu) - Action: before_mainwp_menu
@@ -36,17 +34,9 @@ Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
 - [`mainwp_before_seclect_sites`](#mainwp_before_seclect_sites) - Action: mainwp_before_seclect_sites
 - [`mainwp_after_seclect_sites`](#mainwp_after_seclect_sites) - Action: mainwp_after_seclect_sites
 - [`mainwp_extensions_top_header_after_tab`](#mainwp_extensions_top_header_after_tab) - Method render_header()
-- [`mainwp_before_template_part`](#mainwp_before_template_part) - Action: mainwp_before_template_part
-- [`mainwp_after_template_part`](#mainwp_after_template_part) - Action: mainwp_after_template_part
 - [`mainwp_removed_extension_menu`](#mainwp_removed_extension_menu) - Remove Extensions menu from MainWP Menu.
-- [`mainwp_daily_digest_email_header`](#mainwp_daily_digest_email_header) - Daily Digest Email Header
-- [`mainwp_daily_digest_email_footer`](#mainwp_daily_digest_email_footer) - Daily Digest Email Footer
-- [`mainwp_module_log_record_insert_error`](#mainwp_module_log_record_insert_error) - Fires on a record insertion error
-- [`mainwp_module_log_record_inserted`](#mainwp_module_log_record_inserted) - Fires after a record has been inserted
 - [`mainwp_compact_action`](#mainwp_compact_action) - Create compact logs and erase records from the database.
-- [`mainwp_log_action`](#mainwp_log_action) - Schedules a purge of records.
 - [`mainwp_module_dashboard_insights_help_item`](#mainwp_module_dashboard_insights_help_item) - Action: mainwp_module_dashboard_insights_help_item
-- [`mainwp_module_log_after_connectors_registration`](#mainwp_module_log_after_connectors_registration) - Fires after all connectors have been registered.
 - [`mainwp_before_overview_widgets`](#mainwp_before_overview_widgets) - Action: mainwp_before_overview_widgets
 - [`mainwp_after_overview_widgets`](#mainwp_after_overview_widgets) - Action: 'mainwp_after_overview_widgets'
 - [`mainwp_module_log_overview_screen_options_top`](#mainwp_module_log_overview_screen_options_top) - Action: mainwp_module_log_overview_screen_options_top
@@ -129,19 +119,9 @@ Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
 - [`mainwp_disablemenuitems`](#mainwp_disablemenuitems) - Method init()
 - [`mainwp_main_menu_disable_menu_items`](#mainwp_main_menu_disable_menu_items) - Filter: mainwp_main_menu_disable_menu_items
 - [`mainwp_ui_use_wp_calendar`](#mainwp_ui_use_wp_calendar) - Filter: mainwp_ui_use_wp_calendar
-- [`mainwp_admin_enqueue_scripts`](#mainwp_admin_enqueue_scripts) - Method admin_enqueue_scripts()
 - [`mainwp_all_disablemenuitems`](#mainwp_all_disablemenuitems) - Method admin_footer()
-- [`minwp_notification_template_copy_message`](#minwp_notification_template_copy_message) - Use mainwp_notification_template_copy_message instead.
-- [`mainwp_notification_template_copy_message`](#mainwp_notification_template_copy_message) - Filter mainwp_notification_template_copy_message.
-- [`mainwp_notification_type_desc`](#mainwp_notification_type_desc) - Get email settings description.
-- [`mainwp_notification_types`](#mainwp_notification_types) - Get email notification types.
-- [`mainwp_default_emails_fields`](#mainwp_default_emails_fields) - Get default email notifications values.
 - [`mainwp-getmetaboxes`](#mainwp-getmetaboxes) - Method apply_filter()
-- [`{$filter}`](#filter) - Method apply_filter()
-- [`mainwp_log_status`](#mainwp_log_status) - MainWP_Logger constructor.
-- [`mainwp_log_specific`](#mainwp_log_specific) - MainWP_Logger constructor.
 - [`mainwp_log_to_db_data`](#mainwp_log_to_db_data) - Method log_to_db()
-- [`mainwp_file_uploader_size_limit`](#mainwp_file_uploader_size_limit) - Filter: 'mainwp_file_uploader_size_limit'
 - [`mainwp_menu_logo_href`](#mainwp_menu_logo_href) - *Arguments*
 - [`mainwp_menu_logo_src`](#mainwp_menu_logo_src) - *Arguments*
 - [`mainwp_menu_logo_alt`](#mainwp_menu_logo_alt) - *Arguments*
@@ -151,7 +131,6 @@ Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
 - [`mainwp_widget_boxes_show_widgets`](#mainwp_widget_boxes_show_widgets) - Method do_widget_boxes()
 - [`mainwp-widgets-screen-options`](#mainwp-widgets-screen-options) - Method render_screen_options()
 - [`mainwp_widgets_screen_options`](#mainwp_widgets_screen_options) - Filter: mainwp_widgets_screen_options
-- [`mainwp_format_email`](#mainwp_format_email) - Method format_email()
 - [`mainwp-sitestable-item`](#mainwp-sitestable-item) - Filter is being replaced with mainwp_sitestable_item
 - [`mainwp_sitestable_item`](#mainwp_sitestable_item) - Filter: mainwp_sitestable_item
 - [`mainwp-sitestable-getcolumns`](#mainwp-sitestable-getcolumns) - Filter is being replaced with mainwp_sitestable_getcolumns
@@ -159,29 +138,12 @@ Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
 - [`mainwp_sitestable_prepare_extra_view`](#mainwp_sitestable_prepare_extra_view) - Prepare the items to be listed.
 - [`mainwp_sitestable_display_row_columns`](#mainwp_sitestable_display_row_columns) - Get table rows.
 - [`mainwp_sitestable_render_column`](#mainwp_sitestable_render_column) - Columns for a single row.
-- [`mainwp_open_hide_referrer`](#mainwp_open_hide_referrer) - Filter: mainwp_open_hide_referrer
-- [`mainwp_is_enable_schedule_job`](#mainwp_is_enable_schedule_job) - Method init_mainwp_cron()
-- [`mainwp_text_format_email`](#mainwp_text_format_email) - Filter: mainwp_text_format_email
-- [`mainwp_license_deactivated_alert_plain_text`](#mainwp_license_deactivated_alert_plain_text) - Method cron_deactivated_licenses_alert()
-- [`mainwp_register_regular_sequence_process`](#mainwp_register_regular_sequence_process) - Method perform_sequence_process
-- [`mainwp_try_visit_follow_location`](#mainwp_try_visit_follow_location) - Method try visit.
-- [`mainwp_curl_curlopt_resolve`](#mainwp_curl_curlopt_resolve) - Method try visit.
-- [`mainwp_fetch_urls_chunk_size`](#mainwp_fetch_urls_chunk_size) - Method fetch_urls_authed()
 - [`mainwp_init_primary_menu_items`](#mainwp_init_primary_menu_items) - Method init_mainwp_menu_items()
 - [`mainwp_is_disable_menu_item`](#mainwp_is_disable_menu_item) - Method is_disable_menu_item
 - [`mainwp_main_menu`](#mainwp_main_menu) - Filter: mainwp_main_menu
 - [`mainwp_main_menu_submenu`](#mainwp_main_menu_submenu) - Filter: mainwp_main_menu_submenu
 - [`mainwp_go_back_wpadmin_link`](#mainwp_go_back_wpadmin_link) - Filter: mainwp_go_back_wpadmin_link
 - [`mainwp_go_back_wpadmin_link`](#mainwp_go_back_wpadmin_link) - Filter: mainwp_go_back_wpadmin_link
-- [`mainwp_get_template`](#mainwp_get_template) - Filter: mainwp_get_template
-- [`mainwp_locate_template`](#mainwp_locate_template) - Filer: mainwp_locate_template
-- [`mainwp_get_notification_template_name_by_type`](#mainwp_get_notification_template_name_by_type) - Get default template name by email/notification type.
-- [`mainwp_default_template_source_dir`](#mainwp_default_template_source_dir) - Method handle_template_file_action()
-- [`mainwp_module_log_record_array`](#mainwp_module_log_record_array) - Filter allows modification of record information
-- [`mainwp_module_log_query_args`](#mainwp_module_log_query_args) - Filter allows additional arguments to query $args
-- [`mainwp_module_log_current_agent`](#mainwp_module_log_current_agent) - Filter the current agent string
-- [`mainwp_module_log_agent_label`](#mainwp_module_log_agent_label) - Filter agent labels
-- [`mainwp_module_log_connectors`](#mainwp_module_log_connectors) - Allows for adding additional connectors via classes that extend Connector.
 - [`mainwp_insights_getmetaboxes`](#mainwp_insights_getmetaboxes) - Method add_meta_boxes()
 - [`mainwp_module_log_overview_enabled_widgets`](#mainwp_module_log_overview_enabled_widgets) - Unset unwanted Widgets
 - [`mainwp_module_log_widgets_screen_options`](#mainwp_module_log_widgets_screen_options) - Filter: mainwp_module_log_widgets_screen_options
@@ -203,24 +165,6 @@ Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
 
 ## Hook Details
 
-### `mainwp-activated`
-
-*MainWP_System constructor.*
-
-Runs any time class is called.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`array()` |  | 
-`'4.0.7.2'` |  | 
-`'mainwp_activated'` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 82](class/class-mainwp-system.php#L82-L246)
-
-
-
 ### `deprecated_hook_run`
 
 *Display a deprecated notice for old hooks.*
@@ -234,7 +178,7 @@ Argument | Type | Description
 `$version` |  | 
 `$message` | `string` | message.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-deprecated-hooks.php](class/class-mainwp-deprecated-hooks.php), [line 152](class/class-mainwp-deprecated-hooks.php#L152-L166)
+Source: [class/class-mainwp-deprecated-hooks.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-deprecated-hooks.php), [line 152](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-deprecated-hooks.php#L152)
 
 
 
@@ -252,7 +196,7 @@ Argument | Type | Description
 `$priority` | `int` | Set priority.
 `$log_color` | `int` | Set color.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-logger.php](class/class-mainwp-logger.php), [line 426](class/class-mainwp-logger.php#L426-L465)
+Source: [class/class-mainwp-logger.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-logger.php), [line 426](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-logger.php#L426)
 
 
 
@@ -269,7 +213,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 72](class/class-mainwp-ui.php#L72-L79)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 72](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L72)
 
 
 
@@ -286,7 +230,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 85](class/class-mainwp-ui.php#L85-L92)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 85](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L85)
 
 
 
@@ -303,7 +247,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 823](class/class-mainwp-ui.php#L823-L830)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 823](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L823)
 
 
 
@@ -320,7 +264,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 837](class/class-mainwp-ui.php#L837-L844)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 837](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L837)
 
 
 
@@ -337,7 +281,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1152](class/class-mainwp-ui.php#L1152-L1159)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1152](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1152)
 
 
 
@@ -354,7 +298,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1188](class/class-mainwp-ui.php#L1188-L1195)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1188](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1188)
 
 
 
@@ -371,7 +315,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1201](class/class-mainwp-ui.php#L1201-L1208)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1201](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1201)
 
 
 
@@ -388,7 +332,7 @@ Version | Description
 ------- | -----------
 `4.3` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1931](class/class-mainwp-ui.php#L1931-L1938)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1931](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1931)
 
 
 
@@ -405,7 +349,7 @@ Version | Description
 ------- | -----------
 `4.3` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1961](class/class-mainwp-ui.php#L1961-L1968)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1961](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1961)
 
 
 
@@ -422,7 +366,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 2480](class/class-mainwp-ui.php#L2480-L2487)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 2480](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L2480)
 
 
 
@@ -439,7 +383,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 2572](class/class-mainwp-ui.php#L2572-L2579)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 2572](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L2572)
 
 
 
@@ -455,7 +399,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_sitestable_prepared_items'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 1018](class/class-mainwp-manage-sites-list-table.php#L1018-L1023)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1018](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1018)
 
 
 
@@ -472,18 +416,7 @@ Argument | Type | Description
 `$websites` | `object` | Object containing child sites data.
 `$site_ids` | `array` | Array containing IDs of all child sites.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 1025](class/class-mainwp-manage-sites-list-table.php#L1025-L1035)
-
-
-
-### `mainwp_cronload_action`
-
-*Action: mainwp_cronload_action*
-
-Hooks MainWP cron jobs actions.
-
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-cron-jobs.php](class/class-mainwp-system-cron-jobs.php), [line 61](class/class-mainwp-system-cron-jobs.php#L61-L68)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1025](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1025)
 
 
 
@@ -500,7 +433,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 303](class/class-mainwp-menu.php#L303-L310)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 303](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L303)
 
 
 
@@ -517,7 +450,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 450](class/class-mainwp-menu.php#L450-L457)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 450](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L450)
 
 
 
@@ -534,7 +467,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 709](class/class-mainwp-menu.php#L709-L716)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 709](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L709)
 
 
 
@@ -551,7 +484,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 951](class/class-mainwp-menu.php#L951-L958)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 951](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L951)
 
 
 
@@ -568,7 +501,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 1073](class/class-mainwp-menu.php#L1073-L1080)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 1073](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L1073)
 
 
 
@@ -585,7 +518,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 1271](class/class-mainwp-menu.php#L1271-L1278)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 1271](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L1271)
 
 
 
@@ -602,7 +535,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui-select-sites.php](class/class-mainwp-ui-select-sites.php), [line 96](class/class-mainwp-ui-select-sites.php#L96-L103)
+Source: [class/class-mainwp-ui-select-sites.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui-select-sites.php), [line 96](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui-select-sites.php#L96)
 
 
 
@@ -619,7 +552,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui-select-sites.php](class/class-mainwp-ui-select-sites.php), [line 124](class/class-mainwp-ui-select-sites.php#L124-L131)
+Source: [class/class-mainwp-ui-select-sites.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui-select-sites.php), [line 124](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui-select-sites.php#L124)
 
 
 
@@ -635,55 +568,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$shownPage` | `string` | The page slug shown at this moment.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-extensions-view.php](class/class-mainwp-extensions-view.php), [line 50](class/class-mainwp-extensions-view.php#L50-L99)
-
-
-
-### `mainwp_before_template_part`
-
-*Action: mainwp_before_template_part*
-
-Fires before the email template is loaded.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$template_name` | `string` | Template name.
-`$located` | `resource` | Template file.
-`$args` | `array` | Args.
-
-**Changelog**
-
-Version | Description
-------- | -----------
-`4.1` | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-template.php](class/class-mainwp-notification-template.php), [line 166](class/class-mainwp-notification-template.php#L166-L177)
-
-
-
-### `mainwp_after_template_part`
-
-*Action: mainwp_after_template_part*
-
-Fires after the email template is loaded.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$template_name` | `string` | Template name.
-`$located` | `resource` | Template file.
-`$args` | `array` | Args.
-
-**Changelog**
-
-Version | Description
-------- | -----------
-`4.1` | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-template.php](class/class-mainwp-notification-template.php), [line 181](class/class-mainwp-notification-template.php#L181-L192)
+Source: [class/class-mainwp-extensions-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-extensions-view.php), [line 50](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-extensions-view.php#L50)
 
 
 
@@ -697,71 +582,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$key` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-post-extension-handler.php](class/class-mainwp-post-extension-handler.php), [line 408](class/class-mainwp-post-extension-handler.php#L408-L427)
-
-
-
-### `mainwp_daily_digest_email_header`
-
-*Daily Digest Email Header*
-
-Fires at the top of the daily digest email template.
-
-
-**Changelog**
-
-Version | Description
-------- | -----------
-`4.1` | 
-
-Source: [../sources/mainwp-dashboard/templates/emails/mainwp-daily-digest-email.php](templates/emails/mainwp-daily-digest-email.php), [line 29](templates/emails/mainwp-daily-digest-email.php#L29-L36)
-
-
-
-### `mainwp_daily_digest_email_footer`
-
-*Daily Digest Email Footer*
-
-Fires at the bottom of the daily digest email template.
-
-
-**Changelog**
-
-Version | Description
-------- | -----------
-`4.1` | 
-
-Source: [../sources/mainwp-dashboard/templates/emails/mainwp-daily-digest-email.php](templates/emails/mainwp-daily-digest-email.php), [line 177](templates/emails/mainwp-daily-digest-email.php#L177-L184)
-
-
-
-### `mainwp_module_log_record_insert_error`
-
-*Fires on a record insertion error*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$record` | `array` | 
-`false` |  | 
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-db.php](modules/logs/classes/class-log-db.php), [line 77](modules/logs/classes/class-log-db.php#L77-L83)
-
-
-
-### `mainwp_module_log_record_inserted`
-
-*Fires after a record has been inserted*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$record_id` | `int` | 
-`$record` | `array` | 
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-db.php](modules/logs/classes/class-log-db.php), [line 88](modules/logs/classes/class-log-db.php#L88-L94)
+Source: [class/class-mainwp-post-extension-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-extension-handler.php), [line 408](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-extension-handler.php#L408)
 
 
 
@@ -779,22 +600,7 @@ Argument | Type | Description
 `$start_time` | `int` | start time to compact.
 `$end_time` | `int` | end time to compact.
 
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-db.php](modules/logs/classes/class-log-db.php), [line 205](modules/logs/classes/class-log-db.php#L205-L266)
-
-
-
-### `mainwp_log_action`
-
-*Schedules a purge of records.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`'module log :: purge logs schedule start.'` |  | 
-`MainWP_Logger::LOGS_AUTO_PURGE_LOG_PRIORITY` |  | 
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-admin.php](modules/logs/classes/class-log-admin.php), [line 192](modules/logs/classes/class-log-admin.php#L192-L217)
+Source: [modules/logs/classes/class-log-db.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-db.php), [line 205](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-db.php#L205)
 
 
 
@@ -815,22 +621,7 @@ Version | Description
 ------- | -----------
 `5.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-admin.php](modules/logs/classes/class-log-admin.php), [line 309](modules/logs/classes/class-log-admin.php#L309-L320)
-
-
-
-### `mainwp_module_log_after_connectors_registration`
-
-*Fires after all connectors have been registered.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$labels` | `array` | All register connectors labels array
-`$this` |  | 
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-connectors.php](modules/logs/classes/class-log-connectors.php), [line 179](modules/logs/classes/class-log-connectors.php#L179-L185)
+Source: [modules/logs/classes/class-log-admin.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-admin.php), [line 309](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-admin.php#L309)
 
 
 
@@ -852,7 +643,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 910](modules/logs/pages/page-log-insights-page.php#L910-L917)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 910](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L910)
 
 
 
@@ -874,7 +665,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 932](modules/logs/pages/page-log-insights-page.php#L932-L939)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 932](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L932)
 
 
 
@@ -891,7 +682,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 969](modules/logs/pages/page-log-insights-page.php#L969-L976)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 969](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L969)
 
 
 
@@ -908,7 +699,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 983](modules/logs/pages/page-log-insights-page.php#L983-L990)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 983](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L983)
 
 
 
@@ -925,7 +716,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 1057](modules/logs/pages/page-log-insights-page.php#L1057-L1064)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 1057](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L1057)
 
 
 
@@ -942,7 +733,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 1093](modules/logs/pages/page-log-insights-page.php#L1093-L1100)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 1093](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L1093)
 
 
 
@@ -964,7 +755,7 @@ Version | Description
 ------- | -----------
 `5.4` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-manage-insights-events-page.php](modules/logs/pages/page-log-manage-insights-events-page.php), [line 186](modules/logs/pages/page-log-manage-insights-events-page.php#L186-L193)
+Source: [modules/logs/pages/page-log-manage-insights-events-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php), [line 186](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php#L186)
 
 
 
@@ -986,7 +777,7 @@ Version | Description
 ------- | -----------
 `5.4` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-manage-insights-events-page.php](modules/logs/pages/page-log-manage-insights-events-page.php), [line 200](modules/logs/pages/page-log-manage-insights-events-page.php#L200-L207)
+Source: [modules/logs/pages/page-log-manage-insights-events-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php), [line 200](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php#L200)
 
 
 
@@ -1008,7 +799,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-users-widget.php](modules/logs/widgets/widget-log-users-widget.php), [line 91](modules/logs/widgets/widget-log-users-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-users-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-users-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-users-widget.php#L91)
 
 
 
@@ -1030,7 +821,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-users-widget.php](modules/logs/widgets/widget-log-users-widget.php), [line 106](modules/logs/widgets/widget-log-users-widget.php#L106-L113)
+Source: [modules/logs/widgets/widget-log-users-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-users-widget.php), [line 106](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-users-widget.php#L106)
 
 
 
@@ -1052,7 +843,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-pages-widget.php](modules/logs/widgets/widget-log-pages-widget.php), [line 91](modules/logs/widgets/widget-log-pages-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-pages-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-pages-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-pages-widget.php#L91)
 
 
 
@@ -1074,7 +865,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-pages-widget.php](modules/logs/widgets/widget-log-pages-widget.php), [line 106](modules/logs/widgets/widget-log-pages-widget.php#L106-L113)
+Source: [modules/logs/widgets/widget-log-pages-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-pages-widget.php), [line 106](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-pages-widget.php#L106)
 
 
 
@@ -1096,7 +887,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-recent-events-widget.php](modules/logs/widgets/widget-log-recent-events-widget.php), [line 85](modules/logs/widgets/widget-log-recent-events-widget.php#L85-L92)
+Source: [modules/logs/widgets/widget-log-recent-events-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-recent-events-widget.php), [line 85](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-recent-events-widget.php#L85)
 
 
 
@@ -1118,7 +909,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-recent-events-widget.php](modules/logs/widgets/widget-log-recent-events-widget.php), [line 100](modules/logs/widgets/widget-log-recent-events-widget.php#L100-L107)
+Source: [modules/logs/widgets/widget-log-recent-events-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-recent-events-widget.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-recent-events-widget.php#L100)
 
 
 
@@ -1140,7 +931,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-plugins-widget.php](modules/logs/widgets/widget-log-plugins-widget.php), [line 91](modules/logs/widgets/widget-log-plugins-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-plugins-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-plugins-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-plugins-widget.php#L91)
 
 
 
@@ -1162,7 +953,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-plugins-widget.php](modules/logs/widgets/widget-log-plugins-widget.php), [line 106](modules/logs/widgets/widget-log-plugins-widget.php#L106-L113)
+Source: [modules/logs/widgets/widget-log-plugins-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-plugins-widget.php), [line 106](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-plugins-widget.php#L106)
 
 
 
@@ -1184,7 +975,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-wp-widget.php](modules/logs/widgets/widget-log-graph-wp-widget.php), [line 76](modules/logs/widgets/widget-log-graph-wp-widget.php#L76-L83)
+Source: [modules/logs/widgets/widget-log-graph-wp-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-wp-widget.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-wp-widget.php#L76)
 
 
 
@@ -1206,7 +997,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-wp-widget.php](modules/logs/widgets/widget-log-graph-wp-widget.php), [line 91](modules/logs/widgets/widget-log-graph-wp-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-graph-wp-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-wp-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-wp-widget.php#L91)
 
 
 
@@ -1228,7 +1019,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-status-widget.php](modules/logs/widgets/widget-log-graph-status-widget.php), [line 76](modules/logs/widgets/widget-log-graph-status-widget.php#L76-L83)
+Source: [modules/logs/widgets/widget-log-graph-status-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-status-widget.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-status-widget.php#L76)
 
 
 
@@ -1250,7 +1041,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-status-widget.php](modules/logs/widgets/widget-log-graph-status-widget.php), [line 91](modules/logs/widgets/widget-log-graph-status-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-graph-status-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-status-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-status-widget.php#L91)
 
 
 
@@ -1272,7 +1063,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-clients-widget.php](modules/logs/widgets/widget-log-graph-clients-widget.php), [line 76](modules/logs/widgets/widget-log-graph-clients-widget.php#L76-L83)
+Source: [modules/logs/widgets/widget-log-graph-clients-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-clients-widget.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-clients-widget.php#L76)
 
 
 
@@ -1294,7 +1085,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-clients-widget.php](modules/logs/widgets/widget-log-graph-clients-widget.php), [line 91](modules/logs/widgets/widget-log-graph-clients-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-graph-clients-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-clients-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-clients-widget.php#L91)
 
 
 
@@ -1316,7 +1107,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-plugins-widget.php](modules/logs/widgets/widget-log-graph-plugins-widget.php), [line 76](modules/logs/widgets/widget-log-graph-plugins-widget.php#L76-L83)
+Source: [modules/logs/widgets/widget-log-graph-plugins-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-plugins-widget.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-plugins-widget.php#L76)
 
 
 
@@ -1338,7 +1129,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-plugins-widget.php](modules/logs/widgets/widget-log-graph-plugins-widget.php), [line 91](modules/logs/widgets/widget-log-graph-plugins-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-graph-plugins-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-plugins-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-plugins-widget.php#L91)
 
 
 
@@ -1360,7 +1151,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-php-widget.php](modules/logs/widgets/widget-log-graph-php-widget.php), [line 76](modules/logs/widgets/widget-log-graph-php-widget.php#L76-L83)
+Source: [modules/logs/widgets/widget-log-graph-php-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-php-widget.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-php-widget.php#L76)
 
 
 
@@ -1382,7 +1173,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-php-widget.php](modules/logs/widgets/widget-log-graph-php-widget.php), [line 91](modules/logs/widgets/widget-log-graph-php-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-graph-php-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-php-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-php-widget.php#L91)
 
 
 
@@ -1404,7 +1195,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-themes-widget.php](modules/logs/widgets/widget-log-themes-widget.php), [line 91](modules/logs/widgets/widget-log-themes-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-themes-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-themes-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-themes-widget.php#L91)
 
 
 
@@ -1426,7 +1217,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-themes-widget.php](modules/logs/widgets/widget-log-themes-widget.php), [line 106](modules/logs/widgets/widget-log-themes-widget.php#L106-L113)
+Source: [modules/logs/widgets/widget-log-themes-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-themes-widget.php), [line 106](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-themes-widget.php#L106)
 
 
 
@@ -1448,7 +1239,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-sites-widget.php](modules/logs/widgets/widget-log-sites-widget.php), [line 92](modules/logs/widgets/widget-log-sites-widget.php#L92-L99)
+Source: [modules/logs/widgets/widget-log-sites-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-sites-widget.php), [line 92](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-sites-widget.php#L92)
 
 
 
@@ -1470,7 +1261,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-sites-widget.php](modules/logs/widgets/widget-log-sites-widget.php), [line 107](modules/logs/widgets/widget-log-sites-widget.php#L107-L114)
+Source: [modules/logs/widgets/widget-log-sites-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-sites-widget.php), [line 107](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-sites-widget.php#L107)
 
 
 
@@ -1492,7 +1283,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-tags-widget.php](modules/logs/widgets/widget-log-graph-tags-widget.php), [line 78](modules/logs/widgets/widget-log-graph-tags-widget.php#L78-L85)
+Source: [modules/logs/widgets/widget-log-graph-tags-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-tags-widget.php), [line 78](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-tags-widget.php#L78)
 
 
 
@@ -1514,7 +1305,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-tags-widget.php](modules/logs/widgets/widget-log-graph-tags-widget.php), [line 93](modules/logs/widgets/widget-log-graph-tags-widget.php#L93-L100)
+Source: [modules/logs/widgets/widget-log-graph-tags-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-tags-widget.php), [line 93](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-tags-widget.php#L93)
 
 
 
@@ -1536,7 +1327,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-posts-widget.php](modules/logs/widgets/widget-log-posts-widget.php), [line 91](modules/logs/widgets/widget-log-posts-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-posts-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-posts-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-posts-widget.php#L91)
 
 
 
@@ -1558,7 +1349,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-posts-widget.php](modules/logs/widgets/widget-log-posts-widget.php), [line 106](modules/logs/widgets/widget-log-posts-widget.php#L106-L113)
+Source: [modules/logs/widgets/widget-log-posts-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-posts-widget.php), [line 106](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-posts-widget.php#L106)
 
 
 
@@ -1580,7 +1371,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-themes-widget.php](modules/logs/widgets/widget-log-graph-themes-widget.php), [line 76](modules/logs/widgets/widget-log-graph-themes-widget.php#L76-L83)
+Source: [modules/logs/widgets/widget-log-graph-themes-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-themes-widget.php), [line 76](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-themes-widget.php#L76)
 
 
 
@@ -1602,7 +1393,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-graph-themes-widget.php](modules/logs/widgets/widget-log-graph-themes-widget.php), [line 91](modules/logs/widgets/widget-log-graph-themes-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-graph-themes-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-themes-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-graph-themes-widget.php#L91)
 
 
 
@@ -1624,7 +1415,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-clients-widget.php](modules/logs/widgets/widget-log-clients-widget.php), [line 91](modules/logs/widgets/widget-log-clients-widget.php#L91-L98)
+Source: [modules/logs/widgets/widget-log-clients-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-clients-widget.php), [line 91](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-clients-widget.php#L91)
 
 
 
@@ -1646,7 +1437,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/widgets/widget-log-clients-widget.php](modules/logs/widgets/widget-log-clients-widget.php), [line 106](modules/logs/widgets/widget-log-clients-widget.php#L106-L113)
+Source: [modules/logs/widgets/widget-log-clients-widget.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-clients-widget.php), [line 106](https://github.com/mainwp/mainwp/blob/master/modules/logs/widgets/widget-log-clients-widget.php#L106)
 
 
 
@@ -1668,7 +1459,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 373](modules/cost-tracker/classes/class-cost-tracker-summary.php#L373-L380)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 373](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L373)
 
 
 
@@ -1690,7 +1481,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 393](modules/cost-tracker/classes/class-cost-tracker-summary.php#L393-L400)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 393](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L393)
 
 
 
@@ -1707,7 +1498,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 437](modules/cost-tracker/classes/class-cost-tracker-summary.php#L437-L444)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 437](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L437)
 
 
 
@@ -1724,7 +1515,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 451](modules/cost-tracker/classes/class-cost-tracker-summary.php#L451-L458)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 451](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L451)
 
 
 
@@ -1746,7 +1537,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 515](modules/cost-tracker/classes/class-cost-tracker-summary.php#L515-L522)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 515](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L515)
 
 
 
@@ -1768,7 +1559,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 551](modules/cost-tracker/classes/class-cost-tracker-summary.php#L551-L558)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 551](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L551)
 
 
 
@@ -1791,7 +1582,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php), [line 185](modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php#L185-L195)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php), [line 185](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php#L185)
 
 
 
@@ -1814,7 +1605,7 @@ Version | Description
 ------- | -----------
 `5.0.1` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php), [line 223](modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php#L223-L233)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php), [line 223](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php#L223)
 
 
 
@@ -1837,7 +1628,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php), [line 193](modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php#L193-L203)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php), [line 193](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php#L193)
 
 
 
@@ -1860,7 +1651,7 @@ Version | Description
 ------- | -----------
 `5.0.1` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php), [line 243](modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php#L243-L253)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php), [line 243](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php#L243)
 
 
 
@@ -1883,7 +1674,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php), [line 190](modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php#L190-L200)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php), [line 190](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php#L190)
 
 
 
@@ -1906,7 +1697,7 @@ Version | Description
 ------- | -----------
 `5.0.1` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php), [line 240](modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php#L240-L250)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php), [line 240](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php#L240)
 
 
 
@@ -1928,7 +1719,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php](modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php), [line 65](modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php#L65-L72)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php), [line 65](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php#L65)
 
 
 
@@ -1950,7 +1741,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php](modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php), [line 79](modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php#L79-L86)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php), [line 79](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-payment-left-this-month.php#L79)
 
 
 
@@ -1972,7 +1763,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php](modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php), [line 65](modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php#L65-L72)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php), [line 65](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php#L65)
 
 
 
@@ -1994,7 +1785,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php](modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php), [line 79](modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php#L79-L86)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php), [line 79](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-totals.php#L79)
 
 
 
@@ -2016,7 +1807,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php](modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php), [line 65](modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php#L65-L72)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php), [line 65](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php#L65)
 
 
 
@@ -2038,7 +1829,7 @@ Version | Description
 ------- | -----------
 `5.0.2` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php](modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php), [line 79](modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php#L79-L86)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php), [line 79](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-category-totals.php#L79)
 
 
 
@@ -2055,7 +1846,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-update-admin-passwords.php](pages/page-mainwp-bulk-update-admin-passwords.php), [line 193](pages/page-mainwp-bulk-update-admin-passwords.php#L193-L200)
+Source: [pages/page-mainwp-bulk-update-admin-passwords.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php), [line 193](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php#L193)
 
 
 
@@ -2072,7 +1863,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-update-admin-passwords.php](pages/page-mainwp-bulk-update-admin-passwords.php), [line 213](pages/page-mainwp-bulk-update-admin-passwords.php#L213-L220)
+Source: [pages/page-mainwp-bulk-update-admin-passwords.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php), [line 213](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php#L213)
 
 
 
@@ -2094,7 +1885,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-overview.php](pages/page-mainwp-overview.php), [line 382](pages/page-mainwp-overview.php#L382-L389)
+Source: [pages/page-mainwp-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php), [line 382](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php#L382)
 
 
 
@@ -2116,7 +1907,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-overview.php](pages/page-mainwp-overview.php), [line 395](pages/page-mainwp-overview.php#L395-L402)
+Source: [pages/page-mainwp-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php), [line 395](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php#L395)
 
 
 
@@ -2133,7 +1924,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 422](pages/page-mainwp-server-information.php#L422-L429)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 422](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L422)
 
 
 
@@ -2150,7 +1941,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 567](pages/page-mainwp-server-information.php#L567-L574)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 567](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L567)
 
 
 
@@ -2167,7 +1958,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1044](pages/page-mainwp-server-information.php#L1044-L1051)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1044](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1044)
 
 
 
@@ -2184,7 +1975,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1181](pages/page-mainwp-server-information.php#L1181-L1188)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1181](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1181)
 
 
 
@@ -2201,7 +1992,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1449](pages/page-mainwp-server-information.php#L1449-L1456)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1449](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1449)
 
 
 
@@ -2218,7 +2009,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1501](pages/page-mainwp-server-information.php#L1501-L1508)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1501](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1501)
 
 
 
@@ -2240,7 +2031,7 @@ Version | Description
 ------- | -----------
 `4.3` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 316](pages/page-mainwp-client-overview.php#L316-L323)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 316](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L316)
 
 
 
@@ -2262,7 +2053,7 @@ Version | Description
 ------- | -----------
 `4.3` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 329](pages/page-mainwp-client-overview.php#L329-L336)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 329](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L329)
 
 
 
@@ -2279,7 +2070,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 456](pages/page-mainwp-client-overview.php#L456-L463)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 456](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L456)
 
 
 
@@ -2296,7 +2087,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 492](pages/page-mainwp-client-overview.php#L492-L499)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 492](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L492)
 
 
 
@@ -2318,7 +2109,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-handler.php](pages/page-mainwp-extensions-handler.php), [line 345](pages/page-mainwp-extensions-handler.php#L345-L354)
+Source: [pages/page-mainwp-extensions-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php), [line 345](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php#L345)
 
 
 
@@ -2340,7 +2131,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-notes.php](widgets/widget-mainwp-notes.php), [line 70](widgets/widget-mainwp-notes.php#L70-L79)
+Source: [widgets/widget-mainwp-notes.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-notes.php), [line 70](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-notes.php#L70)
 
 
 
@@ -2362,7 +2153,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-notes.php](widgets/widget-mainwp-notes.php), [line 95](widgets/widget-mainwp-notes.php#L95-L104)
+Source: [widgets/widget-mainwp-notes.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-notes.php), [line 95](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-notes.php#L95)
 
 
 
@@ -2379,7 +2170,7 @@ Version | Description
 ------- | -----------
 `5.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-get-started.php](widgets/widget-mainwp-get-started.php), [line 93](widgets/widget-mainwp-get-started.php#L93-L100)
+Source: [widgets/widget-mainwp-get-started.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-get-started.php), [line 93](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-get-started.php#L93)
 
 
 
@@ -2396,7 +2187,7 @@ Version | Description
 ------- | -----------
 `5.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-get-started.php](widgets/widget-mainwp-get-started.php), [line 135](widgets/widget-mainwp-get-started.php#L135-L142)
+Source: [widgets/widget-mainwp-get-started.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-get-started.php), [line 135](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-get-started.php#L135)
 
 
 
@@ -2418,7 +2209,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-site-actions.php](widgets/widget-mainwp-site-actions.php), [line 150](widgets/widget-mainwp-site-actions.php#L150-L159)
+Source: [widgets/widget-mainwp-site-actions.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php), [line 150](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php#L150)
 
 
 
@@ -2440,7 +2231,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-site-actions.php](widgets/widget-mainwp-site-actions.php), [line 162](widgets/widget-mainwp-site-actions.php#L162-L171)
+Source: [widgets/widget-mainwp-site-actions.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php), [line 162](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php#L162)
 
 
 
@@ -2462,7 +2253,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-site-actions.php](widgets/widget-mainwp-site-actions.php), [line 180](widgets/widget-mainwp-site-actions.php#L180-L189)
+Source: [widgets/widget-mainwp-site-actions.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php), [line 180](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php#L180)
 
 
 
@@ -2484,7 +2275,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-site-actions.php](widgets/widget-mainwp-site-actions.php), [line 205](widgets/widget-mainwp-site-actions.php#L205-L214)
+Source: [widgets/widget-mainwp-site-actions.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php), [line 205](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php#L205)
 
 
 
@@ -2500,7 +2291,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$_mainwp_disable_menus_items` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 584](class/class-mainwp-system.php#L584-L598)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 584](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L584)
 
 
 
@@ -2516,7 +2307,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$_mainwp_disable_menus_items` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 600](class/class-mainwp-system.php#L600-L607)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 600](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L600)
 
 
 
@@ -2538,23 +2329,7 @@ Version | Description
 ------- | -----------
 `4.0.5` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 821](class/class-mainwp-system.php#L821-L828)
-
-
-
-### `mainwp_admin_enqueue_scripts`
-
-*Method admin_enqueue_scripts()*
-
-Enqueue all Mainwp Admin Scripts.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`array()` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 1053](class/class-mainwp-system.php#L1053-L1102)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 821](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L821)
 
 
 
@@ -2570,89 +2345,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$_mainwp_disable_menus_items` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 1240](class/class-mainwp-system.php#L1240-L1330)
-
-
-
-### `minwp_notification_template_copy_message`
-
-*Use mainwp_notification_template_copy_message instead.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`''` |  | 
-`$templ` |  | 
-`$type` |  | 
-`$overrided` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.php](class/class-mainwp-notification-settings.php), [line 330](class/class-mainwp-notification-settings.php#L330-L336)
-
-
-
-### `mainwp_notification_template_copy_message`
-
-*Filter mainwp_notification_template_copy_message.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$copy_message` |  | 
-`$templ` |  | 
-`$type` |  | 
-`$overrided` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.php](class/class-mainwp-notification-settings.php), [line 337](class/class-mainwp-notification-settings.php#L337-L343)
-
-
-
-### `mainwp_notification_type_desc`
-
-*Get email settings description.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`''` |  | 
-`$type` | `string` | Email notification type.
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.php](class/class-mainwp-notification-settings.php), [line 378](class/class-mainwp-notification-settings.php#L378-L399)
-
-
-
-### `mainwp_notification_types`
-
-*Get email notification types.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`array()` |  | 
-`$type` | `string` | Email notification type.
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.php](class/class-mainwp-notification-settings.php), [line 426](class/class-mainwp-notification-settings.php#L426-L447)
-
-
-
-### `mainwp_default_emails_fields`
-
-*Get default email notifications values.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`array()` |  | 
-`$recipients` |  | 
-`$type` | `string` | Email type.
-`$field` | `string` | Field name.
-`$general` | `bool` | General or individual site settings.
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-settings.php](class/class-mainwp-notification-settings.php), [line 551](class/class-mainwp-notification-settings.php#L551-L600)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 1240](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L1240)
 
 
 
@@ -2670,55 +2363,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getmetaboxes'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-handler.php](class/class-mainwp-system-handler.php), [line 188](class/class-mainwp-system-handler.php#L188-L203)
-
-
-
-### `{$filter}`
-
-*Method apply_filter()*
-
-Apply filter
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$value` | `array` | Input value.
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-handler.php](class/class-mainwp-system-handler.php), [line 188](class/class-mainwp-system-handler.php#L188-L205)
-
-
-
-### `mainwp_log_status`
-
-*MainWP_Logger constructor.*
-
-Run each time the class is called.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$enabled` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-logger.php](class/class-mainwp-logger.php), [line 129](class/class-mainwp-logger.php#L129-L141)
-
-
-
-### `mainwp_log_specific`
-
-*MainWP_Logger constructor.*
-
-Run each time the class is called.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$specific` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-logger.php](class/class-mainwp-logger.php), [line 129](class/class-mainwp-logger.php#L129-L142)
+Source: [class/class-mainwp-system-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-handler.php), [line 188](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-handler.php#L188)
 
 
 
@@ -2734,29 +2379,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$data` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-logger.php](class/class-mainwp-logger.php), [line 426](class/class-mainwp-logger.php#L426-L495)
-
-
-
-### `mainwp_file_uploader_size_limit`
-
-*Filter: 'mainwp_file_uploader_size_limit'*
-
-Filters the maximum upload file size. Default: 8388608 Bytes (B) = 8 Megabytes (MB)
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$sizeLimit` |  | 
-
-**Changelog**
-
-Version | Description
-------- | -----------
-`4.1` | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-qq2-file-uploader.php](class/class-mainwp-qq2-file-uploader.php), [line 56](class/class-mainwp-qq2-file-uploader.php#L56-L63)
+Source: [class/class-mainwp-logger.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-logger.php), [line 426](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-logger.php#L426)
 
 
 
@@ -2768,7 +2391,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `admin_url('admin.php?page=mainwp_tab')` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 889](class/class-mainwp-ui.php#L889-L889)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 889](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L889)
 
 
 
@@ -2780,7 +2403,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `MAINWP_PLUGIN_URL . 'assets/images/mainwp-icon.svg'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 901](class/class-mainwp-ui.php#L901-L901)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 901](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L901)
 
 
 
@@ -2792,7 +2415,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'MainWP'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 912](class/class-mainwp-ui.php#L912-L912)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 912](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L912)
 
 
 
@@ -2814,7 +2437,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1345](class/class-mainwp-ui.php#L1345-L1352)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1345](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1345)
 
 
 
@@ -2831,7 +2454,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `1` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1273](class/class-mainwp-ui.php#L1273-L1428)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1273](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1273)
 
 
 
@@ -2849,7 +2472,7 @@ Argument | Type | Description
 `$page` |  | 
 `$client_id` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1605](class/class-mainwp-ui.php#L1605-L1663)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1605](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1605)
 
 
 
@@ -2866,7 +2489,7 @@ Argument | Type | Description
 `array()` |  | 
 `$page` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 1605](class/class-mainwp-ui.php#L1605-L1670)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 1605](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L1605)
 
 
 
@@ -2884,7 +2507,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_widgets_screen_options'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 2421](class/class-mainwp-ui.php#L2421-L2455)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 2421](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L2421)
 
 
 
@@ -2906,23 +2529,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui.php](class/class-mainwp-ui.php), [line 2457](class/class-mainwp-ui.php#L2457-L2464)
-
-
-
-### `mainwp_format_email`
-
-*Method format_email()*
-
-Format email.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$mail_send` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-format.php](class/class-mainwp-format.php), [line 212](class/class-mainwp-format.php#L212-L579)
+Source: [class/class-mainwp-ui.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php), [line 2457](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui.php#L2457)
 
 
 
@@ -2938,7 +2545,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_sitestable_item'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 180](class/class-mainwp-manage-sites-list-table.php#L180-L185)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 180](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L180)
 
 
 
@@ -2955,7 +2562,7 @@ Argument | Type | Description
 `$item` | `array` | Array containing child site data.
 `$column_name` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 187](class/class-mainwp-manage-sites-list-table.php#L187-L196)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 187](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L187)
 
 
 
@@ -2971,7 +2578,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_sitestable_getcolumns'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 322](class/class-mainwp-manage-sites-list-table.php#L322-L327)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 322](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L322)
 
 
 
@@ -2988,7 +2595,7 @@ Argument | Type | Description
 `$columns` | `array` | Array containing table columns.
 `$columns` | `array` | Array containing table columns.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 329](class/class-mainwp-manage-sites-list-table.php#L329-L338)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 329](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L329)
 
 
 
@@ -3002,7 +2609,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('favi_icon', 'health_site_status')` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 694](class/class-mainwp-manage-sites-list-table.php#L694-L719)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 694](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L694)
 
 
 
@@ -3020,7 +2627,7 @@ Argument | Type | Description
 `$column_name` |  | 
 `$website` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 1554](class/class-mainwp-manage-sites-list-table.php#L1554-L1722)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1554](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1554)
 
 
 
@@ -3037,141 +2644,7 @@ Argument | Type | Description
 `$website` | `mixed` | Child Site.
 `$classes` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 1971](class/class-mainwp-manage-sites-list-table.php#L1971-L2166)
-
-
-
-### `mainwp_open_hide_referrer`
-
-*Filter: mainwp_open_hide_referrer*
-
-Filters whether the MainWP should hide referrer when going to child site.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`false` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-view.php](class/class-mainwp-system-view.php), [line 823](class/class-mainwp-system-view.php#L823-L830)
-
-
-
-### `mainwp_is_enable_schedule_job`
-
-*Method init_mainwp_cron()*
-
-Schedual Cron Jobs.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$useWPCron` | `mixed` | Wether or not to use WP_Cron.
-`$cron_hook` | `mixed` | When cron is going to reoccur.
-`$recurrence` | `mixed` | Cron job hook.
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-cron-jobs.php](class/class-mainwp-system-cron-jobs.php), [line 147](class/class-mainwp-system-cron-jobs.php#L147-L158)
-
-
-
-### `mainwp_text_format_email`
-
-*Filter: mainwp_text_format_email*
-
-Filters whether the email shuld bein plain text format.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$plain_text` |  | 
-
-**Changelog**
-
-Version | Description
-------- | -----------
-`3.5` | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-cron-jobs.php](class/class-mainwp-system-cron-jobs.php), [line 629](class/class-mainwp-system-cron-jobs.php#L629-L636)
-
-
-
-### `mainwp_license_deactivated_alert_plain_text`
-
-*Method cron_deactivated_licenses_alert()*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$plain_text` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-cron-jobs.php](class/class-mainwp-system-cron-jobs.php), [line 1356](class/class-mainwp-system-cron-jobs.php#L1356-L1377)
-
-
-
-### `mainwp_register_regular_sequence_process`
-
-*Method perform_sequence_process*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`array()` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system-cron-jobs.php](class/class-mainwp-system-cron-jobs.php), [line 1692](class/class-mainwp-system-cron-jobs.php#L1692-L1699)
-
-
-
-### `mainwp_try_visit_follow_location`
-
-*Method try visit.*
-
-Try connecting to Child Site via cURL.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`false` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 32](class/class-mainwp-connect.php#L32-L76)
-
-
-
-### `mainwp_curl_curlopt_resolve`
-
-*Method try visit.*
-
-Try connecting to Child Site via cURL.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`false` |  | 
-`false` |  | 
-`$url` | `string` | Child Site URL.
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 32](class/class-mainwp-connect.php#L32-L106)
-
-
-
-### `mainwp_fetch_urls_chunk_size`
-
-*Method fetch_urls_authed()*
-
-Fetches data from child sites if authenticated.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$chunkSize` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 688](class/class-mainwp-connect.php#L688-L719)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1971](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1971)
 
 
 
@@ -3188,7 +2661,7 @@ Argument | Type | Description
 `$menus_items` | `array` | menus items.
 `$part` | `string` | menus part.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 332](class/class-mainwp-menu.php#L332-L345)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 332](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L332)
 
 
 
@@ -3206,7 +2679,7 @@ Argument | Type | Description
 `$level` | `string` | The level the menu item is on.
 `$item` | `array\|string` | The menu items meta data.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 529](class/class-mainwp-menu.php#L529-L552)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 529](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L529)
 
 
 
@@ -3228,7 +2701,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 684](class/class-mainwp-menu.php#L684-L691)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 684](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L684)
 
 
 
@@ -3250,7 +2723,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 694](class/class-mainwp-menu.php#L694-L702)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 694](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L694)
 
 
 
@@ -3272,7 +2745,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 799](class/class-mainwp-menu.php#L799-L806)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 799](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L799)
 
 
 
@@ -3294,159 +2767,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-menu.php](class/class-mainwp-menu.php), [line 1242](class/class-mainwp-menu.php#L1242-L1249)
-
-
-
-### `mainwp_get_template`
-
-*Filter: mainwp_get_template*
-
-Filters available templates and adds support for 3rd party templates.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$template` |  | 
-`$template_name` | `string` | Template name.
-`$args` | `array` | Args.
-
-**Changelog**
-
-Version | Description
-------- | -----------
-`4.1` | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-template.php](class/class-mainwp-notification-template.php), [line 140](class/class-mainwp-notification-template.php#L140-L150)
-
-
-
-### `mainwp_locate_template`
-
-*Filer: mainwp_locate_template*
-
-Filters the template location.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$template` |  | 
-`$template_name` | `string` | Template name.
-`$template_path` | `string` | Template path.
-
-**Changelog**
-
-Version | Description
-------- | -----------
-`4.1` | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-template.php](class/class-mainwp-notification-template.php), [line 265](class/class-mainwp-notification-template.php#L265-L275)
-
-
-
-### `mainwp_get_notification_template_name_by_type`
-
-*Get default template name by email/notification type.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`''` |  | 
-`$type` | `string` | email/notification type.
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-template.php](class/class-mainwp-notification-template.php), [line 293](class/class-mainwp-notification-template.php#L293-L309)
-
-
-
-### `mainwp_default_template_source_dir`
-
-*Method handle_template_file_action()*
-
-Handle template file action.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$template_path` |  | 
-`$templ_base_name` |  | 
-
-Source: [../sources/mainwp-dashboard/class/class-mainwp-notification-template.php](class/class-mainwp-notification-template.php), [line 318](class/class-mainwp-notification-template.php#L318-L352)
-
-
-
-### `mainwp_module_log_record_array`
-
-*Filter allows modification of record information*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$record` | `array` | 
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-db.php](modules/logs/classes/class-log-db.php), [line 59](modules/logs/classes/class-log-db.php#L59-L66)
-
-
-
-### `mainwp_module_log_query_args`
-
-*Filter allows additional arguments to query $args*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$args` |  | 
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-db.php](modules/logs/classes/class-log-db.php), [line 162](modules/logs/classes/class-log-db.php#L162-L167)
-
-
-
-### `mainwp_module_log_current_agent`
-
-*Filter the current agent string*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$agent` |  | 
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-author.php](modules/logs/classes/class-log-author.php), [line 241](modules/logs/classes/class-log-author.php#L241-L246)
-
-
-
-### `mainwp_module_log_agent_label`
-
-*Filter agent labels*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$label` |  | 
-`$agent` | `string` | Key representing agent.
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-author.php](modules/logs/classes/class-log-author.php), [line 269](modules/logs/classes/class-log-author.php#L269-L276)
-
-
-
-### `mainwp_module_log_connectors`
-
-*Allows for adding additional connectors via classes that extend Connector.*
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$classes` | `array` | An array of Connector objects.
-`$this->manager->log` |  | 
-
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-connectors.php](modules/logs/classes/class-log-connectors.php), [line 97](modules/logs/classes/class-log-connectors.php#L97-L102)
+Source: [class/class-mainwp-menu.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php), [line 1242](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-menu.php#L1242)
 
 
 
@@ -3462,7 +2783,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$extMetaBoxs` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 248](modules/logs/pages/page-log-insights-page.php#L248-L273)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 248](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L248)
 
 
 
@@ -3485,7 +2806,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 284](modules/logs/pages/page-log-insights-page.php#L284-L294)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 284](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L284)
 
 
 
@@ -3507,7 +2828,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/pages/page-log-insights-page.php](modules/logs/pages/page-log-insights-page.php), [line 1039](modules/logs/pages/page-log-insights-page.php#L1039-L1046)
+Source: [modules/logs/pages/page-log-insights-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php), [line 1039](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-insights-page.php#L1039)
 
 
 
@@ -3523,7 +2844,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$extMetaBoxs` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 195](modules/cost-tracker/classes/class-cost-tracker-summary.php#L195-L220)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 195](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L195)
 
 
 
@@ -3546,7 +2867,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 231](modules/cost-tracker/classes/class-cost-tracker-summary.php#L231-L241)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 231](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L231)
 
 
 
@@ -3568,7 +2889,7 @@ Version | Description
 ------- | -----------
 `4.6` | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/classes/class-cost-tracker-summary.php](modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 497](modules/cost-tracker/classes/class-cost-tracker-summary.php#L497-L504)
+Source: [modules/cost-tracker/classes/class-cost-tracker-summary.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php), [line 497](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/classes/class-cost-tracker-summary.php#L497)
 
 
 
@@ -3580,7 +2901,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Upcoming Renewals', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php), [line 59](modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php#L59-L59)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php), [line 59](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-upcoming-renewals.php#L59)
 
 
 
@@ -3592,7 +2913,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Upcoming Yearly Renewals', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php), [line 59](modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php#L59-L59)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php), [line 59](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-yearly-renewals.php#L59)
 
 
 
@@ -3604,7 +2925,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Upcoming Monthly Renewals', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php](modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php), [line 59](modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php#L59-L59)
+Source: [modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php), [line 59](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/widgets/widget-cost-tracker-monthly-renewals.php#L59)
 
 
 
@@ -3621,7 +2942,7 @@ Argument | Type | Description
 `$extMetaBoxs` |  | 
 `$dashboard_siteid` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-sites.php](pages/page-mainwp-manage-sites.php), [line 1401](pages/page-mainwp-manage-sites.php#L1401-L1436)
+Source: [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1401](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1401)
 
 
 
@@ -3644,7 +2965,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-sites.php](pages/page-mainwp-manage-sites.php), [line 1454](pages/page-mainwp-manage-sites.php#L1454-L1464)
+Source: [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1454](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1454)
 
 
 
@@ -3667,7 +2988,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-overview.php](pages/page-mainwp-overview.php), [line 230](pages/page-mainwp-overview.php#L230-L240)
+Source: [pages/page-mainwp-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php), [line 230](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php#L230)
 
 
 
@@ -3689,7 +3010,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1155](pages/page-mainwp-server-information.php#L1155-L1162)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1155](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1155)
 
 
 
@@ -3705,7 +3026,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$extensions_and_leftmenus` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pages/page-mainwp-extensions-groups.php), [line 33](pages/page-mainwp-extensions-groups.php#L33-L824)
+Source: [pages/page-mainwp-extensions-groups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-groups.php), [line 33](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-groups.php#L33)
 
 
 
@@ -3718,7 +3039,7 @@ Argument | Type | Description
 `esc_html__('Notes', 'mainwp')` |  | 
 `$website` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-notes.php](widgets/widget-mainwp-notes.php), [line 62](widgets/widget-mainwp-notes.php#L62-L62)
+Source: [widgets/widget-mainwp-notes.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-notes.php), [line 62](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-notes.php#L62)
 
 
 
@@ -3734,7 +3055,7 @@ Argument | Type | Description
 `$params` | `array` | params.
 `$slug` | `string` | for date format hook.
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-uptime-monitoring-site-widget.php](widgets/widget-mainwp-uptime-monitoring-site-widget.php), [line 615](widgets/widget-mainwp-uptime-monitoring-site-widget.php#L615-L634)
+Source: [widgets/widget-mainwp-uptime-monitoring-site-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-uptime-monitoring-site-widget.php), [line 615](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-uptime-monitoring-site-widget.php#L615)
 
 
 
@@ -3746,7 +3067,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Get Started with MainWP', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-get-started.php](widgets/widget-mainwp-get-started.php), [line 63](widgets/widget-mainwp-get-started.php#L63-L63)
+Source: [widgets/widget-mainwp-get-started.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-get-started.php), [line 63](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-get-started.php#L63)
 
 
 
@@ -3759,7 +3080,7 @@ Argument | Type | Description
 `esc_html__('Sites Changes', 'mainwp')` |  | 
 `$website` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-site-actions.php](widgets/widget-mainwp-site-actions.php), [line 127](widgets/widget-mainwp-site-actions.php#L127-L127)
+Source: [widgets/widget-mainwp-site-actions.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php), [line 127](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-site-actions.php#L127)
 
 
 

@@ -11,9 +11,9 @@ This section provides documentation for all action hooks available in the MainWP
 - [Backups & Restoration](backups-restoration/index.md) (65 hooks)
 - [Security & Monitoring](security-monitoring/index.md) (50 hooks)
 - [Client Reports](client-reports/index.md) (41 hooks)
-- [UI & Display](ui-display/index.md) (190 hooks)
+- [UI & Display](ui-display/index.md) (152 hooks)
 - [Extensions & Integration](extensions-integration/index.md) (5 hooks)
-- [API & Remote Communication](api-remote/index.md) (42 hooks)
+- [API & Remote Communication](api-remote/index.md) (80 hooks)
 - [System & Settings](system-settings/index.md) (24 hooks)
 
 ## All Actions (Alphabetical)
@@ -46,7 +46,7 @@ This section provides documentation for all action hooks available in the MainWP
 - [`kinsta_api_form_top`](api-remote/index.md#kinsta_api_form_top) - Action: kinsta_api_form_top
 - [`linode_api_form_bottom`](api-remote/index.md#linode_api_form_bottom) - Action: linode_api_form_bottom
 - [`linode_api_form_top`](api-remote/index.md#linode_api_form_top) - Action: linode_api_form_top
-- [`mainwp-activated`](ui-display/index.md#mainwp-activated) - MainWP_System constructor.
+- [`mainwp-activated`](api-remote/index.md#mainwp-activated) - MainWP_System constructor.
 - [`mainwp-after-posting-bulkpage-result`](content-management/index.md#mainwp-after-posting-bulkpage-result) - After posting a new page
 - [`mainwp-after-posting-bulkpost-result`](content-management/index.md#mainwp-after-posting-bulkpost-result) - After posting a new post
 - [`mainwp-bulkposting-done`](content-management/index.md#mainwp-bulkposting-done) - Method posting_posts()
@@ -105,7 +105,7 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_added_new_group`](site-management/index.md#mainwp_added_new_group) - This action is documented in pages\page-mainwp-manage-groups.php
 - [`mainwp_added_new_site`](site-management/index.md#mainwp_added_new_site) - New site added
 - [`mainwp_added_new_site`](site-management/index.md#mainwp_added_new_site) - This action is documented in class\class-mainwp-manage-sites-view.php
-- [`mainwp_admin_enqueue_scripts`](ui-display/index.md#mainwp_admin_enqueue_scripts) - Method admin_enqueue_scripts()
+- [`mainwp_admin_enqueue_scripts`](api-remote/index.md#mainwp_admin_enqueue_scripts) - Method admin_enqueue_scripts()
 - [`mainwp_admin_footer`](content-management/index.md#mainwp_admin_footer) - Action: mainwp_admin_footer
 - [`mainwp_admin_menu`](ui-display/index.md#mainwp_admin_menu) - Action: mainwp_admin_menu
 - [`mainwp_admin_menu_sub`](ui-display/index.md#mainwp_admin_menu_sub) - Action: mainwp_admin_menu_sub
@@ -183,7 +183,7 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_after_subheader`](ui-display/index.md#mainwp_after_subheader) - Action: mainwp_after_subheader
 - [`mainwp_after_sync_site_success`](site-management/index.md#mainwp_after_sync_site_success) - Fires immediately after website synced successfully.
 - [`mainwp_after_system_requirements_check`](security-monitoring/index.md#mainwp_after_system_requirements_check) - Action: mainwp_after_system_requirements_check
-- [`mainwp_after_template_part`](ui-display/index.md#mainwp_after_template_part) - Action: mainwp_after_template_part
+- [`mainwp_after_template_part`](api-remote/index.md#mainwp_after_template_part) - Action: mainwp_after_template_part
 - [`mainwp_after_theme_action`](updates-maintenance/index.md#mainwp_after_theme_action) - Action: mainwp_after_theme_action
 - [`mainwp_after_theme_action`](updates-maintenance/index.md#mainwp_after_theme_action) - Action: mainwp_after_theme_action
 - [`mainwp_after_theme_ignore`](updates-maintenance/index.md#mainwp_after_theme_ignore) - Action: mainwp_after_theme_ignore
@@ -322,7 +322,7 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_before_server_info_table`](ui-display/index.md#mainwp_before_server_info_table) - Action: mainwp_before_server_info_table
 - [`mainwp_before_subheader`](ui-display/index.md#mainwp_before_subheader) - Action: mainwp_before_subheader
 - [`mainwp_before_system_requirements_check`](security-monitoring/index.md#mainwp_before_system_requirements_check) - Action: mainwp_before_system_requirements_check
-- [`mainwp_before_template_part`](ui-display/index.md#mainwp_before_template_part) - Action: mainwp_before_template_part
+- [`mainwp_before_template_part`](api-remote/index.md#mainwp_before_template_part) - Action: mainwp_before_template_part
 - [`mainwp_before_theme_action`](updates-maintenance/index.md#mainwp_before_theme_action) - Action: mainwp_before_theme_action
 - [`mainwp_before_theme_action`](updates-maintenance/index.md#mainwp_before_theme_action) - Action: mainwp_before_theme_action
 - [`mainwp_before_theme_ignore`](updates-maintenance/index.md#mainwp_before_theme_ignore) - Action: mainwp_before_theme_ignore
@@ -439,11 +439,11 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_cron_bulk_update_sites_limit`](site-management/index.md#mainwp_cron_bulk_update_sites_limit) - Method handle_cron_auto_updates()
 - [`mainwp_cron_jobs_list`](content-management/index.md#mainwp_cron_jobs_list) - Action: mainwp_cron_jobs_list
 - [`mainwp_cron_jobs_table_features`](ui-display/index.md#mainwp_cron_jobs_table_features) - Filter: mainwp_cron_jobs_table_features
-- [`mainwp_cronload_action`](ui-display/index.md#mainwp_cronload_action) - Action: mainwp_cronload_action
+- [`mainwp_cronload_action`](api-remote/index.md#mainwp_cronload_action) - Action: mainwp_cronload_action
 - [`mainwp_curl_curlopt_resolve`](site-management/index.md#mainwp_curl_curlopt_resolve) - Fetch uptime urls.
 - [`mainwp_curl_curlopt_resolve`](site-management/index.md#mainwp_curl_curlopt_resolve) - Method fetch_urls_authed()
 - [`mainwp_curl_curlopt_resolve`](site-management/index.md#mainwp_curl_curlopt_resolve) - Method fetch_url_site()
-- [`mainwp_curl_curlopt_resolve`](ui-display/index.md#mainwp_curl_curlopt_resolve) - Method try visit.
+- [`mainwp_curl_curlopt_resolve`](api-remote/index.md#mainwp_curl_curlopt_resolve) - Method try visit.
 - [`mainwp_curl_http_version`](api-remote/index.md#mainwp_curl_http_version) - Fetch uptime urls.
 - [`mainwp_curl_http_version`](api-remote/index.md#mainwp_curl_http_version) - Method try visit.
 - [`mainwp_curl_http_version`](api-remote/index.md#mainwp_curl_http_version) - Method fetch_urls_authed()
@@ -456,21 +456,21 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_custom_render_bulkpost`](content-management/index.md#mainwp_custom_render_bulkpost) - Renders bulkpost to edit.
 - [`mainwp_daily_digest_action`](site-management/index.md#mainwp_daily_digest_action) - Action: mainwp_daily_digest_action
 - [`mainwp_daily_digest_content`](content-management/index.md#mainwp_daily_digest_content) - Filter: mainwp_daily_digest_content
-- [`mainwp_daily_digest_email_footer`](ui-display/index.md#mainwp_daily_digest_email_footer) - Daily Digest Email Footer
-- [`mainwp_daily_digest_email_header`](ui-display/index.md#mainwp_daily_digest_email_header) - Daily Digest Email Header
+- [`mainwp_daily_digest_email_footer`](api-remote/index.md#mainwp_daily_digest_email_footer) - Daily Digest Email Footer
+- [`mainwp_daily_digest_email_header`](api-remote/index.md#mainwp_daily_digest_email_header) - Daily Digest Email Header
 - [`mainwp_database_updater_supported_plugins`](updates-maintenance/index.md#mainwp_database_updater_supported_plugins) - Method sites_available_updates_count()
 - [`mainwp_db_after_update`](updates-maintenance/index.md#mainwp_db_after_update) - Method install()
 - [`mainwp_db_fetch_object`](site-management/index.md#mainwp_db_fetch_object) - Method fetch_object().
 - [`mainwp_db_free_result`](site-management/index.md#mainwp_db_free_result) - Method free_result().
 - [`mainwp_db_install_tables`](updates-maintenance/index.md#mainwp_db_install_tables) - Method install()
 - [`mainwp_decrypt_key_value`](backups-restoration/index.md#mainwp_decrypt_key_value) - Method decrypt_api_keys
-- [`mainwp_default_emails_fields`](ui-display/index.md#mainwp_default_emails_fields) - Get default email notifications values.
+- [`mainwp_default_emails_fields`](api-remote/index.md#mainwp_default_emails_fields) - Get default email notifications values.
 - [`mainwp_default_emails_fields`](content-management/index.md#mainwp_default_emails_fields) - Method get_defaults_email_settings_value().
 - [`mainwp_default_settings_indicator`](system-settings/index.md#mainwp_default_settings_indicator) - Method render_not_default_indicator().
 - [`mainwp_default_settings_indicator`](system-settings/index.md#mainwp_default_settings_indicator) - Method render_not_default_email_settings_indicator().
 - [`mainwp_default_template_locate`](site-management/index.md#mainwp_default_template_locate) - Render the email notification edit form.
 - [`mainwp_default_template_source_dir`](updates-maintenance/index.md#mainwp_default_template_source_dir) - Locate a template and return the path for inclusion.
-- [`mainwp_default_template_source_dir`](ui-display/index.md#mainwp_default_template_source_dir) - Method handle_template_file_action()
+- [`mainwp_default_template_source_dir`](api-remote/index.md#mainwp_default_template_source_dir) - Method handle_template_file_action()
 - [`mainwp_delete_key_file`](updates-maintenance/index.md#mainwp_delete_key_file) - Method update child api key.
 - [`mainwp_delete_key_file`](site-management/index.md#mainwp_delete_key_file) - Method update_compatible_site_api_key
 - [`mainwp_delete_site`](site-management/index.md#mainwp_delete_site) - This action is documented in pages\page-mainwp-manage-sites-handler.php
@@ -504,23 +504,23 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_fetch_uptime_chunk_size_urls`](security-monitoring/index.md#mainwp_fetch_uptime_chunk_size_urls) - Fetch uptime urls.
 - [`mainwp_fetch_uptime_disable_check_multi_exec`](security-monitoring/index.md#mainwp_fetch_uptime_disable_check_multi_exec) - Apply disable check multi exec.
 - [`mainwp_fetch_url_authed`](site-management/index.md#mainwp_fetch_url_authed) - Fires immediately after fetch url action.
-- [`mainwp_fetch_urls_chunk_size`](ui-display/index.md#mainwp_fetch_urls_chunk_size) - Method fetch_urls_authed()
+- [`mainwp_fetch_urls_chunk_size`](api-remote/index.md#mainwp_fetch_urls_chunk_size) - Method fetch_urls_authed()
 - [`mainwp_file_uploader_chunk_size`](updates-maintenance/index.md#mainwp_file_uploader_chunk_size) - Method render_upload()
-- [`mainwp_file_uploader_size_limit`](ui-display/index.md#mainwp_file_uploader_size_limit) - Filter: 'mainwp_file_uploader_size_limit'
+- [`mainwp_file_uploader_size_limit`](api-remote/index.md#mainwp_file_uploader_size_limit) - Filter: 'mainwp_file_uploader_size_limit'
 - [`mainwp_forced_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp_forced_get_plugin_theme_icon) - Gets a plugin icon via API from WordPress.org
 - [`mainwp_forced_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp_forced_get_plugin_theme_icon) - Gets a theme icon via API from WordPress.org
-- [`mainwp_format_email`](ui-display/index.md#mainwp_format_email) - Method format_email()
+- [`mainwp_format_email`](api-remote/index.md#mainwp_format_email) - Method format_email()
 - [`mainwp_ga_delete_site`](site-management/index.md#mainwp_ga_delete_site) - Action: mainwp_ga_delete_site
 - [`mainwp_get_all_pages_data`](content-management/index.md#mainwp_get_all_pages_data) - Get all pages data
 - [`mainwp_get_all_posts_data`](content-management/index.md#mainwp_get_all_posts_data) - Get all posts data
-- [`mainwp_get_notification_template_name_by_type`](ui-display/index.md#mainwp_get_notification_template_name_by_type) - Get default template name by email/notification type.
+- [`mainwp_get_notification_template_name_by_type`](api-remote/index.md#mainwp_get_notification_template_name_by_type) - Get default template name by email/notification type.
 - [`mainwp_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp_get_plugin_theme_icon) - Gets a plugin icon via API from WordPress.org
 - [`mainwp_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp_get_plugin_theme_icon) - Gets a theme icon via API from WordPress.org
 - [`mainwp_get_post_data_authed`](content-management/index.md#mainwp_get_post_data_authed) - Method get_post_data_authed()
 - [`mainwp_get_started_widget_bottom`](ui-display/index.md#mainwp_get_started_widget_bottom) - Action: mainwp_get_started_widget_bottom
 - [`mainwp_get_started_widget_title`](ui-display/index.md#mainwp_get_started_widget_title) - *Arguments*
 - [`mainwp_get_started_widget_top`](ui-display/index.md#mainwp_get_started_widget_top) - Action: mainwp_get_started_widget_top
-- [`mainwp_get_template`](ui-display/index.md#mainwp_get_template) - Filter: mainwp_get_template
+- [`mainwp_get_template`](api-remote/index.md#mainwp_get_template) - Filter: mainwp_get_template
 - [`mainwp_getcustompage_backups`](content-management/index.md#mainwp_getcustompage_backups) - Instantiate Legacy Backups Menu.
 - [`mainwp_getextensions`](extensions-integration/index.md#mainwp_getextensions) - Method init_menu()
 - [`mainwp_getmetaboxes`](ui-display/index.md#mainwp_getmetaboxes) - Method on_load_page_dashboard()
@@ -581,21 +581,21 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_install_update_actions`](updates-maintenance/index.md#mainwp_install_update_actions) - Fires immediately after install action.
 - [`mainwp_installbulk_prepareupload`](updates-maintenance/index.md#mainwp_installbulk_prepareupload) - Prepare upload
 - [`mainwp_is_disable_menu_item`](ui-display/index.md#mainwp_is_disable_menu_item) - Method is_disable_menu_item
-- [`mainwp_is_enable_schedule_job`](ui-display/index.md#mainwp_is_enable_schedule_job) - Method init_mainwp_cron()
+- [`mainwp_is_enable_schedule_job`](api-remote/index.md#mainwp_is_enable_schedule_job) - Method init_mainwp_cron()
 - [`mainwp_is_rest_api_request`](api-remote/index.md#mainwp_is_rest_api_request) - Whether this is a REST API request.
-- [`mainwp_license_deactivated_alert_plain_text`](ui-display/index.md#mainwp_license_deactivated_alert_plain_text) - Method cron_deactivated_licenses_alert()
+- [`mainwp_license_deactivated_alert_plain_text`](api-remote/index.md#mainwp_license_deactivated_alert_plain_text) - Method cron_deactivated_licenses_alert()
 - [`mainwp_licenses_deactivated_alert_email_footer`](security-monitoring/index.md#mainwp_licenses_deactivated_alert_email_footer) - Site Health Monitoring Email Footer
 - [`mainwp_licenses_deactivated_alert_email_header`](security-monitoring/index.md#mainwp_licenses_deactivated_alert_email_header) - Site Health Monitoring Email Header
 - [`mainwp_limit_updates_all`](updates-maintenance/index.md#mainwp_limit_updates_all) - Limits number of updates to process.
 - [`mainwp_limit_updates_all`](updates-maintenance/index.md#mainwp_limit_updates_all) - Filter: mainwp_limit_updates_all
 - [`mainwp_load_text_domain`](updates-maintenance/index.md#mainwp_load_text_domain) - Method localization()
-- [`mainwp_locate_template`](ui-display/index.md#mainwp_locate_template) - Filer: mainwp_locate_template
-- [`mainwp_log_action`](ui-display/index.md#mainwp_log_action) - Schedules a purge of records.
+- [`mainwp_locate_template`](api-remote/index.md#mainwp_locate_template) - Filer: mainwp_locate_template
+- [`mainwp_log_action`](api-remote/index.md#mainwp_log_action) - Schedules a purge of records.
 - [`mainwp_log_action`](backups-restoration/index.md#mainwp_log_action) - Debugging log.
 - [`mainwp_log_do_to_db`](site-management/index.md#mainwp_log_do_to_db) - Method log_to_db()
-- [`mainwp_log_specific`](ui-display/index.md#mainwp_log_specific) - MainWP_Logger constructor.
+- [`mainwp_log_specific`](api-remote/index.md#mainwp_log_specific) - MainWP_Logger constructor.
 - [`mainwp_log_specific_actions`](content-management/index.md#mainwp_log_specific_actions) - Renders action logs page.
-- [`mainwp_log_status`](ui-display/index.md#mainwp_log_status) - MainWP_Logger constructor.
+- [`mainwp_log_status`](api-remote/index.md#mainwp_log_status) - MainWP_Logger constructor.
 - [`mainwp_log_system_query`](system-settings/index.md#mainwp_log_system_query) - Method log_system_query
 - [`mainwp_log_to_db_data`](ui-display/index.md#mainwp_log_to_db_data) - Method log_to_db()
 - [`mainwp_log_to_db_priority`](site-management/index.md#mainwp_log_to_db_priority) - Method log_to_db()
@@ -761,21 +761,21 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_module_cost_tracker_widget_top`](ui-display/index.md#mainwp_module_cost_tracker_widget_top) - Action: mainwp_module_cost_tracker_widget_top
 - [`mainwp_module_cost_tracker_yearly_renewals_widget_title`](ui-display/index.md#mainwp_module_cost_tracker_yearly_renewals_widget_title) - *Arguments*
 - [`mainwp_module_dashboard_insights_help_item`](ui-display/index.md#mainwp_module_dashboard_insights_help_item) - Action: mainwp_module_dashboard_insights_help_item
-- [`mainwp_module_log_after_connectors_registration`](ui-display/index.md#mainwp_module_log_after_connectors_registration) - Fires after all connectors have been registered.
-- [`mainwp_module_log_agent_label`](ui-display/index.md#mainwp_module_log_agent_label) - Filter agent labels
+- [`mainwp_module_log_after_connectors_registration`](api-remote/index.md#mainwp_module_log_after_connectors_registration) - Fires after all connectors have been registered.
+- [`mainwp_module_log_agent_label`](api-remote/index.md#mainwp_module_log_agent_label) - Filter agent labels
 - [`mainwp_module_log_check_connector_is_excluded`](security-monitoring/index.md#mainwp_module_log_check_connector_is_excluded) - Allows excluded connectors to be overridden and registered.
-- [`mainwp_module_log_connectors`](ui-display/index.md#mainwp_module_log_connectors) - Allows for adding additional connectors via classes that extend Connector.
+- [`mainwp_module_log_connectors`](api-remote/index.md#mainwp_module_log_connectors) - Allows for adding additional connectors via classes that extend Connector.
 - [`mainwp_module_log_cron_tracking`](site-management/index.md#mainwp_module_log_cron_tracking) - Log handler.
-- [`mainwp_module_log_current_agent`](ui-display/index.md#mainwp_module_log_current_agent) - Filter the current agent string
+- [`mainwp_module_log_current_agent`](api-remote/index.md#mainwp_module_log_current_agent) - Filter the current agent string
 - [`mainwp_module_log_data`](site-management/index.md#mainwp_module_log_data) - Log handler
 - [`mainwp_module_log_get_role_list_separator`](user-management/index.md#mainwp_module_log_get_role_list_separator) - Tries to find a label for the record's user_role.
 - [`mainwp_module_log_overview_enabled_widgets`](ui-display/index.md#mainwp_module_log_overview_enabled_widgets) - Unset unwanted Widgets
 - [`mainwp_module_log_overview_screen_options_bottom`](ui-display/index.md#mainwp_module_log_overview_screen_options_bottom) - Action: mainwp_module_log_overview_screen_options_bottom
 - [`mainwp_module_log_overview_screen_options_top`](ui-display/index.md#mainwp_module_log_overview_screen_options_top) - Action: mainwp_module_log_overview_screen_options_top
-- [`mainwp_module_log_query_args`](ui-display/index.md#mainwp_module_log_query_args) - Filter allows additional arguments to query $args
-- [`mainwp_module_log_record_array`](ui-display/index.md#mainwp_module_log_record_array) - Filter allows modification of record information
-- [`mainwp_module_log_record_insert_error`](ui-display/index.md#mainwp_module_log_record_insert_error) - Fires on a record insertion error
-- [`mainwp_module_log_record_inserted`](ui-display/index.md#mainwp_module_log_record_inserted) - Fires after a record has been inserted
+- [`mainwp_module_log_query_args`](api-remote/index.md#mainwp_module_log_query_args) - Filter allows additional arguments to query $args
+- [`mainwp_module_log_record_array`](api-remote/index.md#mainwp_module_log_record_array) - Filter allows modification of record information
+- [`mainwp_module_log_record_insert_error`](api-remote/index.md#mainwp_module_log_record_insert_error) - Fires on a record insertion error
+- [`mainwp_module_log_record_inserted`](api-remote/index.md#mainwp_module_log_record_inserted) - Fires after a record has been inserted
 - [`mainwp_module_log_widgets_screen_options`](ui-display/index.md#mainwp_module_log_widgets_screen_options) - Filter: mainwp_module_log_widgets_screen_options
 - [`mainwp_module_monthly_renewals_after_costs_list`](ui-display/index.md#mainwp_module_monthly_renewals_after_costs_list) - Action: mainwp_module_monthly_renewals_after_costs_list
 - [`mainwp_module_monthly_renewals_before_costs_list`](ui-display/index.md#mainwp_module_monthly_renewals_before_costs_list) - Action: mainwp_module_monthly_renewals_before_costs_list
@@ -798,10 +798,10 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_notes_widget_bottom`](ui-display/index.md#mainwp_notes_widget_bottom) - Action: mainwp_notes_widget_bottom
 - [`mainwp_notes_widget_title`](ui-display/index.md#mainwp_notes_widget_title) - *Arguments*
 - [`mainwp_notes_widget_top`](ui-display/index.md#mainwp_notes_widget_top) - Action: mainwp_notes_widget_top
-- [`mainwp_notification_template_copy_message`](ui-display/index.md#mainwp_notification_template_copy_message) - Filter mainwp_notification_template_copy_message.
-- [`mainwp_notification_type_desc`](ui-display/index.md#mainwp_notification_type_desc) - Get email settings description.
-- [`mainwp_notification_types`](ui-display/index.md#mainwp_notification_types) - Get email notification types.
-- [`mainwp_open_hide_referrer`](ui-display/index.md#mainwp_open_hide_referrer) - Filter: mainwp_open_hide_referrer
+- [`mainwp_notification_template_copy_message`](api-remote/index.md#mainwp_notification_template_copy_message) - Filter mainwp_notification_template_copy_message.
+- [`mainwp_notification_type_desc`](api-remote/index.md#mainwp_notification_type_desc) - Get email settings description.
+- [`mainwp_notification_types`](api-remote/index.md#mainwp_notification_types) - Get email notification types.
+- [`mainwp_open_hide_referrer`](api-remote/index.md#mainwp_open_hide_referrer) - Filter: mainwp_open_hide_referrer
 - [`mainwp_open_site_allow_vars`](site-management/index.md#mainwp_open_site_allow_vars) - Child Site Dashboard Link redirect handler.
 - [`mainwp_open_site_login_required_params`](site-management/index.md#mainwp_open_site_login_required_params) - Method get_get_data_authed()
 - [`mainwp_overview_enabled_widgets`](ui-display/index.md#mainwp_overview_enabled_widgets) - Unset unwanted Widgets
@@ -921,7 +921,7 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_recent_posts_widget_title`](content-management/index.md#mainwp_recent_posts_widget_title) - *Arguments*
 - [`mainwp_recent_posts_widget_top`](content-management/index.md#mainwp_recent_posts_widget_top) - Action: mainwp_recent_posts_widget_top
 - [`mainwp_register_post_type`](content-management/index.md#mainwp_register_post_type) - Method create_post_type()
-- [`mainwp_register_regular_sequence_process`](ui-display/index.md#mainwp_register_regular_sequence_process) - Method perform_sequence_process
+- [`mainwp_register_regular_sequence_process`](api-remote/index.md#mainwp_register_regular_sequence_process) - Method perform_sequence_process
 - [`mainwp_remote_destination_info`](api-remote/index.md#mainwp_remote_destination_info) - Method mainwp_backup_upload_checkstatus()
 - [`mainwp_removed_extension_menu`](ui-display/index.md#mainwp_removed_extension_menu) - Remove Extensions menu from MainWP Menu.
 - [`mainwp_request_update_premium_plugins`](updates-maintenance/index.md#mainwp_request_update_premium_plugins) - Filter: mainwp_request_update_premium_plugins
@@ -1041,7 +1041,7 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_synced_all_sites`](site-management/index.md#mainwp_synced_all_sites) - Action: mainwp_synced_all_sites
 - [`mainwp_system_init`](system-settings/index.md#mainwp_system_init) - MainWP_System constructor.
 - [`mainwp_tags_help_item`](site-management/index.md#mainwp_tags_help_item) - Action: mainwp_tags_help_item
-- [`mainwp_text_format_email`](ui-display/index.md#mainwp_text_format_email) - Filter: mainwp_text_format_email
+- [`mainwp_text_format_email`](api-remote/index.md#mainwp_text_format_email) - Filter: mainwp_text_format_email
 - [`mainwp_theme_auto_updates_table_fatures`](updates-maintenance/index.md#mainwp_theme_auto_updates_table_fatures) - Filter: mainwp_theme_auto_updates_table_fatures
 - [`mainwp_themes_actions_bar_left`](updates-maintenance/index.md#mainwp_themes_actions_bar_left) - Action: mainwp_themes_actions_bar_left
 - [`mainwp_themes_actions_bar_right`](updates-maintenance/index.md#mainwp_themes_actions_bar_right) - Action: mainwp_themes_actions_bar_right
@@ -1060,7 +1060,7 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_tools_form_bottom`](content-management/index.md#mainwp_tools_form_bottom) - Action: mainwp_tools_form_bottom
 - [`mainwp_tools_form_top`](content-management/index.md#mainwp_tools_form_top) - Action: mainwp_tools_form_top
 - [`mainwp_top_bulkpost_edit_content`](content-management/index.md#mainwp_top_bulkpost_edit_content) - Renders bulkpost to edit.
-- [`mainwp_try_visit_follow_location`](ui-display/index.md#mainwp_try_visit_follow_location) - Method try visit.
+- [`mainwp_try_visit_follow_location`](api-remote/index.md#mainwp_try_visit_follow_location) - Method try visit.
 - [`mainwp_ui_use_wp_calendar`](ui-display/index.md#mainwp_ui_use_wp_calendar) - Filter: mainwp_ui_use_wp_calendar
 - [`mainwp_unset_security_scripts_stylesheets`](security-monitoring/index.md#mainwp_unset_security_scripts_stylesheets) - Method Fix Security Issues
 - [`mainwp_update_admin_password_complexity`](updates-maintenance/index.md#mainwp_update_admin_password_complexity) - Filter: mainwp_update_admin_password_complexity
@@ -1192,7 +1192,7 @@ This section provides documentation for all action hooks available in the MainWP
 - [`mainwp_widgets_chart_date_format`](ui-display/index.md#mainwp_widgets_chart_date_format) - Prepare response time for ui chart data.
 - [`mainwp_widgets_screen_options`](ui-display/index.md#mainwp_widgets_screen_options) - Filter: mainwp_widgets_screen_options
 - [`mainwp_wordfence_sites`](site-management/index.md#mainwp_wordfence_sites) - Action: mainwp_wordfence_sites
-- [`minwp_notification_template_copy_message`](ui-display/index.md#minwp_notification_template_copy_message) - Use mainwp_notification_template_copy_message instead.
+- [`minwp_notification_template_copy_message`](api-remote/index.md#minwp_notification_template_copy_message) - Use mainwp_notification_template_copy_message instead.
 - [`plesk_api_form_bottom`](api-remote/index.md#plesk_api_form_bottom) - Action: plesk_api_form_bottom
 - [`plesk_api_form_top`](api-remote/index.md#plesk_api_form_top) - Action: plesk_api_form_top
 - [`postmeta_form_keys`](content-management/index.md#postmeta_form_keys) - Filters values for the meta key dropdown in the Custom Fields meta box.
@@ -1203,4 +1203,4 @@ This section provides documentation for all action hooks available in the MainWP
 - [`time_formats`](content-management/index.md#time_formats) - *Arguments*
 - [`vultr_api_form_bottom`](api-remote/index.md#vultr_api_form_bottom) - Action: vultr_api_form_bottom
 - [`vultr_api_form_top`](api-remote/index.md#vultr_api_form_top) - Action: vultr_api_form_top
-- [`{$filter}`](ui-display/index.md#filter) - Method apply_filter()
+- [`{$filter}`](api-remote/index.md#filter) - Method apply_filter()

@@ -27,7 +27,7 @@ Hooks for establishing and managing connections between Dashboard and Child site
 Check if the login process is required.
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 652](class/class-mainwp-connect.php#L652-L680)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 652](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L652)
 
 
 
@@ -38,7 +38,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-connect.php](class/class-mai
 Check if the login process is required.
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 652](class/class-mainwp-connect.php#L652-L710)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 652](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L652)
 
 
 
@@ -49,7 +49,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-connect.php](class/class-mai
 The login process handler.
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 1021](class/class-mainwp-connect.php#L1021-L1058)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 1021](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L1021)
 
 
 
@@ -65,7 +65,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$user->user_login` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 1021](class/class-mainwp-connect.php#L1021-L1066)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 1021](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L1021)
 
 
 
@@ -81,7 +81,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$auth_dl` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 821](class/class-mainwp-connect.php#L821-L847)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 821](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L821)
 
 
 
@@ -93,7 +93,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `true` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-server-information-base.php](class/class-mainwp-child-server-information-base.php), [line 702](class/class-mainwp-child-server-information-base.php#L702-L702)
+Source: [class/class-mainwp-child-server-information-base.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information-base.php), [line 702](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information-base.php#L702)
 
 
 
@@ -108,7 +108,7 @@ Argument | Type | Description
 `false` |  | 
 `$new_post_id` | `string` | New post ID.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-posts.php](class/class-mainwp-child-posts.php), [line 968](class/class-mainwp-child-posts.php#L968-L1012)
+Source: [class/class-mainwp-child-posts.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php), [line 968](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php#L968)
 
 
 

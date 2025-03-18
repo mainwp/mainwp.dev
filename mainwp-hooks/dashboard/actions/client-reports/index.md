@@ -65,7 +65,7 @@ Argument | Type | Description
 `$clients` |  | 
 `$clients_ids` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-client-list-table.php](class/class-mainwp-client-list-table.php), [line 290](class/class-mainwp-client-list-table.php#L290-L330)
+Source: [class/class-mainwp-client-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php), [line 290](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php#L290)
 
 
 
@@ -87,7 +87,7 @@ Version | Description
 ------- | -----------
 `4.5.1.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-db-client.php](class/class-mainwp-db-client.php), [line 1010](class/class-mainwp-db-client.php#L1010-L1019)
+Source: [class/class-mainwp-db-client.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db-client.php), [line 1010](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db-client.php#L1010)
 
 
 
@@ -109,7 +109,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui-select-sites.php](class/class-mainwp-ui-select-sites.php), [line 355](class/class-mainwp-ui-select-sites.php#L355-L364)
+Source: [class/class-mainwp-ui-select-sites.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui-select-sites.php), [line 355](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui-select-sites.php#L355)
 
 
 
@@ -131,7 +131,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-ui-select-sites.php](class/class-mainwp-ui-select-sites.php), [line 405](class/class-mainwp-ui-select-sites.php#L405-L414)
+Source: [class/class-mainwp-ui-select-sites.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui-select-sites.php), [line 405](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-ui-select-sites.php#L405)
 
 
 
@@ -152,7 +152,7 @@ Version | Description
 ------- | -----------
 `4.5.1.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-post-handler.php](class/class-mainwp-post-handler.php), [line 1111](class/class-mainwp-post-handler.php#L1111-L1119)
+Source: [class/class-mainwp-post-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-handler.php), [line 1111](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-handler.php#L1111)
 
 
 
@@ -163,7 +163,7 @@ Source: [../sources/mainwp-dashboard/class/class-mainwp-post-handler.php](class/
 Render second top header.
 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client.php](pages/page-mainwp-client.php), [line 565](pages/page-mainwp-client.php#L565-L576)
+Source: [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 565](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L565)
 
 
 
@@ -184,7 +184,7 @@ Version | Description
 ------- | -----------
 `4.5.1.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client.php](pages/page-mainwp-client.php), [line 1353](pages/page-mainwp-client.php#L1353-L1361)
+Source: [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 1353](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L1353)
 
 
 
@@ -201,7 +201,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 366](pages/page-mainwp-client-overview.php#L366-L373)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 366](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L366)
 
 
 
@@ -218,7 +218,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 380](pages/page-mainwp-client-overview.php#L380-L387)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 380](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L380)
 
 
 
@@ -239,7 +239,7 @@ Version | Description
 ------- | -----------
 `4.3` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 521](pages/page-mainwp-client-overview.php#L521-L532)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 521](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L521)
 
 
 
@@ -261,7 +261,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-note.php](widgets/widget-mainwp-client-overview-note.php), [line 78](widgets/widget-mainwp-client-overview-note.php#L78-L87)
+Source: [widgets/widget-mainwp-client-overview-note.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-note.php), [line 78](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-note.php#L78)
 
 
 
@@ -283,7 +283,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-note.php](widgets/widget-mainwp-client-overview-note.php), [line 100](widgets/widget-mainwp-client-overview-note.php#L100-L109)
+Source: [widgets/widget-mainwp-client-overview-note.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-note.php), [line 100](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-note.php#L100)
 
 
 
@@ -305,7 +305,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-contacts.php](widgets/widget-mainwp-client-overview-contacts.php), [line 82](widgets/widget-mainwp-client-overview-contacts.php#L82-L91)
+Source: [widgets/widget-mainwp-client-overview-contacts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-contacts.php), [line 82](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-contacts.php#L82)
 
 
 
@@ -327,7 +327,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-contacts.php](widgets/widget-mainwp-client-overview-contacts.php), [line 142](widgets/widget-mainwp-client-overview-contacts.php#L142-L151)
+Source: [widgets/widget-mainwp-client-overview-contacts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-contacts.php), [line 142](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-contacts.php#L142)
 
 
 
@@ -349,7 +349,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-info.php](widgets/widget-mainwp-client-overview-info.php), [line 82](widgets/widget-mainwp-client-overview-info.php#L82-L91)
+Source: [widgets/widget-mainwp-client-overview-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-info.php), [line 82](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-info.php#L82)
 
 
 
@@ -371,7 +371,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-info.php](widgets/widget-mainwp-client-overview-info.php), [line 159](widgets/widget-mainwp-client-overview-info.php#L159-L168)
+Source: [widgets/widget-mainwp-client-overview-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-info.php), [line 159](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-info.php#L159)
 
 
 
@@ -393,7 +393,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-custom-info.php](widgets/widget-mainwp-client-overview-custom-info.php), [line 71](widgets/widget-mainwp-client-overview-custom-info.php#L71-L80)
+Source: [widgets/widget-mainwp-client-overview-custom-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php), [line 71](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php#L71)
 
 
 
@@ -415,7 +415,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-custom-info.php](widgets/widget-mainwp-client-overview-custom-info.php), [line 89](widgets/widget-mainwp-client-overview-custom-info.php#L89-L98)
+Source: [widgets/widget-mainwp-client-overview-custom-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php), [line 89](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php#L89)
 
 
 
@@ -437,7 +437,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-custom-info.php](widgets/widget-mainwp-client-overview-custom-info.php), [line 128](widgets/widget-mainwp-client-overview-custom-info.php#L128-L137)
+Source: [widgets/widget-mainwp-client-overview-custom-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php), [line 128](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php#L128)
 
 
 
@@ -459,7 +459,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-custom-info.php](widgets/widget-mainwp-client-overview-custom-info.php), [line 147](widgets/widget-mainwp-client-overview-custom-info.php#L147-L156)
+Source: [widgets/widget-mainwp-client-overview-custom-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php), [line 147](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php#L147)
 
 
 
@@ -481,7 +481,7 @@ Version | Description
 ------- | -----------
 `4.4` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-clients.php](widgets/widget-mainwp-clients.php), [line 62](widgets/widget-mainwp-clients.php#L62-L71)
+Source: [widgets/widget-mainwp-clients.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-clients.php), [line 62](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-clients.php#L62)
 
 
 
@@ -503,7 +503,7 @@ Version | Description
 ------- | -----------
 `4.4` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-clients.php](widgets/widget-mainwp-clients.php), [line 161](widgets/widget-mainwp-clients.php#L161-L170)
+Source: [widgets/widget-mainwp-clients.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-clients.php), [line 161](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-clients.php#L161)
 
 
 
@@ -525,7 +525,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-info.php](widgets/widget-mainwp-client-info.php), [line 84](widgets/widget-mainwp-client-info.php#L84-L93)
+Source: [widgets/widget-mainwp-client-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php), [line 84](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php#L84)
 
 
 
@@ -547,7 +547,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-info.php](widgets/widget-mainwp-client-info.php), [line 107](widgets/widget-mainwp-client-info.php#L107-L116)
+Source: [widgets/widget-mainwp-client-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php), [line 107](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php#L107)
 
 
 
@@ -569,7 +569,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-info.php](widgets/widget-mainwp-client-info.php), [line 168](widgets/widget-mainwp-client-info.php#L168-L177)
+Source: [widgets/widget-mainwp-client-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php), [line 168](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php#L168)
 
 
 
@@ -591,7 +591,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-info.php](widgets/widget-mainwp-client-info.php), [line 183](widgets/widget-mainwp-client-info.php#L183-L192)
+Source: [widgets/widget-mainwp-client-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php), [line 183](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php#L183)
 
 
 
@@ -605,7 +605,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$client` |  | 
 
-Source: [../sources/mainwp-dashboard/includes/rest-api/controller/version2/class-mainwp-rest-tags-controller.php](includes/rest-api/controller/version2/class-mainwp-rest-tags-controller.php), [line 404](includes/rest-api/controller/version2/class-mainwp-rest-tags-controller.php#L404-L423)
+Source: [includes/rest-api/controller/version2/class-mainwp-rest-tags-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-tags-controller.php), [line 404](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-tags-controller.php#L404)
 
 
 
@@ -628,7 +628,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-client-list-table.php](class/class-mainwp-client-list-table.php), [line 60](class/class-mainwp-client-list-table.php#L60-L69)
+Source: [class/class-mainwp-client-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php), [line 60](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php#L60)
 
 
 
@@ -651,7 +651,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-client-list-table.php](class/class-mainwp-client-list-table.php), [line 156](class/class-mainwp-client-list-table.php#L156-L165)
+Source: [class/class-mainwp-client-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php), [line 156](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php#L156)
 
 
 
@@ -673,7 +673,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-client-list-table.php](class/class-mainwp-client-list-table.php), [line 206](class/class-mainwp-client-list-table.php#L206-L213)
+Source: [class/class-mainwp-client-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php), [line 206](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php#L206)
 
 
 
@@ -695,7 +695,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-client-list-table.php](class/class-mainwp-client-list-table.php), [line 409](class/class-mainwp-client-list-table.php#L409-L416)
+Source: [class/class-mainwp-client-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php), [line 409](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-client-list-table.php#L409)
 
 
 
@@ -709,7 +709,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$client` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php](modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php), [line 566](modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php#L566-L624)
+Source: [modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php), [line 566](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/rest-api/version2/class-mainwp-rest-costs-controller.php#L566)
 
 
 
@@ -725,7 +725,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$extMetaBoxs` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 143](pages/page-mainwp-client-overview.php#L143-L169)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 143](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L143)
 
 
 
@@ -748,7 +748,7 @@ Version | Description
 ------- | -----------
 `4.3` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 191](pages/page-mainwp-client-overview.php#L191-L201)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 191](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L191)
 
 
 
@@ -770,7 +770,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-client-overview.php](pages/page-mainwp-client-overview.php), [line 438](pages/page-mainwp-client-overview.php#L438-L445)
+Source: [pages/page-mainwp-client-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php), [line 438](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client-overview.php#L438)
 
 
 
@@ -783,7 +783,7 @@ Argument | Type | Description
 `esc_html__('Notes', 'mainwp')` |  | 
 `$client_info` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-note.php](widgets/widget-mainwp-client-overview-note.php), [line 71](widgets/widget-mainwp-client-overview-note.php#L71-L71)
+Source: [widgets/widget-mainwp-client-overview-note.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-note.php), [line 71](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-note.php#L71)
 
 
 
@@ -796,7 +796,7 @@ Argument | Type | Description
 `__('Client Contact', 'mainwp')` |  | 
 `$contact_info` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-contacts.php](widgets/widget-mainwp-client-overview-contacts.php), [line 73](widgets/widget-mainwp-client-overview-contacts.php#L73-L73)
+Source: [widgets/widget-mainwp-client-overview-contacts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-contacts.php), [line 73](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-contacts.php#L73)
 
 
 
@@ -809,7 +809,7 @@ Argument | Type | Description
 `__('Contact Information', 'mainwp')` |  | 
 `$contact_info` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-contacts.php](widgets/widget-mainwp-client-overview-contacts.php), [line 76](widgets/widget-mainwp-client-overview-contacts.php#L76-L76)
+Source: [widgets/widget-mainwp-client-overview-contacts.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-contacts.php), [line 76](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-contacts.php#L76)
 
 
 
@@ -822,7 +822,7 @@ Argument | Type | Description
 `esc_html__('Additional Client Info', 'mainwp')` |  | 
 `$client_info` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-overview-custom-info.php](widgets/widget-mainwp-client-overview-custom-info.php), [line 64](widgets/widget-mainwp-client-overview-custom-info.php#L64-L64)
+Source: [widgets/widget-mainwp-client-overview-custom-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php), [line 64](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-overview-custom-info.php#L64)
 
 
 
@@ -834,7 +834,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Clients', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-clients.php](widgets/widget-mainwp-clients.php), [line 55](widgets/widget-mainwp-clients.php#L55-L55)
+Source: [widgets/widget-mainwp-clients.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-clients.php), [line 55](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-clients.php#L55)
 
 
 
@@ -847,7 +847,7 @@ Argument | Type | Description
 `esc_html__('Client Info', 'mainwp')` |  | 
 `$website` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-client-info.php](widgets/widget-mainwp-client-info.php), [line 78](widgets/widget-mainwp-client-info.php#L78-L78)
+Source: [widgets/widget-mainwp-client-info.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php), [line 78](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-client-info.php#L78)
 
 
 

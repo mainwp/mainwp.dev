@@ -75,7 +75,7 @@ Argument | Type | Description
 `$monitor` | `mixed` | monitor.
 `$previous_heartbeat` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-connect.php](class/class-mainwp-uptime-monitoring-connect.php), [line 713](class/class-mainwp-uptime-monitoring-connect.php#L713-L885)
+Source: [class/class-mainwp-uptime-monitoring-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php), [line 713](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php#L713)
 
 
 
@@ -98,7 +98,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-monitoring-sites-list-table.php](class/class-mainwp-monitoring-sites-list-table.php), [line 626](class/class-mainwp-monitoring-sites-list-table.php#L626-L636)
+Source: [class/class-mainwp-monitoring-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php), [line 626](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php#L626)
 
 
 
@@ -116,7 +116,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_securityissues_sites'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-view.php](class/class-mainwp-manage-sites-view.php), [line 733](class/class-mainwp-manage-sites-view.php#L733-L773)
+Source: [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 733](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L733)
 
 
 
@@ -132,7 +132,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$website` | `object` | Object containing child site info.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-view.php](class/class-mainwp-manage-sites-view.php), [line 775](class/class-mainwp-manage-sites-view.php#L775-L786)
+Source: [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 775](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L775)
 
 
 
@@ -150,7 +150,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_sucuriscan_sites'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-view.php](class/class-mainwp-manage-sites-view.php), [line 733](class/class-mainwp-manage-sites-view.php#L733-L793)
+Source: [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 733](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L733)
 
 
 
@@ -166,7 +166,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$website` | `object` | Object containing child site info.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-view.php](class/class-mainwp-manage-sites-view.php), [line 795](class/class-mainwp-manage-sites-view.php#L795-L806)
+Source: [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 795](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L795)
 
 
 
@@ -183,7 +183,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/templates/emails/mainwp-licenses-deactivated-alert-email.php](templates/emails/mainwp-licenses-deactivated-alert-email.php), [line 31](templates/emails/mainwp-licenses-deactivated-alert-email.php#L31-L38)
+Source: [templates/emails/mainwp-licenses-deactivated-alert-email.php](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-licenses-deactivated-alert-email.php), [line 31](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-licenses-deactivated-alert-email.php#L31)
 
 
 
@@ -200,7 +200,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/templates/emails/mainwp-licenses-deactivated-alert-email.php](templates/emails/mainwp-licenses-deactivated-alert-email.php), [line 97](templates/emails/mainwp-licenses-deactivated-alert-email.php#L97-L104)
+Source: [templates/emails/mainwp-licenses-deactivated-alert-email.php](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-licenses-deactivated-alert-email.php), [line 97](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-licenses-deactivated-alert-email.php#L97)
 
 
 
@@ -217,7 +217,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/templates/emails/mainwp-after-update-http-check-email.php](templates/emails/mainwp-after-update-http-check-email.php), [line 29](templates/emails/mainwp-after-update-http-check-email.php#L29-L36)
+Source: [templates/emails/mainwp-after-update-http-check-email.php](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-after-update-http-check-email.php), [line 29](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-after-update-http-check-email.php#L29)
 
 
 
@@ -234,7 +234,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/templates/emails/mainwp-after-update-http-check-email.php](templates/emails/mainwp-after-update-http-check-email.php), [line 94](templates/emails/mainwp-after-update-http-check-email.php#L94-L101)
+Source: [templates/emails/mainwp-after-update-http-check-email.php](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-after-update-http-check-email.php), [line 94](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-after-update-http-check-email.php#L94)
 
 
 
@@ -251,7 +251,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/templates/emails/mainwp-uptime-monitoring-email.php](templates/emails/mainwp-uptime-monitoring-email.php), [line 32](templates/emails/mainwp-uptime-monitoring-email.php#L32-L39)
+Source: [templates/emails/mainwp-uptime-monitoring-email.php](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-uptime-monitoring-email.php), [line 32](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-uptime-monitoring-email.php#L32)
 
 
 
@@ -268,7 +268,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/templates/emails/mainwp-uptime-monitoring-email.php](templates/emails/mainwp-uptime-monitoring-email.php), [line 144](templates/emails/mainwp-uptime-monitoring-email.php#L144-L151)
+Source: [templates/emails/mainwp-uptime-monitoring-email.php](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-uptime-monitoring-email.php), [line 144](https://github.com/mainwp/mainwp/blob/master/templates/emails/mainwp-uptime-monitoring-email.php#L144)
 
 
 
@@ -284,7 +284,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$action` | `string` | security action.
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-helper.php](modules/api-backups/classes/class-api-backups-helper.php), [line 134](modules/api-backups/classes/class-api-backups-helper.php#L134-L143)
+Source: [modules/api-backups/classes/class-api-backups-helper.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-helper.php), [line 134](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-helper.php#L134)
 
 
 
@@ -301,7 +301,7 @@ Argument | Type | Description
 `'qq_nonce'` |  | 
 `'qq_nonce'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-install-bulk.php](pages/page-mainwp-install-bulk.php), [line 42](pages/page-mainwp-install-bulk.php#L42-L52)
+Source: [pages/page-mainwp-install-bulk.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-install-bulk.php), [line 42](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-install-bulk.php#L42)
 
 
 
@@ -318,7 +318,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 911](pages/page-mainwp-server-information.php#L911-L918)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 911](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L911)
 
 
 
@@ -335,7 +335,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 973](pages/page-mainwp-server-information.php#L973-L980)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 973](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L973)
 
 
 
@@ -352,7 +352,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-security-issues-widget.php](widgets/widget-mainwp-security-issues-widget.php), [line 166](widgets/widget-mainwp-security-issues-widget.php#L166-L173)
+Source: [widgets/widget-mainwp-security-issues-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php), [line 166](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php#L166)
 
 
 
@@ -369,7 +369,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-security-issues-widget.php](widgets/widget-mainwp-security-issues-widget.php), [line 178](widgets/widget-mainwp-security-issues-widget.php#L178-L185)
+Source: [widgets/widget-mainwp-security-issues-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php), [line 178](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php#L178)
 
 
 
@@ -397,7 +397,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-security-issues-widget.php](widgets/widget-mainwp-security-issues-widget.php), [line 248](widgets/widget-mainwp-security-issues-widget.php#L248-L263)
+Source: [widgets/widget-mainwp-security-issues-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php), [line 248](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php#L248)
 
 
 
@@ -414,7 +414,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-security-issues-widget.php](widgets/widget-mainwp-security-issues-widget.php), [line 271](widgets/widget-mainwp-security-issues-widget.php#L271-L278)
+Source: [widgets/widget-mainwp-security-issues-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php), [line 271](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php#L271)
 
 
 
@@ -430,7 +430,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 766](class/class-mainwp-system.php#L766-L864)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 766](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L766)
 
 
 
@@ -444,7 +444,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `static::$security_names` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-post-base-handler.php](class/class-mainwp-post-base-handler.php), [line 140](class/class-mainwp-post-base-handler.php#L140-L150)
+Source: [class/class-mainwp-post-base-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-base-handler.php), [line 140](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-base-handler.php#L140)
 
 
 
@@ -460,7 +460,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `7` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-logger.php](class/class-mainwp-logger.php), [line 749](class/class-mainwp-logger.php#L749-L763)
+Source: [class/class-mainwp-logger.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-logger.php), [line 749](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-logger.php#L749)
 
 
 
@@ -480,7 +480,7 @@ Version | Description
 ------- | -----------
 `5.3` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-connect.php](class/class-mainwp-uptime-monitoring-connect.php), [line 61](class/class-mainwp-uptime-monitoring-connect.php#L61-L66)
+Source: [class/class-mainwp-uptime-monitoring-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php), [line 61](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php#L61)
 
 
 
@@ -494,7 +494,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `10` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-connect.php](class/class-mainwp-uptime-monitoring-connect.php), [line 88](class/class-mainwp-uptime-monitoring-connect.php#L88-L97)
+Source: [class/class-mainwp-uptime-monitoring-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php), [line 88](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php#L88)
 
 
 
@@ -508,7 +508,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `10` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-connect.php](class/class-mainwp-uptime-monitoring-connect.php), [line 350](class/class-mainwp-uptime-monitoring-connect.php#L350-L375)
+Source: [class/class-mainwp-uptime-monitoring-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php), [line 350](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php#L350)
 
 
 
@@ -523,7 +523,7 @@ Argument | Type | Description
 `$importance` |  | 
 `$heartbeat` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-connect.php](class/class-mainwp-uptime-monitoring-connect.php), [line 713](class/class-mainwp-uptime-monitoring-connect.php#L713-L845)
+Source: [class/class-mainwp-uptime-monitoring-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php), [line 713](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php#L713)
 
 
 
@@ -539,7 +539,7 @@ Argument | Type | Description
 `$monitor` | `mixed` | monitor.
 `$previous_heartbeat` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-connect.php](class/class-mainwp-uptime-monitoring-connect.php), [line 713](class/class-mainwp-uptime-monitoring-connect.php#L713-L849)
+Source: [class/class-mainwp-uptime-monitoring-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php), [line 713](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php#L713)
 
 
 
@@ -554,7 +554,7 @@ Argument | Type | Description
 `$url` |  | 
 `$monitor` | `mixed` | monitor.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-connect.php](class/class-mainwp-uptime-monitoring-connect.php), [line 1008](class/class-mainwp-uptime-monitoring-connect.php#L1008-L1038)
+Source: [class/class-mainwp-uptime-monitoring-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php), [line 1008](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-connect.php#L1008)
 
 
 
@@ -568,7 +568,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$params` | `array` | params.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-db-uptime-monitoring.php](class/class-mainwp-db-uptime-monitoring.php), [line 418](class/class-mainwp-db-uptime-monitoring.php#L418-L427)
+Source: [class/class-mainwp-db-uptime-monitoring.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db-uptime-monitoring.php), [line 418](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db-uptime-monitoring.php#L418)
 
 
 
@@ -584,7 +584,7 @@ Argument | Type | Description
 `$securityStats` |  | 
 `$pWebsite` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-sync.php](class/class-mainwp-sync.php), [line 366](class/class-mainwp-sync.php#L366-L367)
+Source: [class/class-mainwp-sync.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-sync.php), [line 366](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-sync.php#L366)
 
 
 
@@ -607,7 +607,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-monitoring-sites-list-table.php](class/class-mainwp-monitoring-sites-list-table.php), [line 99](class/class-mainwp-monitoring-sites-list-table.php#L99-L108)
+Source: [class/class-mainwp-monitoring-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php), [line 99](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php#L99)
 
 
 
@@ -630,7 +630,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-monitoring-sites-list-table.php](class/class-mainwp-monitoring-sites-list-table.php), [line 185](class/class-mainwp-monitoring-sites-list-table.php#L185-L194)
+Source: [class/class-mainwp-monitoring-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php), [line 185](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php#L185)
 
 
 
@@ -644,7 +644,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('favi_icon', 'health_site_status')` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-monitoring-sites-list-table.php](class/class-mainwp-monitoring-sites-list-table.php), [line 409](class/class-mainwp-monitoring-sites-list-table.php#L409-L616)
+Source: [class/class-mainwp-monitoring-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php), [line 409](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php#L409)
 
 
 
@@ -666,7 +666,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-monitoring-sites-list-table.php](class/class-mainwp-monitoring-sites-list-table.php), [line 722](class/class-mainwp-monitoring-sites-list-table.php#L722-L729)
+Source: [class/class-mainwp-monitoring-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php), [line 722](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-monitoring-sites-list-table.php#L722)
 
 
 
@@ -683,7 +683,7 @@ Argument | Type | Description
 `false` |  | 
 `$website` | `mixed` | Array of Child Site Info.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 361](class/class-mainwp-connect.php#L361-L427)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php), [line 361](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php#L361)
 
 
 
@@ -697,7 +697,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('useglobal' => esc_html__('Use global settings', 'mainwp'), 'head' => 'HEAD', 'get' => 'GET', 'post' => 'POST', 'push' => 'PUSH', 'patch' => 'PATCH', 'delete' => 'DELETE')` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-edit.php](class/class-mainwp-uptime-monitoring-edit.php), [line 708](class/class-mainwp-uptime-monitoring-edit.php#L708-L727)
+Source: [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 708](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L708)
 
 
 
@@ -712,7 +712,7 @@ Argument | Type | Description
 `$values` |  | 
 `$flip_values` | `mixed` | flip values.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-edit.php](class/class-mainwp-uptime-monitoring-edit.php), [line 737](class/class-mainwp-uptime-monitoring-edit.php#L737-L766)
+Source: [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 737](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L737)
 
 
 
@@ -727,7 +727,7 @@ Argument | Type | Description
 `$values` |  | 
 `$flip_values` | `mixed` | flip values.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-edit.php](class/class-mainwp-uptime-monitoring-edit.php), [line 770](class/class-mainwp-uptime-monitoring-edit.php#L770-L808)
+Source: [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 770](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L770)
 
 
 
@@ -741,7 +741,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-schedule.php](class/class-mainwp-uptime-monitoring-schedule.php), [line 67](class/class-mainwp-uptime-monitoring-schedule.php#L67-L74)
+Source: [class/class-mainwp-uptime-monitoring-schedule.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-schedule.php), [line 67](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-schedule.php#L67)
 
 
 
@@ -755,7 +755,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `3` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-uptime-monitoring-schedule.php](class/class-mainwp-uptime-monitoring-schedule.php), [line 173](class/class-mainwp-uptime-monitoring-schedule.php#L173-L214)
+Source: [class/class-mainwp-uptime-monitoring-schedule.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-schedule.php), [line 173](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-schedule.php#L173)
 
 
 
@@ -771,7 +771,7 @@ Argument | Type | Description
 `$connector_name` |  | 
 `$excluded_connectors` | `array` | An array of all excluded connector slugs.
 
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-connectors.php](modules/logs/classes/class-log-connectors.php), [line 148](modules/logs/classes/class-log-connectors.php#L148-L155)
+Source: [modules/logs/classes/class-log-connectors.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-connectors.php), [line 148](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-connectors.php#L148)
 
 
 
@@ -783,7 +783,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/cost-tracker/pages/page-cost-tracker-settings.php](modules/cost-tracker/pages/page-cost-tracker-settings.php), [line 348](modules/cost-tracker/pages/page-cost-tracker-settings.php#L348-L348)
+Source: [modules/cost-tracker/pages/page-cost-tracker-settings.php](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-settings.php), [line 348](https://github.com/mainwp/mainwp/blob/master/modules/cost-tracker/pages/page-cost-tracker-settings.php#L348)
 
 
 
@@ -807,7 +807,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-security-issues.php](pages/page-mainwp-security-issues.php), [line 293](pages/page-mainwp-security-issues.php#L293-L305)
+Source: [pages/page-mainwp-security-issues.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-security-issues.php), [line 293](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-security-issues.php#L293)
 
 
 
@@ -823,7 +823,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `true` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-security-issues.php](pages/page-mainwp-security-issues.php), [line 312](pages/page-mainwp-security-issues.php#L312-L366)
+Source: [pages/page-mainwp-security-issues.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-security-issues.php), [line 312](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-security-issues.php#L312)
 
 
 
@@ -835,7 +835,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Uptime Monitoring', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-uptime-monitoring-site-widget.php](widgets/widget-mainwp-uptime-monitoring-site-widget.php), [line 190](widgets/widget-mainwp-uptime-monitoring-site-widget.php#L190-L190)
+Source: [widgets/widget-mainwp-uptime-monitoring-site-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-uptime-monitoring-site-widget.php), [line 190](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-uptime-monitoring-site-widget.php#L190)
 
 
 
@@ -847,7 +847,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Site Hardening', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-security-issues-widget.php](widgets/widget-mainwp-security-issues-widget.php), [line 98](widgets/widget-mainwp-security-issues-widget.php#L98-L98)
+Source: [widgets/widget-mainwp-security-issues-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php), [line 98](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php#L98)
 
 
 
@@ -860,7 +860,7 @@ Argument | Type | Description
 `'admin.php?page=managesites&dashboard=' . $website->id` |  | 
 `$website` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-security-issues-widget.php](widgets/widget-mainwp-security-issues-widget.php), [line 225](widgets/widget-mainwp-security-issues-widget.php#L225-L225)
+Source: [widgets/widget-mainwp-security-issues-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php), [line 225](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php#L225)
 
 
 
@@ -873,7 +873,7 @@ Argument | Type | Description
 `$website->name` |  | 
 `$website` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-security-issues-widget.php](widgets/widget-mainwp-security-issues-widget.php), [line 236](widgets/widget-mainwp-security-issues-widget.php#L236-L236)
+Source: [widgets/widget-mainwp-security-issues-widget.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php), [line 236](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-security-issues-widget.php#L236)
 
 
 
@@ -885,7 +885,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `esc_html__('Uptime Monitoring', 'mainwp')` |  | 
 
-Source: [../sources/mainwp-dashboard/widgets/widget-mainwp-uptime-monitoring-status.php](widgets/widget-mainwp-uptime-monitoring-status.php), [line 51](widgets/widget-mainwp-uptime-monitoring-status.php#L51-L51)
+Source: [widgets/widget-mainwp-uptime-monitoring-status.php](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-uptime-monitoring-status.php), [line 51](https://github.com/mainwp/mainwp/blob/master/widgets/widget-mainwp-uptime-monitoring-status.php#L51)
 
 
 

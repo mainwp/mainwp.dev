@@ -28,7 +28,7 @@ Hooks for managing content on Child sites.
 *Purge WP Hummingbird cache.*
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 741](class/class-mainwp-child-cache-purge.php#L741-L756)
+Source: [class/class-mainwp-child-cache-purge.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-cache-purge.php), [line 741](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-cache-purge.php#L741)
 
 
 
@@ -44,7 +44,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$forceRecheck` | `bool` | If true, force recheck process, if false, just regular check.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-pagespeed.php](class/class-mainwp-child-pagespeed.php), [line 429](class/class-mainwp-child-pagespeed.php#L429-L445)
+Source: [class/class-mainwp-child-pagespeed.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-pagespeed.php), [line 429](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-pagespeed.php#L429)
 
 
 
@@ -58,7 +58,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$result` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-posts.php](class/class-mainwp-child-posts.php), [line 373](class/class-mainwp-child-posts.php#L373-L405)
+Source: [class/class-mainwp-child-posts.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php), [line 373](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php#L373)
 
 
 
@@ -72,7 +72,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$comment->comment_author_email` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-comments.php](class/class-mainwp-child-comments.php), [line 200](class/class-mainwp-child-comments.php#L200-L229)
+Source: [class/class-mainwp-child-comments.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-comments.php), [line 200](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-comments.php#L200)
 
 
 
@@ -95,7 +95,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-callable.php](class/class-mainwp-child-callable.php), [line 745](class/class-mainwp-child-callable.php#L745-L755)
+Source: [class/class-mainwp-child-callable.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-callable.php), [line 745](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-callable.php#L745)
 
 
 
@@ -110,7 +110,7 @@ Argument | Type | Description
 `$ret` |  | 
 `$data` | `string` | Data to post.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-wpvivid-backuprestore.php](class/class-mainwp-child-wpvivid-backuprestore.php), [line 225](class/class-mainwp-child-wpvivid-backuprestore.php#L225-L239)
+Source: [class/class-mainwp-child-wpvivid-backuprestore.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wpvivid-backuprestore.php), [line 225](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wpvivid-backuprestore.php#L225)
 
 
 
@@ -126,7 +126,7 @@ Argument | Type | Description
 `'4.0.7.1'` |  | 
 `'mainwp_child_init_subpages'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-pages.php](class/class-mainwp-pages.php), [line 230](class/class-mainwp-pages.php#L230-L246)
+Source: [class/class-mainwp-pages.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-pages.php), [line 230](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-pages.php#L230)
 
 
 
@@ -140,7 +140,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$all_subpages` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-pages.php](class/class-mainwp-pages.php), [line 230](class/class-mainwp-pages.php#L230-L247)
+Source: [class/class-mainwp-pages.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-pages.php), [line 230](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-pages.php#L230)
 
 
 
@@ -154,7 +154,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array($error_log)` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-server-information.php](class/class-mainwp-child-server-information.php), [line 1089](class/class-mainwp-child-server-information.php#L1089-L1107)
+Source: [class/class-mainwp-child-server-information.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information.php), [line 1089](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information.php#L1089)
 
 
 
@@ -168,7 +168,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `10` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-server-information.php](class/class-mainwp-child-server-information.php), [line 1089](class/class-mainwp-child-server-information.php#L1089-L1108)
+Source: [class/class-mainwp-child-server-information.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information.php), [line 1089](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information.php#L1089)
 
 
 

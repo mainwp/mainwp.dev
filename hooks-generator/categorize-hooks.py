@@ -120,6 +120,40 @@ CATEGORY_DESCRIPTIONS = {
     'misc': 'Miscellaneous hooks that don\'t fit into other categories.'
 }
 
+def transform_source_links(hook_entry):
+    """Transform source links from local file paths to GitHub repository URLs."""
+    # Match the source link pattern
+    source_pattern = r'Source: \[(.*?)\]\((.*?)\), \[line (\d+)\]\((.*?)(?:#L\d+-L\d+)?\)'
+    
+    def replace_source_link(match):
+        path_text = match.group(1)
+        path_url = match.group(2)
+        line_num = match.group(3)
+        line_url = match.group(4)
+        
+        # Determine which repository the file belongs to
+        if 'mainwp-dashboard' in path_text:
+            repo_url = 'https://github.com/mainwp/mainwp/blob/master/'
+            # Extract the path relative to the repository root
+            rel_path = path_text.split('mainwp-dashboard/', 1)[1] if 'mainwp-dashboard/' in path_text else path_url
+        elif 'mainwp-child' in path_text:
+            repo_url = 'https://github.com/mainwp/mainwp-child/blob/master/'
+            # Extract the path relative to the repository root
+            rel_path = path_text.split('mainwp-child/', 1)[1] if 'mainwp-child/' in path_text else path_url
+        else:
+            # If we can't determine the repository, keep the original link
+            return match.group(0)
+        
+        # Create the new GitHub URLs
+        github_url = f"{repo_url}{rel_path}"
+        github_line_url = f"{repo_url}{rel_path}#L{line_num}"
+        
+        # Return the transformed source link
+        return f'Source: [{rel_path}]({github_url}), [line {line_num}]({github_line_url})'
+    
+    # Replace all source links in the hook entry
+    return re.sub(source_pattern, replace_source_link, hook_entry)
+
 def parse_hooks_file(file_path):
     """Parse a hooks documentation file and extract hook entries."""
     with open(file_path, 'r') as f:
@@ -129,7 +163,10 @@ def parse_hooks_file(file_path):
     # Each hook entry starts with ### and continues until the next ### or end of file
     hook_entries = re.split(r'(?=^### )', content, flags=re.MULTILINE)[1:]  # Skip the header
     
-    return hook_entries
+    # Transform source links in each hook entry
+    transformed_entries = [transform_source_links(entry) for entry in hook_entries]
+    
+    return transformed_entries
 
 def categorize_hook(hook_entry, categories):
     """Assign a hook to a category based on its name and description."""

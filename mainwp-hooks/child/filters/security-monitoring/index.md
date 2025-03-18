@@ -39,7 +39,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array(&$phpmailer)` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-wp-up.php](class/class-mainwp-child-back-wp-up.php), [line 1311](class/class-mainwp-child-back-wp-up.php#L1311-L1363)
+Source: [class/class-mainwp-child-back-wp-up.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php), [line 1311](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php#L1311)
 
 
 
@@ -56,7 +56,7 @@ Argument | Type | Description
 `$scan_data` |  | 
 `$scan_time` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-client-report.php](class/class-mainwp-client-report.php), [line 179](class/class-mainwp-client-report.php#L179-L191)
+Source: [class/class-mainwp-client-report.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-client-report.php), [line 179](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-client-report.php#L179)
 
 
 
@@ -75,7 +75,7 @@ Argument | Type | Description
 `$details` |  | 
 `$result` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-wordfence.php](class/class-mainwp-child-wordfence.php), [line 309](class/class-mainwp-child-wordfence.php#L309-L371)
+Source: [class/class-mainwp-child-wordfence.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wordfence.php), [line 309](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wordfence.php#L309)
 
 
 
@@ -89,7 +89,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array($updraft_dir . '/' . $file, &$mess, &$warn, &$err)` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 1898](class/class-mainwp-child-updraft-plus-backups.php#L1898-L2036)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 1898](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L1898)
 
 
 
@@ -103,7 +103,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array(&$mess, &$warn, &$err)` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 1898](class/class-mainwp-child-updraft-plus-backups.php#L1898-L2040)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 1898](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L1898)
 
 
 
@@ -117,7 +117,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array($user->user_login, &$pass1, &$pass2)` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-users.php](class/class-mainwp-child-users.php), [line 303](class/class-mainwp-child-users.php#L303-L395)
+Source: [class/class-mainwp-child-users.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-users.php), [line 303](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-users.php#L303)
 
 
 
@@ -128,7 +128,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-child-users.php](class/class
 Check if the CSS/JS file is loaded in admin or not.
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-html-regression.php](class/class-mainwp-child-html-regression.php), [line 224](class/class-mainwp-child-html-regression.php#L224-L238)
+Source: [class/class-mainwp-child-html-regression.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-html-regression.php), [line 224](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-html-regression.php#L224)
 
 
 
@@ -144,7 +144,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$days_number` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-actions.php](class/class-mainwp-child-actions.php), [line 251](class/class-mainwp-child-actions.php#L251-L264)
+Source: [class/class-mainwp-child-actions.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-actions.php), [line 251](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-actions.php#L251)
 
 
 
@@ -160,7 +160,7 @@ Argument | Type | Description
 `$old_siteurl` |  | 
 `$res` | `string` | UpdraftPlus response.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2216](class/class-mainwp-child-updraft-plus-backups.php#L2216-L2367)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2216](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2216)
 
 
 
@@ -176,7 +176,7 @@ Argument | Type | Description
 `$old_home` |  | 
 `$res` | `string` | UpdraftPlus response.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2216](class/class-mainwp-child-updraft-plus-backups.php#L2216-L2377)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2216](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2216)
 
 
 
@@ -188,7 +188,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `''` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2639](class/class-mainwp-child-updraft-plus-backups.php#L2639-L2639)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2639](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2639)
 
 
 
@@ -204,7 +204,7 @@ Argument | Type | Description
 `$old_siteurl` |  | 
 `$res` | `string` | UpdraftPlus response.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2472](class/class-mainwp-child-updraft-plus-backups.php#L2472-L2645)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2472](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2472)
 
 
 
@@ -220,7 +220,7 @@ Argument | Type | Description
 `$old_home` |  | 
 `$res` | `string` | UpdraftPlus response.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2472](class/class-mainwp-child-updraft-plus-backups.php#L2472-L2664)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2472](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2472)
 
 
 
@@ -236,7 +236,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-pagespeed.php](class/class-mainwp-child-pagespeed.php), [line 252](class/class-mainwp-child-pagespeed.php#L252-L265)
+Source: [class/class-mainwp-child-pagespeed.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-pagespeed.php), [line 252](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-pagespeed.php#L252)
 
 
 
@@ -252,7 +252,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-pagespeed.php](class/class-mainwp-child-pagespeed.php), [line 429](class/class-mainwp-child-pagespeed.php#L429-L441)
+Source: [class/class-mainwp-child-pagespeed.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-pagespeed.php), [line 429](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-pagespeed.php#L429)
 
 
 
@@ -268,7 +268,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-pagespeed.php](class/class-mainwp-child-pagespeed.php), [line 452](class/class-mainwp-child-pagespeed.php#L452-L471)
+Source: [class/class-mainwp-child-pagespeed.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-pagespeed.php), [line 452](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-pagespeed.php#L452)
 
 
 

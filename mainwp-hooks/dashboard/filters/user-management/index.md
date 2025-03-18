@@ -87,7 +87,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-update-admin-passwords.php](pages/page-mainwp-bulk-update-admin-passwords.php), [line 264](pages/page-mainwp-bulk-update-admin-passwords.php#L264-L271)
+Source: [pages/page-mainwp-bulk-update-admin-passwords.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php), [line 264](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php#L264)
 
 
 
@@ -104,7 +104,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-update-admin-passwords.php](pages/page-mainwp-bulk-update-admin-passwords.php), [line 309](pages/page-mainwp-bulk-update-admin-passwords.php#L309-L316)
+Source: [pages/page-mainwp-bulk-update-admin-passwords.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php), [line 309](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php#L309)
 
 
 
@@ -124,7 +124,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 411](pages/page-mainwp-user.php#L411-L421)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 411](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L411)
 
 
 
@@ -141,7 +141,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 426](pages/page-mainwp-user.php#L426-L433)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 426](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L426)
 
 
 
@@ -158,7 +158,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 438](pages/page-mainwp-user.php#L438-L445)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 438](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L438)
 
 
 
@@ -175,7 +175,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 474](pages/page-mainwp-user.php#L474-L481)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 474](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L474)
 
 
 
@@ -192,7 +192,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 485](pages/page-mainwp-user.php#L485-L492)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 485](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L485)
 
 
 
@@ -209,7 +209,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 508](pages/page-mainwp-user.php#L508-L515)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 508](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L508)
 
 
 
@@ -226,7 +226,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 538](pages/page-mainwp-user.php#L538-L545)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 538](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L538)
 
 
 
@@ -243,7 +243,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 565](pages/page-mainwp-user.php#L565-L572)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 565](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L565)
 
 
 
@@ -260,7 +260,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 584](pages/page-mainwp-user.php#L584-L591)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 584](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L584)
 
 
 
@@ -277,7 +277,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 595](pages/page-mainwp-user.php#L595-L602)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 595](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L595)
 
 
 
@@ -294,7 +294,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 606](pages/page-mainwp-user.php#L606-L613)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 606](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L606)
 
 
 
@@ -311,7 +311,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 819](pages/page-mainwp-user.php#L819-L826)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 819](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L819)
 
 
 
@@ -320,7 +320,7 @@ Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-main
 *Renders Users Table.*
 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 805](pages/page-mainwp-user.php#L805-L832)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 805](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L805)
 
 
 
@@ -337,7 +337,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 853](pages/page-mainwp-user.php#L853-L860)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 853](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L853)
 
 
 
@@ -352,7 +352,7 @@ Argument | Type | Description
 `$user` |  | 
 `$website` | `object` | Object containing the child site info.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1207](pages/page-mainwp-user.php#L1207-L1229)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1207](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1207)
 
 
 
@@ -378,7 +378,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1257](pages/page-mainwp-user.php#L1257-L1270)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1257](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1257)
 
 
 
@@ -405,7 +405,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1415](pages/page-mainwp-user.php#L1415-L1422)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1415](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1415)
 
 
 
@@ -429,7 +429,7 @@ Version | Description
 ------- | -----------
 `4.5.1.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1440](pages/page-mainwp-user.php#L1440-L1445)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1440](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1440)
 
 
 
@@ -457,7 +457,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1451](pages/page-mainwp-user.php#L1451-L1458)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1451](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1451)
 
 
 
@@ -474,7 +474,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1499](pages/page-mainwp-user.php#L1499-L1506)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1499](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1499)
 
 
 
@@ -491,7 +491,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1521](pages/page-mainwp-user.php#L1521-L1528)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1521](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1521)
 
 
 
@@ -508,7 +508,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1621](pages/page-mainwp-user.php#L1621-L1628)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1621](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1621)
 
 
 
@@ -525,7 +525,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1634](pages/page-mainwp-user.php#L1634-L1641)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1634](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1634)
 
 
 
@@ -542,7 +542,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1645](pages/page-mainwp-user.php#L1645-L1652)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1645](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1645)
 
 
 
@@ -559,7 +559,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1664](pages/page-mainwp-user.php#L1664-L1671)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1664](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1664)
 
 
 
@@ -576,7 +576,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1677](pages/page-mainwp-user.php#L1677-L1684)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1677](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1677)
 
 
 
@@ -593,7 +593,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1694](pages/page-mainwp-user.php#L1694-L1701)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1694](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1694)
 
 
 
@@ -610,7 +610,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1705](pages/page-mainwp-user.php#L1705-L1712)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1705](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1705)
 
 
 
@@ -627,7 +627,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1718](pages/page-mainwp-user.php#L1718-L1725)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1718](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1718)
 
 
 
@@ -644,7 +644,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1773](pages/page-mainwp-user.php#L1773-L1780)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1773](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1773)
 
 
 
@@ -661,7 +661,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1813](pages/page-mainwp-user.php#L1813-L1820)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1813](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1813)
 
 
 
@@ -684,7 +684,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1952](pages/page-mainwp-user.php#L1952-L1959)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1952](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1952)
 
 
 
@@ -708,7 +708,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1972](pages/page-mainwp-user.php#L1972-L1979)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1972](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1972)
 
 
 
@@ -725,7 +725,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 2099](pages/page-mainwp-user.php#L2099-L2106)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 2099](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L2099)
 
 
 
@@ -742,7 +742,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 2120](pages/page-mainwp-user.php#L2120-L2127)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 2120](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L2120)
 
 
 
@@ -765,7 +765,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 2278](pages/page-mainwp-user.php#L2278-L2285)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 2278](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L2278)
 
 
 
@@ -789,7 +789,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 2298](pages/page-mainwp-user.php#L2298-L2305)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 2298](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L2298)
 
 
 
@@ -810,7 +810,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 2359](pages/page-mainwp-user.php#L2359-L2370)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 2359](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L2359)
 
 
 
@@ -827,7 +827,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1867](pages/page-mainwp-server-information.php#L1867-L1874)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1867](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1867)
 
 
 
@@ -844,7 +844,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information.php](pages/page-mainwp-server-information.php), [line 1890](pages/page-mainwp-server-information.php#L1890-L1897)
+Source: [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1890](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1890)
 
 
 
@@ -866,7 +866,7 @@ Version | Description
 ------- | -----------
 `4.5.1.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-add.php](pages/page-mainwp-bulk-add.php), [line 62](pages/page-mainwp-bulk-add.php#L62-L67)
+Source: [pages/page-mainwp-bulk-add.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-add.php), [line 62](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-add.php#L62)
 
 
 
@@ -888,7 +888,7 @@ Version | Description
 ------- | -----------
 `4.5.1.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-add.php](pages/page-mainwp-bulk-add.php), [line 72](pages/page-mainwp-bulk-add.php#L72-L77)
+Source: [pages/page-mainwp-bulk-add.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-add.php), [line 72](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-add.php#L72)
 
 
 
@@ -910,7 +910,7 @@ Version | Description
 ------- | -----------
 `5.1.1` | 
 
-Source: [../sources/mainwp-dashboard/includes/rest-api/class-mainwp-rest-authentication.php](includes/rest-api/class-mainwp-rest-authentication.php), [line 790](includes/rest-api/class-mainwp-rest-authentication.php#L790-L799)
+Source: [includes/rest-api/class-mainwp-rest-authentication.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/class-mainwp-rest-authentication.php), [line 790](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/class-mainwp-rest-authentication.php#L790)
 
 
 
@@ -928,7 +928,7 @@ Argument | Type | Description
 `$cap_type` | `string` | group or type of capabilities.
 `$cap` | `string` | capabilities for current user.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 612](class/class-mainwp-system.php#L612-L649)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 612](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L612)
 
 
 
@@ -944,7 +944,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'all'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-db.php](class/class-mainwp-db.php), [line 1892](class/class-mainwp-db.php#L1892-L1899)
+Source: [class/class-mainwp-db.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db.php), [line 1892](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db.php#L1892)
 
 
 
@@ -962,7 +962,7 @@ Argument | Type | Description
 `$website->id` |  | 
 `$current_user->ID` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 440](class/class-mainwp-connect.php#L440-L450)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php), [line 440](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php#L440)
 
 
 
@@ -978,7 +978,7 @@ Argument | Type | Description
 `$website->id` |  | 
 `$current_user->ID` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-connect.php](class/class-mainwp-connect.php), [line 611](class/class-mainwp-connect.php#L611-L612)
+Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php), [line 611](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-connect.php#L611)
 
 
 
@@ -998,7 +998,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `' - '` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/logs/classes/class-log-author.php](modules/logs/classes/class-log-author.php), [line 155](modules/logs/classes/class-log-author.php#L155-L183)
+Source: [modules/logs/classes/class-log-author.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-author.php), [line 155](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-author.php#L155)
 
 
 
@@ -1020,7 +1020,7 @@ Version | Description
 ------- | -----------
 `4.1` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-bulk-update-admin-passwords.php](pages/page-mainwp-bulk-update-admin-passwords.php), [line 326](pages/page-mainwp-bulk-update-admin-passwords.php#L326-L333)
+Source: [pages/page-mainwp-bulk-update-admin-passwords.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php), [line 326](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-bulk-update-admin-passwords.php#L326)
 
 
 
@@ -1036,7 +1036,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_users_manage_roles'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 368](pages/page-mainwp-user.php#L368-L528)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 368](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L368)
 
 
 
@@ -1050,7 +1050,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$user_roles` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 368](pages/page-mainwp-user.php#L368-L529)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 368](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L368)
 
 
 
@@ -1066,7 +1066,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_users_manage_roles'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 661](pages/page-mainwp-user.php#L661-L675)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 661](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L661)
 
 
 
@@ -1080,7 +1080,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$editable_roles` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 661](pages/page-mainwp-user.php#L661-L676)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 661](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L661)
 
 
 
@@ -1094,7 +1094,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$table_features` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 805](pages/page-mainwp-user.php#L805-L879)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 805](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L805)
 
 
 
@@ -1112,7 +1112,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'24'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1486](pages/page-mainwp-user.php#L1486-L1493)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1486](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1486)
 
 
 
@@ -1128,7 +1128,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_users_manage_roles'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1481](pages/page-mainwp-user.php#L1481-L1597)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1481](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1481)
 
 
 
@@ -1142,7 +1142,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$user_roles` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1481](pages/page-mainwp-user.php#L1481-L1598)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1481](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1481)
 
 
 
@@ -1160,7 +1160,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_users_manage_roles'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1826](pages/page-mainwp-user.php#L1826-L1867)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1826](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1826)
 
 
 
@@ -1176,7 +1176,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$cus_roles` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 1826](pages/page-mainwp-user.php#L1826-L1868)
+Source: [pages/page-mainwp-user.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php), [line 1826](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-user.php#L1826)
 
 
 

@@ -55,7 +55,7 @@ Argument | Type | Description
 `$backup_type` |  | 
 `$backup_time` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-wp-up.php](class/class-mainwp-child-back-wp-up.php), [line 320](class/class-mainwp-child-back-wp-up.php#L320-L409)
+Source: [class/class-mainwp-child-back-wp-up.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php), [line 320](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php#L320)
 
 
 
@@ -69,7 +69,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'backupwordpress'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-up-wordpress.php](class/class-mainwp-child-back-up-wordpress.php), [line 303](class/class-mainwp-child-back-up-wordpress.php#L303-L313)
+Source: [class/class-mainwp-child-back-up-wordpress.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-wordpress.php), [line 303](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-wordpress.php#L303)
 
 
 
@@ -87,7 +87,7 @@ Argument | Type | Description
 `$backup_type` |  | 
 `$date` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-up-wordpress.php](class/class-mainwp-child-back-up-wordpress.php), [line 319](class/class-mainwp-child-back-up-wordpress.php#L319-L358)
+Source: [class/class-mainwp-child-back-up-wordpress.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-wordpress.php), [line 319](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-wordpress.php#L319)
 
 
 
@@ -103,7 +103,7 @@ Argument | Type | Description
 `$backup_type` |  | 
 `$backup_time` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 1014](class/class-mainwp-child-timecapsule.php#L1014-L1068)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 1014](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L1014)
 
 
 
@@ -117,7 +117,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'backupbuddy'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-up-buddy.php](class/class-mainwp-child-back-up-buddy.php), [line 163](class/class-mainwp-child-back-up-buddy.php#L163-L170)
+Source: [class/class-mainwp-child-back-up-buddy.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-buddy.php), [line 163](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-buddy.php#L163)
 
 
 
@@ -133,7 +133,7 @@ Argument | Type | Description
 `$backupType` |  | 
 `$finish_time` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-up-buddy.php](class/class-mainwp-child-back-up-buddy.php), [line 176](class/class-mainwp-child-back-up-buddy.php#L176-L267)
+Source: [class/class-mainwp-child-back-up-buddy.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-buddy.php), [line 176](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-buddy.php#L176)
 
 
 
@@ -149,7 +149,7 @@ Argument | Type | Description
 `$backupType` |  | 
 `$finish_time` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-up-buddy.php](class/class-mainwp-child-back-up-buddy.php), [line 176](class/class-mainwp-child-back-up-buddy.php#L176-L291)
+Source: [class/class-mainwp-child-back-up-buddy.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-buddy.php), [line 176](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-up-buddy.php#L176)
 
 
 
@@ -167,7 +167,7 @@ Argument | Type | Description
 `$status` |  | 
 `$type` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-client-report.php](class/class-mainwp-client-report.php), [line 195](class/class-mainwp-client-report.php#L195-L208)
+Source: [class/class-mainwp-client-report.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-client-report.php), [line 195](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-client-report.php#L195)
 
 
 
@@ -181,7 +181,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `apply_filters($options, array())` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 1101](class/class-mainwp-child-updraft-plus-backups.php#L1101-L1136)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 1101](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L1101)
 
 
 
@@ -195,7 +195,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$has_backup` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-ithemes-security.php](class/class-mainwp-child-ithemes-security.php), [line 680](class/class-mainwp-child-ithemes-security.php#L680-L688)
+Source: [class/class-mainwp-child-ithemes-security.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-ithemes-security.php), [line 680](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-ithemes-security.php#L680)
 
 
 
@@ -209,7 +209,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$sceduled_backup` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-ithemes-security.php](class/class-mainwp-child-ithemes-security.php), [line 691](class/class-mainwp-child-ithemes-security.php#L691-L699)
+Source: [class/class-mainwp-child-ithemes-security.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-ithemes-security.php), [line 691](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-ithemes-security.php#L691)
 
 
 
@@ -223,7 +223,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `''` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 497](class/class-mainwp-child-timecapsule.php#L497-L530)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 497](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L497)
 
 
 
@@ -237,7 +237,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `''` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 497](class/class-mainwp-child-timecapsule.php#L497-L549)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 497](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L497)
 
 
 
@@ -251,7 +251,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `''` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 497](class/class-mainwp-child-timecapsule.php#L497-L550)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 497](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L497)
 
 
 
@@ -265,7 +265,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `''` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 615](class/class-mainwp-child-timecapsule.php#L615-L622)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 615](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L615)
 
 
 
@@ -279,7 +279,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `''` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 615](class/class-mainwp-child-timecapsule.php#L615-L623)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 615](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L615)
 
 
 
@@ -293,7 +293,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `''` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 1674](class/class-mainwp-child-timecapsule.php#L1674-L1699)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 1674](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L1674)
 
 
 
@@ -306,7 +306,7 @@ Argument | Type | Description
 `$options` |  | 
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 1136](class/class-mainwp-child-updraft-plus-backups.php#L1136-L1136)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 1136](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L1136)
 
 
 
@@ -320,7 +320,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 1898](class/class-mainwp-child-updraft-plus-backups.php#L1898-L1980)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 1898](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L1898)
 
 
 
@@ -334,7 +334,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array($backupable_plus_db, array($foreign_known[$backups[$timestamp]['meta_foreign']], &$mess, &$warn, &$err))` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 1898](class/class-mainwp-child-updraft-plus-backups.php#L1898-L1996)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 1898](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L1898)
 
 
 
@@ -346,7 +346,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `sprintf(esc_html__('This restoration will work if you still have an SSL certificate (i.e. can use https) to access the site. Otherwise, you will want to use %s to search/replace the site address so that the site can be visited without https.', 'updraftplus'), '<a href="https://updraftplus.com/shop/migrator/">' . esc_html__('the migrator add-on', 'updraftplus') . '</a>')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2634](class/class-mainwp-child-updraft-plus-backups.php#L2634-L2634)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2634](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2634)
 
 
 
@@ -358,7 +358,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `sprintf(esc_html__('As long as your web hosting allows http (i.e. non-SSL access) or will forward requests to https (which is almost always the case), this is no problem. If that is not yet set up, then you should set it up, or use %s so that the non-https links are automatically replaced.', 'updraftplus'), apply_filters('<a href="https://updraftplus.com/shop/migrator/">' . esc_html__('the migrator add-on', 'updraftplus') . '</a>'))` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2636](class/class-mainwp-child-updraft-plus-backups.php#L2636-L2636)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2636](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2636)
 
 
 
@@ -370,7 +370,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'<a href="https://updraftplus.com/shop/migrator/">' . esc_html__('the migrator add-on', 'updraftplus') . '</a>'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2636](class/class-mainwp-child-updraft-plus-backups.php#L2636-L2636)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2636](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2636)
 
 
 
@@ -382,7 +382,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `'https://updraftplus.com/faqs/tell-me-more-about-the-search-and-replace-site-location-in-the-database-option/'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 2648](class/class-mainwp-child-updraft-plus-backups.php#L2648-L2648)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 2648](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L2648)
 
 
 
@@ -396,7 +396,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 3006](class/class-mainwp-child-updraft-plus-backups.php#L3006-L3043)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 3006](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L3006)
 
 
 
@@ -414,7 +414,7 @@ Argument | Type | Description
 `(int) $key` |  | 
 `false` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 3192](class/class-mainwp-child-updraft-plus-backups.php#L3192-L3204)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 3192](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L3192)
 
 
 
@@ -428,7 +428,7 @@ Argument | Type | Description
 `$jobdata` |  | 
 `$nonce` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 3206](class/class-mainwp-child-updraft-plus-backups.php#L3206-L3206)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 3206](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L3206)
 
 
 
@@ -442,7 +442,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$basedir` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 3499](class/class-mainwp-child-updraft-plus-backups.php#L3499-L3521)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 3499](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L3499)
 
 
 
@@ -457,7 +457,7 @@ Argument | Type | Description
 `$next_resumption` |  | 
 `$jobdata` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updraft-plus-backups.php](class/class-mainwp-child-updraft-plus-backups.php), [line 3736](class/class-mainwp-child-updraft-plus-backups.php#L3736-L3736)
+Source: [class/class-mainwp-child-updraft-plus-backups.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php), [line 3736](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updraft-plus-backups.php#L3736)
 
 
 
@@ -471,7 +471,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$information` | `array` | Stores the returned information.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-wpvivid-backuprestore.php](class/class-mainwp-child-wpvivid-backuprestore.php), [line 91](class/class-mainwp-child-wpvivid-backuprestore.php#L91-L107)
+Source: [class/class-mainwp-child-wpvivid-backuprestore.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wpvivid-backuprestore.php), [line 91](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wpvivid-backuprestore.php#L91)
 
 
 

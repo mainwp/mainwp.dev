@@ -88,7 +88,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array('website' => $website->id)` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-backup-view.php](class/class-mainwp-manage-sites-backup-view.php), [line 135](class/class-mainwp-manage-sites-backup-view.php#L135-L176)
+Source: [class/class-mainwp-manage-sites-backup-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-backup-view.php), [line 135](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-backup-view.php#L135)
 
 
 
@@ -106,7 +106,7 @@ Argument | Type | Description
 `MainWP_Logger::API_BACKUPS_LOG_PRIORITY` |  | 
 `$log_color` | `int` | Log color.
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-utility.php](modules/api-backups/classes/class-api-backups-utility.php), [line 173](modules/api-backups/classes/class-api-backups-utility.php#L173-L191)
+Source: [modules/api-backups/classes/class-api-backups-utility.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-utility.php), [line 173](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-utility.php#L173)
 
 
 
@@ -121,7 +121,7 @@ Argument | Type | Description
 `'cloudways_action_backup'` |  | 
 `array(&$this, 'ajax_cloudways_action_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L105)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -136,7 +136,7 @@ Argument | Type | Description
 `'cloudways_action_individual_backup'` |  | 
 `array(&$this, 'ajax_cloudways_action_individual_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L106)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -151,7 +151,7 @@ Argument | Type | Description
 `'cloudways_action_refresh_available_backups'` |  | 
 `array(&$this, 'cloudways_action_refresh_available_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L108)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -166,7 +166,7 @@ Argument | Type | Description
 `'cloudways_action_restore_backup'` |  | 
 `array(&$this, 'cloudways_action_restore_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L109)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -181,7 +181,7 @@ Argument | Type | Description
 `'cloudways_action_delete_backup'` |  | 
 `array(&$this, 'cloudways_action_delete_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L110)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -196,7 +196,7 @@ Argument | Type | Description
 `'gridpane_action_create_backup'` |  | 
 `array(&$this, 'ajax_gridpane_action_create_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L113)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -211,7 +211,7 @@ Argument | Type | Description
 `'gridpane_action_individual_create_backup'` |  | 
 `array(&$this, 'ajax_gridpane_action_individual_create_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L114)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -226,7 +226,7 @@ Argument | Type | Description
 `'gridpane_action_refresh_available_backups'` |  | 
 `array(&$this, 'gridpane_action_refresh_available_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L116)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -241,7 +241,7 @@ Argument | Type | Description
 `'gridpane_action_restore_backup'` |  | 
 `array(&$this, 'gridpane_action_restore_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L117)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -256,7 +256,7 @@ Argument | Type | Description
 `'gridpane_action_delete_backup'` |  | 
 `array(&$this, 'gridpane_action_delete_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L118)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -271,7 +271,7 @@ Argument | Type | Description
 `'vultr_action_create_snapshot'` |  | 
 `array(&$this, 'ajax_vultr_action_create_snapshot')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L121)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -286,7 +286,7 @@ Argument | Type | Description
 `'vultr_action_individual_create_snapshot'` |  | 
 `array(&$this, 'ajax_vultr_action_individual_create_snapshot')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L122)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -301,7 +301,7 @@ Argument | Type | Description
 `'vultr_action_refresh_available_backups'` |  | 
 `array(&$this, 'vultr_action_refresh_available_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L123)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -316,7 +316,7 @@ Argument | Type | Description
 `'vultr_action_restore_backup'` |  | 
 `array(&$this, 'ajax_vultr_action_restore_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L124)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -331,7 +331,7 @@ Argument | Type | Description
 `'vultr_action_delete_backup'` |  | 
 `array(&$this, 'vultr_action_delete_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L125)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -346,7 +346,7 @@ Argument | Type | Description
 `'linode_action_create_backup'` |  | 
 `array(&$this, 'ajax_linode_action_create_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L128)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -361,7 +361,7 @@ Argument | Type | Description
 `'linode_action_individual_create_backup'` |  | 
 `array(&$this, 'ajax_linode_action_individual_create_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L129)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -376,7 +376,7 @@ Argument | Type | Description
 `'linode_action_refresh_available_backups'` |  | 
 `array(&$this, 'linode_action_refresh_available_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L130)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -391,7 +391,7 @@ Argument | Type | Description
 `'linode_action_restore_backup'` |  | 
 `array(&$this, 'linode_action_restore_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L131)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -406,7 +406,7 @@ Argument | Type | Description
 `'linode_action_cancel_backups'` |  | 
 `array(&$this, 'linode_action_cancel_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L132)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -421,7 +421,7 @@ Argument | Type | Description
 `'digitalocean_action_create_backup'` |  | 
 `array(&$this, 'ajax_digitalocean_action_create_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L135)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -436,7 +436,7 @@ Argument | Type | Description
 `'digitalocean_action_individual_create_backup'` |  | 
 `array(&$this, 'ajax_digitalocean_action_individual_create_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L136)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -451,7 +451,7 @@ Argument | Type | Description
 `'digitalocean_action_refresh_available_backups'` |  | 
 `array(&$this, 'digitalocean_action_refresh_available_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L137)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -466,7 +466,7 @@ Argument | Type | Description
 `'digitalocean_action_restore_backup'` |  | 
 `array(&$this, 'digitalocean_action_restore_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L138)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -481,7 +481,7 @@ Argument | Type | Description
 `'digitalocean_action_delete_backup'` |  | 
 `array(&$this, 'digitalocean_action_delete_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L139)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -496,7 +496,7 @@ Argument | Type | Description
 `'cpanel_action_refresh_available_backups'` |  | 
 `array(&$this, 'ajax_cpanel_action_refresh_available_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L142)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -511,7 +511,7 @@ Argument | Type | Description
 `'cpanel_action_create_manual_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_create_manual_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L143)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -526,7 +526,7 @@ Argument | Type | Description
 `'cpanel_action_create_wptk_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_create_wptk_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L144)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -541,7 +541,7 @@ Argument | Type | Description
 `'cpanel_action_restore_wptk_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_restore_wptk_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L145)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -556,7 +556,7 @@ Argument | Type | Description
 `'cpanel_action_delete_wptk_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_delete_wptk_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L146)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -571,7 +571,7 @@ Argument | Type | Description
 `'cpanel_action_restore_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_restore_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L147)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -586,7 +586,7 @@ Argument | Type | Description
 `'cpanel_action_restore_database_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_restore_database_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L148)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -601,7 +601,7 @@ Argument | Type | Description
 `'cpanel_action_restore_manual_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_restore_manual_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L149)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -616,7 +616,7 @@ Argument | Type | Description
 `'cpanel_action_create_database_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_create_database_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L150)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -631,7 +631,7 @@ Argument | Type | Description
 `'cpanel_action_create_full_backup'` |  | 
 `array(&$this, 'ajax_cpanel_action_create_full_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L151)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -646,7 +646,7 @@ Argument | Type | Description
 `'plesk_action_refresh_available_backups'` |  | 
 `array(&$this, 'ajax_plesk_action_refresh_available_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L154)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -661,7 +661,7 @@ Argument | Type | Description
 `'plesk_action_create_backup'` |  | 
 `array(&$this, 'ajax_plesk_action_create_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L155)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -676,7 +676,7 @@ Argument | Type | Description
 `'plesk_action_restore_backup'` |  | 
 `array(&$this, 'ajax_plesk_action_restore_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L156)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -691,7 +691,7 @@ Argument | Type | Description
 `'plesk_action_delete_backup'` |  | 
 `array(&$this, 'ajax_plesk_action_delete_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L157)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -706,7 +706,7 @@ Argument | Type | Description
 `'kinsta_action_refresh_available_backups'` |  | 
 `array(&$this, 'ajax_kinsta_action_refresh_available_backups')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L160)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -721,7 +721,7 @@ Argument | Type | Description
 `'kinsta_action_create_backup'` |  | 
 `array(&$this, 'ajax_kinsta_action_create_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L161)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -736,7 +736,7 @@ Argument | Type | Description
 `'kinsta_action_restore_backup'` |  | 
 `array(&$this, 'ajax_kinsta_action_restore_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L162)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -751,7 +751,7 @@ Argument | Type | Description
 `'kinsta_action_delete_backup'` |  | 
 `array(&$this, 'ajax_kinsta_action_delete_backup')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L163)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -766,7 +766,7 @@ Argument | Type | Description
 `'action_backup_selected_sites'` |  | 
 `array(&$this, 'action_backup_selected_sites')` |  | 
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-3rd-party.php](modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](modules/api-backups/classes/class-api-backups-3rd-party.php#L100-L166)
+Source: [modules/api-backups/classes/class-api-backups-3rd-party.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php), [line 100](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-3rd-party.php#L100)
 
 
 
@@ -780,7 +780,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$task->id` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups-handler.php](pages/page-mainwp-manage-backups-handler.php), [line 211](pages/page-mainwp-manage-backups-handler.php#L211-L276)
+Source: [pages/page-mainwp-manage-backups-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups-handler.php), [line 211](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups-handler.php#L211)
 
 
 
@@ -798,7 +798,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getprimarybackup_activated'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 766](class/class-mainwp-system.php#L766-L807)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 766](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L766)
 
 
 
@@ -814,7 +814,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$return` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-system.php](class/class-mainwp-system.php), [line 766](class/class-mainwp-system.php#L766-L808)
+Source: [class/class-mainwp-system.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php), [line 766](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system.php#L766)
 
 
 
@@ -832,7 +832,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getprimarybackup_methods'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 311](class/class-mainwp-manage-sites-list-table.php#L311-L346)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 311](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L311)
 
 
 
@@ -846,7 +846,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$primary_methods` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-list-table.php](class/class-mainwp-manage-sites-list-table.php), [line 348](class/class-mainwp-manage-sites-list-table.php#L348-L349)
+Source: [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 348](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L348)
 
 
 
@@ -862,7 +862,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getprimarybackup_methods'` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-backup-view.php](class/class-mainwp-manage-sites-backup-view.php), [line 63](class/class-mainwp-manage-sites-backup-view.php#L63-L78)
+Source: [class/class-mainwp-manage-sites-backup-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-backup-view.php), [line 63](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-backup-view.php#L63)
 
 
 
@@ -876,7 +876,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$primary_methods` |  | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-manage-sites-backup-view.php](class/class-mainwp-manage-sites-backup-view.php), [line 63](class/class-mainwp-manage-sites-backup-view.php#L63-L79)
+Source: [class/class-mainwp-manage-sites-backup-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-backup-view.php), [line 63](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-backup-view.php#L63)
 
 
 
@@ -893,7 +893,7 @@ Argument | Type | Description
 `$prefix` |  | 
 `$file_key` | `string` | file key.
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-utility.php](modules/api-backups/classes/class-api-backups-utility.php), [line 524](modules/api-backups/classes/class-api-backups-utility.php#L524-L547)
+Source: [modules/api-backups/classes/class-api-backups-utility.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-utility.php), [line 524](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-utility.php#L524)
 
 
 
@@ -909,7 +909,7 @@ Argument | Type | Description
 `$encrypted_data` | `mixed` | encrypted data.
 `$def_val` | `string` | default data.
 
-Source: [../sources/mainwp-dashboard/modules/api-backups/classes/class-api-backups-utility.php](modules/api-backups/classes/class-api-backups-utility.php), [line 556](modules/api-backups/classes/class-api-backups-utility.php#L556-L564)
+Source: [modules/api-backups/classes/class-api-backups-utility.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-utility.php), [line 556](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-utility.php#L556)
 
 
 
@@ -925,7 +925,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getprimarybackup_methods'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 320](pages/page-mainwp-manage-backups.php#L320-L352)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 320](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L320)
 
 
 
@@ -939,7 +939,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$primary_methods` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 320](pages/page-mainwp-manage-backups.php#L320-L353)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 320](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L320)
 
 
 
@@ -954,7 +954,7 @@ Argument | Type | Description
 `''` |  | 
 `$item->id` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 603](pages/page-mainwp-manage-backups.php#L603-L611)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 603](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L603)
 
 
 
@@ -972,7 +972,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getprimarybackup_methods'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 966](pages/page-mainwp-manage-backups.php#L966-L990)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 966](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L966)
 
 
 
@@ -988,7 +988,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$primary_methods` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 966](pages/page-mainwp-manage-backups.php#L966-L991)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 966](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L966)
 
 
 
@@ -1006,7 +1006,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getprimarybackup_methods'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 1190](pages/page-mainwp-manage-backups.php#L1190-L1201)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 1190](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L1190)
 
 
 
@@ -1022,7 +1022,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$primary_methods` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups.php](pages/page-mainwp-manage-backups.php), [line 1190](pages/page-mainwp-manage-backups.php#L1190-L1202)
+Source: [pages/page-mainwp-manage-backups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php), [line 1190](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups.php#L1190)
 
 
 
@@ -1037,7 +1037,7 @@ Argument | Type | Description
 `array()` |  | 
 `$backupTask` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-manage-backups-handler.php](pages/page-mainwp-manage-backups-handler.php), [line 514](pages/page-mainwp-manage-backups-handler.php#L514-L558)
+Source: [pages/page-mainwp-manage-backups-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups-handler.php), [line 514](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-backups-handler.php#L514)
 
 
 
@@ -1053,7 +1053,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getprimarybackup_methods'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information-handler.php](pages/page-mainwp-server-information-handler.php), [line 852](pages/page-mainwp-server-information-handler.php#L852-L966)
+Source: [pages/page-mainwp-server-information-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information-handler.php), [line 852](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information-handler.php#L852)
 
 
 
@@ -1067,7 +1067,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$primary_methods` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-server-information-handler.php](pages/page-mainwp-server-information-handler.php), [line 852](pages/page-mainwp-server-information-handler.php#L852-L967)
+Source: [pages/page-mainwp-server-information-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information-handler.php), [line 852](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information-handler.php#L852)
 
 
 

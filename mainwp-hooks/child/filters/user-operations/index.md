@@ -39,7 +39,7 @@ Version | Description
 ------- | -----------
 `3.5.0` | 
 
-Source: [../sources/mainwp-child/includes/functions.php](includes/functions.php), [line 34](includes/functions.php#L34-L42)
+Source: [includes/functions.php](https://github.com/mainwp/mainwp-child/blob/master/includes/functions.php), [line 34](https://github.com/mainwp/mainwp-child/blob/master/includes/functions.php#L34)
 
 
 
@@ -54,7 +54,7 @@ Argument | Type | Description
 `$uid` |  | 
 `$action` | `int` | Action performing.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-wp-up.php](class/class-mainwp-child-back-wp-up.php), [line 1074](class/class-mainwp-child-back-wp-up.php#L1074-L1085)
+Source: [class/class-mainwp-child-back-wp-up.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php), [line 1074](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php#L1074)
 
 
 
@@ -69,7 +69,7 @@ Argument | Type | Description
 `$uid` |  | 
 `$action` | `int` | Action to perform.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-back-wp-up.php](class/class-mainwp-child-back-wp-up.php), [line 1093](class/class-mainwp-child-back-wp-up.php#L1093-L1106)
+Source: [class/class-mainwp-child-back-wp-up.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php), [line 1093](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-back-wp-up.php#L1093)
 
 
 
@@ -88,7 +88,7 @@ Argument | Type | Description
 `$message` | `string` | sprintf-ready error message string.
 `$user_id` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-actions.php](class/class-mainwp-child-actions.php), [line 721](class/class-mainwp-child-actions.php#L721-L761)
+Source: [class/class-mainwp-child-actions.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-actions.php), [line 721](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-actions.php#L721)
 
 
 
@@ -110,7 +110,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-branding.php](class/class-mainwp-child-branding.php), [line 560](class/class-mainwp-child-branding.php#L560-L567)
+Source: [class/class-mainwp-child-branding.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding.php), [line 560](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding.php#L560)
 
 
 
@@ -132,7 +132,7 @@ Version | Description
 ------- | -----------
 `4.0` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-branding.php](class/class-mainwp-child-branding.php), [line 1163](class/class-mainwp-child-branding.php#L1163-L1170)
+Source: [class/class-mainwp-child-branding.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding.php), [line 1163](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding.php#L1163)
 
 
 
@@ -146,7 +146,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-users.php](class/class-mainwp-child-users.php), [line 303](class/class-mainwp-child-users.php#L303-L418)
+Source: [class/class-mainwp-child-users.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-users.php), [line 303](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-users.php#L303)
 
 
 
@@ -163,7 +163,7 @@ Argument | Type | Description
 `$uid` |  | 
 `$action` | `mixed` | Action to perform.
 
-Source: [../sources/mainwp-child/class/class-mainwp-utility.php](class/class-mainwp-utility.php), [line 812](class/class-mainwp-utility.php#L812-L825)
+Source: [class/class-mainwp-utility.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-utility.php), [line 812](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-utility.php#L812)
 
 
 
@@ -180,7 +180,7 @@ Argument | Type | Description
 `$uid` |  | 
 `$action` | `mixed` | Action to perform.
 
-Source: [../sources/mainwp-child/class/class-mainwp-utility.php](class/class-mainwp-utility.php), [line 834](class/class-mainwp-utility.php#L834-L849)
+Source: [class/class-mainwp-utility.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-utility.php), [line 834](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-utility.php#L834)
 
 
 

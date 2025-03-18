@@ -61,7 +61,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$cust_req_info` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 1233](class/class-mainwp-child-timecapsule.php#L1233-L1257)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 1233](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L1233)
 
 
 
@@ -77,7 +77,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$args` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-install.php](class/class-mainwp-child-install.php), [line 158](class/class-mainwp-child-install.php#L158-L219)
+Source: [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 158](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L158)
 
 
 
@@ -93,7 +93,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$args` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-install.php](class/class-mainwp-child-install.php), [line 230](class/class-mainwp-child-install.php#L230-L324)
+Source: [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 230](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L230)
 
 
 
@@ -111,7 +111,7 @@ Argument | Type | Description
 `'4.0.7.1'` |  | 
 `'mainwp_child_install_plugin_theme'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-install.php](class/class-mainwp-child-install.php), [line 486](class/class-mainwp-child-install.php#L486-L531)
+Source: [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 486](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L486)
 
 
 
@@ -127,7 +127,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$args` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-install.php](class/class-mainwp-child-install.php), [line 486](class/class-mainwp-child-install.php#L486-L532)
+Source: [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 486](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L486)
 
 
 
@@ -145,7 +145,7 @@ Argument | Type | Description
 `'4.0.7.1'` |  | 
 `'mainwp_child_install_plugin_theme'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-install.php](class/class-mainwp-child-install.php), [line 486](class/class-mainwp-child-install.php#L486-L555)
+Source: [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 486](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L486)
 
 
 
@@ -161,7 +161,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$args` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-install.php](class/class-mainwp-child-install.php), [line 486](class/class-mainwp-child-install.php#L486-L556)
+Source: [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 486](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L486)
 
 
 
@@ -170,7 +170,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-child-install.php](class/cla
 *Hide a single notice.*
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-db-updater-wc.php](class/class-mainwp-child-db-updater-wc.php), [line 222](class/class-mainwp-child-db-updater-wc.php#L222-L230)
+Source: [class/class-mainwp-child-db-updater-wc.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-db-updater-wc.php), [line 222](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-db-updater-wc.php#L222)
 
 
 
@@ -184,7 +184,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array(&$errors, $update, &$user)` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-users.php](class/class-mainwp-child-users.php), [line 303](class/class-mainwp-child-users.php#L303-L434)
+Source: [class/class-mainwp-child-users.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-users.php), [line 303](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-users.php#L303)
 
 
 
@@ -204,7 +204,7 @@ Argument | Type | Description
 `$result` |  | 
 `$max_revisions` | `int` | Maximum revisions to keep.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-maintenance.php](class/class-mainwp-child-maintenance.php), [line 92](class/class-mainwp-child-maintenance.php#L92-L198)
+Source: [class/class-mainwp-child-maintenance.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-maintenance.php), [line 92](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-maintenance.php#L92)
 
 
 
@@ -219,7 +219,7 @@ Version | Description
 ------- | -----------
 `4.3` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 115](class/class-mainwp-child-updates.php#L115-L120)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 115](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L115)
 
 
 
@@ -236,7 +236,7 @@ Argument | Type | Description
 `'plugin'` |  | 
 `$plugins` | `array` | An array containing plugins to be updated.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 356](class/class-mainwp-child-updates.php#L356-L374)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 356](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L356)
 
 
 
@@ -254,7 +254,7 @@ Argument | Type | Description
 `$result` |  | 
 `$plugins` | `array` | An array containing plugins to be updated.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 356](class/class-mainwp-child-updates.php#L356-L379)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 356](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L356)
 
 
 
@@ -271,7 +271,7 @@ Argument | Type | Description
 `'theme'` |  | 
 `$themes` | `array` | An array containing themes to be updated.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 547](class/class-mainwp-child-updates.php#L547-L583)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 547](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L547)
 
 
 
@@ -289,7 +289,7 @@ Argument | Type | Description
 `$result` |  | 
 `$themes` | `array` | An array containing themes to be updated.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 547](class/class-mainwp-child-updates.php#L547-L589)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 547](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L547)
 
 
 
@@ -304,7 +304,7 @@ Version | Description
 ------- | -----------
 `4.3` | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 1171](class/class-mainwp-child-updates.php#L1171-L1176)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 1171](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L1171)
 
 
 
@@ -313,7 +313,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/cla
 *Purge Swis Performance plugin cache.*
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 369](class/class-mainwp-child-cache-purge.php#L369-L389)
+Source: [class/class-mainwp-child-cache-purge.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-cache-purge.php), [line 369](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-cache-purge.php#L369)
 
 
 
@@ -324,7 +324,7 @@ Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class
 Deactivate the MainWP Child plugin.
 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child.php](class/class-mainwp-child.php), [line 460](class/class-mainwp-child.php#L460-L477)
+Source: [class/class-mainwp-child.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child.php), [line 460](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child.php#L460)
 
 
 
@@ -344,7 +344,7 @@ Argument | Type | Description
 `$post_tags` | `string` | � Post tags.
 `$others` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-posts.php](class/class-mainwp-child-posts.php), [line 777](class/class-mainwp-child-posts.php#L777-L787)
+Source: [class/class-mainwp-child-posts.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php), [line 777](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php#L777)
 
 ## Filters
 
@@ -358,7 +358,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `10` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-plugins-check.php](class/class-mainwp-child-plugins-check.php), [line 286](class/class-mainwp-child-plugins-check.php#L286-L286)
+Source: [class/class-mainwp-child-plugins-check.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-plugins-check.php), [line 286](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-plugins-check.php#L286)
 
 
 
@@ -370,7 +370,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `get_option('active_plugins')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-wp-seopress.php](class/class-mainwp-child-wp-seopress.php), [line 59](class/class-mainwp-child-wp-seopress.php#L59-L59)
+Source: [class/class-mainwp-child-wp-seopress.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wp-seopress.php), [line 59](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wp-seopress.php#L59)
 
 
 
@@ -382,7 +382,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `get_option('active_plugins')` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-wp-seopress.php](class/class-mainwp-child-wp-seopress.php), [line 77](class/class-mainwp-child-wp-seopress.php#L77-L77)
+Source: [class/class-mainwp-child-wp-seopress.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wp-seopress.php), [line 77](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-wp-seopress.php#L77)
 
 
 
@@ -396,7 +396,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `''` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-timecapsule.php](class/class-mainwp-child-timecapsule.php), [line 497](class/class-mainwp-child-timecapsule.php#L497-L548)
+Source: [class/class-mainwp-child-timecapsule.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php), [line 497](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-timecapsule.php#L497)
 
 
 
@@ -408,7 +408,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `10` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-themes-check.php](class/class-mainwp-child-themes-check.php), [line 253](class/class-mainwp-child-themes-check.php#L253-L253)
+Source: [class/class-mainwp-child-themes-check.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-themes-check.php), [line 253](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-themes-check.php#L253)
 
 
 
@@ -422,7 +422,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-branding-render.php](class/class-mainwp-child-branding-render.php), [line 207](class/class-mainwp-child-branding-render.php#L207-L211)
+Source: [class/class-mainwp-child-branding-render.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding-render.php), [line 207](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding-render.php#L207)
 
 
 
@@ -436,7 +436,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-branding-render.php](class/class-mainwp-child-branding-render.php), [line 261](class/class-mainwp-child-branding-render.php#L261-L265)
+Source: [class/class-mainwp-child-branding-render.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding-render.php), [line 261](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-branding-render.php#L261)
 
 
 
@@ -450,7 +450,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 685](class/class-mainwp-child-stats.php#L685-L697)
+Source: [class/class-mainwp-child-stats.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php), [line 685](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php#L685)
 
 
 
@@ -464,7 +464,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 685](class/class-mainwp-child-stats.php#L685-L708)
+Source: [class/class-mainwp-child-stats.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php), [line 685](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php#L685)
 
 
 
@@ -480,7 +480,7 @@ Argument | Type | Description
 `'4.0.7.1'` |  | 
 `'mainwp_child_get_total_size'` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 945](class/class-mainwp-child-stats.php#L945-L955)
+Source: [class/class-mainwp-child-stats.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php), [line 945](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php#L945)
 
 
 
@@ -494,7 +494,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$get_file_size` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 945](class/class-mainwp-child-stats.php#L945-L956)
+Source: [class/class-mainwp-child-stats.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php), [line 945](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php#L945)
 
 
 
@@ -508,7 +508,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 945](class/class-mainwp-child-stats.php#L945-L957)
+Source: [class/class-mainwp-child-stats.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php), [line 945](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-stats.php#L945)
 
 
 
@@ -524,7 +524,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 188](class/class-mainwp-child-updates.php#L188-L271)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 188](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L188)
 
 
 
@@ -542,7 +542,7 @@ Argument | Type | Description
 `'plugin_information'` |  | 
 `array('slug' => $plugin)` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 356](class/class-mainwp-child-updates.php#L356-L393)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 356](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L356)
 
 
 
@@ -558,7 +558,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-updates.php](class/class-mainwp-child-updates.php), [line 464](class/class-mainwp-child-updates.php#L464-L521)
+Source: [class/class-mainwp-child-updates.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php), [line 464](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-updates.php#L464)
 
 
 
@@ -574,7 +574,7 @@ Argument | Type | Description
 `$plugin_file` | `string` | Plugin file.
 `$mainWPChild->plugin_slug` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-pages.php](class/class-mainwp-pages.php), [line 295](class/class-mainwp-pages.php#L295-L315)
+Source: [class/class-mainwp-pages.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-pages.php), [line 295](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-pages.php#L295)
 
 
 
@@ -590,7 +590,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child.php](class/class-mainwp-child.php), [line 460](class/class-mainwp-child.php#L460-L471)
+Source: [class/class-mainwp-child.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child.php), [line 460](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child.php#L460)
 
 
 
@@ -606,7 +606,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child.php](class/class-mainwp-child.php), [line 481](class/class-mainwp-child.php#L481-L491)
+Source: [class/class-mainwp-child.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child.php), [line 481](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child.php#L481)
 
 
 
@@ -620,7 +620,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-db-updater.php](class/class-mainwp-child-db-updater.php), [line 100](class/class-mainwp-child-db-updater.php#L100-L104)
+Source: [class/class-mainwp-child-db-updater.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-db-updater.php), [line 100](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-db-updater.php#L100)
 
 
 <p align="center"><a href="https://github.com/pronamic/wp-documentor"><img src="https://cdn.jsdelivr.net/gh/pronamic/wp-documentor@main/logos/pronamic-wp-documentor.svgo-min.svg" alt="Pronamic WordPress Documentor" width="32" height="32"></a><br><em>Generated by <a href="https://github.com/pronamic/wp-documentor">Pronamic WordPress Documentor</a> <code>1.2.0</code></em><p>

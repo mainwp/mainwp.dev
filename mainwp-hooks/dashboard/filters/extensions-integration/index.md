@@ -36,7 +36,7 @@ Version | Description
 ------- | -----------
 `4.1.4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-extensions-view.php](class/class-mainwp-extensions-view.php), [line 442](class/class-mainwp-extensions-view.php#L442-L451)
+Source: [class/class-mainwp-extensions-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-extensions-view.php), [line 442](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-extensions-view.php#L442)
 
 
 
@@ -58,7 +58,7 @@ Version | Description
 ------- | -----------
 `4.1.4.1` | 
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-extensions-view.php](class/class-mainwp-extensions-view.php), [line 530](class/class-mainwp-extensions-view.php#L530-L539)
+Source: [class/class-mainwp-extensions-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-extensions-view.php), [line 530](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-extensions-view.php#L530)
 
 
 
@@ -79,7 +79,7 @@ Version | Description
 ------- | -----------
 `5.2` | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions.php](pages/page-mainwp-extensions.php), [line 799](pages/page-mainwp-extensions.php#L799-L810)
+Source: [pages/page-mainwp-extensions.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions.php), [line 799](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions.php#L799)
 
 
 
@@ -97,7 +97,7 @@ Argument | Type | Description
 `'4.0.7.2'` |  | 
 `'mainwp_getextensions'` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions.php](pages/page-mainwp-extensions.php), [line 58](pages/page-mainwp-extensions.php#L58-L86)
+Source: [pages/page-mainwp-extensions.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions.php), [line 58](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions.php#L58)
 
 
 
@@ -113,7 +113,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$init_extensions` |  | 
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions.php](pages/page-mainwp-extensions.php), [line 58](pages/page-mainwp-extensions.php#L58-L87)
+Source: [pages/page-mainwp-extensions.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions.php), [line 58](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions.php#L58)
 
 
 
