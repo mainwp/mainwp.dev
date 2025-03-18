@@ -53,6 +53,10 @@
 
 16. **Link Structure Improvements**: Updated all internal links to use relative paths instead of absolute paths for better portability.
 
+17. **Documentation Terminology Consistency**: Improved guides/index.md to explicitly mention both standalone extensions and third-party integrations in the "Who These Guides Are For" section, ensuring developers immediately understand that the guides apply to both development paths.
+
+18. **Integration-Specific Hooks Documentation**: Enhanced guides/how-to/actions-filters.md with a comprehensive new section specifically about using hooks in third-party integrations, including examples for API communication, error handling, caching responses, and securely handling credentials.
+
 ## Next Steps
 
 1. **Complete Developer Guides Implementation**:

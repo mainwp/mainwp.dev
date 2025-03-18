@@ -1,6 +1,6 @@
 # Using MainWP Actions & Filters
 
-This guide explains how to use MainWP's actions and filters (hooks) to integrate your extension with the MainWP Dashboard and Child plugins. Understanding these hooks is essential for creating powerful, well-integrated extensions.
+This guide explains how to use MainWP's actions and filters (hooks) to integrate your add-on (extension or integration) with the MainWP Dashboard and Child plugins. Understanding these hooks is essential for creating powerful, well-integrated add-ons, whether you're building a standalone extension or a third-party integration.
 
 ## Quick Start for Experienced Developers
 
@@ -257,7 +257,7 @@ add_action('mainwp_child_init', function() {
 
 ## Communication Between Dashboard and Child Sites
 
-One of the most powerful features of MainWP is the ability to communicate between the dashboard and child sites. Here's how to implement this in your extension:
+One of the most powerful features of MainWP is the ability to communicate between the dashboard and child sites. Here's how to implement this in your add-on:
 
 ### Sending Requests from Dashboard to Child
 
@@ -582,13 +582,206 @@ For a complete reference of all available hooks, see the [MainWP Hooks Documenta
 - [MainWP Child Actions](../../mainwp-hooks/child/actions/)
 - [MainWP Child Filters](../../mainwp-hooks/child/filters/)
 
+## Hooks for Third-Party Integrations
+
+When building integrations with third-party services or plugins, you'll use the same MainWP hooks as you would for standalone extensions, but with some additional considerations:
+
+### API Communication
+
+Integrations typically need to communicate with external APIs. Here's how to use MainWP hooks effectively in this context:
+
+```php
+// Sync data from third-party API after site sync
+add_action('mainwp_site_synced', function($website, $data) {
+    // Get API credentials
+    $api_key = get_option('my_integration_api_key', '');
+    if (empty($api_key)) {
+        return; // No API key configured
+    }
+    
+    // Initialize API client
+    $api_client = new ThirdPartyApiClient($api_key);
+    
+    // Fetch data from third-party API
+    try {
+        $api_data = $api_client->get_data_for_site($website->url);
+        
+        // Store the data for this site
+        update_option('my_integration_data_' . $website->id, $api_data);
+    } catch (Exception $e) {
+        // Handle API errors
+        error_log('API Error: ' . $e->getMessage());
+    }
+}, 10, 2);
+```
+
+### Error Handling for APIs
+
+Third-party APIs can fail for various reasons. Always implement robust error handling:
+
+```php
+add_action('mainwp_dashboard_widgets', function() {
+    add_meta_box(
+        'my_integration_widget',
+        __('Third-Party Integration', 'my-integration'),
+        function() {
+            // Try to get data from third-party API
+            try {
+                $api_client = new ThirdPartyApiClient(get_option('my_integration_api_key', ''));
+                $data = $api_client->get_dashboard_data();
+                
+                // Display the data
+                ?>
+                <div class="ui segment">
+                    <h3><?php esc_html_e('API Data', 'my-integration'); ?></h3>
+                    <!-- Display API data -->
+                </div>
+                <?php
+            } catch (ApiRateLimitException $e) {
+                // Handle rate limiting
+                ?>
+                <div class="ui yellow message">
+                    <?php esc_html_e('API rate limit exceeded. Data will refresh shortly.', 'my-integration'); ?>
+                </div>
+                <?php
+            } catch (ApiAuthException $e) {
+                // Handle authentication errors
+                ?>
+                <div class="ui red message">
+                    <?php esc_html_e('API authentication failed. Please check your API credentials.', 'my-integration'); ?>
+                </div>
+                <?php
+            } catch (Exception $e) {
+                // Handle general errors
+                ?>
+                <div class="ui red message">
+                    <?php esc_html_e('Error connecting to API. Please try again later.', 'my-integration'); ?>
+                </div>
+                <?php
+            }
+        },
+        'mainwp_dashboard',
+        'normal',
+        'default'
+    );
+});
+```
+
+### Caching API Responses
+
+To avoid hitting API rate limits, use WordPress transients to cache API responses:
+
+```php
+add_action('mainwp_site_synced', function($website, $data) {
+    // Check if we need to refresh the cache
+    $cached_data = get_transient('my_integration_api_data_' . $website->id);
+    if (false !== $cached_data) {
+        return; // Use cached data
+    }
+    
+    // Get fresh data from API
+    $api_client = new ThirdPartyApiClient(get_option('my_integration_api_key', ''));
+    try {
+        $api_data = $api_client->get_data_for_site($website->url);
+        
+        // Cache the data for 1 hour
+        set_transient('my_integration_api_data_' . $website->id, $api_data, HOUR_IN_SECONDS);
+    } catch (Exception $e) {
+        // Log error but don't cache failures
+        error_log('API Error: ' . $e->getMessage());
+    }
+}, 10, 2);
+```
+
+### Handling API Credentials
+
+Securely store and manage API credentials:
+
+```php
+// Add a settings page for API credentials
+add_action('mainwp_admin_menu', function() {
+    add_submenu_page(
+        'mainwp_tab',
+        __('API Settings', 'my-integration'),
+        __('API Settings', 'my-integration'),
+        'read',
+        'MyIntegrationApiSettings',
+        array($this, 'render_api_settings_page')
+    );
+});
+
+// Render the API settings page
+public function render_api_settings_page() {
+    // Check if user has permissions
+    if (!mainwp_current_user_can('read')) {
+        mainwp_do_not_have_permissions(__('API Settings', 'my-integration'));
+        return;
+    }
+    
+    // Save settings if form is submitted
+    if (isset($_POST['submit'])) {
+        // Verify nonce
+        check_admin_referer('my_integration_api_settings_nonce', 'my_integration_api_settings_nonce');
+        
+        // Save API credentials
+        $api_key = sanitize_text_field($_POST['api_key'] ?? '');
+        update_option('my_integration_api_key', $api_key);
+        
+        // Test API connection
+        if (!empty($api_key)) {
+            try {
+                $api_client = new ThirdPartyApiClient($api_key);
+                $test_result = $api_client->test_connection();
+                
+                if ($test_result) {
+                    ?>
+                    <div class="ui green message"><?php esc_html_e('API connection successful.', 'my-integration'); ?></div>
+                    <?php
+                } else {
+                    ?>
+                    <div class="ui red message"><?php esc_html_e('API connection failed.', 'my-integration'); ?></div>
+                    <?php
+                }
+            } catch (Exception $e) {
+                ?>
+                <div class="ui red message"><?php echo esc_html('API Error: ' . $e->getMessage()); ?></div>
+                <?php
+            }
+        }
+    }
+    
+    // Get current settings
+    $api_key = get_option('my_integration_api_key', '');
+    
+    // Render settings form
+    ?>
+    <div class="ui segment">
+        <h2 class="ui header"><?php esc_html_e('API Settings', 'my-integration'); ?></h2>
+        <form class="ui form" method="post" action="">
+            <?php wp_nonce_field('my_integration_api_settings_nonce', 'my_integration_api_settings_nonce'); ?>
+            
+            <div class="field">
+                <label><?php esc_html_e('API Key', 'my-integration'); ?></label>
+                <input type="password" name="api_key" value="<?php echo esc_attr($api_key); ?>">
+                <p class="description"><?php esc_html_e('Enter your API key from your Third-Party Service account.', 'my-integration'); ?></p>
+            </div>
+            
+            <button class="ui green button" type="submit" name="submit"><?php esc_html_e('Save API Settings', 'my-integration'); ?></button>
+        </form>
+    </div>
+    <?php
+}
+```
+
 ## Next Steps
 
 Now that you understand how to use MainWP actions and filters, you can:
 
 - [Create a Basic MainWP Extension](create-basic-extension.md) that integrates with MainWP
-- Learn about [Building Admin Interfaces](admin-interfaces.md) for your extension
-- Explore [Data Storage and Retrieval](data-storage.md) for managing extension data
+- [Create a Basic MainWP Integration](create-basic-integration.md) with a third-party service
+- Learn about [Building Admin Interfaces](admin-interfaces.md) for your add-on
+- Explore [Data Storage and Retrieval](data-storage.md) for managing add-on data
+- Learn about [Working with Third-Party APIs](third-party-apis.md) for integrations
 
 ## Related Resources
 

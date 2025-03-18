@@ -26,8 +26,7 @@ flowchart TD
 
 These guides are intended for developers who want to:
 
-- Create custom extensions for MainWP (standalone add-ons)
-- Build integrations with third-party services or plugins
+- Create custom add-ons for MainWP (both standalone extensions and third-party integrations)
 - Customize MainWP functionality for specific needs
 - Understand the MainWP architecture and development patterns
 

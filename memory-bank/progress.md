@@ -143,7 +143,22 @@ This terminology change has been implemented throughout the documentation to pro
    - Updated all internal links to use relative paths instead of absolute paths
    - This improves portability and ensures links work correctly in different contexts
 
-Progress: ~80% complete
+7. **Documentation Terminology Consistency Improvements**:
+   - Enhanced guides/index.md to explicitly mention both standalone extensions and third-party integrations in the "Who These Guides Are For" section
+   - Ensured developers immediately understand that the guides apply to both development paths
+   - Replaced instances of "extension" with "add-on" in various places to be more inclusive of both types
+
+8. **Integration-Specific Documentation Enhancements**:
+   - Added a comprehensive new section to guides/how-to/actions-filters.md specifically about using hooks in third-party integrations
+   - Included detailed examples for:
+     * API communication patterns
+     * Error handling for third-party APIs
+     * Caching API responses to avoid rate limits
+     * Securely handling API credentials
+   - Updated the "Next Steps" section to include links to both extension and integration guides
+   - Provided practical code examples for common integration scenarios
+
+Progress: ~85% complete
 
 ## Documentation Format Strategy
 
