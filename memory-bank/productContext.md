@@ -14,6 +14,10 @@ The MainWP.dev documentation project solves several key problems:
 
 5. **Maintenance Burden**: Automates the documentation generation process, reducing manual maintenance effort.
 
+6. **Hook Discovery**: Makes it easier for developers to discover and use the appropriate hooks for their extensions by organizing them into functional categories.
+
+7. **Integration Complexity**: Simplifies the process of integrating with MainWP by providing clear documentation on available hooks and their usage.
+
 ## How it Should Work
 
 The documentation system should work through the following process:
@@ -22,11 +26,15 @@ The documentation system should work through the following process:
 
 2. **Automated Generation**: When changes are detected, phpDocumentor automatically generates updated documentation.
 
-3. **Organized Deployment**: Generated documentation is deployed to specific subdirectories on GitHub Pages.
+3. **Hooks Extraction**: Pronamic WP Documentor extracts hooks (actions and filters) from the source code.
 
-4. **Custom Content**: The main directory remains available for custom content, including a homepage and additional developer resources.
+4. **Hooks Categorization**: A Python script categorizes hooks into functional categories for better organization.
 
-5. **Error Handling**: Robust error handling and logging ensure the process runs smoothly and issues are easily identified.
+5. **Organized Deployment**: Generated documentation is deployed to specific subdirectories on GitHub Pages.
+
+6. **Custom Content**: The main directory remains available for custom content, including a homepage and additional developer resources.
+
+7. **Error Handling**: Robust error handling and logging ensure the process runs smoothly and issues are easily identified.
 
 ## User Experience Goals
 
@@ -43,3 +51,11 @@ The documentation system should work through the following process:
 6. **Searchability**: Implement effective search functionality to quickly locate specific information.
 
 7. **Cross-Referencing**: Link related documentation sections to provide context and additional information.
+
+8. **Functional Organization**: Organize hooks documentation by functionality rather than alphabetically, making it easier for developers to find relevant hooks for specific tasks.
+
+9. **Categorized Hooks**: Group hooks into logical categories that align with how developers think about the system's functionality.
+
+10. **Consistent Documentation Format**: Maintain a consistent format for hooks documentation, including descriptions, parameters, and usage examples.
+
+11. **Source Code Access**: Provide direct links to the source code implementation of hooks in the GitHub repository, allowing developers to easily examine the context and implementation details.

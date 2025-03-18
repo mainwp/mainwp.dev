@@ -30,6 +30,8 @@ The MainWP.dev documentation system follows a CI/CD architecture with the follow
 
 6. **GitHub Pages for Hosting**: Selected for its seamless integration with GitHub Actions and zero-cost hosting solution.
 
+7. **Documentation Format Strategy**: Decision to maintain ReStructuredText (RST) for API reference documentation while creating separate Markdown-based developer guides, leveraging the strengths of each format without the complexity of cross-linking.
+
 ## Design Patterns in Use
 
 1. **Observer Pattern**: GitHub Actions workflows observe repository changes and trigger documentation updates.
@@ -39,6 +41,14 @@ The MainWP.dev documentation system follows a CI/CD architecture with the follow
 3. **Facade Pattern**: Simplified interface to the complex documentation generation process through GitHub Actions workflows.
 
 4. **Strategy Pattern**: Different documentation strategies applied to different components of the MainWP ecosystem.
+
+5. **Categorization Pattern**: Hooks documentation uses a categorization system to organize hooks by functionality, making them more discoverable for developers.
+
+6. **Extraction Pattern**: Pronamic WP Documentor extracts hooks from source code and generates structured documentation.
+
+7. **Complementary Documentation Pattern**: Using different documentation formats (RST and Markdown) for different types of documentation (API reference vs. conceptual guides) to leverage the strengths of each format.
+
+8. **Optimal Reference Strategy**: Developer guides reference API docs for formal definitions, GitHub for implementation examples, and other guides for conceptual relationships, creating a comprehensive documentation ecosystem.
 
 ## Component Relationships
 
@@ -53,3 +63,17 @@ The MainWP.dev documentation system follows a CI/CD architecture with the follow
 5. **Custom Content → GitHub Pages**: Manually created content is preserved in the main directory.
 
 6. **Error Logs → Monitoring**: Error handling system captures and reports issues in the documentation process.
+
+7. **Source Repositories → Pronamic WP Documentor**: Source code is analyzed to extract hooks documentation.
+
+8. **Pronamic WP Documentor → Hooks Documentation**: Raw hooks documentation is generated from source code.
+
+9. **Hooks Documentation → Categorization Script**: Raw hooks documentation is processed and categorized.
+
+10. **Categorization Script → Organized Documentation**: Hooks are organized into functional categories for better discoverability.
+
+11. **Source Code → GitHub Repository Links**: Source code references in hooks documentation are transformed into direct links to the GitHub repository, allowing developers to easily view the implementation.
+
+12. **API Reference (RST) ↔ Developer Guides (Markdown)**: Complementary documentation types that reference each other to provide a complete picture of the system.
+
+13. **Developer Guides → Multiple Reference Sources**: Developer guides link to API docs, GitHub source code, and other guides to provide comprehensive context.

@@ -6,15 +6,15 @@ This section provides comprehensive documentation for all hooks (actions and fil
 
 The [MainWP Dashboard](dashboard/index.md) plugin provides hooks that allow you to extend and customize the MainWP Dashboard functionality.
 
-- [Actions](dashboard/actions.md) - Dashboard actions allow you to add custom functionality at specific points in the MainWP Dashboard execution.
-- [Filters](dashboard/filters.md) - Dashboard filters allow you to modify data or output at specific points in the MainWP Dashboard execution.
+- [Actions](dashboard/actions/index.md) - Dashboard actions allow you to add custom functionality at specific points in the MainWP Dashboard execution.
+- [Filters](dashboard/filters/index.md) - Dashboard filters allow you to modify data or output at specific points in the MainWP Dashboard execution.
 
 ## Child Hooks
 
 The [MainWP Child](child/index.md) plugin provides hooks that allow you to extend and customize the MainWP Child functionality.
 
-- [Actions](child/actions.md) - Child actions allow you to add custom functionality at specific points in the MainWP Child execution.
-- [Filters](child/filters.md) - Child filters allow you to modify data or output at specific points in the MainWP Child execution.
+- [Actions](child/actions/index.md) - Child actions allow you to add custom functionality at specific points in the MainWP Child execution.
+- [Filters](child/filters/index.md) - Child filters allow you to modify data or output at specific points in the MainWP Child execution.
 
 ## Using Hooks
 

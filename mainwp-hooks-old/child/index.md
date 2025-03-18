@@ -4,63 +4,30 @@ This section provides documentation for all hooks (actions and filters) availabl
 
 ## Actions
 
-[Child Actions](actions.md) allow you to add custom functionality at specific points in the MainWP Child execution. Actions are triggered at specific points during the execution of MainWP Child, and you can use them to add your own functionality.
+[Child Actions](actions/index.md) allow you to add custom functionality at specific points in the MainWP Child execution.
 
-Common use cases for Child actions include:
-- Adding custom functionality to the Child site
-- Performing additional tasks when the Child site is connected to a Dashboard
-- Extending the Child plugin with custom features
-- Integrating with other plugins or services on the Child site
+### Action Categories
+
+- [Connection & Authentication](actions/connection-authentication/index.md) (7 hooks) - Hooks for establishing and managing connections between Dashboard and Child sites.
+- [Updates & Maintenance](actions/updates-maintenance/index.md) (38 hooks) - Hooks for managing updates to plugins, themes, and WordPress core.
+- [Content Handling](actions/content-handling/index.md) (10 hooks) - Hooks for managing content on Child sites.
+- [User Operations](actions/user-operations/index.md) (9 hooks) - Hooks related to user management on Child sites.
+- [Backups & Restoration](actions/backups-restoration/index.md) (30 hooks) - Hooks for backup creation, management, and restoration processes.
+- [Security & Monitoring](actions/security-monitoring/index.md) (16 hooks) - Hooks related to security checks, uptime monitoring, and site health.
+- [System & Settings](actions/system-settings/index.md) (5 hooks) - Hooks related to general settings and system configuration.
+- [Miscellaneous](actions/misc/index.md) (23 hooks) - Miscellaneous hooks that don't fit into other categories.
 
 ## Filters
 
-[Child Filters](filters.md) allow you to modify data or output at specific points in the MainWP Child execution. Filters are used to modify data before it is used or sent back to the Dashboard.
+[Child Filters](filters/index.md) allow you to modify data or output at specific points in the MainWP Child execution.
 
-Common use cases for Child filters include:
-- Modifying the data sent to the Dashboard
-- Changing how requests from the Dashboard are processed
-- Customizing the behavior of Child features
-- Adding or removing functionality from the Child plugin
+### Filter Categories
 
-## Examples
-
-### Using Child Actions
-
-```php
-// Add custom functionality after the Child plugin is loaded
-add_action('mainwp_child_loaded', 'my_custom_child_functionality');
-
-function my_custom_child_functionality() {
-    // Your custom code here
-    // This will run after the MainWP Child plugin is fully loaded
-}
-```
-
-### Using Child Filters
-
-```php
-// Modify the site info sent to the Dashboard
-add_filter('mainwp_child_site_info', 'my_custom_site_info');
-
-function my_custom_site_info($site_info) {
-    // Add custom information to the site info
-    $site_info['custom_data'] = 'Custom value';
-    
-    return $site_info;
-}
-```
-
-## Security Considerations
-
-When working with MainWP Child hooks, it's important to consider security implications:
-
-1. **Authentication**: Always ensure that requests are properly authenticated before performing sensitive operations.
-2. **Data Validation**: Validate and sanitize all data, especially data received from external sources.
-3. **Capability Checks**: Use WordPress capability checks to ensure users have appropriate permissions.
-4. **Nonce Verification**: Use nonces to protect against CSRF attacks.
-
-## Related Resources
-
-- [MainWP Developer Documentation](https://mainwp.dev/)
-- [MainWP Child GitHub Repository](https://github.com/mainwp/mainwp-child)
-- [WordPress Plugin Developer Handbook](https://developer.wordpress.org/plugins/)
+- [Connection & Authentication](filters/connection-authentication/index.md) (7 hooks) - Hooks for establishing and managing connections between Dashboard and Child sites.
+- [Updates & Maintenance](filters/updates-maintenance/index.md) (38 hooks) - Hooks for managing updates to plugins, themes, and WordPress core.
+- [Content Handling](filters/content-handling/index.md) (10 hooks) - Hooks for managing content on Child sites.
+- [User Operations](filters/user-operations/index.md) (9 hooks) - Hooks related to user management on Child sites.
+- [Backups & Restoration](filters/backups-restoration/index.md) (30 hooks) - Hooks for backup creation, management, and restoration processes.
+- [Security & Monitoring](filters/security-monitoring/index.md) (16 hooks) - Hooks related to security checks, uptime monitoring, and site health.
+- [System & Settings](filters/system-settings/index.md) (5 hooks) - Hooks related to general settings and system configuration.
+- [Miscellaneous](filters/misc/index.md) (23 hooks) - Miscellaneous hooks that don't fit into other categories.

@@ -18,12 +18,20 @@
 
 8. **Git**: Version control system for managing source code and documentation.
 
+9. **Pronamic WP Documentor**: Tool used to extract WordPress hooks (actions and filters) from PHP source code.
+
+10. **Python**: Used for the categorization script that organizes hooks into functional categories.
+
+11. **Bash Scripts**: Used for automation of the documentation generation process.
+
 ## Development Setup
 
 1. **Local Environment**:
    - PHP 7.4+ installed locally for testing phpDocumentor
    - Git for version control
    - Text editor or IDE (e.g., VSCode, PHPStorm)
+   - Python 3.6+ for running the hooks categorization script
+   - Composer for PHP dependencies
 
 2. **GitHub Repository**:
    - Repository for the MainWP.dev documentation project
@@ -36,6 +44,11 @@
 4. **GitHub Actions Configuration**:
    - Workflow files for automating documentation generation
    - Secrets and permissions configured for repository access
+
+5. **Hooks Documentation Setup**:
+   - Pronamic WP Documentor installed via Composer
+   - Python script for categorizing hooks
+   - Bash scripts for automating the hooks documentation process
 
 ## Technical Constraints
 
@@ -58,6 +71,12 @@
    - Dependent on the quality of source code documentation
    - May require manual supplementation for poorly documented areas
 
+5. **Hooks Documentation Constraints**:
+   - Dependent on consistent hook naming conventions in the source code
+   - Categorization accuracy depends on hook names and descriptions
+   - Markdown rendering limitations for complex documentation
+   - GitHub repository links require consistent repository structure and branch naming
+
 ## Dependencies
 
 1. **External Services**:
@@ -67,11 +86,16 @@
    - phpDocumentor 3.7.1
    - PHP 7.4+ (for running phpDocumentor)
    - Git (for version control)
+   - Python 3.6+ (for hooks categorization script)
+   - Composer (for PHP package management)
+   - Pronamic WP Documentor (for hooks extraction)
 
 3. **Source Code Dependencies**:
    - Access to the two MainWP source repositories
    - Properly documented source code with PHPDoc comments
+   - WordPress hooks in the source code (for hooks documentation)
 
 4. **Workflow Dependencies**:
    - GitHub Actions runners
    - Repository permissions and secrets
+   - Hooks documentation generation workflow

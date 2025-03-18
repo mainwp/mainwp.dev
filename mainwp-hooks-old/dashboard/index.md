@@ -4,58 +4,36 @@ This section provides documentation for all hooks (actions and filters) availabl
 
 ## Actions
 
-[Dashboard Actions](actions.md) allow you to add custom functionality at specific points in the MainWP Dashboard execution. Actions are triggered at specific points during the execution of MainWP Dashboard, and you can use them to add your own functionality.
+[Dashboard Actions](actions/index.md) allow you to add custom functionality at specific points in the MainWP Dashboard execution.
 
-Common use cases for Dashboard actions include:
-- Adding custom UI elements to the Dashboard
-- Performing additional tasks when sites are added, updated, or removed
-- Extending the Dashboard with custom features
-- Integrating with other plugins or services
+### Action Categories
+
+- [Site Management](actions/site-management/index.md) (194 hooks) - Hooks related to adding, editing, removing, and managing sites and site groups.
+- [Updates & Maintenance](actions/updates-maintenance/index.md) (301 hooks) - Hooks for managing updates to plugins, themes, and WordPress core.
+- [Content Management](actions/content-management/index.md) (213 hooks) - Hooks for managing posts, pages, comments, and other content.
+- [User Management](actions/user-management/index.md) (61 hooks) - Hooks related to user management, roles, and capabilities.
+- [Backups & Restoration](actions/backups-restoration/index.md) (65 hooks) - Hooks for backup creation, management, and restoration processes.
+- [Security & Monitoring](actions/security-monitoring/index.md) (50 hooks) - Hooks related to security checks, uptime monitoring, and site health.
+- [Client Reports](actions/client-reports/index.md) (41 hooks) - Hooks for report generation, customization, and delivery.
+- [UI & Display](actions/ui-display/index.md) (190 hooks) - Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
+- [Extensions & Integration](actions/extensions-integration/index.md) (5 hooks) - Hooks related to extensions and third-party integrations.
+- [API & Remote Communication](actions/api-remote/index.md) (42 hooks) - Hooks for API endpoints and remote communication with child sites.
+- [System & Settings](actions/system-settings/index.md) (24 hooks) - Hooks related to general settings and system configuration.
 
 ## Filters
 
-[Dashboard Filters](filters.md) allow you to modify data or output at specific points in the MainWP Dashboard execution. Filters are used to modify data before it is used or displayed by MainWP Dashboard.
+[Dashboard Filters](filters/index.md) allow you to modify data or output at specific points in the MainWP Dashboard execution.
 
-Common use cases for Dashboard filters include:
-- Modifying the output of Dashboard components
-- Changing how data is processed or displayed
-- Adding or removing items from lists or menus
-- Customizing the behavior of Dashboard features
+### Filter Categories
 
-## Examples
-
-### Using Dashboard Actions
-
-```php
-// Add a custom section to the Dashboard
-add_action('mainwp_after_header', 'my_custom_dashboard_section');
-
-function my_custom_dashboard_section() {
-    ?>
-    <div class="ui segment">
-        <h2 class="ui header">Custom Dashboard Section</h2>
-        <p>This is a custom section added to the MainWP Dashboard.</p>
-    </div>
-    <?php
-}
-```
-
-### Using Dashboard Filters
-
-```php
-// Modify the sites table columns
-add_filter('mainwp_sitestable_getcolumns', 'my_custom_sites_table_columns');
-
-function my_custom_sites_table_columns($columns) {
-    // Add a custom column
-    $columns['custom_column'] = 'Custom Column';
-    
-    return $columns;
-}
-```
-
-## Related Resources
-
-- [MainWP Developer Documentation](https://mainwp.dev/)
-- [MainWP Dashboard GitHub Repository](https://github.com/mainwp/mainwp)
-- [WordPress Plugin Developer Handbook](https://developer.wordpress.org/plugins/)
+- [Site Management](filters/site-management/index.md) (194 hooks) - Hooks related to adding, editing, removing, and managing sites and site groups.
+- [Updates & Maintenance](filters/updates-maintenance/index.md) (301 hooks) - Hooks for managing updates to plugins, themes, and WordPress core.
+- [Content Management](filters/content-management/index.md) (213 hooks) - Hooks for managing posts, pages, comments, and other content.
+- [User Management](filters/user-management/index.md) (61 hooks) - Hooks related to user management, roles, and capabilities.
+- [Backups & Restoration](filters/backups-restoration/index.md) (65 hooks) - Hooks for backup creation, management, and restoration processes.
+- [Security & Monitoring](filters/security-monitoring/index.md) (50 hooks) - Hooks related to security checks, uptime monitoring, and site health.
+- [Client Reports](filters/client-reports/index.md) (41 hooks) - Hooks for report generation, customization, and delivery.
+- [UI & Display](filters/ui-display/index.md) (190 hooks) - Hooks for modifying the Dashboard UI, widgets, menus, and display elements.
+- [Extensions & Integration](filters/extensions-integration/index.md) (5 hooks) - Hooks related to extensions and third-party integrations.
+- [API & Remote Communication](filters/api-remote/index.md) (42 hooks) - Hooks for API endpoints and remote communication with child sites.
+- [System & Settings](filters/system-settings/index.md) (24 hooks) - Hooks related to general settings and system configuration.
