@@ -204,3 +204,10 @@ Each entry includes:
 - 'page' - Page number
 - 'per_page' - Items per page.
 - 'source' - Source changes: Available values are 'wpadmin', 'dashboard', 'all', or leave empty (default is 'wpadmin').
+
+# March 19, 2025
+
+## ⚡ Performance Optimizations
+
+### MainWP Dashboard
+- ⚡ **Performance** [v5.4.1 - March 19, 2025]: Make query for non-mainwp-change rest api endpoint faster a bit by reduce a mysql join command.
