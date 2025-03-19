@@ -51,6 +51,7 @@ Detailed guides for key development areas:
 - [Building Admin Interfaces](how-to/admin-interfaces.md)
 - [Data Storage and Retrieval](how-to/data-storage.md)
 - [Using MainWP Actions & Filters](how-to/actions-filters.md)
+- [Using the MainWP API Client PHP](how-to/mainwp-api-client.md)
 - [Debugging Add-ons](how-to/debugging.md)
 - [Packaging and Distribution](how-to/packaging-distribution.md)
 - [Working with Third-Party APIs](how-to/third-party-apis.md) (for Integrations)

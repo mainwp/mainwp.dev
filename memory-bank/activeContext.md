@@ -43,9 +43,10 @@
 13. **Developer Guides Creation**: Created comprehensive guides for both extension and integration development, including:
     - guides/how-to/create-basic-extension.md: Guide for creating standalone add-ons
     - guides/how-to/create-basic-integration.md: Guide for creating third-party add-ons
-    - guides/how-to/third-party-apis.md: Placeholder for working with third-party APIs
-    - guides/best-practices/api-integration.md: Placeholder for API integration best practices
-    - guides/reference/api-integration-patterns.md: Placeholder for API integration patterns
+    - guides/how-to/third-party-apis.md: Guide for working with third-party APIs
+    - guides/best-practices/api-integration.md: Guide for API integration best practices
+    - guides/reference/api-integration-patterns.md: Guide for API integration patterns
+    - guides/how-to/mainwp-api-client.md: Guide for using the official MainWP API Client PHP
 
 14. **Decision Tree Implementation**: Added a mermaid flowchart to guides/index.md to help developers determine whether to build an Extension or Integration.
 
@@ -57,18 +58,20 @@
 
 18. **Integration-Specific Hooks Documentation**: Enhanced guides/how-to/actions-filters.md with a comprehensive new section specifically about using hooks in third-party integrations, including examples for API communication, error handling, caching responses, and securely handling credentials.
 
+19. **API Integration Documentation Improvements**:
+    - Enhanced guides/best-practices/api-integration.md with a real-world MainWP example of Google Analytics integration and a "Common Pitfalls" section
+    - Improved guides/reference/api-integration-patterns.md with a decision tree flowchart and simplified explanations for complex patterns
+    - Created guides/how-to/mainwp-api-client.md with comprehensive documentation for the official MainWP API Client PHP
+    - Updated guides/index.md to include the new MainWP API Client PHP guide
+
 ## Next Steps
 
 1. **Complete Developer Guides Implementation**:
-   - Expand placeholder guides with detailed content:
-     * Working with Third-Party APIs
-     * API Integration Best Practices
-     * Third-Party API Integration Patterns
    - Create additional guides for specific integration scenarios:
      * WooCommerce Integration Guide
-     * Google Analytics Integration Guide
      * Social Media API Integration Guide
    - Add more code snippets and templates for common integration patterns
+   - Expand the MainWP API Client PHP guide with more real-world examples
 
 2. **Update Existing Documentation**:
    - Review and update any remaining instances of old terminology

@@ -158,7 +158,22 @@ This terminology change has been implemented throughout the documentation to pro
    - Updated the "Next Steps" section to include links to both extension and integration guides
    - Provided practical code examples for common integration scenarios
 
-Progress: ~85% complete
+9. **API Integration Documentation Improvements**:
+   - Enhanced guides/best-practices/api-integration.md with:
+     * A real-world MainWP example of Google Analytics integration
+     * A "Common Pitfalls" section highlighting 5 common mistakes when integrating APIs with MainWP
+   - Improved guides/reference/api-integration-patterns.md with:
+     * A decision tree flowchart to help developers choose the right pattern
+     * Simplified explanations for complex patterns like Circuit Breaker, Retry, and Fallback
+   - Created a new guide guides/how-to/mainwp-api-client.md for the official MainWP API Client PHP:
+     * Installation and configuration instructions
+     * Comprehensive examples for working with sites, plugins, themes, and more
+     * Error handling strategies
+     * Advanced usage patterns
+     * Real-world example of a site health monitor
+   - Updated guides/index.md to include the new MainWP API Client PHP guide
+
+Progress: ~90% complete
 
 ## Documentation Format Strategy
 
