@@ -87,7 +87,7 @@ Each entry includes:
     KEY meta_log_id (meta_log_id),
     KEY meta_key (meta_key(191))
 
-- 🟢 **Added** [v5.4.1 - March 2025]: New hook  `mainwp_auto_updates_sync_data_before_run` to enable/disable sync site before auto updates process run, default is enable - true. Use the hook to disable sync data before run auto updates for some dashboard have problem with sync site before run auto updates.
+- 🟢 **Added** [v5.4.0.3 - March 2025]: New hook  `mainwp_auto_updates_sync_data_before_run` to enable/disable sync site before auto updates process run, default is enable - true. Use the hook to disable sync data before run auto updates for some dashboard have problem with sync site before run auto updates.
 
 ### Favorites extension
 - 🟢 **Added** [v5.2 - March 2025]: Added new actions
@@ -191,7 +191,7 @@ Each entry includes:
 ## 🔧 Core Changes
 
 ### MainWP Dashboard
-- 🟢 **Added** [v5.4.1 - March 2025]: Added new filters
+- 🟢 **Added** [v5.4.0.3 - March 2025]: Added new filters
 `mainwp_site_changes_table_pages_length` To support custom Pages lenght of Site Changes table.
 
 
@@ -200,7 +200,7 @@ Each entry includes:
 ## 🔧 Core Changes
 
 ### MainWP Dashboard
-- 🟢 **Added** [v5.4.1 - March 2025]: Added new params for non-mainwp-changes REST API endpoint
+- 🟢 **Added** [v5.4.0.3 - March 2025]: Added new params for non-mainwp-changes REST API endpoint
 - 'page' - Page number
 - 'per_page' - Items per page.
 - 'source' - Source changes: Available values are 'wpadmin', 'dashboard', 'all', or leave empty (default is 'wpadmin').
@@ -210,4 +210,12 @@ Each entry includes:
 ## ⚡ Performance Optimizations
 
 ### MainWP Dashboard
-- ⚡ **Performance** [v5.4.1 - March 19, 2025]: Make query for non-mainwp-change rest api endpoint faster a bit by reduce a mysql join command.
+- ⚡ **Performance** [v5.4.0.3 - March 19, 2025]: Make query for non-mainwp-change rest api endpoint faster a bit by reduce a mysql join command.
+
+
+# March 20, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.0.3 - March 2025]: Added new hooks: mainwp_general_process_update, mainwp_general_process_delete, mainwp_general_process_get_process_by to support update/delete/get the general schedule process.
