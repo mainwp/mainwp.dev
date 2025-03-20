@@ -177,6 +177,8 @@ This terminology change has been implemented throughout the documentation to pro
    - Created a comprehensive WooCommerce integration guide:
      * guides/how-to/woocommerce-integration.md: Core implementation with detailed code examples and best practices
      * guides/how-to/woocommerce-integration-part2.md: Advanced techniques, complete examples, and additional best practices
+     * guides/how-to/woocommerce-quick-start.md: New quick start guide for experienced developers
+     * Created a consistent documentation pattern with a prominent callout at the top of the main guide linking to the quick start guide
      * Includes API client implementation with improved error handling and logging
      * Covers product management, order monitoring, reporting functionality
      * Addresses common challenges like API authentication, large catalogs, version differences
