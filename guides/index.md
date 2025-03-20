@@ -55,6 +55,7 @@ Detailed guides for key development areas:
 - [Debugging Add-ons](how-to/debugging.md)
 - [Packaging and Distribution](how-to/packaging-distribution.md)
 - [Working with Third-Party APIs](how-to/third-party-apis.md) (for Integrations)
+- [Creating a WooCommerce Integration](how-to/woocommerce-integration.md) (with [Advanced Techniques](how-to/woocommerce-integration-part2.md))
 
 ### [Best Practices](best-practices/)
 
