@@ -227,3 +227,5 @@ Each entry includes:
 ### MainWP Time Tracker Extension
 - ⚡ **Performance** [v5.1 - March 22, 2025]: Imporved DB query for checking table existed.
 
+### MainWP Dashboard
+- 🟠 **Changed** [v5.4.0.3 - March 2025]: function name changed `get_none_mainwp_actions_log()` to `get_none_mainwp_actions_log_for_rest_api()` - in the file: class/class-mainwp-db-site-actions.php
