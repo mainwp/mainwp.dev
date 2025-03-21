@@ -25,3 +25,6 @@ Thumbs.db
 
 # Node modules (if any)
 /node_modules/
+
+# Memory bank - tracked locally but not committed to GitHub
+/memory-bank/
