@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "perplexity-server": {
+      "command": "node",
+      "args": ["/Users/denni1/Documents/Cline/MCP/perplexity-mcp/build/index.js"],
+      "env": {
+        "PERPLEXITY_API_KEY": "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"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
