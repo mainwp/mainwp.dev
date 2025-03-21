@@ -219,3 +219,11 @@ Each entry includes:
 
 ### MainWP Dashboard
 - 🟢 **Added** [v5.4.0.3 - March 2025]: Added new hooks: mainwp_general_process_update, mainwp_general_process_delete, mainwp_general_process_get_process_by to support update/delete/get the general schedule process.
+
+# March 22, 2025
+
+## ⚡ Performance Optimizations
+
+### MainWP Time Tracker Extension
+- ⚡ **Performance** [v5.1 - March 22, 2025]: Imporved DB query for checking table existed.
+
