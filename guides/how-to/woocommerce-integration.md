@@ -60,6 +60,8 @@ For each child site, you'll need to create WooCommerce API keys:
 In your integration, you'll need to securely store these credentials:
 
 ```php
+namespace MyCompany\WooCommerce;
+
 /**
  * Save API credentials for a site
  * 
@@ -80,13 +82,13 @@ public function save_api_credentials($website_id, $consumer_key, $consumer_secre
     $consumer_secret = sanitize_text_field($consumer_secret);
     
     // Get current settings
-    $settings = get_option('mainwp_woocommerce_settings', array());
+    $settings = get_option('mainwp_woocommerce_settings', []);
     
     // Update settings for this site
-    $settings[$website_id] = array(
+    $settings[$website_id] = [
         'consumer_key' => $consumer_key,
         'consumer_secret' => $consumer_secret
-    );
+    ];
     
     // Save settings
     return update_option('mainwp_woocommerce_settings', $settings);
@@ -98,6 +100,11 @@ public function save_api_credentials($website_id, $consumer_key, $consumer_secre
 Always test the API connection before performing operations:
 
 ```php
+namespace MyCompany\WooCommerce;
+
+use Exception;
+use WP_Error;
+
 /**
  * Test WooCommerce API connection for a site
  * 
@@ -137,7 +144,7 @@ public function test_api_connection($website_id) {
         }
         
         return true;
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         $error_message = $e->getMessage();
         
         // Log exception if WP_DEBUG_LOG is enabled
@@ -161,6 +168,12 @@ public function test_api_connection($website_id) {
 Create a dedicated class for handling API communication:
 
 ```php
+namespace MyCompany\WooCommerce;
+
+use MainWP\Dashboard\MainWP_Connect;
+use WP_Error;
+use Exception;
+
 /**
  * WooCommerce API Client
  */
@@ -202,7 +215,7 @@ class WooCommerceAPIClient {
      * @param array $args Query arguments
      * @return array|WP_Error Products or error
      */
-    public function get_products($args = array()) {
+    public function get_products($args = []) {
         // Check cache first
         $cache_key = 'mainwp_wc_products_' . $this->website->id . '_' . md5(serialize($args));
         $cached_data = get_transient($cache_key);
@@ -228,7 +241,7 @@ class WooCommerceAPIClient {
      * @param array $args Query arguments
      * @return array|WP_Error Orders or error
      */
-    public function get_orders($args = array()) {
+    public function get_orders($args = []) {
         // For orders, use a shorter cache time or no cache for recent orders
         $use_cache = !isset($args['after']) || strtotime($args['after']) < (time() - 3600);
         
@@ -285,20 +298,20 @@ class WooCommerceAPIClient {
      * @param array $args Request arguments
      * @return array|WP_Error Response or error
      */
-    private function make_api_request($endpoint, $method = 'GET', $args = array()) {
+    private function make_api_request($endpoint, $method = 'GET', $args = []) {
         // Prepare the request data for MainWP
-        $data = array(
+        $data = [
             'wc_api' => true,
             'endpoint' => $endpoint,
             'method' => $method,
             'args' => $args,
             'consumer_key' => $this->consumer_key,
             'consumer_secret' => $this->consumer_secret
-        );
+        ];
         
         try {
             // Send the request through MainWP
-            $information = \MainWP\Dashboard\MainWP_Connect::fetch_url_authed(
+            $information = MainWP_Connect::fetch_url_authed(
                 $this->website,
                 'woocommerce_integration',
                 $data
@@ -306,12 +319,12 @@ class WooCommerceAPIClient {
             
             // Check for errors in the response
             if (is_array($information) && isset($information['error'])) {
-                return new \WP_Error('api_error', $information['error']);
+                return new WP_Error('api_error', $information['error']);
             }
             
             return $information;
-        } catch (\Exception $e) {
-            return new \WP_Error('api_error', $e->getMessage());
+        } catch (Exception $e) {
+            return new WP_Error('api_error', $e->getMessage());
         }
     }
 }
@@ -322,6 +335,8 @@ class WooCommerceAPIClient {
 Create models for WooCommerce data:
 
 ```php
+namespace MyCompany\WooCommerce\Models;
+
 /**
  * Product Model
  */
@@ -552,6 +567,8 @@ class Order {
 Implement caching to improve performance and reduce API calls:
 
 ```php
+namespace MyCompany\WooCommerce;
+
 /**
  * Cache manager for WooCommerce data
  */
@@ -618,6 +635,11 @@ class CacheManager {
 Implement product management functionality:
 
 ```php
+namespace MyCompany\WooCommerce;
+
+use MyCompany\WooCommerce\Models\Product;
+use WP_Error;
+
 /**
  * Product Manager
  */
@@ -640,15 +662,15 @@ class ProductManager {
      * @param array $args Query arguments
      * @return array Products
      */
-    public function get_products($args = array()) {
+    public function get_products($args = []) {
         $products = $this->api_client->get_products($args);
         
         if (is_wp_error($products)) {
-            return array();
+            return [];
         }
         
         // Convert to product objects
-        $product_objects = array();
+        $product_objects = [];
         foreach ($products as $product_data) {
             $product_objects[] = Product::from_api_data($product_data);
         }
@@ -697,9 +719,9 @@ class ProductManager {
      * @return Product|WP_Error Updated product or error
      */
     public function update_stock($product_id, $stock_quantity) {
-        return $this->update_product($product_id, array(
+        return $this->update_product($product_id, [
             'stock_quantity' => $stock_quantity
-        ));
+        ]);
     }
     
     /**
@@ -709,7 +731,7 @@ class ProductManager {
      * @return array Results
      */
     public function bulk_update_products($products) {
-        $results = array();
+        $results = [];
         
         foreach ($products as $product) {
             if (!isset($product['id']) || !isset($product['data'])) {
@@ -718,11 +740,11 @@ class ProductManager {
             
             $result = $this->update_product($product['id'], $product['data']);
             
-            $results[] = array(
+            $results[] = [
                 'id' => $product['id'],
                 'success' => !is_wp_error($result),
                 'message' => is_wp_error($result) ? $result->get_error_message() : 'Success'
-            );
+            ];
         }
         
         return $results;
@@ -735,6 +757,11 @@ class ProductManager {
 Implement order monitoring functionality:
 
 ```php
+namespace MyCompany\WooCommerce;
+
+use MyCompany\WooCommerce\Models\Order;
+use WP_Error;
+
 /**
  * Order Manager
  */
@@ -757,15 +784,15 @@ class OrderManager {
      * @param array $args Query arguments
      * @return array Orders
      */
-    public function get_orders($args = array()) {
+    public function get_orders($args = []) {
         $orders = $this->api_client->get_orders($args);
         
         if (is_wp_error($orders)) {
-            return array();
+            return [];
         }
         
         // Convert to order objects
-        $order_objects = array();
+        $order_objects = [];
         foreach ($orders as $order_data) {
             $order_objects[] = Order::from_api_data($order_data);
         }
@@ -834,20 +861,20 @@ When developing your WooCommerce integration, consider these best practices:
 
 2. **Use Pagination for Large Datasets**: Always implement pagination when retrieving large datasets to avoid memory issues and timeout errors:
    ```php
-   $products = $api_client->get_products(array(
+   $products = $api_client->get_products([
        'page' => $page,
        'per_page' => 100
-   ));
+   ]);
    ```
 
 3. **Implement Defensive Programming**: Always validate data and handle edge cases:
    ```php
    // Ensure args is an array
-   $args = is_array($args) ? $args : array();
+   $args = is_array($args) ? $args : [];
    
    // Check for errors before processing
    if (is_wp_error($products) || !is_array($products)) {
-       return array();
+       return [];
    }
    ```
 

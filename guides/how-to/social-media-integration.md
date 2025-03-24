@@ -66,6 +66,11 @@ To communicate with LinkedIn, you'll need to set up API access:
 LinkedIn uses OAuth 2.0 for authentication. Here's how to implement it:
 
 ```php
+namespace MyCompany\LinkedIn\Auth;
+
+use WP_Error;
+use Exception;
+
 /**
  * Initiate OAuth authentication flow
  */
@@ -80,8 +85,8 @@ public function initiate_oauth() {
     }
     
     // Get settings
-    $settings = get_option('mainwp_linkedin_settings', array());
-    $site_settings = isset($settings[$website_id]) ? $settings[$website_id] : array();
+    $settings = get_option('mainwp_linkedin_settings', []);
+    $site_settings = isset($settings[$website_id]) ? $settings[$website_id] : [];
     
     if (empty($site_settings['client_id']) || empty($site_settings['client_secret'])) {
         wp_die('LinkedIn API credentials not configured');
@@ -92,16 +97,13 @@ public function initiate_oauth() {
     update_option('mainwp_linkedin_oauth_state_' . $website_id, $state);
     
     // Build authorization URL
-    $auth_url = add_query_arg(
-        array(
-            'response_type' => 'code',
-            'client_id' => $site_settings['client_id'],
-            'redirect_uri' => urlencode(admin_url('admin.php?page=MainWPLinkedInSettings&action=oauth_callback&website_id=' . $website_id)),
-            'state' => $state,
-            'scope' => 'r_organization_social w_organization_social r_liteprofile'
-        ),
-        'https://www.linkedin.com/oauth/v2/authorization'
-    );
+    $auth_url = add_query_arg([
+        'response_type' => 'code',
+        'client_id' => $site_settings['client_id'],
+        'redirect_uri' => urlencode(admin_url('admin.php?page=MainWPLinkedInSettings&action=oauth_callback&website_id=' . $website_id)),
+        'state' => $state,
+        'scope' => 'r_organization_social w_organization_social r_liteprofile'
+    ], 'https://www.linkedin.com/oauth/v2/authorization');
     
     // Redirect to LinkedIn authorization page
     wp_redirect($auth_url);
@@ -138,23 +140,23 @@ public function handle_oauth_callback() {
     }
     
     // Get settings
-    $settings = get_option('mainwp_linkedin_settings', array());
-    $site_settings = isset($settings[$website_id]) ? $settings[$website_id] : array();
+    $settings = get_option('mainwp_linkedin_settings', []);
+    $site_settings = isset($settings[$website_id]) ? $settings[$website_id] : [];
     
     if (empty($site_settings['client_id']) || empty($site_settings['client_secret'])) {
         wp_die('LinkedIn API credentials not configured');
     }
     
     // Exchange authorization code for access token
-    $response = wp_remote_post('https://www.linkedin.com/oauth/v2/accessToken', array(
-        'body' => array(
+    $response = wp_remote_post('https://www.linkedin.com/oauth/v2/accessToken', [
+        'body' => [
             'grant_type' => 'authorization_code',
             'code' => $_GET['code'],
             'redirect_uri' => admin_url('admin.php?page=MainWPLinkedInSettings&action=oauth_callback&website_id=' . $website_id),
             'client_id' => $site_settings['client_id'],
             'client_secret' => $site_settings['client_secret']
-        )
-    ));
+        ]
+    ]);
     
     if (is_wp_error($response)) {
         wp_die('Error exchanging authorization code: ' . $response->get_error_message());
@@ -185,6 +187,8 @@ public function handle_oauth_callback() {
 In your integration, you'll need to securely store these credentials:
 
 ```php
+namespace MyCompany\LinkedIn\Settings;
+
 /**
  * Save API credentials for a site
  * 
@@ -205,13 +209,13 @@ public function save_api_credentials($website_id, $client_id, $client_secret) {
     $client_secret = sanitize_text_field($client_secret);
     
     // Get current settings
-    $settings = get_option('mainwp_linkedin_settings', array());
+    $settings = get_option('mainwp_linkedin_settings', []);
     
     // Update settings for this site
-    $settings[$website_id] = array(
+    $settings[$website_id] = [
         'client_id' => $client_id,
         'client_secret' => $client_secret
-    );
+    ];
     
     // Save settings
     return update_option('mainwp_linkedin_settings', $settings);
@@ -223,6 +227,11 @@ public function save_api_credentials($website_id, $client_id, $client_secret) {
 Always test the API connection before performing operations:
 
 ```php
+namespace MyCompany\LinkedIn\Diagnostics;
+
+use WP_Error;
+use Exception;
+
 /**
  * Test LinkedIn API connection for a site
  * 
@@ -262,7 +271,7 @@ public function test_api_connection($website_id) {
         }
         
         return true;
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         $error_message = $e->getMessage();
         
         // Log exception if WP_DEBUG_LOG is enabled
@@ -286,6 +295,12 @@ public function test_api_connection($website_id) {
 Create a dedicated class for handling API communication:
 
 ```php
+namespace MyCompany\LinkedIn;
+
+use MainWP\Dashboard\MainWP_Connect;
+use WP_Error;
+use Exception;
+
 /**
  * LinkedIn API Client
  */
@@ -385,10 +400,7 @@ class LinkedInAPIClient {
      * @param array $args Query arguments
      * @return array|WP_Error Posts or error
      */
-    public function get_company_posts($company_id, $args = array()) {
-        // Ensure args is an array
-        $args = is_array($args) ? $args : array();
-        
+    public function get_company_posts($company_id, $args = []) {
         // Check cache first
         $cache_key = 'mainwp_linkedin_posts_' . $this->website->id . '_' . $company_id . '_' . md5(serialize($args));
         $cached_data = get_transient($cache_key);
@@ -442,9 +454,9 @@ class LinkedInAPIClient {
      * @param array $args Request arguments
      * @return array|WP_Error Response or error
      */
-    private function make_api_request($endpoint, $method = 'GET', $args = array()) {
+    private function make_api_request($endpoint, $method = 'GET', $args = []) {
         // Prepare the request data for MainWP
-        $data = array(
+        $data = [
             'linkedin_api' => true,
             'endpoint' => $endpoint,
             'method' => $method,
@@ -452,11 +464,11 @@ class LinkedInAPIClient {
             'client_id' => $this->client_id,
             'client_secret' => $this->client_secret,
             'access_token' => $this->access_token
-        );
+        ];
         
         try {
             // Send the request through MainWP
-            $information = \MainWP\Dashboard\MainWP_Connect::fetch_url_authed(
+            $information = MainWP_Connect::fetch_url_authed(
                 $this->website,
                 'linkedin_integration',
                 $data
@@ -464,12 +476,12 @@ class LinkedInAPIClient {
             
             // Check for errors in the response
             if (is_array($information) && isset($information['error'])) {
-                return new \WP_Error('api_error', $information['error']);
+                return new WP_Error('api_error', $information['error']);
             }
             
             return $information;
-        } catch (\Exception $e) {
-            return new \WP_Error('api_error', $e->getMessage());
+        } catch (Exception $e) {
+            return new WP_Error('api_error', $e->getMessage());
         }
     }
 }
@@ -480,6 +492,10 @@ class LinkedInAPIClient {
 Implement content publishing functionality:
 
 ```php
+namespace MyCompany\LinkedIn\Content;
+
+use WP_Error;
+
 /**
  * Content Manager
  */
@@ -505,21 +521,21 @@ class ContentManager {
      * @return array|WP_Error Post data or error
      */
     public function create_text_post($company_id, $text, $visibility = 'PUBLIC') {
-        $post_data = array(
+        $post_data = [
             'author' => 'urn:li:organization:' . $company_id,
             'lifecycleState' => 'PUBLISHED',
-            'specificContent' => array(
-                'com.linkedin.ugc.ShareContent' => array(
-                    'shareCommentary' => array(
+            'specificContent' => [
+                'com.linkedin.ugc.ShareContent' => [
+                    'shareCommentary' => [
                         'text' => $text
-                    ),
+                    ],
                     'shareMediaCategory' => 'NONE'
-                )
-            ),
-            'visibility' => array(
+                ]
+            ],
+            'visibility' => [
                 'com.linkedin.ugc.MemberNetworkVisibility' => $visibility
-            )
-        );
+            ]
+        ];
         
         return $this->api_client->create_company_post($company_id, $post_data);
     }
@@ -536,33 +552,33 @@ class ContentManager {
      * @return array|WP_Error Post data or error
      */
     public function create_image_post($company_id, $text, $image_url, $title, $description, $visibility = 'PUBLIC') {
-        $post_data = array(
+        $post_data = [
             'author' => 'urn:li:organization:' . $company_id,
             'lifecycleState' => 'PUBLISHED',
-            'specificContent' => array(
-                'com.linkedin.ugc.ShareContent' => array(
-                    'shareCommentary' => array(
+            'specificContent' => [
+                'com.linkedin.ugc.ShareContent' => [
+                    'shareCommentary' => [
                         'text' => $text
-                    ),
+                    ],
                     'shareMediaCategory' => 'IMAGE',
-                    'media' => array(
-                        array(
+                    'media' => [
+                        [
                             'status' => 'READY',
-                            'description' => array(
+                            'description' => [
                                 'text' => $description
-                            ),
+                            ],
                             'media' => $image_url,
-                            'title' => array(
+                            'title' => [
                                 'text' => $title
-                            )
-                        )
-                    )
-                )
-            ),
-            'visibility' => array(
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'visibility' => [
                 'com.linkedin.ugc.MemberNetworkVisibility' => $visibility
-            )
-        );
+            ]
+        ];
         
         return $this->api_client->create_company_post($company_id, $post_data);
     }
@@ -580,38 +596,38 @@ class ContentManager {
      * @return array|WP_Error Post data or error
      */
     public function create_link_post($company_id, $text, $link_url, $title, $description, $thumbnail_url, $visibility = 'PUBLIC') {
-        $post_data = array(
+        $post_data = [
             'author' => 'urn:li:organization:' . $company_id,
             'lifecycleState' => 'PUBLISHED',
-            'specificContent' => array(
-                'com.linkedin.ugc.ShareContent' => array(
-                    'shareCommentary' => array(
+            'specificContent' => [
+                'com.linkedin.ugc.ShareContent' => [
+                    'shareCommentary' => [
                         'text' => $text
-                    ),
+                    ],
                     'shareMediaCategory' => 'ARTICLE',
-                    'media' => array(
-                        array(
+                    'media' => [
+                        [
                             'status' => 'READY',
-                            'description' => array(
+                            'description' => [
                                 'text' => $description
-                            ),
+                            ],
                             'originalUrl' => $link_url,
-                            'title' => array(
+                            'title' => [
                                 'text' => $title
-                            ),
-                            'thumbnails' => array(
-                                array(
+                            ],
+                            'thumbnails' => [
+                                [
                                     'url' => $thumbnail_url
-                                )
-                            )
-                        )
-                    )
-                )
-            ),
-            'visibility' => array(
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'visibility' => [
                 'com.linkedin.ugc.MemberNetworkVisibility' => $visibility
-            )
-        );
+            ]
+        ];
         
         return $this->api_client->create_company_post($company_id, $post_data);
     }
@@ -627,18 +643,18 @@ class ContentManager {
     public function schedule_post($company_id, $post_data, $timestamp) {
         // Validate timestamp
         if ($timestamp <= time()) {
-            return new \WP_Error('invalid_timestamp', 'Scheduled time must be in the future');
+            return new WP_Error('invalid_timestamp', 'Scheduled time must be in the future');
         }
         
         // Get scheduled posts
-        $scheduled_posts = get_option('mainwp_linkedin_scheduled_posts', array());
+        $scheduled_posts = get_option('mainwp_linkedin_scheduled_posts', []);
         
         // Add new scheduled post
-        $scheduled_posts[] = array(
+        $scheduled_posts[] = [
             'company_id' => $company_id,
             'post_data' => $post_data,
             'timestamp' => $timestamp
-        );
+        ];
         
         // Save scheduled posts
         return update_option('mainwp_linkedin_scheduled_posts', $scheduled_posts);
@@ -673,13 +689,13 @@ class ContentManager {
    // Validate and sanitize text input
    $text = sanitize_textarea_field($_POST['post_text']);
    if (empty($text)) {
-       return new \WP_Error('empty_text', 'Post text cannot be empty');
+       return new WP_Error('empty_text', 'Post text cannot be empty');
    }
    
    // Validate image URLs
    $image_url = esc_url_raw($_POST['image_url']);
    if (!filter_var($image_url, FILTER_VALIDATE_URL)) {
-       return new \WP_Error('invalid_url', 'Invalid image URL');
+       return new WP_Error('invalid_url', 'Invalid image URL');
    }
    ```
 
@@ -715,20 +731,20 @@ class ContentManager {
 2. **Use Pagination for Large Datasets**: Always implement pagination when retrieving large datasets:
    ```php
    // Get posts with pagination
-   $posts = $api_client->get_company_posts($company_id, array(
+   $posts = $api_client->get_company_posts($company_id, [
        'start' => $offset,
        'count' => $per_page
-   ));
+   ]);
    ```
 
 3. **Implement Defensive Programming**: Always validate data and handle edge cases:
    ```php
    // Ensure args is an array
-   $args = is_array($args) ? $args : array();
+   $args = is_array($args) ? $args : [];
    
    // Check for errors before processing
    if (is_wp_error($posts) || !is_array($posts)) {
-       return array();
+       return [];
    }
    ```
 

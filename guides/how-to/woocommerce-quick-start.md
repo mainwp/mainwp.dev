@@ -26,6 +26,11 @@ This quick start guide provides the essential code and steps to implement a Main
 
 namespace YourCompany\MainWPWooCommerce;
 
+use MainWP\Dashboard\MainWP_DB;
+use MainWP\Dashboard\MainWP_Connect;
+use WP_Error;
+use Exception;
+
 // Prevent direct access
 if (!defined('ABSPATH')) {
     exit;
@@ -33,13 +38,13 @@ if (!defined('ABSPATH')) {
 
 // Register the integration with MainWP
 add_filter('mainwp_getextensions', function($extensions) {
-    $extensions[] = array(
+    $extensions[] = [
         'plugin' => __FILE__,
         'api' => 'MainWPWooCommerce',
         'mainwp' => true,
-        'callback' => array('YourCompany\\MainWPWooCommerce\\MainWPWooCommerce', 'get_instance'),
+        'callback' => [__NAMESPACE__ . '\\MainWPWooCommerce', 'get_instance'],
         'name' => 'WooCommerce Integration'
-    );
+    ];
     return $extensions;
 });
 
@@ -65,14 +70,14 @@ class MainWPWooCommerce {
      */
     public function __construct() {
         // Initialize the integration
-        add_action('admin_init', array($this, 'admin_init'));
-        add_action('mainwp_admin_menu', array($this, 'init_menu'));
+        add_action('admin_init', [$this, 'admin_init']);
+        add_action('mainwp_admin_menu', [$this, 'init_menu']);
         
         // Hook into site sync to collect WooCommerce data
-        add_action('mainwp_site_synced', array($this, 'site_synced'), 10, 2);
+        add_action('mainwp_site_synced', [$this, 'site_synced'], 10, 2);
         
         // Add WooCommerce data to individual site view
-        add_filter('mainwp_getsubpages_sites', array($this, 'add_woocommerce_site_tab'), 10, 2);
+        add_filter('mainwp_getsubpages_sites', [$this, 'add_woocommerce_site_tab'], 10, 2);
     }
     
     /**
@@ -94,7 +99,7 @@ class MainWPWooCommerce {
             __('WooCommerce', 'mainwp-woocommerce'),
             'manage_options', // Use manage_options instead of read for better security
             'MainWPWooCommerce',
-            array($this, 'render_dashboard_page')
+            [$this, 'render_dashboard_page']
         );
         
         // Add settings page
@@ -104,7 +109,7 @@ class MainWPWooCommerce {
             __('WooCommerce Settings', 'mainwp-woocommerce'),
             'manage_options', // Use manage_options instead of read for better security
             'MainWPWooCommerceSettings',
-            array($this, 'render_settings_page')
+            [$this, 'render_settings_page']
         );
     }
     
@@ -130,11 +135,11 @@ class MainWPWooCommerce {
      * @return array Modified subpages
      */
     public function add_woocommerce_site_tab($subpages, $website) {
-        $subpages[] = array(
+        $subpages[] = [
             'title' => __('WooCommerce', 'mainwp-woocommerce'),
             'slug' => 'WooCommerce',
-            'callback' => array($this, 'render_site_woocommerce_tab'),
-        );
+            'callback' => [$this, 'render_site_woocommerce_tab'],
+        ];
         return $subpages;
     }
     
@@ -152,14 +157,14 @@ class MainWPWooCommerce {
         }
         
         // Get the website
-        $website = \MainWP\Dashboard\MainWP_DB::instance()->get_website_by_id($website_id);
+        $website = MainWP_DB::instance()->get_website_by_id($website_id);
         if (!$website) {
             return null;
         }
         
         // Get API credentials from options
-        $settings = get_option('mainwp_woocommerce_settings', array());
-        $site_settings = isset($settings[$website_id]) ? $settings[$website_id] : array();
+        $settings = get_option('mainwp_woocommerce_settings', []);
+        $site_settings = isset($settings[$website_id]) ? $settings[$website_id] : [];
         
         if (empty($site_settings['consumer_key']) || empty($site_settings['consumer_secret'])) {
             return null;
@@ -192,13 +197,13 @@ class MainWPWooCommerce {
         $consumer_secret = sanitize_text_field($consumer_secret);
         
         // Get current settings
-        $settings = get_option('mainwp_woocommerce_settings', array());
+        $settings = get_option('mainwp_woocommerce_settings', []);
         
         // Update settings for this site
-        $settings[$website_id] = array(
+        $settings[$website_id] = [
             'consumer_key' => $consumer_key,
             'consumer_secret' => $consumer_secret
-        );
+        ];
         
         // Save settings
         return update_option('mainwp_woocommerce_settings', $settings);
@@ -237,9 +242,9 @@ class WooCommerceAPIClient {
      * @param array $args Query arguments
      * @return array|WP_Error Products or error
      */
-    public function get_products($args = array()) {
+    public function get_products($args = []) {
         // Ensure args is an array
-        $args = is_array($args) ? $args : array();
+        $args = is_array($args) ? $args : [];
         
         return $this->make_api_request('products', 'GET', $args);
     }
@@ -250,9 +255,9 @@ class WooCommerceAPIClient {
      * @param array $args Query arguments
      * @return array|WP_Error Orders or error
      */
-    public function get_orders($args = array()) {
+    public function get_orders($args = []) {
         // Ensure args is an array
-        $args = is_array($args) ? $args : array();
+        $args = is_array($args) ? $args : [];
         
         return $this->make_api_request('orders', 'GET', $args);
     }
@@ -265,20 +270,20 @@ class WooCommerceAPIClient {
      * @param array $args Request arguments
      * @return array|WP_Error Response or error
      */
-    private function make_api_request($endpoint, $method = 'GET', $args = array()) {
+    private function make_api_request($endpoint, $method = 'GET', $args = []) {
         // Prepare the request data for MainWP
-        $data = array(
+        $data = [
             'wc_api' => true,
             'endpoint' => $endpoint,
             'method' => $method,
             'args' => $args,
             'consumer_key' => $this->consumer_key,
             'consumer_secret' => $this->consumer_secret
-        );
+        ];
         
         try {
             // Send the request through MainWP
-            $information = \MainWP\Dashboard\MainWP_Connect::fetch_url_authed(
+            $information = MainWP_Connect::fetch_url_authed(
                 $this->website,
                 'woocommerce_integration',
                 $data
@@ -297,11 +302,11 @@ class WooCommerceAPIClient {
                         $this->website->id
                     ));
                 }
-                return new \WP_Error('api_error', $error_message);
+                return new WP_Error('api_error', $error_message);
             }
             
             return $information;
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $error_message = $e->getMessage();
             // Log exception if WP_DEBUG_LOG is enabled
             if (defined('WP_DEBUG_LOG') && WP_DEBUG_LOG) {
@@ -313,7 +318,7 @@ class WooCommerceAPIClient {
                     $this->website->id
                 ));
             }
-            return new \WP_Error('api_error', $error_message);
+            return new WP_Error('api_error', $error_message);
         }
     }
 }

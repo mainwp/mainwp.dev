@@ -5,6 +5,8 @@ This guide explains how to use MainWP's actions and filters (hooks) to integrate
 ## Quick Start for Experienced Developers
 
 ```php
+namespace MyCompany\MyExtension;
+
 // Hook into MainWP Dashboard actions
 add_action('mainwp_pageheader_extensions', function() {
     // Add content to extension page header
@@ -51,7 +53,9 @@ Before diving into MainWP-specific hooks, it's important to understand the WordP
 Actions are triggered at specific points during execution and allow you to add custom functionality:
 
 ```php
-add_action('hook_name', 'callback_function', 10, 2);
+namespace MyCompany\MyExtension;
+
+add_action('hook_name', __NAMESPACE__ . '\\callback_function', 10, 2);
 
 function callback_function($arg1, $arg2) {
     // Do something when the hook is triggered
@@ -63,7 +67,9 @@ function callback_function($arg1, $arg2) {
 Filters allow you to modify data before it's used:
 
 ```php
-add_filter('hook_name', 'filter_function', 10, 1);
+namespace MyCompany\MyExtension;
+
+add_filter('hook_name', __NAMESPACE__ . '\\filter_function', 10, 1);
 
 function filter_function($value) {
     // Modify $value
@@ -80,12 +86,14 @@ MainWP Dashboard provides numerous hooks for extending its functionality. Here a
 The most important hook for any MainWP extension is `mainwp_getextensions`, which registers your extension with the MainWP Dashboard:
 
 ```php
+namespace MyCompany\MyExtension;
+
 add_filter('mainwp_getextensions', function($extensions) {
     $extensions[] = array(
         'plugin' => __FILE__,
         'api' => 'MyExtension',
         'mainwp' => true,
-        'callback' => array('MyCompany\\MyExtension\\MyExtension', 'get_instance'),
+        'callback' => array(__NAMESPACE__ . '\\MyExtension', 'get_instance'),
         'name' => 'My Extension'
     );
     return $extensions;
@@ -104,16 +112,28 @@ This tells MainWP:
 To add menu items to the MainWP Dashboard:
 
 ```php
-add_action('mainwp_admin_menu', function() {
-    add_submenu_page(
-        'mainwp_tab',
-        __('My Extension', 'my-extension'),
-        __('My Extension', 'my-extension'),
-        'read',
-        'MyExtension',
-        array($this, 'render_admin_page')
-    );
-});
+namespace MyCompany\MyExtension;
+
+class Admin {
+    public function __construct() {
+        add_action('mainwp_admin_menu', [$this, 'add_menu_item']);
+    }
+
+    public function add_menu_item() {
+        add_submenu_page(
+            'mainwp_tab',
+            __('My Extension', 'my-extension'),
+            __('My Extension', 'my-extension'),
+            'read',
+            'MyExtension',
+            [$this, 'render_admin_page']
+        );
+    }
+
+    public function render_admin_page() {
+        // Page rendering code
+    }
+}
 ```
 
 ### Page Header and Footer
@@ -121,23 +141,32 @@ add_action('mainwp_admin_menu', function() {
 To add content to the header or footer of your extension's pages:
 
 ```php
-add_action('mainwp_pageheader_extensions', function() {
-    // Add content to the page header
-    ?>
-    <div class="ui segment">
-        <h2 class="ui header"><?php esc_html_e('My Extension Header', 'my-extension'); ?></h2>
-    </div>
-    <?php
-});
+namespace MyCompany\MyExtension;
 
-add_action('mainwp_pagefooter_extensions', function() {
-    // Add content to the page footer
-    ?>
-    <div class="ui segment">
-        <p><?php esc_html_e('My Extension Footer', 'my-extension'); ?></p>
-    </div>
-    <?php
-});
+class UI {
+    public function __construct() {
+        add_action('mainwp_pageheader_extensions', [$this, 'render_header']);
+        add_action('mainwp_pagefooter_extensions', [$this, 'render_footer']);
+    }
+
+    public function render_header() {
+        // Add content to the page header
+        ?>
+        <div class="ui segment">
+            <h2 class="ui header"><?php esc_html_e('My Extension Header', 'my-extension'); ?></h2>
+        </div>
+        <?php
+    }
+
+    public function render_footer() {
+        // Add content to the page footer
+        ?>
+        <div class="ui segment">
+            <p><?php esc_html_e('My Extension Footer', 'my-extension'); ?></p>
+        </div>
+        <?php
+    }
+}
 ```
 
 ### Dashboard Widgets
@@ -145,24 +174,32 @@ add_action('mainwp_pagefooter_extensions', function() {
 To add widgets to the MainWP Dashboard:
 
 ```php
-add_action('mainwp_dashboard_widgets', function() {
-    add_meta_box(
-        'my_extension_widget',
-        __('My Extension Widget', 'my-extension'),
-        array($this, 'render_dashboard_widget'),
-        'mainwp_dashboard',
-        'normal',
-        'default'
-    );
-});
+namespace MyCompany\MyExtension;
 
-public function render_dashboard_widget() {
-    // Widget content
-    ?>
-    <div class="ui segment">
-        <p><?php esc_html_e('Widget content here', 'my-extension'); ?></p>
-    </div>
-    <?php
+class Dashboard {
+    public function __construct() {
+        add_action('mainwp_dashboard_widgets', [$this, 'register_widget']);
+    }
+
+    public function register_widget() {
+        add_meta_box(
+            'my_extension_widget',
+            __('My Extension Widget', 'my-extension'),
+            [$this, 'render_dashboard_widget'],
+            'mainwp_dashboard',
+            'normal',
+            'default'
+        );
+    }
+
+    public function render_dashboard_widget() {
+        // Widget content
+        ?>
+        <div class="ui segment">
+            <p><?php esc_html_e('Widget content here', 'my-extension'); ?></p>
+        </div>
+        <?php
+    }
 }
 ```
 
@@ -171,14 +208,22 @@ public function render_dashboard_widget() {
 To add actions to the site actions dropdown menu:
 
 ```php
-add_filter('mainwp_site_actions', function($actions, $website) {
-    $actions['my_action'] = array(
-        'label' => __('My Custom Action', 'my-extension'),
-        'url' => admin_url('admin.php?page=MyExtension&site_id=' . $website->id),
-        'icon' => 'cog',
-    );
-    return $actions;
-}, 10, 2);
+namespace MyCompany\MyExtension\Sites;
+
+class Actions {
+    public function __construct() {
+        add_filter('mainwp_site_actions', [$this, 'add_site_action'], 10, 2);
+    }
+
+    public function add_site_action($actions, $website) {
+        $actions['my_action'] = array(
+            'label' => __('My Custom Action', 'my-extension'),
+            'url' => admin_url('admin.php?page=MyExtension&site_id=' . $website->id),
+            'icon' => 'cog',
+        );
+        return $actions;
+    }
+}
 ```
 
 ### Site Sync Data
@@ -186,13 +231,21 @@ add_filter('mainwp_site_actions', function($actions, $website) {
 To add custom data to the site sync process:
 
 ```php
-add_filter('mainwp_site_sync_data', function($data, $website) {
-    // Add custom data to the sync process
-    $data['my_extension'] = array(
-        'custom_field' => 'custom_value',
-    );
-    return $data;
-}, 10, 2);
+namespace MyCompany\MyExtension\Sites;
+
+class Sync {
+    public function __construct() {
+        add_filter('mainwp_site_sync_data', [$this, 'add_sync_data'], 10, 2);
+    }
+
+    public function add_sync_data($data, $website) {
+        // Add custom data to the sync process
+        $data['my_extension'] = array(
+            'custom_field' => 'custom_value',
+        );
+        return $data;
+    }
+}
 ```
 
 ### After Site Sync
@@ -200,12 +253,20 @@ add_filter('mainwp_site_sync_data', function($data, $website) {
 To perform actions after a site is synced:
 
 ```php
-add_action('mainwp_site_synced', function($website, $data) {
-    // Process data after site sync
-    if (isset($data['my_extension'])) {
-        // Process my_extension data
+namespace MyCompany\MyExtension\Sites;
+
+class Sync {
+    public function __construct() {
+        add_action('mainwp_site_synced', [$this, 'process_synced_data'], 10, 2);
     }
-}, 10, 2);
+
+    public function process_synced_data($website, $data) {
+        // Process data after site sync
+        if (isset($data['my_extension'])) {
+            // Process my_extension data
+        }
+    }
+}
 ```
 
 ## MainWP Child Hooks
@@ -217,32 +278,40 @@ If your extension needs to interact with child sites, you'll need to use MainWP 
 To handle requests from the MainWP Dashboard:
 
 ```php
-add_action('mainwp_child_call', function($action) {
-    // Check if this is a request for your extension
-    if ($action == 'my_extension') {
-        // Get the specific action
-        $specific_action = $_POST['specific_action'] ?? '';
-        
-        // Handle the specific action
-        switch ($specific_action) {
-            case 'get_data':
-                // Get and return data
-                $data = array('result' => 'success', 'data' => 'your_data');
-                wp_send_json($data);
-                break;
-            case 'update_data':
-                // Update data
-                $data = array('result' => 'success', 'message' => 'Data updated');
-                wp_send_json($data);
-                break;
-            default:
-                // Handle unknown action
-                $data = array('result' => 'error', 'message' => 'Unknown action');
-                wp_send_json($data);
-                break;
+namespace MyCompany\MyExtension\Child;
+
+class Handler {
+    public function __construct() {
+        add_action('mainwp_child_call', [$this, 'handle_calls']);
+    }
+
+    public function handle_calls($action) {
+        // Check if this is a request for your extension
+        if ($action == 'my_extension') {
+            // Get the specific action
+            $specific_action = $_POST['specific_action'] ?? '';
+            
+            // Handle the specific action
+            switch ($specific_action) {
+                case 'get_data':
+                    // Get and return data
+                    $data = array('result' => 'success', 'data' => 'your_data');
+                    wp_send_json($data);
+                    break;
+                case 'update_data':
+                    // Update data
+                    $data = array('result' => 'success', 'message' => 'Data updated');
+                    wp_send_json($data);
+                    break;
+                default:
+                    // Handle unknown action
+                    $data = array('result' => 'error', 'message' => 'Unknown action');
+                    wp_send_json($data);
+                    break;
+            }
         }
     }
-});
+}
 ```
 
 ### Child Plugin Initialization
@@ -250,9 +319,17 @@ add_action('mainwp_child_call', function($action) {
 To initialize your child plugin:
 
 ```php
-add_action('mainwp_child_init', function() {
-    // Initialize your child plugin
-});
+namespace MyCompany\MyExtension\Child;
+
+class Plugin {
+    public function __construct() {
+        add_action('mainwp_child_init', [$this, 'initialize']);
+    }
+
+    public function initialize() {
+        // Initialize your child plugin
+    }
+}
 ```
 
 ## Communication Between Dashboard and Child Sites
@@ -262,33 +339,40 @@ One of the most powerful features of MainWP is the ability to communicate betwee
 ### Sending Requests from Dashboard to Child
 
 ```php
-// In your dashboard extension
-public function send_request_to_child($website_id, $action, $data = array()) {
-    // Get the website
-    $website = MainWP\Dashboard\MainWP_DB::instance()->get_website_by_id($website_id);
-    if (!$website) {
-        return array('error' => 'Website not found');
-    }
-    
-    // Prepare the data
-    $data['action'] = $action;
-    
-    // Send the request
-    try {
-        $information = MainWP\Dashboard\MainWP_Connect::fetch_url_authed(
-            $website,
-            'my_extension',
-            $data
-        );
-        
-        // Process the response
-        if (is_array($information) && isset($information['result'])) {
-            return $information;
-        } else {
-            return array('error' => 'Invalid response from child site');
+namespace MyCompany\MyExtension\Dashboard;
+
+use MainWP\Dashboard\MainWP_DB;
+use MainWP\Dashboard\MainWP_Connect;
+use Exception;
+
+class Communication {
+    public function send_request_to_child($website_id, $action, $data = array()) {
+        // Get the website
+        $website = MainWP_DB::instance()->get_website_by_id($website_id);
+        if (!$website) {
+            return array('error' => 'Website not found');
         }
-    } catch (Exception $e) {
-        return array('error' => $e->getMessage());
+        
+        // Prepare the data
+        $data['action'] = $action;
+        
+        // Send the request
+        try {
+            $information = MainWP_Connect::fetch_url_authed(
+                $website,
+                'my_extension',
+                $data
+            );
+            
+            // Process the response
+            if (is_array($information) && isset($information['result'])) {
+                return $information;
+            } else {
+                return array('error' => 'Invalid response from child site');
+            }
+        } catch (Exception $e) {
+            return array('error' => $e->getMessage());
+        }
     }
 }
 ```
