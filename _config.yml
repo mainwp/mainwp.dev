@@ -10,8 +10,11 @@ plugins:
   - jekyll-sitemap
 
 # Theme settings
-layouts_dir: ./dox-theme/_layouts
-includes_dir: ./dox-theme/_includes
+layouts_dir: dox-theme/_layouts
+includes_dir: dox-theme/_includes
+sass:
+  sass_dir: dox-theme/_sass
+  style: compressed
 
 # Collections
 collections:

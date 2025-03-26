@@ -82,6 +82,9 @@ jobs:
             "source-code"
             "_site"
             "dox-theme"
+            "_includes"
+            "_layouts"
+            "_sass"
             "LICENSE"
             "README.md"
           )
