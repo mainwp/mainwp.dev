@@ -77,6 +77,11 @@ jobs:
           
           # Define files/directories to include
           include_list=(
+            "index.html"
+            "build"
+            "guides"
+            "mainwp-hooks"
+            "source-code"
             "_site"
             "LICENSE"
             "README.md"
@@ -88,7 +93,7 @@ jobs:
               echo "Including: $item"
               if [ -d "$item" ]; then
                 mkdir -p "deploy/$item"
-                cp -R "$item"/* "deploy/" 2>/dev/null || true
+                cp -R "$item"/* "deploy/$item/" 2>/dev/null || true
               else
                 cp "$item" "deploy/" 2>/dev/null || true
               fi
@@ -100,6 +105,25 @@ jobs:
           # Simple verification
           echo "Deployment directory contents:"
           ls -la deploy/
+          
+          # Verify critical files exist
+          critical_files=("index.html" "guides/index.md" "mainwp-hooks/index.md")
+          missing=0
+          
+          for file in "${critical_files[@]}"; do
+            if [ -f "deploy/$file" ] || [ -f "deploy/_site/$file" ]; then
+              echo "✅ Found critical file: $file"
+            else
+              echo "❌ Missing critical file: $file"
+              missing=$((missing + 1))
+            fi
+          done
+          
+          if [ $missing -gt 0 ]; then
+            echo "Warning: $missing critical files missing from deployment"
+          else
+            echo "All critical files present"
+          fi
       
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
