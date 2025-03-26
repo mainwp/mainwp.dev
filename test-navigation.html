@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>MainWP.dev Navigation Test</title>
+
+    <!-- Theme styles -->
+    <link rel="stylesheet" href="test-navigation-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <meta name="color-scheme" content="light dark">
+    <style>
+        /* Temporary styles for testing */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+
+        .test-controls {
+            padding: 2rem;
+            margin: 2rem;
+            background-color: var(--color-code-background);
+            border-radius: var(--dox-border-radius);
+        }
+
+        .test-section {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: var(--dox-border-radius);
+        }
+
+        .test-section h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="c-header">
+        <div class="o-container">
+            <div class="c-header__inner">
+                <div class="c-header__brand">
+                    <a href="#" class="c-logo">
+                        <span class="c-logo__text">
+                            <span class="c-logo__text--main">Main</span><span class="c-logo__text--wp">WP</span>
+                            <span class="c-logo__text--dev">.dev</span>
+                        </span>
+                    </a>
+                </div>
+
+                <button class="c-nav-trigger js-nav-trigger" aria-label="Toggle navigation">
+                    <span class="c-nav-trigger__icon"></span>
+                </button>
+
+                <div class="c-nav-wrap">
+                    <nav class="c-nav" role="navigation">
+                        <ul class="c-nav__list">
+                            <li class="c-nav__item">
+                                <a class="c-nav__link" href="#documentation" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                    Documentation
+                                </a>
+                                <div class="c-nav__dropdown" role="menu">
+                                    <a class="c-nav__dropdown-link" href="#documentation/getting-started" role="menuitem">
+                                        Getting Started
+                                    </a>
+                                    <a class="c-nav__dropdown-link" href="#documentation/installation" role="menuitem">
+                                        Installation
+                                    </a>
+                                    <a class="c-nav__dropdown-link" href="#documentation/configuration" role="menuitem">
+                                        Configuration
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-nav__item">
+                                <a class="c-nav__link" href="#guides" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                    Guides
+                                </a>
+                                <div class="c-nav__dropdown" role="menu">
+                                    <a class="c-nav__dropdown-link" href="#guides/best-practices" role="menuitem">
+                                        Best Practices
+                                    </a>
+                                    <a class="c-nav__dropdown-link" href="#guides/how-to" role="menuitem">
+                                        How-to
+                                    </a>
+                                    <a class="c-nav__dropdown-link" href="#guides/concepts" role="menuitem">
+                                        Concepts
+                                    </a>
+                                    <a class="c-nav__dropdown-link" href="#guides/reference" role="menuitem">
+                                        Reference
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-nav__item">
+                                <a class="c-nav__link" href="#hooks" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                    Hooks
+                                </a>
+                                <div class="c-nav__dropdown" role="menu">
+                                    <a class="c-nav__dropdown-link" href="#hooks/dashboard" role="menuitem">
+                                        Dashboard Hooks
+                                    </a>
+                                    <a class="c-nav__dropdown-link" href="#hooks/child" role="menuitem">
+                                        Child Hooks
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="c-nav__item">
+                                <a class="c-nav__link" href="#api" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                    API
+                                </a>
+                                <div class="c-nav__dropdown" role="menu">
+                                    <a class="c-nav__dropdown-link" href="#api/dashboard" role="menuitem">
+                                        Dashboard API
+                                    </a>
+                                    <a class="c-nav__dropdown-link" href="#api/child" role="menuitem">
+                                        Child API
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="c-header__actions">
+                    <button class="c-theme-toggle js-theme-toggle" aria-label="Toggle theme">
+                        <svg class="c-theme-toggle__icon c-theme-toggle__icon--light" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5M17.6859 17.69L18.5 18.5M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="c-theme-toggle__icon c-theme-toggle__icon--dark" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 15.8442C20.6866 16.4382 19.2286 16.7688 17.6935 16.7688C11.9153 16.7688 7.23116 12.0847 7.23116 6.30654C7.23116 4.77135 7.5618 3.31341 8.15577 2C3.52576 3.64163 0.1 8.20902 0.1 13.5377C0.1 19.3159 4.78414 24 10.5623 24C15.891 24 20.4584 20.5742 22.1 15.9442" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <a href="https://github.com/mainwp" class="c-header__github" target="_blank" rel="noopener noreferrer" aria-label="MainWP on GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C19.1375 20.1625 22 16.4125 22 12C22 6.475 17.525 2 12 2Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="test-controls">
+        <h2>Navigation Test Page</h2>
+        
+        <div class="test-section">
+            <h3>Features to Test:</h3>
+            <ul>
+                <li>Hover over navigation items to test dropdowns</li>
+                <li>Click navigation items on mobile to test dropdowns</li>
+                <li>Test mobile menu toggle</li>
+                <li>Verify keyboard navigation (Tab, Enter, Space, Escape)</li>
+                <li>Test theme toggle</li>
+                <li>Check responsive behavior at different screen sizes</li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <h3>Current Implementation:</h3>
+            <ul>
+                <li>Dynamic dropdowns with hover on desktop</li>
+                <li>Click-based dropdowns on mobile</li>
+                <li>Keyboard accessibility</li>
+                <li>ARIA attributes for screen readers</li>
+                <li>Smooth animations</li>
+                <li>Dark mode support</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Theme scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Theme toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.js-theme-toggle');
+            
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                body.classList.add('dark-mode');
+            }
+            
+            // Theme toggle click handler
+            themeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        });
+    </script>
+    <script>
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation elements
+            const navTrigger = document.querySelector('.js-nav-trigger');
+            const navWrap = document.querySelector('.c-nav-wrap');
+            const dropdownLinks = document.querySelectorAll('.c-nav__link[data-dropdown]');
+            const dropdowns = document.querySelectorAll('.c-nav__dropdown');
+            const isMobile = () => window.innerWidth <= 768;
+
+            // Mobile menu toggle
+            if (navTrigger && navWrap) {
+                navTrigger.setAttribute('aria-expanded', 'false');
+                navTrigger.addEventListener('click', function() {
+                    const isExpanded = navTrigger.getAttribute('aria-expanded') === 'true';
+                    navTrigger.setAttribute('aria-expanded', !isExpanded);
+                    navTrigger.classList.toggle('is-active');
+                    navWrap.classList.toggle('is-active');
+                    
+                    // Close all dropdowns when closing mobile menu
+                    if (!isExpanded) {
+                        dropdownLinks.forEach(link => {
+                            link.setAttribute('aria-expanded', 'false');
+                            link.nextElementSibling.classList.remove('is-active');
+                        });
+                    }
+                });
+            }
+
+            // Dropdown functionality
+            dropdownLinks.forEach(link => {
+                const dropdown = link.nextElementSibling;
+                
+                // Click handler
+                link.addEventListener('click', function(e) {
+                    if (isMobile()) {
+                        e.preventDefault();
+                        const isExpanded = link.getAttribute('aria-expanded') === 'true';
+                        
+                        // Close other dropdowns
+                        dropdownLinks.forEach(otherLink => {
+                            if (otherLink !== link) {
+                                otherLink.setAttribute('aria-expanded', 'false');
+                                otherLink.nextElementSibling.classList.remove('is-active');
+                            }
+                        });
+
+                        // Toggle current dropdown
+                        link.setAttribute('aria-expanded', !isExpanded);
+                        dropdown.classList.toggle('is-active');
+                    }
+                });
+
+                // Desktop hover handler with delay
+                const handleHover = () => {
+                    if (!isMobile()) {
+                        let closeTimeout;
+                        const navItem = link.parentElement;
+
+                        // Clear any existing timeout when entering nav item
+                        navItem.addEventListener('mouseenter', function() {
+                            if (closeTimeout) {
+                                clearTimeout(closeTimeout);
+                                closeTimeout = null;
+                            }
+                            link.setAttribute('aria-expanded', 'true');
+                            dropdown.classList.add('is-active');
+                        });
+
+                        // Set timeout when leaving nav item
+                        navItem.addEventListener('mouseleave', function() {
+                            closeTimeout = setTimeout(() => {
+                                link.setAttribute('aria-expanded', 'false');
+                                dropdown.classList.remove('is-active');
+                            }, 300); // 300ms delay before closing
+                        });
+
+                        // Clear timeout if re-entering during delay
+                        dropdown.addEventListener('mouseenter', function() {
+                            if (closeTimeout) {
+                                clearTimeout(closeTimeout);
+                                closeTimeout = null;
+                            }
+                        });
+
+                        // Close after delay when leaving dropdown
+                        dropdown.addEventListener('mouseleave', function() {
+                            closeTimeout = setTimeout(() => {
+                                link.setAttribute('aria-expanded', 'false');
+                                dropdown.classList.remove('is-active');
+                            }, 300);
+                        });
+                    }
+                };
+
+                handleHover();
+
+                // Update hover behavior on window resize
+                window.addEventListener('resize', handleHover);
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.c-nav__item') && !e.target.closest('.js-nav-trigger')) {
+                    dropdownLinks.forEach(link => {
+                        link.setAttribute('aria-expanded', 'false');
+                        link.nextElementSibling.classList.remove('is-active');
+                    });
+
+                    if (isMobile()) {
+                        navTrigger.setAttribute('aria-expanded', 'false');
+                        navTrigger.classList.remove('is-active');
+                        navWrap.classList.remove('is-active');
+                    }
+                }
+            });
+
+            // Handle keyboard navigation
+            dropdownLinks.forEach(link => {
+                link.addEventListener('keydown', function(e) {
+                    const dropdown = link.nextElementSibling;
+                    const dropdownLinks = dropdown.querySelectorAll('.c-nav__dropdown-link');
+                    
+                    switch(e.key) {
+                        case 'Enter':
+                        case ' ':
+                            e.preventDefault();
+                            const isExpanded = link.getAttribute('aria-expanded') === 'true';
+                            link.setAttribute('aria-expanded', !isExpanded);
+                            dropdown.classList.toggle('is-active');
+                            if (!isExpanded && dropdownLinks.length) {
+                                dropdownLinks[0].focus();
+                            }
+                            break;
+                        case 'Escape':
+                            link.setAttribute('aria-expanded', 'false');
+                            dropdown.classList.remove('is-active');
+                            link.focus();
+                            break;
+                    }
+                });
+            });
+
+            // Set active states based on current URL
+            function setActiveStates() {
+                const currentPath = window.location.pathname;
+                
+                document.querySelectorAll('.c-nav__link, .c-nav__dropdown-link').forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href && currentPath.includes(href)) {
+                        link.classList.add('is-active');
+                        
+                        // If it's a dropdown link, also activate its parent
+                        const parentItem = link.closest('.c-nav__item');
+                        if (parentItem) {
+                            const parentLink = parentItem.querySelector('.c-nav__link');
+                            if (parentLink) {
+                                parentLink.classList.add('is-active');
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Initialize active states
+            setActiveStates();
+
+            // Update active states on navigation
+            window.addEventListener('popstate', setActiveStates);
+        });
+    </script>
+</body>
+</html>
