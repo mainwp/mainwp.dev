@@ -9,6 +9,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Theme settings
+layouts_dir: ./dox-theme/_layouts
+includes_dir: ./dox-theme/_includes
+
 # Collections
 collections:
   documentation:
