@@ -1,0 +1,45 @@
+// Colors
+$dox-color-primary: #7fb100;
+$dox-color-secondary: #446200;
+$dox-color-accent: #4682b4;
+$dox-color-dark: #1c1d1b;
+$dox-color-light: #f2f3f2;
+$dox-color-warning: #ad0000;
+$dox-color-highlight: #ffd300;
+
+// Typography
+$dox-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$dox-font-size-base: 16px;
+$dox-line-height-base: 1.6;
+
+// Grid
+$dox-max-width-lg: 1200px;
+$dox-max-width-md: 800px;
+$dox-max-width-sm: 600px;
+
+// Spacing
+$dox-spacing-xs: 0.25rem;
+$dox-spacing-sm: 0.5rem;
+$dox-spacing-md: 1rem;
+$dox-spacing-lg: 2rem;
+$dox-spacing-xl: 4rem;
+
+// Breakpoints
+$dox-breakpoint-sm: 576px;
+$dox-breakpoint-md: 768px;
+$dox-breakpoint-lg: 992px;
+$dox-breakpoint-xl: 1200px;
+
+// Z-index
+$dox-z-index-header: 1000;
+$dox-z-index-nav: 900;
+$dox-z-index-overlay: 800;
+
+// Border radius
+$dox-border-radius: 4px;
+
+// Transitions
+$dox-transition-base: all 0.2s ease-in-out;
+
+// Box shadows
+$dox-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

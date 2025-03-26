@@ -1,91 +1,77 @@
 /**
- * Theme toggle functionality
+ * Theme Toggle functionality
  */
-(function() {
-  // DOM elements
-  const html = document.documentElement;
-  const themeToggle = document.querySelector('.c-theme-toggle');
-  
-  // Theme constants
-  const THEME_KEY = 'dox-theme-preference';
-  const DARK_CLASS = 'dark-mode';
-  const LIGHT_CLASS = 'light-mode';
-  
-  /**
-   * Get the user's theme preference
-   * @returns {string|null} The stored theme preference or null
-   */
-  function getStoredTheme() {
-    return localStorage.getItem(THEME_KEY);
-  }
-  
-  /**
-   * Store the user's theme preference
-   * @param {string} theme The theme to store ('dark' or 'light')
-   */
-  function storeTheme(theme) {
-    localStorage.setItem(THEME_KEY, theme);
-  }
-  
-  /**
-   * Get the system's theme preference
-   * @returns {string} The system theme preference ('dark' or 'light')
-   */
-  function getSystemTheme() {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-  
-  /**
-   * Apply the theme
-   * @param {string} theme The theme to apply ('dark' or 'light')
-   */
-  function applyTheme(theme) {
-    if (theme === 'dark') {
-      html.classList.add(DARK_CLASS);
-      html.classList.remove(LIGHT_CLASS);
-    } else {
-      html.classList.add(LIGHT_CLASS);
-      html.classList.remove(DARK_CLASS);
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.querySelector('.js-theme-toggle');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Function to set theme
+    function setTheme(theme) {
+        document.documentElement.classList.remove('light-mode', 'dark-mode');
+        document.documentElement.classList.add(theme + '-mode');
+        localStorage.setItem('theme', theme);
     }
-    
-    // Update button aria-label
-    if (themeToggle) {
-      themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
-    }
-  }
-  
-  /**
-   * Initialize the theme
-   */
-  function initTheme() {
-    // Get stored theme or fallback to system preference
-    const storedTheme = getStoredTheme();
-    const theme = storedTheme || getSystemTheme();
-    
-    // Apply initial theme
-    applyTheme(theme);
-    
-    // Set up theme toggle button if it exists
-    if (themeToggle) {
-      themeToggle.addEventListener('click', () => {
-        const newTheme = html.classList.contains(DARK_CLASS) ? 'light' : 'dark';
-        applyTheme(newTheme);
-        storeTheme(newTheme);
-      });
-    }
-    
-    // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (!getStoredTheme()) {
-        applyTheme(e.matches ? 'dark' : 'light');
-      }
+
+    // Initialize theme - default to dark mode if no saved preference
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(savedTheme);
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
     });
-  }
-  
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initTheme);
-  } else {
-    initTheme();
-  }
-})();
+
+    // Handle system theme changes - ignore system preference, keep dark mode as default
+    prefersDarkScheme.addEventListener('change', (e) => {
+        const savedTheme = localStorage.getItem('theme');
+        if (!savedTheme) {
+            setTheme('dark');
+        }
+    });
+});
+
+/**
+ * Mobile Navigation functionality
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    const navTrigger = document.querySelector('.js-nav-trigger');
+    const navWrap = document.querySelector('.c-nav-wrap');
+    
+    if (navTrigger && navWrap) {
+        navTrigger.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            this.setAttribute('aria-expanded', !isExpanded);
+            this.classList.toggle('is-active');
+            navWrap.classList.toggle('is-active');
+            
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = isExpanded ? '' : 'hidden';
+        });
+
+        // Close menu on window resize (e.g., when switching to desktop view)
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                navTrigger.classList.remove('is-active');
+                navWrap.classList.remove('is-active');
+                navTrigger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInside = navWrap.contains(event.target) || 
+                                navTrigger.contains(event.target);
+            
+            if (!isClickInside && navWrap.classList.contains('is-active')) {
+                navTrigger.classList.remove('is-active');
+                navWrap.classList.remove('is-active');
+                navTrigger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+});

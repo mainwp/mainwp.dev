@@ -1,0 +1,42 @@
+title: MainWP Developer Documentation
+description: Comprehensive documentation for MainWP extension and integration development
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  documentation:
+    output: true
+  guides:
+    output: true
+  hooks:
+    output: true
+  api:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: documentation-single
+
+# Exclude from processing
+exclude:
+  - README.md
+  - CHANGELOG.md
+  - .git
+  - .gitignore
+  - hooks-generator
+  - memory-bank
+  - .clineignore
+  - .clinerules.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock

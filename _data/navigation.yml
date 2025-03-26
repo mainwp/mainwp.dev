@@ -1,0 +1,43 @@
+# Primary navigation items
+main:
+  - title: Documentation
+    url: /documentation/
+    active_paths: ["/documentation/"]
+    children:
+      - title: Getting Started
+        url: /documentation/getting-started/
+      - title: Installation
+        url: /documentation/installation/
+      - title: Configuration
+        url: /documentation/configuration/
+      
+  - title: Guides
+    url: /guides/
+    active_paths: ["/guides/"]
+    children:
+      - title: Best Practices
+        url: /guides/best-practices/
+      - title: How-to
+        url: /guides/how-to/
+      - title: Concepts
+        url: /guides/concepts/
+      - title: Reference
+        url: /guides/reference/
+        
+  - title: Hooks
+    url: /mainwp-hooks/
+    active_paths: ["/mainwp-hooks/"]
+    children:
+      - title: Dashboard Hooks
+        url: /mainwp-hooks/dashboard/
+      - title: Child Hooks
+        url: /mainwp-hooks/child/
+        
+  - title: API
+    url: /source-code/
+    active_paths: ["/source-code/", "/api/"]
+    children:
+      - title: Dashboard API
+        url: /source-code/dashboard/
+      - title: Child API
+        url: /source-code/child/

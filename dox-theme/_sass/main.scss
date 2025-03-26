@@ -38,15 +38,19 @@
 
 // 6. Components - UI components
 @import 'components/header';
+@import 'components/page-header';
 @import 'components/navigation';
+@import 'components/content';
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/alerts';
 @import 'components/forms';
 @import 'components/sidebar';
 @import 'components/footer';
-@import 'components/code';
 @import 'components/search';
+
+// Code highlighting and blocks
+@import 'components/code';
 
 // 7. Utilities - Helper classes
 @import 'utilities/spacing';

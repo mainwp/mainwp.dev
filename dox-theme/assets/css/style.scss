@@ -1,0 +1,129 @@
+---
+---
+
+// Import settings
+@import "settings/core";
+
+// Import tools
+@import "tools/breakpoints";
+@import "tools/grid";
+
+// Import generic
+@import "generic/box-sizing";
+@import "generic/normalize";
+@import "generic/reset";
+@import "generic/fonts";
+
+// Import elements
+@import "elements/page";
+@import "elements/headings";
+@import "elements/hr";
+@import "elements/links";
+@import "elements/lists";
+@import "elements/images";
+@import "elements/tables";
+@import "elements/code";
+@import "elements/forms";
+@import "elements/media";
+
+// Import objects
+@import "objects/grid";
+@import "objects/tables";
+@import "objects/icons";
+@import "objects/list-bare";
+@import "objects/list-inline";
+@import "objects/link-bare";
+
+// Import components
+@import "components/header";
+@import "components/logo";
+@import "components/nav";
+@import "components/offcanvas";
+@import "components/hamburger-icon";
+@import "components/buttons";
+@import "components/hero";
+@import "components/footer";
+@import "components/post";
+@import "components/feature-card";
+@import "components/example";
+@import "components/callout";
+@import "components/arrow-link";
+@import "components/page-nav";
+
+// Import utilities
+@import "utilities/backgrounds";
+@import "utilities/display";
+@import "utilities/flexbox";
+@import "utilities/grid";
+@import "utilities/headings";
+@import "utilities/positioning";
+@import "utilities/spacing";
+@import "utilities/typography";
+
+// Import vendors
+@import "vendors/code-highlight";
+
+// MainWP Dark Theme Customizations
+:root {
+  --mainwp-primary: #{$dox-color-primary};
+  --mainwp-primary-dark: #446200;
+  --mainwp-accent: #4682b4;
+  --mainwp-dark-bg: #1c1d1b;
+  --mainwp-dark-text: #f2f3f2;
+  --mainwp-warning: #ad0000;
+  --mainwp-highlight: #ffd300;
+}
+
+body {
+  background-color: var(--mainwp-dark-bg);
+  color: var(--mainwp-dark-text);
+}
+
+.c-header {
+  background-color: var(--mainwp-dark-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.c-nav__link {
+  color: var(--mainwp-dark-text);
+  &:hover {
+    color: var(--mainwp-primary);
+  }
+}
+
+.c-footer {
+  background-color: var(--mainwp-dark-bg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--mainwp-dark-text);
+}
+
+a {
+  color: var(--mainwp-primary);
+  &:hover {
+    color: var(--mainwp-primary-dark);
+  }
+}
+
+.c-button {
+  background-color: var(--mainwp-primary);
+  &:hover {
+    background-color: var(--mainwp-primary-dark);
+  }
+}
+
+pre, code {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.c-post {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// Add Inter font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}

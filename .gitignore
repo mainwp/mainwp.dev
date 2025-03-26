@@ -1,30 +1,49 @@
-# Composer
-/vendor/
-/composer.lock
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
 
-# phpDocumentor cache
-/build/
+# Ruby
+*.gem
+Gemfile.lock
 
-# Generated documentation
-# Uncomment if you want to exclude generated documentation from version control
-# /source-code/
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# IDE files
+# IDE
 .idea/
 .vscode/
-*.sublime-*
-
-# OS generated files
+*.swp
+*.swo
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
-# Node modules (if any)
-/node_modules/
+# Build
+build/
+dist/
+deploy/
+tmp/
 
-# Memory bank - tracked locally but not committed to GitHub
-/memory-bank/
+# MainWP specific
+mainwp-hooks-old/
+mainwp-hooks-temp/
+hooks-generator/vendor/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Memory Bank
+memory-bank/
+.clineignore
+.clinerules.md
+
+# Cache
+*.log
+.cache/

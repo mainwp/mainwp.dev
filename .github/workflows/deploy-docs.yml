@@ -1,0 +1,110 @@
+name: Deploy Documentation
+
+on:
+  # Runs on pushes to main branch
+  push:
+    branches: [ main ]
+  
+  # Allows manual triggering from the Actions tab
+  workflow_dispatch:
+  
+  # Weekly schedule (Sunday at 2am UTC)
+  schedule:
+    - cron: '0 2 * * 0'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Check out the repository
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Important for proper source history
+      
+      # Setup PHP
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          extensions: mbstring, intl, zip
+          tools: composer:v2
+
+      # Setup Ruby for Jekyll
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      
+      # Install dependencies
+      - name: Install Dependencies
+        run: |
+          cd hooks-generator
+          composer install --no-dev --prefer-dist --no-progress
+          cd ..
+          bundle install
+      
+      # Clone MainWP repositories if needed
+      - name: Clone MainWP repos
+        run: |
+          mkdir -p sources
+          if [ ! -d "sources/mainwp-dashboard" ]; then
+            git clone https://github.com/mainwp/mainwp.git sources/mainwp-dashboard
+          fi
+          if [ ! -d "sources/mainwp-child" ]; then
+            git clone https://github.com/mainwp/mainwp-child.git sources/mainwp-child
+          fi
+      
+      # Generate hooks documentation
+      - name: Generate hooks documentation
+        run: |
+          cd hooks-generator
+          ./generate-categorized-hooks.sh
+      
+      # Build Jekyll site
+      - name: Build Jekyll
+        run: JEKYLL_ENV=production bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      # Prepare clean deploy directory
+      - name: Prepare deployment directory
+        run: |
+          # Create deploy directory
+          mkdir -p deploy
+          
+          # Define files/directories to include
+          include_list=(
+            "_site"
+            "LICENSE"
+            "README.md"
+          )
+          
+          # Copy only specified files/directories
+          for item in "${include_list[@]}"; do
+            if [ -e "$item" ]; then
+              echo "Including: $item"
+              if [ -d "$item" ]; then
+                mkdir -p "deploy/$item"
+                cp -R "$item"/* "deploy/" 2>/dev/null || true
+              else
+                cp "$item" "deploy/" 2>/dev/null || true
+              fi
+            else
+              echo "Warning: Included item not found: $item"
+            fi
+          done
+          
+          # Simple verification
+          echo "Deployment directory contents:"
+          ls -la deploy/
+      
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: deploy # Only deploy the clean directory
+          branch: gh-pages
+          clean: true # Automatically remove deleted files from the deploy branch
