@@ -1,1 +1,6 @@
+# Prevent directories from being treated as Git repositories
 dox-jekyll-theme-for-project-documentation -git
+sources/** -git
+
+# Ensure line endings are normalized
+* text=auto

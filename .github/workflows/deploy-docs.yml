@@ -17,9 +17,33 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # Simple repository checkout without submodule handling
+      # Configure Git and perform checkout
+      - name: Configure Git
+        run: |
+          git config --global advice.detachedHead false
+          git config --global core.autocrlf false
+          git config --global status.submoduleSummary false
+          git config --global diff.ignoreSubmodules all
+          git config --global fetch.recurseSubmodules false
+          git config --global submodule.recurse false
+          echo "Git configuration:"
+          git config --list
+
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: false
+          persist-credentials: false
+          set-safe-directory: /home/runner/work/mainwp.dev/mainwp.dev
+
+      - name: Verify repository state
+        run: |
+          echo "Repository structure:"
+          find . -maxdepth 3 -name ".git" | sort
+          echo "Checking for submodule entries:"
+          git config --list | grep submodule || echo "No submodule configs found"
+          echo "Checking Git index for submodule entries:"
+          git ls-files --stage | grep 160000 || echo "No submodule entries in index"
       
       # Setup PHP
       - name: Setup PHP
@@ -44,16 +68,26 @@ jobs:
           cd ..
           bundle install
       
-      # Clone MainWP repositories if needed
+      # Clone MainWP repositories and remove .git directories
       - name: Clone MainWP repos
         run: |
+          # Clean up any existing source directories
+          rm -rf sources/mainwp-dashboard sources/mainwp-child
+          
+          # Create fresh sources directory
           mkdir -p sources
-          if [ ! -d "sources/mainwp-dashboard" ]; then
-            git clone https://github.com/mainwp/mainwp.git sources/mainwp-dashboard
-          fi
-          if [ ! -d "sources/mainwp-child" ]; then
-            git clone https://github.com/mainwp/mainwp-child.git sources/mainwp-child
-          fi
+          
+          # Clone and clean dashboard repository
+          git clone https://github.com/mainwp/mainwp.git sources/mainwp-dashboard
+          rm -rf sources/mainwp-dashboard/.git
+          
+          # Clone and clean child repository
+          git clone https://github.com/mainwp/mainwp-child.git sources/mainwp-child
+          rm -rf sources/mainwp-child/.git
+          
+          # Verify no .git directories remain
+          echo "Checking for remaining .git directories:"
+          find sources -name ".git" -type d || echo "No .git directories found in sources"
       
       # Generate hooks documentation
       - name: Generate hooks documentation
