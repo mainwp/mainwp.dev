@@ -22,6 +22,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0 # Important for proper source history
+          submodules: false # Explicitly disable submodule checkout
       
       # Setup PHP
       - name: Setup PHP
@@ -83,6 +84,7 @@ jobs:
             "mainwp-hooks"
             "source-code"
             "_site"
+            "dox-theme"
             "LICENSE"
             "README.md"
           )
