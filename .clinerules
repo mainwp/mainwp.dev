@@ -1,0 +1,132 @@
+# Cline's Learning Journal
+
+## Project Overview
+This project is for creating a documentation platform (MainWP.dev) for developers working with MainWP, using phpDocumentor 3.7.1 and GitHub Actions for automation.
+
+## Technology Stack
+- PHP (for the MainWP ecosystem being documented)
+- phpDocumentor 3.7.1 (for documentation generation)
+- GitHub Actions (for automation)
+- GitHub Pages (for hosting)
+- HTML/CSS/JavaScript (for custom content)
+- Markdown (for supplementary documentation)
+- XML (for configuration files)
+- Git (for version control)
+
+## Project Structure
+- The documentation will be organized in subdirectories for generated API documentation
+- The main directory will be preserved for custom content and developer resources
+- GitHub Actions workflows will monitor source repositories and trigger documentation updates
+
+## Workflow Patterns
+- When making changes to the documentation system, focus on maintaining the automation workflow
+- When configuring phpDocumentor, ensure appropriate exclusions for dependencies
+- When implementing GitHub Actions, prioritize error handling and logging
+- When developing custom content, ensure it complements the generated documentation
+
+## Code Style Preferences
+- Follow PHPDoc standards for any PHP code
+- Use clear, descriptive naming for files and directories
+- Maintain separation between generated documentation and custom content
+
+## Documentation Practices
+- Document all configuration settings
+- Provide clear instructions for implementation and maintenance
+- Include troubleshooting guides for common issues
+- Ensure cross-referencing between related documentation sections
+
+## Project Intelligence
+
+### File Safety Rules
+1. **File Modification Safety**:
+   - NEVER overwrite existing files without explicit confirmation
+   - Always check if a file exists before writing to it
+   - Use replace_in_file for targeted changes to existing files
+   - Require explicit user confirmation for complete file rewrites
+   - Keep backups of critical files before major changes
+   - Document all file modifications in memory bank
+
+### Token Management
+1. **Token Limit Awareness**:
+   - Maximum token limit: 200,000
+   - Our session crashed at: 202,240 tokens
+   - Monitor token usage during complex tasks
+   - Break large tasks into smaller, focused sessions
+
+2. **Memory Bank Optimization**:
+   - Keep activeContext.md focused on current work
+   - Move completed work to progress.md
+   - Archive older information when no longer immediately relevant
+   - Use concise documentation style
+
+3. **Session Management**:
+   - Complete one focused task per session
+   - Document progress before starting complex operations
+   - Save work frequently during large implementations
+   - Consider task dependencies when planning work order
+
+### Theme Implementation
+1. **Brand Colors**:
+   - Primary Green: #7fb100 (Buttons, CTAs)
+   - Secondary Green: #446200 (Accents)
+   - Accent Blue: #4682b4 (Links)
+   - Dark Gray: #2d3b44 (Secondary backgrounds)
+   - Dark Background: #1c1d1b (Main dark mode background)
+   - Warning Red: #ad0000 (Alerts)
+   - Highlight Yellow: #ffd300 (Emphasis)
+   - Light Gray: #f2f3f2 (Light mode background)
+
+2. **Typography**:
+   - Primary Font: "Inter"
+   - System Fallbacks: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif
+
+3. **Theme Structure**:
+   - Core settings in _sass/settings/_core.scss
+   - Follow Dox theme's SCSS organization pattern
+   - Maintain separation of concerns in SCSS files
+
+### Documentation Standards
+1. **File Organization**:
+   - Use include-only approach for deployment
+   - Maintain clear separation between development and production files
+   - Keep Cline-specific files private
+   - Follow established directory structure
+
+2. **Code Examples**:
+   - Use modern PHP namespace declarations
+   - Implement __NAMESPACE__ consistently
+   - Use modern array syntax []
+   - Include explicit use statements
+   - Maintain consistent visibility declarations
+
+### Communication Standards
+1. **Error Handling**:
+   - Document all encountered errors
+   - Include error messages and token counts
+   - Note any workarounds or solutions found
+   - Update memory bank with new learnings
+
+2. **Progress Tracking**:
+   - Update activeContext.md for current work
+   - Document completed work in progress.md
+   - Note any blocking issues or dependencies
+   - Track token usage patterns
+
+## Project-Specific Patterns
+1. **Development Workflow**:
+   - Start with memory bank review
+   - Plan work in small, manageable chunks
+   - Document progress frequently
+   - Consider token limits in task planning
+
+2. **Documentation Updates**:
+   - Keep memory bank current
+   - Update .clinerules with new learnings
+   - Maintain clear task boundaries
+   - Document dependencies and requirements
+
+3. **Error Prevention**:
+   - Monitor token usage
+   - Break large tasks into sub-tasks
+   - Save progress regularly
+   - Document error patterns and solutions
