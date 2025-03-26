@@ -17,13 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # Check out the repository
+      # Simple repository checkout without submodule handling
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Important for proper source history
-          submodules: 'false' # Explicitly disable submodule checkout as string
-          persist-credentials: false # Disable persist credentials
       
       # Setup PHP
       - name: Setup PHP
