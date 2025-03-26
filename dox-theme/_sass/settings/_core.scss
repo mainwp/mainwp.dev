@@ -1,3 +1,11 @@
+// Base variables (for compatibility)
+$spacer-base: 1rem;  // Maps to $dox-spacing-md
+$color-base: $dox-color-dark;
+$font-family-base: $dox-font-family;
+$font-size-base-mobile: 14px;
+$font-size-base: $dox-font-size-base;
+$line-height-base: $dox-line-height-base;
+
 // Colors
 $dox-color-primary: #7fb100;
 $dox-color-secondary: #446200;
