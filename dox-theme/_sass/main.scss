@@ -1,0 +1,153 @@
+/* =============================================================================
+   MAIN STYLESHEET (main.scss)
+   ========================================================================== */
+
+/**
+ * This is the main entry point for all styles.
+ * It imports all other partials in the correct order.
+ */
+
+// 1. Settings
+@import 'settings/core';
+@import 'settings/colors';
+@import 'settings/typography';
+@import 'settings/layout';
+@import 'settings/dark-mode';
+
+// 2. Tools
+@import 'tools/functions';
+@import 'tools/mixins';
+
+// 3. Generic
+@import 'generic/normalize';
+@import 'generic/box-sizing';
+@import 'generic/reset';
+
+// 4. Elements - Basic HTML elements
+@import 'elements/headings';
+@import 'elements/links';
+@import 'elements/lists';
+@import 'elements/tables';
+@import 'elements/forms';
+@import 'elements/code';
+
+// 5. Objects - Design patterns
+@import 'objects/wrappers';
+@import 'objects/grid';
+@import 'objects/media';
+
+// 6. Components - UI components
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/alerts';
+@import 'components/forms';
+@import 'components/sidebar';
+@import 'components/footer';
+@import 'components/code';
+@import 'components/search';
+
+// 7. Utilities - Helper classes
+@import 'utilities/spacing';
+@import 'utilities/typography';
+@import 'utilities/colors';
+@import 'utilities/display';
+@import 'utilities/flexbox';
+@import 'utilities/visibility';
+
+/**
+ * Base styles
+ */
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/**
+ * Typography
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-base;
+  line-height: $line-height-heading;
+  color: var(--color-text);
+  margin-bottom: $dox-spacing-md;
+}
+
+h1 { font-size: $font-size-h1; font-weight: $font-weight-bold; }
+h2 { font-size: $font-size-h2; font-weight: $font-weight-bold; }
+h3 { font-size: $font-size-h3; font-weight: $font-weight-semibold; }
+h4 { font-size: $font-size-h4; font-weight: $font-weight-semibold; }
+h5 { font-size: $font-size-h5; font-weight: $font-weight-medium; }
+h6 { font-size: $font-size-h6; font-weight: $font-weight-medium; }
+
+p {
+  margin-bottom: $dox-spacing-md;
+  line-height: $line-height-paragraph;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+  }
+}
+
+code {
+  font-family: $font-family-code;
+  font-size: $font-size-code;
+  line-height: $line-height-code;
+  padding: $dox-spacing-xs $dox-spacing-sm;
+  background-color: var(--color-code-background);
+  color: var(--color-text);
+  border-radius: $border-radius-sm;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/**
+ * Layout
+ */
+.container {
+  max-width: $container-max-width-lg;
+  margin: 0 auto;
+  padding: 0 $content-padding-x;
+}
+
+.content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: $content-padding-y 0;
+}
+
+/**
+ * Documentation-specific styles
+ */
+.doc-content {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $section-spacing-md;
+    margin-bottom: $dox-spacing-md;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  pre {
+    margin: $dox-spacing-md 0;
+    padding: $dox-spacing-md;
+    background-color: $color-code-background;
+    border-radius: $border-radius-md;
+    overflow-x: auto;
+  }
+}
