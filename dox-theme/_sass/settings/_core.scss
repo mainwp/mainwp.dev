@@ -1,11 +1,4 @@
-// Base variables (for compatibility)
-$spacer-base: 1rem;  // Maps to $dox-spacing-md
-$color-base: $dox-color-dark;
-$font-family-base: $dox-font-family;
-$font-size-base-mobile: 14px;
-$font-size-base: $dox-font-size-base;
-$line-height-base: $dox-line-height-base;
-
+// Primary theme variables
 // Colors
 $dox-color-primary: #7fb100;
 $dox-color-secondary: #446200;
@@ -20,11 +13,6 @@ $dox-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvet
 $dox-font-size-base: 16px;
 $dox-line-height-base: 1.6;
 
-// Grid
-$dox-max-width-lg: 1200px;
-$dox-max-width-md: 800px;
-$dox-max-width-sm: 600px;
-
 // Spacing
 $dox-spacing-xs: 0.25rem;
 $dox-spacing-sm: 0.5rem;
@@ -32,13 +20,36 @@ $dox-spacing-md: 1rem;
 $dox-spacing-lg: 2rem;
 $dox-spacing-xl: 4rem;
 
+// Grid dimensions
+$dox-max-width-lg: 1200px;
+$dox-max-width-md: 800px;
+$dox-max-width-sm: 600px;
+
 // Breakpoints
 $dox-breakpoint-sm: 576px;
 $dox-breakpoint-md: 768px;
 $dox-breakpoint-lg: 992px;
 $dox-breakpoint-xl: 1200px;
 
-// Breakpoints map for media queries
+// Z-index layers
+$dox-z-index-header: 1000;
+$dox-z-index-nav: 900;
+$dox-z-index-overlay: 800;
+
+// UI elements
+$dox-border-radius: 4px;
+$dox-transition-base: all 0.2s ease-in-out;
+$dox-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Derived/mapping variables (for compatibility)
+$color-base: $dox-color-dark;
+$font-family-base: $dox-font-family;
+$font-size-base: $dox-font-size-base;
+$font-size-base-mobile: 14px;
+$line-height-base: $dox-line-height-base;
+$spacer-base: $dox-spacing-md;
+
+// Complex structures
 $breakpoints: (
   xs: 0,
   sm: $dox-breakpoint-sm,
@@ -46,17 +57,3 @@ $breakpoints: (
   lg: $dox-breakpoint-lg,
   xl: $dox-breakpoint-xl
 );
-
-// Z-index
-$dox-z-index-header: 1000;
-$dox-z-index-nav: 900;
-$dox-z-index-overlay: 800;
-
-// Border radius
-$dox-border-radius: 4px;
-
-// Transitions
-$dox-transition-base: all 0.2s ease-in-out;
-
-// Box shadows
-$dox-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
