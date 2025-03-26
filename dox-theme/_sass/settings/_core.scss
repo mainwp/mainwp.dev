@@ -38,6 +38,15 @@ $dox-breakpoint-md: 768px;
 $dox-breakpoint-lg: 992px;
 $dox-breakpoint-xl: 1200px;
 
+// Breakpoints map for media queries
+$breakpoints: (
+  xs: 0,
+  sm: $dox-breakpoint-sm,
+  md: $dox-breakpoint-md,
+  lg: $dox-breakpoint-lg,
+  xl: $dox-breakpoint-xl
+);
+
 // Z-index
 $dox-z-index-header: 1000;
 $dox-z-index-nav: 900;
