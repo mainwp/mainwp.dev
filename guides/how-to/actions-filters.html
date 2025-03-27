@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Using MainWP Actions & Filters</title>
+        <meta name="description" content="">
+
+        <link rel="canonical" href="https://mainwp.github.io/mainwp.dev/guides/how-to/actions-filters.html">
+        <link rel="shortcut icon" href="https://mainwp.github.io/mainwp.dev/favicon.ico" type="image/x-icon">
+
+        <!-- Theme styles -->
+        <link rel="stylesheet" href="https://mainwp.github.io/mainwp.dev/dox-theme/assets/css/style.css">
+    </head>
+    <body>
+        <header class="c-header">
+    <div class="o-container">
+        <div class="c-header__inner">
+            <div class="c-header__brand">
+                <a href="/mainwp.dev/" class="c-logo">
+                    <span class="c-logo__text">
+                        <span class="c-logo__text--main">Main</span><span class="c-logo__text--wp">WP</span>
+                        <span class="c-logo__text--dev">.dev</span>
+                    </span>
+                </a>
+            </div>
+
+            <button class="c-nav-trigger js-nav-trigger" aria-label="Toggle navigation">
+                <span class="c-nav-trigger__icon"></span>
+            </button>
+
+            <div class="c-nav-wrap">
+                <nav class="c-nav" role="navigation">
+                    <ul class="c-nav__list">
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/documentation/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Documentation
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/getting-started/" role="menuitem">
+                                                Getting Started
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/installation/" role="menuitem">
+                                                Installation
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/configuration/" role="menuitem">
+                                                Configuration
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/guides/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Guides
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/best-practices/" role="menuitem">
+                                                Best Practices
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/how-to/" role="menuitem">
+                                                How-to
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/concepts/" role="menuitem">
+                                                Concepts
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/reference/" role="menuitem">
+                                                Reference
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/mainwp-hooks/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Hooks
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/mainwp-hooks/dashboard/" role="menuitem">
+                                                Dashboard Hooks
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/mainwp-hooks/child/" role="menuitem">
+                                                Child Hooks
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/source-code/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        API
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/source-code/dashboard/" role="menuitem">
+                                                Dashboard API
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/source-code/child/" role="menuitem">
+                                                Child API
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="c-header__actions">
+                <button class="c-theme-toggle js-theme-toggle" aria-label="Toggle theme">
+                    <svg class="c-theme-toggle__icon c-theme-toggle__icon--light" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5M17.6859 17.69L18.5 18.5M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="c-theme-toggle__icon c-theme-toggle__icon--dark" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 15.8442C20.6866 16.4382 19.2286 16.7688 17.6935 16.7688C11.9153 16.7688 7.23116 12.0847 7.23116 6.30654C7.23116 4.77135 7.5618 3.31341 8.15577 2C3.52576 3.64163 0.1 8.20902 0.1 13.5377C0.1 19.3159 4.78414 24 10.5623 24C15.891 24 20.4584 20.5742 22.1 15.9442" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <a href="https://github.com/mainwp" class="c-header__github" target="_blank" rel="noopener noreferrer" aria-label="MainWP on GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C19.1375 20.1625 22 16.4125 22 12C22 6.475 17.525 2 12 2Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="c-breadcrumbs">
+    <div class="o-container">
+        <nav class="c-breadcrumbs__nav" aria-label="Breadcrumb">
+            <ol class="c-breadcrumbs__list">
+                <li class="c-breadcrumbs__item">
+                    <a href="/mainwp.dev/" class="c-breadcrumbs__link">Home</a>
+                </li>
+                
+                
+                    
+                        
+                        <li class="c-breadcrumbs__item">
+                            <a href="/mainwp.dev/guides" class="c-breadcrumbs__link">Guides</a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="c-breadcrumbs__item">
+                            <a href="/mainwp.dev/how-to" class="c-breadcrumbs__link">How-to</a>
+                        </li>
+                    
+                
+                    
+                        <li class="c-breadcrumbs__item">
+                            <span class="c-breadcrumbs__text">Using MainWP Actions & Filters</span>
+                        </li>
+                    
+                
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+
+        <div class="o-container">
+            <div class="o-row">
+                <div class="o-col-3@md">
+                    <div class="c-page-nav">
+                        <div class="c-page-nav__header">
+                            <h2 class="c-page-nav__title">Actions & Filters</h2>
+                        </div>
+                        <div class="c-page-nav__content">
+                            
+                                
+                                    <div class="c-page-nav__section" data-section="understanding-hooks">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Understanding Hooks
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#understanding-wordpress-hooks" class="c-page-nav__link">WordPress Hooks</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#actions" class="c-page-nav__link">Actions</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#filters" class="c-page-nav__link">Filters</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="dashboard-hooks">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Dashboard Hooks
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#extension-registration" class="c-page-nav__link">Extension Registration</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#admin-menu-integration" class="c-page-nav__link">Admin Menu Integration</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#page-header-and-footer" class="c-page-nav__link">Page Header and Footer</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#dashboard-widgets" class="c-page-nav__link">Dashboard Widgets</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#site-actions" class="c-page-nav__link">Site Actions</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#site-sync-data" class="c-page-nav__link">Site Sync Data</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#after-site-sync" class="c-page-nav__link">After Site Sync</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="child-hooks">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Child Hooks
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#handling-dashboard-requests" class="c-page-nav__link">Handling Dashboard Requests</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#child-plugin-initialization" class="c-page-nav__link">Child Plugin Initialization</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="communication">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Communication
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#sending-requests-from-dashboard-to-child" class="c-page-nav__link">Dashboard to Child</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#handling-requests-on-the-child-site" class="c-page-nav__link">Handling on Child</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="common-use-cases">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Common Use Cases
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#adding-a-settings-page" class="c-page-nav__link">Settings Page</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#adding-a-custom-tab-to-individual-sites" class="c-page-nav__link">Custom Site Tab</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#adding-a-bulk-action" class="c-page-nav__link">Bulk Action</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="best-practices">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Best Practices
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#use-unique-hook-names" class="c-page-nav__link">Unique Hook Names</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#check-hook-availability" class="c-page-nav__link">Check Availability</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#use-proper-priority" class="c-page-nav__link">Use Proper Priority</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#remove-hooks-when-necessary" class="c-page-nav__link">Remove Hooks</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#use-proper-error-handling" class="c-page-nav__link">Error Handling</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="debugging-hooks">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Debugging Hooks
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#check-if-a-hook-is-firing" class="c-page-nav__link">Check Firing</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#list-all-hooks" class="c-page-nav__link">List All Hooks</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#check-hook-parameters" class="c-page-nav__link">Check Parameters</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="finding-hooks">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Finding Hooks
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#mainwp-hooks-documentation" class="c-page-nav__link">Documentation</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#source-code" class="c-page-nav__link">Source Code</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#hook-categories" class="c-page-nav__link">Hook Categories</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="third-party-integrations">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Third-Party Integrations
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#api-communication" class="c-page-nav__link">API Communication</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#error-handling-for-apis" class="c-page-nav__link">Error Handling</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#caching-api-responses" class="c-page-nav__link">Caching Responses</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#handling-api-credentials" class="c-page-nav__link">Handling Credentials</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="next-steps">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Next Steps
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#next-steps" class="c-page-nav__link">Next Steps</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="related-resources">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Related Resources
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#related-resources" class="c-page-nav__link">Related Resources</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="o-col-9@md">
+                    <div class="c-post">
+                        <div class="c-post__header">
+                            <h1 class="c-post__title">Using MainWP Actions & Filters</h1>
+                            
+                        </div>
+                        <div class="c-post__content">
+                            <hr />
+<p>title: Using MainWP Actions &amp; Filters
+layout: documentation-single # Explicitly define layout
+navigation_title: Actions &amp; Filters # Optional shorter title for sidebar header
+navigation: # Define sidebar structure based on H2/H3 headings</p>
+<ul>
+  <li>title: “Understanding Hooks”
+items:
+    <ul>
+      <li>title: “WordPress Hooks”
+id: “understanding-wordpress-hooks”</li>
+      <li>title: “Actions”
+id: “actions”</li>
+      <li>title: “Filters”
+id: “filters”</li>
+    </ul>
+  </li>
+  <li>title: “Dashboard Hooks”
+items:
+    <ul>
+      <li>title: “Extension Registration”
+id: “extension-registration”</li>
+      <li>title: “Admin Menu Integration”
+id: “admin-menu-integration”</li>
+      <li>title: “Page Header and Footer”
+id: “page-header-and-footer”</li>
+      <li>title: “Dashboard Widgets”
+id: “dashboard-widgets”</li>
+      <li>title: “Site Actions”
+id: “site-actions”</li>
+      <li>title: “Site Sync Data”
+id: “site-sync-data”</li>
+      <li>title: “After Site Sync”
+id: “after-site-sync”</li>
+    </ul>
+  </li>
+  <li>title: “Child Hooks”
+items:
+    <ul>
+      <li>title: “Handling Dashboard Requests”
+id: “handling-dashboard-requests”</li>
+      <li>title: “Child Plugin Initialization”
+id: “child-plugin-initialization”</li>
+    </ul>
+  </li>
+  <li>title: “Communication”
+items:
+    <ul>
+      <li>title: “Dashboard to Child”
+id: “sending-requests-from-dashboard-to-child”</li>
+      <li>title: “Handling on Child”
+id: “handling-requests-on-the-child-site”</li>
+    </ul>
+  </li>
+  <li>title: “Common Use Cases”
+items:
+    <ul>
+      <li>title: “Settings Page”
+id: “adding-a-settings-page”</li>
+      <li>title: “Custom Site Tab”
+id: “adding-a-custom-tab-to-individual-sites”</li>
+      <li>title: “Bulk Action”
+id: “adding-a-bulk-action”</li>
+    </ul>
+  </li>
+  <li>title: “Best Practices”
+items:
+    <ul>
+      <li>title: “Unique Hook Names”
+id: “use-unique-hook-names”</li>
+      <li>title: “Check Availability”
+id: “check-hook-availability”</li>
+      <li>title: “Use Proper Priority”
+id: “use-proper-priority”</li>
+      <li>title: “Remove Hooks”
+id: “remove-hooks-when-necessary”</li>
+      <li>title: “Error Handling”
+id: “use-proper-error-handling”</li>
+    </ul>
+  </li>
+  <li>title: “Debugging Hooks”
+items:
+    <ul>
+      <li>title: “Check Firing”
+id: “check-if-a-hook-is-firing”</li>
+      <li>title: “List All Hooks”
+id: “list-all-hooks”</li>
+      <li>title: “Check Parameters”
+id: “check-hook-parameters”</li>
+    </ul>
+  </li>
+  <li>title: “Finding Hooks”
+items:
+    <ul>
+      <li>title: “Documentation”
+id: “mainwp-hooks-documentation”</li>
+      <li>title: “Source Code”
+id: “source-code”</li>
+      <li>title: “Hook Categories”
+id: “hook-categories”</li>
+    </ul>
+  </li>
+  <li>title: “Third-Party Integrations”
+items:
+    <ul>
+      <li>title: “API Communication”
+id: “api-communication”</li>
+      <li>title: “Error Handling”
+id: “error-handling-for-apis”</li>
+      <li>title: “Caching Responses”
+id: “caching-api-responses”</li>
+      <li>title: “Handling Credentials”
+id: “handling-api-credentials”</li>
+    </ul>
+  </li>
+  <li>title: “Next Steps”
+items:
+    <ul>
+      <li>title: “Next Steps” # Link to the section itself
+id: “next-steps”</li>
+    </ul>
+  </li>
+  <li>title: “Related Resources”
+items:
+    <ul>
+      <li>title: “Related Resources” # Link to the section itself
+id: “related-resources”
+—</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="using-mainwp-actions--filters">Using MainWP Actions &amp; Filters</h1>
+
+<p>This guide explains how to use MainWP’s actions and filters (hooks) to integrate your add-on (extension or integration) with the MainWP Dashboard and Child plugins. Understanding these hooks is essential for creating powerful, well-integrated add-ons, whether you’re building a standalone extension or a third-party integration.</p>
+
+<h2 id="quick-start-for-experienced-developers">Quick Start for Experienced Developers</h2>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension</span><span class="p">;</span>
+
+<span class="c1">// Hook into MainWP Dashboard actions</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_pageheader_extensions'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Add content to extension page header</span>
+<span class="p">});</span>
+
+<span class="c1">// Filter MainWP Dashboard data</span>
+<span class="nf">add_filter</span><span class="p">(</span><span class="s1">'mainwp_getextensions'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$extensions</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Register your extension</span>
+    <span class="nv">$extensions</span><span class="p">[]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'plugin'</span> <span class="o">=&gt;</span> <span class="k">__FILE__</span><span class="p">,</span>
+        <span class="s1">'api'</span> <span class="o">=&gt;</span> <span class="s1">'MyExtension'</span><span class="p">,</span>
+        <span class="s1">'mainwp'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="s1">'callback'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">'MyCompany\\MyExtension\\MyExtension'</span><span class="p">,</span> <span class="s1">'get_instance'</span><span class="p">),</span>
+        <span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'My Extension'</span>
+    <span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$extensions</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="c1">// Hook into child site actions</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_child_call'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$action</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Handle requests from the dashboard</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$action</span> <span class="o">==</span> <span class="s1">'my_custom_action'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Process the request</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Key hook categories:</p>
+<ul>
+  <li>Registration hooks (<code class="language-plaintext highlighter-rouge">mainwp_getextensions</code>)</li>
+  <li>UI hooks (<code class="language-plaintext highlighter-rouge">mainwp_pageheader_extensions</code>, <code class="language-plaintext highlighter-rouge">mainwp_admin_menu</code>)</li>
+  <li>Site management hooks (<code class="language-plaintext highlighter-rouge">mainwp_site_synced</code>, <code class="language-plaintext highlighter-rouge">mainwp_site_actions</code>)</li>
+  <li>Data hooks (<code class="language-plaintext highlighter-rouge">mainwp_site_sync_data</code>, <code class="language-plaintext highlighter-rouge">mainwp_get_site_option</code>)</li>
+  <li>Child communication hooks (<code class="language-plaintext highlighter-rouge">mainwp_child_call</code>, <code class="language-plaintext highlighter-rouge">mainwp_child_init</code>)</li>
+</ul>
+
+<h2 id="understanding-wordpress-hooks">Understanding WordPress Hooks</h2>
+
+<p>Before diving into MainWP-specific hooks, it’s important to understand the WordPress hooks system:</p>
+
+<ul>
+  <li><strong>Actions</strong>: Allow you to add custom functionality at specific points in execution</li>
+  <li><strong>Filters</strong>: Allow you to modify data before it’s used by WordPress</li>
+</ul>
+
+<h3 id="actions">Actions</h3>
+
+<p>Actions are triggered at specific points during execution and allow you to add custom functionality:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension</span><span class="p">;</span>
+
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'hook_name'</span><span class="p">,</span> <span class="k">__NAMESPACE__</span> <span class="mf">.</span> <span class="s1">'\\callback_function'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+
+<span class="k">function</span> <span class="n">callback_function</span><span class="p">(</span><span class="nv">$arg1</span><span class="p">,</span> <span class="nv">$arg2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Do something when the hook is triggered</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="filters">Filters</h3>
+
+<p>Filters allow you to modify data before it’s used:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension</span><span class="p">;</span>
+
+<span class="nf">add_filter</span><span class="p">(</span><span class="s1">'hook_name'</span><span class="p">,</span> <span class="k">__NAMESPACE__</span> <span class="mf">.</span> <span class="s1">'\\filter_function'</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+
+<span class="k">function</span> <span class="n">filter_function</span><span class="p">(</span><span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Modify $value</span>
+    <span class="k">return</span> <span class="nv">$modified_value</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="mainwp-dashboard-hooks">MainWP Dashboard Hooks</h2>
+
+<p>MainWP Dashboard provides numerous hooks for extending its functionality. Here are the most important ones for extension developers:</p>
+
+<h3 id="extension-registration">Extension Registration</h3>
+
+<p>The most important hook for any MainWP extension is <code class="language-plaintext highlighter-rouge">mainwp_getextensions</code>, which registers your extension with the MainWP Dashboard:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension</span><span class="p">;</span>
+
+<span class="nf">add_filter</span><span class="p">(</span><span class="s1">'mainwp_getextensions'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$extensions</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$extensions</span><span class="p">[]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'plugin'</span> <span class="o">=&gt;</span> <span class="k">__FILE__</span><span class="p">,</span>
+        <span class="s1">'api'</span> <span class="o">=&gt;</span> <span class="s1">'MyExtension'</span><span class="p">,</span>
+        <span class="s1">'mainwp'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="s1">'callback'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="k">__NAMESPACE__</span> <span class="mf">.</span> <span class="s1">'\\MyExtension'</span><span class="p">,</span> <span class="s1">'get_instance'</span><span class="p">),</span>
+        <span class="s1">'name'</span> <span class="o">=&gt;</span> <span class="s1">'My Extension'</span>
+    <span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$extensions</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>This tells MainWP:</p>
+<ul>
+  <li>The location of your plugin file</li>
+  <li>The API identifier for your extension</li>
+  <li>That this is a MainWP extension (not a third-party integration)</li>
+  <li>The callback function to initialize your extension</li>
+  <li>The display name of your extension</li>
+</ul>
+
+<h3 id="admin-menu-integration">Admin Menu Integration</h3>
+
+<p>To add menu items to the MainWP Dashboard:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Admin</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_admin_menu'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'add_menu_item'</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">add_menu_item</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_submenu_page</span><span class="p">(</span>
+            <span class="s1">'mainwp_tab'</span><span class="p">,</span>
+            <span class="nf">__</span><span class="p">(</span><span class="s1">'My Extension'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">),</span>
+            <span class="nf">__</span><span class="p">(</span><span class="s1">'My Extension'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">),</span>
+            <span class="s1">'read'</span><span class="p">,</span>
+            <span class="s1">'MyExtension'</span><span class="p">,</span>
+            <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'render_admin_page'</span><span class="p">]</span>
+        <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">render_admin_page</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Page rendering code</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="page-header-and-footer">Page Header and Footer</h3>
+
+<p>To add content to the header or footer of your extension’s pages:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">UI</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_pageheader_extensions'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'render_header'</span><span class="p">]);</span>
+        <span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_pagefooter_extensions'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'render_footer'</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">render_header</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Add content to the page header</span>
+        <span class="cp">?&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui segment"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"ui header"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'My Extension Header'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="cp">&lt;?php</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">render_footer</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Add content to the page footer</span>
+        <span class="cp">?&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui segment"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'My Extension Footer'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="cp">&lt;?php</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="dashboard-widgets">Dashboard Widgets</h3>
+
+<p>To add widgets to the MainWP Dashboard:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Dashboard</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_dashboard_widgets'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'register_widget'</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">register_widget</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_meta_box</span><span class="p">(</span>
+            <span class="s1">'my_extension_widget'</span><span class="p">,</span>
+            <span class="nf">__</span><span class="p">(</span><span class="s1">'My Extension Widget'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">),</span>
+            <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'render_dashboard_widget'</span><span class="p">],</span>
+            <span class="s1">'mainwp_dashboard'</span><span class="p">,</span>
+            <span class="s1">'normal'</span><span class="p">,</span>
+            <span class="s1">'default'</span>
+        <span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">render_dashboard_widget</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Widget content</span>
+        <span class="cp">?&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui segment"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Widget content here'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="cp">&lt;?php</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="site-actions">Site Actions</h3>
+
+<p>To add actions to the site actions dropdown menu:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension\Sites</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Actions</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_filter</span><span class="p">(</span><span class="s1">'mainwp_site_actions'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'add_site_action'</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">add_site_action</span><span class="p">(</span><span class="nv">$actions</span><span class="p">,</span> <span class="nv">$website</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$actions</span><span class="p">[</span><span class="s1">'my_action'</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">'label'</span> <span class="o">=&gt;</span> <span class="nf">__</span><span class="p">(</span><span class="s1">'My Custom Action'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">),</span>
+            <span class="s1">'url'</span> <span class="o">=&gt;</span> <span class="nf">admin_url</span><span class="p">(</span><span class="s1">'admin.php?page=MyExtension&amp;site_id='</span> <span class="mf">.</span> <span class="nv">$website</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">),</span>
+            <span class="s1">'icon'</span> <span class="o">=&gt;</span> <span class="s1">'cog'</span><span class="p">,</span>
+        <span class="p">);</span>
+        <span class="k">return</span> <span class="nv">$actions</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="site-sync-data">Site Sync Data</h3>
+
+<p>To add custom data to the site sync process:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension\Sites</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Sync</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_filter</span><span class="p">(</span><span class="s1">'mainwp_site_sync_data'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'add_sync_data'</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">add_sync_data</span><span class="p">(</span><span class="nv">$data</span><span class="p">,</span> <span class="nv">$website</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Add custom data to the sync process</span>
+        <span class="nv">$data</span><span class="p">[</span><span class="s1">'my_extension'</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">'custom_field'</span> <span class="o">=&gt;</span> <span class="s1">'custom_value'</span><span class="p">,</span>
+        <span class="p">);</span>
+        <span class="k">return</span> <span class="nv">$data</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="after-site-sync">After Site Sync</h3>
+
+<p>To perform actions after a site is synced:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension\Sites</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Sync</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_site_synced'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'process_synced_data'</span><span class="p">],</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">process_synced_data</span><span class="p">(</span><span class="nv">$website</span><span class="p">,</span> <span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Process data after site sync</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">isset</span><span class="p">(</span><span class="nv">$data</span><span class="p">[</span><span class="s1">'my_extension'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="c1">// Process my_extension data</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="mainwp-child-hooks">MainWP Child Hooks</h2>
+
+<p>If your extension needs to interact with child sites, you’ll need to use MainWP Child hooks:</p>
+
+<h3 id="handling-dashboard-requests">Handling Dashboard Requests</h3>
+
+<p>To handle requests from the MainWP Dashboard:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension\Child</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Handler</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_child_call'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'handle_calls'</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">handle_calls</span><span class="p">(</span><span class="nv">$action</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Check if this is a request for your extension</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$action</span> <span class="o">==</span> <span class="s1">'my_extension'</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Get the specific action</span>
+            <span class="nv">$specific_action</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'specific_action'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">;</span>
+            
+            <span class="c1">// Handle the specific action</span>
+            <span class="k">switch</span> <span class="p">(</span><span class="nv">$specific_action</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">case</span> <span class="s1">'get_data'</span><span class="o">:</span>
+                    <span class="c1">// Get and return data</span>
+                    <span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'result'</span> <span class="o">=&gt;</span> <span class="s1">'success'</span><span class="p">,</span> <span class="s1">'data'</span> <span class="o">=&gt;</span> <span class="s1">'your_data'</span><span class="p">);</span>
+                    <span class="nf">wp_send_json</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+                    <span class="k">break</span><span class="p">;</span>
+                <span class="k">case</span> <span class="s1">'update_data'</span><span class="o">:</span>
+                    <span class="c1">// Update data</span>
+                    <span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'result'</span> <span class="o">=&gt;</span> <span class="s1">'success'</span><span class="p">,</span> <span class="s1">'message'</span> <span class="o">=&gt;</span> <span class="s1">'Data updated'</span><span class="p">);</span>
+                    <span class="nf">wp_send_json</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+                    <span class="k">break</span><span class="p">;</span>
+                <span class="k">default</span><span class="o">:</span>
+                    <span class="c1">// Handle unknown action</span>
+                    <span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'result'</span> <span class="o">=&gt;</span> <span class="s1">'error'</span><span class="p">,</span> <span class="s1">'message'</span> <span class="o">=&gt;</span> <span class="s1">'Unknown action'</span><span class="p">);</span>
+                    <span class="nf">wp_send_json</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+                    <span class="k">break</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="child-plugin-initialization">Child Plugin Initialization</h3>
+
+<p>To initialize your child plugin:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension\Child</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Plugin</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_child_init'</span><span class="p">,</span> <span class="p">[</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'initialize'</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="n">initialize</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Initialize your child plugin</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="communication-between-dashboard-and-child-sites">Communication Between Dashboard and Child Sites</h2>
+
+<p>One of the most powerful features of MainWP is the ability to communicate between the dashboard and child sites. Here’s how to implement this in your add-on:</p>
+
+<h3 id="sending-requests-from-dashboard-to-child">Sending Requests from Dashboard to Child</h3>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">namespace</span> <span class="nn">MyCompany\MyExtension\Dashboard</span><span class="p">;</span>
+
+<span class="kn">use</span> <span class="nf">MainWP\Dashboard\MainWP_DB</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nf">MainWP\Dashboard\MainWP_Connect</span><span class="p">;</span>
+<span class="kn">use</span> <span class="nc">Exception</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Communication</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">send_request_to_child</span><span class="p">(</span><span class="nv">$website_id</span><span class="p">,</span> <span class="nv">$action</span><span class="p">,</span> <span class="nv">$data</span> <span class="o">=</span> <span class="k">array</span><span class="p">())</span> <span class="p">{</span>
+        <span class="c1">// Get the website</span>
+        <span class="nv">$website</span> <span class="o">=</span> <span class="n">MainWP_DB</span><span class="o">::</span><span class="nf">instance</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">get_website_by_id</span><span class="p">(</span><span class="nv">$website_id</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$website</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">array</span><span class="p">(</span><span class="s1">'error'</span> <span class="o">=&gt;</span> <span class="s1">'Website not found'</span><span class="p">);</span>
+        <span class="p">}</span>
+        
+        <span class="c1">// Prepare the data</span>
+        <span class="nv">$data</span><span class="p">[</span><span class="s1">'action'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$action</span><span class="p">;</span>
+        
+        <span class="c1">// Send the request</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="nv">$information</span> <span class="o">=</span> <span class="n">MainWP_Connect</span><span class="o">::</span><span class="nf">fetch_url_authed</span><span class="p">(</span>
+                <span class="nv">$website</span><span class="p">,</span>
+                <span class="s1">'my_extension'</span><span class="p">,</span>
+                <span class="nv">$data</span>
+            <span class="p">);</span>
+            
+            <span class="c1">// Process the response</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nb">is_array</span><span class="p">(</span><span class="nv">$information</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="k">isset</span><span class="p">(</span><span class="nv">$information</span><span class="p">[</span><span class="s1">'result'</span><span class="p">]))</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nv">$information</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="k">array</span><span class="p">(</span><span class="s1">'error'</span> <span class="o">=&gt;</span> <span class="s1">'Invalid response from child site'</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">array</span><span class="p">(</span><span class="s1">'error'</span> <span class="o">=&gt;</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="nf">getMessage</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="handling-requests-on-the-child-site">Handling Requests on the Child Site</h3>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// In your child plugin</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_child_call'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$action</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$action</span> <span class="o">==</span> <span class="s1">'my_extension'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Get the specific action</span>
+        <span class="nv">$specific_action</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">'action'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">;</span>
+        
+        <span class="c1">// Handle the specific action</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="nv">$specific_action</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="s1">'get_plugin_data'</span><span class="o">:</span>
+                <span class="c1">// Get plugin data</span>
+                <span class="nv">$plugin_data</span> <span class="o">=</span> <span class="nf">get_plugin_data</span><span class="p">(</span><span class="no">WP_PLUGIN_DIR</span> <span class="mf">.</span> <span class="s1">'/my-plugin/my-plugin.php'</span><span class="p">);</span>
+                <span class="nf">wp_send_json</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+                    <span class="s1">'result'</span> <span class="o">=&gt;</span> <span class="s1">'success'</span><span class="p">,</span>
+                    <span class="s1">'data'</span> <span class="o">=&gt;</span> <span class="nv">$plugin_data</span>
+                <span class="p">));</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="c1">// Handle other actions</span>
+            <span class="k">default</span><span class="o">:</span>
+                <span class="nf">wp_send_json</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+                    <span class="s1">'result'</span> <span class="o">=&gt;</span> <span class="s1">'error'</span><span class="p">,</span>
+                    <span class="s1">'message'</span> <span class="o">=&gt;</span> <span class="s1">'Unknown action'</span>
+                <span class="p">));</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="common-hook-use-cases">Common Hook Use Cases</h2>
+
+<h3 id="adding-a-settings-page">Adding a Settings Page</h3>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Add a settings page to the MainWP Dashboard</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_admin_menu'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">add_submenu_page</span><span class="p">(</span>
+        <span class="s1">'mainwp_tab'</span><span class="p">,</span>
+        <span class="nf">__</span><span class="p">(</span><span class="s1">'My Extension Settings'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">),</span>
+        <span class="nf">__</span><span class="p">(</span><span class="s1">'My Extension Settings'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">),</span>
+        <span class="s1">'read'</span><span class="p">,</span>
+        <span class="s1">'MyExtensionSettings'</span><span class="p">,</span>
+        <span class="k">array</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'render_settings_page'</span><span class="p">)</span>
+    <span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// Render the settings page</span>
+<span class="k">public</span> <span class="k">function</span> <span class="n">render_settings_page</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Check if user has permissions</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nf">mainwp_current_user_can</span><span class="p">(</span><span class="s1">'read'</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nf">mainwp_do_not_have_permissions</span><span class="p">(</span><span class="nf">__</span><span class="p">(</span><span class="s1">'My Extension Settings'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">));</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Save settings if form is submitted</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'submit'</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="c1">// Verify nonce</span>
+        <span class="nf">check_admin_referer</span><span class="p">(</span><span class="s1">'my_extension_settings_nonce'</span><span class="p">,</span> <span class="s1">'my_extension_settings_nonce'</span><span class="p">);</span>
+        
+        <span class="c1">// Save settings</span>
+        <span class="nv">$settings</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">'setting1'</span> <span class="o">=&gt;</span> <span class="nf">sanitize_text_field</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'setting1'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">),</span>
+            <span class="s1">'setting2'</span> <span class="o">=&gt;</span> <span class="nf">sanitize_text_field</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'setting2'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">),</span>
+        <span class="p">);</span>
+        <span class="nf">update_option</span><span class="p">(</span><span class="s1">'my_extension_settings'</span><span class="p">,</span> <span class="nv">$settings</span><span class="p">);</span>
+        
+        <span class="c1">// Show success message</span>
+        <span class="cp">?&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui green message"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Settings saved successfully.'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/div&gt;</span>
+        <span class="cp">&lt;?php</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Get current settings</span>
+    <span class="nv">$settings</span> <span class="o">=</span> <span class="nf">get_option</span><span class="p">(</span><span class="s1">'my_extension_settings'</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'setting1'</span> <span class="o">=&gt;</span> <span class="s1">''</span><span class="p">,</span>
+        <span class="s1">'setting2'</span> <span class="o">=&gt;</span> <span class="s1">''</span><span class="p">,</span>
+    <span class="p">));</span>
+    
+    <span class="c1">// Render settings form</span>
+    <span class="cp">?&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui segment"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"ui header"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'My Extension Settings'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"ui form"</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;?php</span> <span class="nf">wp_nonce_field</span><span class="p">(</span><span class="s1">'my_extension_settings_nonce'</span><span class="p">,</span> <span class="s1">'my_extension_settings_nonce'</span><span class="p">);</span> <span class="cp">?&gt;</span>
+            
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Setting 1'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"setting1"</span> <span class="na">value=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_attr</span><span class="p">(</span><span class="nv">$settings</span><span class="p">[</span><span class="s1">'setting1'</span><span class="p">]);</span> <span class="cp">?&gt;</span><span class="s">"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Setting 2'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"setting2"</span> <span class="na">value=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_attr</span><span class="p">(</span><span class="nv">$settings</span><span class="p">[</span><span class="s1">'setting2'</span><span class="p">]);</span> <span class="cp">?&gt;</span><span class="s">"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui green button"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"submit"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Save Settings'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="cp">&lt;?php</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="adding-a-custom-tab-to-individual-sites">Adding a Custom Tab to Individual Sites</h3>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Add a custom tab to individual site pages</span>
+<span class="nf">add_filter</span><span class="p">(</span><span class="s1">'mainwp_getsubpages_sites'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$subpages</span><span class="p">,</span> <span class="nv">$website</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$subpages</span><span class="p">[]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'title'</span> <span class="o">=&gt;</span> <span class="nf">__</span><span class="p">(</span><span class="s1">'My Extension'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">),</span>
+        <span class="s1">'slug'</span> <span class="o">=&gt;</span> <span class="s1">'MyExtension'</span><span class="p">,</span>
+        <span class="s1">'callback'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'render_site_tab'</span><span class="p">),</span>
+    <span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$subpages</span><span class="p">;</span>
+<span class="p">},</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+
+<span class="c1">// Render the custom tab</span>
+<span class="k">public</span> <span class="k">function</span> <span class="n">render_site_tab</span><span class="p">(</span><span class="nv">$website</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Render tab content</span>
+    <span class="cp">?&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui segment"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"ui header"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'My Extension'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;p&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Site ID:'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span> <span class="cp">?&gt;</span> <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_html</span><span class="p">(</span><span class="nv">$website</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/p&gt;</span>
+        <span class="c">&lt;!-- Tab content here --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="cp">&lt;?php</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="adding-a-bulk-action">Adding a Bulk Action</h3>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Add a bulk action to the sites page</span>
+<span class="nf">add_filter</span><span class="p">(</span><span class="s1">'mainwp_managesites_bulk_actions'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$actions</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$actions</span><span class="p">[</span><span class="s1">'my_bulk_action'</span><span class="p">]</span> <span class="o">=</span> <span class="nf">__</span><span class="p">(</span><span class="s1">'My Bulk Action'</span><span class="p">,</span> <span class="s1">'my-extension'</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$actions</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="c1">// Handle the bulk action</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_managesites_bulk_action'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$action</span><span class="p">,</span> <span class="nv">$sites</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$action</span> <span class="o">==</span> <span class="s1">'my_bulk_action'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Process the bulk action for each site</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="nv">$sites</span> <span class="k">as</span> <span class="nv">$site_id</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Process the site</span>
+        <span class="p">}</span>
+        
+        <span class="c1">// Redirect back to the sites page</span>
+        <span class="nf">wp_redirect</span><span class="p">(</span><span class="nf">admin_url</span><span class="p">(</span><span class="s1">'admin.php?page=managesites&amp;bulk_my_bulk_action=success'</span><span class="p">));</span>
+        <span class="k">exit</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">},</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="best-practices-for-using-hooks">Best Practices for Using Hooks</h2>
+
+<h3 id="use-unique-hook-names">Use Unique Hook Names</h3>
+
+<p>If you need to create your own hooks for your extension, use a unique prefix to avoid conflicts:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">do_action</span><span class="p">(</span><span class="s1">'my_extension_custom_hook'</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
+<span class="nf">apply_filters</span><span class="p">(</span><span class="s1">'my_extension_custom_filter'</span><span class="p">,</span> <span class="nv">$value</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="check-hook-availability">Check Hook Availability</h3>
+
+<p>Some hooks may not be available in all versions of MainWP. Always check if a hook exists before using it:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nf">has_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// Hook exists, safe to use</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="use-proper-priority">Use Proper Priority</h3>
+
+<p>The priority parameter in <code class="language-plaintext highlighter-rouge">add_action()</code> and <code class="language-plaintext highlighter-rouge">add_filter()</code> determines the order in which callbacks are executed. Lower numbers run earlier:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Run early (priority 5)</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">,</span> <span class="s1">'early_function'</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+
+<span class="c1">// Run at default priority (10)</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">,</span> <span class="s1">'default_function'</span><span class="p">);</span>
+
+<span class="c1">// Run late (priority 20)</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">,</span> <span class="s1">'late_function'</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="remove-hooks-when-necessary">Remove Hooks When Necessary</h3>
+
+<p>If you need to temporarily disable a hook, you can remove it:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Remove a hook</span>
+<span class="nf">remove_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">,</span> <span class="s1">'callback_function'</span><span class="p">);</span>
+
+<span class="c1">// Do something without the hook</span>
+
+<span class="c1">// Add the hook back</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">,</span> <span class="s1">'callback_function'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="use-proper-error-handling">Use Proper Error Handling</h3>
+
+<p>Always include error handling in your hook callbacks:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="c1">// Do something that might fail</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Handle the error</span>
+        <span class="nb">error_log</span><span class="p">(</span><span class="s1">'My Extension Error: '</span> <span class="mf">.</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="nf">getMessage</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="debugging-hooks">Debugging Hooks</h2>
+
+<h3 id="check-if-a-hook-is-firing">Check if a Hook is Firing</h3>
+
+<p>To check if a hook is firing, you can add a temporary debug callback:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nb">error_log</span><span class="p">(</span><span class="s1">'mainwp_hook_name fired at '</span> <span class="mf">.</span> <span class="nf">current_time</span><span class="p">(</span><span class="s1">'mysql'</span><span class="p">));</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="list-all-hooks">List All Hooks</h3>
+
+<p>To see all hooks that are registered, you can use a plugin like <a href="https://wordpress.org/plugins/query-monitor/">Query Monitor</a> or add this code:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">add_action</span><span class="p">(</span><span class="s1">'admin_footer'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">global</span> <span class="nv">$wp_filter</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s1">'&lt;pre&gt;'</span><span class="p">;</span>
+    <span class="nb">print_r</span><span class="p">(</span><span class="nv">$wp_filter</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="s1">'&lt;/pre&gt;'</span><span class="p">;</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="check-hook-parameters">Check Hook Parameters</h3>
+
+<p>To see what parameters a hook passes, you can use this debug callback:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_hook_name'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$args</span> <span class="o">=</span> <span class="nb">func_get_args</span><span class="p">();</span>
+    <span class="nb">error_log</span><span class="p">(</span><span class="s1">'mainwp_hook_name parameters: '</span> <span class="mf">.</span> <span class="nb">print_r</span><span class="p">(</span><span class="nv">$args</span><span class="p">,</span> <span class="kc">true</span><span class="p">));</span>
+<span class="p">},</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">99</span><span class="p">);</span> <span class="c1">// Accept up to 99 parameters</span>
+</code></pre></div></div>
+
+<h2 id="finding-available-hooks">Finding Available Hooks</h2>
+
+<p>MainWP provides many hooks for extension developers. Here are some ways to find them:</p>
+
+<h3 id="mainwp-hooks-documentation">MainWP Hooks Documentation</h3>
+
+<p>The <a href="../../mainwp-hooks/">MainWP Hooks Documentation</a> provides a comprehensive list of available hooks, organized by category.</p>
+
+<h3 id="source-code">Source Code</h3>
+
+<p>You can search the MainWP source code for hooks:</p>
+
+<ol>
+  <li>Look for <code class="language-plaintext highlighter-rouge">do_action()</code> and <code class="language-plaintext highlighter-rouge">apply_filters()</code> calls in the MainWP Dashboard and Child plugins</li>
+  <li>Check the <a href="https://github.com/mainwp">MainWP GitHub repositories</a></li>
+</ol>
+
+<h3 id="hook-categories">Hook Categories</h3>
+
+<p>MainWP hooks are generally organized into these categories:</p>
+
+<ol>
+  <li><strong>Dashboard UI Hooks</strong>: For modifying the MainWP Dashboard interface</li>
+  <li><strong>Site Management Hooks</strong>: For interacting with managed sites</li>
+  <li><strong>Data Hooks</strong>: For modifying data before it’s used or displayed</li>
+  <li><strong>Communication Hooks</strong>: For handling communication between Dashboard and Child sites</li>
+  <li><strong>Extension Hooks</strong>: For registering and managing extensions</li>
+</ol>
+
+<h2 id="complete-hook-reference">Complete Hook Reference</h2>
+
+<p>For a complete reference of all available hooks, see the <a href="../../mainwp-hooks/">MainWP Hooks Documentation</a>:</p>
+
+<ul>
+  <li><a href="../../mainwp-hooks/dashboard/actions/">MainWP Dashboard Actions</a></li>
+  <li><a href="../../mainwp-hooks/dashboard/filters/">MainWP Dashboard Filters</a></li>
+  <li><a href="../../mainwp-hooks/child/actions/">MainWP Child Actions</a></li>
+  <li><a href="../../mainwp-hooks/child/filters/">MainWP Child Filters</a></li>
+</ul>
+
+<h2 id="hooks-for-third-party-integrations">Hooks for Third-Party Integrations</h2>
+
+<p>When building integrations with third-party services or plugins, you’ll use the same MainWP hooks as you would for standalone extensions, but with some additional considerations:</p>
+
+<h3 id="api-communication">API Communication</h3>
+
+<p>Integrations typically need to communicate with external APIs. Here’s how to use MainWP hooks effectively in this context:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Sync data from third-party API after site sync</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_site_synced'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$website</span><span class="p">,</span> <span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Get API credentials</span>
+    <span class="nv">$api_key</span> <span class="o">=</span> <span class="nf">get_option</span><span class="p">(</span><span class="s1">'my_integration_api_key'</span><span class="p">,</span> <span class="s1">''</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$api_key</span><span class="p">))</span> <span class="p">{</span>
+        <span class="k">return</span><span class="p">;</span> <span class="c1">// No API key configured</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Initialize API client</span>
+    <span class="nv">$api_client</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ThirdPartyApiClient</span><span class="p">(</span><span class="nv">$api_key</span><span class="p">);</span>
+    
+    <span class="c1">// Fetch data from third-party API</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="nv">$api_data</span> <span class="o">=</span> <span class="nv">$api_client</span><span class="o">-&gt;</span><span class="nf">get_data_for_site</span><span class="p">(</span><span class="nv">$website</span><span class="o">-&gt;</span><span class="n">url</span><span class="p">);</span>
+        
+        <span class="c1">// Store the data for this site</span>
+        <span class="nf">update_option</span><span class="p">(</span><span class="s1">'my_integration_data_'</span> <span class="mf">.</span> <span class="nv">$website</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span> <span class="nv">$api_data</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Handle API errors</span>
+        <span class="nb">error_log</span><span class="p">(</span><span class="s1">'API Error: '</span> <span class="mf">.</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="nf">getMessage</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">},</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="error-handling-for-apis">Error Handling for APIs</h3>
+
+<p>Third-party APIs can fail for various reasons. Always implement robust error handling:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_dashboard_widgets'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">add_meta_box</span><span class="p">(</span>
+        <span class="s1">'my_integration_widget'</span><span class="p">,</span>
+        <span class="nf">__</span><span class="p">(</span><span class="s1">'Third-Party Integration'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">),</span>
+        <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="c1">// Try to get data from third-party API</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="nv">$api_client</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ThirdPartyApiClient</span><span class="p">(</span><span class="nf">get_option</span><span class="p">(</span><span class="s1">'my_integration_api_key'</span><span class="p">,</span> <span class="s1">''</span><span class="p">));</span>
+                <span class="nv">$data</span> <span class="o">=</span> <span class="nv">$api_client</span><span class="o">-&gt;</span><span class="nf">get_dashboard_data</span><span class="p">();</span>
+                
+                <span class="c1">// Display the data</span>
+                <span class="cp">?&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui segment"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h3&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'API Data'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h3&gt;</span>
+                    <span class="c">&lt;!-- Display API data --&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="cp">&lt;?php</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">ApiRateLimitException</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// Handle rate limiting</span>
+                <span class="cp">?&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui yellow message"</span><span class="nt">&gt;</span>
+                    <span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'API rate limit exceeded. Data will refresh shortly.'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="cp">&lt;?php</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">ApiAuthException</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// Handle authentication errors</span>
+                <span class="cp">?&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui red message"</span><span class="nt">&gt;</span>
+                    <span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'API authentication failed. Please check your API credentials.'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="cp">&lt;?php</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// Handle general errors</span>
+                <span class="cp">?&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui red message"</span><span class="nt">&gt;</span>
+                    <span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Error connecting to API. Please try again later.'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="cp">&lt;?php</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="s1">'mainwp_dashboard'</span><span class="p">,</span>
+        <span class="s1">'normal'</span><span class="p">,</span>
+        <span class="s1">'default'</span>
+    <span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h3 id="caching-api-responses">Caching API Responses</h3>
+
+<p>To avoid hitting API rate limits, use WordPress transients to cache API responses:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_site_synced'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$website</span><span class="p">,</span> <span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Check if we need to refresh the cache</span>
+    <span class="nv">$cached_data</span> <span class="o">=</span> <span class="nf">get_transient</span><span class="p">(</span><span class="s1">'my_integration_api_data_'</span> <span class="mf">.</span> <span class="nv">$website</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="kc">false</span> <span class="o">!==</span> <span class="nv">$cached_data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span><span class="p">;</span> <span class="c1">// Use cached data</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Get fresh data from API</span>
+    <span class="nv">$api_client</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ThirdPartyApiClient</span><span class="p">(</span><span class="nf">get_option</span><span class="p">(</span><span class="s1">'my_integration_api_key'</span><span class="p">,</span> <span class="s1">''</span><span class="p">));</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="nv">$api_data</span> <span class="o">=</span> <span class="nv">$api_client</span><span class="o">-&gt;</span><span class="nf">get_data_for_site</span><span class="p">(</span><span class="nv">$website</span><span class="o">-&gt;</span><span class="n">url</span><span class="p">);</span>
+        
+        <span class="c1">// Cache the data for 1 hour</span>
+        <span class="nf">set_transient</span><span class="p">(</span><span class="s1">'my_integration_api_data_'</span> <span class="mf">.</span> <span class="nv">$website</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span> <span class="nv">$api_data</span><span class="p">,</span> <span class="no">HOUR_IN_SECONDS</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Log error but don't cache failures</span>
+        <span class="nb">error_log</span><span class="p">(</span><span class="s1">'API Error: '</span> <span class="mf">.</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="nf">getMessage</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">},</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="handling-api-credentials">Handling API Credentials</h3>
+
+<p>Securely store and manage API credentials:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Add a settings page for API credentials</span>
+<span class="nf">add_action</span><span class="p">(</span><span class="s1">'mainwp_admin_menu'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">add_submenu_page</span><span class="p">(</span>
+        <span class="s1">'mainwp_tab'</span><span class="p">,</span>
+        <span class="nf">__</span><span class="p">(</span><span class="s1">'API Settings'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">),</span>
+        <span class="nf">__</span><span class="p">(</span><span class="s1">'API Settings'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">),</span>
+        <span class="s1">'read'</span><span class="p">,</span>
+        <span class="s1">'MyIntegrationApiSettings'</span><span class="p">,</span>
+        <span class="k">array</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">'render_api_settings_page'</span><span class="p">)</span>
+    <span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// Render the API settings page</span>
+<span class="k">public</span> <span class="k">function</span> <span class="n">render_api_settings_page</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Check if user has permissions</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nf">mainwp_current_user_can</span><span class="p">(</span><span class="s1">'read'</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nf">mainwp_do_not_have_permissions</span><span class="p">(</span><span class="nf">__</span><span class="p">(</span><span class="s1">'API Settings'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">));</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Save settings if form is submitted</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'submit'</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="c1">// Verify nonce</span>
+        <span class="nf">check_admin_referer</span><span class="p">(</span><span class="s1">'my_integration_api_settings_nonce'</span><span class="p">,</span> <span class="s1">'my_integration_api_settings_nonce'</span><span class="p">);</span>
+        
+        <span class="c1">// Save API credentials</span>
+        <span class="nv">$api_key</span> <span class="o">=</span> <span class="nf">sanitize_text_field</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'api_key'</span><span class="p">]</span> <span class="o">??</span> <span class="s1">''</span><span class="p">);</span>
+        <span class="nf">update_option</span><span class="p">(</span><span class="s1">'my_integration_api_key'</span><span class="p">,</span> <span class="nv">$api_key</span><span class="p">);</span>
+        
+        <span class="c1">// Test API connection</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$api_key</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">try</span> <span class="p">{</span>
+                <span class="nv">$api_client</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ThirdPartyApiClient</span><span class="p">(</span><span class="nv">$api_key</span><span class="p">);</span>
+                <span class="nv">$test_result</span> <span class="o">=</span> <span class="nv">$api_client</span><span class="o">-&gt;</span><span class="nf">test_connection</span><span class="p">();</span>
+                
+                <span class="k">if</span> <span class="p">(</span><span class="nv">$test_result</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="cp">?&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui green message"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'API connection successful.'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/div&gt;</span>
+                    <span class="cp">&lt;?php</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="cp">?&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui red message"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'API connection failed.'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/div&gt;</span>
+                    <span class="cp">&lt;?php</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nc">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+                <span class="cp">?&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui red message"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_html</span><span class="p">(</span><span class="s1">'API Error: '</span> <span class="mf">.</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="nf">getMessage</span><span class="p">());</span> <span class="cp">?&gt;</span><span class="nt">&lt;/div&gt;</span>
+                <span class="cp">&lt;?php</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Get current settings</span>
+    <span class="nv">$api_key</span> <span class="o">=</span> <span class="nf">get_option</span><span class="p">(</span><span class="s1">'my_integration_api_key'</span><span class="p">,</span> <span class="s1">''</span><span class="p">);</span>
+    
+    <span class="c1">// Render settings form</span>
+    <span class="cp">?&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui segment"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"ui header"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'API Settings'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/h2&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"ui form"</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;?php</span> <span class="nf">wp_nonce_field</span><span class="p">(</span><span class="s1">'my_integration_api_settings_nonce'</span><span class="p">,</span> <span class="s1">'my_integration_api_settings_nonce'</span><span class="p">);</span> <span class="cp">?&gt;</span>
+            
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"field"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'API Key'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"api_key"</span> <span class="na">value=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nf">esc_attr</span><span class="p">(</span><span class="nv">$api_key</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="s">"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"description"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Enter your API key from your Third-Party Service account.'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui green button"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"submit"</span><span class="nt">&gt;</span><span class="cp">&lt;?php</span> <span class="nf">esc_html_e</span><span class="p">(</span><span class="s1">'Save API Settings'</span><span class="p">,</span> <span class="s1">'my-integration'</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="cp">&lt;?php</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>Now that you understand how to use MainWP actions and filters, you can:</p>
+
+<ul>
+  <li><a href="create-basic-extension.md">Create a Basic MainWP Extension</a> that integrates with MainWP</li>
+  <li><a href="create-basic-integration.md">Create a Basic MainWP Integration</a> with a third-party service</li>
+  <li>Learn about <a href="admin-interfaces.md">Building Admin Interfaces</a> for your add-on</li>
+  <li>Explore <a href="data-storage.md">Data Storage and Retrieval</a> for managing add-on data</li>
+  <li>Learn about <a href="third-party-apis.md">Working with Third-Party APIs</a> for integrations</li>
+</ul>
+
+<h2 id="related-resources">Related Resources</h2>
+
+<ul>
+  <li><a href="https://developer.wordpress.org/plugins/hooks/">WordPress Plugin API Documentation</a></li>
+  <li><a href="../../source-code/dashboard/">MainWP Dashboard API Documentation</a></li>
+  <li><a href="../../source-code/child/">MainWP Child API Documentation</a></li>
+</ul>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="c-footer">
+    <div class="o-container">
+        <div class="c-footer__inner">
+            <div class="c-footer__grid">
+                <div class="c-footer__column">
+                    <div class="c-footer__brand">
+                        <span class="c-logo">
+                            <span class="c-logo__text">
+                                <span class="c-logo__text--main">Main</span><span class="c-logo__text--wp">WP</span>
+                            </span>
+                        </span>
+                        <p class="c-footer__description">
+                            The ultimate WordPress management solution for agencies and developers.
+                        </p>
+                    </div>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Documentation</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="/mainwp.dev/guides/how-to/create-basic-extension/">Getting Started</a></li>
+                        <li><a href="/mainwp.dev/guides/">Extension Development</a></li>
+                        <li><a href="/mainwp.dev/mainwp-hooks/">Hooks Reference</a></li>
+                        <li><a href="/mainwp.dev/rest-api/">REST API</a></li>
+                    </ul>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Resources</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="https://mainwp.com/support/">Support</a></li>
+                        <li><a href="https://mainwp.com/mainwp-extensions/">Extensions</a></li>
+                        <li><a href="https://mainwp.com/blog/">Blog</a></li>
+                        <li><a href="https://mainwp.com/about/">About</a></li>
+                    </ul>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Community</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="https://mainwp.com/community/">Forums</a></li>
+                        <li><a href="https://github.com/mainwp">GitHub</a></li>
+                        <li><a href="https://twitter.com/MainWP">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/mainwp/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-footer__bottom">
+                <div class="c-footer__copyright">
+                    <p>&copy; 2025 MainWP. All rights reserved.</p>
+                </div>
+                <div class="c-footer__meta">
+                    <ul class="c-footer__meta-list">
+                        <li><a href="https://mainwp.com/terms/">Terms</a></li>
+                        <li><a href="https://mainwp.com/privacy/">Privacy</a></li>
+                        <li><a href="https://mainwp.com/contact/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+.c-footer {
+    padding: 4rem 0 2rem;
+    background-color: var(--mainwp-dark-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--mainwp-dark-text);
+}
+
+.c-footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.c-footer__description {
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+.c-footer__heading {
+    color: var(--mainwp-dark-text);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.c-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-footer__list li {
+    margin-bottom: 0.5rem;
+}
+
+.c-footer__list a {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+}
+
+.c-footer__list a:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+.c-footer__bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-footer__copyright p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.c-footer__meta-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.c-footer__meta-list a {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+}
+
+.c-footer__meta-list a:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .c-footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .c-footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .c-footer__bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .c-footer__meta-list {
+        justify-content: center;
+    }
+}
+</style>
+
+
+        <!-- Theme scripts -->
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/vendor/jquery.min.js"></script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/vendor/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/theme-toggle.js"></script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/scripts.js"></script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/page-nav.js"></script>
+
+        
+    </body>
+</html>
+
+<style>
+/* Dark theme customizations */
+.c-post {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--dox-border-radius);
+    padding: 2rem;
+}
+
+.c-post__title {
+    color: var(--mainwp-dark-text);
+    margin-bottom: 1rem;
+}
+
+.c-post__desc {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.c-page-nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--dox-border-radius);
+    padding: 1.5rem;
+    position: sticky;
+    top: 100px;
+}
+
+.c-page-nav__title {
+    color: var(--mainwp-dark-text);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.c-page-nav__heading {
+    color: var(--mainwp-dark-text);
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.c-page-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-page-nav__link {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+    font-size: 0.9rem;
+}
+
+.c-page-nav__link:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+.c-arrow-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--dox-border-radius);
+    transition: var(--dox-transition-base);
+}
+
+.c-arrow-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.c-arrow-link--left {
+    text-align: left;
+}
+
+.c-arrow-link--right {
+    text-align: right;
+}
+
+.c-arrow-link__text {
+    color: var(--mainwp-primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.c-arrow-link__title {
+    color: var(--mainwp-dark-text);
+    font-weight: 500;
+}
+
+/* Code highlighting theme */
+.hljs {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: var(--dox-border-radius);
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .c-page-nav {
+        position: static;
+        margin-bottom: 2rem;
+    }
+}
+</style>
