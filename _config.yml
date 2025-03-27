@@ -67,3 +67,7 @@ exclude:
   - test-navigation-style.css # Add test files
   - test-navigation.html # Add test files
   - test-page-nav.html  # Add test files
+
+# Explicitly include files/folders Jekyll might ignore or that are needed
+include:
+  - dox-theme/assets/js/vendor/ # Force inclusion of JS vendor files
