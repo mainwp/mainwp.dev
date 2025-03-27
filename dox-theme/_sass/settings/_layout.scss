@@ -13,7 +13,7 @@ $container-max-width-sm: $dox-max-width-sm;
 
 // Grid settings
 $grid-columns: 12;
-$grid-gutter: $dox-spacing-md;
+$grid-gutter: 16px;  // Equivalent to 1rem at default font size
 
 // Spacing scale (using core variables)
 $spacing-scale: (
