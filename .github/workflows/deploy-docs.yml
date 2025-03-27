@@ -36,6 +36,27 @@ jobs:
           persist-credentials: false
           set-safe-directory: /home/runner/work/mainwp.dev/mainwp.dev
 
+      # Verify theme files exist immediately after checkout
+      - name: Verify Theme Files After Checkout
+        run: |
+          echo "Listing workspace root:"
+          ls -la
+          echo "---"
+          echo "Checking dox-theme directory:"
+          ls -la dox-theme/ || echo "dox-theme directory NOT FOUND"
+          echo "---"
+          echo "Checking dox-theme/assets directory:"
+          ls -la dox-theme/assets/ || echo "dox-theme/assets directory NOT FOUND"
+          echo "---"
+          echo "Checking dox-theme/assets/js directory:"
+          ls -la dox-theme/assets/js/ || echo "dox-theme/assets/js directory NOT FOUND"
+          echo "---"
+          echo "Checking dox-theme/assets/js/vendor directory:"
+          ls -la dox-theme/assets/js/vendor/ || echo "dox-theme/assets/js/vendor directory NOT FOUND"
+          echo "---"
+          echo "Checking specific vendor file:"
+          ls -la dox-theme/assets/js/vendor/jquery.min.js || echo "jquery.min.js NOT FOUND"
+
       - name: Verify repository state
         run: |
           echo "Repository structure:"
