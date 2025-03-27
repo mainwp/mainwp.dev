@@ -1,7 +1,7 @@
 title: MainWP Developer Documentation
 description: Comprehensive documentation for MainWP extension and integration development
-baseurl: ""
-url: ""
+baseurl: "/mainwp.dev" # Subpath for GitHub Pages project site
+url: "https://mainwp.github.io" # Production domain for GitHub Pages
 
 # Build settings
 markdown: kramdown
