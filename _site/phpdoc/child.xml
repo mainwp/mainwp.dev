@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor
+        configVersion="3"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://www.phpdoc.org"
+        xsi:noNamespaceSchemaLocation="https://docs.phpdoc.org/latest/phpdoc.xsd"
+>
+    <title>MainWP Child Documentation</title>
+    <paths>
+        <output>/Users/denni1/Documents/GitHub/mainwp/mainwp.dev/source-code/child</output>
+        <cache>/Users/denni1/Documents/GitHub/mainwp/mainwp.dev/build/cache/child</cache>
+    </paths>
+    <version number="latest">
+        <api>
+            <source dsn="/Users/denni1/Documents/GitHub/mainwp/mainwp.dev/sources/mainwp-child">
+                <path>.</path>
+            </source>
+            <ignore hidden="true" symlinks="true">
+                <path>vendor/**/*</path>
+                <path>node_modules/**/*</path>
+                <path>tests/**/*</path>
+                <path>assets/**/*</path>
+                <path>*.min.js</path>
+                <path>*.min.css</path>
+                <path>libs/phpseclib/vendor/phpseclib/**/*</path>
+                <path>libs/phpseclib/vendor/paragonie/**/*</path>
+                <path>libs/phpseclib/vendor/composer/**/*</path>
+            </ignore>
+            <extensions>
+                <extension>php</extension>
+            </extensions>
+            <default-package-name>MainWP-Child</default-package-name>
+            <include-source>true</include-source>
+        </api>
+    </version>
+    <setting name="graphs.enabled" value="true"/>
+    <setting name="guides.enabled" value="false"/>
+    <template name="default"/>
+</phpdocumentor>

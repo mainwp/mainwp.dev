@@ -1,0 +1,163 @@
+<footer class="c-footer">
+    <div class="o-container">
+        <div class="c-footer__inner">
+            <div class="c-footer__grid">
+                <div class="c-footer__column">
+                    <div class="c-footer__brand">
+                        <span class="c-logo">
+                            <span class="c-logo__text">
+                                <span class="c-logo__text--main">Main</span><span class="c-logo__text--wp">WP</span>
+                            </span>
+                        </span>
+                        <p class="c-footer__description">
+                            The ultimate WordPress management solution for agencies and developers.
+                        </p>
+                    </div>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Documentation</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="{{ site.baseurl }}/guides/how-to/create-basic-extension/">Getting Started</a></li>
+                        <li><a href="{{ site.baseurl }}/guides/">Extension Development</a></li>
+                        <li><a href="{{ site.baseurl }}/mainwp-hooks/">Hooks Reference</a></li>
+                        <li><a href="{{ site.baseurl }}/rest-api/">REST API</a></li>
+                    </ul>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Resources</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="https://mainwp.com/support/">Support</a></li>
+                        <li><a href="https://mainwp.com/mainwp-extensions/">Extensions</a></li>
+                        <li><a href="https://mainwp.com/blog/">Blog</a></li>
+                        <li><a href="https://mainwp.com/about/">About</a></li>
+                    </ul>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Community</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="https://mainwp.com/community/">Forums</a></li>
+                        <li><a href="https://github.com/mainwp">GitHub</a></li>
+                        <li><a href="https://twitter.com/MainWP">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/mainwp/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-footer__bottom">
+                <div class="c-footer__copyright">
+                    <p>&copy; {{ 'now' | date: "%Y" }} MainWP. All rights reserved.</p>
+                </div>
+                <div class="c-footer__meta">
+                    <ul class="c-footer__meta-list">
+                        <li><a href="https://mainwp.com/terms/">Terms</a></li>
+                        <li><a href="https://mainwp.com/privacy/">Privacy</a></li>
+                        <li><a href="https://mainwp.com/contact/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+.c-footer {
+    padding: 4rem 0 2rem;
+    background-color: var(--mainwp-dark-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--mainwp-dark-text);
+}
+
+.c-footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.c-footer__description {
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+.c-footer__heading {
+    color: var(--mainwp-dark-text);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.c-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-footer__list li {
+    margin-bottom: 0.5rem;
+}
+
+.c-footer__list a {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+}
+
+.c-footer__list a:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+.c-footer__bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-footer__copyright p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.c-footer__meta-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.c-footer__meta-list a {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+}
+
+.c-footer__meta-list a:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .c-footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .c-footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .c-footer__bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .c-footer__meta-list {
+        justify-content: center;
+    }
+}
+</style>

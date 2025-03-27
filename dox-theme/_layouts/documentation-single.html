@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="{{ site.dox.language }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.dox.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.dox.description }}{% endif %}">
+
+        <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+        <link rel="shortcut icon" href="{{ '/favicon.ico' | absolute_url }}" type="image/x-icon">
+
+        <!-- Theme styles -->
+        <link rel="stylesheet" href="{{ '/dox-theme/assets/css/style.css' | absolute_url }}">
+    </head>
+    <body>
+        {% include header.html %}
+
+        <div class="o-container">
+            <div class="o-row">
+                <div class="o-col-3@md">
+                    <div class="c-page-nav">
+                        <div class="c-page-nav__header">
+                            <h2 class="c-page-nav__title">{{ page.navigation_title | default: page.title }}</h2>
+                        </div>
+                        <div class="c-page-nav__content">
+                            {% if page.navigation %}
+                                {% for item in page.navigation %}
+                                    <div class="c-page-nav__section" data-section="{{ item.title | slugify }}">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            {{ item.title }}
+                                        </h3>
+                                        {% if item.items %}
+                                            <ul class="c-page-nav__list">
+                                                {% for subitem in item.items %}
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#{{ subitem.id }}" class="c-page-nav__link">{{ subitem.title }}</a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="o-col-9@md">
+                    <div class="c-post">
+                        <div class="c-post__header">
+                            <h1 class="c-post__title">{{ page.title }}</h1>
+                            {% if page.description %}
+                                <div class="c-post__desc">
+                                    {{ page.description }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="c-post__content">
+                            {{ content }}
+                        </div>
+                        {% if page.previous or page.next %}
+                            <div class="c-post__footer">
+                                <div class="o-row">
+                                    {% if page.previous %}
+                                        <div class="o-col-6@md">
+                                            <a href="{{ page.previous.url | absolute_url }}" class="c-arrow-link c-arrow-link--left">
+                                                <span class="c-arrow-link__text">Previous</span>
+                                                <span class="c-arrow-link__title">{{ page.previous.title }}</span>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                    {% if page.next %}
+                                        <div class="o-col-6@md">
+                                            <a href="{{ page.next.url | absolute_url }}" class="c-arrow-link c-arrow-link--right">
+                                                <span class="c-arrow-link__text">Next</span>
+                                                <span class="c-arrow-link__title">{{ page.next.title }}</span>
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+        <!-- Theme scripts -->
+        <script src="{{ '/dox-theme/assets/js/vendor/jquery.min.js' | absolute_url }}"></script>
+        <script src="{{ '/dox-theme/assets/js/vendor/highlight.pack.js' | absolute_url }}"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="{{ '/dox-theme/assets/js/theme-toggle.js' | absolute_url }}"></script>
+        <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}"></script>
+        <script src="{{ '/dox-theme/assets/js/page-nav.js' | absolute_url }}"></script>
+
+        {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
+            <!-- Google Analytics -->
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', '{{ site.dox.google_analytics.tracking_code }}', 'auto');
+                ga('send', 'pageview');
+            </script>
+        {% endif %}
+    </body>
+</html>
+
+<style>
+/* Dark theme customizations */
+.c-post {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--dox-border-radius);
+    padding: 2rem;
+}
+
+.c-post__title {
+    color: var(--mainwp-dark-text);
+    margin-bottom: 1rem;
+}
+
+.c-post__desc {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.c-page-nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--dox-border-radius);
+    padding: 1.5rem;
+    position: sticky;
+    top: 100px;
+}
+
+.c-page-nav__title {
+    color: var(--mainwp-dark-text);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.c-page-nav__heading {
+    color: var(--mainwp-dark-text);
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.c-page-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-page-nav__link {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+    font-size: 0.9rem;
+}
+
+.c-page-nav__link:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+.c-arrow-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--dox-border-radius);
+    transition: var(--dox-transition-base);
+}
+
+.c-arrow-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.c-arrow-link--left {
+    text-align: left;
+}
+
+.c-arrow-link--right {
+    text-align: right;
+}
+
+.c-arrow-link__text {
+    color: var(--mainwp-primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.c-arrow-link__title {
+    color: var(--mainwp-dark-text);
+    font-weight: 500;
+}
+
+/* Code highlighting theme */
+.hljs {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: var(--dox-border-radius);
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .c-page-nav {
+        position: static;
+        margin-bottom: 2rem;
+    }
+}
+</style>

@@ -1,0 +1,117 @@
+<div class="c-hero">
+    <div class="o-container">
+        <div class="o-row">
+            <div class="o-col-12">
+                <div class="u-text-center">
+                    <h1 class="c-hero__title">MainWP Developer Documentation</h1>
+                    <p class="c-hero__desc">Build Extensions, Partner with MainWP, and Empower Your Business!</p>
+                    <div class="c-hero__buttons">
+                        <a href="{{ site.baseurl }}/guides/how-to/create-basic-extension/" class="c-button c-button--primary">Get Started</a>
+                        <a href="{{ site.baseurl }}/mainwp-hooks/" class="c-button c-button--accent">Browse Hooks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="o-row">
+            <div class="o-col-12">
+                <div class="c-hero__stats u-text-center">
+                    <div class="c-hero__stat">
+                        <strong>20,000+</strong>
+                        <span>Agencies & Developers</span>
+                    </div>
+                    <div class="c-hero__stat">
+                        <strong>700,000+</strong>
+                        <span>WordPress Sites</span>
+                    </div>
+                    <div class="c-hero__stat">
+                        <strong>35</strong>
+                        <span>Sites per Dashboard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.c-hero {
+    padding: 4rem 0;
+    background-color: var(--mainwp-dark-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.c-hero__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--mainwp-dark-text);
+}
+
+.c-hero__desc {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--mainwp-dark-text);
+    opacity: 0.9;
+}
+
+.c-hero__buttons {
+    margin-bottom: 3rem;
+}
+
+.c-button--primary {
+    background-color: var(--mainwp-primary);
+    color: white;
+    margin-right: 1rem;
+}
+
+.c-button--primary:hover {
+    background-color: var(--mainwp-primary-dark);
+}
+
+.c-button--accent {
+    background-color: var(--mainwp-accent);
+    color: white;
+}
+
+.c-button--accent:hover {
+    background-color: #3a6a91;
+}
+
+.c-hero__stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.c-hero__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-hero__stat strong {
+    font-size: 2rem;
+    color: var(--mainwp-primary);
+    margin-bottom: 0.5rem;
+}
+
+.c-hero__stat span {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .c-hero__stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .c-hero__title {
+        font-size: 2rem;
+    }
+    
+    .c-hero__desc {
+        font-size: 1.25rem;
+    }
+}
+</style>

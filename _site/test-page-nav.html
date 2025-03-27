@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page Navigation</title>
+    <link rel="stylesheet" href="dox-theme/assets/css/style.css">
+    <style>
+        :root {
+            --mainwp-primary: #7fb100;
+            --mainwp-primary-dark: #446200;
+            --mainwp-dark-text: #f2f3f2;
+            --background-color: #1c1d1b;
+            --dox-border-radius: 4px;
+            --dox-transition-base: all 0.2s ease;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--mainwp-dark-text);
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        .o-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .o-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .o-col-3\@md {
+            padding: 0 15px;
+            width: 25%;
+        }
+
+        .o-col-9\@md {
+            padding: 0 15px;
+            width: 75%;
+        }
+
+        .test-section {
+            margin-bottom: 60px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--dox-border-radius);
+        }
+
+        @media (max-width: 768px) {
+            .o-col-3\@md,
+            .o-col-9\@md {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="o-container">
+        <div class="o-row">
+            <div class="o-col-3@md">
+                <div class="c-page-nav">
+                    <div class="c-page-nav__header">
+                        <h2 class="c-page-nav__title">Test Navigation</h2>
+                    </div>
+                    <div class="c-page-nav__content">
+                        <div class="c-page-nav__section" data-section="getting-started">
+                            <h3 class="c-page-nav__heading js-toggle-nav">
+                                <span class="c-page-nav__toggle-icon"></span>
+                                Getting Started
+                            </h3>
+                            <ul class="c-page-nav__list">
+                                <li class="c-page-nav__item">
+                                    <a href="#introduction" class="c-page-nav__link">Introduction</a>
+                                </li>
+                                <li class="c-page-nav__item">
+                                    <a href="#prerequisites" class="c-page-nav__link">Prerequisites</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="c-page-nav__section" data-section="installation">
+                            <h3 class="c-page-nav__heading js-toggle-nav">
+                                <span class="c-page-nav__toggle-icon"></span>
+                                Installation
+                            </h3>
+                            <ul class="c-page-nav__list">
+                                <li class="c-page-nav__item">
+                                    <a href="#quick-start" class="c-page-nav__link">Quick Start</a>
+                                </li>
+                                <li class="c-page-nav__item">
+                                    <a href="#manual-setup" class="c-page-nav__link">Manual Setup</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="c-page-nav__section" data-section="configuration">
+                            <h3 class="c-page-nav__heading js-toggle-nav">
+                                <span class="c-page-nav__toggle-icon"></span>
+                                Configuration
+                            </h3>
+                            <ul class="c-page-nav__list">
+                                <li class="c-page-nav__item">
+                                    <a href="#basic-settings" class="c-page-nav__link">Basic Settings</a>
+                                </li>
+                                <li class="c-page-nav__item">
+                                    <a href="#advanced-options" class="c-page-nav__link">Advanced Options</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="o-col-9@md">
+                <div class="test-section" id="introduction">
+                    <h2>Introduction</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <div class="test-section" id="prerequisites">
+                    <h2>Prerequisites</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="test-section" id="quick-start">
+                    <h2>Quick Start</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+
+                <div class="test-section" id="manual-setup">
+                    <h2>Manual Setup</h2>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+
+                <div class="test-section" id="basic-settings">
+                    <h2>Basic Settings</h2>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+
+                <div class="test-section" id="advanced-options">
+                    <h2>Advanced Options</h2>
+                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dox-theme/assets/js/vendor/jquery.min.js"></script>
+    <script src="dox-theme/assets/js/page-nav.js"></script>
+</body>
+</html>

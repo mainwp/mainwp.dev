@@ -1,0 +1,40 @@
+/* =============================================================================
+   LISTS (elements/_lists.scss)
+   ========================================================================== */
+
+/**
+ * Basic styling for list elements that complements the overall theme design.
+ * Uses theme spacing variables for consistency with other elements.
+ */
+
+ul, ol {
+  padding-left: $dox-spacing-lg;
+  margin-bottom: $spacer-base;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+dl {
+  margin-bottom: $spacer-base;
+}
+
+dt {
+  font-weight: $font-weight-bold;
+}
+
+dd {
+  margin-left: $dox-spacing-lg;
+}
+
+// Nested lists
+ul, ol {
+  ul, ol {
+    margin-bottom: 0;
+  }
+}

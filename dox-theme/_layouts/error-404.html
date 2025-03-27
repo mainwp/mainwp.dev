@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ site.dox.language }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.dox.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.dox.description }}{% endif %}">
+
+        <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+        <link rel="shortcut icon" href="{{ '/favicon.ico' | absolute_url }}" type="image/x-icon">
+
+        <!-- Theme styles -->
+        <link rel="stylesheet" href="{{ '/dox-theme/assets/css/style.css' | absolute_url }}">
+    </head>
+    <body class="error-404-page">
+        {% include header.html %}
+
+        <main class="o-main">
+            {{ content }}
+        </main>
+
+        {% include footer.html %}
+
+        <!-- Theme scripts -->
+        <script src="{{ '/dox-theme/assets/js/vendor/jquery.min.js' | absolute_url }}"></script>
+        <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}"></script>
+
+        {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
+            <!-- Google Analytics -->
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', '{{ site.dox.google_analytics.tracking_code }}', 'auto');
+                ga('send', 'pageview');
+            </script>
+        {% endif %}
+    </body>
+</html>
+
+<style>
+.error-404-page {
+    background-color: var(--mainwp-dark-bg);
+    color: var(--mainwp-dark-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.o-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: var(--dox-border-radius);
+    transition: var(--dox-transition-base);
+}
+
+.c-button--primary {
+    background-color: var(--mainwp-primary);
+    color: white;
+}
+
+.c-button--primary:hover {
+    background-color: var(--mainwp-primary-dark);
+    color: white;
+}
+
+.c-button--accent {
+    background-color: var(--mainwp-accent);
+    color: white;
+}
+
+.c-button--accent:hover {
+    background-color: #3a6a91;
+    color: white;
+}
+</style>
