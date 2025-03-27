@@ -7,11 +7,14 @@ $dox-color-dark: #1c1d1b;
 $dox-color-light: #f2f3f2;
 $dox-color-warning: #ad0000;
 $dox-color-highlight: #ffd300;
+$color-white: #ffffff;
+$color-gray-30: #f6f8fa;  // Light gray for code backgrounds
 
 // Typography
 $dox-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 $dox-font-size-base: 16px;
 $dox-line-height-base: 1.6;
+$font-family-monospace: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 
 // Font weights
 $font-weight-regular: 400;
