@@ -1,175 +1,678 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MainWP.dev - Developer Documentation</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background-color: #1c2b46;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 5px;
-            margin-bottom: 30px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #1c2b46;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        .subtitle {
-            font-size: 1.2em;
-            margin-top: 10px;
-            opacity: 0.8;
-        }
-        .documentation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .doc-card {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .doc-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .doc-card h3 {
-            margin-top: 0;
-            color: #1c2b46;
-        }
-        .doc-card p {
-            margin-bottom: 15px;
-        }
-        .button {
-            display: inline-block;
-            background-color: #1c2b46;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-        .button:hover {
-            background-color: #2a3f5f;
-        }
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            color: #777;
-            font-size: 0.9em;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
-        .coming-soon {
-            background-color: #f8f9fa;
-            border: 1px dashed #ddd;
-            opacity: 0.7;
-        }
-        .coming-soon .button {
-            background-color: #6c757d;
-            cursor: not-allowed;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>MainWP.dev</h1>
-        <div class="subtitle">Developer Documentation & Resources</div>
-    </header>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <main>
-        <section>
-            <h2>Welcome to MainWP.dev</h2>
-            <p>
-                MainWP.dev is a dedicated platform for developers working with MainWP, offering comprehensive documentation, 
-                code snippets, and technical resources to help you extend and customize MainWP.
-            </p>
-            <p>
-                Whether you're building extensions, customizing existing functionality, or integrating MainWP with other systems,
-                you'll find the resources you need here.
-            </p>
-        </section>
+        <title>MainWP Developer Documentation</title>
+        <meta name="description" content="Comprehensive documentation for MainWP extension and integration development">
 
-        <section>
-            <h2>Documentation</h2>
-            <div class="documentation-grid">
-                <div class="doc-card">
-                    <h3>MainWP Dashboard</h3>
-                    <p>Explore the source code documentation for the MainWP Dashboard plugin.</p>
-                    <a href="source-code/dashboard/index.html" class="button">View Documentation</a>
-                </div>
-                
-                <div class="doc-card">
-                    <h3>MainWP Child</h3>
-                    <p>Explore the source code documentation for the MainWP Child plugin.</p>
-                    <a href="source-code/child/index.html" class="button">View Documentation</a>
-                </div>
-                
-                <div class="doc-card coming-soon">
-                    <h3>REST API</h3>
-                    <p>Documentation for the MainWP REST API endpoints and usage.</p>
-                    <a href="#" class="button">Coming Soon</a>
-                </div>
-                
-                <div class="doc-card">
-                    <h3>Hooks Reference</h3>
-                    <p>Comprehensive reference for all MainWP actions and filters.</p>
-                    <a href="mainwp-hooks/index.md" class="button">View Documentation</a>
+        <link rel="canonical" href="https://mainwp.github.io/mainwp.dev/">
+        <link rel="shortcut icon" href="https://mainwp.github.io/mainwp.dev/favicon.ico" type="image/x-icon">
+
+        <!-- Theme styles -->
+        <link rel="stylesheet" href="https://mainwp.github.io/mainwp.dev/dox-theme/assets/css/style.css">
+    </head>
+    <body class="homepage">
+        <header class="c-header">
+    <div class="o-container">
+        <div class="c-header__inner">
+            <div class="c-header__brand">
+                <a href="/mainwp.dev/" class="c-logo">
+                    <span class="c-logo__text">
+                        <span class="c-logo__text--main">Main</span><span class="c-logo__text--wp">WP</span>
+                        <span class="c-logo__text--dev">.dev</span>
+                    </span>
+                </a>
+            </div>
+
+            <button class="c-nav-trigger js-nav-trigger" aria-label="Toggle navigation">
+                <span class="c-nav-trigger__icon"></span>
+            </button>
+
+            <div class="c-nav-wrap">
+                <nav class="c-nav" role="navigation">
+                    <ul class="c-nav__list">
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/documentation/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Documentation
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/getting-started/" role="menuitem">
+                                                Getting Started
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/installation/" role="menuitem">
+                                                Installation
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/configuration/" role="menuitem">
+                                                Configuration
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/guides/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Guides
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/best-practices/" role="menuitem">
+                                                Best Practices
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/how-to/" role="menuitem">
+                                                How-to
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/concepts/" role="menuitem">
+                                                Concepts
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/reference/" role="menuitem">
+                                                Reference
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/mainwp-hooks/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Hooks
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/mainwp-hooks/dashboard/" role="menuitem">
+                                                Dashboard Hooks
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/mainwp-hooks/child/" role="menuitem">
+                                                Child Hooks
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/source-code/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        API
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/source-code/dashboard/" role="menuitem">
+                                                Dashboard API
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/source-code/child/" role="menuitem">
+                                                Child API
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="c-header__actions">
+                <button class="c-theme-toggle js-theme-toggle" aria-label="Toggle theme">
+                    <svg class="c-theme-toggle__icon c-theme-toggle__icon--light" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5M17.6859 17.69L18.5 18.5M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="c-theme-toggle__icon c-theme-toggle__icon--dark" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 15.8442C20.6866 16.4382 19.2286 16.7688 17.6935 16.7688C11.9153 16.7688 7.23116 12.0847 7.23116 6.30654C7.23116 4.77135 7.5618 3.31341 8.15577 2C3.52576 3.64163 0.1 8.20902 0.1 13.5377C0.1 19.3159 4.78414 24 10.5623 24C15.891 24 20.4584 20.5742 22.1 15.9442" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <a href="https://github.com/mainwp" class="c-header__github" target="_blank" rel="noopener noreferrer" aria-label="MainWP on GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C19.1375 20.1625 22 16.4125 22 12C22 6.475 17.525 2 12 2Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+        <div class="c-hero">
+    <div class="o-container">
+        <div class="o-row">
+            <div class="o-col-12">
+                <div class="u-text-center">
+                    <h1 class="c-hero__title">MainWP Developer Documentation</h1>
+                    <p class="c-hero__desc">Build Extensions, Partner with MainWP, and Empower Your Business!</p>
+                    <div class="c-hero__buttons">
+                        <a href="/mainwp.dev/guides/how-to/create-basic-extension/" class="c-button c-button--primary">Get Started</a>
+                        <a href="/mainwp.dev/mainwp-hooks/" class="c-button c-button--accent">Browse Hooks</a>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section>
-            <h2>Developer Resources</h2>
-            <div class="documentation-grid">
-                <div class="doc-card">
-                    <h3>Developer Guides</h3>
-                    <p>Comprehensive guides for MainWP extension development.</p>
-                    <a href="guides/index.md" class="button">View Guides</a>
-                </div>
-                
-                <div class="doc-card">
-                    <h3>Getting Started</h3>
-                    <p>Learn how to set up your development environment and create your first extension.</p>
-                    <a href="guides/how-to/setup-environment.md" class="button">Get Started</a>
-                </div>
-                
-                <div class="doc-card">
-                    <h3>Extension Development</h3>
-                    <p>Detailed guides for creating and customizing MainWP extensions.</p>
-                    <a href="guides/how-to/create-basic-extension.md" class="button">Learn More</a>
-                </div>
-                
-                <div class="doc-card">
-                    <h3>Actions & Filters</h3>
-                    <p>Learn how to use MainWP hooks to integrate your extensions.</p>
-                    <a href="guides/how-to/actions-filters.md" class="button">View Guide</a>
+        </div>
+        <div class="o-row">
+            <div class="o-col-12">
+                <div class="c-hero__stats u-text-center">
+                    <div class="c-hero__stat">
+                        <strong>20,000+</strong>
+                        <span>Agencies &amp; Developers</span>
+                    </div>
+                    <div class="c-hero__stat">
+                        <strong>700,000+</strong>
+                        <span>WordPress Sites</span>
+                    </div>
+                    <div class="c-hero__stat">
+                        <strong>35</strong>
+                        <span>Sites per Dashboard</span>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</div>
 
-    <footer>
-        <p>&copy; 2025 MainWP. All rights reserved.</p>
-    </footer>
-</body>
+<style>
+.c-hero {
+    padding: 4rem 0;
+    background-color: var(--mainwp-dark-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.c-hero__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--mainwp-dark-text);
+}
+
+.c-hero__desc {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--mainwp-dark-text);
+    opacity: 0.9;
+}
+
+.c-hero__buttons {
+    margin-bottom: 3rem;
+}
+
+.c-button--primary {
+    background-color: var(--mainwp-primary);
+    color: white;
+    margin-right: 1rem;
+}
+
+.c-button--primary:hover {
+    background-color: var(--mainwp-primary-dark);
+}
+
+.c-button--accent {
+    background-color: var(--mainwp-accent);
+    color: white;
+}
+
+.c-button--accent:hover {
+    background-color: #3a6a91;
+}
+
+.c-hero__stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.c-hero__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-hero__stat strong {
+    font-size: 2rem;
+    color: var(--mainwp-primary);
+    margin-bottom: 0.5rem;
+}
+
+.c-hero__stat span {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .c-hero__stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .c-hero__title {
+        font-size: 2rem;
+    }
+    
+    .c-hero__desc {
+        font-size: 1.25rem;
+    }
+}
+</style>
+
+<div class="o-container">
+    <div class="o-row">
+        <div class="o-col">
+            <h2 class="u-text-center">Developer Resources</h2>
+        </div>
+    </div>
+    <div class="o-row">
+        <div class="o-col-4@md">
+            <a href="/mainwp.dev/guides/" class="c-feature-card">
+                <h3>Extension Development Guide</h3>
+                <p>Learn how to create custom extensions for MainWP. Step-by-step tutorials and best practices for extension development.</p>
+            </a>
+        </div>
+        <div class="o-col-4@md">
+            <a href="/mainwp.dev/mainwp-hooks/" class="c-feature-card">
+                <h3>Hooks Reference</h3>
+                <p>Complete reference for all MainWP actions and filters. Learn how to extend and customize MainWP functionality.</p>
+            </a>
+        </div>
+        <div class="o-col-4@md">
+            <a href="/mainwp.dev/rest-api/" class="c-feature-card">
+                <h3>REST API</h3>
+                <p>Integrate with MainWP using our REST API. Full documentation of endpoints, authentication, and examples.</p>
+            </a>
+        </div>
+    </div>
+    <div class="o-row">
+        <div class="o-col-6@md">
+            <a href="/mainwp.dev/source-code/" class="c-feature-card">
+                <h3>Source Code</h3>
+                <p>Browse the MainWP source code documentation. Understand the internal structure and implementation details.</p>
+            </a>
+        </div>
+        <div class="o-col-6@md">
+            <a href="https://mainwp.com/support/" class="c-feature-card">
+                <h3>Support</h3>
+                <p>Get help from the MainWP team and community. Access support resources and developer assistance.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="c-features">
+    <div class="o-container">
+        <div class="o-row">
+            <div class="o-col-12">
+                <h2 class="u-text-center">Why Build with MainWP?</h2>
+            </div>
+        </div>
+        <div class="o-row">
+            <div class="o-col-4@md">
+                <div class="c-feature">
+                    <div class="c-feature__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                            <line x1="16" y1="8" x2="2" y2="22"></line>
+                            <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Powerful Extension API</h3>
+                    <p>Access a comprehensive set of hooks and filters to customize and extend MainWP functionality. Build powerful extensions that integrate seamlessly.</p>
+                </div>
+            </div>
+            <div class="o-col-4@md">
+                <div class="c-feature">
+                    <div class="c-feature__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Large User Base</h3>
+                    <p>Reach over 20,000 agencies and developers managing 700,000+ WordPress sites. Tap into a growing market of professional WordPress users.</p>
+                </div>
+            </div>
+            <div class="o-col-4@md">
+                <div class="c-feature">
+                    <div class="c-feature__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Modern Development</h3>
+                    <p>Build with modern PHP practices, REST API integration, and comprehensive documentation. Use the latest WordPress development standards.</p>
+                </div>
+            </div>
+        </div>
+        <div class="o-row">
+            <div class="o-col-4@md">
+                <div class="c-feature">
+                    <div class="c-feature__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Developer Support</h3>
+                    <p>Get dedicated support from the MainWP development team. Access developer documentation, code examples, and community resources.</p>
+                </div>
+            </div>
+            <div class="o-col-4@md">
+                <div class="c-feature">
+                    <div class="c-feature__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Global Reach</h3>
+                    <p>Join a global community of WordPress professionals. Distribute your extensions to users worldwide through the MainWP marketplace.</p>
+                </div>
+            </div>
+            <div class="o-col-4@md">
+                <div class="c-feature">
+                    <div class="c-feature__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Open Source</h3>
+                    <p>Build on top of open-source software. Contribute to the MainWP ecosystem and help shape the future of WordPress management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.c-features {
+    padding: 4rem 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.c-feature {
+    padding: 2rem;
+    text-align: center;
+    border-radius: var(--dox-border-radius);
+    transition: var(--dox-transition-base);
+    height: 100%;
+}
+
+.c-feature:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.c-feature__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--mainwp-primary);
+    color: white;
+}
+
+.c-feature h3 {
+    margin-bottom: 1rem;
+    color: var(--mainwp-dark-text);
+}
+
+.c-feature p {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .c-feature {
+        margin-bottom: 2rem;
+    }
+}
+</style>
+
+
+
+        <footer class="c-footer">
+    <div class="o-container">
+        <div class="c-footer__inner">
+            <div class="c-footer__grid">
+                <div class="c-footer__column">
+                    <div class="c-footer__brand">
+                        <span class="c-logo">
+                            <span class="c-logo__text">
+                                <span class="c-logo__text--main">Main</span><span class="c-logo__text--wp">WP</span>
+                            </span>
+                        </span>
+                        <p class="c-footer__description">
+                            The ultimate WordPress management solution for agencies and developers.
+                        </p>
+                    </div>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Documentation</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="/mainwp.dev/guides/how-to/create-basic-extension/">Getting Started</a></li>
+                        <li><a href="/mainwp.dev/guides/">Extension Development</a></li>
+                        <li><a href="/mainwp.dev/mainwp-hooks/">Hooks Reference</a></li>
+                        <li><a href="/mainwp.dev/rest-api/">REST API</a></li>
+                    </ul>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Resources</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="https://mainwp.com/support/">Support</a></li>
+                        <li><a href="https://mainwp.com/mainwp-extensions/">Extensions</a></li>
+                        <li><a href="https://mainwp.com/blog/">Blog</a></li>
+                        <li><a href="https://mainwp.com/about/">About</a></li>
+                    </ul>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Community</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="https://mainwp.com/community/">Forums</a></li>
+                        <li><a href="https://github.com/mainwp">GitHub</a></li>
+                        <li><a href="https://twitter.com/MainWP">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/mainwp/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-footer__bottom">
+                <div class="c-footer__copyright">
+                    <p>&copy; 2025 MainWP. All rights reserved.</p>
+                </div>
+                <div class="c-footer__meta">
+                    <ul class="c-footer__meta-list">
+                        <li><a href="https://mainwp.com/terms/">Terms</a></li>
+                        <li><a href="https://mainwp.com/privacy/">Privacy</a></li>
+                        <li><a href="https://mainwp.com/contact/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+.c-footer {
+    padding: 4rem 0 2rem;
+    background-color: var(--mainwp-dark-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--mainwp-dark-text);
+}
+
+.c-footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.c-footer__description {
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+.c-footer__heading {
+    color: var(--mainwp-dark-text);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.c-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-footer__list li {
+    margin-bottom: 0.5rem;
+}
+
+.c-footer__list a {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+}
+
+.c-footer__list a:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+.c-footer__bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-footer__copyright p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.c-footer__meta-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.c-footer__meta-list a {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+}
+
+.c-footer__meta-list a:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .c-footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .c-footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .c-footer__bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .c-footer__meta-list {
+        justify-content: center;
+    }
+}
+</style>
+
+
+        <!-- Theme scripts -->
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/vendor/jquery.min.js"></script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/vendor/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/scripts.js"></script>
+
+        
+    </body>
 </html>
+
+<style>
+/* Homepage specific styles */
+.homepage {
+    background-color: var(--mainwp-dark-bg);
+    color: var(--mainwp-dark-text);
+}
+
+.homepage h2 {
+    font-size: 2rem;
+    margin: 3rem 0 2rem;
+    color: var(--mainwp-dark-text);
+}
+
+.c-feature-card {
+    display: block;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--dox-border-radius);
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+    height: 100%;
+}
+
+.c-feature-card:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+}
+
+.c-feature-card h3 {
+    color: var(--mainwp-primary);
+    margin-bottom: 1rem;
+}
+
+.c-feature-card p {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .homepage h2 {
+        font-size: 1.5rem;
+        margin: 2rem 0 1.5rem;
+    }
+
+    .c-feature-card {
+        margin-bottom: 1rem;
+    }
+}
+</style>
