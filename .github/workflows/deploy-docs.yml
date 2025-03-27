@@ -101,6 +101,12 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      # Verify source vendor dir exists BEFORE copy
+      - name: Check Source Vendor Dir
+        run: |
+          echo "Checking if source vendor directory exists before copy..."
+          ls -la dox-theme/assets/js/vendor/ || echo "Source directory dox-theme/assets/js/vendor/ NOT FOUND before copy attempt!"
+
       # Explicitly copy missing JS vendor files into _site
       - name: Copy JS Vendor Files
         run: |
