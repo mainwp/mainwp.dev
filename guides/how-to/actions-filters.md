@@ -1,3 +1,197 @@
+---
+title: Using MainWP Actions & Filters
+layout: documentation-single # Explicitly define layout
+navigation_title: Actions & Filters # Optional shorter title for sidebar header
+navigation: # Define sidebar structure based on H2/H3 headings
+  - title: "Understanding Hooks"
+    items:
+      - title: "WordPress Hooks"
+        id: "understanding-wordpress-hooks"
+      - title: "Actions"
+        id: "actions"
+      - title: "Filters"
+        id: "filters"
+  - title: "Dashboard Hooks"
+    items:
+      - title: "Extension Registration"
+        id: "extension-registration"
+      - title: "Admin Menu Integration"
+        id: "admin-menu-integration"
+      - title: "Page Header and Footer"
+        id: "page-header-and-footer"
+      - title: "Dashboard Widgets"
+        id: "dashboard-widgets"
+      - title: "Site Actions"
+        id: "site-actions"
+      - title: "Site Sync Data"
+        id: "site-sync-data"
+      - title: "After Site Sync"
+        id: "after-site-sync"
+  - title: "Child Hooks"
+    items:
+      - title: "Handling Dashboard Requests"
+        id: "handling-dashboard-requests"
+      - title: "Child Plugin Initialization"
+        id: "child-plugin-initialization"
+  - title: "Communication"
+    items:
+      - title: "Dashboard to Child"
+        id: "sending-requests-from-dashboard-to-child"
+      - title: "Handling on Child"
+        id: "handling-requests-on-the-child-site"
+  - title: "Common Use Cases"
+    items:
+      - title: "Settings Page"
+        id: "adding-a-settings-page"
+      - title: "Custom Site Tab"
+        id: "adding-a-custom-tab-to-individual-sites"
+      - title: "Bulk Action"
+        id: "adding-a-bulk-action"
+  - title: "Best Practices"
+    items:
+      - title: "Unique Hook Names"
+        id: "use-unique-hook-names"
+      - title: "Check Availability"
+        id: "check-hook-availability"
+      - title: "Use Proper Priority"
+        id: "use-proper-priority"
+      - title: "Remove Hooks"
+        id: "remove-hooks-when-necessary"
+      - title: "Error Handling"
+        id: "use-proper-error-handling"
+  - title: "Debugging Hooks"
+    items:
+      - title: "Check Firing"
+        id: "check-if-a-hook-is-firing"
+      - title: "List All Hooks"
+        id: "list-all-hooks"
+      - title: "Check Parameters"
+        id: "check-hook-parameters"
+  - title: "Finding Hooks"
+    items:
+      - title: "Documentation"
+        id: "mainwp-hooks-documentation"
+      - title: "Source Code"
+        id: "source-code"
+      - title: "Hook Categories"
+        id: "hook-categories"
+  - title: "Third-Party Integrations"
+    items:
+      - title: "API Communication"
+        id: "api-communication"
+      - title: "Error Handling"
+        id: "error-handling-for-apis"
+      - title: "Caching Responses"
+        id: "caching-api-responses"
+      - title: "Handling Credentials"
+        id: "handling-api-credentials"
+  - title: "Next Steps"
+    items:
+      - title: "Next Steps" # Link to the section itself
+        id: "next-steps"
+  - title: "Related Resources"
+    items:
+      - title: "Related Resources" # Link to the section itself
+        id: "related-resources"
+---
+
+---
+title: Using MainWP Actions & Filters
+layout: documentation-single # Explicitly define layout
+navigation_title: Actions & Filters # Optional shorter title for sidebar header
+navigation: # Define sidebar structure based on H2/H3 headings
+  - title: "Understanding Hooks"
+    items:
+      - title: "WordPress Hooks"
+        id: "understanding-wordpress-hooks"
+      - title: "Actions"
+        id: "actions"
+      - title: "Filters"
+        id: "filters"
+  - title: "Dashboard Hooks"
+    items:
+      - title: "Extension Registration"
+        id: "extension-registration"
+      - title: "Admin Menu Integration"
+        id: "admin-menu-integration"
+      - title: "Page Header and Footer"
+        id: "page-header-and-footer"
+      - title: "Dashboard Widgets"
+        id: "dashboard-widgets"
+      - title: "Site Actions"
+        id: "site-actions"
+      - title: "Site Sync Data"
+        id: "site-sync-data"
+      - title: "After Site Sync"
+        id: "after-site-sync"
+  - title: "Child Hooks"
+    items:
+      - title: "Handling Dashboard Requests"
+        id: "handling-dashboard-requests"
+      - title: "Child Plugin Initialization"
+        id: "child-plugin-initialization"
+  - title: "Communication"
+    items:
+      - title: "Dashboard to Child"
+        id: "sending-requests-from-dashboard-to-child"
+      - title: "Handling on Child"
+        id: "handling-requests-on-the-child-site"
+  - title: "Common Use Cases"
+    items:
+      - title: "Settings Page"
+        id: "adding-a-settings-page"
+      - title: "Custom Site Tab"
+        id: "adding-a-custom-tab-to-individual-sites"
+      - title: "Bulk Action"
+        id: "adding-a-bulk-action"
+  - title: "Best Practices"
+    items:
+      - title: "Unique Hook Names"
+        id: "use-unique-hook-names"
+      - title: "Check Availability"
+        id: "check-hook-availability"
+      - title: "Use Proper Priority"
+        id: "use-proper-priority"
+      - title: "Remove Hooks"
+        id: "remove-hooks-when-necessary"
+      - title: "Error Handling"
+        id: "use-proper-error-handling"
+  - title: "Debugging Hooks"
+    items:
+      - title: "Check Firing"
+        id: "check-if-a-hook-is-firing"
+      - title: "List All Hooks"
+        id: "list-all-hooks"
+      - title: "Check Parameters"
+        id: "check-hook-parameters"
+  - title: "Finding Hooks"
+    items:
+      - title: "Documentation"
+        id: "mainwp-hooks-documentation"
+      - title: "Source Code"
+        id: "source-code"
+      - title: "Hook Categories"
+        id: "hook-categories"
+  - title: "Third-Party Integrations"
+    items:
+      - title: "API Communication"
+        id: "api-communication"
+      - title: "Error Handling"
+        id: "error-handling-for-apis"
+      - title: "Caching Responses"
+        id: "caching-api-responses"
+      - title: "Handling Credentials"
+        id: "handling-api-credentials"
+  - title: "Next Steps"
+    items:
+      - title: "Next Steps" # Link to the section itself
+        id: "next-steps"
+  - title: "Related Resources"
+    items:
+      - title: "Related Resources" # Link to the section itself
+        id: "related-resources"
+---
+
 # Using MainWP Actions & Filters
 
 This guide explains how to use MainWP's actions and filters (hooks) to integrate your add-on (extension or integration) with the MainWP Dashboard and Child plugins. Understanding these hooks is essential for creating powerful, well-integrated add-ons, whether you're building a standalone extension or a third-party integration.
