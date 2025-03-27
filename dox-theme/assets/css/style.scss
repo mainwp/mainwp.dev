@@ -1,8 +1,10 @@
 ---
 ---
 
-// Import settings
+// Import settings in correct sequence
 @import "settings/core";
+@import "settings/colors";
+@import "settings/layout";
 
 // Import tools
 @import "tools/breakpoints";
