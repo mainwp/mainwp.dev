@@ -38,12 +38,32 @@ defaults:
 exclude:
   - README.md
   - CHANGELOG.md
+  - LICENSE             # Add LICENSE
   - .git
   - .gitignore
+  - .github             # Add .github
+  - .bundle             # Add .bundle
   - hooks-generator
   - memory-bank
   - .clineignore
-  - .clinerules.md
+  - .clinerules         # Corrected from .clinerules.md
   - vendor
   - Gemfile
   - Gemfile.lock
+  - composer.json       # Add composer files
+  - composer.lock       # Add composer files
+  - deploy-test         # Add deploy-test
+  - developer-changelog.md # Add developer-changelog.md
+  - generate-docs.sh    # Add generate-docs.sh
+  - mainwp-hooks-old    # Add mainwp-hooks-old
+  - mainwp-hooks-temp   # Add mainwp-hooks-temp
+  - phpdoc              # Add phpdoc (assuming temporary/source)
+  - preview-code-blocks.html # Add preview-code-blocks.html
+  # - source-code       # DO NOT EXCLUDE - This is phpDocumentor output
+  - sources             # Add sources
+  - test-code.html      # Add test files
+  - test-deploy.sh      # Add test files
+  - test-header.html    # Add test files
+  - test-navigation-style.css # Add test files
+  - test-navigation.html # Add test files
+  - test-page-nav.html  # Add test files
