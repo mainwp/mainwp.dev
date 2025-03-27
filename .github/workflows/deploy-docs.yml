@@ -100,71 +100,11 @@ jobs:
         run: JEKYLL_ENV=production bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-
-      # Prepare clean deploy directory
-      - name: Prepare deployment directory
-        run: |
-          # Create deploy directory
-          mkdir -p deploy
-          
-          # Define files/directories to include
-          include_list=(
-            "index.html"
-            "build"
-            "guides"
-            "mainwp-hooks"
-            "source-code"
-            "_site"
-            "dox-theme"
-            "_includes"
-            "_layouts"
-            "_sass"
-            "LICENSE"
-            "README.md"
-          )
-          
-          # Copy only specified files/directories
-          for item in "${include_list[@]}"; do
-            if [ -e "$item" ]; then
-              echo "Including: $item"
-              if [ -d "$item" ]; then
-                mkdir -p "deploy/$item"
-                cp -R "$item"/* "deploy/$item/" 2>/dev/null || true
-              else
-                cp "$item" "deploy/" 2>/dev/null || true
-              fi
-            else
-              echo "Warning: Included item not found: $item"
-            fi
-          done
-          
-          # Simple verification
-          echo "Deployment directory contents:"
-          ls -la deploy/
-          
-          # Verify critical files exist
-          critical_files=("index.html" "guides/index.md" "mainwp-hooks/index.md")
-          missing=0
-          
-          for file in "${critical_files[@]}"; do
-            if [ -f "deploy/$file" ] || [ -f "deploy/_site/$file" ]; then
-              echo "✅ Found critical file: $file"
-            else
-              echo "❌ Missing critical file: $file"
-              missing=$((missing + 1))
-            fi
-          done
-          
-          if [ $missing -gt 0 ]; then
-            echo "Warning: $missing critical files missing from deployment"
-          else
-            echo "All critical files present"
-          fi
       
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: deploy # Only deploy the clean directory
+          folder: _site # Deploy the contents of the _site directory
           branch: gh-pages
           clean: true # Automatically remove deleted files from the deploy branch
