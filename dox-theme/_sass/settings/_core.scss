@@ -98,3 +98,34 @@ $breakpoints: (
   lg: $dox-breakpoint-lg,
   xl: $dox-breakpoint-xl
 );
+
+// Color map for utility generation
+$colors: (
+  'primary': $dox-color-primary,
+  'secondary': $dox-color-secondary,
+  'accent': $dox-color-accent,
+  'dark': $dox-color-dark,
+  'light': $dox-color-light,
+  'white': $color-white,
+  'info': $color-info,
+  'success': $color-success,
+  'warning': $color-warning,
+  'danger': $color-danger,
+  'highlight': $dox-color-highlight,
+  'gray-30': $color-gray-30,
+  'gray-50': $color-gray-50,
+  'gray-100': $color-gray-100,
+  'gray-200': $color-gray-200,
+  'gray-300': $color-gray-300,
+  'gray-400': $color-gray-400,
+  'gray-500': $color-gray-500
+);
+
+// Spacing map for utility generation
+$spacers: (
+  'xs': $dox-spacing-xs,
+  'sm': $dox-spacing-sm,
+  'md': $dox-spacing-md,
+  'lg': $dox-spacing-lg,
+  'xl': $dox-spacing-xl
+);
