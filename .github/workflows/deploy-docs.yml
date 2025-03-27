@@ -100,6 +100,13 @@ jobs:
         run: JEKYLL_ENV=production bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+
+      - name: Verify Build Output
+        run: |
+          echo "--- Workspace Root Contents ---"
+          ls -la
+          echo "--- _site Directory Contents ---"
+          ls -la _site
       
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
