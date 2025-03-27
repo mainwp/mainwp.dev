@@ -107,6 +107,8 @@ jobs:
           ls -la
           echo "--- _site Directory Contents ---"
           ls -la _site
+          echo "--- _site/dox-theme/assets/js/ Contents (Recursive) ---"
+          ls -laR _site/dox-theme/assets/js/ || echo "Directory _site/dox-theme/assets/js/ not found"
       
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
