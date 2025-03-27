@@ -36,12 +36,6 @@ jobs:
           persist-credentials: false
           set-safe-directory: /home/runner/work/mainwp.dev/mainwp.dev
 
-      # NEW: Verify theme files exist immediately after checkout
-      - name: Verify Theme Files After Checkout
-        run: |
-          echo "Checking theme files immediately after checkout..."
-          ls -la dox-theme/assets/js/vendor/ || echo "Source directory dox-theme/assets/js/vendor/ NOT FOUND after checkout!"
-
       - name: Verify repository state
         run: |
           echo "Repository structure:"
@@ -106,27 +100,6 @@ jobs:
         run: JEKYLL_ENV=production bundle exec jekyll build --verbose
         env:
           JEKYLL_ENV: production
-
-      # Verify source vendor dir exists BEFORE copy
-      - name: Check Source Vendor Dir
-        run: |
-          echo "Checking if source vendor directory exists before copy..."
-          ls -la dox-theme/assets/js/vendor/ || echo "Source directory dox-theme/assets/js/vendor/ NOT FOUND before copy attempt!"
-
-      # Explicitly copy missing JS vendor files into _site
-      - name: Copy JS Vendor Files
-        run: |
-          echo "Copying JS vendor files into _site..."
-          mkdir -p _site/dox-theme/assets/js/vendor # Ensure target dir exists
-          if [ -d "dox-theme/assets/js/vendor" ]; then
-            cp -R dox-theme/assets/js/vendor/* _site/dox-theme/assets/js/vendor/
-            echo "Vendor files copied."
-          else
-            echo "Source vendor directory not found!"
-            exit 1
-          fi
-          echo "Verifying copy..."
-          ls -la _site/dox-theme/assets/js/vendor/
 
       - name: Verify Build Output
         run: |
