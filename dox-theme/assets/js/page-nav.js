@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         heading.addEventListener('click', () => {
+            console.log(`Sidebar section heading clicked: ${sectionId}`); // DEBUG
             section.classList.toggle('is-expanded');
             
             // Save state to localStorage
@@ -62,10 +63,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Throttle scroll event
     window.addEventListener('scroll', () => {
+        // console.log('Scroll event detected'); // DEBUG - Potentially too noisy
         if (scrollTimeout) {
             window.cancelAnimationFrame(scrollTimeout);
         }
-        scrollTimeout = window.requestAnimationFrame(updateActiveSection);
+        scrollTimeout = window.requestAnimationFrame(function() { // Wrap updateActiveSection for logging
+             console.log('Running updateActiveSection due to scroll'); // DEBUG
+             updateActiveSection();
+        });
     });
 
     // Smooth scroll to section when clicking nav links
@@ -97,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.appendChild(toggleButton);
 
     toggleButton.addEventListener('click', () => {
+        console.log('Mobile sidebar toggle clicked!'); // DEBUG
         pageNav.classList.toggle('is-visible');
     });
 
