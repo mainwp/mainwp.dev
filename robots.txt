@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://mainwp.github.io/mainwp.dev/sitemap.xml
