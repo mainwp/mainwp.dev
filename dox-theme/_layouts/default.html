@@ -13,6 +13,14 @@
 
         <!-- Theme styles -->
         <link rel="stylesheet" href="{{ '/dox-theme/assets/css/style.css' | absolute_url }}">
+
+        <!-- Theme scripts (deferred) -->
+        <script src="{{ '/dox-theme/assets/js/vendor/jquery.min.js' | absolute_url }}" defer></script>
+        <script src="{{ '/dox-theme/assets/js/vendor/highlight.pack.js' | absolute_url }}" defer></script>
+        <script src="{{ '/dox-theme/assets/js/theme-toggle.js' | absolute_url }}" defer></script>
+        <script src="{{ '/dox-theme/assets/js/navigation.js' | absolute_url }}" defer></script>
+        <script src="{{ '/dox-theme/assets/js/page-nav.js' | absolute_url }}" defer></script> <!-- Added page-nav.js here -->
+        <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}" defer></script>
     </head>
     <body>
         {% include header.html %}
@@ -51,13 +59,17 @@
 
         {% include footer.html bordered=true %}
 
-        <!-- Theme scripts -->
-        <script src="{{ '/dox-theme/assets/js/vendor/jquery.min.js' | absolute_url }}"></script>
-        <script src="{{ '/dox-theme/assets/js/vendor/highlight.pack.js' | absolute_url }}"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script src="{{ '/dox-theme/assets/js/theme-toggle.js' | absolute_url }}"></script>
-        <script src="{{ '/dox-theme/assets/js/navigation.js' | absolute_url }}"></script>
-        <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}"></script>
+        <!-- Initialize highlighting after defer ensures hljs is loaded -->
+        <script defer>
+          document.addEventListener('DOMContentLoaded', (event) => {
+            // TODO: Replace deprecated call with hljs.highlightAll(); later
+            if (typeof hljs !== 'undefined') {
+              hljs.initHighlightingOnLoad(); 
+            } else {
+              console.error('Highlight.js (hljs) not loaded');
+            }
+          });
+        </script>
 
         {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
             <!-- Google Analytics -->
