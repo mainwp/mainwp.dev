@@ -97,7 +97,7 @@ jobs:
       
       # Build Jekyll site
       - name: Build Jekyll
-        run: JEKYLL_ENV=production bundle exec jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build --verbose
         env:
           JEKYLL_ENV: production
 
