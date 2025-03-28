@@ -15,12 +15,12 @@
         <link rel="stylesheet" href="{{ '/dox-theme/assets/css/style.css' | absolute_url }}">
 
         <!-- Theme scripts (deferred) -->
-        <script src="{{ '/dox-theme/assets/js/vendor/jquery.min.js' | absolute_url }}" defer></script>
-        <script src="{{ '/dox-theme/assets/js/vendor/highlight.pack.js' | absolute_url }}" defer></script>
-        <script src="{{ '/dox-theme/assets/js/theme-toggle.js' | absolute_url }}" defer></script>
-        <script src="{{ '/dox-theme/assets/js/navigation.js' | absolute_url }}" defer></script>
-        <script src="{{ '/dox-theme/assets/js/page-nav.js' | absolute_url }}" defer></script> <!-- Added page-nav.js here -->
-        <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}" defer></script>
+        <script src="{{ '/dox-theme/assets/js/vendor/jquery.min.js' | absolute_url }}" defer></script> <!-- Keep vendor -->
+        <script src="{{ '/dox-theme/assets/js/vendor/highlight.pack.js' | absolute_url }}" defer></script> <!-- Keep vendor -->
+        <!-- <script src="{{ '/dox-theme/assets/js/theme-toggle.js' | absolute_url }}" defer></script> --> <!-- DEBUG: Isolate navigation.js -->
+        <script src="{{ '/dox-theme/assets/js/navigation.js' | absolute_url }}" defer></script> <!-- Keep navigation.js -->
+        <!-- <script src="{{ '/dox-theme/assets/js/page-nav.js' | absolute_url }}" defer></script> --> <!-- DEBUG: Isolate navigation.js -->
+        <!-- <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}" defer></script> --> <!-- DEBUG: Isolate navigation.js -->
     </head>
     <body>
         {% include header.html %}
