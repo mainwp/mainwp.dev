@@ -45,6 +45,11 @@
   --color-syntax-keyword: #{$dox-color-primary};
   --color-syntax-string: #{$dox-color-secondary};
   --color-syntax-number: #{$dox-color-accent};
+
+  // Z-index layers
+  --dox-z-index-header: #{$dox-z-index-header};
+  --dox-z-index-nav: #{$dox-z-index-nav};
+  --dox-z-index-overlay: #{$dox-z-index-overlay};
 }
 
 // Dark mode styles
