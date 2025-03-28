@@ -5,7 +5,7 @@
 .c-header {
     position: sticky;
     top: 0;
-    z-index: var(--dox-z-index-header);
+    z-index: 1000; // Directly set z-index to bypass variable issues
     padding: 1rem 0;
     background-color: var(--color-background);
     border-bottom: 1px solid var(--color-border);
