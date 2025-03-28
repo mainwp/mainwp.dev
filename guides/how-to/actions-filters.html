@@ -1639,12 +1639,24 @@ id: “related-resources”
 
 
         <!-- Theme scripts -->
-        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/vendor/jquery.min.js"></script>
-        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/vendor/highlight.pack.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/theme-toggle.js"></script>
-        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/scripts.js"></script>
-        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/page-nav.js"></script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/vendor/jquery.min.js" defer></script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/vendor/highlight.pack.js" defer></script>
+        <script defer>
+          // Defer initialization until DOM is ready and scripts are loaded
+          document.addEventListener('DOMContentLoaded', (event) => {
+            if (typeof hljs !== 'undefined') {
+              // TODO: Replace deprecated call with hljs.highlightAll(); later
+              hljs.initHighlightingOnLoad(); 
+            } else {
+              console.error('Highlight.js (hljs) not loaded');
+            }
+          });
+        </script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/theme-toggle.js" defer></script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/scripts.js" defer></script>
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/page-nav.js" defer></script>
+        <!-- Ensure navigation.js is also deferred if it's added back -->
+        <script src="https://mainwp.github.io/mainwp.dev/dox-theme/assets/js/navigation.js" defer></script> 
 
         
     </body>
