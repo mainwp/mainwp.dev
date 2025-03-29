@@ -77,6 +77,7 @@
   --color-input-background: #{lighten($dox-color-dark, 5%)};
   --color-input-border: #{$color-gray-400};
   --color-input-text: #{$dox-color-light};
+  --color-dropdown-text-dark: #{$dox-color-light}; // Added for dropdown link contrast
   
   // Syntax highlighting (dark)
   --color-syntax-background: #{lighten($dox-color-dark, 5%)};
