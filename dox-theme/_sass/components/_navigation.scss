@@ -241,7 +241,7 @@
 // Dark mode adjustments
 .dark-mode {
     .c-nav__dropdown {
-        background-color: var(--color-dropdown-background-dark); // Use specific dark gray background
+        background-color: #2d3b44; // Directly set dark gray background to bypass variable issues
         border-color: rgba(255, 255, 255, 0.1); // Keep subtle border
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // Keep shadow
     }
