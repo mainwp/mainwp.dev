@@ -241,18 +241,17 @@
 // Dark mode adjustments
 .dark-mode {
     .c-nav__dropdown {
-        // Use the standard background variable which is redefined for dark mode
-        background-color: var(--color-background); 
-        border-color: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        background-color: var(--color-dropdown-background-dark); // Use specific dark gray background
+        border-color: rgba(255, 255, 255, 0.1); // Keep subtle border
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // Keep shadow
     }
 
     .c-nav__dropdown-link {
-        color: var(--color-dropdown-text-dark); // Use specific variable for contrast
+        color: var(--color-dropdown-text-dark); // Use pure white text
     }
 
     .c-nav__dropdown-link:hover {
-        background-color: rgba(255, 255, 255, 0.1); // Slightly lighter hover background
-        // color: var(--color-primary); // Alternative: Change text color on hover
+        background-color: rgba(255, 255, 255, 0.1); // Keep subtle hover background
+        color: var(--color-dropdown-text-dark); // Ensure text remains white on hover
     }
 }
