@@ -63,10 +63,10 @@
     min-width: 200px;
     padding: 0.5rem 0;
     margin-top: 0.5rem;
-    background-color: var(--color-background);
-    border: 1px solid var(--color-border);
+    background-color: var(--color-dropdown-background-dark); // Use specific dark background
+    border: 1px solid var(--color-border); // Border uses dark mode variable now
     border-radius: var(--dox-border-radius);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // Adjusted shadow for dark bg
     z-index: calc(var(--dox-z-index-header) - 1);
 
     &.is-active {
@@ -82,14 +82,14 @@
 .c-nav__dropdown-link {
     display: block;
     padding: 0.5rem 1rem;
-    color: var(--color-text);
+    color: var(--color-dropdown-text-dark); // Use specific white text
     text-decoration: none;
     font-size: 0.875rem;
     transition: all 0.2s ease;
 
     &:hover {
-        color: var(--color-primary);
-        background-color: var(--color-border);
+        color: var(--color-dropdown-text-dark); // Keep text white on hover
+        background-color: rgba(255, 255, 255, 0.1); // Subtle background hover
     }
 
     &.is-active {
@@ -238,20 +238,7 @@
     }
 }
 
-// Dark mode adjustments
-.dark-mode {
-    .c-nav__dropdown {
-        background-color: #2d3b44; // Directly set dark gray background to bypass variable issues
-        border-color: rgba(255, 255, 255, 0.1); // Keep subtle border
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // Keep shadow
-    }
-
-    .c-nav__dropdown-link {
-        color: var(--color-dropdown-text-dark); // Use pure white text
-    }
-
-    .c-nav__dropdown-link:hover {
-        background-color: rgba(255, 255, 255, 0.1); // Keep subtle hover background
-        color: var(--color-dropdown-text-dark); // Ensure text remains white on hover
-    }
-}
+// Dark mode adjustments removed as dark mode is now permanent
+// Styles for dropdown background and text color should now be handled
+// by the base .c-nav__dropdown and .c-nav__dropdown-link rules
+// using the CSS variables defined in :root in _dark-mode.scss.

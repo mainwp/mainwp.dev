@@ -1,108 +1,61 @@
 /* =============================================================================
-   DARK MODE (settings/_dark-mode.scss)
+   DARK MODE SETTINGS (settings/_dark-mode.scss)
    ========================================================================== */
 
 /**
- * Dark mode color system using CSS custom properties
+ * Defines the CSS custom properties for the permanent dark theme.
+ * Light mode has been removed for simplicity and to resolve CSS issues.
  */
 
-// Convert our SCSS color variables to CSS custom properties
+// Define CSS custom properties directly in :root with dark mode values
 :root {
   // Base colors
   --color-primary: #{$dox-color-primary};
   --color-secondary: #{$dox-color-secondary};
   --color-accent: #{$dox-color-accent};
   
-  // Light mode defaults
-  --color-background: #{$dox-color-light};
-  --color-text: #{$dox-color-dark};
-  --color-text-muted: #{$color-gray-500};
-  --color-border: #{$color-gray-200};
-  
-  // UI Colors
-  --color-link: #{$color-link};
-  --color-link-hover: #{$color-link-hover};
-  --color-code-background: #{darken($dox-color-light, 3%)};
-  --color-header-background: #{$dox-color-dark};
-  --color-header-text: #{$dox-color-light};
-  --color-nav-background: #{darken($dox-color-light, 2%)};
-  --color-nav-text: #{$dox-color-dark};
-  --color-footer-background: #{$dox-color-dark};
-  --color-footer-text: #{$dox-color-light};
-  
-  // Component colors
-  --color-button-primary: #{$color-primary};
-  --color-button-secondary: #{$color-secondary};
-  --color-button-text: #{$dox-color-light};
-  --color-input-background: #{$dox-color-light};
-  --color-input-border: #{$color-gray-300};
-  --color-input-text: #{$dox-color-dark};
-  
-  // Syntax highlighting base (light)
-  --color-syntax-background: #{darken($dox-color-light, 3%)};
-  --color-syntax-text: #{$dox-color-dark};
-  --color-syntax-comment: #{$color-gray-500};
-  --color-syntax-keyword: #{$dox-color-primary};
-  --color-syntax-string: #{$dox-color-secondary};
-  --color-syntax-number: #{$dox-color-accent};
-
-  // Z-index layers
-  --dox-z-index-header: #{$dox-z-index-header};
-  --dox-z-index-nav: #{$dox-z-index-nav};
-  --dox-z-index-overlay: #{$dox-z-index-overlay};
-}
-
-// Dark mode styles
-@mixin dark-mode {
+  // Dark mode theme colors
   --color-background: #{$dox-color-dark};
   --color-text: #{$dox-color-light};
   --color-text-muted: #{$color-gray-300};
   --color-border: #{$color-gray-400};
   
-  // UI Colors
+  // UI Colors (Dark)
   --color-link: #{lighten($color-link, 15%)};
   --color-link-hover: #{lighten($color-link, 25%)};
   --color-code-background: #{lighten($dox-color-dark, 5%)};
   --color-header-background: #{lighten($dox-color-dark, 3%)};
   --color-header-text: #{$dox-color-light};
-  --color-nav-background: #{lighten($dox-color-dark, 2%)};
-  --color-nav-text: #{$dox-color-light};
+  --color-nav-background: #{lighten($dox-color-dark, 2%)}; // Might not be used now
+  --color-nav-text: #{$dox-color-light}; // Might not be used now
   --color-footer-background: #{lighten($dox-color-dark, 3%)};
   --color-footer-text: #{$dox-color-light};
   
-  // Component colors
+  // Component colors (Dark)
   --color-button-primary: #{lighten($color-primary, 5%)};
   --color-button-secondary: #{lighten($color-secondary, 5%)};
   --color-button-text: #{$dox-color-light};
   --color-input-background: #{lighten($dox-color-dark, 5%)};
   --color-input-border: #{$color-gray-400};
   --color-input-text: #{$dox-color-light};
-  --color-dropdown-background-dark: #{$dox-color-dark-gray}; // Added for dropdown background
-  --color-dropdown-text-dark: #{$color-white}; // Use pure white for max contrast
+  --color-dropdown-background-dark: #{$dox-color-dark-gray}; // Keep specific dropdown background
+  --color-dropdown-text-dark: #{$color-white}; // Keep specific dropdown text
   
-  // Syntax highlighting (dark)
+  // Syntax highlighting (Dark)
   --color-syntax-background: #{lighten($dox-color-dark, 5%)};
   --color-syntax-text: #{$dox-color-light};
   --color-syntax-comment: #{$color-gray-300};
   --color-syntax-keyword: #{lighten($dox-color-primary, 10%)};
   --color-syntax-string: #{lighten($dox-color-secondary, 10%)};
   --color-syntax-number: #{lighten($dox-color-accent, 10%)};
+
+  // Z-index layers (Keep these defined)
+  --dox-z-index-header: #{$dox-z-index-header};
+  --dox-z-index-nav: #{$dox-z-index-nav};
+  --dox-z-index-overlay: #{$dox-z-index-overlay};
 }
 
-// Apply dark mode styles based on class or system preference
-.dark-mode {
-  @include dark-mode;
-  // Explicitly define dropdown background here for higher certainty
-  --color-dropdown-background-dark: #{$dox-color-dark-gray}; 
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not(.light-mode) {
-    @include dark-mode;
-  }
-}
-
-// Base element styles using CSS variables
+// Base element styles using CSS variables (Ensure these use the variables defined above)
 body {
   color: var(--color-text);
   background-color: var(--color-background);
@@ -122,52 +75,4 @@ code {
   background-color: var(--color-code-background);
 }
 
-// Theme toggle button styles
-.c-theme-toggle {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
-  transition: $dox-transition-base;
-  
-  &:hover {
-    background-color: rgba(var(--color-text), 0.1);
-  }
-  
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--color-primary);
-  }
-}
-
-.c-theme-toggle__icon {
-  position: absolute;
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  
-  &--light {
-    opacity: 0;
-    transform: rotate(-90deg) scale(0);
-    
-    .dark-mode & {
-      opacity: 1;
-      transform: rotate(0) scale(1);
-    }
-  }
-  
-  &--dark {
-    opacity: 1;
-    transform: rotate(0) scale(1);
-    
-    .dark-mode & {
-      opacity: 0;
-      transform: rotate(90deg) scale(0);
-    }
-  }
-}
+// Theme toggle button styles removed as toggle is disabled

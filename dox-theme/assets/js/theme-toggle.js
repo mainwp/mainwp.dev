@@ -1,40 +1,7 @@
 /**
- * Theme Toggle functionality
- */
-document.addEventListener('DOMContentLoaded', function() {
-    const themeToggle = document.querySelector('.js-theme-toggle');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    // Function to set theme
-    function setTheme(theme) {
-        document.documentElement.classList.remove('light-mode', 'dark-mode');
-        document.documentElement.classList.add(theme + '-mode');
-        localStorage.setItem('theme', theme);
-    }
-
-    // Initialize theme - default to dark mode if no saved preference
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    setTheme(savedTheme);
-
-    // Toggle theme on button click
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = localStorage.getItem('theme') || 'dark';
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-    });
-
-    // Handle system theme changes - ignore system preference, keep dark mode as default
-    prefersDarkScheme.addEventListener('change', (e) => {
-        const savedTheme = localStorage.getItem('theme');
-        if (!savedTheme) {
-            setTheme('dark');
-        }
-    });
-});
-
-/**
  * Mobile Navigation functionality
  */
+// Theme toggle functionality removed as light mode is disabled.
 document.addEventListener('DOMContentLoaded', function() {
     const navTrigger = document.querySelector('.js-nav-trigger');
     const navWrap = document.querySelector('.c-nav-wrap');
