@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth > 768) {
             const parentItem = link.closest('.c-nav__item');
             let closeTimeout;
-            const delay = 300; // milliseconds
+            const delay = 500; // milliseconds (Increased from 300ms)
 
             // Function to open the dropdown
             const openDropdown = () => {
