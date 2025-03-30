@@ -42,18 +42,57 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Hover handler for desktop
+        // Hover handler for desktop with delay and dropdown hover support
         if (window.innerWidth > 768) {
-            link.addEventListener('mouseenter', function() {
-                console.log('Dropdown mouseenter (desktop)'); // DEBUG
-                link.setAttribute('aria-expanded', 'true');
-                dropdown.classList.add('is-active');
-            });
+            const parentItem = link.closest('.c-nav__item');
+            let closeTimeout;
+            const delay = 300; // milliseconds
 
-            link.parentElement.addEventListener('mouseleave', function() {
-                console.log('Dropdown mouseleave (desktop)'); // DEBUG
-                link.setAttribute('aria-expanded', 'false');
-                dropdown.classList.remove('is-active');
+            // Function to open the dropdown
+            const openDropdown = () => {
+                clearTimeout(closeTimeout); // Clear any pending close timeout
+                // Close other open dropdowns immediately
+                dropdownLinks.forEach(otherLink => {
+                    const otherParent = otherLink.closest('.c-nav__item');
+                    if (otherParent !== parentItem) {
+                        otherLink.setAttribute('aria-expanded', 'false');
+                        if (otherLink.nextElementSibling) {
+                           otherLink.nextElementSibling.classList.remove('is-active');
+                        }
+                    }
+                });
+                // Open this dropdown
+                link.setAttribute('aria-expanded', 'true');
+                if (dropdown) {
+                    dropdown.classList.add('is-active');
+                }
+            };
+
+            // Function to start the close timer
+            const startCloseTimer = () => {
+                clearTimeout(closeTimeout); // Clear existing timer before starting new one
+                closeTimeout = setTimeout(() => {
+                    console.log('Close timeout executed for:', link.textContent.trim()); // DEBUG
+                    link.setAttribute('aria-expanded', 'false');
+                    if (dropdown) {
+                        dropdown.classList.remove('is-active');
+                    }
+                }, delay);
+            };
+
+            // Add listeners to both parent item and dropdown
+            [parentItem, dropdown].forEach(element => {
+                if (element) { // Check if dropdown exists
+                    element.addEventListener('mouseenter', () => {
+                        console.log('Mouseenter on parent or dropdown:', link.textContent.trim()); // DEBUG
+                        openDropdown(); // Open or keep open, clear close timer
+                    });
+
+                    element.addEventListener('mouseleave', () => {
+                        console.log('Mouseleave from parent or dropdown:', link.textContent.trim()); // DEBUG
+                        startCloseTimer(); // Start timer to close
+                    });
+                }
             });
         }
     });
