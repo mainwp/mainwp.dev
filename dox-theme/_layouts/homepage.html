@@ -22,10 +22,22 @@
         {% include footer.html %}
 
         <!-- Theme scripts -->
-        <script src="{{ '/dox-theme/assets/js/vendor/jquery.min.js' | absolute_url }}"></script>
-        <script src="{{ '/dox-theme/assets/js/vendor/highlight.pack.js' | absolute_url }}"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}"></script>
+        <script src="{{ '/dox-theme/assets/js/vendor/jquery.min.js' | absolute_url }}" defer></script>
+        <script src="{{ '/dox-theme/assets/js/vendor/highlight.pack.js' | absolute_url }}" defer></script>
+        <script defer>
+          // Defer initialization until DOM is ready and scripts are loaded
+          document.addEventListener('DOMContentLoaded', (event) => {
+            if (typeof hljs !== 'undefined') {
+              // TODO: Replace deprecated call with hljs.highlightAll(); later
+              hljs.initHighlightingOnLoad(); 
+            } else {
+              console.error('Highlight.js (hljs) not loaded');
+            }
+          });
+        </script>
+        <script src="{{ '/dox-theme/assets/js/theme-toggle.js' | absolute_url }}" defer></script> <!-- Added for consistency -->
+        <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}" defer></script>
+        <script src="{{ '/dox-theme/assets/js/navigation.js' | absolute_url }}" defer></script> <!-- Added missing navigation script -->
 
         {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
             <!-- Google Analytics -->
