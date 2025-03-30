@@ -92,6 +92,8 @@
 // Apply dark mode styles based on class or system preference
 .dark-mode {
   @include dark-mode;
+  // Explicitly define dropdown background here for higher certainty
+  --color-dropdown-background-dark: #{$dox-color-dark-gray}; 
 }
 
 @media (prefers-color-scheme: dark) {
