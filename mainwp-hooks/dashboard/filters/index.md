@@ -1,67 +1,59 @@
 # MainWP Dashboard Filters
 
-This section provides documentation for all filter hooks available in the MainWP Dashboard plugin.
+This section provides documentation for all filters hooks available in the MainWP Dashboard plugin.
 
 ## Categories
 
-- [Site Management](site-management/index.md) (194 hooks)
-- [Updates & Maintenance](updates-maintenance/index.md) (301 hooks)
-- [Content Management](content-management/index.md) (213 hooks)
-- [User Management](user-management/index.md) (61 hooks)
-- [Backups & Restoration](backups-restoration/index.md) (65 hooks)
-- [Security & Monitoring](security-monitoring/index.md) (50 hooks)
-- [Client Reports](client-reports/index.md) (41 hooks)
-- [UI & Display](ui-display/index.md) (152 hooks)
-- [Extensions & Integration](extensions-integration/index.md) (5 hooks)
-- [API & Remote Communication](api-remote/index.md) (80 hooks)
+- [API & Remote Communication](api-remote/index.md) (37 hooks)
+- [Backups & Restoration](backups-restoration/index.md) (9 hooks)
+- [Client Reports](client-reports/index.md) (39 hooks)
+- [Content Management](content-management/index.md) (195 hooks)
+- [Extensions & Integration](extensions-integration/index.md) (6 hooks)
+- [Security & Monitoring](security-monitoring/index.md) (46 hooks)
+- [Site Management](site-management/index.md) (139 hooks)
 - [System & Settings](system-settings/index.md) (24 hooks)
+- [UI & Display](ui-display/index.md) (95 hooks)
+- [Updates & Maintenance](updates-maintenance/index.md) (218 hooks)
+- [User Management](user-management/index.md) (50 hooks)
+- [Miscellaneous](misc/index.md) (65 hooks)
 
 ## All Filters (Alphabetical)
 
-- [`activate_{$plugin}`](updates-maintenance/index.md#activate_plugin) - Emulate deactivating, then subsequently reactivating the plugin.
-- [`add_meta_boxes`](content-management/index.md#add_meta_boxes) - Edit bulkpost metaboxes
-- [`admin_post_thumbnail_size`](content-management/index.md#admin_post_thumbnail_size) - Filters the size used to display the post thumbnail image in the 'Featured Image' meta box.
-- [`admin_print_styles`](content-management/index.md#admin_print_styles) - Method setup_wizard_header()
-- [`after_mainwp_menu`](ui-display/index.md#after_mainwp_menu) - Action: after_mainwp_menu
-- [`after_mainwp_menu`](ui-display/index.md#after_mainwp_menu) - Action: after_mainwp_menu
-- [`before_mainwp_menu`](ui-display/index.md#before_mainwp_menu) - Action: before_mainwp_menu
-- [`before_mainwp_menu`](ui-display/index.md#before_mainwp_menu) - Action: before_mainwp_menu
-- [`cloudways_api_form_bottom`](api-remote/index.md#cloudways_api_form_bottom) - Action: cloudways_api_form_bottom
-- [`cloudways_api_form_top`](api-remote/index.md#cloudways_api_form_top) - Action: cloudways_api_form_top
-- [`cpanel_api_form`](api-remote/index.md#cpanel_api_form) - Action: cpanel_api_form
-- [`cpanel_api_form_bottom`](api-remote/index.md#cpanel_api_form_bottom) - Action: cpanel_api_form_bottom
-- [`date_formats`](content-management/index.md#date_formats) - *Arguments*
-- [`deactivate_{$plugin}`](updates-maintenance/index.md#deactivate_plugin) - Emulate deactivating, then subsequently reactivating the plugin.
-- [`deprecated_hook_run`](ui-display/index.md#deprecated_hook_run) - Display a deprecated notice for old hooks.
-- [`digitalocean_api_form_bottom`](api-remote/index.md#digitalocean_api_form_bottom) - Action: digitalocean_api_form_bottom
-- [`digitalocean_api_form_top`](api-remote/index.md#digitalocean_api_form_top) - Action: digitalocean_api_form_top
-- [`error_log_mainwp_lines`](content-management/index.md#error_log_mainwp_lines) - Filter: error_log_mainwp_lines
-- [`error_log_mainwp_logs`](content-management/index.md#error_log_mainwp_logs) - Filter: error_log_mainwp_logs
-- [`file_mod_allowed`](updates-maintenance/index.md#file_mod_allowed) - Disables plugin installation
-- [`file_mod_allowed`](updates-maintenance/index.md#file_mod_allowed) - Disables themes installation
-- [`gridpane_api_form_bottom`](api-remote/index.md#gridpane_api_form_bottom) - Action: gridpane_api_form_bottom
-- [`gridpane_api_form_top`](api-remote/index.md#gridpane_api_form_top) - Action: gridpane_api_form_top
-- [`https_local_ssl_verify`](api-remote/index.md#https_local_ssl_verify) - *Arguments*
-- [`kinsta_api_form_bottom`](api-remote/index.md#kinsta_api_form_bottom) - Action: kinsta_api_form_bottom
-- [`kinsta_api_form_top`](api-remote/index.md#kinsta_api_form_top) - Action: kinsta_api_form_top
-- [`linode_api_form_bottom`](api-remote/index.md#linode_api_form_bottom) - Action: linode_api_form_bottom
-- [`linode_api_form_top`](api-remote/index.md#linode_api_form_top) - Action: linode_api_form_top
-- [`mainwp-activated`](api-remote/index.md#mainwp-activated) - MainWP_System constructor.
+- [`activate_{$plugin}`](updates-maintenance/index.md#activate-plugin) - Emulate deactivating, then subsequently reactivating the plugin.
+- [`add_meta_boxes`](content-management/index.md#add-meta-boxes) - Edit bulkpost metaboxes
+- [`admin_post_thumbnail_size`](content-management/index.md#admin-post-thumbnail-size) - Filters the size used to display the post thumbnail image in the 'Featured Image' meta box.
+- [`admin_print_styles`](misc/index.md#admin-print-styles) - Method setup_wizard_header()
+- [`after_mainwp_menu`](ui-display/index.md#after-mainwp-menu) - Action: after_mainwp_menu
+- [`before_mainwp_menu`](ui-display/index.md#before-mainwp-menu) - Action: before_mainwp_menu
+- [`cloudways_api_form_bottom`](api-remote/index.md#cloudways-api-form-bottom) - Action: cloudways_api_form_bottom
+- [`cloudways_api_form_top`](api-remote/index.md#cloudways-api-form-top) - Action: cloudways_api_form_top
+- [`cpanel_api_form`](api-remote/index.md#cpanel-api-form) - Action: cpanel_api_form
+- [`cpanel_api_form_bottom`](api-remote/index.md#cpanel-api-form-bottom) - Action: cpanel_api_form_bottom
+- [`date_formats`](misc/index.md#date-formats) - *Arguments*
+- [`deactivate_{$plugin}`](updates-maintenance/index.md#deactivate-plugin) - Emulate deactivating, then subsequently reactivating the plugin.
+- [`deprecated_hook_run`](ui-display/index.md#deprecated-hook-run) - Display a deprecated notice for old hooks.
+- [`digitalocean_api_form_bottom`](api-remote/index.md#digitalocean-api-form-bottom) - Action: digitalocean_api_form_bottom
+- [`digitalocean_api_form_top`](api-remote/index.md#digitalocean-api-form-top) - Action: digitalocean_api_form_top
+- [`error_log_mainwp_lines`](ui-display/index.md#error-log-mainwp-lines) - Filter: error_log_mainwp_lines
+- [`error_log_mainwp_logs`](misc/index.md#error-log-mainwp-logs) - Filter: error_log_mainwp_logs
+- [`file_mod_allowed`](updates-maintenance/index.md#file-mod-allowed) - Disables plugin installation
+- [`gridpane_api_form_bottom`](api-remote/index.md#gridpane-api-form-bottom) - Action: gridpane_api_form_bottom
+- [`gridpane_api_form_top`](api-remote/index.md#gridpane-api-form-top) - Action: gridpane_api_form_top
+- [`https_local_ssl_verify`](api-remote/index.md#https-local-ssl-verify) - *Arguments*
+- [`kinsta_api_form_bottom`](api-remote/index.md#kinsta-api-form-bottom) - Action: kinsta_api_form_bottom
+- [`kinsta_api_form_top`](api-remote/index.md#kinsta-api-form-top) - Action: kinsta_api_form_top
+- [`linode_api_form_bottom`](api-remote/index.md#linode-api-form-bottom) - Action: linode_api_form_bottom
+- [`linode_api_form_top`](api-remote/index.md#linode-api-form-top) - Action: linode_api_form_top
+- [`mainwp-activated`](system-settings/index.md#mainwp-activated) - MainWP_System constructor.
 - [`mainwp-after-posting-bulkpage-result`](content-management/index.md#mainwp-after-posting-bulkpage-result) - After posting a new page
 - [`mainwp-after-posting-bulkpost-result`](content-management/index.md#mainwp-after-posting-bulkpost-result) - After posting a new post
 - [`mainwp-bulkposting-done`](content-management/index.md#mainwp-bulkposting-done) - Method posting_posts()
-- [`mainwp-bulkposting-done`](content-management/index.md#mainwp-bulkposting-done) - Method posting()
 - [`mainwp-extension-sites-edit`](site-management/index.md#mainwp-extension-sites-edit) - Method render_edit_site()
 - [`mainwp-getcustompage-backups`](content-management/index.md#mainwp-getcustompage-backups) - Backups Subpages
 - [`mainwp-getextensions`](extensions-integration/index.md#mainwp-getextensions) - Method init_menu()
 - [`mainwp-getmetaboxes`](ui-display/index.md#mainwp-getmetaboxes) - Method apply_filter()
 - [`mainwp-getprimarybackup-activated`](backups-restoration/index.md#mainwp-getprimarybackup-activated) - Method admin_init()
 - [`mainwp-getprimarybackup-methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Method get_columns()
-- [`mainwp-getprimarybackup-methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Renders the Backup Site Dialog.
-- [`mainwp-getprimarybackup-methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Render Legacy Backups page.
-- [`mainwp-getprimarybackup-methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Method render_settings()
-- [`mainwp-getprimarybackup-methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Method render_individual_settings()
-- [`mainwp-getprimarybackup-methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Gets MainWP Set Options.
 - [`mainwp-getsubpages-backups`](content-management/index.md#mainwp-getsubpages-backups) - Instantiate Legacy Backups Menu.
 - [`mainwp-getsubpages-page`](content-management/index.md#mainwp-getsubpages-page) - Method init_menu()
 - [`mainwp-getsubpages-plugins`](updates-maintenance/index.md#mainwp-getsubpages-plugins) - Plugins Subpages
@@ -72,7 +64,6 @@ This section provides documentation for all filter hooks available in the MainWP
 - [`mainwp-getsubpages-themes`](updates-maintenance/index.md#mainwp-getsubpages-themes) - Themes Subpages
 - [`mainwp-getsubpages-user`](content-management/index.md#mainwp-getsubpages-user) - This hook allows you to add extra sub pages to the User page via the 'mainwp-getsubpages-user' filter.
 - [`mainwp-manage-sites-edit`](site-management/index.md#mainwp-manage-sites-edit) - Method render_edit_site()
-- [`mainwp-manage-sites-edit`](site-management/index.md#mainwp-manage-sites-edit) - Method render_new_site_add_new_site()
 - [`mainwp-post-posting-page`](content-management/index.md#mainwp-post-posting-page) - Method posting()
 - [`mainwp-post-posting-post`](content-management/index.md#mainwp-post-posting-post) - Method posting_posts()
 - [`mainwp-pre-posting-posts`](content-management/index.md#mainwp-pre-posting-posts) - Filter is being replaced with mainwp_pre_posting_posts.
@@ -85,1122 +76,860 @@ This section provides documentation for all filter hooks available in the MainWP
 - [`mainwp-sync-extensions-options`](site-management/index.md#mainwp-sync-extensions-options) - Method render_sync_exts_settings()
 - [`mainwp-sync-others-data`](site-management/index.md#mainwp-sync-others-data) - Method sync_site()
 - [`mainwp-users-manage-roles`](user-management/index.md#mainwp-users-manage-roles) - Renders manage users dashboard.
-- [`mainwp-users-manage-roles`](user-management/index.md#mainwp-users-manage-roles) - Renders Edit Users Modal window.
-- [`mainwp-users-manage-roles`](user-management/index.md#mainwp-users-manage-roles) - Renders the Add New user form.
-- [`mainwp-users-manage-roles`](user-management/index.md#mainwp-users-manage-roles) - Method do_bulk_add()
 - [`mainwp-widgets-screen-options`](ui-display/index.md#mainwp-widgets-screen-options) - Method render_screen_options()
-- [`mainwp-wordfence-sites`](site-management/index.md#mainwp-wordfence-sites) - Method render_scan_site()
-- [`mainwp_activated`](updates-maintenance/index.md#mainwp_activated) - Action: mainwp_activated
-- [`mainwp_add_backuptask`](backups-restoration/index.md#mainwp_add_backuptask) - Add backup task.
-- [`mainwp_add_new_user_after_select_sites`](user-management/index.md#mainwp_add_new_user_after_select_sites) - Action: mainwp_add_new_user_after_select_sites
-- [`mainwp_add_new_user_after_submit_button`](user-management/index.md#mainwp_add_new_user_after_submit_button) - Action: mainwp_add_new_user_after_submit_button
-- [`mainwp_add_new_user_before_select_sites`](user-management/index.md#mainwp_add_new_user_before_select_sites) - Action: mainwp_add_new_user_before_select_sites
-- [`mainwp_add_new_user_before_submit_button`](user-management/index.md#mainwp_add_new_user_before_submit_button) - Action: mainwp_add_new_user_before_submit_button
-- [`mainwp_add_new_user_sidebar_bottom`](user-management/index.md#mainwp_add_new_user_sidebar_bottom) - Action: mainwp_add_new_user_sidebar_bottom
-- [`mainwp_add_new_user_sidebar_top`](user-management/index.md#mainwp_add_new_user_sidebar_top) - Action: mainwp_add_new_user_sidebar_top
-- [`mainwp_added_extension_menu`](ui-display/index.md#mainwp_added_extension_menu) - Adds Extension to the navigation menu
-- [`mainwp_added_new_group`](site-management/index.md#mainwp_added_new_group) - New Group Added
-- [`mainwp_added_new_group`](site-management/index.md#mainwp_added_new_group) - New Group Added
-- [`mainwp_added_new_group`](site-management/index.md#mainwp_added_new_group) - New Group Added
-- [`mainwp_added_new_group`](site-management/index.md#mainwp_added_new_group) - This action is documented in pages\page-mainwp-manage-groups.php
-- [`mainwp_added_new_site`](site-management/index.md#mainwp_added_new_site) - New site added
-- [`mainwp_added_new_site`](site-management/index.md#mainwp_added_new_site) - This action is documented in class\class-mainwp-manage-sites-view.php
-- [`mainwp_admin_enqueue_scripts`](api-remote/index.md#mainwp_admin_enqueue_scripts) - Method admin_enqueue_scripts()
-- [`mainwp_admin_footer`](content-management/index.md#mainwp_admin_footer) - Action: mainwp_admin_footer
-- [`mainwp_admin_menu`](ui-display/index.md#mainwp_admin_menu) - Action: mainwp_admin_menu
-- [`mainwp_admin_menu_sub`](ui-display/index.md#mainwp_admin_menu_sub) - Action: mainwp_admin_menu_sub
-- [`mainwp_admin_pass_after_pass_form`](updates-maintenance/index.md#mainwp_admin_pass_after_pass_form) - Action: mainwp_admin_pass_after_pass_form
-- [`mainwp_admin_pass_after_select_sites`](updates-maintenance/index.md#mainwp_admin_pass_after_select_sites) - Action: mainwp_admin_pass_after_select_sites
-- [`mainwp_admin_pass_after_submit_button`](updates-maintenance/index.md#mainwp_admin_pass_after_submit_button) - Action: mainwp_admin_pass_after_submit_button
-- [`mainwp_admin_pass_after_users_table`](user-management/index.md#mainwp_admin_pass_after_users_table) - Action: mainwp_admin_pass_after_users_table
-- [`mainwp_admin_pass_before_pass_form`](updates-maintenance/index.md#mainwp_admin_pass_before_pass_form) - Action: mainwp_admin_pass_before_pass_form
-- [`mainwp_admin_pass_before_select_sites`](updates-maintenance/index.md#mainwp_admin_pass_before_select_sites) - Action: mainwp_admin_pass_before_select_sites
-- [`mainwp_admin_pass_before_submit_button`](updates-maintenance/index.md#mainwp_admin_pass_before_submit_button) - Action: mainwp_admin_pass_before_submit_button
-- [`mainwp_admin_pass_before_users_table`](user-management/index.md#mainwp_admin_pass_before_users_table) - Action: mainwp_admin_pass_before_users_table
-- [`mainwp_admin_pass_sidebar_bottom`](updates-maintenance/index.md#mainwp_admin_pass_sidebar_bottom) - Action: mainwp_admin_pass_sidebar_bottom
-- [`mainwp_admin_pass_sidebar_top`](updates-maintenance/index.md#mainwp_admin_pass_sidebar_top) - Action: mainwp_admin_pass_sidebar_top
-- [`mainwp_admin_post_thumbnail_html`](content-management/index.md#mainwp_admin_post_thumbnail_html) - Filters the admin post thumbnail HTML markup to return.
-- [`mainwp_admin_users_table_fatures`](user-management/index.md#mainwp_admin_users_table_fatures) - Filter: mainwp_admin_users_table_fatures
-- [`mainwp_advanced_settings_form_bottom`](system-settings/index.md#mainwp_advanced_settings_form_bottom) - Action: mainwp_advanced_settings_form_bottom
-- [`mainwp_advanced_settings_form_top`](system-settings/index.md#mainwp_advanced_settings_form_top) - Action: mainwp_advanced_settings_form_top
-- [`mainwp_after_active_plugins_list`](updates-maintenance/index.md#mainwp_after_active_plugins_list) - Action: mainwp_after_active_plugins_list
-- [`mainwp_after_core_unignore`](updates-maintenance/index.md#mainwp_after_core_unignore) - Action: mainwp_after_core_unignore
-- [`mainwp_after_cron_jobs_table`](ui-display/index.md#mainwp_after_cron_jobs_table) - Action: mainwp_after_cron_jobs_table
-- [`mainwp_after_edit_site_note`](site-management/index.md#mainwp_after_edit_site_note) - Action: mainwp_after_edit_site_note
-- [`mainwp_after_error_log_table`](ui-display/index.md#mainwp_after_error_log_table) - Action: mainwp_after_error_log_table
-- [`mainwp_after_groups_table`](site-management/index.md#mainwp_after_groups_table) - Action: mainwp_after_groups_table
-- [`mainwp_after_header`](site-management/index.md#mainwp_after_header) - Action: mainwp_after_header
-- [`mainwp_after_htaccess_section`](user-management/index.md#mainwp_after_htaccess_section) - Action: mainwp_after_htaccess_section
-- [`mainwp_after_import_users`](user-management/index.md#mainwp_after_import_users) - Action: mainwp_after_import_users
-- [`mainwp_after_inactive_plugins_list`](updates-maintenance/index.md#mainwp_after_inactive_plugins_list) - Action: mainwp_after_inactive_plugins_list
-- [`mainwp_after_inactive_themes_list`](updates-maintenance/index.md#mainwp_after_inactive_themes_list) - Action: mainwp_after_inactive_themes_list
-- [`mainwp_after_manage_sites_table`](site-management/index.md#mainwp_after_manage_sites_table) - Action: mainwp_after_manage_sites_table
-- [`mainwp_after_new_user_form`](user-management/index.md#mainwp_after_new_user_form) - Action: mainwp_after_new_user_form
-- [`mainwp_after_new_user_form_fields`](user-management/index.md#mainwp_after_new_user_form_fields) - Action: mainwp_after_new_user_form_fields
-- [`mainwp_after_notice_sites_uptime_monitoring_admin`](site-management/index.md#mainwp_after_notice_sites_uptime_monitoring_admin) - Basic site uptime monitoring.
-- [`mainwp_after_notice_sites_uptime_monitoring_individual`](site-management/index.md#mainwp_after_notice_sites_uptime_monitoring_individual) - Basic site uptime monitoring.
-- [`mainwp_after_overview_widgets`](ui-display/index.md#mainwp_after_overview_widgets) - Action: 'mainwp_after_overview_widgets'
-- [`mainwp_after_overview_widgets`](ui-display/index.md#mainwp_after_overview_widgets) - Action: 'mainwp_after_overview_widgets'
-- [`mainwp_after_overview_widgets`](ui-display/index.md#mainwp_after_overview_widgets) - Action: 'mainwp_after_overview_widgets'
-- [`mainwp_after_overview_widgets`](ui-display/index.md#mainwp_after_overview_widgets) - Action: 'mainwp_after_overview_widgets'
-- [`mainwp_after_pages_table`](content-management/index.md#mainwp_after_pages_table) - Action: mainwp_after_pages_table
-- [`mainwp_after_plugin_action`](updates-maintenance/index.md#mainwp_after_plugin_action) - Action: mainwp_after_plugin_action
-- [`mainwp_after_plugin_action`](updates-maintenance/index.md#mainwp_after_plugin_action) - Action: mainwp_after_plugin_action
-- [`mainwp_after_plugin_ignore`](updates-maintenance/index.md#mainwp_after_plugin_ignore) - Action: mainwp_after_plugin_ignore
-- [`mainwp_after_plugin_ignore`](updates-maintenance/index.md#mainwp_after_plugin_ignore) - Action: mainwp_after_plugin_ignore
-- [`mainwp_after_plugin_ignore`](updates-maintenance/index.md#mainwp_after_plugin_ignore) - Action: mainwp_after_plugin_ignore
-- [`mainwp_after_plugin_privacy_section`](updates-maintenance/index.md#mainwp_after_plugin_privacy_section) - Action: mainwp_after_plugin_privacy_section
-- [`mainwp_after_plugin_theme_install`](updates-maintenance/index.md#mainwp_after_plugin_theme_install) - Action: mainwp_after_plugin_theme_install
-- [`mainwp_after_plugin_theme_install`](updates-maintenance/index.md#mainwp_after_plugin_theme_install) - Action: mainwp_after_plugin_theme_install
-- [`mainwp_after_plugin_theme_install_progress`](updates-maintenance/index.md#mainwp_after_plugin_theme_install_progress) - Action: mainwp_after_plugin_theme_install_progress
-- [`mainwp_after_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_after_plugin_theme_translation_update) - Action: mainwp_after_plugin_theme_translation_update
-- [`mainwp_after_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_after_plugin_theme_translation_update) - Action: mainwp_after_plugin_theme_translation_update
-- [`mainwp_after_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_after_plugin_theme_translation_update) - Action: mainwp_after_plugin_theme_translation_update
-- [`mainwp_after_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_after_plugin_theme_translation_update) - Action: mainwp_after_plugin_theme_translation_update
-- [`mainwp_after_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_after_plugin_theme_translation_update) - Action: mainwp_after_plugin_theme_translation_update
-- [`mainwp_after_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_after_plugin_theme_translation_update) - Action: mainwp_after_plugin_theme_translation_update
-- [`mainwp_after_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_after_plugin_theme_translation_update) - Action: mainwp_after_plugin_theme_translation_update
-- [`mainwp_after_plugin_unignore`](updates-maintenance/index.md#mainwp_after_plugin_unignore) - Action: mainwp_after_plugin_unignore
-- [`mainwp_after_plugin_unignore`](updates-maintenance/index.md#mainwp_after_plugin_unignore) - Action: mainwp_after_plugin_unignore
-- [`mainwp_after_plugins_table`](updates-maintenance/index.md#mainwp_after_plugins_table) - Action: mainwp_after_plugins_table
-- [`mainwp_after_plugins_table`](updates-maintenance/index.md#mainwp_after_plugins_table) - Action: mainwp_after_plugins_table
-- [`mainwp_after_post_action`](content-management/index.md#mainwp_after_post_action) - 
-- [`mainwp_after_posting_bulkpage_result`](content-management/index.md#mainwp_after_posting_bulkpage_result) - Method posting()
-- [`mainwp_after_posting_bulkpost_result`](content-management/index.md#mainwp_after_posting_bulkpost_result) - Method posting_posts()
-- [`mainwp_after_posting_delete_bulk_post`](content-management/index.md#mainwp_after_posting_delete_bulk_post) - Method posting_posts()
-- [`mainwp_after_posts_table`](content-management/index.md#mainwp_after_posts_table) - Action: mainwp_after_posts_table
-- [`mainwp_after_save_advanced_settings`](system-settings/index.md#mainwp_after_save_advanced_settings) - Action: mainwp_after_save_advanced_settings
-- [`mainwp_after_save_email_settings`](system-settings/index.md#mainwp_after_save_email_settings) - Action: mainwp_after_save_email_settings
-- [`mainwp_after_save_email_settings`](system-settings/index.md#mainwp_after_save_email_settings) - Action: mainwp_after_save_email_settings
-- [`mainwp_after_save_general_settings`](system-settings/index.md#mainwp_after_save_general_settings) - Action: mainwp_after_save_general_settings
-- [`mainwp_after_seclect_sites`](ui-display/index.md#mainwp_after_seclect_sites) - Action: mainwp_after_seclect_sites
-- [`mainwp_after_seclect_sites`](ui-display/index.md#mainwp_after_seclect_sites) - Action: mainwp_after_seclect_sites
-- [`mainwp_after_select_clients_list`](client-reports/index.md#mainwp_after_select_clients_list) - Action: mainwp_after_select_clients_list
-- [`mainwp_after_select_groups_list`](site-management/index.md#mainwp_after_select_groups_list) - Action: mainwp_after_select_groups_list
-- [`mainwp_after_select_sites_filters`](site-management/index.md#mainwp_after_select_sites_filters) - Action: mainwp_after_select_sites_filters
-- [`mainwp_after_select_sites_list`](site-management/index.md#mainwp_after_select_sites_list) - Action: mainwp_after_select_sites_list
-- [`mainwp_after_server_info_table`](ui-display/index.md#mainwp_after_server_info_table) - Action: mainwp_after_server_info_table
-- [`mainwp_after_subheader`](ui-display/index.md#mainwp_after_subheader) - Action: mainwp_after_subheader
-- [`mainwp_after_sync_site_success`](site-management/index.md#mainwp_after_sync_site_success) - Fires immediately after website synced successfully.
-- [`mainwp_after_system_requirements_check`](security-monitoring/index.md#mainwp_after_system_requirements_check) - Action: mainwp_after_system_requirements_check
-- [`mainwp_after_template_part`](api-remote/index.md#mainwp_after_template_part) - Action: mainwp_after_template_part
-- [`mainwp_after_theme_action`](updates-maintenance/index.md#mainwp_after_theme_action) - Action: mainwp_after_theme_action
-- [`mainwp_after_theme_action`](updates-maintenance/index.md#mainwp_after_theme_action) - Action: mainwp_after_theme_action
-- [`mainwp_after_theme_ignore`](updates-maintenance/index.md#mainwp_after_theme_ignore) - Action: mainwp_after_theme_ignore
-- [`mainwp_after_theme_ignore`](updates-maintenance/index.md#mainwp_after_theme_ignore) - Action: mainwp_after_theme_ignore
-- [`mainwp_after_theme_ignore`](updates-maintenance/index.md#mainwp_after_theme_ignore) - Action: mainwp_after_theme_ignore
-- [`mainwp_after_theme_unignore`](updates-maintenance/index.md#mainwp_after_theme_unignore) - Action: mainwp_after_theme_unignore
-- [`mainwp_after_theme_unignore`](updates-maintenance/index.md#mainwp_after_theme_unignore) - Action: mainwp_after_theme_unignore
-- [`mainwp_after_themes_table`](updates-maintenance/index.md#mainwp_after_themes_table) - Action: mainwp_after_themes_table
-- [`mainwp_after_themes_table`](updates-maintenance/index.md#mainwp_after_themes_table) - Action: mainwp_after_themes_table
-- [`mainwp_after_upgrade_wp_success`](updates-maintenance/index.md#mainwp_after_upgrade_wp_success) - Method upgrade_site()
-- [`mainwp_after_upload_custom_icon`](ui-display/index.md#mainwp_after_upload_custom_icon) - Action: mainwp_after_upload_custom_icon
-- [`mainwp_after_user_action`](user-management/index.md#mainwp_after_user_action) - Action: mainwp_after_user_action
-- [`mainwp_after_user_create`](user-management/index.md#mainwp_after_user_create) - Action: mainwp_after_user_create
-- [`mainwp_after_user_create`](user-management/index.md#mainwp_after_user_create) - Action: mainwp_after_user_create
-- [`mainwp_after_users_table`](user-management/index.md#mainwp_after_users_table) - Action: mainwp_after_users_table
-- [`mainwp_after_wp_config_section`](system-settings/index.md#mainwp_after_wp_config_section) - Action: mainwp_after_wp_config_section
-- [`mainwp_after_wp_update`](updates-maintenance/index.md#mainwp_after_wp_update) - Action: mainwp_after_wp_update
-- [`mainwp_ajax_add_action`](updates-maintenance/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](updates-maintenance/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](site-management/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_ajax_add_action`](backups-restoration/index.md#mainwp_ajax_add_action) - Init ajax actions.
-- [`mainwp_all_disablemenuitems`](ui-display/index.md#mainwp_all_disablemenuitems) - Method admin_footer()
-- [`mainwp_alter_login_user`](user-management/index.md#mainwp_alter_login_user) - Filter: mainwp_alter_login_user
-- [`mainwp_alter_login_user`](user-management/index.md#mainwp_alter_login_user) - This filter is documented in ../class/class-mainwp-connect.php
-- [`mainwp_api_manager_upgrade_package_url`](updates-maintenance/index.md#mainwp_api_manager_upgrade_package_url) - 
-- [`mainwp_api_manager_upgrade_url`](updates-maintenance/index.md#mainwp_api_manager_upgrade_url) - Get Upgrade URL.
-- [`mainwp_applypluginsettings_{$ext_dir_slug}`](updates-maintenance/index.md#mainwp_applypluginsettings_ext_dir_slug) - Apply plugin settings
-- [`mainwp_automatic_disable_uptime_monitoring_check`](security-monitoring/index.md#mainwp_automatic_disable_uptime_monitoring_check) - Method cron_uptime_check
-- [`mainwp_available_updates_count_custom_fields_data`](updates-maintenance/index.md#mainwp_available_updates_count_custom_fields_data) - Method sites_available_updates_count()
-- [`mainwp_backups_remote_settings`](backups-restoration/index.md#mainwp_backups_remote_settings) - Render Backup Options.
-- [`mainwp_backuptask_column_destination`](backups-restoration/index.md#mainwp_backuptask_column_destination) - Column Destination.
-- [`mainwp_backuptask_remotedestinations`](backups-restoration/index.md#mainwp_backuptask_remotedestinations) - Get backup tasks and site ID.
-- [`mainwp_before_active_plugins_list`](updates-maintenance/index.md#mainwp_before_active_plugins_list) - Action: mainwp_before_active_plugins_list
-- [`mainwp_before_bulkpost_editor`](content-management/index.md#mainwp_before_bulkpost_editor) - Renders bulkpost to edit.
-- [`mainwp_before_core_unignore`](updates-maintenance/index.md#mainwp_before_core_unignore) - Action: mainwp_before_core_unignore
-- [`mainwp_before_core_unignore`](updates-maintenance/index.md#mainwp_before_core_unignore) - Action: mainwp_after_core_unignore
-- [`mainwp_before_core_unignore`](updates-maintenance/index.md#mainwp_before_core_unignore) - Action: mainwp_before_core_unignore
-- [`mainwp_before_cron_jobs_table`](ui-display/index.md#mainwp_before_cron_jobs_table) - Action: mainwp_before_cron_jobs_table
-- [`mainwp_before_edit_site_note`](site-management/index.md#mainwp_before_edit_site_note) - Action: mainwp_before_edit_site_note
-- [`mainwp_before_error_log_table`](ui-display/index.md#mainwp_before_error_log_table) - Action: mainwp_before_error_log_table
-- [`mainwp_before_groups_table`](site-management/index.md#mainwp_before_groups_table) - Action: mainwp_before_groups_table
-- [`mainwp_before_header`](site-management/index.md#mainwp_before_header) - Action: mainwp_before_header
-- [`mainwp_before_htaccess_section`](user-management/index.md#mainwp_before_htaccess_section) - Action: mainwp_before_htaccess_section
-- [`mainwp_before_import_users`](user-management/index.md#mainwp_before_import_users) - Action: mainwp_before_import_users
-- [`mainwp_before_inactive_plugins_list`](updates-maintenance/index.md#mainwp_before_inactive_plugins_list) - Action: mainwp_before_inactive_plugins_list
-- [`mainwp_before_inactive_themes_list`](updates-maintenance/index.md#mainwp_before_inactive_themes_list) - Action: mainwp_before_inactive_themes_list
-- [`mainwp_before_log_data`](ui-display/index.md#mainwp_before_log_data) - Method log_to_db()
-- [`mainwp_before_mainwp_content_wrap`](content-management/index.md#mainwp_before_mainwp_content_wrap) - Action: mainwp_before_mainwp_content_wrap
-- [`mainwp_before_manage_sites_table`](site-management/index.md#mainwp_before_manage_sites_table) - Action: mainwp_before_manage_sites_table
-- [`mainwp_before_new_user_form`](user-management/index.md#mainwp_before_new_user_form) - Action: mainwp_before_new_user_form
-- [`mainwp_before_new_user_form_fields`](user-management/index.md#mainwp_before_new_user_form_fields) - Action: mainwp_before_new_user_form_fields
-- [`mainwp_before_overview_widgets`](ui-display/index.md#mainwp_before_overview_widgets) - Action: mainwp_before_overview_widgets
-- [`mainwp_before_overview_widgets`](ui-display/index.md#mainwp_before_overview_widgets) - Action: mainwp_before_overview_widgets
-- [`mainwp_before_overview_widgets`](ui-display/index.md#mainwp_before_overview_widgets) - Action: mainwp_before_overview_widgets
-- [`mainwp_before_overview_widgets`](ui-display/index.md#mainwp_before_overview_widgets) - Action: mainwp_before_overview_widgets
-- [`mainwp_before_pages_table`](content-management/index.md#mainwp_before_pages_table) - Action: mainwp_before_pages_table
-- [`mainwp_before_plugin_action`](updates-maintenance/index.md#mainwp_before_plugin_action) - Action: mainwp_before_plugin_action
-- [`mainwp_before_plugin_action`](updates-maintenance/index.md#mainwp_before_plugin_action) - Action: mainwp_before_plugin_action
-- [`mainwp_before_plugin_ignore`](updates-maintenance/index.md#mainwp_before_plugin_ignore) - Action: mainwp_before_plugin_ignore
-- [`mainwp_before_plugin_ignore`](updates-maintenance/index.md#mainwp_before_plugin_ignore) - Action: mainwp_before_plugin_ignore
-- [`mainwp_before_plugin_ignore`](updates-maintenance/index.md#mainwp_before_plugin_ignore) - Action: mainwp_before_plugin_ignore
-- [`mainwp_before_plugin_privacy_section`](updates-maintenance/index.md#mainwp_before_plugin_privacy_section) - Action: mainwp_before_plugin_privacy_section
-- [`mainwp_before_plugin_theme_install`](updates-maintenance/index.md#mainwp_before_plugin_theme_install) - Action: mainwp_before_plugin_theme_install
-- [`mainwp_before_plugin_theme_install`](updates-maintenance/index.md#mainwp_before_plugin_theme_install) - Action: mainwp_before_plugin_theme_install
-- [`mainwp_before_plugin_theme_install_progress`](updates-maintenance/index.md#mainwp_before_plugin_theme_install_progress) - Action: mainwp_before_plugin_theme_install_progress
-- [`mainwp_before_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_before_plugin_theme_translation_update) - Action: mainwp_before_plugin_theme_translation_update
-- [`mainwp_before_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_before_plugin_theme_translation_update) - Action: mainwp_before_plugin_theme_translation_update
-- [`mainwp_before_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_before_plugin_theme_translation_update) - Action: mainwp_before_plugin_theme_translation_update
-- [`mainwp_before_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_before_plugin_theme_translation_update) - Action: mainwp_before_plugin_theme_translation_update
-- [`mainwp_before_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_before_plugin_theme_translation_update) - Action: mainwp_before_plugin_theme_translation_update
-- [`mainwp_before_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_before_plugin_theme_translation_update) - Action: mainwp_before_plugin_theme_translation_update
-- [`mainwp_before_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp_before_plugin_theme_translation_update) - Action: mainwp_before_plugin_theme_translation_update
-- [`mainwp_before_plugin_theme_unignore`](updates-maintenance/index.md#mainwp_before_plugin_theme_unignore) - Action: mainwp_before_plugin_theme_unignore
-- [`mainwp_before_plugin_unignore`](updates-maintenance/index.md#mainwp_before_plugin_unignore) - Action: mainwp_before_plugin_unignore
-- [`mainwp_before_plugin_unignore`](updates-maintenance/index.md#mainwp_before_plugin_unignore) - Action: mainwp_before_plugin_unignore
-- [`mainwp_before_plugins_table`](updates-maintenance/index.md#mainwp_before_plugins_table) - Action: mainwp_before_plugins_table
-- [`mainwp_before_plugins_table`](updates-maintenance/index.md#mainwp_before_plugins_table) - Action: mainwp_before_plugins_table
-- [`mainwp_before_post_action`](content-management/index.md#mainwp_before_post_action) - Action: mainwp_before_post_action
-- [`mainwp_before_posts_table`](content-management/index.md#mainwp_before_posts_table) - Action: mainwp_before_posts_table
-- [`mainwp_before_redirect_posting_bulkpage`](content-management/index.md#mainwp_before_redirect_posting_bulkpage) - Action: mainwp_before_redirect_posting_bulkpage
-- [`mainwp_before_redirect_posting_bulkpost`](content-management/index.md#mainwp_before_redirect_posting_bulkpost) - Action: mainwp_before_redirect_posting_bulkpost
-- [`mainwp_before_save_advanced_settings`](system-settings/index.md#mainwp_before_save_advanced_settings) - Action: mainwp_before_save_advanced_settings
-- [`mainwp_before_save_email_settings`](system-settings/index.md#mainwp_before_save_email_settings) - Action: mainwp_before_save_email_settings
-- [`mainwp_before_save_email_settings`](system-settings/index.md#mainwp_before_save_email_settings) - Action: mainwp_before_save_email_settings
-- [`mainwp_before_save_general_settings`](system-settings/index.md#mainwp_before_save_general_settings) - Action: mainwp_before_save_general_settings
-- [`mainwp_before_save_sync_result`](site-management/index.md#mainwp_before_save_sync_result) - Filter: mainwp_before_save_sync_result
-- [`mainwp_before_seclect_sites`](ui-display/index.md#mainwp_before_seclect_sites) - Action: mainwp_before_seclect_sites
-- [`mainwp_before_seclect_sites`](ui-display/index.md#mainwp_before_seclect_sites) - Action: mainwp_before_seclect_sites
-- [`mainwp_before_select_clients_list`](client-reports/index.md#mainwp_before_select_clients_list) - Action: mainwp_before_select_clients_list
-- [`mainwp_before_select_groups_list`](site-management/index.md#mainwp_before_select_groups_list) - Action: mainwp_before_select_groups_list
-- [`mainwp_before_select_sites_filters`](site-management/index.md#mainwp_before_select_sites_filters) - Action: mainwp_before_select_sites_filters
-- [`mainwp_before_select_sites_list`](site-management/index.md#mainwp_before_select_sites_list) - Action: mainwp_before_select_sites_list
-- [`mainwp_before_server_info_table`](ui-display/index.md#mainwp_before_server_info_table) - Action: mainwp_before_server_info_table
-- [`mainwp_before_subheader`](ui-display/index.md#mainwp_before_subheader) - Action: mainwp_before_subheader
-- [`mainwp_before_system_requirements_check`](security-monitoring/index.md#mainwp_before_system_requirements_check) - Action: mainwp_before_system_requirements_check
-- [`mainwp_before_template_part`](api-remote/index.md#mainwp_before_template_part) - Action: mainwp_before_template_part
-- [`mainwp_before_theme_action`](updates-maintenance/index.md#mainwp_before_theme_action) - Action: mainwp_before_theme_action
-- [`mainwp_before_theme_action`](updates-maintenance/index.md#mainwp_before_theme_action) - Action: mainwp_before_theme_action
-- [`mainwp_before_theme_ignore`](updates-maintenance/index.md#mainwp_before_theme_ignore) - Action: mainwp_before_theme_ignore
-- [`mainwp_before_theme_ignore`](updates-maintenance/index.md#mainwp_before_theme_ignore) - Action: mainwp_before_theme_ignore
-- [`mainwp_before_theme_ignore`](updates-maintenance/index.md#mainwp_before_theme_ignore) - Action: mainwp_before_theme_ignore
-- [`mainwp_before_theme_unignore`](updates-maintenance/index.md#mainwp_before_theme_unignore) - Action: mainwp_before_theme_unignore
-- [`mainwp_before_theme_unignore`](updates-maintenance/index.md#mainwp_before_theme_unignore) - Action: mainwp_before_theme_unignore
-- [`mainwp_before_themes_table`](updates-maintenance/index.md#mainwp_before_themes_table) - Action: mainwp_before_themes_table
-- [`mainwp_before_themes_table`](updates-maintenance/index.md#mainwp_before_themes_table) - Action: mainwp_before_themes_table
-- [`mainwp_before_upload_custom_icon`](ui-display/index.md#mainwp_before_upload_custom_icon) - Action: mainwp_after_upload_custom_icon
-- [`mainwp_before_user_action`](user-management/index.md#mainwp_before_user_action) - Action: mainwp_before_user_action
-- [`mainwp_before_user_create`](user-management/index.md#mainwp_before_user_create) - Action: mainwp_before_user_create
-- [`mainwp_before_user_create`](user-management/index.md#mainwp_before_user_create) - Action: mainwp_before_user_create
-- [`mainwp_before_users_table`](user-management/index.md#mainwp_before_users_table) - Action: mainwp_before_users_table
-- [`mainwp_before_wp_config_section`](system-settings/index.md#mainwp_before_wp_config_section) - Action: mainwp_before_wp_config_section
-- [`mainwp_before_wp_update`](updates-maintenance/index.md#mainwp_before_wp_update) - Action: mainwp_before_wp_update
-- [`mainwp_boilerplate_get_tokens`](site-management/index.md#mainwp_boilerplate_get_tokens) - Filter: mainwp_boilerplate_get_tokens
-- [`mainwp_boilerplate_get_tokens`](site-management/index.md#mainwp_boilerplate_get_tokens) - This filter is documented in ../class/class-mainwp-notification-settings.php
-- [`mainwp_bulk_install_sidebar_submit_bottom`](updates-maintenance/index.md#mainwp_bulk_install_sidebar_submit_bottom) - Render Install plugins Table.
-- [`mainwp_bulk_install_sidebar_submit_bottom`](updates-maintenance/index.md#mainwp_bulk_install_sidebar_submit_bottom) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_bulk_install_tabs_content`](updates-maintenance/index.md#mainwp_bulk_install_tabs_content) - Render Install plugins Table.
-- [`mainwp_bulk_install_tabs_content`](updates-maintenance/index.md#mainwp_bulk_install_tabs_content) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_bulk_prepare_install_result`](updates-maintenance/index.md#mainwp_bulk_prepare_install_result) - Filter: mainwp_bulk_prepare_install_result
-- [`mainwp_bulk_upload_install_result`](updates-maintenance/index.md#mainwp_bulk_upload_install_result) - Filter: mainwp_bulk_upload_install_result
-- [`mainwp_bulkpage_before_post`](content-management/index.md#mainwp_bulkpage_before_post) - Before Page post action
-- [`mainwp_bulkpage_posting`](content-management/index.md#mainwp_bulkpage_posting) - Posting new page
-- [`mainwp_bulkpost_before_post`](content-management/index.md#mainwp_bulkpost_before_post) - Before Post post action
-- [`mainwp_bulkpost_categories_handle`](content-management/index.md#mainwp_bulkpost_categories_handle) - Method add_categories_handle()
-- [`mainwp_bulkpost_edit`](content-management/index.md#mainwp_bulkpost_edit) - Edit bulkpost
-- [`mainwp_bulkpost_edit_title`](content-management/index.md#mainwp_bulkpost_edit_title) - Renders bulkpost to edit.
-- [`mainwp_bulkpost_edit_top_side`](content-management/index.md#mainwp_bulkpost_edit_top_side) - Renders bulkpost to edit.
-- [`mainwp_bulkpost_editor_settings`](content-management/index.md#mainwp_bulkpost_editor_settings) - Renders bulkpost to edit.
-- [`mainwp_bulkpost_select_sites_settings`](site-management/index.md#mainwp_bulkpost_select_sites_settings) - Renders bulkpost to edit.
-- [`mainwp_bulkpost_tags_handle`](content-management/index.md#mainwp_bulkpost_tags_handle) - Method add_tags_handle()
-- [`mainwp_bulkposting_done`](content-management/index.md#mainwp_bulkposting_done) - Posting post completed
-- [`mainwp_bulkposting_done`](content-management/index.md#mainwp_bulkposting_done) - Posting page completed
-- [`mainwp_cache_icon_expired`](updates-maintenance/index.md#mainwp_cache_icon_expired) - Gets a plugin|theme icon to output.
-- [`mainwp_cards_per_row`](content-management/index.md#mainwp_cards_per_row) - Filter: mainwp_cards_per_row
-- [`mainwp_check_site_result`](site-management/index.md#mainwp_check_site_result) - Method check_site()
-- [`mainwp_child_site_info_widget_content`](site-management/index.md#mainwp_child_site_info_widget_content) - Filter: mainwp_child_site_info_widget_content
-- [`mainwp_clear_and_lock_options`](system-settings/index.md#mainwp_clear_and_lock_options) - Clean and Lock extension options
-- [`mainwp_client_deleted`](client-reports/index.md#mainwp_client_deleted) - Delete client
-- [`mainwp_client_report_generate_content`](content-management/index.md#mainwp_client_report_generate_content) - Filter: mainwp_client_report_generate_content
-- [`mainwp_client_report_get_site_tokens`](site-management/index.md#mainwp_client_report_get_site_tokens) - Filter: mainwp_client_report_get_site_tokens
-- [`mainwp_client_report_get_site_tokens`](site-management/index.md#mainwp_client_report_get_site_tokens) - This filter is documented in ../class/class-mainwp-notification-settings.php
-- [`mainwp_client_suspend`](client-reports/index.md#mainwp_client_suspend) - Fires immediately after update client suspend/unsuspend.
-- [`mainwp_client_suspend`](client-reports/index.md#mainwp_client_suspend) - Fires immediately after update client suspend/unsuspend.
-- [`mainwp_client_updated`](updates-maintenance/index.md#mainwp_client_updated) - Add client
-- [`mainwp_clients_getmetaboxes`](client-reports/index.md#mainwp_clients_getmetaboxes) - Method add_meta_boxes()
-- [`mainwp_clients_info_table_bottom`](client-reports/index.md#mainwp_clients_info_table_bottom) - Action: mainwp_clients_info_table_bottom
-- [`mainwp_clients_info_table_top`](client-reports/index.md#mainwp_clients_info_table_top) - Action: mainwp_clients_info_table_top
-- [`mainwp_clients_info_widget_bottom`](client-reports/index.md#mainwp_clients_info_widget_bottom) - Action: mainwp_clients_info_widget_bottom
-- [`mainwp_clients_info_widget_title`](client-reports/index.md#mainwp_clients_info_widget_title) - *Arguments*
-- [`mainwp_clients_info_widget_top`](client-reports/index.md#mainwp_clients_info_widget_top) - Actoin: mainwp_clients_info_widget_top
-- [`mainwp_clients_overview_contact_widget_bottom`](client-reports/index.md#mainwp_clients_overview_contact_widget_bottom) - Action: mainwp_clients_overview_contact_widget_bottom
-- [`mainwp_clients_overview_contact_widget_sutbitle`](client-reports/index.md#mainwp_clients_overview_contact_widget_sutbitle) - *Arguments*
-- [`mainwp_clients_overview_contact_widget_title`](client-reports/index.md#mainwp_clients_overview_contact_widget_title) - *Arguments*
-- [`mainwp_clients_overview_contact_widget_top`](client-reports/index.md#mainwp_clients_overview_contact_widget_top) - Actoin: mainwp_clients_overview_contact_widget_top
-- [`mainwp_clients_overview_enabled_widgets`](client-reports/index.md#mainwp_clients_overview_enabled_widgets) - Unset unwanted Widgets
-- [`mainwp_clients_overview_help_item`](client-reports/index.md#mainwp_clients_overview_help_item) - Action: mainwp_clients_overview_help_item
-- [`mainwp_clients_overview_info_table_bottom`](client-reports/index.md#mainwp_clients_overview_info_table_bottom) - Action: mainwp_clients_overview_info_table_bottom
-- [`mainwp_clients_overview_info_table_top`](client-reports/index.md#mainwp_clients_overview_info_table_top) - Action: mainwp_clients_overview_info_table_top
-- [`mainwp_clients_overview_info_widget_bottom`](client-reports/index.md#mainwp_clients_overview_info_widget_bottom) - Action: mainwp_clients_overview_info_widget_bottom
-- [`mainwp_clients_overview_info_widget_title`](client-reports/index.md#mainwp_clients_overview_info_widget_title) - *Arguments*
-- [`mainwp_clients_overview_info_widget_top`](client-reports/index.md#mainwp_clients_overview_info_widget_top) - Actoin: mainwp_clients_overview_info_widget_top
-- [`mainwp_clients_overview_note_widget_bottom`](client-reports/index.md#mainwp_clients_overview_note_widget_bottom) - Action: mainwp_clients_overview_note_widget_bottom
-- [`mainwp_clients_overview_note_widget_title`](client-reports/index.md#mainwp_clients_overview_note_widget_title) - *Arguments*
-- [`mainwp_clients_overview_note_widget_top`](client-reports/index.md#mainwp_clients_overview_note_widget_top) - Actoin: mainwp_clients_overview_note_widget_top
-- [`mainwp_clients_overview_overview_widget_bottom`](client-reports/index.md#mainwp_clients_overview_overview_widget_bottom) - Action: mainwp_clients_overview_overview_widget_bottom
-- [`mainwp_clients_overview_overview_widget_top`](client-reports/index.md#mainwp_clients_overview_overview_widget_top) - Actoin: mainwp_clients_overview_overview_widget_top
-- [`mainwp_clients_overview_screen_options_bottom`](client-reports/index.md#mainwp_clients_overview_screen_options_bottom) - Action: mainwp_clients_overview_screen_options_bottom
-- [`mainwp_clients_overview_screen_options_top`](client-reports/index.md#mainwp_clients_overview_screen_options_top) - Action: mainwp_clients_overview_screen_options_top
-- [`mainwp_clients_overview_websites_widget_bottom`](site-management/index.md#mainwp_clients_overview_websites_widget_bottom) - Action: mainwp_clients_overview_websites_widget_bottom
-- [`mainwp_clients_overview_websites_widget_title`](site-management/index.md#mainwp_clients_overview_websites_widget_title) - *Arguments*
-- [`mainwp_clients_overview_websites_widget_top`](site-management/index.md#mainwp_clients_overview_websites_widget_top) - Actoin: mainwp_clients_overview_websites_widget_top
-- [`mainwp_clients_sitestable_getcolumns`](client-reports/index.md#mainwp_clients_sitestable_getcolumns) - Filter: mainwp_clients_sitestable_getcolumns
-- [`mainwp_clients_sitestable_item`](client-reports/index.md#mainwp_clients_sitestable_item) - Filter: mainwp_clients_sitestable_item
-- [`mainwp_clients_table_features`](client-reports/index.md#mainwp_clients_table_features) - Filter: mainwp_clients_table_features
-- [`mainwp_clients_website_client_tokens`](site-management/index.md#mainwp_clients_website_client_tokens) - Method get_website_client_tokens_data()
-- [`mainwp_clients_widget_bottom`](client-reports/index.md#mainwp_clients_widget_bottom) - Action: mainwp_clients_widget_bottom
-- [`mainwp_clients_widget_title`](client-reports/index.md#mainwp_clients_widget_title) - *Arguments*
-- [`mainwp_clients_widget_top`](client-reports/index.md#mainwp_clients_widget_top) - Actoin: mainwp_clients_widget_top
-- [`mainwp_clients_widgets_screen_options`](client-reports/index.md#mainwp_clients_widgets_screen_options) - Filter: mainwp_clients_widgets_screen_options
-- [`mainwp_clientstable_prepared_items`](client-reports/index.md#mainwp_clientstable_prepared_items) - Prepair the items to be listed.
-- [`mainwp_clone_enabled`](site-management/index.md#mainwp_clone_enabled) - Filter: mainwp_clone_enabled
-- [`mainwp_compact_action`](ui-display/index.md#mainwp_compact_action) - Create compact logs and erase records from the database.
-- [`mainwp_connect_sign_algo`](site-management/index.md#mainwp_connect_sign_algo) - Method get_connect_sign_algorithm().
-- [`mainwp_connect_sites_allow_ports`](site-management/index.md#mainwp_connect_sites_allow_ports) - Method mainwp_testwp()
-- [`mainwp_connect_sites_not_allow_ports`](site-management/index.md#mainwp_connect_sites_not_allow_ports) - Method mainwp_testwp()
-- [`mainwp_connection_status_after_all_sites_list`](site-management/index.md#mainwp_connection_status_after_all_sites_list) - Action: mainwp_connection_status_after_all_sites_list
-- [`mainwp_connection_status_after_connected_sites_list`](site-management/index.md#mainwp_connection_status_after_connected_sites_list) - Action: mainwp_connection_status_after_connected_sites_list
-- [`mainwp_connection_status_after_disconnected_sites_list`](site-management/index.md#mainwp_connection_status_after_disconnected_sites_list) - Action: mainwp_connection_status_after_disconnected_sites_list
-- [`mainwp_connection_status_before_all_sites_list`](site-management/index.md#mainwp_connection_status_before_all_sites_list) - Action: mainwp_connection_status_before_all_sites_list
-- [`mainwp_connection_status_before_connected_sites_list`](site-management/index.md#mainwp_connection_status_before_connected_sites_list) - Action: mainwp_connection_status_before_connected_sites_list
-- [`mainwp_connection_status_before_disconnected_sites_list`](site-management/index.md#mainwp_connection_status_before_disconnected_sites_list) - Action: mainwp_connection_status_before_disconnected_sites_list
-- [`mainwp_connection_status_list_item_title`](site-management/index.md#mainwp_connection_status_list_item_title) - *Arguments*
-- [`mainwp_connection_status_list_item_title`](site-management/index.md#mainwp_connection_status_list_item_title) - *Arguments*
-- [`mainwp_connection_status_list_item_title`](site-management/index.md#mainwp_connection_status_list_item_title) - *Arguments*
-- [`mainwp_connection_status_list_item_title_url`](site-management/index.md#mainwp_connection_status_list_item_title_url) - *Arguments*
-- [`mainwp_connection_status_list_item_title_url`](site-management/index.md#mainwp_connection_status_list_item_title_url) - *Arguments*
-- [`mainwp_connection_status_list_item_title_url`](site-management/index.md#mainwp_connection_status_list_item_title_url) - *Arguments*
-- [`mainwp_connection_status_widget_bottom`](site-management/index.md#mainwp_connection_status_widget_bottom) - Action: mainwp_connection_status_widget_bottom
-- [`mainwp_connection_status_widget_footer_left`](site-management/index.md#mainwp_connection_status_widget_footer_left) - Action: mainwp_connection_status_widget_footer_left
-- [`mainwp_connection_status_widget_footer_right`](site-management/index.md#mainwp_connection_status_widget_footer_right) - Action: mainwp_connection_status_widget_footer_right
-- [`mainwp_connection_status_widget_title`](site-management/index.md#mainwp_connection_status_widget_title) - *Arguments*
-- [`mainwp_connection_status_widget_top`](site-management/index.md#mainwp_connection_status_widget_top) - Action: mainwp_connection_status_widget_top
-- [`mainwp_cores_after_ignored_updates`](updates-maintenance/index.md#mainwp_cores_after_ignored_updates) - Action: mainwp_cores_after_ignored_updates
-- [`mainwp_cores_before_ignored_updates`](updates-maintenance/index.md#mainwp_cores_before_ignored_updates) - Action: mainwp_cores_before_ignored_updates
-- [`mainwp_cost_summary_getmetaboxes`](ui-display/index.md#mainwp_cost_summary_getmetaboxes) - Method add_meta_boxes()
-- [`mainwp_create_security_nonces`](security-monitoring/index.md#mainwp_create_security_nonces) - Create the security nonces.
-- [`mainwp_cron_bulk_update_items_limit`](updates-maintenance/index.md#mainwp_cron_bulk_update_items_limit) - Method handle_cron_batch_updates()
-- [`mainwp_cron_bulk_update_items_limit`](updates-maintenance/index.md#mainwp_cron_bulk_update_items_limit) - Method handle_cron_auto_updates()
-- [`mainwp_cron_bulk_update_sites_limit`](site-management/index.md#mainwp_cron_bulk_update_sites_limit) - Method handle_cron_batch_updates()
-- [`mainwp_cron_bulk_update_sites_limit`](site-management/index.md#mainwp_cron_bulk_update_sites_limit) - Method handle_cron_auto_updates()
-- [`mainwp_cron_jobs_list`](content-management/index.md#mainwp_cron_jobs_list) - Action: mainwp_cron_jobs_list
-- [`mainwp_cron_jobs_table_features`](ui-display/index.md#mainwp_cron_jobs_table_features) - Filter: mainwp_cron_jobs_table_features
-- [`mainwp_cronload_action`](api-remote/index.md#mainwp_cronload_action) - Action: mainwp_cronload_action
-- [`mainwp_curl_curlopt_resolve`](site-management/index.md#mainwp_curl_curlopt_resolve) - Fetch uptime urls.
-- [`mainwp_curl_curlopt_resolve`](site-management/index.md#mainwp_curl_curlopt_resolve) - Method fetch_urls_authed()
-- [`mainwp_curl_curlopt_resolve`](site-management/index.md#mainwp_curl_curlopt_resolve) - Method fetch_url_site()
-- [`mainwp_curl_curlopt_resolve`](api-remote/index.md#mainwp_curl_curlopt_resolve) - Method try visit.
-- [`mainwp_curl_http_version`](api-remote/index.md#mainwp_curl_http_version) - Fetch uptime urls.
-- [`mainwp_curl_http_version`](api-remote/index.md#mainwp_curl_http_version) - Method try visit.
-- [`mainwp_curl_http_version`](api-remote/index.md#mainwp_curl_http_version) - Method fetch_urls_authed()
-- [`mainwp_curl_http_version`](api-remote/index.md#mainwp_curl_http_version) - Method fetch_url_site()
-- [`mainwp_currentuserallowedaccessgroups`](site-management/index.md#mainwp_currentuserallowedaccessgroups) - Filter: mainwp_currentuserallowedaccessgroups
-- [`mainwp_currentuserallowedaccesssites`](user-management/index.md#mainwp_currentuserallowedaccesssites) - Filter: mainwp_currentuserallowedaccesssites
-- [`mainwp_currentusercan`](user-management/index.md#mainwp_currentusercan) - Method \mainwp_current_user_can()
-- [`mainwp_custom_post_types_default`](content-management/index.md#mainwp_custom_post_types_default) - Default post types
-- [`mainwp_custom_post_types_get_post_connections`](site-management/index.md#mainwp_custom_post_types_get_post_connections) - Method posts_search_handler()
-- [`mainwp_custom_render_bulkpost`](content-management/index.md#mainwp_custom_render_bulkpost) - Renders bulkpost to edit.
-- [`mainwp_daily_digest_action`](site-management/index.md#mainwp_daily_digest_action) - Action: mainwp_daily_digest_action
-- [`mainwp_daily_digest_content`](content-management/index.md#mainwp_daily_digest_content) - Filter: mainwp_daily_digest_content
-- [`mainwp_daily_digest_email_footer`](api-remote/index.md#mainwp_daily_digest_email_footer) - Daily Digest Email Footer
-- [`mainwp_daily_digest_email_header`](api-remote/index.md#mainwp_daily_digest_email_header) - Daily Digest Email Header
-- [`mainwp_database_updater_supported_plugins`](updates-maintenance/index.md#mainwp_database_updater_supported_plugins) - Method sites_available_updates_count()
-- [`mainwp_db_after_update`](updates-maintenance/index.md#mainwp_db_after_update) - Method install()
-- [`mainwp_db_fetch_object`](site-management/index.md#mainwp_db_fetch_object) - Method fetch_object().
-- [`mainwp_db_free_result`](site-management/index.md#mainwp_db_free_result) - Method free_result().
-- [`mainwp_db_install_tables`](updates-maintenance/index.md#mainwp_db_install_tables) - Method install()
-- [`mainwp_decrypt_key_value`](backups-restoration/index.md#mainwp_decrypt_key_value) - Method decrypt_api_keys
-- [`mainwp_default_emails_fields`](api-remote/index.md#mainwp_default_emails_fields) - Get default email notifications values.
-- [`mainwp_default_emails_fields`](content-management/index.md#mainwp_default_emails_fields) - Method get_defaults_email_settings_value().
-- [`mainwp_default_settings_indicator`](system-settings/index.md#mainwp_default_settings_indicator) - Method render_not_default_indicator().
-- [`mainwp_default_settings_indicator`](system-settings/index.md#mainwp_default_settings_indicator) - Method render_not_default_email_settings_indicator().
-- [`mainwp_default_template_locate`](site-management/index.md#mainwp_default_template_locate) - Render the email notification edit form.
-- [`mainwp_default_template_source_dir`](updates-maintenance/index.md#mainwp_default_template_source_dir) - Locate a template and return the path for inclusion.
-- [`mainwp_default_template_source_dir`](api-remote/index.md#mainwp_default_template_source_dir) - Method handle_template_file_action()
-- [`mainwp_delete_key_file`](updates-maintenance/index.md#mainwp_delete_key_file) - Method update child api key.
-- [`mainwp_delete_key_file`](site-management/index.md#mainwp_delete_key_file) - Method update_compatible_site_api_key
-- [`mainwp_delete_site`](site-management/index.md#mainwp_delete_site) - This action is documented in pages\page-mainwp-manage-sites-handler.php
-- [`mainwp_delete_site`](site-management/index.md#mainwp_delete_site) - *Arguments*
-- [`mainwp_delete_site`](site-management/index.md#mainwp_delete_site) - This action is documented in pages\page-mainwp-manage-sites-handler.php
-- [`mainwp_detect_premium_plugins_update`](updates-maintenance/index.md#mainwp_detect_premium_plugins_update) - Filter: mainwp_detect_premium_plugins_update
-- [`mainwp_detect_premium_themes_update`](updates-maintenance/index.md#mainwp_detect_premium_themes_update) - Filter: mainwp_detect_premium_themes_update
-- [`mainwp_detect_premiums_updates`](updates-maintenance/index.md#mainwp_detect_premiums_updates) - Filter: mainwp_detect_premiums_updates
-- [`mainwp_disable_rest_api_access_log`](user-management/index.md#mainwp_disable_rest_api_access_log) - This filter enables the exclusion of the most recent access time from being logged for REST API calls.
-- [`mainwp_disablemenuitems`](ui-display/index.md#mainwp_disablemenuitems) - Method init()
-- [`mainwp_do_widget_boxes_sorted`](ui-display/index.md#mainwp_do_widget_boxes_sorted) - Method do_widget_boxes()
-- [`mainwp_edit_bulkpost_getmetaboxes`](content-management/index.md#mainwp_edit_bulkpost_getmetaboxes) - Init custom bulkpost metaboxes.
-- [`mainwp_edit_post_get_categories`](content-management/index.md#mainwp_edit_post_get_categories) - Method ajax_handle_get_categories()
-- [`mainwp_edit_posts_after_submit_button`](content-management/index.md#mainwp_edit_posts_after_submit_button) - Action: mainwp_edit_posts_after_submit_button
-- [`mainwp_edit_posts_before_submit_button`](content-management/index.md#mainwp_edit_posts_before_submit_button) - Action: mainwp_edit_posts_before_submit_button
-- [`mainwp_encrypt_key_value`](backups-restoration/index.md#mainwp_encrypt_key_value) - Method encrypt_api_keys
-- [`mainwp_enqueue_script_gridster`](content-management/index.md#mainwp_enqueue_script_gridster) - Method admin_init()
-- [`mainwp_escape_content`](content-management/index.md#mainwp_escape_content) - Edit subscription Post
-- [`mainwp_escape_content`](content-management/index.md#mainwp_escape_content) - Get table rows.
-- [`mainwp_escape_content`](content-management/index.md#mainwp_escape_content) - Method ajax_notes_save()
-- [`mainwp_escape_content`](content-management/index.md#mainwp_escape_content) - Method get_cost_field_value().
-- [`mainwp_escape_content`](content-management/index.md#mainwp_escape_content) - Handles the saving item.
-- [`mainwp_extension_card_bottom`](extensions-integration/index.md#mainwp_extension_card_bottom) - Action: mainwp_extension_card_bottom
-- [`mainwp_extension_card_top`](extensions-integration/index.md#mainwp_extension_card_top) - Action: mainwp_extension_card_top
-- [`mainwp_extension_sites_edit_tablerow`](site-management/index.md#mainwp_extension_sites_edit_tablerow) - Method render_edit_site()
-- [`mainwp_extensions_help_item`](extensions-integration/index.md#mainwp_extensions_help_item) - Action: mainwp_extensions_help_item
-- [`mainwp_extensions_page_top_header`](content-management/index.md#mainwp_extensions_page_top_header) - Method render_header()
-- [`mainwp_extensions_top_header_after_tab`](ui-display/index.md#mainwp_extensions_top_header_after_tab) - Method render_header()
-- [`mainwp_favorites_themes`](updates-maintenance/index.md#mainwp_favorites_themes) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_fetch_uptime_chunk_size_urls`](security-monitoring/index.md#mainwp_fetch_uptime_chunk_size_urls) - Check uptime monitors.
-- [`mainwp_fetch_uptime_chunk_size_urls`](security-monitoring/index.md#mainwp_fetch_uptime_chunk_size_urls) - Fetch uptime urls.
-- [`mainwp_fetch_uptime_disable_check_multi_exec`](security-monitoring/index.md#mainwp_fetch_uptime_disable_check_multi_exec) - Apply disable check multi exec.
-- [`mainwp_fetch_url_authed`](site-management/index.md#mainwp_fetch_url_authed) - Fires immediately after fetch url action.
-- [`mainwp_fetch_urls_chunk_size`](api-remote/index.md#mainwp_fetch_urls_chunk_size) - Method fetch_urls_authed()
-- [`mainwp_file_uploader_chunk_size`](updates-maintenance/index.md#mainwp_file_uploader_chunk_size) - Method render_upload()
-- [`mainwp_file_uploader_size_limit`](api-remote/index.md#mainwp_file_uploader_size_limit) - Filter: 'mainwp_file_uploader_size_limit'
-- [`mainwp_forced_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp_forced_get_plugin_theme_icon) - Gets a plugin icon via API from WordPress.org
-- [`mainwp_forced_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp_forced_get_plugin_theme_icon) - Gets a theme icon via API from WordPress.org
-- [`mainwp_format_email`](api-remote/index.md#mainwp_format_email) - Method format_email()
-- [`mainwp_ga_delete_site`](site-management/index.md#mainwp_ga_delete_site) - Action: mainwp_ga_delete_site
-- [`mainwp_get_all_pages_data`](content-management/index.md#mainwp_get_all_pages_data) - Get all pages data
-- [`mainwp_get_all_posts_data`](content-management/index.md#mainwp_get_all_posts_data) - Get all posts data
-- [`mainwp_get_notification_template_name_by_type`](api-remote/index.md#mainwp_get_notification_template_name_by_type) - Get default template name by email/notification type.
-- [`mainwp_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp_get_plugin_theme_icon) - Gets a plugin icon via API from WordPress.org
-- [`mainwp_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp_get_plugin_theme_icon) - Gets a theme icon via API from WordPress.org
-- [`mainwp_get_post_data_authed`](content-management/index.md#mainwp_get_post_data_authed) - Method get_post_data_authed()
-- [`mainwp_get_started_widget_bottom`](ui-display/index.md#mainwp_get_started_widget_bottom) - Action: mainwp_get_started_widget_bottom
-- [`mainwp_get_started_widget_title`](ui-display/index.md#mainwp_get_started_widget_title) - *Arguments*
-- [`mainwp_get_started_widget_top`](ui-display/index.md#mainwp_get_started_widget_top) - Action: mainwp_get_started_widget_top
-- [`mainwp_get_template`](api-remote/index.md#mainwp_get_template) - Filter: mainwp_get_template
-- [`mainwp_getcustompage_backups`](content-management/index.md#mainwp_getcustompage_backups) - Instantiate Legacy Backups Menu.
-- [`mainwp_getextensions`](extensions-integration/index.md#mainwp_getextensions) - Method init_menu()
-- [`mainwp_getmetaboxes`](ui-display/index.md#mainwp_getmetaboxes) - Method on_load_page_dashboard()
-- [`mainwp_getprimarybackup_activated`](backups-restoration/index.md#mainwp_getprimarybackup_activated) - Method admin_init()
-- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp_getprimarybackup_methods) - This filter is documented in ../pages/page-mainwp-server-information-handler.php
-- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp_getprimarybackup_methods) - Renders the Backup Site Dialog.
-- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp_getprimarybackup_methods) - Render Legacy Backups page.
-- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp_getprimarybackup_methods) - Method render_settings()
-- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp_getprimarybackup_methods) - Method render_individual_settings()
-- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp_getprimarybackup_methods) - Gets MainWP Set Options.
-- [`mainwp_getsubpages_api_backups`](content-management/index.md#mainwp_getsubpages_api_backups) - This hook allows you to add extra sub pages to the client page via the 'mainwp_getsubpages_cost_tracker' filter.
-- [`mainwp_getsubpages_backups`](content-management/index.md#mainwp_getsubpages_backups) - Instantiate Legacy Backups Menu.
-- [`mainwp_getsubpages_client`](content-management/index.md#mainwp_getsubpages_client) - Method init_menu()
-- [`mainwp_getsubpages_cost_tracker`](content-management/index.md#mainwp_getsubpages_cost_tracker) - This hook allows you to add extra sub pages to the client page via the 'mainwp_getsubpages_cost_tracker' filter.
-- [`mainwp_getsubpages_page`](content-management/index.md#mainwp_getsubpages_page) - Method init_menu()
-- [`mainwp_getsubpages_plugins`](updates-maintenance/index.md#mainwp_getsubpages_plugins) - Instantiate Main Plugins Menu.
-- [`mainwp_getsubpages_post`](content-management/index.md#mainwp_getsubpages_post) - Method ini_menu()
-- [`mainwp_getsubpages_restapi`](content-management/index.md#mainwp_getsubpages_restapi) - REST API Subpages
-- [`mainwp_getsubpages_server`](content-management/index.md#mainwp_getsubpages_server) - Method init_menu()
-- [`mainwp_getsubpages_settings`](content-management/index.md#mainwp_getsubpages_settings) - Instantiate the Settings Menu.
-- [`mainwp_getsubpages_sites`](content-management/index.md#mainwp_getsubpages_sites) - Initiate menu.
-- [`mainwp_getsubpages_tags`](content-management/index.md#mainwp_getsubpages_tags) - This hook allows you to add extra sub pages to the Tags page via the 'mainwp-getsubpages-tags' filter.
-- [`mainwp_getsubpages_themes`](updates-maintenance/index.md#mainwp_getsubpages_themes) - Method init_menu()
-- [`mainwp_getsubpages_user`](content-management/index.md#mainwp_getsubpages_user) - Method init_menu()
-- [`mainwp_getwebsite_by_id`](site-management/index.md#mainwp_getwebsite_by_id) - Get sites by website ID.
-- [`mainwp_getwebsiteoptions`](site-management/index.md#mainwp_getwebsiteoptions) - Method get_website_options().
-- [`mainwp_go_back_wpadmin_link`](ui-display/index.md#mainwp_go_back_wpadmin_link) - Filter: mainwp_go_back_wpadmin_link
-- [`mainwp_go_back_wpadmin_link`](ui-display/index.md#mainwp_go_back_wpadmin_link) - Filter: mainwp_go_back_wpadmin_link
-- [`mainwp_header_actions_after_select_themes`](updates-maintenance/index.md#mainwp_header_actions_after_select_themes) - After select theme actions.
-- [`mainwp_header_actions_right`](ui-display/index.md#mainwp_header_actions_right) - Filter: mainwp_header_actions_right
-- [`mainwp_header_left`](content-management/index.md#mainwp_header_left) - Filter: mainwp_header_left
-- [`mainwp_header_right`](content-management/index.md#mainwp_header_right) - Filter: mainwp_header_right
-- [`mainwp_header_title`](content-management/index.md#mainwp_header_title) - Filter: mainwp_header_title
-- [`mainwp_help_sidebar_content`](content-management/index.md#mainwp_help_sidebar_content) - Action: mainwp_help_sidebar_content
-- [`mainwp_html_regression_largest_change_scope`](site-management/index.md#mainwp_html_regression_largest_change_scope) - Method mainwp_upgrade_plugintheme()
-- [`mainwp_html_regression_largest_change_scope`](site-management/index.md#mainwp_html_regression_largest_change_scope) - *Arguments*
-- [`mainwp_http_check_email_footer`](security-monitoring/index.md#mainwp_http_check_email_footer) - HTTP Check Email Footer
-- [`mainwp_http_check_email_header`](security-monitoring/index.md#mainwp_http_check_email_header) - HTTP Check Email Header
-- [`mainwp_import_users_modal_bottom`](user-management/index.md#mainwp_import_users_modal_bottom) - Action: mainwp_import_users_modal_bottom
-- [`mainwp_import_users_modal_top`](user-management/index.md#mainwp_import_users_modal_top) - Action: mainwp_import_users_modal_top
-- [`mainwp_info_schedules_cron_listing`](content-management/index.md#mainwp_info_schedules_cron_listing) - Renders the Cron Schedule page.
-- [`mainwp_init_load_all_options`](system-settings/index.md#mainwp_init_load_all_options) - Method load_all_options()
-- [`mainwp_init_primary_menu_items`](ui-display/index.md#mainwp_init_primary_menu_items) - Method init_mainwp_menu_items()
-- [`mainwp_insights_getmetaboxes`](ui-display/index.md#mainwp_insights_getmetaboxes) - Method add_meta_boxes()
-- [`mainwp_install_plugin_action`](updates-maintenance/index.md#mainwp_install_plugin_action) - Handle @action mainwp_fetch_url_authed.
-- [`mainwp_install_plugin_card_bottom`](updates-maintenance/index.md#mainwp_install_plugin_card_bottom) - Action: mainwp_install_plugin_card_bottom
-- [`mainwp_install_plugin_card_top`](updates-maintenance/index.md#mainwp_install_plugin_card_top) - Action: mainwp_install_plugin_card_top
-- [`mainwp_install_plugin_theme_modal_action`](updates-maintenance/index.md#mainwp_install_plugin_theme_modal_action) - Action: mainwp_after_plugin_theme_install_progress
-- [`mainwp_install_plugin_theme_tabs_header_top`](updates-maintenance/index.md#mainwp_install_plugin_theme_tabs_header_top) - Render Install plugins Table.
-- [`mainwp_install_plugin_theme_tabs_header_top`](updates-maintenance/index.md#mainwp_install_plugin_theme_tabs_header_top) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_install_plugins_actions_bar_left`](updates-maintenance/index.md#mainwp_install_plugins_actions_bar_left) - Install Plugins actions bar (left)
-- [`mainwp_install_plugins_actions_bar_right`](updates-maintenance/index.md#mainwp_install_plugins_actions_bar_right) - Install Plugins actions bar (right)
-- [`mainwp_install_theme_action`](updates-maintenance/index.md#mainwp_install_theme_action) - Handle @action mainwp_fetch_url_authed.
-- [`mainwp_install_theme_action`](updates-maintenance/index.md#mainwp_install_theme_action) - Handle @action mainwp_fetch_url_authed.
-- [`mainwp_install_theme_card_template_bottom`](updates-maintenance/index.md#mainwp_install_theme_card_template_bottom) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_install_themes_actions_bar_left`](updates-maintenance/index.md#mainwp_install_themes_actions_bar_left) - Install Themes actions bar (left)
-- [`mainwp_install_themes_actions_bar_right`](updates-maintenance/index.md#mainwp_install_themes_actions_bar_right) - Install Themes actions bar (right)
-- [`mainwp_install_update_actions`](updates-maintenance/index.md#mainwp_install_update_actions) - Fires immediately after install action.
-- [`mainwp_installbulk_prepareupload`](updates-maintenance/index.md#mainwp_installbulk_prepareupload) - Prepare upload
-- [`mainwp_is_disable_menu_item`](ui-display/index.md#mainwp_is_disable_menu_item) - Method is_disable_menu_item
-- [`mainwp_is_enable_schedule_job`](api-remote/index.md#mainwp_is_enable_schedule_job) - Method init_mainwp_cron()
-- [`mainwp_is_rest_api_request`](api-remote/index.md#mainwp_is_rest_api_request) - Whether this is a REST API request.
-- [`mainwp_license_deactivated_alert_plain_text`](api-remote/index.md#mainwp_license_deactivated_alert_plain_text) - Method cron_deactivated_licenses_alert()
-- [`mainwp_licenses_deactivated_alert_email_footer`](security-monitoring/index.md#mainwp_licenses_deactivated_alert_email_footer) - Site Health Monitoring Email Footer
-- [`mainwp_licenses_deactivated_alert_email_header`](security-monitoring/index.md#mainwp_licenses_deactivated_alert_email_header) - Site Health Monitoring Email Header
-- [`mainwp_limit_updates_all`](updates-maintenance/index.md#mainwp_limit_updates_all) - Limits number of updates to process.
-- [`mainwp_limit_updates_all`](updates-maintenance/index.md#mainwp_limit_updates_all) - Filter: mainwp_limit_updates_all
-- [`mainwp_load_text_domain`](updates-maintenance/index.md#mainwp_load_text_domain) - Method localization()
-- [`mainwp_locate_template`](api-remote/index.md#mainwp_locate_template) - Filer: mainwp_locate_template
-- [`mainwp_log_action`](api-remote/index.md#mainwp_log_action) - Schedules a purge of records.
-- [`mainwp_log_action`](backups-restoration/index.md#mainwp_log_action) - Debugging log.
-- [`mainwp_log_do_to_db`](site-management/index.md#mainwp_log_do_to_db) - Method log_to_db()
-- [`mainwp_log_specific`](api-remote/index.md#mainwp_log_specific) - MainWP_Logger constructor.
-- [`mainwp_log_specific_actions`](content-management/index.md#mainwp_log_specific_actions) - Renders action logs page.
-- [`mainwp_log_status`](api-remote/index.md#mainwp_log_status) - MainWP_Logger constructor.
-- [`mainwp_log_system_query`](system-settings/index.md#mainwp_log_system_query) - Method log_system_query
-- [`mainwp_log_to_db_data`](ui-display/index.md#mainwp_log_to_db_data) - Method log_to_db()
-- [`mainwp_log_to_db_priority`](site-management/index.md#mainwp_log_to_db_priority) - Method log_to_db()
-- [`mainwp_logger_keep_days`](security-monitoring/index.md#mainwp_logger_keep_days) - Method check_log_daily()
-- [`mainwp_logger_to_db`](site-management/index.md#mainwp_logger_to_db) - Method log()
-- [`mainwp_logger_to_db`](content-management/index.md#mainwp_logger_to_db) - Renders action logs page.
-- [`mainwp_logger_to_db`](content-management/index.md#mainwp_logger_to_db) - Renders action logs page.
-- [`mainwp_logs_manage_table_bottom`](ui-display/index.md#mainwp_logs_manage_table_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_manage_table_top`](ui-display/index.md#mainwp_logs_manage_table_top) - Action: mainwp_logs_manage_table_top
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp_logs_widget_bottom) - Action: mainwp_logs_widget_bottom
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Actoin: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp_logs_widget_top) - Action: mainwp_logs_widget_top
-- [`mainwp_main_menu`](ui-display/index.md#mainwp_main_menu) - Filter: mainwp_main_menu
-- [`mainwp_main_menu_disable_menu_items`](ui-display/index.md#mainwp_main_menu_disable_menu_items) - Filter: mainwp_main_menu_disable_menu_items
-- [`mainwp_main_menu_submenu`](ui-display/index.md#mainwp_main_menu_submenu) - Filter: mainwp_main_menu_submenu
-- [`mainwp_manage_pages_action_item`](content-management/index.md#mainwp_manage_pages_action_item) - Method pages_search_handler()
-- [`mainwp_manage_pages_after_search_options`](content-management/index.md#mainwp_manage_pages_after_search_options) - Action: mainwp_manage_pages_after_search_options
-- [`mainwp_manage_pages_after_select_sites`](content-management/index.md#mainwp_manage_pages_after_select_sites) - Action: mainwp_manage_pages_after_select_sites
-- [`mainwp_manage_pages_after_submit_button`](content-management/index.md#mainwp_manage_pages_after_submit_button) - Action: mainwp_manage_pages_after_submit_button
-- [`mainwp_manage_pages_before_search_options`](content-management/index.md#mainwp_manage_pages_before_search_options) - Action: mainwp_manage_pages_before_search_options
-- [`mainwp_manage_pages_before_select_sites`](content-management/index.md#mainwp_manage_pages_before_select_sites) - Action: mainwp_manage_pages_before_select_sites
-- [`mainwp_manage_pages_before_submit_button`](content-management/index.md#mainwp_manage_pages_before_submit_button) - Action: mainwp_manage_pages_before_submit_button
-- [`mainwp_manage_pages_bulk_action`](content-management/index.md#mainwp_manage_pages_bulk_action) - Renders Bulk Page Manager.
-- [`mainwp_manage_pages_sidebar_bottom`](content-management/index.md#mainwp_manage_pages_sidebar_bottom) - Action: mainwp_manage_pages_sidebar_bottom
-- [`mainwp_manage_pages_sidebar_top`](content-management/index.md#mainwp_manage_pages_sidebar_top) - Action: mainwp_manage_pages_sidebar_top
-- [`mainwp_manage_plugin_theme_hide_show_updates_per`](updates-maintenance/index.md#mainwp_manage_plugin_theme_hide_show_updates_per) - Method render_select_manage_view().
-- [`mainwp_manage_plugins_after_search_options`](updates-maintenance/index.md#mainwp_manage_plugins_after_search_options) - Action: mainwp_manage_plugins_after_search_options
-- [`mainwp_manage_plugins_after_search_options`](updates-maintenance/index.md#mainwp_manage_plugins_after_search_options) - Render Install plugins Table.
-- [`mainwp_manage_plugins_after_search_options`](updates-maintenance/index.md#mainwp_manage_plugins_after_search_options) - Render Autoupdate SubPage.
-- [`mainwp_manage_plugins_after_select_sites`](updates-maintenance/index.md#mainwp_manage_plugins_after_select_sites) - Action: mainwp_manage_plugins_after_select_sites
-- [`mainwp_manage_plugins_after_select_sites`](updates-maintenance/index.md#mainwp_manage_plugins_after_select_sites) - Render Install plugins Table.
-- [`mainwp_manage_plugins_after_submit_button`](updates-maintenance/index.md#mainwp_manage_plugins_after_submit_button) - Action: mainwp_manage_plugins_after_submit_button
-- [`mainwp_manage_plugins_after_submit_button`](updates-maintenance/index.md#mainwp_manage_plugins_after_submit_button) - Render Autoupdate SubPage.
-- [`mainwp_manage_plugins_before_search_options`](updates-maintenance/index.md#mainwp_manage_plugins_before_search_options) - Action: mainwp_manage_plugins_before_search_options
-- [`mainwp_manage_plugins_before_search_options`](updates-maintenance/index.md#mainwp_manage_plugins_before_search_options) - Render Install plugins Table.
-- [`mainwp_manage_plugins_before_search_options`](updates-maintenance/index.md#mainwp_manage_plugins_before_search_options) - Render Autoupdate SubPage.
-- [`mainwp_manage_plugins_before_select_sites`](updates-maintenance/index.md#mainwp_manage_plugins_before_select_sites) - Action: mainwp_manage_plugins_before_select_sites
-- [`mainwp_manage_plugins_before_select_sites`](updates-maintenance/index.md#mainwp_manage_plugins_before_select_sites) - Render Install plugins Table.
-- [`mainwp_manage_plugins_before_submit_button`](updates-maintenance/index.md#mainwp_manage_plugins_before_submit_button) - Action: mainwp_manage_plugins_before_submit_button
-- [`mainwp_manage_plugins_before_submit_button`](updates-maintenance/index.md#mainwp_manage_plugins_before_submit_button) - Render Install plugins Table.
-- [`mainwp_manage_plugins_before_submit_button`](updates-maintenance/index.md#mainwp_manage_plugins_before_submit_button) - Render Install plugins Table.
-- [`mainwp_manage_plugins_before_submit_button`](updates-maintenance/index.md#mainwp_manage_plugins_before_submit_button) - Render Autoupdate SubPage.
-- [`mainwp_manage_plugins_sidebar_bottom`](updates-maintenance/index.md#mainwp_manage_plugins_sidebar_bottom) - Action: mainwp_manage_plugins_sidebar_bottom
-- [`mainwp_manage_plugins_sidebar_bottom`](updates-maintenance/index.md#mainwp_manage_plugins_sidebar_bottom) - Render Install plugins Table.
-- [`mainwp_manage_plugins_sidebar_bottom`](updates-maintenance/index.md#mainwp_manage_plugins_sidebar_bottom) - Render Autoupdate SubPage.
-- [`mainwp_manage_plugins_sidebar_top`](updates-maintenance/index.md#mainwp_manage_plugins_sidebar_top) - Action: mainwp_manage_plugins_sidebar_top
-- [`mainwp_manage_plugins_sidebar_top`](updates-maintenance/index.md#mainwp_manage_plugins_sidebar_top) - Render Install plugins Table.
-- [`mainwp_manage_plugins_sidebar_top`](updates-maintenance/index.md#mainwp_manage_plugins_sidebar_top) - Render Autoupdate SubPage.
-- [`mainwp_manage_posts_action_item`](content-management/index.md#mainwp_manage_posts_action_item) - Method posts_search_handler()
-- [`mainwp_manage_posts_after_search_options`](content-management/index.md#mainwp_manage_posts_after_search_options) - Action: mainwp_manage_posts_after_search_options
-- [`mainwp_manage_posts_after_select_sites`](content-management/index.md#mainwp_manage_posts_after_select_sites) - Action: mainwp_manage_posts_after_select_sites
-- [`mainwp_manage_posts_after_submit_button`](content-management/index.md#mainwp_manage_posts_after_submit_button) - Action: mainwp_manage_posts_after_submit_button
-- [`mainwp_manage_posts_before_search_options`](content-management/index.md#mainwp_manage_posts_before_search_options) - Action: mainwp_manage_posts_before_search_options
-- [`mainwp_manage_posts_before_select_sites`](content-management/index.md#mainwp_manage_posts_before_select_sites) - Action: mainwp_manage_posts_before_select_sites
-- [`mainwp_manage_posts_before_submit_button`](content-management/index.md#mainwp_manage_posts_before_submit_button) - Action: mainwp_manage_posts_before_submit_button
-- [`mainwp_manage_posts_bulk_action`](content-management/index.md#mainwp_manage_posts_bulk_action) - Method render()
-- [`mainwp_manage_posts_sidebar_bottom`](content-management/index.md#mainwp_manage_posts_sidebar_bottom) - Action: mainwp_manage_posts_sidebar_bottom
-- [`mainwp_manage_posts_sidebar_top`](content-management/index.md#mainwp_manage_posts_sidebar_top) - Action: mainwp_manage_posts_sidebar_top
-- [`mainwp_manage_sites_action`](site-management/index.md#mainwp_manage_sites_action) - Action: mainwp_manage_sites_action
-- [`mainwp_manage_sites_action`](site-management/index.md#mainwp_manage_sites_action) - Action: mainwp_manage_sites_action
-- [`mainwp_manage_sites_edit`](site-management/index.md#mainwp_manage_sites_edit) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_manage_sites_edit`](site-management/index.md#mainwp_manage_sites_edit) - Edit site
-- [`mainwp_manage_sites_email_settings`](site-management/index.md#mainwp_manage_sites_email_settings) - Action: mainwp_manage_sites_email_settings
-- [`mainwp_manage_sites_force_use_ipv4`](site-management/index.md#mainwp_manage_sites_force_use_ipv4) - Method mainwp_testwp()
-- [`mainwp_manage_sites_force_use_ipv4`](site-management/index.md#mainwp_manage_sites_force_use_ipv4) - Method add_site()
-- [`mainwp_manage_sites_force_use_ipv4`](site-management/index.md#mainwp_manage_sites_force_use_ipv4) - Method check_site()
-- [`mainwp_manage_sites_navigation_items`](site-management/index.md#mainwp_manage_sites_navigation_items) - Method render_managesites_header()
-- [`mainwp_manage_sites_optimize_loading`](site-management/index.md#mainwp_manage_sites_optimize_loading) - Method render_all_sites()
-- [`mainwp_manage_sites_optimize_loading`](site-management/index.md#mainwp_manage_sites_optimize_loading) - Method render_all_sites()
-- [`mainwp_manage_sites_table_columns_defs`](site-management/index.md#mainwp_manage_sites_table_columns_defs) - Display the table.
-- [`mainwp_manage_sites_table_columns_defs`](site-management/index.md#mainwp_manage_sites_table_columns_defs) - Display the table.
-- [`mainwp_manage_sites_table_columns_defs`](site-management/index.md#mainwp_manage_sites_table_columns_defs) - Display the table.
-- [`mainwp_manage_themes_after_search_options`](updates-maintenance/index.md#mainwp_manage_themes_after_search_options) - Action: mainwp_manage_themes_after_search_options
-- [`mainwp_manage_themes_after_search_options`](updates-maintenance/index.md#mainwp_manage_themes_after_search_options) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_manage_themes_after_search_options`](updates-maintenance/index.md#mainwp_manage_themes_after_search_options) - Render the Themes Auto Update Tab.
-- [`mainwp_manage_themes_after_select_sites`](updates-maintenance/index.md#mainwp_manage_themes_after_select_sites) - Action: mainwp_manage_themes_after_select_sites
-- [`mainwp_manage_themes_after_select_sites`](updates-maintenance/index.md#mainwp_manage_themes_after_select_sites) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_manage_themes_after_submit_button`](updates-maintenance/index.md#mainwp_manage_themes_after_submit_button) - Action: mainwp_manage_themes_after_submit_button
-- [`mainwp_manage_themes_after_submit_button`](updates-maintenance/index.md#mainwp_manage_themes_after_submit_button) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_manage_themes_after_submit_button`](updates-maintenance/index.md#mainwp_manage_themes_after_submit_button) - Render the Themes Auto Update Tab.
-- [`mainwp_manage_themes_before_search_options`](updates-maintenance/index.md#mainwp_manage_themes_before_search_options) - Action: mainwp_manage_themes_before_search_options
-- [`mainwp_manage_themes_before_search_options`](updates-maintenance/index.md#mainwp_manage_themes_before_search_options) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_manage_themes_before_search_options`](updates-maintenance/index.md#mainwp_manage_themes_before_search_options) - Render the Themes Auto Update Tab.
-- [`mainwp_manage_themes_before_select_sites`](updates-maintenance/index.md#mainwp_manage_themes_before_select_sites) - Action: mainwp_manage_themes_before_select_sites
-- [`mainwp_manage_themes_before_select_sites`](updates-maintenance/index.md#mainwp_manage_themes_before_select_sites) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_manage_themes_before_submit_button`](updates-maintenance/index.md#mainwp_manage_themes_before_submit_button) - Action: mainwp_manage_themes_before_submit_button
-- [`mainwp_manage_themes_before_submit_button`](updates-maintenance/index.md#mainwp_manage_themes_before_submit_button) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_manage_themes_before_submit_button`](updates-maintenance/index.md#mainwp_manage_themes_before_submit_button) - Render the Themes Auto Update Tab.
-- [`mainwp_manage_themes_sidebar_bottom`](updates-maintenance/index.md#mainwp_manage_themes_sidebar_bottom) - Action: mainwp_manage_themes_sidebar_bottom
-- [`mainwp_manage_themes_sidebar_bottom`](updates-maintenance/index.md#mainwp_manage_themes_sidebar_bottom) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_manage_themes_sidebar_bottom`](updates-maintenance/index.md#mainwp_manage_themes_sidebar_bottom) - Render the Themes Auto Update Tab.
-- [`mainwp_manage_themes_sidebar_top`](updates-maintenance/index.md#mainwp_manage_themes_sidebar_top) - Action: mainwp_manage_themes_sidebar_top
-- [`mainwp_manage_themes_sidebar_top`](updates-maintenance/index.md#mainwp_manage_themes_sidebar_top) - Render the Themes table for the Install Themes Tab.
-- [`mainwp_manage_themes_sidebar_top`](updates-maintenance/index.md#mainwp_manage_themes_sidebar_top) - Render the Themes Auto Update Tab.
-- [`mainwp_manage_updates_limit_loading`](updates-maintenance/index.md#mainwp_manage_updates_limit_loading) - Method handle_limit_sites().
-- [`mainwp_manage_users_after_search_options`](user-management/index.md#mainwp_manage_users_after_search_options) - Action: mainwp_manage_users_after_search_options
-- [`mainwp_manage_users_after_select_sites`](user-management/index.md#mainwp_manage_users_after_select_sites) - Action: mainwp_manage_users_after_select_sites
-- [`mainwp_manage_users_after_submit_button`](user-management/index.md#mainwp_manage_users_after_submit_button) - Action: mainwp_manage_users_after_submit_button
-- [`mainwp_manage_users_before_search_options`](user-management/index.md#mainwp_manage_users_before_search_options) - Action: mainwp_manage_users_before_search_options
-- [`mainwp_manage_users_before_select_sites`](user-management/index.md#mainwp_manage_users_before_select_sites) - Action: mainwp_manage_users_before_select_sites
-- [`mainwp_manage_users_before_submit_button`](user-management/index.md#mainwp_manage_users_before_submit_button) - Action: mainwp_manage_users_before_submit_button
-- [`mainwp_manage_users_sidebar_bottom`](user-management/index.md#mainwp_manage_users_sidebar_bottom) - Action: mainwp_manage_users_sidebar_bottom
-- [`mainwp_manage_users_sidebar_top`](user-management/index.md#mainwp_manage_users_sidebar_top) - Action: mainwp_manage_users_sidebar_top
-- [`mainwp_manageclients_bulk_actions`](client-reports/index.md#mainwp_manageclients_bulk_actions) - Filter: mainwp_manageclients_bulk_actions
-- [`mainwp_manageclients_tabletop`](client-reports/index.md#mainwp_manageclients_tabletop) - Method render_second_top_header()
-- [`mainwp_manageposts_get_post_result`](content-management/index.md#mainwp_manageposts_get_post_result) - Method get_post()
-- [`mainwp_managesite_backup`](site-management/index.md#mainwp_managesite_backup) - Method backup()
-- [`mainwp_managesite_schedule_backup`](site-management/index.md#mainwp_managesite_schedule_backup) - Execute the backup task.
-- [`mainwp_managesites_bulk_actions`](site-management/index.md#mainwp_managesites_bulk_actions) - Filter: mainwp_managesites_bulk_actions
-- [`mainwp_managesites_getbackuplink`](site-management/index.md#mainwp_managesites_getbackuplink) - Filter: mainwp_managesites_getbackuplink
-- [`mainwp_managesites_tabletop`](site-management/index.md#mainwp_managesites_tabletop) - Action: mainwp_managesites_tabletop
-- [`mainwp_menu_extensions_left_menu`](ui-display/index.md#mainwp_menu_extensions_left_menu) - Method init_extensions_menu()
-- [`mainwp_menu_logo_alt`](ui-display/index.md#mainwp_menu_logo_alt) - *Arguments*
-- [`mainwp_menu_logo_href`](ui-display/index.md#mainwp_menu_logo_href) - *Arguments*
-- [`mainwp_menu_logo_src`](ui-display/index.md#mainwp_menu_logo_src) - *Arguments*
-- [`mainwp_module_cost_tracker_actions_bar_left`](content-management/index.md#mainwp_module_cost_tracker_actions_bar_left) - Render Actions Bar
-- [`mainwp_module_cost_tracker_actions_bar_right`](content-management/index.md#mainwp_module_cost_tracker_actions_bar_right) - Render Actions Bar
-- [`mainwp_module_cost_tracker_before_save_settings`](system-settings/index.md#mainwp_module_cost_tracker_before_save_settings) - Settigns Post
-- [`mainwp_module_cost_tracker_email_footer`](updates-maintenance/index.md#mainwp_module_cost_tracker_email_footer) - HTTP Check Email Footer
-- [`mainwp_module_cost_tracker_email_header`](updates-maintenance/index.md#mainwp_module_cost_tracker_email_header) - HTTP Check Email Header
-- [`mainwp_module_cost_tracker_get_total_cost`](updates-maintenance/index.md#mainwp_module_cost_tracker_get_total_cost) - Method render_sites()
-- [`mainwp_module_cost_tracker_help_item`](content-management/index.md#mainwp_module_cost_tracker_help_item) - Action: mainwp_module_cost_tracker_help_item
-- [`mainwp_module_cost_tracker_manager_check_status`](security-monitoring/index.md#mainwp_module_cost_tracker_manager_check_status) - *Arguments*
-- [`mainwp_module_cost_tracker_monthly_renewals_widget_title`](ui-display/index.md#mainwp_module_cost_tracker_monthly_renewals_widget_title) - *Arguments*
-- [`mainwp_module_cost_tracker_settings_bottom`](system-settings/index.md#mainwp_module_cost_tracker_settings_bottom) - Render settings content.
-- [`mainwp_module_cost_tracker_summary_enabled_widgets`](ui-display/index.md#mainwp_module_cost_tracker_summary_enabled_widgets) - Unset unwanted Widgets
-- [`mainwp_module_cost_tracker_summary_screen_options_bottom`](ui-display/index.md#mainwp_module_cost_tracker_summary_screen_options_bottom) - Action: mainwp_module_cost_tracker_summary_screen_options_bottom
-- [`mainwp_module_cost_tracker_summary_screen_options_top`](ui-display/index.md#mainwp_module_cost_tracker_summary_screen_options_top) - Action: mainwp_module_cost_tracker_summary_screen_options_top
-- [`mainwp_module_cost_tracker_summary_widgets_screen_options`](ui-display/index.md#mainwp_module_cost_tracker_summary_widgets_screen_options) - Filter: mainwp_module_cost_tracker_summary_widgets_screen_options
-- [`mainwp_module_cost_tracker_upcoming_renewals_widget_title`](ui-display/index.md#mainwp_module_cost_tracker_upcoming_renewals_widget_title) - *Arguments*
-- [`mainwp_module_cost_tracker_widget_bottom`](ui-display/index.md#mainwp_module_cost_tracker_widget_bottom) - Action: mainwp_module_cost_tracker_widget_bottom
-- [`mainwp_module_cost_tracker_widget_bottom`](ui-display/index.md#mainwp_module_cost_tracker_widget_bottom) - Action: mainwp_module_cost_tracker_widget_bottom
-- [`mainwp_module_cost_tracker_widget_bottom`](ui-display/index.md#mainwp_module_cost_tracker_widget_bottom) - Action: mainwp_module_cost_tracker_widget_bottom
-- [`mainwp_module_cost_tracker_widget_top`](ui-display/index.md#mainwp_module_cost_tracker_widget_top) - Action: mainwp_module_cost_tracker_widget_top
-- [`mainwp_module_cost_tracker_widget_top`](ui-display/index.md#mainwp_module_cost_tracker_widget_top) - Action: mainwp_module_cost_tracker_widget_top
-- [`mainwp_module_cost_tracker_widget_top`](ui-display/index.md#mainwp_module_cost_tracker_widget_top) - Action: mainwp_module_cost_tracker_widget_top
-- [`mainwp_module_cost_tracker_yearly_renewals_widget_title`](ui-display/index.md#mainwp_module_cost_tracker_yearly_renewals_widget_title) - *Arguments*
-- [`mainwp_module_dashboard_insights_help_item`](ui-display/index.md#mainwp_module_dashboard_insights_help_item) - Action: mainwp_module_dashboard_insights_help_item
-- [`mainwp_module_log_after_connectors_registration`](api-remote/index.md#mainwp_module_log_after_connectors_registration) - Fires after all connectors have been registered.
-- [`mainwp_module_log_agent_label`](api-remote/index.md#mainwp_module_log_agent_label) - Filter agent labels
-- [`mainwp_module_log_check_connector_is_excluded`](security-monitoring/index.md#mainwp_module_log_check_connector_is_excluded) - Allows excluded connectors to be overridden and registered.
-- [`mainwp_module_log_connectors`](api-remote/index.md#mainwp_module_log_connectors) - Allows for adding additional connectors via classes that extend Connector.
-- [`mainwp_module_log_cron_tracking`](site-management/index.md#mainwp_module_log_cron_tracking) - Log handler.
-- [`mainwp_module_log_current_agent`](api-remote/index.md#mainwp_module_log_current_agent) - Filter the current agent string
-- [`mainwp_module_log_data`](site-management/index.md#mainwp_module_log_data) - Log handler
-- [`mainwp_module_log_get_role_list_separator`](user-management/index.md#mainwp_module_log_get_role_list_separator) - Tries to find a label for the record's user_role.
-- [`mainwp_module_log_overview_enabled_widgets`](ui-display/index.md#mainwp_module_log_overview_enabled_widgets) - Unset unwanted Widgets
-- [`mainwp_module_log_overview_screen_options_bottom`](ui-display/index.md#mainwp_module_log_overview_screen_options_bottom) - Action: mainwp_module_log_overview_screen_options_bottom
-- [`mainwp_module_log_overview_screen_options_top`](ui-display/index.md#mainwp_module_log_overview_screen_options_top) - Action: mainwp_module_log_overview_screen_options_top
-- [`mainwp_module_log_query_args`](api-remote/index.md#mainwp_module_log_query_args) - Filter allows additional arguments to query $args
-- [`mainwp_module_log_record_array`](api-remote/index.md#mainwp_module_log_record_array) - Filter allows modification of record information
-- [`mainwp_module_log_record_insert_error`](api-remote/index.md#mainwp_module_log_record_insert_error) - Fires on a record insertion error
-- [`mainwp_module_log_record_inserted`](api-remote/index.md#mainwp_module_log_record_inserted) - Fires after a record has been inserted
-- [`mainwp_module_log_widgets_screen_options`](ui-display/index.md#mainwp_module_log_widgets_screen_options) - Filter: mainwp_module_log_widgets_screen_options
-- [`mainwp_module_monthly_renewals_after_costs_list`](ui-display/index.md#mainwp_module_monthly_renewals_after_costs_list) - Action: mainwp_module_monthly_renewals_after_costs_list
-- [`mainwp_module_monthly_renewals_before_costs_list`](ui-display/index.md#mainwp_module_monthly_renewals_before_costs_list) - Action: mainwp_module_monthly_renewals_before_costs_list
-- [`mainwp_module_upcoming_renewals_after_costs_list`](ui-display/index.md#mainwp_module_upcoming_renewals_after_costs_list) - Action: mainwp_module_upcoming_renewals_after_costs_list
-- [`mainwp_module_upcoming_renewals_before_costs_list`](ui-display/index.md#mainwp_module_upcoming_renewals_before_costs_list) - Action: mainwp_module_upcoming_renewals_before_costs_list
-- [`mainwp_module_yearly_renewals_after_costs_list`](ui-display/index.md#mainwp_module_yearly_renewals_after_costs_list) - Action: mainwp_module_yearly_renewals_after_costs_list
-- [`mainwp_module_yearly_renewals_before_costs_list`](ui-display/index.md#mainwp_module_yearly_renewals_before_costs_list) - Action: mainwp_module_yearly_renewals_before_costs_list
-- [`mainwp_monitoring_sitestable_getcolumns`](security-monitoring/index.md#mainwp_monitoring_sitestable_getcolumns) - Filter: mainwp_monitoring_sitestable_getcolumns
-- [`mainwp_monitoring_sitestable_item`](security-monitoring/index.md#mainwp_monitoring_sitestable_item) - Filter: mainwp_monitoring_sitestable_item
-- [`mainwp_monitoring_sitestable_prepare_extra_view`](security-monitoring/index.md#mainwp_monitoring_sitestable_prepare_extra_view) - Prepair the items to be listed.
-- [`mainwp_monitoring_sitestable_prepared_items`](security-monitoring/index.md#mainwp_monitoring_sitestable_prepared_items) - Action: mainwp_monitoring_sitestable_prepared_items
-- [`mainwp_monitoring_table_features`](security-monitoring/index.md#mainwp_monitoring_table_features) - Filter: mainwp_monitoring_table_features
-- [`mainwp_monitoringsites_bulk_actions`](site-management/index.md#mainwp_monitoringsites_bulk_actions) - Filter: mainwp_monitoringsites_bulk_actions
-- [`mainwp_new_user_password_complexity`](user-management/index.md#mainwp_new_user_password_complexity) - Filter: mainwp_new_user_password_complexity
-- [`mainwp_non_mainwp_changes_table_bottom`](ui-display/index.md#mainwp_non_mainwp_changes_table_bottom) - Action: mainwp_non_mainwp_changes_table_bottom
-- [`mainwp_non_mainwp_changes_table_top`](ui-display/index.md#mainwp_non_mainwp_changes_table_top) - Action: mainwp_non_mainwp_changes_table_top
-- [`mainwp_non_mainwp_changes_widget_bottom`](ui-display/index.md#mainwp_non_mainwp_changes_widget_bottom) - Action: mainwp_non_mainwp_changes_widget_bottom
-- [`mainwp_non_mainwp_changes_widget_title`](ui-display/index.md#mainwp_non_mainwp_changes_widget_title) - *Arguments*
-- [`mainwp_non_mainwp_changes_widget_top`](ui-display/index.md#mainwp_non_mainwp_changes_widget_top) - Actoin: mainwp_non_mainwp_changes_widget_top
-- [`mainwp_notes_widget_bottom`](ui-display/index.md#mainwp_notes_widget_bottom) - Action: mainwp_notes_widget_bottom
-- [`mainwp_notes_widget_title`](ui-display/index.md#mainwp_notes_widget_title) - *Arguments*
-- [`mainwp_notes_widget_top`](ui-display/index.md#mainwp_notes_widget_top) - Action: mainwp_notes_widget_top
-- [`mainwp_notification_template_copy_message`](api-remote/index.md#mainwp_notification_template_copy_message) - Filter mainwp_notification_template_copy_message.
-- [`mainwp_notification_type_desc`](api-remote/index.md#mainwp_notification_type_desc) - Get email settings description.
-- [`mainwp_notification_types`](api-remote/index.md#mainwp_notification_types) - Get email notification types.
-- [`mainwp_open_hide_referrer`](api-remote/index.md#mainwp_open_hide_referrer) - Filter: mainwp_open_hide_referrer
-- [`mainwp_open_site_allow_vars`](site-management/index.md#mainwp_open_site_allow_vars) - Child Site Dashboard Link redirect handler.
-- [`mainwp_open_site_login_required_params`](site-management/index.md#mainwp_open_site_login_required_params) - Method get_get_data_authed()
-- [`mainwp_overview_enabled_widgets`](ui-display/index.md#mainwp_overview_enabled_widgets) - Unset unwanted Widgets
-- [`mainwp_overview_enabled_widgets`](ui-display/index.md#mainwp_overview_enabled_widgets) - Unset unwanted Widgets
-- [`mainwp_overview_help_item`](content-management/index.md#mainwp_overview_help_item) - Action: mainwp_overview_help_item
-- [`mainwp_overview_screen_options_bottom`](ui-display/index.md#mainwp_overview_screen_options_bottom) - Action: mainwp_overview_screen_options_bottom
-- [`mainwp_overview_screen_options_top`](ui-display/index.md#mainwp_overview_screen_options_top) - Action: mainwp_overview_screen_options_top
-- [`mainwp_page_admin_body_class`](content-management/index.md#mainwp_page_admin_body_class) - MainWP Admin body CSS class attributes.
-- [`mainwp_page_hearder_tabs_updates`](updates-maintenance/index.md#mainwp_page_hearder_tabs_updates) - Renders header tabs
-- [`mainwp_page_navigation`](content-management/index.md#mainwp_page_navigation) - Filter: mainwp_page_navigation
-- [`mainwp_page_navigation_menu`](content-management/index.md#mainwp_page_navigation_menu) - Method render_page_navigation()
-- [`mainwp_pagefooter_extensions`](content-management/index.md#mainwp_pagefooter_extensions) - Method render_extensions_groups()
-- [`mainwp_pagefooter_settings`](content-management/index.md#mainwp_pagefooter_settings) - Render settings
-- [`mainwp_pagefooter_settings`](content-management/index.md#mainwp_pagefooter_settings) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_pagefooter_sites`](content-management/index.md#mainwp_pagefooter_sites) - Render Tabs.
-- [`mainwp_pagefooter_sites`](content-management/index.md#mainwp_pagefooter_sites) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_pagefooter_sites`](content-management/index.md#mainwp_pagefooter_sites) - Sites Page Footer
-- [`mainwp_pagefooter_tags`](content-management/index.md#mainwp_pagefooter_tags) - Sites Page Footer
-- [`mainwp_pageheader_extensions`](content-management/index.md#mainwp_pageheader_extensions) - Method render_extensions_groups()
-- [`mainwp_pageheader_settings`](content-management/index.md#mainwp_pageheader_settings) - Render settings
-- [`mainwp_pageheader_settings`](content-management/index.md#mainwp_pageheader_settings) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_pageheader_sites`](content-management/index.md#mainwp_pageheader_sites) - Render Tabs.
-- [`mainwp_pageheader_sites`](content-management/index.md#mainwp_pageheader_sites) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_pageheader_sites`](content-management/index.md#mainwp_pageheader_sites) - Sites Page header
-- [`mainwp_pageheader_tags`](content-management/index.md#mainwp_pageheader_tags) - Sites Page header
-- [`mainwp_pages_actions_bar_left`](content-management/index.md#mainwp_pages_actions_bar_left) - Action: mainwp_pages_actions_bar_left
-- [`mainwp_pages_actions_bar_right`](content-management/index.md#mainwp_pages_actions_bar_right) - Action: mainwp_pages_actions_bar_right
-- [`mainwp_pages_bulk_action`](content-management/index.md#mainwp_pages_bulk_action) - Action: mainwp_pages_bulk_action
-- [`mainwp_pages_help_item`](content-management/index.md#mainwp_pages_help_item) - Action: mainwp_pages_help_item
-- [`mainwp_pages_posting_popup_actions`](content-management/index.md#mainwp_pages_posting_popup_actions) - Method posting()
-- [`mainwp_pages_table_action`](content-management/index.md#mainwp_pages_table_action) - Action: mainwp_pages_table_action
-- [`mainwp_pages_table_column`](content-management/index.md#mainwp_pages_table_column) - Action: mainwp_pages_table_column
-- [`mainwp_pages_table_fatures`](content-management/index.md#mainwp_pages_table_fatures) - Filter: mainwp_pages_table_fatures
-- [`mainwp_pages_table_header`](content-management/index.md#mainwp_pages_table_header) - Action: mainwp_pages_table_header
-- [`mainwp_pages_updates_render_tabs`](updates-maintenance/index.md#mainwp_pages_updates_render_tabs) - Renders updates page.
-- [`mainwp_perform_install_data`](updates-maintenance/index.md#mainwp_perform_install_data) - Perform insatallation additional data
-- [`mainwp_perform_install_data`](updates-maintenance/index.md#mainwp_perform_install_data) - This filter is documented in pages/page-mainwp-install-bulk.php
-- [`mainwp_performinstallplugintheme`](updates-maintenance/index.md#mainwp_performinstallplugintheme) - Method mainwp_ext_performinstallplugintheme()
-- [`mainwp_plugin_auto_updates_table_fatures`](updates-maintenance/index.md#mainwp_plugin_auto_updates_table_fatures) - Filter: mainwp_plugin_auto_updates_table_fatures
-- [`mainwp_plugin_information_sslverify`](updates-maintenance/index.md#mainwp_plugin_information_sslverify) - Sends and receives data to and from the server API.
-- [`mainwp_plugin_theme_icon_cache_days`](updates-maintenance/index.md#mainwp_plugin_theme_icon_cache_days) - Gets a plugin|theme icon to output.
-- [`mainwp_plugins_actions_bar_left`](updates-maintenance/index.md#mainwp_plugins_actions_bar_left) - Action: mainwp_plugins_actions_bar_left
-- [`mainwp_plugins_actions_bar_right`](updates-maintenance/index.md#mainwp_plugins_actions_bar_right) - Action: mainwp_plugins_actions_bar_right
-- [`mainwp_plugins_after_auto_updates_table`](updates-maintenance/index.md#mainwp_plugins_after_auto_updates_table) - Action: mainwp_plugins_after_auto_updates_table
-- [`mainwp_plugins_after_ignored_abandoned`](updates-maintenance/index.md#mainwp_plugins_after_ignored_abandoned) - Action: mainwp_plugins_after_ignored_abandoned
-- [`mainwp_plugins_after_ignored_updates`](updates-maintenance/index.md#mainwp_plugins_after_ignored_updates) - Action: mainwp_plugins_after_ignored_updates
-- [`mainwp_plugins_auto_updates_bulk_action`](updates-maintenance/index.md#mainwp_plugins_auto_updates_bulk_action) - Action: mainwp_plugins_auto_updates_bulk_action
-- [`mainwp_plugins_before_auto_updates_table`](updates-maintenance/index.md#mainwp_plugins_before_auto_updates_table) - Action: mainwp_plugins_before_auto_updates_table
-- [`mainwp_plugins_before_ignored_abandoned`](updates-maintenance/index.md#mainwp_plugins_before_ignored_abandoned) - Action: mainwp_plugins_before_ignored_abandoned
-- [`mainwp_plugins_before_ignored_updates`](updates-maintenance/index.md#mainwp_plugins_before_ignored_updates) - Action: mainwp_plugins_before_ignored_updates
-- [`mainwp_plugins_bulk_action`](updates-maintenance/index.md#mainwp_plugins_bulk_action) - Action: mainwp_plugins_bulk_action
-- [`mainwp_plugins_help_item`](updates-maintenance/index.md#mainwp_plugins_help_item) - Action: mainwp_plugins_help_item
-- [`mainwp_plugins_install_checks`](updates-maintenance/index.md#mainwp_plugins_install_checks) - Method get_plugins_install_check()
-- [`mainwp_plugins_widget_bottom`](updates-maintenance/index.md#mainwp_plugins_widget_bottom) - Action: mainwp_plugins_widget_bottom
-- [`mainwp_plugins_widget_title`](updates-maintenance/index.md#mainwp_plugins_widget_title) - *Arguments*
-- [`mainwp_plugins_widget_top`](updates-maintenance/index.md#mainwp_plugins_widget_top) - Action: mainwp_plugins_widget_top
-- [`mainwp_post_action`](content-management/index.md#mainwp_post_action) - Fires immediately after post action.
-- [`mainwp_post_created`](content-management/index.md#mainwp_post_created) - Method posting_bulk_handler()
-- [`mainwp_post_posting_page`](content-management/index.md#mainwp_post_posting_page) - Posting page
-- [`mainwp_post_posting_post`](content-management/index.md#mainwp_post_posting_post) - Posting post
-- [`mainwp_posting_bulkpost_post_status`](content-management/index.md#mainwp_posting_bulkpost_post_status) - Post status
-- [`mainwp_posting_bulkpost_post_status`](content-management/index.md#mainwp_posting_bulkpost_post_status) - Page status
-- [`mainwp_posting_post_selected_by`](content-management/index.md#mainwp_posting_post_selected_by) - Method posting_posts()
-- [`mainwp_posting_post_selected_sites`](content-management/index.md#mainwp_posting_post_selected_sites) - Method posting_posts()
-- [`mainwp_posting_selected_clients`](content-management/index.md#mainwp_posting_selected_clients) - Method posting_posts()
-- [`mainwp_posting_selected_groups`](site-management/index.md#mainwp_posting_selected_groups) - Method posting_posts()
-- [`mainwp_postprocess_backup_site`](content-management/index.md#mainwp_postprocess_backup_site) - Method  backup_site()
-- [`mainwp_postprocess_backup_sites_feedback`](site-management/index.md#mainwp_postprocess_backup_sites_feedback) - Method  backup_site()
-- [`mainwp_posts_actions_bar_left`](content-management/index.md#mainwp_posts_actions_bar_left) - Action: mainwp_posts_actions_bar_left
-- [`mainwp_posts_actions_bar_right`](content-management/index.md#mainwp_posts_actions_bar_right) - Action: mainwp_posts_actions_bar_right
-- [`mainwp_posts_bulk_action`](content-management/index.md#mainwp_posts_bulk_action) - Action: mainwp_posts_bulk_action
-- [`mainwp_posts_help_item`](content-management/index.md#mainwp_posts_help_item) - Action: mainwp_posts_help_item
-- [`mainwp_posts_posting_bulk_sites`](content-management/index.md#mainwp_posts_posting_bulk_sites) - Method posting_bulk()
-- [`mainwp_posts_posting_popup_actions`](content-management/index.md#mainwp_posts_posting_popup_actions) - Method posting()
-- [`mainwp_posts_search_bulk_sites`](content-management/index.md#mainwp_posts_search_bulk_sites) - Method render()
-- [`mainwp_posts_table_action`](content-management/index.md#mainwp_posts_table_action) - Action: mainwp_posts_table_action
-- [`mainwp_posts_table_column`](content-management/index.md#mainwp_posts_table_column) - Action: mainwp_posts_table_column
-- [`mainwp_posts_table_fatures`](content-management/index.md#mainwp_posts_table_fatures) - Filter: mainwp_posts_table_fatures
-- [`mainwp_posts_table_header`](content-management/index.md#mainwp_posts_table_header) - Action: mainwp_posts_table_header
-- [`mainwp_pre_fetch_authed_data`](site-management/index.md#mainwp_pre_fetch_authed_data) - Method get_post_data_authed()
-- [`mainwp_pre_posting_posts`](content-management/index.md#mainwp_pre_posting_posts) - Filter: mainwp_pre_posting_posts
-- [`mainwp_prepare_install_download_url`](updates-maintenance/index.md#mainwp_prepare_install_download_url) - Method prepare_install()
-- [`mainwp_prepareinstallplugintheme`](updates-maintenance/index.md#mainwp_prepareinstallplugintheme) - Method mainwp_ext_prepareinstallplugintheme()
-- [`mainwp_pro_reports_generate_content`](content-management/index.md#mainwp_pro_reports_generate_content) - Filter: mainwp_pro_reports_generate_content
-- [`mainwp_pro_reports_get_site_tokens`](site-management/index.md#mainwp_pro_reports_get_site_tokens) - Filter: mainwp_pro_reports_get_site_tokens
-- [`mainwp_pro_reports_get_site_tokens`](site-management/index.md#mainwp_pro_reports_get_site_tokens) - This filter is documented in ../class/class-mainwp-notification-settings.php
-- [`mainwp_quick_sites_shortcut`](site-management/index.md#mainwp_quick_sites_shortcut) - Action: mainwp_quick_sites_shortcut
-- [`mainwp_recent_pages_after_draft_list`](content-management/index.md#mainwp_recent_pages_after_draft_list) - Action: mainwp_recent_pages_after_draft_list
-- [`mainwp_recent_pages_after_future_list`](content-management/index.md#mainwp_recent_pages_after_future_list) - Action: mainwp_recent_pages_after_future_list
-- [`mainwp_recent_pages_after_lists`](content-management/index.md#mainwp_recent_pages_after_lists) - Action: mainwp_recent_pages_after_lists
-- [`mainwp_recent_pages_after_pending_list`](content-management/index.md#mainwp_recent_pages_after_pending_list) - Action: mainwp_recent_pages_after_pending_list
-- [`mainwp_recent_pages_after_publised_list`](content-management/index.md#mainwp_recent_pages_after_publised_list) - Action: mainwp_recent_pages_after_publised_list
-- [`mainwp_recent_pages_after_trash_list`](content-management/index.md#mainwp_recent_pages_after_trash_list) - Action: mainwp_recent_pages_after_trash_list
-- [`mainwp_recent_pages_before_draft_list`](content-management/index.md#mainwp_recent_pages_before_draft_list) - Action: mainwp_recent_pages_before_draft_list
-- [`mainwp_recent_pages_before_future_list`](content-management/index.md#mainwp_recent_pages_before_future_list) - Action: mainwp_recent_pages_before_future_list
-- [`mainwp_recent_pages_before_pending_list`](content-management/index.md#mainwp_recent_pages_before_pending_list) - Action: mainwp_recent_pages_before_pending_list
-- [`mainwp_recent_pages_before_publised_list`](content-management/index.md#mainwp_recent_pages_before_publised_list) - Action: mainwp_recent_pages_before_publised_list
-- [`mainwp_recent_pages_before_trash_list`](content-management/index.md#mainwp_recent_pages_before_trash_list) - Action: mainwp_recent_pages_before_trash_list
-- [`mainwp_recent_pages_widget_bottom`](content-management/index.md#mainwp_recent_pages_widget_bottom) - Action: mainwp_recent_pages_widget_bottom
-- [`mainwp_recent_pages_widget_title`](content-management/index.md#mainwp_recent_pages_widget_title) - *Arguments*
-- [`mainwp_recent_pages_widget_top`](content-management/index.md#mainwp_recent_pages_widget_top) - Action: mainwp_recent_pages_widget_top
-- [`mainwp_recent_posts_after_draft_list`](content-management/index.md#mainwp_recent_posts_after_draft_list) - Action: mainwp_recent_posts_after_draft_list
-- [`mainwp_recent_posts_after_future_list`](content-management/index.md#mainwp_recent_posts_after_future_list) - Action: mainwp_recent_posts_after_future_list
-- [`mainwp_recent_posts_after_lists`](content-management/index.md#mainwp_recent_posts_after_lists) - Action: mainwp_recent_posts_after_lists
-- [`mainwp_recent_posts_after_pending_list`](content-management/index.md#mainwp_recent_posts_after_pending_list) - Action: mainwp_recent_posts_after_pending_list
-- [`mainwp_recent_posts_after_publised_list`](content-management/index.md#mainwp_recent_posts_after_publised_list) - Action: mainwp_recent_posts_after_publised_list
-- [`mainwp_recent_posts_after_trash_list`](content-management/index.md#mainwp_recent_posts_after_trash_list) - Action: mainwp_recent_posts_after_trash_list
-- [`mainwp_recent_posts_before_draft_list`](content-management/index.md#mainwp_recent_posts_before_draft_list) - Action: mainwp_recent_posts_before_draft_list
-- [`mainwp_recent_posts_before_future_list`](content-management/index.md#mainwp_recent_posts_before_future_list) - Action: mainwp_recent_posts_before_future_list
-- [`mainwp_recent_posts_before_pending_list`](content-management/index.md#mainwp_recent_posts_before_pending_list) - Action: mainwp_recent_posts_before_pending_list
-- [`mainwp_recent_posts_before_publised_list`](content-management/index.md#mainwp_recent_posts_before_publised_list) - Action: mainwp_recent_posts_before_publised_list
-- [`mainwp_recent_posts_before_trash_list`](content-management/index.md#mainwp_recent_posts_before_trash_list) - Action: mainwp_recent_posts_before_trash_list
-- [`mainwp_recent_posts_pages_number`](content-management/index.md#mainwp_recent_posts_pages_number) - This filter is documented in ../widgets/widget-mainwp-recent-posts.php
-- [`mainwp_recent_posts_pages_number`](content-management/index.md#mainwp_recent_posts_pages_number) - Sets number of recent posts & pages
-- [`mainwp_recent_posts_pages_number`](content-management/index.md#mainwp_recent_posts_pages_number) - This filter is documented in /widgets/widget-mainwp-recent-posts.php
-- [`mainwp_recent_posts_widget_bottom`](content-management/index.md#mainwp_recent_posts_widget_bottom) - Action: mainwp_recent_posts_widget_bottom
-- [`mainwp_recent_posts_widget_title`](content-management/index.md#mainwp_recent_posts_widget_title) - *Arguments*
-- [`mainwp_recent_posts_widget_top`](content-management/index.md#mainwp_recent_posts_widget_top) - Action: mainwp_recent_posts_widget_top
-- [`mainwp_register_post_type`](content-management/index.md#mainwp_register_post_type) - Method create_post_type()
-- [`mainwp_register_regular_sequence_process`](api-remote/index.md#mainwp_register_regular_sequence_process) - Method perform_sequence_process
-- [`mainwp_remote_destination_info`](api-remote/index.md#mainwp_remote_destination_info) - Method mainwp_backup_upload_checkstatus()
-- [`mainwp_removed_extension_menu`](ui-display/index.md#mainwp_removed_extension_menu) - Remove Extensions menu from MainWP Menu.
-- [`mainwp_request_update_premium_plugins`](updates-maintenance/index.md#mainwp_request_update_premium_plugins) - Filter: mainwp_request_update_premium_plugins
-- [`mainwp_request_update_premium_themes`](updates-maintenance/index.md#mainwp_request_update_premium_themes) - Filter: mainwp_request_update_premium_themes
-- [`mainwp_reset_admin_pass_modal_bottom`](ui-display/index.md#mainwp_reset_admin_pass_modal_bottom) - Action: mainwp_reset_admin_pass_modal_bottom
-- [`mainwp_reset_admin_pass_modal_top`](ui-display/index.md#mainwp_reset_admin_pass_modal_top) - Action: mainwp_reset_admin_pass_modal_top
-- [`mainwp_rest_api_disabled`](api-remote/index.md#mainwp_rest_api_disabled) - Method is_rest_api_enabled()
-- [`mainwp_rest_api_enabled`](api-remote/index.md#mainwp_rest_api_enabled) - Method init_rest_api()
-- [`mainwp_rest_api_get_rest_namespaces`](api-remote/index.md#mainwp_rest_api_get_rest_namespaces) - Get API namespaces - new namespaces should be registered here.
-- [`mainwp_rest_api_help_item`](api-remote/index.md#mainwp_rest_api_help_item) - Action: mainwp_rest_api_help_item
-- [`mainwp_rest_api_v2_enabled`](api-remote/index.md#mainwp_rest_api_v2_enabled) - Hook into WordPress ready to init the REST API as needed.
-- [`mainwp_rest_api_validate`](api-remote/index.md#mainwp_rest_api_validate) - Method cost_tracker_rest_api_get_all_costs_callback()
-- [`mainwp_rest_api_validate`](api-remote/index.md#mainwp_rest_api_validate) - Method cost_tracker_rest_api_get_client_costs_callback()
-- [`mainwp_rest_api_validate`](api-remote/index.md#mainwp_rest_api_validate) - Method cost_tracker_rest_api_get_site_costs_callback()
-- [`mainwp_rest_api_validate`](api-remote/index.md#mainwp_rest_api_validate) - Method cost_tracker_rest_api_get_costs_callback()
-- [`mainwp_rest_batch_items_limit`](api-remote/index.md#mainwp_rest_batch_items_limit) - Check batch limit.
-- [`mainwp_rest_batch_items_limit`](api-remote/index.md#mainwp_rest_batch_items_limit) - Check batch limit.
-- [`mainwp_rest_collection_params`](api-remote/index.md#mainwp_rest_collection_params) - Filter collection parameters for the controller.
-- [`mainwp_rest_cost_collection_params`](api-remote/index.md#mainwp_rest_cost_collection_params) - Filter collection parameters.
-- [`mainwp_rest_is_request_to_rest_api`](api-remote/index.md#mainwp_rest_is_request_to_rest_api) - Check if is request to our REST API.
-- [`mainwp_rest_pre_insert_site_item`](site-management/index.md#mainwp_rest_pre_insert_site_item) - Filters an object before it is inserted via the REST API.
-- [`mainwp_rest_pre_update_site_item`](site-management/index.md#mainwp_rest_pre_update_site_item) - Filters an object before it is inserted via the REST API.
-- [`mainwp_rest_prepare_cost`](api-remote/index.md#mainwp_rest_prepare_cost) - Filter product reviews object returned from the REST API.
-- [`mainwp_rest_prepare_site`](api-remote/index.md#mainwp_rest_prepare_site) - Filterobject returned from the REST API.
-- [`mainwp_rest_routes_clients_controller_filter_allowed_fields_by_context`](client-reports/index.md#mainwp_rest_routes_clients_controller_filter_allowed_fields_by_context) - Get client by tag id.
-- [`mainwp_rest_routes_clients_controller_filter_allowed_fields_by_context`](client-reports/index.md#mainwp_rest_routes_clients_controller_filter_allowed_fields_by_context) - Get clients by item.
-- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](site-management/index.md#mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context) - Get sites by tag id.
-- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](site-management/index.md#mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context) - *Arguments*
-- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](site-management/index.md#mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context) - Update all items of site.
-- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](site-management/index.md#mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context) - Get sites of client.
-- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](site-management/index.md#mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context) - Get sites by item.
-- [`mainwp_rest_routes_sites_controller_get_allowed_fields_by_context`](site-management/index.md#mainwp_rest_routes_sites_controller_get_allowed_fields_by_context) - *Arguments*
-- [`mainwp_rest_{$type}_object_query`](api-remote/index.md#mainwp_rest_type_object_query) - Filter the query arguments for a request.
-- [`mainwp_save_bulkpage`](content-management/index.md#mainwp_save_bulkpage) - Action: mainwp_save_bulkpage
-- [`mainwp_save_bulkpost`](content-management/index.md#mainwp_save_bulkpost) - Action: mainwp_save_bulkpost
-- [`mainwp_screen_options_modal_bottom`](ui-display/index.md#mainwp_screen_options_modal_bottom) - Action: mainwp_screen_options_modal_bottom
-- [`mainwp_screen_options_modal_bottom`](ui-display/index.md#mainwp_screen_options_modal_bottom) - Action: mainwp_screen_options_modal_bottom
-- [`mainwp_screen_options_modal_bottom`](ui-display/index.md#mainwp_screen_options_modal_bottom) - Action: mainwp_screen_options_modal_bottom
-- [`mainwp_screen_options_modal_bottom`](ui-display/index.md#mainwp_screen_options_modal_bottom) - Action: mainwp_screen_options_modal_bottom
-- [`mainwp_screen_options_modal_top`](ui-display/index.md#mainwp_screen_options_modal_top) - Action: mainwp_screen_options_modal_top
-- [`mainwp_screen_options_modal_top`](ui-display/index.md#mainwp_screen_options_modal_top) - Action: mainwp_screen_options_modal_top
-- [`mainwp_screen_options_modal_top`](ui-display/index.md#mainwp_screen_options_modal_top) - Action: mainwp_screen_options_modal_top
-- [`mainwp_screen_options_modal_top`](ui-display/index.md#mainwp_screen_options_modal_top) - Action: mainwp_screen_options_modal_top
-- [`mainwp_screen_options_pulse_control`](ui-display/index.md#mainwp_screen_options_pulse_control) - Method render_header_actions()
-- [`mainwp_secure_request`](security-monitoring/index.md#mainwp_secure_request) - Method security_nonce().
-- [`mainwp_secure_request`](security-monitoring/index.md#mainwp_secure_request) - Method admin_init()
-- [`mainwp_security_issues_list_item_column`](security-monitoring/index.md#mainwp_security_issues_list_item_column) - Action: mainwp_security_issues_list_item_column
-- [`mainwp_security_issues_list_item_title`](security-monitoring/index.md#mainwp_security_issues_list_item_title) - *Arguments*
-- [`mainwp_security_issues_list_item_title_url`](security-monitoring/index.md#mainwp_security_issues_list_item_title_url) - *Arguments*
-- [`mainwp_security_issues_stats`](security-monitoring/index.md#mainwp_security_issues_stats) - This filter is documented in ../pages/page-mainwp-security-issues.php
-- [`mainwp_security_issues_stats`](security-monitoring/index.md#mainwp_security_issues_stats) - Filters security issues
-- [`mainwp_security_issues_widget_bottom`](security-monitoring/index.md#mainwp_security_issues_widget_bottom) - Action: mainwp_security_issues_widget_bottom
-- [`mainwp_security_issues_widget_title`](security-monitoring/index.md#mainwp_security_issues_widget_title) - *Arguments*
-- [`mainwp_security_issues_widget_top`](security-monitoring/index.md#mainwp_security_issues_widget_top) - Action: mainwp_security_issues_widget_top
-- [`mainwp_security_issues_widget_top`](security-monitoring/index.md#mainwp_security_issues_widget_top) - Action: mainwp_security_issues_widget_top
-- [`mainwp_security_nonces`](security-monitoring/index.md#mainwp_security_nonces) - Method admin_init()
-- [`mainwp_security_post_data`](content-management/index.md#mainwp_security_post_data) - Filters security issues from fixing
-- [`mainwp_securityissues_sites`](security-monitoring/index.md#mainwp_securityissues_sites) - Action: mainwp_securityissues_sites
-- [`mainwp_select_sites_box`](site-management/index.md#mainwp_select_sites_box) - Render settings
-- [`mainwp_select_themes_modal_bottom`](updates-maintenance/index.md#mainwp_select_themes_modal_bottom) - Action: mainwp_select_themes_modal_bottom
-- [`mainwp_select_themes_modal_top`](updates-maintenance/index.md#mainwp_select_themes_modal_top) - Action: mainwp_select_themes_modal_top
-- [`mainwp_send_mail_from_header`](content-management/index.md#mainwp_send_mail_from_header) - Method send_wp_mail().
-- [`mainwp_settings_email_settings`](system-settings/index.md#mainwp_settings_email_settings) - Action: mainwp_settings_email_settings
-- [`mainwp_settings_form_bottom`](system-settings/index.md#mainwp_settings_form_bottom) - Action: mainwp_settings_form_bottom
-- [`mainwp_settings_form_top`](system-settings/index.md#mainwp_settings_form_top) - Action: mainwp_settings_form_top
-- [`mainwp_settings_help_item`](system-settings/index.md#mainwp_settings_help_item) - Action: mainwp_settings_help_item
-- [`mainwp_show_all_updates_button_text`](updates-maintenance/index.md#mainwp_show_all_updates_button_text) - *Arguments*
-- [`mainwp_show_qsw`](content-management/index.md#mainwp_show_qsw) - Render MainWP Tools SubPage.
-- [`mainwp_sidbar_pages`](content-management/index.md#mainwp_sidbar_pages) - Method render_header_actions()
-- [`mainwp_sidbar_pages`](content-management/index.md#mainwp_sidbar_pages) - Method render_screen_options()
-- [`mainwp_sidebar_pages`](content-management/index.md#mainwp_sidebar_pages) - Method render_header_actions()
-- [`mainwp_sidebar_pages`](content-management/index.md#mainwp_sidebar_pages) - Method render_screen_options()
-- [`mainwp_site_actions_saved_days_number`](site-management/index.md#mainwp_site_actions_saved_days_number) - Method sync_site()
-- [`mainwp_site_added`](site-management/index.md#mainwp_site_added) - Fires immediately after a new website is added.
-- [`mainwp_site_deleted`](site-management/index.md#mainwp_site_deleted) - *Arguments*
-- [`mainwp_site_health_monitoring_email_footer`](site-management/index.md#mainwp_site_health_monitoring_email_footer) - Site Health Monitoring Email Footer
-- [`mainwp_site_health_monitoring_email_header`](site-management/index.md#mainwp_site_health_monitoring_email_header) - Site Health Monitoring Email Header
-- [`mainwp_site_info_table_bottom`](site-management/index.md#mainwp_site_info_table_bottom) - Action: mainwp_site_info_table_bottom
-- [`mainwp_site_info_table_top`](site-management/index.md#mainwp_site_info_table_top) - Action: mainwp_site_info_table_top
-- [`mainwp_site_info_widget_bottom`](site-management/index.md#mainwp_site_info_widget_bottom) - Action: mainwp_site_info_widget_bottom
-- [`mainwp_site_info_widget_title`](site-management/index.md#mainwp_site_info_widget_title) - *Arguments*
-- [`mainwp_site_info_widget_top`](site-management/index.md#mainwp_site_info_widget_top) - Actoin: mainwp_site_info_widget_top
-- [`mainwp_site_reconnected`](site-management/index.md#mainwp_site_reconnected) - Fires immediately after reconnect website.
-- [`mainwp_site_suspended`](site-management/index.md#mainwp_site_suspended) - Fires immediately after website suspended/unsuspend.
-- [`mainwp_site_suspended`](site-management/index.md#mainwp_site_suspended) - Fires immediately after website suspended/unsuspend.
-- [`mainwp_site_suspended`](site-management/index.md#mainwp_site_suspended) - Fires immediately after website suspended/unsuspend.
-- [`mainwp_site_suspended`](site-management/index.md#mainwp_site_suspended) - Site suspended changed.
-- [`mainwp_site_sync`](site-management/index.md#mainwp_site_sync) - Action: mainwp_site_sync
-- [`mainwp_site_synced`](site-management/index.md#mainwp_site_synced) - Action: mainwp_site_synced
-- [`mainwp_site_tag_action`](site-management/index.md#mainwp_site_tag_action) - Fires after a new sites tag has been created.
-- [`mainwp_site_tag_action`](site-management/index.md#mainwp_site_tag_action) - Fires after a tag has been deleted.
-- [`mainwp_site_tag_action`](site-management/index.md#mainwp_site_tag_action) - Fires after a new sites tag has been created.
-- [`mainwp_site_updated`](site-management/index.md#mainwp_site_updated) - Update site
-- [`mainwp_sites_table_features`](site-management/index.md#mainwp_sites_table_features) - Filter: mainwp_sites_table_features
-- [`mainwp_sitestable_display_row_columns`](ui-display/index.md#mainwp_sitestable_display_row_columns) - Get table rows.
-- [`mainwp_sitestable_getcolumns`](ui-display/index.md#mainwp_sitestable_getcolumns) - Filter: mainwp_sitestable_getcolumns
-- [`mainwp_sitestable_item`](ui-display/index.md#mainwp_sitestable_item) - Filter: mainwp_sitestable_item
-- [`mainwp_sitestable_prepare_extra_view`](ui-display/index.md#mainwp_sitestable_prepare_extra_view) - Prepare the items to be listed.
-- [`mainwp_sitestable_prepared_items`](ui-display/index.md#mainwp_sitestable_prepared_items) - Action: mainwp_sitestable_prepared_items
-- [`mainwp_sitestable_render_column`](ui-display/index.md#mainwp_sitestable_render_column) - Columns for a single row.
-- [`mainwp_sitestable_website`](site-management/index.md#mainwp_sitestable_website) - Get table rows.
-- [`mainwp_sitestable_website`](site-management/index.md#mainwp_sitestable_website) - Columns for a single row.
-- [`mainwp_specific_action_logs`](content-management/index.md#mainwp_specific_action_logs) - Renders action logs page.
-- [`mainwp_staging_current_user_sites_view`](site-management/index.md#mainwp_staging_current_user_sites_view) - Method get_select_staging_view_sites()
-- [`mainwp_stats_scan_dir`](security-monitoring/index.md#mainwp_stats_scan_dir) - Method get_post_data_authed()
-- [`mainwp_sub_leftmenu_updates`](updates-maintenance/index.md#mainwp_sub_leftmenu_updates) - Initiates Updates menu.
-- [`mainwp_subheader_actions`](ui-display/index.md#mainwp_subheader_actions) - Action: mainwp_subheader_actions
-- [`mainwp_subpages_left_menu`](content-management/index.md#mainwp_subpages_left_menu) - Method init_subpages_left_menu
-- [`mainwp_sucuriscan_sites`](security-monitoring/index.md#mainwp_sucuriscan_sites) - Action: mainwp_sucuriscan_sites
-- [`mainwp_sync_extensions_options`](site-management/index.md#mainwp_sync_extensions_options) - Method render_sync_exts_settings()
-- [`mainwp_sync_others_data`](site-management/index.md#mainwp_sync_others_data) - Filter: mainwp_sync_others_data
-- [`mainwp_sync_popup_content`](site-management/index.md#mainwp_sync_popup_content) - Method render_footer_content()
-- [`mainwp_sync_popup_content`](site-management/index.md#mainwp_sync_popup_content) - Method render_footer_content()
-- [`mainwp_sync_site_after_sync_result`](site-management/index.md#mainwp_sync_site_after_sync_result) - Method sync_information_array()
-- [`mainwp_sync_site_log_install_actions`](site-management/index.md#mainwp_sync_site_log_install_actions) - Method sync_log_site_actions().
-- [`mainwp_synced_all_sites`](site-management/index.md#mainwp_synced_all_sites) - Method cron_updates_check()
-- [`mainwp_synced_all_sites`](site-management/index.md#mainwp_synced_all_sites) - Action: mainwp_synced_all_sites
-- [`mainwp_system_init`](system-settings/index.md#mainwp_system_init) - MainWP_System constructor.
-- [`mainwp_tags_help_item`](site-management/index.md#mainwp_tags_help_item) - Action: mainwp_tags_help_item
-- [`mainwp_text_format_email`](api-remote/index.md#mainwp_text_format_email) - Filter: mainwp_text_format_email
-- [`mainwp_theme_auto_updates_table_fatures`](updates-maintenance/index.md#mainwp_theme_auto_updates_table_fatures) - Filter: mainwp_theme_auto_updates_table_fatures
-- [`mainwp_themes_actions_bar_left`](updates-maintenance/index.md#mainwp_themes_actions_bar_left) - Action: mainwp_themes_actions_bar_left
-- [`mainwp_themes_actions_bar_right`](updates-maintenance/index.md#mainwp_themes_actions_bar_right) - Action: mainwp_themes_actions_bar_right
-- [`mainwp_themes_after_auto_updates_table`](updates-maintenance/index.md#mainwp_themes_after_auto_updates_table) - Action: mainwp_themes_after_auto_updates_table
-- [`mainwp_themes_after_ignored_abandoned`](updates-maintenance/index.md#mainwp_themes_after_ignored_abandoned) - Action: mainwp_themes_after_ignored_abandoned
-- [`mainwp_themes_after_ignored_updates`](updates-maintenance/index.md#mainwp_themes_after_ignored_updates) - Action: mainwp_themes_after_ignored_updates
-- [`mainwp_themes_auto_updates_bulk_action`](updates-maintenance/index.md#mainwp_themes_auto_updates_bulk_action) - Action: mainwp_themes_auto_updates_bulk_action
-- [`mainwp_themes_before_auto_updates_table`](updates-maintenance/index.md#mainwp_themes_before_auto_updates_table) - Action: mainwp_themes_before_auto_updates_table
-- [`mainwp_themes_before_ignored_abandoned`](updates-maintenance/index.md#mainwp_themes_before_ignored_abandoned) - Action: mainwp_themes_before_ignored_abandoned
-- [`mainwp_themes_before_ignored_updates`](updates-maintenance/index.md#mainwp_themes_before_ignored_updates) - Action: mainwp_themes_before_ignored_updates
-- [`mainwp_themes_bulk_action`](updates-maintenance/index.md#mainwp_themes_bulk_action) - Action: mainwp_themes_bulk_action
-- [`mainwp_themes_help_item`](updates-maintenance/index.md#mainwp_themes_help_item) - Action: mainwp_themes_help_item
-- [`mainwp_themes_widget_bottom`](updates-maintenance/index.md#mainwp_themes_widget_bottom) - Action: mainwp_themes_widget_bottom
-- [`mainwp_themes_widget_title`](updates-maintenance/index.md#mainwp_themes_widget_title) - *Arguments*
-- [`mainwp_themes_widget_top`](updates-maintenance/index.md#mainwp_themes_widget_top) - Action: mainwp_themes_widget_top
-- [`mainwp_tools_form_bottom`](content-management/index.md#mainwp_tools_form_bottom) - Action: mainwp_tools_form_bottom
-- [`mainwp_tools_form_top`](content-management/index.md#mainwp_tools_form_top) - Action: mainwp_tools_form_top
-- [`mainwp_top_bulkpost_edit_content`](content-management/index.md#mainwp_top_bulkpost_edit_content) - Renders bulkpost to edit.
-- [`mainwp_try_visit_follow_location`](api-remote/index.md#mainwp_try_visit_follow_location) - Method try visit.
-- [`mainwp_ui_use_wp_calendar`](ui-display/index.md#mainwp_ui_use_wp_calendar) - Filter: mainwp_ui_use_wp_calendar
-- [`mainwp_unset_security_scripts_stylesheets`](security-monitoring/index.md#mainwp_unset_security_scripts_stylesheets) - Method Fix Security Issues
-- [`mainwp_update_admin_password_complexity`](updates-maintenance/index.md#mainwp_update_admin_password_complexity) - Filter: mainwp_update_admin_password_complexity
-- [`mainwp_update_backuptask`](updates-maintenance/index.md#mainwp_update_backuptask) - Update backup task.
-- [`mainwp_update_cached_icons`](updates-maintenance/index.md#mainwp_update_cached_icons) - Method update_cached_icons().
-- [`mainwp_update_everything_button_text`](updates-maintenance/index.md#mainwp_update_everything_button_text) - *Arguments*
-- [`mainwp_update_plugintheme_max`](updates-maintenance/index.md#mainwp_update_plugintheme_max) - Filter: mainwp_update_plugintheme_max
-- [`mainwp_update_site`](updates-maintenance/index.md#mainwp_update_site) - Update site
-- [`mainwp_update_uptime_monitor_data`](updates-maintenance/index.md#mainwp_update_uptime_monitor_data) - Method update_uptime_global_settings
-- [`mainwp_updated_site`](updates-maintenance/index.md#mainwp_updated_site) - Action: mainwp_updated_site
-- [`mainwp_updates_abandoned_plugins_sort_by`](updates-maintenance/index.md#mainwp_updates_abandoned_plugins_sort_by) - Filter: mainwp_updates_abandoned_plugins_sort_by
-- [`mainwp_updates_abandoned_themes_sort_by`](updates-maintenance/index.md#mainwp_updates_abandoned_themes_sort_by) - Filter: mainwp_updates_abandoned_themes_sort_by
-- [`mainwp_updates_after_abandoned_plugins`](updates-maintenance/index.md#mainwp_updates_after_abandoned_plugins) - Action: mainwp_updates_after_abandoned_plugins
-- [`mainwp_updates_after_abandoned_themes`](updates-maintenance/index.md#mainwp_updates_after_abandoned_themes) - Action: mainwp_updates_after_abandoned_themes
-- [`mainwp_updates_after_actions_bar`](updates-maintenance/index.md#mainwp_updates_after_actions_bar) - Action: mainwp_updates_after_actions_bar
-- [`mainwp_updates_after_nav_tabs`](updates-maintenance/index.md#mainwp_updates_after_nav_tabs) - Action: mainwp_updates_after_nav_tabs
-- [`mainwp_updates_after_plugin_updates`](updates-maintenance/index.md#mainwp_updates_after_plugin_updates) - Action: mainwp_updates_after_plugin_updates
-- [`mainwp_updates_after_theme_updates`](updates-maintenance/index.md#mainwp_updates_after_theme_updates) - Action: mainwp_updates_after_theme_updates
-- [`mainwp_updates_after_translation_updates`](updates-maintenance/index.md#mainwp_updates_after_translation_updates) - Action: mainwp_updates_after_translation_updates
-- [`mainwp_updates_after_wp_updates`](updates-maintenance/index.md#mainwp_updates_after_wp_updates) - Action: mainwp_updates_after_wp_updates
-- [`mainwp_updates_before_abandoned_plugins`](updates-maintenance/index.md#mainwp_updates_before_abandoned_plugins) - Action: mainwp_updates_before_abandoned_plugins
-- [`mainwp_updates_before_abandoned_themes`](updates-maintenance/index.md#mainwp_updates_before_abandoned_themes) - Action: mainwp_updates_before_abandoned_themes
-- [`mainwp_updates_before_actions_bar`](updates-maintenance/index.md#mainwp_updates_before_actions_bar) - Action: mainwp_updates_before_actions_bar
-- [`mainwp_updates_before_nav_tabs`](updates-maintenance/index.md#mainwp_updates_before_nav_tabs) - Action: mainwp_updates_before_nav_tabs
-- [`mainwp_updates_before_plugin_updates`](updates-maintenance/index.md#mainwp_updates_before_plugin_updates) - Action: mainwp_updates_before_plugin_updates
-- [`mainwp_updates_before_theme_updates`](updates-maintenance/index.md#mainwp_updates_before_theme_updates) - Action: mainwp_updates_before_theme_updates
-- [`mainwp_updates_before_translation_updates`](updates-maintenance/index.md#mainwp_updates_before_translation_updates) - Action: mainwp_updates_before_translation_updates
-- [`mainwp_updates_before_wp_updates`](updates-maintenance/index.md#mainwp_updates_before_wp_updates) - Action: mainwp_updates_before_wp_updates
-- [`mainwp_updates_help_item`](updates-maintenance/index.md#mainwp_updates_help_item) - Action: mainwp_updates_help_item
-- [`mainwp_updates_hide_show_updates_per`](updates-maintenance/index.md#mainwp_updates_hide_show_updates_per) - Renders header tabs
-- [`mainwp_updates_overview_after_abandoned_plugins_themes`](updates-maintenance/index.md#mainwp_updates_overview_after_abandoned_plugins_themes) - Action: mainwp_updates_overview_after_abandoned_plugins_themes
-- [`mainwp_updates_overview_after_plugin_updates`](updates-maintenance/index.md#mainwp_updates_overview_after_plugin_updates) - Action: mainwp_updates_overview_after_plugin_updates
-- [`mainwp_updates_overview_after_theme_updates`](updates-maintenance/index.md#mainwp_updates_overview_after_theme_updates) - Action: mainwp_updates_overview_after_theme_updates
-- [`mainwp_updates_overview_after_total_updates`](updates-maintenance/index.md#mainwp_updates_overview_after_total_updates) - Action: mainwp_updates_overview_after_total_updates
-- [`mainwp_updates_overview_after_translation_updates`](updates-maintenance/index.md#mainwp_updates_overview_after_translation_updates) - Action: mainwp_updates_overview_after_translation_updates
-- [`mainwp_updates_overview_after_update_details`](updates-maintenance/index.md#mainwp_updates_overview_after_update_details) - Action: mainwp_updates_overview_after_update_details
-- [`mainwp_updates_overview_after_wordpress_updates`](updates-maintenance/index.md#mainwp_updates_overview_after_wordpress_updates) - Action: mainwp_updates_overview_after_wordpress_updates
-- [`mainwp_updates_overview_before_abandoned_plugins_themes`](updates-maintenance/index.md#mainwp_updates_overview_before_abandoned_plugins_themes) - Action: mainwp_updates_overview_before_abandoned_plugins_themes
-- [`mainwp_updates_overview_before_plugin_updates`](updates-maintenance/index.md#mainwp_updates_overview_before_plugin_updates) - Action: mainwp_updates_overview_before_plugin_updates
-- [`mainwp_updates_overview_before_theme_updates`](updates-maintenance/index.md#mainwp_updates_overview_before_theme_updates) - Action: mainwp_updates_overview_before_theme_updates
-- [`mainwp_updates_overview_before_total_updates`](updates-maintenance/index.md#mainwp_updates_overview_before_total_updates) - Action: mainwp_updates_overview_before_total_updates
-- [`mainwp_updates_overview_before_translation_updates`](updates-maintenance/index.md#mainwp_updates_overview_before_translation_updates) - Action: mainwp_updates_overview_before_translation_updates
-- [`mainwp_updates_overview_before_update_details`](updates-maintenance/index.md#mainwp_updates_overview_before_update_details) - Action: mainwp_updates_overview_before_update_details
-- [`mainwp_updates_overview_before_wordpress_updates`](updates-maintenance/index.md#mainwp_updates_overview_before_wordpress_updates) - Action: mainwp_updates_overview_before_wordpress_updates
-- [`mainwp_updates_overview_widget_title`](updates-maintenance/index.md#mainwp_updates_overview_widget_title) - *Arguments*
-- [`mainwp_updates_pergroup_after_abandoned_plugins`](site-management/index.md#mainwp_updates_pergroup_after_abandoned_plugins) - Action: mainwp_updates_pergroup_after_abandoned_plugins
-- [`mainwp_updates_pergroup_after_abandoned_themes`](site-management/index.md#mainwp_updates_pergroup_after_abandoned_themes) - Action: mainwp_updates_pergroup_after_abandoned_themes
-- [`mainwp_updates_pergroup_after_plugin_updates`](site-management/index.md#mainwp_updates_pergroup_after_plugin_updates) - Action: mainwp_updates_pergroup_after_plugin_updates
-- [`mainwp_updates_pergroup_after_theme_updates`](site-management/index.md#mainwp_updates_pergroup_after_theme_updates) - Action: mainwp_updates_pergroup_after_theme_updates
-- [`mainwp_updates_pergroup_after_translation_updates`](site-management/index.md#mainwp_updates_pergroup_after_translation_updates) - Action: mainwp_updates_pergroup_after_translation_updates
-- [`mainwp_updates_pergroup_after_wp_updates`](site-management/index.md#mainwp_updates_pergroup_after_wp_updates) - Action: mainwp_updates_pergroup_after_wp_updates
-- [`mainwp_updates_pergroup_before_abandoned_plugins`](site-management/index.md#mainwp_updates_pergroup_before_abandoned_plugins) - Action: mainwp_updates_pergroup_before_abandoned_plugins
-- [`mainwp_updates_pergroup_before_abandoned_themes`](site-management/index.md#mainwp_updates_pergroup_before_abandoned_themes) - Action: mainwp_updates_pergroup_before_abandoned_themes
-- [`mainwp_updates_pergroup_before_plugin_updates`](site-management/index.md#mainwp_updates_pergroup_before_plugin_updates) - Action: mainwp_updates_pergroup_before_plugin_updates
-- [`mainwp_updates_pergroup_before_theme_updates`](site-management/index.md#mainwp_updates_pergroup_before_theme_updates) - Action: mainwp_updates_pergroup_before_theme_updates
-- [`mainwp_updates_pergroup_before_translation_updates`](site-management/index.md#mainwp_updates_pergroup_before_translation_updates) - Action: mainwp_updates_pergroup_before_translation_updates
-- [`mainwp_updates_pergroup_before_wp_updates`](site-management/index.md#mainwp_updates_pergroup_before_wp_updates) - Action: mainwp_updates_pergroup_before_wp_updates
-- [`mainwp_updates_pergroup_before_wp_updates`](site-management/index.md#mainwp_updates_pergroup_before_wp_updates) - Action: mainwp_updates_persite_before_wp_updates
-- [`mainwp_updates_perplugin_after_abandoned_plugins`](updates-maintenance/index.md#mainwp_updates_perplugin_after_abandoned_plugins) - Action: mainwp_updates_perplugin_after_abandoned_plugins
-- [`mainwp_updates_perplugin_after_plugin_updates`](updates-maintenance/index.md#mainwp_updates_perplugin_after_plugin_updates) - Action: mainwp_updates_perplugin_after_plugin_updates
-- [`mainwp_updates_perplugin_before_abandoned_plugins`](updates-maintenance/index.md#mainwp_updates_perplugin_before_abandoned_plugins) - Action: mainwp_updates_perplugin_before_abandoned_plugins
-- [`mainwp_updates_perplugin_before_plugin_updates`](updates-maintenance/index.md#mainwp_updates_perplugin_before_plugin_updates) - Action: mainwp_updates_perplugin_before_plugin_updates
-- [`mainwp_updates_persite_after_abandoned_plugins`](site-management/index.md#mainwp_updates_persite_after_abandoned_plugins) - Action: mainwp_updates_persite_after_abandoned_plugins
-- [`mainwp_updates_persite_after_abandoned_themes`](site-management/index.md#mainwp_updates_persite_after_abandoned_themes) - Action: mainwp_updates_persite_after_abandoned_themes
-- [`mainwp_updates_persite_after_plugin_updates`](site-management/index.md#mainwp_updates_persite_after_plugin_updates) - Action: mainwp_updates_persite_after_plugin_updates
-- [`mainwp_updates_persite_after_theme_updates`](site-management/index.md#mainwp_updates_persite_after_theme_updates) - Action: mainwp_updates_persite_after_theme_updates
-- [`mainwp_updates_persite_after_translation_updates`](site-management/index.md#mainwp_updates_persite_after_translation_updates) - Action: mainwp_updates_persite_after_translation_updates
-- [`mainwp_updates_persite_after_wp_updates`](site-management/index.md#mainwp_updates_persite_after_wp_updates) - Action: mainwp_updates_persite_after_wp_updates
-- [`mainwp_updates_persite_before_abandoned_plugins`](site-management/index.md#mainwp_updates_persite_before_abandoned_plugins) - Action: mainwp_updates_persite_before_abandoned_plugins
-- [`mainwp_updates_persite_before_abandoned_themes`](site-management/index.md#mainwp_updates_persite_before_abandoned_themes) - Action: mainwp_updates_persite_before_abandoned_themes
-- [`mainwp_updates_persite_before_plugin_updates`](site-management/index.md#mainwp_updates_persite_before_plugin_updates) - Action: mainwp_updates_persite_before_plugin_updates
-- [`mainwp_updates_persite_before_theme_updates`](site-management/index.md#mainwp_updates_persite_before_theme_updates) - Action: mainwp_updates_persite_before_theme_updates
-- [`mainwp_updates_persite_before_translation_updates`](site-management/index.md#mainwp_updates_persite_before_translation_updates) - Action: mainwp_updates_persite_before_translation_updates
-- [`mainwp_updates_pertheme_after_abandoned_themes`](updates-maintenance/index.md#mainwp_updates_pertheme_after_abandoned_themes) - Action: mainwp_updates_pertheme_after_abandoned_themes
-- [`mainwp_updates_pertheme_after_theme_updates`](updates-maintenance/index.md#mainwp_updates_pertheme_after_theme_updates) - Action: mainwp_updates_pertheme_after_theme_updates
-- [`mainwp_updates_pertheme_before_abandoned_themes`](updates-maintenance/index.md#mainwp_updates_pertheme_before_abandoned_themes) - Action: mainwp_updates_pertheme_before_abandoned_themes
-- [`mainwp_updates_pertheme_before_theme_updates`](updates-maintenance/index.md#mainwp_updates_pertheme_before_theme_updates) - Action: mainwp_updates_pertheme_before_theme_updates
-- [`mainwp_updates_pertranslation_after_translation_updates`](updates-maintenance/index.md#mainwp_updates_pertranslation_after_translation_updates) - Action: mainwp_updates_pertranslation_after_translation_updates
-- [`mainwp_updates_pertranslation_before_translation_updates`](updates-maintenance/index.md#mainwp_updates_pertranslation_before_translation_updates) - Action: mainwp_updates_pertranslation_before_translation_updates
-- [`mainwp_updates_plugins_sort_by`](updates-maintenance/index.md#mainwp_updates_plugins_sort_by) - Filter: mainwp_updates_plugins_sort_by
-- [`mainwp_updates_table_columns_header`](updates-maintenance/index.md#mainwp_updates_table_columns_header) - Get column info.
-- [`mainwp_updates_table_features`](updates-maintenance/index.md#mainwp_updates_table_features) - Filter: mainwp_updates_table_features
-- [`mainwp_updates_table_header_content`](updates-maintenance/index.md#mainwp_updates_table_header_content) - Echo the column headers.
-- [`mainwp_updates_table_row_columns`](updates-maintenance/index.md#mainwp_updates_table_row_columns) - Echo columns.
-- [`mainwp_updates_themes_sort_by`](updates-maintenance/index.md#mainwp_updates_themes_sort_by) - Filter: mainwp_updates_themes_sort_by
-- [`mainwp_updates_translation_sort_by`](updates-maintenance/index.md#mainwp_updates_translation_sort_by) - Filter: mainwp_updates_translation_sort_by
-- [`mainwp_updatescheck_hours_interval`](updates-maintenance/index.md#mainwp_updatescheck_hours_interval) - Filter: mainwp_updatescheck_hours_interval
-- [`mainwp_updatescheck_sendmail_at_time`](updates-maintenance/index.md#mainwp_updatescheck_sendmail_at_time) - Filter: mainwp_updatescheck_sendmail_at_time
-- [`mainwp_updatescheck_sendmail_for_each_auto_sync_finished`](site-management/index.md#mainwp_updatescheck_sendmail_for_each_auto_sync_finished) - Method cron_updates_check()
-- [`mainwp_updatesoverview_widget_bottom`](updates-maintenance/index.md#mainwp_updatesoverview_widget_bottom) - Action: mainwp_updatesoverview_widget_bottom
-- [`mainwp_updatewebsiteoptions`](site-management/index.md#mainwp_updatewebsiteoptions) - Method update_website_option().
-- [`mainwp_uptime_monitoring_after_check_uptime`](security-monitoring/index.md#mainwp_uptime_monitoring_after_check_uptime) - Method handle response fetch uptime.
-- [`mainwp_uptime_monitoring_allowed_methods`](security-monitoring/index.md#mainwp_uptime_monitoring_allowed_methods) - Method get_allowed_methods
-- [`mainwp_uptime_monitoring_check_importance`](security-monitoring/index.md#mainwp_uptime_monitoring_check_importance) - Method handle response fetch uptime.
-- [`mainwp_uptime_monitoring_check_url`](security-monitoring/index.md#mainwp_uptime_monitoring_check_url) - Get apply monitor url.
-- [`mainwp_uptime_monitoring_email_footer`](security-monitoring/index.md#mainwp_uptime_monitoring_email_footer) - Uptime Monitoring Email Footer
-- [`mainwp_uptime_monitoring_email_header`](security-monitoring/index.md#mainwp_uptime_monitoring_email_header) - Uptime Monitoring Email Header
-- [`mainwp_uptime_monitoring_get_monitors_to_check_params`](security-monitoring/index.md#mainwp_uptime_monitoring_get_monitors_to_check_params) - Get sites monitors to check.
-- [`mainwp_uptime_monitoring_interval_values`](security-monitoring/index.md#mainwp_uptime_monitoring_interval_values) - Method get_interval_values
-- [`mainwp_uptime_monitoring_response_time_widget_title`](security-monitoring/index.md#mainwp_uptime_monitoring_response_time_widget_title) - *Arguments*
-- [`mainwp_uptime_monitoring_send_notification_limit`](security-monitoring/index.md#mainwp_uptime_monitoring_send_notification_limit) - Run schedule uptime notification.
-- [`mainwp_uptime_monitoring_status_widget_title`](security-monitoring/index.md#mainwp_uptime_monitoring_status_widget_title) - *Arguments*
-- [`mainwp_uptime_monitoring_timeout_values`](security-monitoring/index.md#mainwp_uptime_monitoring_timeout_values) - Method get_timeout_values
-- [`mainwp_uptime_monitoring_update_monitor_data`](updates-maintenance/index.md#mainwp_uptime_monitoring_update_monitor_data) - Method handle_save_settings
-- [`mainwp_uptime_monitoring_uptime_data`](security-monitoring/index.md#mainwp_uptime_monitoring_uptime_data) - Method handle response fetch uptime.
-- [`mainwp_user_action`](user-management/index.md#mainwp_user_action) - Fires immediately after user action.
-- [`mainwp_user_action`](user-management/index.md#mainwp_user_action) - Fires immediately after new user action.
-- [`mainwp_user_action`](user-management/index.md#mainwp_user_action) - Fires immediately after update admin password action.
-- [`mainwp_users_actions_bar_left`](user-management/index.md#mainwp_users_actions_bar_left) - Users actions bar (left)
-- [`mainwp_users_actions_bar_right`](user-management/index.md#mainwp_users_actions_bar_right) - Users actions bar (right)
-- [`mainwp_users_bulk_action`](user-management/index.md#mainwp_users_bulk_action) - Action: mainwp_users_bulk_action
-- [`mainwp_users_help_item`](user-management/index.md#mainwp_users_help_item) - Action: mainwp_users_help_item
-- [`mainwp_users_manage_roles`](user-management/index.md#mainwp_users_manage_roles) - Renders manage users dashboard.
-- [`mainwp_users_manage_roles`](user-management/index.md#mainwp_users_manage_roles) - Renders Edit Users Modal window.
-- [`mainwp_users_manage_roles`](user-management/index.md#mainwp_users_manage_roles) - Renders the Add New user form.
-- [`mainwp_users_manage_roles`](user-management/index.md#mainwp_users_manage_roles) - Method do_bulk_add()
-- [`mainwp_users_table_action`](user-management/index.md#mainwp_users_table_action) - Action: mainwp_users_table_action
-- [`mainwp_users_table_column`](user-management/index.md#mainwp_users_table_column) - Renders Search results.
-- [`mainwp_users_table_fatures`](user-management/index.md#mainwp_users_table_fatures) - Renders Users Table.
-- [`mainwp_users_table_header`](user-management/index.md#mainwp_users_table_header) - Renders Users Table.
-- [`mainwp_website_before_updated`](site-management/index.md#mainwp_website_before_updated) - Action: mainwp_website_before_updated
-- [`mainwp_website_updated`](site-management/index.md#mainwp_website_updated) - Action: mainwp_website_updated
-- [`mainwp_widget_boxes_show_widgets`](ui-display/index.md#mainwp_widget_boxes_show_widgets) - Method do_widget_boxes()
-- [`mainwp_widget_site_actions_limit_number`](site-management/index.md#mainwp_widget_site_actions_limit_number) - Method mainwp_rest_api_non_mainwp_changes_callback()
-- [`mainwp_widget_site_actions_limit_number`](site-management/index.md#mainwp_widget_site_actions_limit_number) - Method mainwp_rest_api_non_mainwp_changes_count_callback()
-- [`mainwp_widget_site_actions_limit_number`](site-management/index.md#mainwp_widget_site_actions_limit_number) - Method render()
-- [`mainwp_widget_updates_actions_top`](updates-maintenance/index.md#mainwp_widget_updates_actions_top) - Action: mainwp_widget_updates_actions_top
-- [`mainwp_widget_updates_actions_top`](updates-maintenance/index.md#mainwp_widget_updates_actions_top) - Action: mainwp_widget_updates_actions_top
-- [`mainwp_widgets_chart_date_format`](ui-display/index.md#mainwp_widgets_chart_date_format) - Prepare response time for ui chart data.
-- [`mainwp_widgets_screen_options`](ui-display/index.md#mainwp_widgets_screen_options) - Filter: mainwp_widgets_screen_options
-- [`mainwp_wordfence_sites`](site-management/index.md#mainwp_wordfence_sites) - Action: mainwp_wordfence_sites
-- [`minwp_notification_template_copy_message`](api-remote/index.md#minwp_notification_template_copy_message) - Use mainwp_notification_template_copy_message instead.
-- [`plesk_api_form_bottom`](api-remote/index.md#plesk_api_form_bottom) - Action: plesk_api_form_bottom
-- [`plesk_api_form_top`](api-remote/index.md#plesk_api_form_top) - Action: plesk_api_form_top
-- [`postmeta_form_keys`](content-management/index.md#postmeta_form_keys) - Filters values for the meta key dropdown in the Custom Fields meta box.
-- [`postmeta_form_limit`](content-management/index.md#postmeta_form_limit) - 
-- [`redirect_post_location`](content-management/index.md#redirect_post_location) - Filter: redirect_post_location
-- [`rest_api_form_bottom`](api-remote/index.md#rest_api_form_bottom) - Action: rest_api_form_bottom
-- [`rest_api_form_top`](api-remote/index.md#rest_api_form_top) - Action: rest_api_form_top
-- [`time_formats`](content-management/index.md#time_formats) - *Arguments*
-- [`vultr_api_form_bottom`](api-remote/index.md#vultr_api_form_bottom) - Action: vultr_api_form_bottom
-- [`vultr_api_form_top`](api-remote/index.md#vultr_api_form_top) - Action: vultr_api_form_top
-- [`{$filter}`](api-remote/index.md#filter) - Method apply_filter()
+- [`mainwp-wordfence-sites`](content-management/index.md#mainwp-wordfence-sites) - Method render_scan_site()
+- [`mainwp_activated`](updates-maintenance/index.md#mainwp-activated) - Action: mainwp_activated
+- [`mainwp_add_backuptask`](backups-restoration/index.md#mainwp-add-backuptask) - Add backup task.
+- [`mainwp_add_new_user_after_select_sites`](user-management/index.md#mainwp-add-new-user-after-select-sites) - Action: mainwp_add_new_user_after_select_sites
+- [`mainwp_add_new_user_after_submit_button`](user-management/index.md#mainwp-add-new-user-after-submit-button) - Action: mainwp_add_new_user_after_submit_button
+- [`mainwp_add_new_user_before_select_sites`](user-management/index.md#mainwp-add-new-user-before-select-sites) - Action: mainwp_add_new_user_before_select_sites
+- [`mainwp_add_new_user_before_submit_button`](user-management/index.md#mainwp-add-new-user-before-submit-button) - Action: mainwp_add_new_user_before_submit_button
+- [`mainwp_add_new_user_sidebar_bottom`](user-management/index.md#mainwp-add-new-user-sidebar-bottom) - Action: mainwp_add_new_user_sidebar_bottom
+- [`mainwp_add_new_user_sidebar_top`](user-management/index.md#mainwp-add-new-user-sidebar-top) - Action: mainwp_add_new_user_sidebar_top
+- [`mainwp_added_extension_menu`](ui-display/index.md#mainwp-added-extension-menu) - Adds Extension to the navigation menu
+- [`mainwp_added_new_group`](site-management/index.md#mainwp-added-new-group) - New Group Added
+- [`mainwp_added_new_site`](site-management/index.md#mainwp-added-new-site) - New site added
+- [`mainwp_admin_enqueue_scripts`](misc/index.md#mainwp-admin-enqueue-scripts) - Method admin_enqueue_scripts()
+- [`mainwp_admin_footer`](content-management/index.md#mainwp-admin-footer) - Action: mainwp_admin_footer
+- [`mainwp_admin_menu`](ui-display/index.md#mainwp-admin-menu) - Action: mainwp_admin_menu
+- [`mainwp_admin_menu_sub`](ui-display/index.md#mainwp-admin-menu-sub) - Action: mainwp_admin_menu_sub
+- [`mainwp_admin_pass_after_pass_form`](content-management/index.md#mainwp-admin-pass-after-pass-form) - Action: mainwp_admin_pass_after_pass_form
+- [`mainwp_admin_pass_after_select_sites`](content-management/index.md#mainwp-admin-pass-after-select-sites) - Action: mainwp_admin_pass_after_select_sites
+- [`mainwp_admin_pass_after_submit_button`](content-management/index.md#mainwp-admin-pass-after-submit-button) - Action: mainwp_admin_pass_after_submit_button
+- [`mainwp_admin_pass_after_users_table`](user-management/index.md#mainwp-admin-pass-after-users-table) - Action: mainwp_admin_pass_after_users_table
+- [`mainwp_admin_pass_before_pass_form`](content-management/index.md#mainwp-admin-pass-before-pass-form) - Action: mainwp_admin_pass_before_pass_form
+- [`mainwp_admin_pass_before_select_sites`](content-management/index.md#mainwp-admin-pass-before-select-sites) - Action: mainwp_admin_pass_before_select_sites
+- [`mainwp_admin_pass_before_submit_button`](content-management/index.md#mainwp-admin-pass-before-submit-button) - Action: mainwp_admin_pass_before_submit_button
+- [`mainwp_admin_pass_before_users_table`](user-management/index.md#mainwp-admin-pass-before-users-table) - Action: mainwp_admin_pass_before_users_table
+- [`mainwp_admin_pass_sidebar_bottom`](content-management/index.md#mainwp-admin-pass-sidebar-bottom) - Action: mainwp_admin_pass_sidebar_bottom
+- [`mainwp_admin_pass_sidebar_top`](content-management/index.md#mainwp-admin-pass-sidebar-top) - Action: mainwp_admin_pass_sidebar_top
+- [`mainwp_admin_post_thumbnail_html`](content-management/index.md#mainwp-admin-post-thumbnail-html) - Filters the admin post thumbnail HTML markup to return.
+- [`mainwp_admin_users_table_fatures`](user-management/index.md#mainwp-admin-users-table-fatures) - Filter: mainwp_admin_users_table_fatures
+- [`mainwp_advanced_settings_form_bottom`](system-settings/index.md#mainwp-advanced-settings-form-bottom) - Action: mainwp_advanced_settings_form_bottom
+- [`mainwp_advanced_settings_form_top`](system-settings/index.md#mainwp-advanced-settings-form-top) - Action: mainwp_advanced_settings_form_top
+- [`mainwp_after_active_plugins_list`](updates-maintenance/index.md#mainwp-after-active-plugins-list) - Action: mainwp_after_active_plugins_list
+- [`mainwp_after_core_unignore`](updates-maintenance/index.md#mainwp-after-core-unignore) - Action: mainwp_after_core_unignore
+- [`mainwp_after_cron_jobs_table`](ui-display/index.md#mainwp-after-cron-jobs-table) - Action: mainwp_after_cron_jobs_table
+- [`mainwp_after_edit_site_note`](site-management/index.md#mainwp-after-edit-site-note) - Action: mainwp_after_edit_site_note
+- [`mainwp_after_error_log_table`](ui-display/index.md#mainwp-after-error-log-table) - Action: mainwp_after_error_log_table
+- [`mainwp_after_groups_table`](site-management/index.md#mainwp-after-groups-table) - Action: mainwp_after_groups_table
+- [`mainwp_after_header`](misc/index.md#mainwp-after-header) - Action: mainwp_after_header
+- [`mainwp_after_htaccess_section`](user-management/index.md#mainwp-after-htaccess-section) - Action: mainwp_after_htaccess_section
+- [`mainwp_after_import_users`](user-management/index.md#mainwp-after-import-users) - Action: mainwp_after_import_users
+- [`mainwp_after_inactive_plugins_list`](updates-maintenance/index.md#mainwp-after-inactive-plugins-list) - Action: mainwp_after_inactive_plugins_list
+- [`mainwp_after_inactive_themes_list`](updates-maintenance/index.md#mainwp-after-inactive-themes-list) - Action: mainwp_after_inactive_themes_list
+- [`mainwp_after_manage_sites_table`](site-management/index.md#mainwp-after-manage-sites-table) - Action: mainwp_after_manage_sites_table
+- [`mainwp_after_new_user_form`](user-management/index.md#mainwp-after-new-user-form) - Action: mainwp_after_new_user_form
+- [`mainwp_after_new_user_form_fields`](user-management/index.md#mainwp-after-new-user-form-fields) - Action: mainwp_after_new_user_form_fields
+- [`mainwp_after_notice_sites_uptime_monitoring_admin`](site-management/index.md#mainwp-after-notice-sites-uptime-monitoring-admin) - Basic site uptime monitoring.
+- [`mainwp_after_notice_sites_uptime_monitoring_individual`](site-management/index.md#mainwp-after-notice-sites-uptime-monitoring-individual) - Basic site uptime monitoring.
+- [`mainwp_after_overview_widgets`](ui-display/index.md#mainwp-after-overview-widgets) - Action: 'mainwp_after_overview_widgets'
+- [`mainwp_after_pages_table`](content-management/index.md#mainwp-after-pages-table) - Action: mainwp_after_pages_table
+- [`mainwp_after_plugin_action`](updates-maintenance/index.md#mainwp-after-plugin-action) - Action: mainwp_after_plugin_action
+- [`mainwp_after_plugin_ignore`](updates-maintenance/index.md#mainwp-after-plugin-ignore) - Action: mainwp_after_plugin_ignore
+- [`mainwp_after_plugin_privacy_section`](updates-maintenance/index.md#mainwp-after-plugin-privacy-section) - Action: mainwp_after_plugin_privacy_section
+- [`mainwp_after_plugin_theme_install`](updates-maintenance/index.md#mainwp-after-plugin-theme-install) - Action: mainwp_after_plugin_theme_install
+- [`mainwp_after_plugin_theme_install_progress`](updates-maintenance/index.md#mainwp-after-plugin-theme-install-progress) - Action: mainwp_after_plugin_theme_install_progress
+- [`mainwp_after_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp-after-plugin-theme-translation-update) - Action: mainwp_after_plugin_theme_translation_update
+- [`mainwp_after_plugin_unignore`](updates-maintenance/index.md#mainwp-after-plugin-unignore) - Action: mainwp_after_plugin_unignore
+- [`mainwp_after_plugins_table`](updates-maintenance/index.md#mainwp-after-plugins-table) - Action: mainwp_after_plugins_table
+- [`mainwp_after_post_action`](content-management/index.md#mainwp-after-post-action) - **Arguments**
+- [`mainwp_after_posting_bulkpage_result`](content-management/index.md#mainwp-after-posting-bulkpage-result) - Method posting()
+- [`mainwp_after_posting_bulkpost_result`](content-management/index.md#mainwp-after-posting-bulkpost-result) - Method posting_posts()
+- [`mainwp_after_posting_delete_bulk_post`](content-management/index.md#mainwp-after-posting-delete-bulk-post) - Method posting_posts()
+- [`mainwp_after_posts_table`](content-management/index.md#mainwp-after-posts-table) - Action: mainwp_after_posts_table
+- [`mainwp_after_save_advanced_settings`](system-settings/index.md#mainwp-after-save-advanced-settings) - Action: mainwp_after_save_advanced_settings
+- [`mainwp_after_save_email_settings`](system-settings/index.md#mainwp-after-save-email-settings) - Action: mainwp_after_save_email_settings
+- [`mainwp_after_save_general_settings`](system-settings/index.md#mainwp-after-save-general-settings) - Action: mainwp_after_save_general_settings
+- [`mainwp_after_seclect_sites`](misc/index.md#mainwp-after-seclect-sites) - Action: mainwp_after_seclect_sites
+- [`mainwp_after_select_clients_list`](client-reports/index.md#mainwp-after-select-clients-list) - Action: mainwp_after_select_clients_list
+- [`mainwp_after_select_groups_list`](site-management/index.md#mainwp-after-select-groups-list) - Action: mainwp_after_select_groups_list
+- [`mainwp_after_select_sites_filters`](site-management/index.md#mainwp-after-select-sites-filters) - Action: mainwp_after_select_sites_filters
+- [`mainwp_after_select_sites_list`](site-management/index.md#mainwp-after-select-sites-list) - Action: mainwp_after_select_sites_list
+- [`mainwp_after_server_info_table`](ui-display/index.md#mainwp-after-server-info-table) - Action: mainwp_after_server_info_table
+- [`mainwp_after_subheader`](misc/index.md#mainwp-after-subheader) - Action: mainwp_after_subheader
+- [`mainwp_after_sync_site_success`](site-management/index.md#mainwp-after-sync-site-success) - Fires immediately after website synced successfully.
+- [`mainwp_after_system_requirements_check`](security-monitoring/index.md#mainwp-after-system-requirements-check) - Action: mainwp_after_system_requirements_check
+- [`mainwp_after_template_part`](misc/index.md#mainwp-after-template-part) - Action: mainwp_after_template_part
+- [`mainwp_after_theme_action`](updates-maintenance/index.md#mainwp-after-theme-action) - Action: mainwp_after_theme_action
+- [`mainwp_after_theme_ignore`](updates-maintenance/index.md#mainwp-after-theme-ignore) - Action: mainwp_after_theme_ignore
+- [`mainwp_after_theme_unignore`](updates-maintenance/index.md#mainwp-after-theme-unignore) - Action: mainwp_after_theme_unignore
+- [`mainwp_after_themes_table`](updates-maintenance/index.md#mainwp-after-themes-table) - Action: mainwp_after_themes_table
+- [`mainwp_after_upgrade_wp_success`](updates-maintenance/index.md#mainwp-after-upgrade-wp-success) - Method upgrade_site()
+- [`mainwp_after_upload_custom_icon`](ui-display/index.md#mainwp-after-upload-custom-icon) - Action: mainwp_after_upload_custom_icon
+- [`mainwp_after_user_action`](user-management/index.md#mainwp-after-user-action) - Action: mainwp_after_user_action
+- [`mainwp_after_user_create`](user-management/index.md#mainwp-after-user-create) - Action: mainwp_after_user_create
+- [`mainwp_after_users_table`](user-management/index.md#mainwp-after-users-table) - Action: mainwp_after_users_table
+- [`mainwp_after_wp_config_section`](system-settings/index.md#mainwp-after-wp-config-section) - Action: mainwp_after_wp_config_section
+- [`mainwp_after_wp_update`](updates-maintenance/index.md#mainwp-after-wp-update) - Action: mainwp_after_wp_update
+- [`mainwp_ajax_add_action`](updates-maintenance/index.md#mainwp-ajax-add-action) - Init ajax actions.
+- [`mainwp_all_disablemenuitems`](ui-display/index.md#mainwp-all-disablemenuitems) - Method admin_footer()
+- [`mainwp_alter_login_user`](user-management/index.md#mainwp-alter-login-user) - Filter: mainwp_alter_login_user
+- [`mainwp_api_manager_upgrade_package_url`](updates-maintenance/index.md#mainwp-api-manager-upgrade-package-url) - **Arguments**
+- [`mainwp_api_manager_upgrade_url`](updates-maintenance/index.md#mainwp-api-manager-upgrade-url) - Get Upgrade URL.
+- [`mainwp_applypluginsettings_{$ext_dir_slug}`](updates-maintenance/index.md#mainwp-applypluginsettings-ext-dir-slug) - Apply plugin settings
+- [`mainwp_automatic_disable_uptime_monitoring_check`](security-monitoring/index.md#mainwp-automatic-disable-uptime-monitoring-check) - Method cron_uptime_check
+- [`mainwp_available_updates_count_custom_fields_data`](updates-maintenance/index.md#mainwp-available-updates-count-custom-fields-data) - Method sites_available_updates_count()
+- [`mainwp_backups_remote_settings`](backups-restoration/index.md#mainwp-backups-remote-settings) - Render Backup Options.
+- [`mainwp_backuptask_column_destination`](backups-restoration/index.md#mainwp-backuptask-column-destination) - Column Destination.
+- [`mainwp_backuptask_remotedestinations`](backups-restoration/index.md#mainwp-backuptask-remotedestinations) - Get backup tasks and site ID.
+- [`mainwp_before_active_plugins_list`](updates-maintenance/index.md#mainwp-before-active-plugins-list) - Action: mainwp_before_active_plugins_list
+- [`mainwp_before_bulkpost_editor`](content-management/index.md#mainwp-before-bulkpost-editor) - Renders bulkpost to edit.
+- [`mainwp_before_core_unignore`](updates-maintenance/index.md#mainwp-before-core-unignore) - Action: mainwp_before_core_unignore
+- [`mainwp_before_cron_jobs_table`](ui-display/index.md#mainwp-before-cron-jobs-table) - Action: mainwp_before_cron_jobs_table
+- [`mainwp_before_edit_site_note`](site-management/index.md#mainwp-before-edit-site-note) - Action: mainwp_before_edit_site_note
+- [`mainwp_before_error_log_table`](ui-display/index.md#mainwp-before-error-log-table) - Action: mainwp_before_error_log_table
+- [`mainwp_before_groups_table`](site-management/index.md#mainwp-before-groups-table) - Action: mainwp_before_groups_table
+- [`mainwp_before_header`](misc/index.md#mainwp-before-header) - Action: mainwp_before_header
+- [`mainwp_before_htaccess_section`](user-management/index.md#mainwp-before-htaccess-section) - Action: mainwp_before_htaccess_section
+- [`mainwp_before_import_users`](user-management/index.md#mainwp-before-import-users) - Action: mainwp_before_import_users
+- [`mainwp_before_inactive_plugins_list`](updates-maintenance/index.md#mainwp-before-inactive-plugins-list) - Action: mainwp_before_inactive_plugins_list
+- [`mainwp_before_inactive_themes_list`](updates-maintenance/index.md#mainwp-before-inactive-themes-list) - Action: mainwp_before_inactive_themes_list
+- [`mainwp_before_log_data`](ui-display/index.md#mainwp-before-log-data) - Method log_to_db()
+- [`mainwp_before_mainwp_content_wrap`](content-management/index.md#mainwp-before-mainwp-content-wrap) - Action: mainwp_before_mainwp_content_wrap
+- [`mainwp_before_manage_sites_table`](site-management/index.md#mainwp-before-manage-sites-table) - Action: mainwp_before_manage_sites_table
+- [`mainwp_before_new_user_form`](user-management/index.md#mainwp-before-new-user-form) - Action: mainwp_before_new_user_form
+- [`mainwp_before_new_user_form_fields`](user-management/index.md#mainwp-before-new-user-form-fields) - Action: mainwp_before_new_user_form_fields
+- [`mainwp_before_overview_widgets`](ui-display/index.md#mainwp-before-overview-widgets) - Action: mainwp_before_overview_widgets
+- [`mainwp_before_pages_table`](content-management/index.md#mainwp-before-pages-table) - Action: mainwp_before_pages_table
+- [`mainwp_before_plugin_action`](updates-maintenance/index.md#mainwp-before-plugin-action) - Action: mainwp_before_plugin_action
+- [`mainwp_before_plugin_ignore`](updates-maintenance/index.md#mainwp-before-plugin-ignore) - Action: mainwp_before_plugin_ignore
+- [`mainwp_before_plugin_privacy_section`](updates-maintenance/index.md#mainwp-before-plugin-privacy-section) - Action: mainwp_before_plugin_privacy_section
+- [`mainwp_before_plugin_theme_install`](updates-maintenance/index.md#mainwp-before-plugin-theme-install) - Action: mainwp_before_plugin_theme_install
+- [`mainwp_before_plugin_theme_install_progress`](updates-maintenance/index.md#mainwp-before-plugin-theme-install-progress) - Action: mainwp_before_plugin_theme_install_progress
+- [`mainwp_before_plugin_theme_translation_update`](updates-maintenance/index.md#mainwp-before-plugin-theme-translation-update) - Action: mainwp_before_plugin_theme_translation_update
+- [`mainwp_before_plugin_theme_unignore`](updates-maintenance/index.md#mainwp-before-plugin-theme-unignore) - Action: mainwp_before_plugin_theme_unignore
+- [`mainwp_before_plugin_unignore`](updates-maintenance/index.md#mainwp-before-plugin-unignore) - Action: mainwp_before_plugin_unignore
+- [`mainwp_before_plugins_table`](updates-maintenance/index.md#mainwp-before-plugins-table) - Action: mainwp_before_plugins_table
+- [`mainwp_before_post_action`](content-management/index.md#mainwp-before-post-action) - Action: mainwp_before_post_action
+- [`mainwp_before_posts_table`](content-management/index.md#mainwp-before-posts-table) - Action: mainwp_before_posts_table
+- [`mainwp_before_redirect_posting_bulkpage`](content-management/index.md#mainwp-before-redirect-posting-bulkpage) - Action: mainwp_before_redirect_posting_bulkpage
+- [`mainwp_before_redirect_posting_bulkpost`](content-management/index.md#mainwp-before-redirect-posting-bulkpost) - Action: mainwp_before_redirect_posting_bulkpost
+- [`mainwp_before_save_advanced_settings`](system-settings/index.md#mainwp-before-save-advanced-settings) - Action: mainwp_before_save_advanced_settings
+- [`mainwp_before_save_email_settings`](system-settings/index.md#mainwp-before-save-email-settings) - Action: mainwp_before_save_email_settings
+- [`mainwp_before_save_general_settings`](system-settings/index.md#mainwp-before-save-general-settings) - Action: mainwp_before_save_general_settings
+- [`mainwp_before_save_sync_result`](site-management/index.md#mainwp-before-save-sync-result) - Filter: mainwp_before_save_sync_result
+- [`mainwp_before_seclect_sites`](misc/index.md#mainwp-before-seclect-sites) - Action: mainwp_before_seclect_sites
+- [`mainwp_before_select_clients_list`](client-reports/index.md#mainwp-before-select-clients-list) - Action: mainwp_before_select_clients_list
+- [`mainwp_before_select_groups_list`](site-management/index.md#mainwp-before-select-groups-list) - Action: mainwp_before_select_groups_list
+- [`mainwp_before_select_sites_filters`](site-management/index.md#mainwp-before-select-sites-filters) - Action: mainwp_before_select_sites_filters
+- [`mainwp_before_select_sites_list`](site-management/index.md#mainwp-before-select-sites-list) - Action: mainwp_before_select_sites_list
+- [`mainwp_before_server_info_table`](ui-display/index.md#mainwp-before-server-info-table) - Action: mainwp_before_server_info_table
+- [`mainwp_before_subheader`](misc/index.md#mainwp-before-subheader) - Action: mainwp_before_subheader
+- [`mainwp_before_system_requirements_check`](security-monitoring/index.md#mainwp-before-system-requirements-check) - Action: mainwp_before_system_requirements_check
+- [`mainwp_before_template_part`](misc/index.md#mainwp-before-template-part) - Action: mainwp_before_template_part
+- [`mainwp_before_theme_action`](updates-maintenance/index.md#mainwp-before-theme-action) - Action: mainwp_before_theme_action
+- [`mainwp_before_theme_ignore`](updates-maintenance/index.md#mainwp-before-theme-ignore) - Action: mainwp_before_theme_ignore
+- [`mainwp_before_theme_unignore`](updates-maintenance/index.md#mainwp-before-theme-unignore) - Action: mainwp_before_theme_unignore
+- [`mainwp_before_themes_table`](updates-maintenance/index.md#mainwp-before-themes-table) - Action: mainwp_before_themes_table
+- [`mainwp_before_upload_custom_icon`](ui-display/index.md#mainwp-before-upload-custom-icon) - Action: mainwp_after_upload_custom_icon
+- [`mainwp_before_user_action`](user-management/index.md#mainwp-before-user-action) - Action: mainwp_before_user_action
+- [`mainwp_before_user_create`](user-management/index.md#mainwp-before-user-create) - Action: mainwp_before_user_create
+- [`mainwp_before_users_table`](user-management/index.md#mainwp-before-users-table) - Action: mainwp_before_users_table
+- [`mainwp_before_wp_config_section`](system-settings/index.md#mainwp-before-wp-config-section) - Action: mainwp_before_wp_config_section
+- [`mainwp_before_wp_update`](updates-maintenance/index.md#mainwp-before-wp-update) - Action: mainwp_before_wp_update
+- [`mainwp_boilerplate_get_tokens`](site-management/index.md#mainwp-boilerplate-get-tokens) - This filter is documented in ../class/class-mainwp-notification-settings.php
+- [`mainwp_bulk_install_sidebar_submit_bottom`](updates-maintenance/index.md#mainwp-bulk-install-sidebar-submit-bottom) - Render Install plugins Table.
+- [`mainwp_bulk_install_tabs_content`](updates-maintenance/index.md#mainwp-bulk-install-tabs-content) - Render Install plugins Table.
+- [`mainwp_bulk_prepare_install_result`](updates-maintenance/index.md#mainwp-bulk-prepare-install-result) - Filter: mainwp_bulk_prepare_install_result
+- [`mainwp_bulk_upload_install_result`](updates-maintenance/index.md#mainwp-bulk-upload-install-result) - Filter: mainwp_bulk_upload_install_result
+- [`mainwp_bulkpage_before_post`](content-management/index.md#mainwp-bulkpage-before-post) - Before Page post action
+- [`mainwp_bulkpage_posting`](content-management/index.md#mainwp-bulkpage-posting) - Posting new page
+- [`mainwp_bulkpost_before_post`](content-management/index.md#mainwp-bulkpost-before-post) - Before Post post action
+- [`mainwp_bulkpost_categories_handle`](content-management/index.md#mainwp-bulkpost-categories-handle) - Method add_categories_handle()
+- [`mainwp_bulkpost_edit`](content-management/index.md#mainwp-bulkpost-edit) - Edit bulkpost
+- [`mainwp_bulkpost_edit_title`](content-management/index.md#mainwp-bulkpost-edit-title) - Renders bulkpost to edit.
+- [`mainwp_bulkpost_edit_top_side`](content-management/index.md#mainwp-bulkpost-edit-top-side) - Renders bulkpost to edit.
+- [`mainwp_bulkpost_editor_settings`](content-management/index.md#mainwp-bulkpost-editor-settings) - Renders bulkpost to edit.
+- [`mainwp_bulkpost_select_sites_settings`](site-management/index.md#mainwp-bulkpost-select-sites-settings) - Renders bulkpost to edit.
+- [`mainwp_bulkpost_tags_handle`](content-management/index.md#mainwp-bulkpost-tags-handle) - Method add_tags_handle()
+- [`mainwp_bulkposting_done`](content-management/index.md#mainwp-bulkposting-done) - Posting post completed
+- [`mainwp_cache_icon_expired`](updates-maintenance/index.md#mainwp-cache-icon-expired) - Gets a plugin|theme icon to output.
+- [`mainwp_cards_per_row`](content-management/index.md#mainwp-cards-per-row) - Filter: mainwp_cards_per_row
+- [`mainwp_check_site_result`](site-management/index.md#mainwp-check-site-result) - Method check_site()
+- [`mainwp_child_site_info_widget_content`](site-management/index.md#mainwp-child-site-info-widget-content) - Filter: mainwp_child_site_info_widget_content
+- [`mainwp_clear_and_lock_options`](system-settings/index.md#mainwp-clear-and-lock-options) - Clean and Lock extension options
+- [`mainwp_client_deleted`](client-reports/index.md#mainwp-client-deleted) - Delete client
+- [`mainwp_client_report_generate_content`](content-management/index.md#mainwp-client-report-generate-content) - Filter: mainwp_client_report_generate_content
+- [`mainwp_client_report_get_site_tokens`](site-management/index.md#mainwp-client-report-get-site-tokens) - Filter: mainwp_client_report_get_site_tokens
+- [`mainwp_client_suspend`](client-reports/index.md#mainwp-client-suspend) - Fires immediately after update client suspend/unsuspend.
+- [`mainwp_client_updated`](updates-maintenance/index.md#mainwp-client-updated) - Add client
+- [`mainwp_clients_getmetaboxes`](client-reports/index.md#mainwp-clients-getmetaboxes) - Method add_meta_boxes()
+- [`mainwp_clients_info_table_bottom`](client-reports/index.md#mainwp-clients-info-table-bottom) - Action: mainwp_clients_info_table_bottom
+- [`mainwp_clients_info_table_top`](client-reports/index.md#mainwp-clients-info-table-top) - Action: mainwp_clients_info_table_top
+- [`mainwp_clients_info_widget_bottom`](client-reports/index.md#mainwp-clients-info-widget-bottom) - Action: mainwp_clients_info_widget_bottom
+- [`mainwp_clients_info_widget_title`](client-reports/index.md#mainwp-clients-info-widget-title) - *Arguments*
+- [`mainwp_clients_info_widget_top`](client-reports/index.md#mainwp-clients-info-widget-top) - Actoin: mainwp_clients_info_widget_top
+- [`mainwp_clients_overview_contact_widget_bottom`](client-reports/index.md#mainwp-clients-overview-contact-widget-bottom) - Action: mainwp_clients_overview_contact_widget_bottom
+- [`mainwp_clients_overview_contact_widget_sutbitle`](client-reports/index.md#mainwp-clients-overview-contact-widget-sutbitle) - *Arguments*
+- [`mainwp_clients_overview_contact_widget_title`](client-reports/index.md#mainwp-clients-overview-contact-widget-title) - *Arguments*
+- [`mainwp_clients_overview_contact_widget_top`](client-reports/index.md#mainwp-clients-overview-contact-widget-top) - Actoin: mainwp_clients_overview_contact_widget_top
+- [`mainwp_clients_overview_enabled_widgets`](client-reports/index.md#mainwp-clients-overview-enabled-widgets) - Unset unwanted Widgets
+- [`mainwp_clients_overview_help_item`](client-reports/index.md#mainwp-clients-overview-help-item) - Action: mainwp_clients_overview_help_item
+- [`mainwp_clients_overview_info_table_bottom`](client-reports/index.md#mainwp-clients-overview-info-table-bottom) - Action: mainwp_clients_overview_info_table_bottom
+- [`mainwp_clients_overview_info_table_top`](client-reports/index.md#mainwp-clients-overview-info-table-top) - Action: mainwp_clients_overview_info_table_top
+- [`mainwp_clients_overview_info_widget_bottom`](client-reports/index.md#mainwp-clients-overview-info-widget-bottom) - Action: mainwp_clients_overview_info_widget_bottom
+- [`mainwp_clients_overview_info_widget_title`](client-reports/index.md#mainwp-clients-overview-info-widget-title) - *Arguments*
+- [`mainwp_clients_overview_info_widget_top`](client-reports/index.md#mainwp-clients-overview-info-widget-top) - Actoin: mainwp_clients_overview_info_widget_top
+- [`mainwp_clients_overview_note_widget_bottom`](client-reports/index.md#mainwp-clients-overview-note-widget-bottom) - Action: mainwp_clients_overview_note_widget_bottom
+- [`mainwp_clients_overview_note_widget_title`](client-reports/index.md#mainwp-clients-overview-note-widget-title) - *Arguments*
+- [`mainwp_clients_overview_note_widget_top`](client-reports/index.md#mainwp-clients-overview-note-widget-top) - Actoin: mainwp_clients_overview_note_widget_top
+- [`mainwp_clients_overview_overview_widget_bottom`](client-reports/index.md#mainwp-clients-overview-overview-widget-bottom) - Action: mainwp_clients_overview_overview_widget_bottom
+- [`mainwp_clients_overview_overview_widget_top`](client-reports/index.md#mainwp-clients-overview-overview-widget-top) - Actoin: mainwp_clients_overview_overview_widget_top
+- [`mainwp_clients_overview_screen_options_bottom`](client-reports/index.md#mainwp-clients-overview-screen-options-bottom) - Action: mainwp_clients_overview_screen_options_bottom
+- [`mainwp_clients_overview_screen_options_top`](client-reports/index.md#mainwp-clients-overview-screen-options-top) - Action: mainwp_clients_overview_screen_options_top
+- [`mainwp_clients_overview_websites_widget_bottom`](site-management/index.md#mainwp-clients-overview-websites-widget-bottom) - Action: mainwp_clients_overview_websites_widget_bottom
+- [`mainwp_clients_overview_websites_widget_title`](site-management/index.md#mainwp-clients-overview-websites-widget-title) - *Arguments*
+- [`mainwp_clients_overview_websites_widget_top`](site-management/index.md#mainwp-clients-overview-websites-widget-top) - Actoin: mainwp_clients_overview_websites_widget_top
+- [`mainwp_clients_sitestable_getcolumns`](client-reports/index.md#mainwp-clients-sitestable-getcolumns) - Filter: mainwp_clients_sitestable_getcolumns
+- [`mainwp_clients_sitestable_item`](client-reports/index.md#mainwp-clients-sitestable-item) - Filter: mainwp_clients_sitestable_item
+- [`mainwp_clients_table_features`](client-reports/index.md#mainwp-clients-table-features) - Filter: mainwp_clients_table_features
+- [`mainwp_clients_website_client_tokens`](site-management/index.md#mainwp-clients-website-client-tokens) - Method get_website_client_tokens_data()
+- [`mainwp_clients_widget_bottom`](client-reports/index.md#mainwp-clients-widget-bottom) - Action: mainwp_clients_widget_bottom
+- [`mainwp_clients_widget_title`](client-reports/index.md#mainwp-clients-widget-title) - *Arguments*
+- [`mainwp_clients_widget_top`](client-reports/index.md#mainwp-clients-widget-top) - Actoin: mainwp_clients_widget_top
+- [`mainwp_clients_widgets_screen_options`](client-reports/index.md#mainwp-clients-widgets-screen-options) - Filter: mainwp_clients_widgets_screen_options
+- [`mainwp_clientstable_prepared_items`](client-reports/index.md#mainwp-clientstable-prepared-items) - Prepair the items to be listed.
+- [`mainwp_clone_enabled`](misc/index.md#mainwp-clone-enabled) - Filter: mainwp_clone_enabled
+- [`mainwp_compact_action`](ui-display/index.md#mainwp-compact-action) - Create compact logs and erase records from the database.
+- [`mainwp_connect_sign_algo`](site-management/index.md#mainwp-connect-sign-algo) - Method get_connect_sign_algorithm().
+- [`mainwp_connect_sites_allow_ports`](site-management/index.md#mainwp-connect-sites-allow-ports) - Method mainwp_testwp()
+- [`mainwp_connect_sites_not_allow_ports`](site-management/index.md#mainwp-connect-sites-not-allow-ports) - Method mainwp_testwp()
+- [`mainwp_connection_status_after_all_sites_list`](site-management/index.md#mainwp-connection-status-after-all-sites-list) - Action: mainwp_connection_status_after_all_sites_list
+- [`mainwp_connection_status_after_connected_sites_list`](site-management/index.md#mainwp-connection-status-after-connected-sites-list) - Action: mainwp_connection_status_after_connected_sites_list
+- [`mainwp_connection_status_after_disconnected_sites_list`](site-management/index.md#mainwp-connection-status-after-disconnected-sites-list) - Action: mainwp_connection_status_after_disconnected_sites_list
+- [`mainwp_connection_status_before_all_sites_list`](site-management/index.md#mainwp-connection-status-before-all-sites-list) - Action: mainwp_connection_status_before_all_sites_list
+- [`mainwp_connection_status_before_connected_sites_list`](site-management/index.md#mainwp-connection-status-before-connected-sites-list) - Action: mainwp_connection_status_before_connected_sites_list
+- [`mainwp_connection_status_before_disconnected_sites_list`](site-management/index.md#mainwp-connection-status-before-disconnected-sites-list) - Action: mainwp_connection_status_before_disconnected_sites_list
+- [`mainwp_connection_status_list_item_title`](site-management/index.md#mainwp-connection-status-list-item-title) - *Arguments*
+- [`mainwp_connection_status_list_item_title_url`](site-management/index.md#mainwp-connection-status-list-item-title-url) - *Arguments*
+- [`mainwp_connection_status_widget_bottom`](site-management/index.md#mainwp-connection-status-widget-bottom) - Action: mainwp_connection_status_widget_bottom
+- [`mainwp_connection_status_widget_footer_left`](site-management/index.md#mainwp-connection-status-widget-footer-left) - Action: mainwp_connection_status_widget_footer_left
+- [`mainwp_connection_status_widget_footer_right`](site-management/index.md#mainwp-connection-status-widget-footer-right) - Action: mainwp_connection_status_widget_footer_right
+- [`mainwp_connection_status_widget_title`](site-management/index.md#mainwp-connection-status-widget-title) - *Arguments*
+- [`mainwp_connection_status_widget_top`](site-management/index.md#mainwp-connection-status-widget-top) - Action: mainwp_connection_status_widget_top
+- [`mainwp_cores_after_ignored_updates`](updates-maintenance/index.md#mainwp-cores-after-ignored-updates) - Action: mainwp_cores_after_ignored_updates
+- [`mainwp_cores_before_ignored_updates`](updates-maintenance/index.md#mainwp-cores-before-ignored-updates) - Action: mainwp_cores_before_ignored_updates
+- [`mainwp_cost_summary_getmetaboxes`](ui-display/index.md#mainwp-cost-summary-getmetaboxes) - Method add_meta_boxes()
+- [`mainwp_create_security_nonces`](security-monitoring/index.md#mainwp-create-security-nonces) - Create the security nonces.
+- [`mainwp_cron_bulk_update_items_limit`](updates-maintenance/index.md#mainwp-cron-bulk-update-items-limit) - Method handle_cron_batch_updates()
+- [`mainwp_cron_bulk_update_sites_limit`](site-management/index.md#mainwp-cron-bulk-update-sites-limit) - Method handle_cron_batch_updates()
+- [`mainwp_cron_jobs_list`](ui-display/index.md#mainwp-cron-jobs-list) - Action: mainwp_cron_jobs_list
+- [`mainwp_cron_jobs_table_features`](ui-display/index.md#mainwp-cron-jobs-table-features) - Filter: mainwp_cron_jobs_table_features
+- [`mainwp_cronload_action`](misc/index.md#mainwp-cronload-action) - Action: mainwp_cronload_action
+- [`mainwp_curl_curlopt_resolve`](site-management/index.md#mainwp-curl-curlopt-resolve) - Fetch uptime urls.
+- [`mainwp_curl_http_version`](api-remote/index.md#mainwp-curl-http-version) - Fetch uptime urls.
+- [`mainwp_currentuserallowedaccessgroups`](site-management/index.md#mainwp-currentuserallowedaccessgroups) - Filter: mainwp_currentuserallowedaccessgroups
+- [`mainwp_currentuserallowedaccesssites`](user-management/index.md#mainwp-currentuserallowedaccesssites) - Filter: mainwp_currentuserallowedaccesssites
+- [`mainwp_currentusercan`](user-management/index.md#mainwp-currentusercan) - Method \mainwp_current_user_can()
+- [`mainwp_custom_post_types_default`](content-management/index.md#mainwp-custom-post-types-default) - Default post types
+- [`mainwp_custom_post_types_get_post_connections`](site-management/index.md#mainwp-custom-post-types-get-post-connections) - Method posts_search_handler()
+- [`mainwp_custom_render_bulkpost`](content-management/index.md#mainwp-custom-render-bulkpost) - Renders bulkpost to edit.
+- [`mainwp_daily_digest_action`](misc/index.md#mainwp-daily-digest-action) - Action: mainwp_daily_digest_action
+- [`mainwp_daily_digest_content`](content-management/index.md#mainwp-daily-digest-content) - Filter: mainwp_daily_digest_content
+- [`mainwp_daily_digest_email_footer`](misc/index.md#mainwp-daily-digest-email-footer) - Daily Digest Email Footer
+- [`mainwp_daily_digest_email_header`](misc/index.md#mainwp-daily-digest-email-header) - Daily Digest Email Header
+- [`mainwp_database_updater_supported_plugins`](updates-maintenance/index.md#mainwp-database-updater-supported-plugins) - Method sites_available_updates_count()
+- [`mainwp_db_after_update`](updates-maintenance/index.md#mainwp-db-after-update) - Method install()
+- [`mainwp_db_fetch_object`](misc/index.md#mainwp-db-fetch-object) - Method fetch_object().
+- [`mainwp_db_free_result`](misc/index.md#mainwp-db-free-result) - Method free_result().
+- [`mainwp_db_install_tables`](updates-maintenance/index.md#mainwp-db-install-tables) - Method install()
+- [`mainwp_decrypt_key_value`](api-remote/index.md#mainwp-decrypt-key-value) - Method decrypt_api_keys
+- [`mainwp_default_emails_fields`](system-settings/index.md#mainwp-default-emails-fields) - Get default email notifications values.
+- [`mainwp_default_settings_indicator`](system-settings/index.md#mainwp-default-settings-indicator) - Method render_not_default_indicator().
+- [`mainwp_default_template_locate`](updates-maintenance/index.md#mainwp-default-template-locate) - Render the email notification edit form.
+- [`mainwp_default_template_source_dir`](updates-maintenance/index.md#mainwp-default-template-source-dir) - Locate a template and return the path for inclusion.
+- [`mainwp_delete_key_file`](updates-maintenance/index.md#mainwp-delete-key-file) - Method update child api key.
+- [`mainwp_delete_site`](site-management/index.md#mainwp-delete-site) - This action is documented in pages\page-mainwp-manage-sites-handler.php
+- [`mainwp_detect_premium_plugins_update`](updates-maintenance/index.md#mainwp-detect-premium-plugins-update) - Filter: mainwp_detect_premium_plugins_update
+- [`mainwp_detect_premium_themes_update`](updates-maintenance/index.md#mainwp-detect-premium-themes-update) - Filter: mainwp_detect_premium_themes_update
+- [`mainwp_detect_premiums_updates`](updates-maintenance/index.md#mainwp-detect-premiums-updates) - Filter: mainwp_detect_premiums_updates
+- [`mainwp_disable_rest_api_access_log`](user-management/index.md#mainwp-disable-rest-api-access-log) - This filter enables the exclusion of the most recent access time from being logged for REST API calls.
+- [`mainwp_disablemenuitems`](ui-display/index.md#mainwp-disablemenuitems) - Method init()
+- [`mainwp_do_widget_boxes_sorted`](ui-display/index.md#mainwp-do-widget-boxes-sorted) - Method do_widget_boxes()
+- [`mainwp_edit_bulkpost_getmetaboxes`](content-management/index.md#mainwp-edit-bulkpost-getmetaboxes) - Init custom bulkpost metaboxes.
+- [`mainwp_edit_post_get_categories`](content-management/index.md#mainwp-edit-post-get-categories) - Method ajax_handle_get_categories()
+- [`mainwp_edit_posts_after_submit_button`](content-management/index.md#mainwp-edit-posts-after-submit-button) - Action: mainwp_edit_posts_after_submit_button
+- [`mainwp_edit_posts_before_submit_button`](content-management/index.md#mainwp-edit-posts-before-submit-button) - Action: mainwp_edit_posts_before_submit_button
+- [`mainwp_encrypt_key_value`](api-remote/index.md#mainwp-encrypt-key-value) - Method encrypt_api_keys
+- [`mainwp_enqueue_script_gridster`](content-management/index.md#mainwp-enqueue-script-gridster) - Method admin_init()
+- [`mainwp_escape_content`](content-management/index.md#mainwp-escape-content) - Edit subscription Post
+- [`mainwp_extension_card_bottom`](extensions-integration/index.md#mainwp-extension-card-bottom) - Action: mainwp_extension_card_bottom
+- [`mainwp_extension_card_top`](extensions-integration/index.md#mainwp-extension-card-top) - Action: mainwp_extension_card_top
+- [`mainwp_extension_sites_edit_tablerow`](site-management/index.md#mainwp-extension-sites-edit-tablerow) - Method render_edit_site()
+- [`mainwp_extensions_help_item`](extensions-integration/index.md#mainwp-extensions-help-item) - Action: mainwp_extensions_help_item
+- [`mainwp_extensions_page_top_header`](content-management/index.md#mainwp-extensions-page-top-header) - Method render_header()
+- [`mainwp_extensions_top_header_after_tab`](ui-display/index.md#mainwp-extensions-top-header-after-tab) - Method render_header()
+- [`mainwp_favorites_themes`](updates-maintenance/index.md#mainwp-favorites-themes) - Render the Themes table for the Install Themes Tab.
+- [`mainwp_fetch_uptime_chunk_size_urls`](security-monitoring/index.md#mainwp-fetch-uptime-chunk-size-urls) - Check uptime monitors.
+- [`mainwp_fetch_uptime_disable_check_multi_exec`](security-monitoring/index.md#mainwp-fetch-uptime-disable-check-multi-exec) - Apply disable check multi exec.
+- [`mainwp_fetch_url_authed`](site-management/index.md#mainwp-fetch-url-authed) - Fires immediately after fetch url action.
+- [`mainwp_fetch_urls_chunk_size`](misc/index.md#mainwp-fetch-urls-chunk-size) - Method fetch_urls_authed()
+- [`mainwp_file_uploader_chunk_size`](misc/index.md#mainwp-file-uploader-chunk-size) - Method render_upload()
+- [`mainwp_file_uploader_size_limit`](misc/index.md#mainwp-file-uploader-size-limit) - Filter: 'mainwp_file_uploader_size_limit'
+- [`mainwp_forced_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp-forced-get-plugin-theme-icon) - Gets a plugin icon via API from WordPress.org
+- [`mainwp_format_email`](misc/index.md#mainwp-format-email) - Method format_email()
+- [`mainwp_ga_delete_site`](misc/index.md#mainwp-ga-delete-site) - Action: mainwp_ga_delete_site
+- [`mainwp_get_all_pages_data`](content-management/index.md#mainwp-get-all-pages-data) - Get all pages data
+- [`mainwp_get_all_posts_data`](content-management/index.md#mainwp-get-all-posts-data) - Get all posts data
+- [`mainwp_get_notification_template_name_by_type`](misc/index.md#mainwp-get-notification-template-name-by-type) - Get default template name by email/notification type.
+- [`mainwp_get_plugin_theme_icon`](updates-maintenance/index.md#mainwp-get-plugin-theme-icon) - Gets a plugin icon via API from WordPress.org
+- [`mainwp_get_post_data_authed`](content-management/index.md#mainwp-get-post-data-authed) - Method get_post_data_authed()
+- [`mainwp_get_started_widget_bottom`](ui-display/index.md#mainwp-get-started-widget-bottom) - Action: mainwp_get_started_widget_bottom
+- [`mainwp_get_started_widget_title`](ui-display/index.md#mainwp-get-started-widget-title) - *Arguments*
+- [`mainwp_get_started_widget_top`](ui-display/index.md#mainwp-get-started-widget-top) - Action: mainwp_get_started_widget_top
+- [`mainwp_get_template`](misc/index.md#mainwp-get-template) - Filter: mainwp_get_template
+- [`mainwp_getcustompage_backups`](content-management/index.md#mainwp-getcustompage-backups) - Instantiate Legacy Backups Menu.
+- [`mainwp_getextensions`](extensions-integration/index.md#mainwp-getextensions) - Method init_menu()
+- [`mainwp_getmetaboxes`](ui-display/index.md#mainwp-getmetaboxes) - Method on_load_page_dashboard()
+- [`mainwp_getprimarybackup_activated`](backups-restoration/index.md#mainwp-getprimarybackup-activated) - Method admin_init()
+- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - This filter is documented in ../pages/page-mainwp-server-information-handler.php
+- [`mainwp_getsubpages_api_backups`](content-management/index.md#mainwp-getsubpages-api-backups) - This hook allows you to add extra sub pages to the client page via the 'mainwp_getsubpages_cost_tracker' filter.
+- [`mainwp_getsubpages_backups`](content-management/index.md#mainwp-getsubpages-backups) - Instantiate Legacy Backups Menu.
+- [`mainwp_getsubpages_client`](content-management/index.md#mainwp-getsubpages-client) - Method init_menu()
+- [`mainwp_getsubpages_cost_tracker`](content-management/index.md#mainwp-getsubpages-cost-tracker) - This hook allows you to add extra sub pages to the client page via the 'mainwp_getsubpages_cost_tracker' filter.
+- [`mainwp_getsubpages_page`](content-management/index.md#mainwp-getsubpages-page) - Method init_menu()
+- [`mainwp_getsubpages_plugins`](updates-maintenance/index.md#mainwp-getsubpages-plugins) - Instantiate Main Plugins Menu.
+- [`mainwp_getsubpages_post`](content-management/index.md#mainwp-getsubpages-post) - Method ini_menu()
+- [`mainwp_getsubpages_restapi`](content-management/index.md#mainwp-getsubpages-restapi) - REST API Subpages
+- [`mainwp_getsubpages_server`](content-management/index.md#mainwp-getsubpages-server) - Method init_menu()
+- [`mainwp_getsubpages_settings`](content-management/index.md#mainwp-getsubpages-settings) - Instantiate the Settings Menu.
+- [`mainwp_getsubpages_sites`](content-management/index.md#mainwp-getsubpages-sites) - Initiate menu.
+- [`mainwp_getsubpages_tags`](content-management/index.md#mainwp-getsubpages-tags) - This hook allows you to add extra sub pages to the Tags page via the 'mainwp-getsubpages-tags' filter.
+- [`mainwp_getsubpages_themes`](updates-maintenance/index.md#mainwp-getsubpages-themes) - Method init_menu()
+- [`mainwp_getsubpages_user`](content-management/index.md#mainwp-getsubpages-user) - Method init_menu()
+- [`mainwp_getwebsite_by_id`](site-management/index.md#mainwp-getwebsite-by-id) - Get sites by website ID.
+- [`mainwp_getwebsiteoptions`](site-management/index.md#mainwp-getwebsiteoptions) - Method get_website_options().
+- [`mainwp_go_back_wpadmin_link`](misc/index.md#mainwp-go-back-wpadmin-link) - Filter: mainwp_go_back_wpadmin_link
+- [`mainwp_header_actions_after_select_themes`](updates-maintenance/index.md#mainwp-header-actions-after-select-themes) - After select theme actions.
+- [`mainwp_header_actions_right`](misc/index.md#mainwp-header-actions-right) - Filter: mainwp_header_actions_right
+- [`mainwp_header_left`](content-management/index.md#mainwp-header-left) - Filter: mainwp_header_left
+- [`mainwp_header_right`](content-management/index.md#mainwp-header-right) - Filter: mainwp_header_right
+- [`mainwp_header_title`](content-management/index.md#mainwp-header-title) - Filter: mainwp_header_title
+- [`mainwp_help_sidebar_content`](content-management/index.md#mainwp-help-sidebar-content) - Action: mainwp_help_sidebar_content
+- [`mainwp_html_regression_largest_change_scope`](updates-maintenance/index.md#mainwp-html-regression-largest-change-scope) - Method mainwp_upgrade_plugintheme()
+- [`mainwp_http_check_email_footer`](security-monitoring/index.md#mainwp-http-check-email-footer) - HTTP Check Email Footer
+- [`mainwp_http_check_email_header`](security-monitoring/index.md#mainwp-http-check-email-header) - HTTP Check Email Header
+- [`mainwp_import_users_modal_bottom`](user-management/index.md#mainwp-import-users-modal-bottom) - Action: mainwp_import_users_modal_bottom
+- [`mainwp_import_users_modal_top`](user-management/index.md#mainwp-import-users-modal-top) - Action: mainwp_import_users_modal_top
+- [`mainwp_info_schedules_cron_listing`](content-management/index.md#mainwp-info-schedules-cron-listing) - Renders the Cron Schedule page.
+- [`mainwp_init_load_all_options`](system-settings/index.md#mainwp-init-load-all-options) - Method load_all_options()
+- [`mainwp_init_primary_menu_items`](ui-display/index.md#mainwp-init-primary-menu-items) - Method init_mainwp_menu_items()
+- [`mainwp_insights_getmetaboxes`](ui-display/index.md#mainwp-insights-getmetaboxes) - Method add_meta_boxes()
+- [`mainwp_install_plugin_action`](updates-maintenance/index.md#mainwp-install-plugin-action) - Handle @action mainwp_fetch_url_authed.
+- [`mainwp_install_plugin_card_bottom`](updates-maintenance/index.md#mainwp-install-plugin-card-bottom) - Action: mainwp_install_plugin_card_bottom
+- [`mainwp_install_plugin_card_top`](updates-maintenance/index.md#mainwp-install-plugin-card-top) - Action: mainwp_install_plugin_card_top
+- [`mainwp_install_plugin_theme_modal_action`](updates-maintenance/index.md#mainwp-install-plugin-theme-modal-action) - Action: mainwp_after_plugin_theme_install_progress
+- [`mainwp_install_plugin_theme_tabs_header_top`](updates-maintenance/index.md#mainwp-install-plugin-theme-tabs-header-top) - Render Install plugins Table.
+- [`mainwp_install_plugins_actions_bar_left`](updates-maintenance/index.md#mainwp-install-plugins-actions-bar-left) - Install Plugins actions bar (left)
+- [`mainwp_install_plugins_actions_bar_right`](updates-maintenance/index.md#mainwp-install-plugins-actions-bar-right) - Install Plugins actions bar (right)
+- [`mainwp_install_theme_action`](updates-maintenance/index.md#mainwp-install-theme-action) - Handle @action mainwp_fetch_url_authed.
+- [`mainwp_install_theme_card_template_bottom`](updates-maintenance/index.md#mainwp-install-theme-card-template-bottom) - Render the Themes table for the Install Themes Tab.
+- [`mainwp_install_themes_actions_bar_left`](updates-maintenance/index.md#mainwp-install-themes-actions-bar-left) - Install Themes actions bar (left)
+- [`mainwp_install_themes_actions_bar_right`](updates-maintenance/index.md#mainwp-install-themes-actions-bar-right) - Install Themes actions bar (right)
+- [`mainwp_install_update_actions`](updates-maintenance/index.md#mainwp-install-update-actions) - Fires immediately after install action.
+- [`mainwp_installbulk_prepareupload`](updates-maintenance/index.md#mainwp-installbulk-prepareupload) - Prepare upload
+- [`mainwp_is_disable_menu_item`](ui-display/index.md#mainwp-is-disable-menu-item) - Method is_disable_menu_item
+- [`mainwp_is_enable_schedule_job`](misc/index.md#mainwp-is-enable-schedule-job) - Method init_mainwp_cron()
+- [`mainwp_is_rest_api_request`](api-remote/index.md#mainwp-is-rest-api-request) - Whether this is a REST API request.
+- [`mainwp_license_deactivated_alert_plain_text`](misc/index.md#mainwp-license-deactivated-alert-plain-text) - Method cron_deactivated_licenses_alert()
+- [`mainwp_licenses_deactivated_alert_email_footer`](security-monitoring/index.md#mainwp-licenses-deactivated-alert-email-footer) - Site Health Monitoring Email Footer
+- [`mainwp_licenses_deactivated_alert_email_header`](security-monitoring/index.md#mainwp-licenses-deactivated-alert-email-header) - Site Health Monitoring Email Header
+- [`mainwp_limit_updates_all`](updates-maintenance/index.md#mainwp-limit-updates-all) - Limits number of updates to process.
+- [`mainwp_load_text_domain`](updates-maintenance/index.md#mainwp-load-text-domain) - Method localization()
+- [`mainwp_locate_template`](misc/index.md#mainwp-locate-template) - Filer: mainwp_locate_template
+- [`mainwp_log_action`](misc/index.md#mainwp-log-action) - Debugging log.
+- [`mainwp_log_do_to_db`](ui-display/index.md#mainwp-log-do-to-db) - Method log_to_db()
+- [`mainwp_log_specific`](misc/index.md#mainwp-log-specific) - MainWP_Logger constructor.
+- [`mainwp_log_specific_actions`](content-management/index.md#mainwp-log-specific-actions) - Renders action logs page.
+- [`mainwp_log_status`](misc/index.md#mainwp-log-status) - MainWP_Logger constructor.
+- [`mainwp_log_system_query`](system-settings/index.md#mainwp-log-system-query) - Method log_system_query
+- [`mainwp_log_to_db_data`](ui-display/index.md#mainwp-log-to-db-data) - Method log_to_db()
+- [`mainwp_log_to_db_priority`](ui-display/index.md#mainwp-log-to-db-priority) - Method log_to_db()
+- [`mainwp_logger_keep_days`](security-monitoring/index.md#mainwp-logger-keep-days) - Method check_log_daily()
+- [`mainwp_logger_to_db`](content-management/index.md#mainwp-logger-to-db) - Renders action logs page.
+- [`mainwp_logs_manage_table_bottom`](ui-display/index.md#mainwp-logs-manage-table-bottom) - Action: mainwp_logs_widget_bottom
+- [`mainwp_logs_manage_table_top`](ui-display/index.md#mainwp-logs-manage-table-top) - Action: mainwp_logs_manage_table_top
+- [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp-logs-widget-bottom) - Action: mainwp_logs_widget_bottom
+- [`mainwp_logs_widget_top`](ui-display/index.md#mainwp-logs-widget-top) - Action: mainwp_logs_widget_top
+- [`mainwp_main_menu`](ui-display/index.md#mainwp-main-menu) - Filter: mainwp_main_menu
+- [`mainwp_main_menu_disable_menu_items`](ui-display/index.md#mainwp-main-menu-disable-menu-items) - Filter: mainwp_main_menu_disable_menu_items
+- [`mainwp_main_menu_submenu`](ui-display/index.md#mainwp-main-menu-submenu) - Filter: mainwp_main_menu_submenu
+- [`mainwp_manage_pages_action_item`](content-management/index.md#mainwp-manage-pages-action-item) - Method pages_search_handler()
+- [`mainwp_manage_pages_after_search_options`](content-management/index.md#mainwp-manage-pages-after-search-options) - Action: mainwp_manage_pages_after_search_options
+- [`mainwp_manage_pages_after_select_sites`](content-management/index.md#mainwp-manage-pages-after-select-sites) - Action: mainwp_manage_pages_after_select_sites
+- [`mainwp_manage_pages_after_submit_button`](content-management/index.md#mainwp-manage-pages-after-submit-button) - Action: mainwp_manage_pages_after_submit_button
+- [`mainwp_manage_pages_before_search_options`](content-management/index.md#mainwp-manage-pages-before-search-options) - Action: mainwp_manage_pages_before_search_options
+- [`mainwp_manage_pages_before_select_sites`](content-management/index.md#mainwp-manage-pages-before-select-sites) - Action: mainwp_manage_pages_before_select_sites
+- [`mainwp_manage_pages_before_submit_button`](content-management/index.md#mainwp-manage-pages-before-submit-button) - Action: mainwp_manage_pages_before_submit_button
+- [`mainwp_manage_pages_bulk_action`](content-management/index.md#mainwp-manage-pages-bulk-action) - Renders Bulk Page Manager.
+- [`mainwp_manage_pages_sidebar_bottom`](content-management/index.md#mainwp-manage-pages-sidebar-bottom) - Action: mainwp_manage_pages_sidebar_bottom
+- [`mainwp_manage_pages_sidebar_top`](content-management/index.md#mainwp-manage-pages-sidebar-top) - Action: mainwp_manage_pages_sidebar_top
+- [`mainwp_manage_plugin_theme_hide_show_updates_per`](updates-maintenance/index.md#mainwp-manage-plugin-theme-hide-show-updates-per) - Method render_select_manage_view().
+- [`mainwp_manage_plugins_after_search_options`](updates-maintenance/index.md#mainwp-manage-plugins-after-search-options) - Action: mainwp_manage_plugins_after_search_options
+- [`mainwp_manage_plugins_after_select_sites`](updates-maintenance/index.md#mainwp-manage-plugins-after-select-sites) - Action: mainwp_manage_plugins_after_select_sites
+- [`mainwp_manage_plugins_after_submit_button`](updates-maintenance/index.md#mainwp-manage-plugins-after-submit-button) - Action: mainwp_manage_plugins_after_submit_button
+- [`mainwp_manage_plugins_before_search_options`](updates-maintenance/index.md#mainwp-manage-plugins-before-search-options) - Action: mainwp_manage_plugins_before_search_options
+- [`mainwp_manage_plugins_before_select_sites`](updates-maintenance/index.md#mainwp-manage-plugins-before-select-sites) - Action: mainwp_manage_plugins_before_select_sites
+- [`mainwp_manage_plugins_before_submit_button`](updates-maintenance/index.md#mainwp-manage-plugins-before-submit-button) - Action: mainwp_manage_plugins_before_submit_button
+- [`mainwp_manage_plugins_sidebar_bottom`](updates-maintenance/index.md#mainwp-manage-plugins-sidebar-bottom) - Action: mainwp_manage_plugins_sidebar_bottom
+- [`mainwp_manage_plugins_sidebar_top`](updates-maintenance/index.md#mainwp-manage-plugins-sidebar-top) - Action: mainwp_manage_plugins_sidebar_top
+- [`mainwp_manage_posts_action_item`](content-management/index.md#mainwp-manage-posts-action-item) - Method posts_search_handler()
+- [`mainwp_manage_posts_after_search_options`](content-management/index.md#mainwp-manage-posts-after-search-options) - Action: mainwp_manage_posts_after_search_options
+- [`mainwp_manage_posts_after_select_sites`](content-management/index.md#mainwp-manage-posts-after-select-sites) - Action: mainwp_manage_posts_after_select_sites
+- [`mainwp_manage_posts_after_submit_button`](content-management/index.md#mainwp-manage-posts-after-submit-button) - Action: mainwp_manage_posts_after_submit_button
+- [`mainwp_manage_posts_before_search_options`](content-management/index.md#mainwp-manage-posts-before-search-options) - Action: mainwp_manage_posts_before_search_options
+- [`mainwp_manage_posts_before_select_sites`](content-management/index.md#mainwp-manage-posts-before-select-sites) - Action: mainwp_manage_posts_before_select_sites
+- [`mainwp_manage_posts_before_submit_button`](content-management/index.md#mainwp-manage-posts-before-submit-button) - Action: mainwp_manage_posts_before_submit_button
+- [`mainwp_manage_posts_bulk_action`](content-management/index.md#mainwp-manage-posts-bulk-action) - Method render()
+- [`mainwp_manage_posts_sidebar_bottom`](content-management/index.md#mainwp-manage-posts-sidebar-bottom) - Action: mainwp_manage_posts_sidebar_bottom
+- [`mainwp_manage_posts_sidebar_top`](content-management/index.md#mainwp-manage-posts-sidebar-top) - Action: mainwp_manage_posts_sidebar_top
+- [`mainwp_manage_sites_action`](site-management/index.md#mainwp-manage-sites-action) - Action: mainwp_manage_sites_action
+- [`mainwp_manage_sites_edit`](site-management/index.md#mainwp-manage-sites-edit) - This action is documented in ../pages/page-mainwp-manage-sites.php
+- [`mainwp_manage_sites_email_settings`](site-management/index.md#mainwp-manage-sites-email-settings) - Action: mainwp_manage_sites_email_settings
+- [`mainwp_manage_sites_force_use_ipv4`](site-management/index.md#mainwp-manage-sites-force-use-ipv4) - Method mainwp_testwp()
+- [`mainwp_manage_sites_navigation_items`](site-management/index.md#mainwp-manage-sites-navigation-items) - Method render_managesites_header()
+- [`mainwp_manage_sites_optimize_loading`](site-management/index.md#mainwp-manage-sites-optimize-loading) - Method render_all_sites()
+- [`mainwp_manage_sites_table_columns_defs`](site-management/index.md#mainwp-manage-sites-table-columns-defs) - Display the table.
+- [`mainwp_manage_themes_after_search_options`](updates-maintenance/index.md#mainwp-manage-themes-after-search-options) - Action: mainwp_manage_themes_after_search_options
+- [`mainwp_manage_themes_after_select_sites`](updates-maintenance/index.md#mainwp-manage-themes-after-select-sites) - Action: mainwp_manage_themes_after_select_sites
+- [`mainwp_manage_themes_after_submit_button`](updates-maintenance/index.md#mainwp-manage-themes-after-submit-button) - Action: mainwp_manage_themes_after_submit_button
+- [`mainwp_manage_themes_before_search_options`](updates-maintenance/index.md#mainwp-manage-themes-before-search-options) - Action: mainwp_manage_themes_before_search_options
+- [`mainwp_manage_themes_before_select_sites`](updates-maintenance/index.md#mainwp-manage-themes-before-select-sites) - Action: mainwp_manage_themes_before_select_sites
+- [`mainwp_manage_themes_before_submit_button`](updates-maintenance/index.md#mainwp-manage-themes-before-submit-button) - Action: mainwp_manage_themes_before_submit_button
+- [`mainwp_manage_themes_sidebar_bottom`](updates-maintenance/index.md#mainwp-manage-themes-sidebar-bottom) - Action: mainwp_manage_themes_sidebar_bottom
+- [`mainwp_manage_themes_sidebar_top`](updates-maintenance/index.md#mainwp-manage-themes-sidebar-top) - Action: mainwp_manage_themes_sidebar_top
+- [`mainwp_manage_updates_limit_loading`](updates-maintenance/index.md#mainwp-manage-updates-limit-loading) - Method handle_limit_sites().
+- [`mainwp_manage_users_after_search_options`](user-management/index.md#mainwp-manage-users-after-search-options) - Action: mainwp_manage_users_after_search_options
+- [`mainwp_manage_users_after_select_sites`](user-management/index.md#mainwp-manage-users-after-select-sites) - Action: mainwp_manage_users_after_select_sites
+- [`mainwp_manage_users_after_submit_button`](user-management/index.md#mainwp-manage-users-after-submit-button) - Action: mainwp_manage_users_after_submit_button
+- [`mainwp_manage_users_before_search_options`](user-management/index.md#mainwp-manage-users-before-search-options) - Action: mainwp_manage_users_before_search_options
+- [`mainwp_manage_users_before_select_sites`](user-management/index.md#mainwp-manage-users-before-select-sites) - Action: mainwp_manage_users_before_select_sites
+- [`mainwp_manage_users_before_submit_button`](user-management/index.md#mainwp-manage-users-before-submit-button) - Action: mainwp_manage_users_before_submit_button
+- [`mainwp_manage_users_sidebar_bottom`](user-management/index.md#mainwp-manage-users-sidebar-bottom) - Action: mainwp_manage_users_sidebar_bottom
+- [`mainwp_manage_users_sidebar_top`](user-management/index.md#mainwp-manage-users-sidebar-top) - Action: mainwp_manage_users_sidebar_top
+- [`mainwp_manageclients_bulk_actions`](client-reports/index.md#mainwp-manageclients-bulk-actions) - Filter: mainwp_manageclients_bulk_actions
+- [`mainwp_manageclients_tabletop`](client-reports/index.md#mainwp-manageclients-tabletop) - Method render_second_top_header()
+- [`mainwp_manageposts_get_post_result`](content-management/index.md#mainwp-manageposts-get-post-result) - Method get_post()
+- [`mainwp_managesite_backup`](site-management/index.md#mainwp-managesite-backup) - Method backup()
+- [`mainwp_managesite_schedule_backup`](site-management/index.md#mainwp-managesite-schedule-backup) - Execute the backup task.
+- [`mainwp_managesites_bulk_actions`](site-management/index.md#mainwp-managesites-bulk-actions) - Filter: mainwp_managesites_bulk_actions
+- [`mainwp_managesites_getbackuplink`](site-management/index.md#mainwp-managesites-getbackuplink) - Filter: mainwp_managesites_getbackuplink
+- [`mainwp_managesites_tabletop`](site-management/index.md#mainwp-managesites-tabletop) - Action: mainwp_managesites_tabletop
+- [`mainwp_menu_extensions_left_menu`](ui-display/index.md#mainwp-menu-extensions-left-menu) - Method init_extensions_menu()
+- [`mainwp_menu_logo_alt`](ui-display/index.md#mainwp-menu-logo-alt) - *Arguments*
+- [`mainwp_menu_logo_href`](ui-display/index.md#mainwp-menu-logo-href) - *Arguments*
+- [`mainwp_menu_logo_src`](ui-display/index.md#mainwp-menu-logo-src) - *Arguments*
+- [`mainwp_module_cost_tracker_actions_bar_left`](ui-display/index.md#mainwp-module-cost-tracker-actions-bar-left) - Render Actions Bar
+- [`mainwp_module_cost_tracker_actions_bar_right`](ui-display/index.md#mainwp-module-cost-tracker-actions-bar-right) - Render Actions Bar
+- [`mainwp_module_cost_tracker_before_save_settings`](system-settings/index.md#mainwp-module-cost-tracker-before-save-settings) - Settigns Post
+- [`mainwp_module_cost_tracker_email_footer`](updates-maintenance/index.md#mainwp-module-cost-tracker-email-footer) - HTTP Check Email Footer
+- [`mainwp_module_cost_tracker_email_header`](updates-maintenance/index.md#mainwp-module-cost-tracker-email-header) - HTTP Check Email Header
+- [`mainwp_module_cost_tracker_get_total_cost`](updates-maintenance/index.md#mainwp-module-cost-tracker-get-total-cost) - Method render_sites()
+- [`mainwp_module_cost_tracker_help_item`](content-management/index.md#mainwp-module-cost-tracker-help-item) - Action: mainwp_module_cost_tracker_help_item
+- [`mainwp_module_cost_tracker_manager_check_status`](security-monitoring/index.md#mainwp-module-cost-tracker-manager-check-status) - *Arguments*
+- [`mainwp_module_cost_tracker_monthly_renewals_widget_title`](ui-display/index.md#mainwp-module-cost-tracker-monthly-renewals-widget-title) - *Arguments*
+- [`mainwp_module_cost_tracker_settings_bottom`](system-settings/index.md#mainwp-module-cost-tracker-settings-bottom) - Render settings content.
+- [`mainwp_module_cost_tracker_summary_enabled_widgets`](ui-display/index.md#mainwp-module-cost-tracker-summary-enabled-widgets) - Unset unwanted Widgets
+- [`mainwp_module_cost_tracker_summary_screen_options_bottom`](ui-display/index.md#mainwp-module-cost-tracker-summary-screen-options-bottom) - Action: mainwp_module_cost_tracker_summary_screen_options_bottom
+- [`mainwp_module_cost_tracker_summary_screen_options_top`](ui-display/index.md#mainwp-module-cost-tracker-summary-screen-options-top) - Action: mainwp_module_cost_tracker_summary_screen_options_top
+- [`mainwp_module_cost_tracker_summary_widgets_screen_options`](ui-display/index.md#mainwp-module-cost-tracker-summary-widgets-screen-options) - Filter: mainwp_module_cost_tracker_summary_widgets_screen_options
+- [`mainwp_module_cost_tracker_upcoming_renewals_widget_title`](ui-display/index.md#mainwp-module-cost-tracker-upcoming-renewals-widget-title) - *Arguments*
+- [`mainwp_module_cost_tracker_widget_bottom`](ui-display/index.md#mainwp-module-cost-tracker-widget-bottom) - Action: mainwp_module_cost_tracker_widget_bottom
+- [`mainwp_module_cost_tracker_widget_top`](ui-display/index.md#mainwp-module-cost-tracker-widget-top) - Action: mainwp_module_cost_tracker_widget_top
+- [`mainwp_module_cost_tracker_yearly_renewals_widget_title`](ui-display/index.md#mainwp-module-cost-tracker-yearly-renewals-widget-title) - *Arguments*
+- [`mainwp_module_dashboard_insights_help_item`](ui-display/index.md#mainwp-module-dashboard-insights-help-item) - Action: mainwp_module_dashboard_insights_help_item
+- [`mainwp_module_log_after_connectors_registration`](misc/index.md#mainwp-module-log-after-connectors-registration) - Fires after all connectors have been registered.
+- [`mainwp_module_log_agent_label`](misc/index.md#mainwp-module-log-agent-label) - Filter agent labels
+- [`mainwp_module_log_check_connector_is_excluded`](security-monitoring/index.md#mainwp-module-log-check-connector-is-excluded) - Allows excluded connectors to be overridden and registered.
+- [`mainwp_module_log_connectors`](misc/index.md#mainwp-module-log-connectors) - Allows for adding additional connectors via classes that extend Connector.
+- [`mainwp_module_log_cron_tracking`](site-management/index.md#mainwp-module-log-cron-tracking) - Log handler.
+- [`mainwp_module_log_current_agent`](misc/index.md#mainwp-module-log-current-agent) - Filter the current agent string
+- [`mainwp_module_log_data`](site-management/index.md#mainwp-module-log-data) - Log handler
+- [`mainwp_module_log_get_role_list_separator`](user-management/index.md#mainwp-module-log-get-role-list-separator) - Tries to find a label for the record's user_role.
+- [`mainwp_module_log_overview_enabled_widgets`](ui-display/index.md#mainwp-module-log-overview-enabled-widgets) - Unset unwanted Widgets
+- [`mainwp_module_log_overview_screen_options_bottom`](ui-display/index.md#mainwp-module-log-overview-screen-options-bottom) - Action: mainwp_module_log_overview_screen_options_bottom
+- [`mainwp_module_log_overview_screen_options_top`](ui-display/index.md#mainwp-module-log-overview-screen-options-top) - Action: mainwp_module_log_overview_screen_options_top
+- [`mainwp_module_log_query_args`](misc/index.md#mainwp-module-log-query-args) - Filter allows additional arguments to query $args
+- [`mainwp_module_log_record_array`](misc/index.md#mainwp-module-log-record-array) - Filter allows modification of record information
+- [`mainwp_module_log_record_insert_error`](misc/index.md#mainwp-module-log-record-insert-error) - Fires on a record insertion error
+- [`mainwp_module_log_record_inserted`](misc/index.md#mainwp-module-log-record-inserted) - Fires after a record has been inserted
+- [`mainwp_module_log_widgets_screen_options`](ui-display/index.md#mainwp-module-log-widgets-screen-options) - Filter: mainwp_module_log_widgets_screen_options
+- [`mainwp_module_monthly_renewals_after_costs_list`](misc/index.md#mainwp-module-monthly-renewals-after-costs-list) - Action: mainwp_module_monthly_renewals_after_costs_list
+- [`mainwp_module_monthly_renewals_before_costs_list`](misc/index.md#mainwp-module-monthly-renewals-before-costs-list) - Action: mainwp_module_monthly_renewals_before_costs_list
+- [`mainwp_module_upcoming_renewals_after_costs_list`](misc/index.md#mainwp-module-upcoming-renewals-after-costs-list) - Action: mainwp_module_upcoming_renewals_after_costs_list
+- [`mainwp_module_upcoming_renewals_before_costs_list`](misc/index.md#mainwp-module-upcoming-renewals-before-costs-list) - Action: mainwp_module_upcoming_renewals_before_costs_list
+- [`mainwp_module_yearly_renewals_after_costs_list`](misc/index.md#mainwp-module-yearly-renewals-after-costs-list) - Action: mainwp_module_yearly_renewals_after_costs_list
+- [`mainwp_module_yearly_renewals_before_costs_list`](misc/index.md#mainwp-module-yearly-renewals-before-costs-list) - Action: mainwp_module_yearly_renewals_before_costs_list
+- [`mainwp_monitoring_sitestable_getcolumns`](security-monitoring/index.md#mainwp-monitoring-sitestable-getcolumns) - Filter: mainwp_monitoring_sitestable_getcolumns
+- [`mainwp_monitoring_sitestable_item`](security-monitoring/index.md#mainwp-monitoring-sitestable-item) - Filter: mainwp_monitoring_sitestable_item
+- [`mainwp_monitoring_sitestable_prepare_extra_view`](security-monitoring/index.md#mainwp-monitoring-sitestable-prepare-extra-view) - Prepair the items to be listed.
+- [`mainwp_monitoring_sitestable_prepared_items`](security-monitoring/index.md#mainwp-monitoring-sitestable-prepared-items) - Action: mainwp_monitoring_sitestable_prepared_items
+- [`mainwp_monitoring_table_features`](security-monitoring/index.md#mainwp-monitoring-table-features) - Filter: mainwp_monitoring_table_features
+- [`mainwp_monitoringsites_bulk_actions`](site-management/index.md#mainwp-monitoringsites-bulk-actions) - Filter: mainwp_monitoringsites_bulk_actions
+- [`mainwp_new_user_password_complexity`](user-management/index.md#mainwp-new-user-password-complexity) - Filter: mainwp_new_user_password_complexity
+- [`mainwp_non_mainwp_changes_table_bottom`](ui-display/index.md#mainwp-non-mainwp-changes-table-bottom) - Action: mainwp_non_mainwp_changes_table_bottom
+- [`mainwp_non_mainwp_changes_table_top`](ui-display/index.md#mainwp-non-mainwp-changes-table-top) - Action: mainwp_non_mainwp_changes_table_top
+- [`mainwp_non_mainwp_changes_widget_bottom`](ui-display/index.md#mainwp-non-mainwp-changes-widget-bottom) - Action: mainwp_non_mainwp_changes_widget_bottom
+- [`mainwp_non_mainwp_changes_widget_title`](ui-display/index.md#mainwp-non-mainwp-changes-widget-title) - *Arguments*
+- [`mainwp_non_mainwp_changes_widget_top`](ui-display/index.md#mainwp-non-mainwp-changes-widget-top) - Actoin: mainwp_non_mainwp_changes_widget_top
+- [`mainwp_notes_widget_bottom`](ui-display/index.md#mainwp-notes-widget-bottom) - Action: mainwp_notes_widget_bottom
+- [`mainwp_notes_widget_title`](ui-display/index.md#mainwp-notes-widget-title) - *Arguments*
+- [`mainwp_notes_widget_top`](ui-display/index.md#mainwp-notes-widget-top) - Action: mainwp_notes_widget_top
+- [`mainwp_notification_template_copy_message`](misc/index.md#mainwp-notification-template-copy-message) - Filter mainwp_notification_template_copy_message.
+- [`mainwp_notification_type_desc`](system-settings/index.md#mainwp-notification-type-desc) - Get email settings description.
+- [`mainwp_notification_types`](misc/index.md#mainwp-notification-types) - Get email notification types.
+- [`mainwp_open_hide_referrer`](misc/index.md#mainwp-open-hide-referrer) - Filter: mainwp_open_hide_referrer
+- [`mainwp_open_site_allow_vars`](site-management/index.md#mainwp-open-site-allow-vars) - Child Site Dashboard Link redirect handler.
+- [`mainwp_open_site_login_required_params`](site-management/index.md#mainwp-open-site-login-required-params) - Method get_get_data_authed()
+- [`mainwp_overview_enabled_widgets`](ui-display/index.md#mainwp-overview-enabled-widgets) - Unset unwanted Widgets
+- [`mainwp_overview_help_item`](content-management/index.md#mainwp-overview-help-item) - Action: mainwp_overview_help_item
+- [`mainwp_overview_screen_options_bottom`](ui-display/index.md#mainwp-overview-screen-options-bottom) - Action: mainwp_overview_screen_options_bottom
+- [`mainwp_overview_screen_options_top`](ui-display/index.md#mainwp-overview-screen-options-top) - Action: mainwp_overview_screen_options_top
+- [`mainwp_page_admin_body_class`](content-management/index.md#mainwp-page-admin-body-class) - MainWP Admin body CSS class attributes.
+- [`mainwp_page_hearder_tabs_updates`](updates-maintenance/index.md#mainwp-page-hearder-tabs-updates) - Renders header tabs
+- [`mainwp_page_navigation`](content-management/index.md#mainwp-page-navigation) - Filter: mainwp_page_navigation
+- [`mainwp_page_navigation_menu`](content-management/index.md#mainwp-page-navigation-menu) - Method render_page_navigation()
+- [`mainwp_pagefooter_extensions`](content-management/index.md#mainwp-pagefooter-extensions) - Method render_extensions_groups()
+- [`mainwp_pagefooter_settings`](content-management/index.md#mainwp-pagefooter-settings) - Render settings
+- [`mainwp_pagefooter_sites`](content-management/index.md#mainwp-pagefooter-sites) - Render Tabs.
+- [`mainwp_pagefooter_tags`](content-management/index.md#mainwp-pagefooter-tags) - Sites Page Footer
+- [`mainwp_pageheader_extensions`](content-management/index.md#mainwp-pageheader-extensions) - Method render_extensions_groups()
+- [`mainwp_pageheader_settings`](content-management/index.md#mainwp-pageheader-settings) - Render settings
+- [`mainwp_pageheader_sites`](content-management/index.md#mainwp-pageheader-sites) - Render Tabs.
+- [`mainwp_pageheader_tags`](content-management/index.md#mainwp-pageheader-tags) - Sites Page header
+- [`mainwp_pages_actions_bar_left`](content-management/index.md#mainwp-pages-actions-bar-left) - Action: mainwp_pages_actions_bar_left
+- [`mainwp_pages_actions_bar_right`](content-management/index.md#mainwp-pages-actions-bar-right) - Action: mainwp_pages_actions_bar_right
+- [`mainwp_pages_bulk_action`](content-management/index.md#mainwp-pages-bulk-action) - Action: mainwp_pages_bulk_action
+- [`mainwp_pages_help_item`](content-management/index.md#mainwp-pages-help-item) - Action: mainwp_pages_help_item
+- [`mainwp_pages_posting_popup_actions`](content-management/index.md#mainwp-pages-posting-popup-actions) - Method posting()
+- [`mainwp_pages_table_action`](content-management/index.md#mainwp-pages-table-action) - Action: mainwp_pages_table_action
+- [`mainwp_pages_table_column`](content-management/index.md#mainwp-pages-table-column) - Action: mainwp_pages_table_column
+- [`mainwp_pages_table_fatures`](content-management/index.md#mainwp-pages-table-fatures) - Filter: mainwp_pages_table_fatures
+- [`mainwp_pages_table_header`](content-management/index.md#mainwp-pages-table-header) - Action: mainwp_pages_table_header
+- [`mainwp_pages_updates_render_tabs`](updates-maintenance/index.md#mainwp-pages-updates-render-tabs) - Renders updates page.
+- [`mainwp_perform_install_data`](updates-maintenance/index.md#mainwp-perform-install-data) - Perform insatallation additional data
+- [`mainwp_performinstallplugintheme`](updates-maintenance/index.md#mainwp-performinstallplugintheme) - Method mainwp_ext_performinstallplugintheme()
+- [`mainwp_plugin_auto_updates_table_fatures`](updates-maintenance/index.md#mainwp-plugin-auto-updates-table-fatures) - Filter: mainwp_plugin_auto_updates_table_fatures
+- [`mainwp_plugin_information_sslverify`](updates-maintenance/index.md#mainwp-plugin-information-sslverify) - Sends and receives data to and from the server API.
+- [`mainwp_plugin_theme_icon_cache_days`](updates-maintenance/index.md#mainwp-plugin-theme-icon-cache-days) - Gets a plugin|theme icon to output.
+- [`mainwp_plugins_actions_bar_left`](updates-maintenance/index.md#mainwp-plugins-actions-bar-left) - Action: mainwp_plugins_actions_bar_left
+- [`mainwp_plugins_actions_bar_right`](updates-maintenance/index.md#mainwp-plugins-actions-bar-right) - Action: mainwp_plugins_actions_bar_right
+- [`mainwp_plugins_after_auto_updates_table`](updates-maintenance/index.md#mainwp-plugins-after-auto-updates-table) - Action: mainwp_plugins_after_auto_updates_table
+- [`mainwp_plugins_after_ignored_abandoned`](updates-maintenance/index.md#mainwp-plugins-after-ignored-abandoned) - Action: mainwp_plugins_after_ignored_abandoned
+- [`mainwp_plugins_after_ignored_updates`](updates-maintenance/index.md#mainwp-plugins-after-ignored-updates) - Action: mainwp_plugins_after_ignored_updates
+- [`mainwp_plugins_auto_updates_bulk_action`](updates-maintenance/index.md#mainwp-plugins-auto-updates-bulk-action) - Action: mainwp_plugins_auto_updates_bulk_action
+- [`mainwp_plugins_before_auto_updates_table`](updates-maintenance/index.md#mainwp-plugins-before-auto-updates-table) - Action: mainwp_plugins_before_auto_updates_table
+- [`mainwp_plugins_before_ignored_abandoned`](updates-maintenance/index.md#mainwp-plugins-before-ignored-abandoned) - Action: mainwp_plugins_before_ignored_abandoned
+- [`mainwp_plugins_before_ignored_updates`](updates-maintenance/index.md#mainwp-plugins-before-ignored-updates) - Action: mainwp_plugins_before_ignored_updates
+- [`mainwp_plugins_bulk_action`](updates-maintenance/index.md#mainwp-plugins-bulk-action) - Action: mainwp_plugins_bulk_action
+- [`mainwp_plugins_help_item`](updates-maintenance/index.md#mainwp-plugins-help-item) - Action: mainwp_plugins_help_item
+- [`mainwp_plugins_install_checks`](updates-maintenance/index.md#mainwp-plugins-install-checks) - Method get_plugins_install_check()
+- [`mainwp_plugins_widget_bottom`](updates-maintenance/index.md#mainwp-plugins-widget-bottom) - Action: mainwp_plugins_widget_bottom
+- [`mainwp_plugins_widget_title`](updates-maintenance/index.md#mainwp-plugins-widget-title) - *Arguments*
+- [`mainwp_plugins_widget_top`](updates-maintenance/index.md#mainwp-plugins-widget-top) - Action: mainwp_plugins_widget_top
+- [`mainwp_post_action`](content-management/index.md#mainwp-post-action) - Fires immediately after post action.
+- [`mainwp_post_created`](content-management/index.md#mainwp-post-created) - Method posting_bulk_handler()
+- [`mainwp_post_posting_page`](content-management/index.md#mainwp-post-posting-page) - Posting page
+- [`mainwp_post_posting_post`](content-management/index.md#mainwp-post-posting-post) - Posting post
+- [`mainwp_posting_bulkpost_post_status`](content-management/index.md#mainwp-posting-bulkpost-post-status) - Post status
+- [`mainwp_posting_post_selected_by`](content-management/index.md#mainwp-posting-post-selected-by) - Method posting_posts()
+- [`mainwp_posting_post_selected_sites`](content-management/index.md#mainwp-posting-post-selected-sites) - Method posting_posts()
+- [`mainwp_posting_selected_clients`](content-management/index.md#mainwp-posting-selected-clients) - Method posting_posts()
+- [`mainwp_posting_selected_groups`](site-management/index.md#mainwp-posting-selected-groups) - Method posting_posts()
+- [`mainwp_postprocess_backup_site`](content-management/index.md#mainwp-postprocess-backup-site) - Method  backup_site()
+- [`mainwp_postprocess_backup_sites_feedback`](site-management/index.md#mainwp-postprocess-backup-sites-feedback) - Method  backup_site()
+- [`mainwp_posts_actions_bar_left`](content-management/index.md#mainwp-posts-actions-bar-left) - Action: mainwp_posts_actions_bar_left
+- [`mainwp_posts_actions_bar_right`](content-management/index.md#mainwp-posts-actions-bar-right) - Action: mainwp_posts_actions_bar_right
+- [`mainwp_posts_bulk_action`](content-management/index.md#mainwp-posts-bulk-action) - Action: mainwp_posts_bulk_action
+- [`mainwp_posts_help_item`](content-management/index.md#mainwp-posts-help-item) - Action: mainwp_posts_help_item
+- [`mainwp_posts_posting_bulk_sites`](content-management/index.md#mainwp-posts-posting-bulk-sites) - Method posting_bulk()
+- [`mainwp_posts_posting_popup_actions`](content-management/index.md#mainwp-posts-posting-popup-actions) - Method posting()
+- [`mainwp_posts_search_bulk_sites`](content-management/index.md#mainwp-posts-search-bulk-sites) - Method render()
+- [`mainwp_posts_table_action`](content-management/index.md#mainwp-posts-table-action) - Action: mainwp_posts_table_action
+- [`mainwp_posts_table_column`](content-management/index.md#mainwp-posts-table-column) - Action: mainwp_posts_table_column
+- [`mainwp_posts_table_fatures`](content-management/index.md#mainwp-posts-table-fatures) - Filter: mainwp_posts_table_fatures
+- [`mainwp_posts_table_header`](content-management/index.md#mainwp-posts-table-header) - Action: mainwp_posts_table_header
+- [`mainwp_pre_fetch_authed_data`](content-management/index.md#mainwp-pre-fetch-authed-data) - Method get_post_data_authed()
+- [`mainwp_pre_posting_posts`](content-management/index.md#mainwp-pre-posting-posts) - Filter: mainwp_pre_posting_posts
+- [`mainwp_prepare_install_download_url`](updates-maintenance/index.md#mainwp-prepare-install-download-url) - Method prepare_install()
+- [`mainwp_prepareinstallplugintheme`](updates-maintenance/index.md#mainwp-prepareinstallplugintheme) - Method mainwp_ext_prepareinstallplugintheme()
+- [`mainwp_pro_reports_generate_content`](content-management/index.md#mainwp-pro-reports-generate-content) - Filter: mainwp_pro_reports_generate_content
+- [`mainwp_pro_reports_get_site_tokens`](site-management/index.md#mainwp-pro-reports-get-site-tokens) - Filter: mainwp_pro_reports_get_site_tokens
+- [`mainwp_quick_sites_shortcut`](site-management/index.md#mainwp-quick-sites-shortcut) - Action: mainwp_quick_sites_shortcut
+- [`mainwp_recent_pages_after_draft_list`](content-management/index.md#mainwp-recent-pages-after-draft-list) - Action: mainwp_recent_pages_after_draft_list
+- [`mainwp_recent_pages_after_future_list`](content-management/index.md#mainwp-recent-pages-after-future-list) - Action: mainwp_recent_pages_after_future_list
+- [`mainwp_recent_pages_after_lists`](content-management/index.md#mainwp-recent-pages-after-lists) - Action: mainwp_recent_pages_after_lists
+- [`mainwp_recent_pages_after_pending_list`](content-management/index.md#mainwp-recent-pages-after-pending-list) - Action: mainwp_recent_pages_after_pending_list
+- [`mainwp_recent_pages_after_publised_list`](content-management/index.md#mainwp-recent-pages-after-publised-list) - Action: mainwp_recent_pages_after_publised_list
+- [`mainwp_recent_pages_after_trash_list`](content-management/index.md#mainwp-recent-pages-after-trash-list) - Action: mainwp_recent_pages_after_trash_list
+- [`mainwp_recent_pages_before_draft_list`](content-management/index.md#mainwp-recent-pages-before-draft-list) - Action: mainwp_recent_pages_before_draft_list
+- [`mainwp_recent_pages_before_future_list`](content-management/index.md#mainwp-recent-pages-before-future-list) - Action: mainwp_recent_pages_before_future_list
+- [`mainwp_recent_pages_before_pending_list`](content-management/index.md#mainwp-recent-pages-before-pending-list) - Action: mainwp_recent_pages_before_pending_list
+- [`mainwp_recent_pages_before_publised_list`](content-management/index.md#mainwp-recent-pages-before-publised-list) - Action: mainwp_recent_pages_before_publised_list
+- [`mainwp_recent_pages_before_trash_list`](content-management/index.md#mainwp-recent-pages-before-trash-list) - Action: mainwp_recent_pages_before_trash_list
+- [`mainwp_recent_pages_widget_bottom`](content-management/index.md#mainwp-recent-pages-widget-bottom) - Action: mainwp_recent_pages_widget_bottom
+- [`mainwp_recent_pages_widget_title`](content-management/index.md#mainwp-recent-pages-widget-title) - *Arguments*
+- [`mainwp_recent_pages_widget_top`](content-management/index.md#mainwp-recent-pages-widget-top) - Action: mainwp_recent_pages_widget_top
+- [`mainwp_recent_posts_after_draft_list`](content-management/index.md#mainwp-recent-posts-after-draft-list) - Action: mainwp_recent_posts_after_draft_list
+- [`mainwp_recent_posts_after_future_list`](content-management/index.md#mainwp-recent-posts-after-future-list) - Action: mainwp_recent_posts_after_future_list
+- [`mainwp_recent_posts_after_lists`](content-management/index.md#mainwp-recent-posts-after-lists) - Action: mainwp_recent_posts_after_lists
+- [`mainwp_recent_posts_after_pending_list`](content-management/index.md#mainwp-recent-posts-after-pending-list) - Action: mainwp_recent_posts_after_pending_list
+- [`mainwp_recent_posts_after_publised_list`](content-management/index.md#mainwp-recent-posts-after-publised-list) - Action: mainwp_recent_posts_after_publised_list
+- [`mainwp_recent_posts_after_trash_list`](content-management/index.md#mainwp-recent-posts-after-trash-list) - Action: mainwp_recent_posts_after_trash_list
+- [`mainwp_recent_posts_before_draft_list`](content-management/index.md#mainwp-recent-posts-before-draft-list) - Action: mainwp_recent_posts_before_draft_list
+- [`mainwp_recent_posts_before_future_list`](content-management/index.md#mainwp-recent-posts-before-future-list) - Action: mainwp_recent_posts_before_future_list
+- [`mainwp_recent_posts_before_pending_list`](content-management/index.md#mainwp-recent-posts-before-pending-list) - Action: mainwp_recent_posts_before_pending_list
+- [`mainwp_recent_posts_before_publised_list`](content-management/index.md#mainwp-recent-posts-before-publised-list) - Action: mainwp_recent_posts_before_publised_list
+- [`mainwp_recent_posts_before_trash_list`](content-management/index.md#mainwp-recent-posts-before-trash-list) - Action: mainwp_recent_posts_before_trash_list
+- [`mainwp_recent_posts_pages_number`](content-management/index.md#mainwp-recent-posts-pages-number) - This filter is documented in ../widgets/widget-mainwp-recent-posts.php
+- [`mainwp_recent_posts_widget_bottom`](content-management/index.md#mainwp-recent-posts-widget-bottom) - Action: mainwp_recent_posts_widget_bottom
+- [`mainwp_recent_posts_widget_title`](content-management/index.md#mainwp-recent-posts-widget-title) - *Arguments*
+- [`mainwp_recent_posts_widget_top`](content-management/index.md#mainwp-recent-posts-widget-top) - Action: mainwp_recent_posts_widget_top
+- [`mainwp_register_post_type`](content-management/index.md#mainwp-register-post-type) - Method create_post_type()
+- [`mainwp_register_regular_sequence_process`](misc/index.md#mainwp-register-regular-sequence-process) - Method perform_sequence_process
+- [`mainwp_remote_destination_info`](api-remote/index.md#mainwp-remote-destination-info) - Method mainwp_backup_upload_checkstatus()
+- [`mainwp_removed_extension_menu`](ui-display/index.md#mainwp-removed-extension-menu) - Remove Extensions menu from MainWP Menu.
+- [`mainwp_request_update_premium_plugins`](updates-maintenance/index.md#mainwp-request-update-premium-plugins) - Filter: mainwp_request_update_premium_plugins
+- [`mainwp_request_update_premium_themes`](updates-maintenance/index.md#mainwp-request-update-premium-themes) - Filter: mainwp_request_update_premium_themes
+- [`mainwp_reset_admin_pass_modal_bottom`](ui-display/index.md#mainwp-reset-admin-pass-modal-bottom) - Action: mainwp_reset_admin_pass_modal_bottom
+- [`mainwp_reset_admin_pass_modal_top`](ui-display/index.md#mainwp-reset-admin-pass-modal-top) - Action: mainwp_reset_admin_pass_modal_top
+- [`mainwp_rest_api_disabled`](api-remote/index.md#mainwp-rest-api-disabled) - Method is_rest_api_enabled()
+- [`mainwp_rest_api_enabled`](api-remote/index.md#mainwp-rest-api-enabled) - Method init_rest_api()
+- [`mainwp_rest_api_get_rest_namespaces`](api-remote/index.md#mainwp-rest-api-get-rest-namespaces) - Get API namespaces - new namespaces should be registered here.
+- [`mainwp_rest_api_help_item`](api-remote/index.md#mainwp-rest-api-help-item) - Action: mainwp_rest_api_help_item
+- [`mainwp_rest_api_v2_enabled`](api-remote/index.md#mainwp-rest-api-v2-enabled) - Hook into WordPress ready to init the REST API as needed.
+- [`mainwp_rest_api_validate`](api-remote/index.md#mainwp-rest-api-validate) - Method cost_tracker_rest_api_get_all_costs_callback()
+- [`mainwp_rest_batch_items_limit`](api-remote/index.md#mainwp-rest-batch-items-limit) - Check batch limit.
+- [`mainwp_rest_collection_params`](api-remote/index.md#mainwp-rest-collection-params) - Filter collection parameters for the controller.
+- [`mainwp_rest_cost_collection_params`](api-remote/index.md#mainwp-rest-cost-collection-params) - Filter collection parameters.
+- [`mainwp_rest_is_request_to_rest_api`](api-remote/index.md#mainwp-rest-is-request-to-rest-api) - Check if is request to our REST API.
+- [`mainwp_rest_pre_insert_site_item`](site-management/index.md#mainwp-rest-pre-insert-site-item) - Filters an object before it is inserted via the REST API.
+- [`mainwp_rest_pre_update_site_item`](site-management/index.md#mainwp-rest-pre-update-site-item) - Filters an object before it is inserted via the REST API.
+- [`mainwp_rest_prepare_cost`](api-remote/index.md#mainwp-rest-prepare-cost) - Filter product reviews object returned from the REST API.
+- [`mainwp_rest_prepare_site`](api-remote/index.md#mainwp-rest-prepare-site) - Filterobject returned from the REST API.
+- [`mainwp_rest_routes_clients_controller_filter_allowed_fields_by_context`](client-reports/index.md#mainwp-rest-routes-clients-controller-filter-allowed-fields-by-context) - Get client by tag id.
+- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](site-management/index.md#mainwp-rest-routes-sites-controller-filter-allowed-fields-by-context) - Get sites by tag id.
+- [`mainwp_rest_routes_sites_controller_get_allowed_fields_by_context`](site-management/index.md#mainwp-rest-routes-sites-controller-get-allowed-fields-by-context) - *Arguments*
+- [`mainwp_rest_{$type}_object_query`](api-remote/index.md#mainwp-rest-type-object-query) - Filter the query arguments for a request.
+- [`mainwp_save_bulkpage`](content-management/index.md#mainwp-save-bulkpage) - Action: mainwp_save_bulkpage
+- [`mainwp_save_bulkpost`](content-management/index.md#mainwp-save-bulkpost) - Action: mainwp_save_bulkpost
+- [`mainwp_screen_options_modal_bottom`](ui-display/index.md#mainwp-screen-options-modal-bottom) - Action: mainwp_screen_options_modal_bottom
+- [`mainwp_screen_options_modal_top`](ui-display/index.md#mainwp-screen-options-modal-top) - Action: mainwp_screen_options_modal_top
+- [`mainwp_screen_options_pulse_control`](ui-display/index.md#mainwp-screen-options-pulse-control) - Method render_header_actions()
+- [`mainwp_secure_request`](security-monitoring/index.md#mainwp-secure-request) - Method security_nonce().
+- [`mainwp_security_issues_list_item_column`](security-monitoring/index.md#mainwp-security-issues-list-item-column) - Action: mainwp_security_issues_list_item_column
+- [`mainwp_security_issues_list_item_title`](security-monitoring/index.md#mainwp-security-issues-list-item-title) - *Arguments*
+- [`mainwp_security_issues_list_item_title_url`](security-monitoring/index.md#mainwp-security-issues-list-item-title-url) - *Arguments*
+- [`mainwp_security_issues_stats`](security-monitoring/index.md#mainwp-security-issues-stats) - This filter is documented in ../pages/page-mainwp-security-issues.php
+- [`mainwp_security_issues_widget_bottom`](security-monitoring/index.md#mainwp-security-issues-widget-bottom) - Action: mainwp_security_issues_widget_bottom
+- [`mainwp_security_issues_widget_title`](security-monitoring/index.md#mainwp-security-issues-widget-title) - *Arguments*
+- [`mainwp_security_issues_widget_top`](security-monitoring/index.md#mainwp-security-issues-widget-top) - Action: mainwp_security_issues_widget_top
+- [`mainwp_security_nonces`](security-monitoring/index.md#mainwp-security-nonces) - Method admin_init()
+- [`mainwp_security_post_data`](content-management/index.md#mainwp-security-post-data) - Filters security issues from fixing
+- [`mainwp_securityissues_sites`](security-monitoring/index.md#mainwp-securityissues-sites) - Action: mainwp_securityissues_sites
+- [`mainwp_select_sites_box`](site-management/index.md#mainwp-select-sites-box) - Render settings
+- [`mainwp_select_themes_modal_bottom`](updates-maintenance/index.md#mainwp-select-themes-modal-bottom) - Action: mainwp_select_themes_modal_bottom
+- [`mainwp_select_themes_modal_top`](updates-maintenance/index.md#mainwp-select-themes-modal-top) - Action: mainwp_select_themes_modal_top
+- [`mainwp_send_mail_from_header`](misc/index.md#mainwp-send-mail-from-header) - Method send_wp_mail().
+- [`mainwp_settings_email_settings`](system-settings/index.md#mainwp-settings-email-settings) - Action: mainwp_settings_email_settings
+- [`mainwp_settings_form_bottom`](system-settings/index.md#mainwp-settings-form-bottom) - Action: mainwp_settings_form_bottom
+- [`mainwp_settings_form_top`](system-settings/index.md#mainwp-settings-form-top) - Action: mainwp_settings_form_top
+- [`mainwp_settings_help_item`](system-settings/index.md#mainwp-settings-help-item) - Action: mainwp_settings_help_item
+- [`mainwp_show_all_updates_button_text`](updates-maintenance/index.md#mainwp-show-all-updates-button-text) - *Arguments*
+- [`mainwp_show_qsw`](content-management/index.md#mainwp-show-qsw) - Render MainWP Tools SubPage.
+- [`mainwp_sidbar_pages`](content-management/index.md#mainwp-sidbar-pages) - Method render_header_actions()
+- [`mainwp_sidebar_pages`](content-management/index.md#mainwp-sidebar-pages) - Method render_header_actions()
+- [`mainwp_site_actions_saved_days_number`](site-management/index.md#mainwp-site-actions-saved-days-number) - Method sync_site()
+- [`mainwp_site_added`](site-management/index.md#mainwp-site-added) - Fires immediately after a new website is added.
+- [`mainwp_site_deleted`](site-management/index.md#mainwp-site-deleted) - *Arguments*
+- [`mainwp_site_health_monitoring_email_footer`](site-management/index.md#mainwp-site-health-monitoring-email-footer) - Site Health Monitoring Email Footer
+- [`mainwp_site_health_monitoring_email_header`](site-management/index.md#mainwp-site-health-monitoring-email-header) - Site Health Monitoring Email Header
+- [`mainwp_site_info_table_bottom`](site-management/index.md#mainwp-site-info-table-bottom) - Action: mainwp_site_info_table_bottom
+- [`mainwp_site_info_table_top`](site-management/index.md#mainwp-site-info-table-top) - Action: mainwp_site_info_table_top
+- [`mainwp_site_info_widget_bottom`](site-management/index.md#mainwp-site-info-widget-bottom) - Action: mainwp_site_info_widget_bottom
+- [`mainwp_site_info_widget_title`](site-management/index.md#mainwp-site-info-widget-title) - *Arguments*
+- [`mainwp_site_info_widget_top`](site-management/index.md#mainwp-site-info-widget-top) - Actoin: mainwp_site_info_widget_top
+- [`mainwp_site_reconnected`](site-management/index.md#mainwp-site-reconnected) - Fires immediately after reconnect website.
+- [`mainwp_site_suspended`](site-management/index.md#mainwp-site-suspended) - Fires immediately after website suspended/unsuspend.
+- [`mainwp_site_sync`](site-management/index.md#mainwp-site-sync) - Action: mainwp_site_sync
+- [`mainwp_site_synced`](site-management/index.md#mainwp-site-synced) - Action: mainwp_site_synced
+- [`mainwp_site_tag_action`](site-management/index.md#mainwp-site-tag-action) - Fires after a new sites tag has been created.
+- [`mainwp_site_updated`](site-management/index.md#mainwp-site-updated) - Update site
+- [`mainwp_sites_table_features`](site-management/index.md#mainwp-sites-table-features) - Filter: mainwp_sites_table_features
+- [`mainwp_sitestable_display_row_columns`](ui-display/index.md#mainwp-sitestable-display-row-columns) - Get table rows.
+- [`mainwp_sitestable_getcolumns`](ui-display/index.md#mainwp-sitestable-getcolumns) - Filter: mainwp_sitestable_getcolumns
+- [`mainwp_sitestable_item`](ui-display/index.md#mainwp-sitestable-item) - Filter: mainwp_sitestable_item
+- [`mainwp_sitestable_prepare_extra_view`](ui-display/index.md#mainwp-sitestable-prepare-extra-view) - Prepare the items to be listed.
+- [`mainwp_sitestable_prepared_items`](ui-display/index.md#mainwp-sitestable-prepared-items) - Action: mainwp_sitestable_prepared_items
+- [`mainwp_sitestable_render_column`](ui-display/index.md#mainwp-sitestable-render-column) - Columns for a single row.
+- [`mainwp_sitestable_website`](site-management/index.md#mainwp-sitestable-website) - Get table rows.
+- [`mainwp_specific_action_logs`](content-management/index.md#mainwp-specific-action-logs) - Renders action logs page.
+- [`mainwp_staging_current_user_sites_view`](site-management/index.md#mainwp-staging-current-user-sites-view) - Method get_select_staging_view_sites()
+- [`mainwp_stats_scan_dir`](security-monitoring/index.md#mainwp-stats-scan-dir) - Method get_post_data_authed()
+- [`mainwp_sub_leftmenu_updates`](updates-maintenance/index.md#mainwp-sub-leftmenu-updates) - Initiates Updates menu.
+- [`mainwp_subheader_actions`](misc/index.md#mainwp-subheader-actions) - Action: mainwp_subheader_actions
+- [`mainwp_subpages_left_menu`](content-management/index.md#mainwp-subpages-left-menu) - Method init_subpages_left_menu
+- [`mainwp_sucuriscan_sites`](security-monitoring/index.md#mainwp-sucuriscan-sites) - Action: mainwp_sucuriscan_sites
+- [`mainwp_sync_extensions_options`](site-management/index.md#mainwp-sync-extensions-options) - Method render_sync_exts_settings()
+- [`mainwp_sync_others_data`](site-management/index.md#mainwp-sync-others-data) - Filter: mainwp_sync_others_data
+- [`mainwp_sync_popup_content`](site-management/index.md#mainwp-sync-popup-content) - Method render_footer_content()
+- [`mainwp_sync_site_after_sync_result`](site-management/index.md#mainwp-sync-site-after-sync-result) - Method sync_information_array()
+- [`mainwp_sync_site_log_install_actions`](site-management/index.md#mainwp-sync-site-log-install-actions) - Method sync_log_site_actions().
+- [`mainwp_synced_all_sites`](site-management/index.md#mainwp-synced-all-sites) - Method cron_updates_check()
+- [`mainwp_system_init`](system-settings/index.md#mainwp-system-init) - MainWP_System constructor.
+- [`mainwp_tags_help_item`](content-management/index.md#mainwp-tags-help-item) - Action: mainwp_tags_help_item
+- [`mainwp_text_format_email`](misc/index.md#mainwp-text-format-email) - Filter: mainwp_text_format_email
+- [`mainwp_theme_auto_updates_table_fatures`](updates-maintenance/index.md#mainwp-theme-auto-updates-table-fatures) - Filter: mainwp_theme_auto_updates_table_fatures
+- [`mainwp_themes_actions_bar_left`](updates-maintenance/index.md#mainwp-themes-actions-bar-left) - Action: mainwp_themes_actions_bar_left
+- [`mainwp_themes_actions_bar_right`](updates-maintenance/index.md#mainwp-themes-actions-bar-right) - Action: mainwp_themes_actions_bar_right
+- [`mainwp_themes_after_auto_updates_table`](updates-maintenance/index.md#mainwp-themes-after-auto-updates-table) - Action: mainwp_themes_after_auto_updates_table
+- [`mainwp_themes_after_ignored_abandoned`](updates-maintenance/index.md#mainwp-themes-after-ignored-abandoned) - Action: mainwp_themes_after_ignored_abandoned
+- [`mainwp_themes_after_ignored_updates`](updates-maintenance/index.md#mainwp-themes-after-ignored-updates) - Action: mainwp_themes_after_ignored_updates
+- [`mainwp_themes_auto_updates_bulk_action`](updates-maintenance/index.md#mainwp-themes-auto-updates-bulk-action) - Action: mainwp_themes_auto_updates_bulk_action
+- [`mainwp_themes_before_auto_updates_table`](updates-maintenance/index.md#mainwp-themes-before-auto-updates-table) - Action: mainwp_themes_before_auto_updates_table
+- [`mainwp_themes_before_ignored_abandoned`](updates-maintenance/index.md#mainwp-themes-before-ignored-abandoned) - Action: mainwp_themes_before_ignored_abandoned
+- [`mainwp_themes_before_ignored_updates`](updates-maintenance/index.md#mainwp-themes-before-ignored-updates) - Action: mainwp_themes_before_ignored_updates
+- [`mainwp_themes_bulk_action`](updates-maintenance/index.md#mainwp-themes-bulk-action) - Action: mainwp_themes_bulk_action
+- [`mainwp_themes_help_item`](updates-maintenance/index.md#mainwp-themes-help-item) - Action: mainwp_themes_help_item
+- [`mainwp_themes_widget_bottom`](updates-maintenance/index.md#mainwp-themes-widget-bottom) - Action: mainwp_themes_widget_bottom
+- [`mainwp_themes_widget_title`](updates-maintenance/index.md#mainwp-themes-widget-title) - *Arguments*
+- [`mainwp_themes_widget_top`](updates-maintenance/index.md#mainwp-themes-widget-top) - Action: mainwp_themes_widget_top
+- [`mainwp_tools_form_bottom`](misc/index.md#mainwp-tools-form-bottom) - Action: mainwp_tools_form_bottom
+- [`mainwp_tools_form_top`](misc/index.md#mainwp-tools-form-top) - Action: mainwp_tools_form_top
+- [`mainwp_top_bulkpost_edit_content`](content-management/index.md#mainwp-top-bulkpost-edit-content) - Renders bulkpost to edit.
+- [`mainwp_try_visit_follow_location`](misc/index.md#mainwp-try-visit-follow-location) - Method try visit.
+- [`mainwp_ui_use_wp_calendar`](ui-display/index.md#mainwp-ui-use-wp-calendar) - Filter: mainwp_ui_use_wp_calendar
+- [`mainwp_unset_security_scripts_stylesheets`](security-monitoring/index.md#mainwp-unset-security-scripts-stylesheets) - Method Fix Security Issues
+- [`mainwp_update_admin_password_complexity`](updates-maintenance/index.md#mainwp-update-admin-password-complexity) - Filter: mainwp_update_admin_password_complexity
+- [`mainwp_update_backuptask`](updates-maintenance/index.md#mainwp-update-backuptask) - Update backup task.
+- [`mainwp_update_cached_icons`](updates-maintenance/index.md#mainwp-update-cached-icons) - Method update_cached_icons().
+- [`mainwp_update_everything_button_text`](updates-maintenance/index.md#mainwp-update-everything-button-text) - *Arguments*
+- [`mainwp_update_plugintheme_max`](updates-maintenance/index.md#mainwp-update-plugintheme-max) - Filter: mainwp_update_plugintheme_max
+- [`mainwp_update_site`](updates-maintenance/index.md#mainwp-update-site) - Update site
+- [`mainwp_update_uptime_monitor_data`](updates-maintenance/index.md#mainwp-update-uptime-monitor-data) - Method update_uptime_global_settings
+- [`mainwp_updated_site`](updates-maintenance/index.md#mainwp-updated-site) - Action: mainwp_updated_site
+- [`mainwp_updates_abandoned_plugins_sort_by`](updates-maintenance/index.md#mainwp-updates-abandoned-plugins-sort-by) - Filter: mainwp_updates_abandoned_plugins_sort_by
+- [`mainwp_updates_abandoned_themes_sort_by`](updates-maintenance/index.md#mainwp-updates-abandoned-themes-sort-by) - Filter: mainwp_updates_abandoned_themes_sort_by
+- [`mainwp_updates_after_abandoned_plugins`](updates-maintenance/index.md#mainwp-updates-after-abandoned-plugins) - Action: mainwp_updates_after_abandoned_plugins
+- [`mainwp_updates_after_abandoned_themes`](updates-maintenance/index.md#mainwp-updates-after-abandoned-themes) - Action: mainwp_updates_after_abandoned_themes
+- [`mainwp_updates_after_actions_bar`](updates-maintenance/index.md#mainwp-updates-after-actions-bar) - Action: mainwp_updates_after_actions_bar
+- [`mainwp_updates_after_nav_tabs`](updates-maintenance/index.md#mainwp-updates-after-nav-tabs) - Action: mainwp_updates_after_nav_tabs
+- [`mainwp_updates_after_plugin_updates`](updates-maintenance/index.md#mainwp-updates-after-plugin-updates) - Action: mainwp_updates_after_plugin_updates
+- [`mainwp_updates_after_theme_updates`](updates-maintenance/index.md#mainwp-updates-after-theme-updates) - Action: mainwp_updates_after_theme_updates
+- [`mainwp_updates_after_translation_updates`](updates-maintenance/index.md#mainwp-updates-after-translation-updates) - Action: mainwp_updates_after_translation_updates
+- [`mainwp_updates_after_wp_updates`](updates-maintenance/index.md#mainwp-updates-after-wp-updates) - Action: mainwp_updates_after_wp_updates
+- [`mainwp_updates_before_abandoned_plugins`](updates-maintenance/index.md#mainwp-updates-before-abandoned-plugins) - Action: mainwp_updates_before_abandoned_plugins
+- [`mainwp_updates_before_abandoned_themes`](updates-maintenance/index.md#mainwp-updates-before-abandoned-themes) - Action: mainwp_updates_before_abandoned_themes
+- [`mainwp_updates_before_actions_bar`](updates-maintenance/index.md#mainwp-updates-before-actions-bar) - Action: mainwp_updates_before_actions_bar
+- [`mainwp_updates_before_nav_tabs`](updates-maintenance/index.md#mainwp-updates-before-nav-tabs) - Action: mainwp_updates_before_nav_tabs
+- [`mainwp_updates_before_plugin_updates`](updates-maintenance/index.md#mainwp-updates-before-plugin-updates) - Action: mainwp_updates_before_plugin_updates
+- [`mainwp_updates_before_theme_updates`](updates-maintenance/index.md#mainwp-updates-before-theme-updates) - Action: mainwp_updates_before_theme_updates
+- [`mainwp_updates_before_translation_updates`](updates-maintenance/index.md#mainwp-updates-before-translation-updates) - Action: mainwp_updates_before_translation_updates
+- [`mainwp_updates_before_wp_updates`](updates-maintenance/index.md#mainwp-updates-before-wp-updates) - Action: mainwp_updates_before_wp_updates
+- [`mainwp_updates_help_item`](updates-maintenance/index.md#mainwp-updates-help-item) - Action: mainwp_updates_help_item
+- [`mainwp_updates_hide_show_updates_per`](updates-maintenance/index.md#mainwp-updates-hide-show-updates-per) - Renders header tabs
+- [`mainwp_updates_overview_after_abandoned_plugins_themes`](updates-maintenance/index.md#mainwp-updates-overview-after-abandoned-plugins-themes) - Action: mainwp_updates_overview_after_abandoned_plugins_themes
+- [`mainwp_updates_overview_after_plugin_updates`](updates-maintenance/index.md#mainwp-updates-overview-after-plugin-updates) - Action: mainwp_updates_overview_after_plugin_updates
+- [`mainwp_updates_overview_after_theme_updates`](updates-maintenance/index.md#mainwp-updates-overview-after-theme-updates) - Action: mainwp_updates_overview_after_theme_updates
+- [`mainwp_updates_overview_after_total_updates`](updates-maintenance/index.md#mainwp-updates-overview-after-total-updates) - Action: mainwp_updates_overview_after_total_updates
+- [`mainwp_updates_overview_after_translation_updates`](updates-maintenance/index.md#mainwp-updates-overview-after-translation-updates) - Action: mainwp_updates_overview_after_translation_updates
+- [`mainwp_updates_overview_after_update_details`](updates-maintenance/index.md#mainwp-updates-overview-after-update-details) - Action: mainwp_updates_overview_after_update_details
+- [`mainwp_updates_overview_after_wordpress_updates`](updates-maintenance/index.md#mainwp-updates-overview-after-wordpress-updates) - Action: mainwp_updates_overview_after_wordpress_updates
+- [`mainwp_updates_overview_before_abandoned_plugins_themes`](updates-maintenance/index.md#mainwp-updates-overview-before-abandoned-plugins-themes) - Action: mainwp_updates_overview_before_abandoned_plugins_themes
+- [`mainwp_updates_overview_before_plugin_updates`](updates-maintenance/index.md#mainwp-updates-overview-before-plugin-updates) - Action: mainwp_updates_overview_before_plugin_updates
+- [`mainwp_updates_overview_before_theme_updates`](updates-maintenance/index.md#mainwp-updates-overview-before-theme-updates) - Action: mainwp_updates_overview_before_theme_updates
+- [`mainwp_updates_overview_before_total_updates`](updates-maintenance/index.md#mainwp-updates-overview-before-total-updates) - Action: mainwp_updates_overview_before_total_updates
+- [`mainwp_updates_overview_before_translation_updates`](updates-maintenance/index.md#mainwp-updates-overview-before-translation-updates) - Action: mainwp_updates_overview_before_translation_updates
+- [`mainwp_updates_overview_before_update_details`](updates-maintenance/index.md#mainwp-updates-overview-before-update-details) - Action: mainwp_updates_overview_before_update_details
+- [`mainwp_updates_overview_before_wordpress_updates`](updates-maintenance/index.md#mainwp-updates-overview-before-wordpress-updates) - Action: mainwp_updates_overview_before_wordpress_updates
+- [`mainwp_updates_overview_widget_title`](updates-maintenance/index.md#mainwp-updates-overview-widget-title) - *Arguments*
+- [`mainwp_updates_pergroup_after_abandoned_plugins`](site-management/index.md#mainwp-updates-pergroup-after-abandoned-plugins) - Action: mainwp_updates_pergroup_after_abandoned_plugins
+- [`mainwp_updates_pergroup_after_abandoned_themes`](site-management/index.md#mainwp-updates-pergroup-after-abandoned-themes) - Action: mainwp_updates_pergroup_after_abandoned_themes
+- [`mainwp_updates_pergroup_after_plugin_updates`](site-management/index.md#mainwp-updates-pergroup-after-plugin-updates) - Action: mainwp_updates_pergroup_after_plugin_updates
+- [`mainwp_updates_pergroup_after_theme_updates`](site-management/index.md#mainwp-updates-pergroup-after-theme-updates) - Action: mainwp_updates_pergroup_after_theme_updates
+- [`mainwp_updates_pergroup_after_translation_updates`](site-management/index.md#mainwp-updates-pergroup-after-translation-updates) - Action: mainwp_updates_pergroup_after_translation_updates
+- [`mainwp_updates_pergroup_after_wp_updates`](site-management/index.md#mainwp-updates-pergroup-after-wp-updates) - Action: mainwp_updates_pergroup_after_wp_updates
+- [`mainwp_updates_pergroup_before_abandoned_plugins`](site-management/index.md#mainwp-updates-pergroup-before-abandoned-plugins) - Action: mainwp_updates_pergroup_before_abandoned_plugins
+- [`mainwp_updates_pergroup_before_abandoned_themes`](site-management/index.md#mainwp-updates-pergroup-before-abandoned-themes) - Action: mainwp_updates_pergroup_before_abandoned_themes
+- [`mainwp_updates_pergroup_before_plugin_updates`](site-management/index.md#mainwp-updates-pergroup-before-plugin-updates) - Action: mainwp_updates_pergroup_before_plugin_updates
+- [`mainwp_updates_pergroup_before_theme_updates`](site-management/index.md#mainwp-updates-pergroup-before-theme-updates) - Action: mainwp_updates_pergroup_before_theme_updates
+- [`mainwp_updates_pergroup_before_translation_updates`](site-management/index.md#mainwp-updates-pergroup-before-translation-updates) - Action: mainwp_updates_pergroup_before_translation_updates
+- [`mainwp_updates_pergroup_before_wp_updates`](site-management/index.md#mainwp-updates-pergroup-before-wp-updates) - Action: mainwp_updates_pergroup_before_wp_updates
+- [`mainwp_updates_perplugin_after_abandoned_plugins`](updates-maintenance/index.md#mainwp-updates-perplugin-after-abandoned-plugins) - Action: mainwp_updates_perplugin_after_abandoned_plugins
+- [`mainwp_updates_perplugin_after_plugin_updates`](updates-maintenance/index.md#mainwp-updates-perplugin-after-plugin-updates) - Action: mainwp_updates_perplugin_after_plugin_updates
+- [`mainwp_updates_perplugin_before_abandoned_plugins`](updates-maintenance/index.md#mainwp-updates-perplugin-before-abandoned-plugins) - Action: mainwp_updates_perplugin_before_abandoned_plugins
+- [`mainwp_updates_perplugin_before_plugin_updates`](updates-maintenance/index.md#mainwp-updates-perplugin-before-plugin-updates) - Action: mainwp_updates_perplugin_before_plugin_updates
+- [`mainwp_updates_persite_after_abandoned_plugins`](site-management/index.md#mainwp-updates-persite-after-abandoned-plugins) - Action: mainwp_updates_persite_after_abandoned_plugins
+- [`mainwp_updates_persite_after_abandoned_themes`](site-management/index.md#mainwp-updates-persite-after-abandoned-themes) - Action: mainwp_updates_persite_after_abandoned_themes
+- [`mainwp_updates_persite_after_plugin_updates`](site-management/index.md#mainwp-updates-persite-after-plugin-updates) - Action: mainwp_updates_persite_after_plugin_updates
+- [`mainwp_updates_persite_after_theme_updates`](site-management/index.md#mainwp-updates-persite-after-theme-updates) - Action: mainwp_updates_persite_after_theme_updates
+- [`mainwp_updates_persite_after_translation_updates`](site-management/index.md#mainwp-updates-persite-after-translation-updates) - Action: mainwp_updates_persite_after_translation_updates
+- [`mainwp_updates_persite_after_wp_updates`](site-management/index.md#mainwp-updates-persite-after-wp-updates) - Action: mainwp_updates_persite_after_wp_updates
+- [`mainwp_updates_persite_before_abandoned_plugins`](site-management/index.md#mainwp-updates-persite-before-abandoned-plugins) - Action: mainwp_updates_persite_before_abandoned_plugins
+- [`mainwp_updates_persite_before_abandoned_themes`](site-management/index.md#mainwp-updates-persite-before-abandoned-themes) - Action: mainwp_updates_persite_before_abandoned_themes
+- [`mainwp_updates_persite_before_plugin_updates`](site-management/index.md#mainwp-updates-persite-before-plugin-updates) - Action: mainwp_updates_persite_before_plugin_updates
+- [`mainwp_updates_persite_before_theme_updates`](site-management/index.md#mainwp-updates-persite-before-theme-updates) - Action: mainwp_updates_persite_before_theme_updates
+- [`mainwp_updates_persite_before_translation_updates`](site-management/index.md#mainwp-updates-persite-before-translation-updates) - Action: mainwp_updates_persite_before_translation_updates
+- [`mainwp_updates_pertheme_after_abandoned_themes`](updates-maintenance/index.md#mainwp-updates-pertheme-after-abandoned-themes) - Action: mainwp_updates_pertheme_after_abandoned_themes
+- [`mainwp_updates_pertheme_after_theme_updates`](updates-maintenance/index.md#mainwp-updates-pertheme-after-theme-updates) - Action: mainwp_updates_pertheme_after_theme_updates
+- [`mainwp_updates_pertheme_before_abandoned_themes`](updates-maintenance/index.md#mainwp-updates-pertheme-before-abandoned-themes) - Action: mainwp_updates_pertheme_before_abandoned_themes
+- [`mainwp_updates_pertheme_before_theme_updates`](updates-maintenance/index.md#mainwp-updates-pertheme-before-theme-updates) - Action: mainwp_updates_pertheme_before_theme_updates
+- [`mainwp_updates_pertranslation_after_translation_updates`](updates-maintenance/index.md#mainwp-updates-pertranslation-after-translation-updates) - Action: mainwp_updates_pertranslation_after_translation_updates
+- [`mainwp_updates_pertranslation_before_translation_updates`](updates-maintenance/index.md#mainwp-updates-pertranslation-before-translation-updates) - Action: mainwp_updates_pertranslation_before_translation_updates
+- [`mainwp_updates_plugins_sort_by`](updates-maintenance/index.md#mainwp-updates-plugins-sort-by) - Filter: mainwp_updates_plugins_sort_by
+- [`mainwp_updates_table_columns_header`](updates-maintenance/index.md#mainwp-updates-table-columns-header) - Get column info.
+- [`mainwp_updates_table_features`](updates-maintenance/index.md#mainwp-updates-table-features) - Filter: mainwp_updates_table_features
+- [`mainwp_updates_table_header_content`](updates-maintenance/index.md#mainwp-updates-table-header-content) - Echo the column headers.
+- [`mainwp_updates_table_row_columns`](updates-maintenance/index.md#mainwp-updates-table-row-columns) - Echo columns.
+- [`mainwp_updates_themes_sort_by`](updates-maintenance/index.md#mainwp-updates-themes-sort-by) - Filter: mainwp_updates_themes_sort_by
+- [`mainwp_updates_translation_sort_by`](updates-maintenance/index.md#mainwp-updates-translation-sort-by) - Filter: mainwp_updates_translation_sort_by
+- [`mainwp_updatescheck_hours_interval`](updates-maintenance/index.md#mainwp-updatescheck-hours-interval) - Filter: mainwp_updatescheck_hours_interval
+- [`mainwp_updatescheck_sendmail_at_time`](updates-maintenance/index.md#mainwp-updatescheck-sendmail-at-time) - Filter: mainwp_updatescheck_sendmail_at_time
+- [`mainwp_updatescheck_sendmail_for_each_auto_sync_finished`](site-management/index.md#mainwp-updatescheck-sendmail-for-each-auto-sync-finished) - Method cron_updates_check()
+- [`mainwp_updatesoverview_widget_bottom`](updates-maintenance/index.md#mainwp-updatesoverview-widget-bottom) - Action: mainwp_updatesoverview_widget_bottom
+- [`mainwp_updatewebsiteoptions`](site-management/index.md#mainwp-updatewebsiteoptions) - Method update_website_option().
+- [`mainwp_uptime_monitoring_after_check_uptime`](security-monitoring/index.md#mainwp-uptime-monitoring-after-check-uptime) - Method handle response fetch uptime.
+- [`mainwp_uptime_monitoring_allowed_methods`](security-monitoring/index.md#mainwp-uptime-monitoring-allowed-methods) - Method get_allowed_methods
+- [`mainwp_uptime_monitoring_check_importance`](security-monitoring/index.md#mainwp-uptime-monitoring-check-importance) - Method handle response fetch uptime.
+- [`mainwp_uptime_monitoring_check_url`](security-monitoring/index.md#mainwp-uptime-monitoring-check-url) - Get apply monitor url.
+- [`mainwp_uptime_monitoring_email_footer`](security-monitoring/index.md#mainwp-uptime-monitoring-email-footer) - Uptime Monitoring Email Footer
+- [`mainwp_uptime_monitoring_email_header`](security-monitoring/index.md#mainwp-uptime-monitoring-email-header) - Uptime Monitoring Email Header
+- [`mainwp_uptime_monitoring_get_monitors_to_check_params`](security-monitoring/index.md#mainwp-uptime-monitoring-get-monitors-to-check-params) - Get sites monitors to check.
+- [`mainwp_uptime_monitoring_interval_values`](security-monitoring/index.md#mainwp-uptime-monitoring-interval-values) - Method get_interval_values
+- [`mainwp_uptime_monitoring_response_time_widget_title`](security-monitoring/index.md#mainwp-uptime-monitoring-response-time-widget-title) - *Arguments*
+- [`mainwp_uptime_monitoring_send_notification_limit`](security-monitoring/index.md#mainwp-uptime-monitoring-send-notification-limit) - Run schedule uptime notification.
+- [`mainwp_uptime_monitoring_status_widget_title`](security-monitoring/index.md#mainwp-uptime-monitoring-status-widget-title) - *Arguments*
+- [`mainwp_uptime_monitoring_timeout_values`](security-monitoring/index.md#mainwp-uptime-monitoring-timeout-values) - Method get_timeout_values
+- [`mainwp_uptime_monitoring_update_monitor_data`](updates-maintenance/index.md#mainwp-uptime-monitoring-update-monitor-data) - Method handle_save_settings
+- [`mainwp_uptime_monitoring_uptime_data`](security-monitoring/index.md#mainwp-uptime-monitoring-uptime-data) - Method handle response fetch uptime.
+- [`mainwp_user_action`](user-management/index.md#mainwp-user-action) - Fires immediately after user action.
+- [`mainwp_users_actions_bar_left`](user-management/index.md#mainwp-users-actions-bar-left) - Users actions bar (left)
+- [`mainwp_users_actions_bar_right`](user-management/index.md#mainwp-users-actions-bar-right) - Users actions bar (right)
+- [`mainwp_users_bulk_action`](user-management/index.md#mainwp-users-bulk-action) - Action: mainwp_users_bulk_action
+- [`mainwp_users_help_item`](user-management/index.md#mainwp-users-help-item) - Action: mainwp_users_help_item
+- [`mainwp_users_manage_roles`](user-management/index.md#mainwp-users-manage-roles) - Renders manage users dashboard.
+- [`mainwp_users_table_action`](user-management/index.md#mainwp-users-table-action) - Action: mainwp_users_table_action
+- [`mainwp_users_table_column`](user-management/index.md#mainwp-users-table-column) - Renders Search results.
+- [`mainwp_users_table_fatures`](user-management/index.md#mainwp-users-table-fatures) - Renders Users Table.
+- [`mainwp_users_table_header`](user-management/index.md#mainwp-users-table-header) - Renders Users Table.
+- [`mainwp_website_before_updated`](site-management/index.md#mainwp-website-before-updated) - Action: mainwp_website_before_updated
+- [`mainwp_website_updated`](site-management/index.md#mainwp-website-updated) - Action: mainwp_website_updated
+- [`mainwp_widget_boxes_show_widgets`](ui-display/index.md#mainwp-widget-boxes-show-widgets) - Method do_widget_boxes()
+- [`mainwp_widget_site_actions_limit_number`](site-management/index.md#mainwp-widget-site-actions-limit-number) - Method mainwp_rest_api_non_mainwp_changes_callback()
+- [`mainwp_widget_updates_actions_top`](updates-maintenance/index.md#mainwp-widget-updates-actions-top) - Action: mainwp_widget_updates_actions_top
+- [`mainwp_widgets_chart_date_format`](ui-display/index.md#mainwp-widgets-chart-date-format) - Prepare response time for ui chart data.
+- [`mainwp_widgets_screen_options`](ui-display/index.md#mainwp-widgets-screen-options) - Filter: mainwp_widgets_screen_options
+- [`mainwp_wordfence_sites`](content-management/index.md#mainwp-wordfence-sites) - Action: mainwp_wordfence_sites
+- [`minwp_notification_template_copy_message`](misc/index.md#minwp-notification-template-copy-message) - Use mainwp_notification_template_copy_message instead.
+- [`plesk_api_form_bottom`](api-remote/index.md#plesk-api-form-bottom) - Action: plesk_api_form_bottom
+- [`plesk_api_form_top`](api-remote/index.md#plesk-api-form-top) - Action: plesk_api_form_top
+- [`postmeta_form_keys`](content-management/index.md#postmeta-form-keys) - Filters values for the meta key dropdown in the Custom Fields meta box.
+- [`postmeta_form_limit`](content-management/index.md#postmeta-form-limit) - **Arguments**
+- [`redirect_post_location`](content-management/index.md#redirect-post-location) - Filter: redirect_post_location
+- [`rest_api_form_bottom`](api-remote/index.md#rest-api-form-bottom) - Action: rest_api_form_bottom
+- [`rest_api_form_top`](api-remote/index.md#rest-api-form-top) - Action: rest_api_form_top
+- [`time_formats`](misc/index.md#time-formats) - *Arguments*
+- [`vultr_api_form_bottom`](api-remote/index.md#vultr-api-form-bottom) - Action: vultr_api_form_bottom
+- [`vultr_api_form_top`](api-remote/index.md#vultr-api-form-top) - Action: vultr_api_form_top
+- [`{$filter}`](misc/index.md#filter) - Method apply_filter()

@@ -27,7 +27,7 @@ Actions allow you to add custom functionality at specific points in the MainWP e
 ```php
 add_action('action_name', 'your_function_name', 10, 2);
 
-function your_function_name($arg1, $arg2) {
+function your_function_name(\$arg1, \$arg2) {
     // Your custom code here
 }
 ```
@@ -39,9 +39,9 @@ Filters allow you to modify data or output at specific points in the MainWP exec
 ```php
 add_filter('filter_name', 'your_function_name', 10, 2);
 
-function your_function_name($value, $arg2) {
-    // Modify $value here
-    return $value;
+function your_function_name(\$value, \$arg2) {
+    // Modify \$value here
+    return \$value;
 }
 ```
 

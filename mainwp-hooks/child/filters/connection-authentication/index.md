@@ -10,68 +10,39 @@ Hooks for establishing and managing connections between Dashboard and Child site
 
 ## Hooks in this Category
 
-- [`wp_logout`](#wp_logout) - Method parse_login_required()
-- [`wp_logout`](#wp_logout) - Method parse_login_required()
-- [`wp_logout`](#wp_logout) - Method login()
-- [`wp_login`](#wp_login) - Method login()
-- [`mainwp_child_authed_download_params`](#mainwp_child_authed_download_params) - Method where_authed_redirect()
-- [`https_local_ssl_verify`](#https_local_ssl_verify) - *Arguments*
-- [`mainwp_create_post_custom_author`](#mainwp_create_post_custom_author) - Update post data.
+- [`https_local_ssl_verify`](#https-local-ssl-verify) - *Arguments*
+- [`mainwp_child_authed_download_params`](#mainwp-child-authed-download-params) - Method where_authed_redirect()
+- [`mainwp_create_post_custom_author`](#mainwp-create-post-custom-author) - Update post data.
+
+---
 
 ## Hook Details
 
-### `wp_logout`
+<a id='https-local-ssl-verify'></a>
+### `https_local_ssl_verify`
 
-*Method parse_login_required()*
+* *Arguments*
 
-Check if the login process is required.
-
-
-Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 652](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L652)
-
-
-
-### `wp_logout`
-
-*Method parse_login_required()*
-
-Check if the login process is required.
-
-
-Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 652](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L652)
-
-
-
-### `wp_logout`
-
-*Method login()*
-
-The login process handler.
-
-
-Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 1021](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L1021)
-
-
-
-### `wp_login`
-
-*Method login()*
-
-The login process handler.
+Argument | Type | Description
+-------- | ---- | -----------
+`true` |  |
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$user->user_login` |  | 
+`true` |  |
 
-Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 1021](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L1021)
+**Usage Locations:**
 
+- [class/class-mainwp-child-server-information-base.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information-base.php), [line 702](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information-base.php#L702)
 
+---
 
+<a id='mainwp-child-authed-download-params'></a>
 ### `mainwp_child_authed_download_params`
 
-*Method where_authed_redirect()*
+* Method where_authed_redirect()
 
 Safe redirect to wanted location.
 
@@ -79,27 +50,18 @@ Safe redirect to wanted location.
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$auth_dl` |  | 
+`$auth_dl` |  |
 
-Source: [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 821](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L821)
+**Usage Locations:**
 
+- [class/class-mainwp-connect.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php), [line 821](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-connect.php#L821)
 
+---
 
-### `https_local_ssl_verify`
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`true` |  | 
-
-Source: [class/class-mainwp-child-server-information-base.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information-base.php), [line 702](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-server-information-base.php#L702)
-
-
-
+<a id='mainwp-create-post-custom-author'></a>
 ### `mainwp_create_post_custom_author`
 
-*Update post data.*
+* Update post data.
 
 **Arguments**
 
@@ -108,7 +70,16 @@ Argument | Type | Description
 `false` |  | 
 `$new_post_id` | `string` | New post ID.
 
-Source: [class/class-mainwp-child-posts.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php), [line 968](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php#L968)
+**Arguments**
 
+Argument | Type | Description
+-------- | ---- | -----------
+`false` |  | 
+`$new_post_id` | `string` | New post ID.
 
+**Usage Locations:**
+
+- [class/class-mainwp-child-posts.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php), [line 968](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-posts.php#L968)
+
+---
 
