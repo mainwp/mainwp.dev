@@ -1,3 +1,34 @@
+---
+layout: documentation-single
+title: MainWP Developer Guides
+description: Comprehensive guides for creating MainWP add-ons and integrations.
+navigation:
+  - title: Understanding Add-ons
+    items:
+      - id: understanding-mainwp-add-on-types
+        title: Understanding Add-on Types
+      - id: which-type-should-you-build
+        title: Which Type to Build
+      - id: who-these-guides-are-for
+        title: Who These Guides Are For
+  - title: Guide Categories
+    items:
+      - id: getting-started
+        title: Getting Started
+      - id: core-development-topics
+        title: Core Development Topics
+      - id: best-practices
+        title: Best Practices
+      - id: reference
+        title: Reference
+  - title: Resources
+    items:
+      - id: additional-resources
+        title: Additional Resources
+      - id: how-to-use-these-guides
+        title: How to Use These Guides
+---
+
 # MainWP Developer Guides
 
 Welcome to the MainWP Developer Guides! This documentation is designed to help you create add-ons for the MainWP platform, whether you're building a standalone extension or integrating with a third-party service.
