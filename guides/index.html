@@ -5,16 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>MainWP Developer Documentation</title>
-        <meta name="description" content="Comprehensive documentation for MainWP extension and integration development">
+        <title>MainWP Developer Guides</title>
+        <meta name="description" content="Comprehensive guides for creating MainWP add-ons and integrations.">
 
-        <link rel="canonical" href="https://mainwp.github.io/mainwp.dev/">
+        <link rel="canonical" href="https://mainwp.github.io/mainwp.dev/guides/">
         <link rel="shortcut icon" href="https://mainwp.github.io/mainwp.dev/favicon.ico" type="image/x-icon">
 
         <!-- Theme styles -->
         <link rel="stylesheet" href="/mainwp.dev/dox-theme/assets/css/style.css">
     </head>
-    <body class="homepage">
+    <body>
         <header class="c-header">
     <div class="o-container">
         <div class="c-header__inner">
@@ -140,308 +140,256 @@
 </header>
 
 
-
-
-        <div class="c-hero">
+<div class="c-breadcrumbs">
     <div class="o-container">
-        <div class="o-row">
-            <div class="o-col-12">
-                <div class="u-text-center">
-                    <h1 class="c-hero__title">MainWP Developer Documentation</h1>
-                    <p class="c-hero__desc">Build Extensions, Partner with MainWP, and Empower Your Business!</p>
-                    <div class="c-hero__buttons">
-                        <a href="/mainwp.dev/guides/how-to/create-basic-extension/" class="c-button c-button--primary">Get Started</a>
-                        <a href="/mainwp.dev/mainwp-hooks/" class="c-button c-button--accent">Browse Hooks</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="o-row">
-            <div class="o-col-12">
-                <div class="c-hero__stats u-text-center">
-                    <div class="c-hero__stat">
-                        <strong>20,000+</strong>
-                        <span>Agencies &amp; Developers</span>
-                    </div>
-                    <div class="c-hero__stat">
-                        <strong>700,000+</strong>
-                        <span>WordPress Sites</span>
-                    </div>
-                    <div class="c-hero__stat">
-                        <strong>35</strong>
-                        <span>Sites per Dashboard</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <nav class="c-breadcrumbs__nav" aria-label="Breadcrumb">
+            <ol class="c-breadcrumbs__list">
+                <li class="c-breadcrumbs__item">
+                    <a href="/mainwp.dev/" class="c-breadcrumbs__link">Home</a>
+                </li>
+                
+                
+                    
+                        <li class="c-breadcrumbs__item">
+                            <span class="c-breadcrumbs__text">MainWP Developer Guides</span>
+                        </li>
+                    
+                
+            </ol>
+        </nav>
     </div>
 </div>
 
-<style>
-.c-hero {
-    padding: 4rem 0;
-    background-color: var(--mainwp-dark-bg);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
 
-.c-hero__title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--mainwp-dark-text);
-}
 
-.c-hero__desc {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: var(--mainwp-dark-text);
-    opacity: 0.9;
-}
-
-.c-hero__buttons {
-    margin-bottom: 3rem;
-}
-
-.c-button--primary {
-    background-color: var(--mainwp-primary);
-    color: white;
-    margin-right: 1rem;
-}
-
-.c-button--primary:hover {
-    background-color: var(--mainwp-primary-dark);
-}
-
-.c-button--accent {
-    background-color: var(--mainwp-accent);
-    color: white;
-}
-
-.c-button--accent:hover {
-    background-color: #3a6a91;
-}
-
-.c-hero__stats {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 2rem;
-}
-
-.c-hero__stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.c-hero__stat strong {
-    font-size: 2rem;
-    color: var(--mainwp-primary);
-    margin-bottom: 0.5rem;
-}
-
-.c-hero__stat span {
-    color: var(--mainwp-dark-text);
-    opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    .c-hero__stats {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .c-hero__title {
-        font-size: 2rem;
-    }
-    
-    .c-hero__desc {
-        font-size: 1.25rem;
-    }
-}
-</style>
-
-<div class="o-container">
-    <div class="o-row">
-        <div class="o-col">
-            <h2 class="u-text-center">Developer Resources</h2>
-        </div>
-    </div>
-    <div class="o-row">
-        <div class="o-col-4@md">
-            <a href="/mainwp.dev/guides/" class="c-feature-card">
-                <h3>Extension Development Guide</h3>
-                <p>Learn how to create custom extensions for MainWP. Step-by-step tutorials and best practices for extension development.</p>
-            </a>
-        </div>
-        <div class="o-col-4@md">
-            <a href="/mainwp.dev/mainwp-hooks/" class="c-feature-card">
-                <h3>Hooks Reference</h3>
-                <p>Complete reference for all MainWP actions and filters. Learn how to extend and customize MainWP functionality.</p>
-            </a>
-        </div>
-        <div class="o-col-4@md">
-            <a href="/mainwp.dev/rest-api/" class="c-feature-card">
-                <h3>REST API</h3>
-                <p>Integrate with MainWP using our REST API. Full documentation of endpoints, authentication, and examples.</p>
-            </a>
-        </div>
-    </div>
-    <div class="o-row">
-        <div class="o-col-6@md">
-            <a href="/mainwp.dev/source-code/" class="c-feature-card">
-                <h3>Source Code</h3>
-                <p>Browse the MainWP source code documentation. Understand the internal structure and implementation details.</p>
-            </a>
-        </div>
-        <div class="o-col-6@md">
-            <a href="https://mainwp.com/support/" class="c-feature-card">
-                <h3>Support</h3>
-                <p>Get help from the MainWP team and community. Access support resources and developer assistance.</p>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="c-features">
-    <div class="o-container">
-        <div class="o-row">
-            <div class="o-col-12">
-                <h2 class="u-text-center">Why Build with MainWP?</h2>
-            </div>
-        </div>
-        <div class="o-row">
-            <div class="o-col-4@md">
-                <div class="c-feature">
-                    <div class="c-feature__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
-                            <line x1="16" y1="8" x2="2" y2="22"></line>
-                            <line x1="17.5" y1="15" x2="9" y2="15"></line>
-                        </svg>
+        <div class="o-container">
+            <div class="o-row">
+                <div class="o-col-3@md">
+                    <div class="c-page-nav">
+                        <div class="c-page-nav__header">
+                            <h2 class="c-page-nav__title">MainWP Developer Guides</h2>
+                        </div>
+                        <div class="c-page-nav__content">
+                            
+                                
+                                    <div class="c-page-nav__section" data-section="understanding-add-ons">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Understanding Add-ons
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#understanding-mainwp-add-on-types" class="c-page-nav__link">Understanding Add-on Types</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#which-type-should-you-build" class="c-page-nav__link">Which Type to Build</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#who-these-guides-are-for" class="c-page-nav__link">Who These Guides Are For</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="guide-categories">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Guide Categories
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#getting-started" class="c-page-nav__link">Getting Started</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#core-development-topics" class="c-page-nav__link">Core Development Topics</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#best-practices" class="c-page-nav__link">Best Practices</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#reference" class="c-page-nav__link">Reference</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                                    <div class="c-page-nav__section" data-section="resources">
+                                        <h3 class="c-page-nav__heading js-toggle-nav">
+                                            <span class="c-page-nav__toggle-icon"></span>
+                                            Resources
+                                        </h3>
+                                        
+                                            <ul class="c-page-nav__list">
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#additional-resources" class="c-page-nav__link">Additional Resources</a>
+                                                    </li>
+                                                
+                                                    <li class="c-page-nav__item">
+                                                        <a href="#how-to-use-these-guides" class="c-page-nav__link">How to Use These Guides</a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        
+                                    </div>
+                                
+                            
+                        </div>
                     </div>
-                    <h3>Powerful Extension API</h3>
-                    <p>Access a comprehensive set of hooks and filters to customize and extend MainWP functionality. Build powerful extensions that integrate seamlessly.</p>
+                </div>
+                <div class="o-col-9@md">
+                    <div class="c-post">
+                        <div class="c-post__header">
+                            <h1 class="c-post__title">MainWP Developer Guides</h1>
+                            
+                                <div class="c-post__desc">
+                                    Comprehensive guides for creating MainWP add-ons and integrations.
+                                </div>
+                            
+                        </div>
+                        <div class="c-post__content">
+                            <h1 id="mainwp-developer-guides">MainWP Developer Guides</h1>
+
+<p>Welcome to the MainWP Developer Guides! This documentation is designed to help you create add-ons for the MainWP platform, whether you’re building a standalone extension or integrating with a third-party service.</p>
+
+<h2 id="understanding-mainwp-add-on-types">Understanding MainWP Add-on Types</h2>
+
+<p>MainWP uses specific terminology to distinguish between different types of add-ons:</p>
+
+<ul>
+  <li><strong>Add-on</strong>: The umbrella term for all MainWP plugins that extend functionality</li>
+  <li><strong>Extension</strong>: An add-on that works WITHOUT requiring a third-party plugin or API</li>
+  <li><strong>Integration</strong>: An add-on that works WITH a third-party plugin or API</li>
+</ul>
+
+<h2 id="which-type-should-you-build">Which Type Should You Build?</h2>
+
+<p>Use this decision tree to determine whether you should build an Extension or an Integration:</p>
+
+<pre><code class="language-mermaid">flowchart TD
+    A[Do you need to connect with\na third-party service or plugin?] --&gt;|Yes| B[Integration]
+    A --&gt;|No| C[Extension]
+    B --&gt; D[Examples: WooCommerce Integration,\nGoogle Analytics Integration]
+    C --&gt; E[Examples: Advanced Uptime Monitor,\nAdvanced Reports Extension]
+</code></pre>
+
+<h2 id="who-these-guides-are-for">Who These Guides Are For</h2>
+
+<p>These guides are intended for developers who want to:</p>
+
+<ul>
+  <li>Create custom add-ons for MainWP (both standalone extensions and third-party integrations)</li>
+  <li>Customize MainWP functionality for specific needs</li>
+  <li>Understand the MainWP architecture and development patterns</li>
+</ul>
+
+<p>Whether you’re new to MainWP development or an experienced developer looking for specific information, you’ll find resources tailored to your needs. We’ve optimized these guides for part-time developers who want to create MainWP add-ons efficiently.</p>
+
+<h2 id="guide-categories">Guide Categories</h2>
+
+<h3 id="getting-started"><a href="getting-started/">Getting Started</a></h3>
+
+<p>Essential information for beginning your MainWP development journey:</p>
+
+<ul>
+  <li><a href="how-to/setup-environment.md">Setting Up a Development Environment</a></li>
+  <li><a href="how-to/create-basic-extension.md">Creating a Basic Extension</a> (standalone add-on)</li>
+  <li><a href="how-to/create-basic-integration.md">Creating a Basic Integration</a> (third-party add-on)</li>
+  <li><a href="how-to/mainwp-development-extension.md">Understanding the MainWP Development Extension</a></li>
+  <li><a href="concepts/extension-lifecycle.md">Add-on Development Lifecycle</a></li>
+</ul>
+
+<h3 id="core-development-topics"><a href="core-topics/">Core Development Topics</a></h3>
+
+<p>Detailed guides for key development areas:</p>
+
+<ul>
+  <li><a href="how-to/admin-interfaces.md">Building Admin Interfaces</a></li>
+  <li><a href="how-to/data-storage.md">Data Storage and Retrieval</a></li>
+  <li><a href="how-to/actions-filters.md">Using MainWP Actions &amp; Filters</a></li>
+  <li><a href="how-to/mainwp-api-client.md">Using the MainWP API Client PHP</a></li>
+  <li><a href="how-to/debugging.md">Debugging Add-ons</a></li>
+  <li><a href="how-to/packaging-distribution.md">Packaging and Distribution</a></li>
+  <li><a href="how-to/third-party-apis.md">Working with Third-Party APIs</a> (for Integrations)</li>
+  <li><a href="how-to/woocommerce-integration.md">Creating a WooCommerce Integration</a> (with <a href="how-to/woocommerce-integration-part2.md">Advanced Techniques</a>)</li>
+</ul>
+
+<h3 id="best-practices"><a href="best-practices/">Best Practices</a></h3>
+
+<p>Recommendations for creating high-quality MainWP add-ons:</p>
+
+<ul>
+  <li><a href="best-practices/coding-standards.md">Writing Clean &amp; Maintainable Code</a></li>
+  <li><a href="best-practices/security.md">Security Considerations</a></li>
+  <li><a href="best-practices/performance.md">Performance Optimization</a></li>
+  <li><a href="best-practices/documentation.md">Documentation Standards</a></li>
+  <li><a href="best-practices/api-integration.md">API Integration Best Practices</a></li>
+</ul>
+
+<h3 id="reference"><a href="reference/">Reference</a></h3>
+
+<p>Technical reference material:</p>
+
+<ul>
+  <li><a href="reference/common-hooks.md">Common Hooks Reference</a></li>
+  <li><a href="reference/extension-api.md">Add-on API Reference</a></li>
+  <li><a href="reference/dashboard-integration.md">MainWP Dashboard Integration Points</a></li>
+  <li><a href="reference/child-site-communication.md">Child Site Communication</a></li>
+  <li><a href="reference/api-integration-patterns.md">Third-Party API Integration Patterns</a></li>
+</ul>
+
+<h2 id="additional-resources">Additional Resources</h2>
+
+<ul>
+  <li><a href="../source-code/dashboard/">MainWP Dashboard API Documentation</a></li>
+  <li><a href="../source-code/child/">MainWP Child API Documentation</a></li>
+  <li><a href="../mainwp-hooks/dashboard/">MainWP Dashboard Hooks</a></li>
+  <li><a href="../mainwp-hooks/child/">MainWP Child Hooks</a></li>
+  <li><a href="https://github.com/mainwp/mainwp-development-extension">MainWP Development Extension on GitHub</a></li>
+  <li><a href="https://github.com/mainwp/mainwp-api-client-php">MainWP API Client PHP on GitHub</a></li>
+</ul>
+
+<h2 id="how-to-use-these-guides">How to Use These Guides</h2>
+
+<p>Each guide is structured to provide information at different levels of detail:</p>
+
+<ul>
+  <li><strong>Quick Start</strong> sections provide essential information for experienced developers</li>
+  <li><strong>Detailed Explanations</strong> help new developers understand concepts thoroughly</li>
+  <li><strong>Code Examples</strong> demonstrate practical implementation with copy-paste snippets</li>
+  <li><strong>Reference Links</strong> connect to API documentation and source code</li>
+  <li><strong>Troubleshooting Tips</strong> help you overcome common challenges</li>
+</ul>
+
+<p>We’ve designed these guides with part-time developers in mind. If you’re creating a MainWP add-on as a side project, you’ll find:</p>
+
+<ul>
+  <li>Clear, concise guides that respect your time constraints</li>
+  <li>Separate pathways for Extension and Integration development</li>
+  <li>Ready-to-use code snippets that you can adapt for your needs</li>
+  <li>Practical implementation guidance focused on results</li>
+  <li>Common pitfalls and their solutions to avoid getting stuck</li>
+</ul>
+
+<p>Use the navigation to find the specific information you need, or follow the guides sequentially for a comprehensive learning path.</p>
+
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
-            <div class="o-col-4@md">
-                <div class="c-feature">
-                    <div class="c-feature__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3>Large User Base</h3>
-                    <p>Reach over 20,000 agencies and developers managing 700,000+ WordPress sites. Tap into a growing market of professional WordPress users.</p>
-                </div>
-            </div>
-            <div class="o-col-4@md">
-                <div class="c-feature">
-                    <div class="c-feature__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Modern Development</h3>
-                    <p>Build with modern PHP practices, REST API integration, and comprehensive documentation. Use the latest WordPress development standards.</p>
-                </div>
-            </div>
         </div>
-        <div class="o-row">
-            <div class="o-col-4@md">
-                <div class="c-feature">
-                    <div class="c-feature__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                    </div>
-                    <h3>Developer Support</h3>
-                    <p>Get dedicated support from the MainWP development team. Access developer documentation, code examples, and community resources.</p>
-                </div>
-            </div>
-            <div class="o-col-4@md">
-                <div class="c-feature">
-                    <div class="c-feature__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                        </svg>
-                    </div>
-                    <h3>Global Reach</h3>
-                    <p>Join a global community of WordPress professionals. Distribute your extensions to users worldwide through the MainWP marketplace.</p>
-                </div>
-            </div>
-            <div class="o-col-4@md">
-                <div class="c-feature">
-                    <div class="c-feature__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h3>Open Source</h3>
-                    <p>Build on top of open-source software. Contribute to the MainWP ecosystem and help shape the future of WordPress management.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-.c-features {
-    padding: 4rem 0;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.c-feature {
-    padding: 2rem;
-    text-align: center;
-    border-radius: var(--dox-border-radius);
-    transition: var(--dox-transition-base);
-    height: 100%;
-}
-
-.c-feature:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.c-feature__icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
-    margin-bottom: 1.5rem;
-    border-radius: 50%;
-    background-color: var(--mainwp-primary);
-    color: white;
-}
-
-.c-feature h3 {
-    margin-bottom: 1rem;
-    color: var(--mainwp-dark-text);
-}
-
-.c-feature p {
-    color: var(--mainwp-dark-text);
-    opacity: 0.8;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .c-feature {
-        margin-bottom: 2rem;
-    }
-}
-</style>
-
-
 
         <footer class="c-footer">
     <div class="o-container">
@@ -611,8 +559,8 @@
         <!-- Theme scripts -->
         <script src="/mainwp.dev/dox-theme/assets/js/vendor/jquery.min.js" defer></script>
         <!-- Highlight.js -->
+        <link rel="stylesheet" href="/mainwp.dev/dox-theme/assets/css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-        <!-- Highlight.js language packs -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/php.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/xml.min.js"></script>
@@ -621,6 +569,7 @@
         <!-- Theme functionality -->
         <script src="/mainwp.dev/dox-theme/assets/js/theme-toggle.js" defer></script>
         <script src="/mainwp.dev/dox-theme/assets/js/scripts.js" defer></script>
+        <script src="/mainwp.dev/dox-theme/assets/js/page-nav.js" defer></script>
         <script src="/mainwp.dev/dox-theme/assets/js/navigation.js" defer></script>
         <!-- Code block functionality -->
         <script>
@@ -694,55 +643,3 @@
         
     </body>
 </html>
-
-<style>
-/* Homepage specific styles */
-.homepage {
-    background-color: var(--mainwp-dark-bg);
-    color: var(--mainwp-dark-text);
-}
-
-.homepage h2 {
-    font-size: 2rem;
-    margin: 3rem 0 2rem;
-    color: var(--mainwp-dark-text);
-}
-
-.c-feature-card {
-    display: block;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--dox-border-radius);
-    text-decoration: none;
-    transition: var(--dox-transition-base);
-    height: 100%;
-}
-
-.c-feature-card:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    transform: translateY(-2px);
-}
-
-.c-feature-card h3 {
-    color: var(--mainwp-primary);
-    margin-bottom: 1rem;
-}
-
-.c-feature-card p {
-    color: var(--mainwp-dark-text);
-    opacity: 0.8;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .homepage h2 {
-        font-size: 1.5rem;
-        margin: 2rem 0 1.5rem;
-    }
-
-    .c-feature-card {
-        margin-bottom: 1rem;
-    }
-}
-</style>
