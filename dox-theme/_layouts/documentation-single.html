@@ -107,7 +107,9 @@
         <script src="{{ '/dox-theme/assets/js/scripts.js' | absolute_url }}" defer></script>
         <script src="{{ '/dox-theme/assets/js/page-nav.js' | absolute_url }}" defer></script>
         <!-- Ensure navigation.js is also deferred if it's added back -->
-        <script src="{{ '/dox-theme/assets/js/navigation.js' | absolute_url }}" defer></script> 
+        <script src="{{ '/dox-theme/assets/js/navigation.js' | absolute_url }}" defer></script>
+        <!-- Add code-blocks.js to transform basic code blocks into enhanced ones -->
+        <script src="{{ '/dox-theme/assets/js/code-blocks.js' | absolute_url }}" defer></script>
 
         {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
             <!-- Google Analytics -->
