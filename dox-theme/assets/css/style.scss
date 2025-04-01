@@ -2,6 +2,19 @@
 ---
 
 // Import settings in correct sequence
+:root {
+    --color-primary: #7fb100;
+    --color-secondary: #446200;
+    --color-text: #f2f3f2;
+    --color-text-muted: #aaa;
+    --color-background: #1c1d1b;
+    --color-border: #2d2e2c;
+    --color-code-background: #2a2b29;
+    --color-code-header-bg: #252624;
+    --dox-border-radius: 4px;
+    --font-family-code: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
 @import "settings/core";
 @import "settings/colors";
 @import "settings/layout";
