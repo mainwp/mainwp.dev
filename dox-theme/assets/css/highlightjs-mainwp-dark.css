@@ -18,6 +18,7 @@
     tab-size: 4;
     hyphens: none;
     padding: 1em;
+    padding-left: 2em; /* Increased left padding for better readability */
     margin: 0;
     overflow: auto;
     border-radius: 4px;
@@ -132,5 +133,6 @@
     .hljs {
         font-size: 0.85rem;
         padding: 0.75rem;
+        padding-left: 1.5rem; /* Increased left padding for mobile, matching _code.scss */
     }
 }
