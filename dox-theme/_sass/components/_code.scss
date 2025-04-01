@@ -1,3 +1,6 @@
+// Import the custom Highlight.js theme
+@import "../../../assets/css/highlightjs-mainwp-dark.css";
+
 // Code block styles
 .code-block {
     position: relative;
@@ -87,9 +90,10 @@ pre[class*="language-"] {
     }
 }
 
-pre[class*="language-"].line-numbers {
-    padding-left: 3.8em;
-}
+// Removed .line-numbers padding adjustment as feature is being removed
+// pre[class*="language-"].line-numbers {
+//     padding-left: 3.8em;
+// }
 
 code[class*="language-"] {
     font-family: inherit;
@@ -103,36 +107,36 @@ code[class*="language-"] {
     display: block;
 }
 
-// Line numbers
-.line-numbers .line-numbers-rows {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    font-size: 100%;
-    left: -3.8em;
-    width: 3em;
-    letter-spacing: -1px;
-    border-right: 1px solid var(--color-border);
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    padding: 1rem 0;
-}
+// Line numbers - REMOVED as feature is disabled due to alignment issues
+// .line-numbers .line-numbers-rows {
+//     position: absolute;
+//     pointer-events: none;
+//     top: 1rem; // Adjusted to match pre padding-top
+//     font-size: 100%;
+//     left: -3.8em;
+//     width: 3em;
+//     letter-spacing: -1px;
+//     border-right: 1px solid var(--color-border);
+//     user-select: none;
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     padding: 1rem 0;
+// }
 
-.line-numbers-rows > span {
-    display: block;
-    counter-increment: linenumber;
-    pointer-events: none;
-    color: var(--color-text-muted);
+// .line-numbers-rows > span {
+//     display: block;
+//     counter-increment: linenumber;
+//     pointer-events: none;
+//     color: var(--color-text-muted);
 
-    &:before {
-        content: counter(linenumber);
-        color: var(--color-text-muted);
-        display: block;
-        padding-right: 0.8em;
-        text-align: right;
-    }
-}
+//     &:before {
+//         content: counter(linenumber);
+//         color: var(--color-text-muted);
+//         display: block;
+//         padding-right: 0.8em;
+//         text-align: right;
+//     }
+// }
 
 // Line highlight
 .line-highlight {
@@ -182,14 +186,16 @@ code[class*="language-"] {
         padding-left: 3.2em;
     }
 
-    .line-numbers .line-numbers-rows {
-        font-size: 0.85rem;
-        width: 2.5em;
-    }
+    // Removed mobile line number adjustments
+    // .line-numbers .line-numbers-rows {
+    //     top: 0.75rem; // Adjusted for mobile pre padding-top
+    //     font-size: 0.85rem;
+    //     width: 2.5em;
+    // }
 
-    .line-numbers-rows > span:before {
-        padding-right: 0.5rem;
-    }
+    // .line-numbers-rows > span:before {
+    //     padding-right: 0.5rem;
+    // }
 
     .code-header {
         padding: 0.375rem 0.75rem;

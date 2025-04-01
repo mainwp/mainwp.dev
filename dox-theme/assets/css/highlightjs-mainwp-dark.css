@@ -1,0 +1,136 @@
+/**
+ * MainWP Dark theme for Highlight.js
+ * Adapted from the Prism.js theme
+ */
+
+/* Base code style */
+.hljs {
+    color: #f2f3f2;
+    background: none;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: 0.9em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+    padding: 1em;
+    margin: 0;
+    overflow: auto;
+    border-radius: 4px;
+}
+
+/* Block styles handled by the theme's _code.scss */
+
+/* Syntax Highlighting */
+
+/* Comments */
+.hljs-comment,
+.hljs-quote,
+.hljs-doctag {
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+/* Namespace */
+.hljs-meta {
+    opacity: .7;
+}
+
+/* Strings */
+.hljs-string,
+.hljs-char,
+.hljs-subst {
+    color: #9fd320;
+}
+
+/* Punctuation & operators */
+.hljs-punctuation,
+.hljs-operator {
+    color: #cccccc;
+}
+
+/* URLs, symbols, numbers */
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable {
+    color: #7fb100;
+}
+
+/* Keywords */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-meta-keyword,
+.hljs-attr {
+    color: #4682b4;
+}
+
+/* Functions */
+.hljs-function,
+.hljs-title.function {
+    color: #9fd320;
+}
+
+/* Tags */
+.hljs-section,
+.hljs-tag,
+.hljs-name,
+.hljs-type,
+.hljs-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+    color: #7fb100;
+}
+
+/* Class names */
+.hljs-title,
+.hljs-title.class {
+    color: #4682b4;
+}
+
+/* Regular expressions */
+.hljs-regexp {
+    color: #ffd300;
+}
+
+/* Deleted lines */
+.hljs-deletion {
+    color: #ff4444;
+}
+
+/* Added/Inserted lines */
+.hljs-addition {
+    color: #7fb100;
+}
+
+/* Built-in types/properties */
+.hljs-built_in {
+    color: #4682b4;
+}
+
+/* Emphasized elements */
+.hljs-emphasis {
+    font-style: italic;
+}
+
+/* Strong elements */
+.hljs-strong {
+    font-weight: bold;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .hljs {
+        font-size: 0.85rem;
+        padding: 0.75rem;
+    }
+}
