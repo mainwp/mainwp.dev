@@ -6,7 +6,7 @@ Welcome to MainWP development! This guide will walk you through the essential st
 
 Follow these steps to begin your MainWP development journey:
 
-<pre class="mermaid">
+```mermaid
 flowchart LR
     A[1. Setup Environment] --> B[2. Choose Add-on Type]
     B --> C1[3a. Create Basic Extension]
@@ -19,7 +19,7 @@ flowchart LR
     style C1 fill:#FFC107,stroke:#FFA000,color:white
     style C2 fill:#FFC107,stroke:#FFA000,color:white
     style D fill:#9C27B0,stroke:#7B1FA2,color:white
-</pre>
+```
 
 ## Step 1: Set Up Your Development Environment
 
@@ -74,19 +74,19 @@ MainWP uses specific terminology to distinguish between different types of add-o
 
 Use this decision tree to determine whether you should build an Extension or an Integration:
 
-<pre class="mermaid">
+```mermaid
 flowchart TD
-    A[Do you need to connect with\na third-party service or plugin?] -->|Yes| B[Integration]
+    A[Do you need to connect with<br>third-party service or plugin?] -->|Yes| B[Integration]
     A -->|No| C[Extension]
-    B --> D[Examples: WooCommerce Integration,\nGoogle Analytics Integration]
-    C --> E[Examples: Advanced Uptime Monitor,\nAdvanced Reports Extension]
+    B --> D[Examples: WooCommerce Integration,<br>Google Analytics Integration]
+    C --> E[Examples: Advanced Uptime Monitor,<br>Advanced Reports Extension]
     
     style A fill:#2196F3,stroke:#1976D2,color:white
     style B fill:#FFC107,stroke:#FFA000,color:white
     style C fill:#FFC107,stroke:#FFA000,color:white
     style D fill:#9E9E9E,stroke:#757575,color:white
     style E fill:#9E9E9E,stroke:#757575,color:white
-</pre>
+```
 
 ### Extension Examples
 

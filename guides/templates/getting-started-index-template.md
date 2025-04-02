@@ -4,7 +4,7 @@ Welcome to the MainWP Developer Documentation! This comprehensive resource is de
 
 ## Documentation Overview
 
-<pre class="mermaid">
+```mermaid
 flowchart TD
     A[Getting Started] --> B[Core Concepts]
     A --> C[How-To Guides]
@@ -20,7 +20,7 @@ flowchart TD
     style B fill:#2196F3,stroke:#1976D2,color:white
     style C fill:#FFC107,stroke:#FFA000,color:white
     style D fill:#9C27B0,stroke:#7B1FA2,color:white
-</pre>
+```
 
 ## Getting Started
 
