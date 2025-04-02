@@ -4,6 +4,19 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Mermaid if it exists
+    if (typeof mermaid !== 'undefined') {
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'dark',
+            themeVariables: {
+                primaryColor: '#7fb100',
+                secondaryColor: '#446200',
+                tertiaryColor: '#4682b4'
+            }
+        });
+    }
+
     // Initialize Highlight.js if it exists
     if (typeof hljs !== 'undefined') {
         hljs.configure({
@@ -12,13 +25,27 @@ document.addEventListener('DOMContentLoaded', function() {
         hljs.highlightAll();
     }
 
+    // Convert Mermaid code blocks to proper format
+    document.querySelectorAll('pre > code.language-mermaid').forEach(block => {
+        const pre = block.parentElement;
+        if (!pre.classList.contains('mermaid')) {
+            // Create new mermaid div
+            const mermaidDiv = document.createElement('div');
+            mermaidDiv.className = 'mermaid';
+            mermaidDiv.textContent = block.textContent;
+            
+            // Replace pre with mermaid div
+            pre.parentNode.replaceChild(mermaidDiv, pre);
+        }
+    });
+
     // Find all code blocks with copy buttons
     const copyButtons = document.querySelectorAll('.code-block .copy-button');
     
     if (copyButtons.length === 0) {
         // If no copy buttons found in theme-style blocks, look for pre>code blocks
         // and add copy buttons to them
-        const codeBlocks = document.querySelectorAll('pre:not(.no-copy) > code[class*="language-"], pre:not(.no-copy) > code[class*="hljs"]');
+        const codeBlocks = document.querySelectorAll('pre:not(.no-copy):not(.mermaid) > code[class*="language-"], pre:not(.no-copy):not(.mermaid) > code[class*="hljs"]');
         
         codeBlocks.forEach(codeBlock => {
             const pre = codeBlock.parentElement;
@@ -39,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 let language = 'code';
                 const langClass = codeBlock.className.match(/language-(\w+)/) || codeBlock.className.match(/hljs language-(\w+)/);
                 if (langClass && langClass[1]) {
-                    language = langClass[1].toUpperCase();
+                    language = langClass[1].toLowerCase() === 'mermaid' ? 'MERMAID' : langClass[1].toUpperCase();
                 }
                 
                 const langLabel = document.createElement('span');

@@ -142,6 +142,50 @@
         margin: 1.5rem 0;
     }
 
+    // Mermaid diagram styling
+    .mermaid {
+        background-color: var(--color-code-background);
+        border-radius: $dox-border-radius;
+        padding: 1rem;
+        margin: 1.5rem 0;
+
+        .dark-mode & {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .node rect,
+        .node circle,
+        .node ellipse,
+        .node polygon,
+        .node path {
+            fill: var(--color-code-background);
+            stroke: var(--color-primary);
+        }
+
+        .edgePath .path {
+            stroke: var(--color-primary);
+        }
+
+        .edgeLabel {
+            background-color: var(--color-code-background);
+            color: var(--color-text);
+        }
+
+        .label {
+            color: var(--color-text);
+        }
+
+        .cluster rect {
+            fill: var(--color-code-background);
+            stroke: var(--color-secondary);
+        }
+    }
+
     hr {
         margin: 2rem 0;
         border: 0;

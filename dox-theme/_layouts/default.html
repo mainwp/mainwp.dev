@@ -18,6 +18,7 @@
         <!-- Theme scripts (deferred) -->
         <script src="{{ site.baseurl }}/dox-theme/assets/js/vendor/jquery.min.js" defer></script> <!-- Keep vendor -->
         <script src="{{ site.baseurl }}/dox-theme/assets/js/vendor/highlight.pack.js" defer></script> <!-- Keep vendor -->
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js" defer></script>
         <script src="{{ site.baseurl }}/dox-theme/assets/js/theme-toggle.js" defer></script> <!-- Restore -->
         <script src="{{ site.baseurl }}/dox-theme/assets/js/navigation.js" defer></script> <!-- Keep navigation.js -->
         <script src="{{ site.baseurl }}/dox-theme/assets/js/page-nav.js" defer></script> <!-- Restore -->
@@ -63,11 +64,26 @@
         <!-- Initialize highlighting after defer ensures hljs is loaded -->
         <script defer>
           document.addEventListener('DOMContentLoaded', (event) => {
-            // TODO: Replace deprecated call with hljs.highlightAll(); later
+            // Initialize Highlight.js
             if (typeof hljs !== 'undefined') {
               hljs.initHighlightingOnLoad(); 
             } else {
               console.error('Highlight.js (hljs) not loaded');
+            }
+
+            // Initialize Mermaid
+            if (typeof mermaid !== 'undefined') {
+              mermaid.initialize({ 
+                startOnLoad: true,
+                theme: 'dark',
+                themeVariables: {
+                  primaryColor: '#7fb100',
+                  secondaryColor: '#446200',
+                  tertiaryColor: '#4682b4'
+                }
+              });
+            } else {
+              console.error('Mermaid.js not loaded');
             }
           });
         </script>
