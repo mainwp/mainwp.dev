@@ -190,7 +190,7 @@ Argument | Type | Description
 
 * Purge WP Hummingbird cache.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 741](class/class-mainwp-child-cache-purge.php#L741-L756)
+Source: [./sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 741](class/class-mainwp-child-cache-purge.php#L741-L756)
 
 **Usage Locations:**
 

@@ -14,7 +14,7 @@ Hooks for managing posts, pages, comments, and other content.
 - [`admin_post_thumbnail_size`](#admin-post-thumbnail-size) - Filters the size used to display the post thumbnail image in the 'Featured Image' meta box.
 - [`mainwp-after-posting-bulkpage-result`](#mainwp-after-posting-bulkpage-result) - After posting a new page
 - [`mainwp-after-posting-bulkpost-result`](#mainwp-after-posting-bulkpost-result) - After posting a new post
-- [`mainwp-bulkposting-done`](#mainwp-bulkposting-done) - Method posting()
+- [`mainwp-bulkposting-done`](#mainwp-bulkposting-done) - Method posting_posts()
 - [`mainwp-getcustompage-backups`](#mainwp-getcustompage-backups) - Backups Subpages
 - [`mainwp-getsubpages-backups`](#mainwp-getsubpages-backups) - Instantiate Legacy Backups Menu.
 - [`mainwp-getsubpages-page`](#mainwp-getsubpages-page) - Method init_menu()
@@ -59,7 +59,7 @@ Hooks for managing posts, pages, comments, and other content.
 - [`mainwp_bulkpost_edit_top_side`](#mainwp-bulkpost-edit-top-side) - Renders bulkpost to edit.
 - [`mainwp_bulkpost_editor_settings`](#mainwp-bulkpost-editor-settings) - Renders bulkpost to edit.
 - [`mainwp_bulkpost_tags_handle`](#mainwp-bulkpost-tags-handle) - Method add_tags_handle()
-- [`mainwp_bulkposting_done`](#mainwp-bulkposting-done) - Posting page completed
+- [`mainwp_bulkposting_done`](#mainwp-bulkposting-done) - Posting post completed
 - [`mainwp_cards_per_row`](#mainwp-cards-per-row) - Filter: mainwp_cards_per_row
 - [`mainwp_client_report_generate_content`](#mainwp-client-report-generate-content) - Filter: mainwp_client_report_generate_content
 - [`mainwp_custom_post_types_default`](#mainwp-custom-post-types-default) - Default post types
@@ -70,7 +70,7 @@ Hooks for managing posts, pages, comments, and other content.
 - [`mainwp_edit_posts_after_submit_button`](#mainwp-edit-posts-after-submit-button) - Action: mainwp_edit_posts_after_submit_button
 - [`mainwp_edit_posts_before_submit_button`](#mainwp-edit-posts-before-submit-button) - Action: mainwp_edit_posts_before_submit_button
 - [`mainwp_enqueue_script_gridster`](#mainwp-enqueue-script-gridster) - Method admin_init()
-- [`mainwp_escape_content`](#mainwp-escape-content) - Handles the saving item.
+- [`mainwp_escape_content`](#mainwp-escape-content) - Edit subscription Post
 - [`mainwp_extensions_page_top_header`](#mainwp-extensions-page-top-header) - Method render_header()
 - [`mainwp_get_all_pages_data`](#mainwp-get-all-pages-data) - Get all pages data
 - [`mainwp_get_all_posts_data`](#mainwp-get-all-posts-data) - Get all posts data
@@ -122,12 +122,12 @@ Hooks for managing posts, pages, comments, and other content.
 - [`mainwp_page_navigation`](#mainwp-page-navigation) - Filter: mainwp_page_navigation
 - [`mainwp_page_navigation_menu`](#mainwp-page-navigation-menu) - Method render_page_navigation()
 - [`mainwp_pagefooter_extensions`](#mainwp-pagefooter-extensions) - Method render_extensions_groups()
-- [`mainwp_pagefooter_settings`](#mainwp-pagefooter-settings) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_pagefooter_sites`](#mainwp-pagefooter-sites) - This action is documented in ../pages/page-mainwp-manage-sites.php
+- [`mainwp_pagefooter_settings`](#mainwp-pagefooter-settings) - Render settings
+- [`mainwp_pagefooter_sites`](#mainwp-pagefooter-sites) - Render Tabs.
 - [`mainwp_pagefooter_tags`](#mainwp-pagefooter-tags) - Sites Page Footer
 - [`mainwp_pageheader_extensions`](#mainwp-pageheader-extensions) - Method render_extensions_groups()
-- [`mainwp_pageheader_settings`](#mainwp-pageheader-settings) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_pageheader_sites`](#mainwp-pageheader-sites) - This action is documented in ../pages/page-mainwp-manage-sites.php
+- [`mainwp_pageheader_settings`](#mainwp-pageheader-settings) - Render settings
+- [`mainwp_pageheader_sites`](#mainwp-pageheader-sites) - Render Tabs.
 - [`mainwp_pageheader_tags`](#mainwp-pageheader-tags) - Sites Page header
 - [`mainwp_pages_actions_bar_left`](#mainwp-pages-actions-bar-left) - Action: mainwp_pages_actions_bar_left
 - [`mainwp_pages_actions_bar_right`](#mainwp-pages-actions-bar-right) - Action: mainwp_pages_actions_bar_right
@@ -142,7 +142,7 @@ Hooks for managing posts, pages, comments, and other content.
 - [`mainwp_post_created`](#mainwp-post-created) - Method posting_bulk_handler()
 - [`mainwp_post_posting_page`](#mainwp-post-posting-page) - Posting page
 - [`mainwp_post_posting_post`](#mainwp-post-posting-post) - Posting post
-- [`mainwp_posting_bulkpost_post_status`](#mainwp-posting-bulkpost-post-status) - Page status
+- [`mainwp_posting_bulkpost_post_status`](#mainwp-posting-bulkpost-post-status) - Post status
 - [`mainwp_posting_post_selected_by`](#mainwp-posting-post-selected-by) - Method posting_posts()
 - [`mainwp_posting_post_selected_sites`](#mainwp-posting-post-selected-sites) - Method posting_posts()
 - [`mainwp_posting_selected_clients`](#mainwp-posting-selected-clients) - Method posting_posts()
@@ -186,7 +186,7 @@ Hooks for managing posts, pages, comments, and other content.
 - [`mainwp_recent_posts_before_pending_list`](#mainwp-recent-posts-before-pending-list) - Action: mainwp_recent_posts_before_pending_list
 - [`mainwp_recent_posts_before_publised_list`](#mainwp-recent-posts-before-publised-list) - Action: mainwp_recent_posts_before_publised_list
 - [`mainwp_recent_posts_before_trash_list`](#mainwp-recent-posts-before-trash-list) - Action: mainwp_recent_posts_before_trash_list
-- [`mainwp_recent_posts_pages_number`](#mainwp-recent-posts-pages-number) - Sets number of recent posts & pages
+- [`mainwp_recent_posts_pages_number`](#mainwp-recent-posts-pages-number) - This filter is documented in ../widgets/widget-mainwp-recent-posts.php
 - [`mainwp_recent_posts_widget_bottom`](#mainwp-recent-posts-widget-bottom) - Action: mainwp_recent_posts_widget_bottom
 - [`mainwp_recent_posts_widget_title`](#mainwp-recent-posts-widget-title) - *Arguments*
 - [`mainwp_recent_posts_widget_top`](#mainwp-recent-posts-widget-top) - Action: mainwp_recent_posts_widget_top
@@ -305,9 +305,9 @@ Argument | Type | Description
 <a id='mainwp-bulkposting-done'></a>
 ### `mainwp-bulkposting-done`
 
-* Method posting()
+* Method posting_posts()
 
-Render Posting page modal window.
+Posting posts.
 
 **Arguments**
 
@@ -598,7 +598,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 730](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L730)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 733](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L733)
 
 ---
 
@@ -1300,9 +1300,9 @@ Argument | Type | Description
 <a id='mainwp-bulkposting-done'></a>
 ### `mainwp_bulkposting_done`
 
-* Posting page completed
+* Posting post completed
 
-Fires after the page posting process is completed.
+Fires after the post posting process is completed.
 
 **Arguments**
 
@@ -1562,13 +1562,9 @@ Argument | Type | Description
 <a id='mainwp-escape-content'></a>
 ### `mainwp_escape_content`
 
-* Handles the saving item.
+* Edit subscription Post
 
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$note` |  |
+Handles the saving subscription.
 
 **Arguments**
 
@@ -2090,7 +2086,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1657](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1657)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1651)
 
 ---
 
@@ -2113,7 +2109,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1657](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1657)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1651)
 
 ---
 
@@ -2255,7 +2251,7 @@ Version | Description
 
 * Renders Bulk Page Manager.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 434](pages/page-mainwp-page.php#L434-L474)
+Source: [./sources/mainwp-dashboard/pages/page-mainwp-page.php](pages/page-mainwp-page.php), [line 434](pages/page-mainwp-page.php#L434-L474)
 
 **Usage Locations:**
 
@@ -2620,7 +2616,7 @@ Render page navigation.
 
 * Method render_extensions_groups()
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pages/page-mainwp-extensions-groups.php), [line 921](pages/page-mainwp-extensions-groups.php#L921-L1086)
+Source: [./sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pages/page-mainwp-extensions-groups.php), [line 921](pages/page-mainwp-extensions-groups.php#L921-L1086)
 
 **Usage Locations:**
 
@@ -2631,19 +2627,15 @@ Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pa
 <a id='mainwp-pagefooter-settings'></a>
 ### `mainwp_pagefooter_settings`
 
-* This action is documented in ../pages/page-mainwp-manage-sites.php
+* Render settings
+
+Renders the settings page.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'Insights'` |  |
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`'Insights'` |  |
+`'ApiBackups'` |  |
 
 **Usage Locations:**
 
@@ -2655,19 +2647,15 @@ Argument | Type | Description
 <a id='mainwp-pagefooter-sites'></a>
 ### `mainwp_pagefooter_sites`
 
-* This action is documented in ../pages/page-mainwp-manage-sites.php
+* Render Tabs.
+
+Renders the page tabs.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'MonitoringSites'` |  |
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`'MonitoringSites'` |  |
+`'ApiBackups'` |  |
 
 **Usage Locations:**
 
@@ -2701,7 +2689,7 @@ Argument | Type | Description
 
 * Method render_extensions_groups()
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pages/page-mainwp-extensions-groups.php), [line 921](pages/page-mainwp-extensions-groups.php#L921-L968)
+Source: [./sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pages/page-mainwp-extensions-groups.php), [line 921](pages/page-mainwp-extensions-groups.php#L921-L968)
 
 **Usage Locations:**
 
@@ -2712,19 +2700,15 @@ Source: [../sources/mainwp-dashboard/pages/page-mainwp-extensions-groups.php](pa
 <a id='mainwp-pageheader-settings'></a>
 ### `mainwp_pageheader_settings`
 
-* This action is documented in ../pages/page-mainwp-manage-sites.php
+* Render settings
+
+Renders the settings page.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'Insights'` |  |
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`'Insights'` |  |
+`'ApiBackups'` |  |
 
 **Usage Locations:**
 
@@ -2736,19 +2720,15 @@ Argument | Type | Description
 <a id='mainwp-pageheader-sites'></a>
 ### `mainwp_pageheader_sites`
 
-* This action is documented in ../pages/page-mainwp-manage-sites.php
+* Render Tabs.
+
+Renders the page tabs.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'MonitoringSites'` |  |
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`'MonitoringSites'` |  |
+`'ApiBackups'` |  |
 
 **Usage Locations:**
 
@@ -3087,16 +3067,16 @@ Argument | Type | Description
 <a id='mainwp-posting-bulkpost-post-status'></a>
 ### `mainwp_posting_bulkpost_post_status`
 
-* Page status
+* Post status
 
-Sets page status when posting 'bulkpage' to child sites.
+Sets post status when posting 'bulkpost' to child sites.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
 `$post_status` |  | 
-`$id` | `int` | Page ID.
+`$id` | `int` | Post ID.
 
 **Usage Locations:**
 
@@ -4125,9 +4105,7 @@ Version | Description
 <a id='mainwp-recent-posts-pages-number'></a>
 ### `mainwp_recent_posts_pages_number`
 
-* Sets number of recent posts & pages
-
-Limits the number of recent posts & pages to show in the widget. Min 0, Max 30, Default 5.
+* This filter is documented in ../widgets/widget-mainwp-recent-posts.php
 
 **Arguments**
 
@@ -4135,11 +4113,11 @@ Argument | Type | Description
 -------- | ---- | -----------
 `5` |  |
 
-**Changelog**
+**Arguments**
 
-Version | Description
-------- | -----------
-`4.0` |
+Argument | Type | Description
+-------- | ---- | -----------
+`5` |  |
 
 **Usage Locations:**
 
@@ -4370,7 +4348,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1657](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1657)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1651](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1651)
 
 ---
 
@@ -4457,7 +4435,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 812](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L812)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 815](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L815)
 
 ---
 

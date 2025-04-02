@@ -11,12 +11,12 @@ Hooks related to adding, editing, removing, and managing sites and site groups.
 ## Hooks in this Category
 
 - [`mainwp-extension-sites-edit`](#mainwp-extension-sites-edit) - Method render_edit_site()
-- [`mainwp-manage-sites-edit`](#mainwp-manage-sites-edit) - Method render_new_site_add_new_site()
+- [`mainwp-manage-sites-edit`](#mainwp-manage-sites-edit) - Method render_edit_site()
 - [`mainwp-site-synced`](#mainwp-site-synced) - Method sync_information_array()
 - [`mainwp-sync-extensions-options`](#mainwp-sync-extensions-options) - Method render_sync_exts_settings()
 - [`mainwp-sync-others-data`](#mainwp-sync-others-data) - Method sync_site()
 - [`mainwp_added_new_group`](#mainwp-added-new-group) - New Group Added
-- [`mainwp_added_new_site`](#mainwp-added-new-site) - This action is documented in class\class-mainwp-manage-sites-view.php
+- [`mainwp_added_new_site`](#mainwp-added-new-site) - New site added
 - [`mainwp_after_edit_site_note`](#mainwp-after-edit-site-note) - Action: mainwp_after_edit_site_note
 - [`mainwp_after_groups_table`](#mainwp-after-groups-table) - Action: mainwp_after_groups_table
 - [`mainwp_after_manage_sites_table`](#mainwp-after-manage-sites-table) - Action: mainwp_after_manage_sites_table
@@ -27,7 +27,6 @@ Hooks related to adding, editing, removing, and managing sites and site groups.
 - [`mainwp_after_select_sites_list`](#mainwp-after-select-sites-list) - Action: mainwp_after_select_sites_list
 - [`mainwp_after_sync_site_success`](#mainwp-after-sync-site-success) - Fires immediately after website synced successfully.
 - [`mainwp_ajax_add_action`](#mainwp-ajax-add-action) - Init ajax actions.
-- [`mainwp_auto_updates_sync_data_before_run`](#mainwp-auto-updates-sync-data-before-run) - Method handle_cron_auto_updates()
 - [`mainwp_before_edit_site_note`](#mainwp-before-edit-site-note) - Action: mainwp_before_edit_site_note
 - [`mainwp_before_groups_table`](#mainwp-before-groups-table) - Action: mainwp_before_groups_table
 - [`mainwp_before_manage_sites_table`](#mainwp-before-manage-sites-table) - Action: mainwp_before_manage_sites_table
@@ -65,16 +64,16 @@ Hooks related to adding, editing, removing, and managing sites and site groups.
 - [`mainwp_currentuserallowedaccessgroups`](#mainwp-currentuserallowedaccessgroups) - Filter: mainwp_currentuserallowedaccessgroups
 - [`mainwp_custom_post_types_get_post_connections`](#mainwp-custom-post-types-get-post-connections) - Method posts_search_handler()
 - [`mainwp_delete_key_file`](#mainwp-delete-key-file) - Method update_compatible_site_api_key
-- [`mainwp_delete_site`](#mainwp-delete-site) - *Arguments*
+- [`mainwp_delete_site`](#mainwp-delete-site) - This action is documented in pages\page-mainwp-manage-sites-handler.php
 - [`mainwp_extension_sites_edit_tablerow`](#mainwp-extension-sites-edit-tablerow) - Method render_edit_site()
 - [`mainwp_fetch_url_authed`](#mainwp-fetch-url-authed) - Fires immediately after fetch url action.
 - [`mainwp_getwebsite_by_id`](#mainwp-getwebsite-by-id) - Get sites by website ID.
 - [`mainwp_getwebsiteoptions`](#mainwp-getwebsiteoptions) - Method get_website_options().
 - [`mainwp_html_regression_largest_change_scope`](#mainwp-html-regression-largest-change-scope) - *Arguments*
 - [`mainwp_manage_sites_action`](#mainwp-manage-sites-action) - Action: mainwp_manage_sites_action
-- [`mainwp_manage_sites_edit`](#mainwp-manage-sites-edit) - Edit site
+- [`mainwp_manage_sites_edit`](#mainwp-manage-sites-edit) - This action is documented in ../pages/page-mainwp-manage-sites.php
 - [`mainwp_manage_sites_email_settings`](#mainwp-manage-sites-email-settings) - Action: mainwp_manage_sites_email_settings
-- [`mainwp_manage_sites_force_use_ipv4`](#mainwp-manage-sites-force-use-ipv4) - Method check_site()
+- [`mainwp_manage_sites_force_use_ipv4`](#mainwp-manage-sites-force-use-ipv4) - Method mainwp_testwp()
 - [`mainwp_manage_sites_navigation_items`](#mainwp-manage-sites-navigation-items) - Method render_managesites_header()
 - [`mainwp_manage_sites_optimize_loading`](#mainwp-manage-sites-optimize-loading) - Method render_all_sites()
 - [`mainwp_manage_sites_table_columns_defs`](#mainwp-manage-sites-table-columns-defs) - Display the table.
@@ -94,12 +93,11 @@ Hooks related to adding, editing, removing, and managing sites and site groups.
 - [`mainwp_quick_sites_shortcut`](#mainwp-quick-sites-shortcut) - Action: mainwp_quick_sites_shortcut
 - [`mainwp_rest_pre_insert_site_item`](#mainwp-rest-pre-insert-site-item) - Filters an object before it is inserted via the REST API.
 - [`mainwp_rest_pre_update_site_item`](#mainwp-rest-pre-update-site-item) - Filters an object before it is inserted via the REST API.
-- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](#mainwp-rest-routes-sites-controller-filter-allowed-fields-by-context) - *Arguments*
+- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](#mainwp-rest-routes-sites-controller-filter-allowed-fields-by-context) - Get sites by tag id.
 - [`mainwp_rest_routes_sites_controller_get_allowed_fields_by_context`](#mainwp-rest-routes-sites-controller-get-allowed-fields-by-context) - *Arguments*
 - [`mainwp_select_sites_box`](#mainwp-select-sites-box) - Render settings
 - [`mainwp_site_actions_saved_days_number`](#mainwp-site-actions-saved-days-number) - Method sync_site()
 - [`mainwp_site_added`](#mainwp-site-added) - Fires immediately after a new website is added.
-- [`mainwp_site_changes_table_pages_length`](#mainwp-site-changes-table-pages-length) - Display the table.
 - [`mainwp_site_deleted`](#mainwp-site-deleted) - *Arguments*
 - [`mainwp_site_health_monitoring_email_footer`](#mainwp-site-health-monitoring-email-footer) - Site Health Monitoring Email Footer
 - [`mainwp_site_health_monitoring_email_header`](#mainwp-site-health-monitoring-email-header) - Site Health Monitoring Email Header
@@ -173,28 +171,28 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 831](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L831)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 834](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L834)
 
 ---
 
 <a id='mainwp-manage-sites-edit'></a>
 ### `mainwp-manage-sites-edit`
 
-* Method render_new_site_add_new_site()
+* Method render_edit_site()
 
-Render page managesites add new site.
+Render individual Child Site Edit sub page.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`array(false)` |  | 
+`array($website)` |  | 
 `'4.0.7.2'` |  | 
 `'mainwp_manage_sites_edit'` |  |
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 831](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L831)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 834](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L834)
 - [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 787](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L787)
 
 ---
@@ -284,7 +282,7 @@ Argument | Type | Description
 **Usage Locations:**
 
 - [class/class-mainwp-db-common.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db-common.php), [line 634](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db-common.php#L634)
-- [pages/page-mainwp-extensions-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php), [line 1080](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php#L1080)
+- [pages/page-mainwp-extensions-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php), [line 1075](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php#L1075)
 - [pages/page-mainwp-manage-groups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php), [line 684](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php#L684)
 - [pages/page-mainwp-manage-groups.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php), [line 729](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-groups.php#L729)
 
@@ -293,26 +291,27 @@ Argument | Type | Description
 <a id='mainwp-added-new-site'></a>
 ### `mainwp_added_new_site`
 
-* This action is documented in class\class-mainwp-manage-sites-view.php
+* New site added
+
+Fires after adding a website to MainWP Dashboard.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$id` |  | 
+`$id` | `int` | Child site ID.
 `$website` |  |
 
-**Arguments**
+**Changelog**
 
-Argument | Type | Description
--------- | ---- | -----------
-`$id` |  | 
-`$website` |  |
+Version | Description
+------- | -----------
+`3.4` |
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 2267](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L2267)
-- [pages/page-mainwp-extensions-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php), [line 955](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php#L955)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 2269](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L2269)
+- [pages/page-mainwp-extensions-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php), [line 950](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php#L950)
 
 ---
 
@@ -539,27 +538,6 @@ Argument | Type | Description
 **Usage Locations:**
 
 - [modules/api-backups/classes/class-api-backups-handler.php](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-handler.php), [line 53](https://github.com/mainwp/mainwp/blob/master/modules/api-backups/classes/class-api-backups-handler.php#L53)
-
----
-
-<a id='mainwp-auto-updates-sync-data-before-run'></a>
-### `mainwp_auto_updates_sync_data_before_run`
-
-* Method handle_cron_auto_updates()
-
-MainWP Cron Check Update
-
-This Cron Checks to see if Automatic Daily Updates need to be performed.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`true` |  |
-
-**Usage Locations:**
-
-- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 104](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L104)
 
 ---
 
@@ -1363,22 +1341,24 @@ Argument | Type | Description
 <a id='mainwp-delete-site'></a>
 ### `mainwp_delete_site`
 
-* *Arguments*
-
-Argument | Type | Description
--------- | ---- | -----------
-`$website` |  |
+* This action is documented in pages\page-mainwp-manage-sites-handler.php
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$website` |  |
+`$site` |  |
+
+**Arguments**
+
+Argument | Type | Description
+-------- | ---- | -----------
+`$site` |  |
 
 **Usage Locations:**
 
-- [class/class-mainwp-hooks.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php), [line 409](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php#L409)
-- [pages/page-mainwp-extensions-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php), [line 1045](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php#L1045)
+- [class/class-mainwp-hooks.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php), [line 405](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php#L405)
+- [pages/page-mainwp-extensions-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php), [line 1040](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-extensions-handler.php#L1040)
 - [pages/page-mainwp-manage-sites-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites-handler.php), [line 453](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites-handler.php#L453)
 
 ---
@@ -1398,7 +1378,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 831](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L831)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 834](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L834)
 
 ---
 
@@ -1533,27 +1513,31 @@ Version | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1881](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1881)
-- [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 2295](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L2295)
+- [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1876](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1876)
+- [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 2288](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L2288)
 
 ---
 
 <a id='mainwp-manage-sites-edit'></a>
 ### `mainwp_manage_sites_edit`
 
-* Edit site
-
-Fires on the Edit child site page and allows user to hook in new site options.
+* This action is documented in ../pages/page-mainwp-manage-sites.php
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`false` |  |
+`$website` |  |
+
+**Arguments**
+
+Argument | Type | Description
+-------- | ---- | -----------
+`$website` |  |
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 1391](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L1391)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 1393](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L1393)
 - [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1056](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1056)
 
 ---
@@ -1579,27 +1563,27 @@ Version | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 1824](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L1824)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 1826](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L1826)
 
 ---
 
 <a id='mainwp-manage-sites-force-use-ipv4'></a>
 ### `mainwp_manage_sites_force_use_ipv4`
 
-* Method check_site()
+* Method mainwp_testwp()
 
-Check to add site.
+Test if Child Site can be reached.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`null` |  | 
+`false` |  | 
 `$url` |  |
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 2018](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L2018)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 2020](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L2020)
 - [class/class-mainwp-post-site-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-site-handler.php), [line 236](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-site-handler.php#L236)
 - [pages/page-mainwp-manage-sites-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites-handler.php), [line 26](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites-handler.php#L26)
 
@@ -1642,7 +1626,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1713](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1713)
+- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1706](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1706)
 - [pages/page-mainwp-monitoring.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-monitoring.php), [line 272](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-monitoring.php#L272)
 
 ---
@@ -1652,7 +1636,7 @@ Argument | Type | Description
 
 * Display the table.
 
-Source: [../sources/mainwp-dashboard/class/class-mainwp-monitoring-sites-list-table.php](class/class-mainwp-monitoring-sites-list-table.php), [line 644](class/class-mainwp-monitoring-sites-list-table.php#L644-L917)
+Source: [./sources/mainwp-dashboard/class/class-mainwp-client-list-table.php](class/class-mainwp-client-list-table.php), [line 336](class/class-mainwp-client-list-table.php#L336-L468)
 
 **Usage Locations:**
 
@@ -2018,7 +2002,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 2092](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L2092)
+- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 2078](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L2078)
 
 ---
 
@@ -2049,26 +2033,26 @@ Version | Description
 
 **Usage Locations:**
 
-- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 2139](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L2139)
+- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 2125](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L2125)
 
 ---
 
 <a id='mainwp-rest-routes-sites-controller-filter-allowed-fields-by-context'></a>
 ### `mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`
 
-* *Arguments*
-
-Argument | Type | Description
--------- | ---- | -----------
-`$website` |  | 
-`'simple_view'` |  |
+* Get sites by tag id.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$website` |  | 
-`'simple_view'` |  |
+`$website` |  |
+
+**Arguments**
+
+Argument | Type | Description
+-------- | ---- | -----------
+`$website` |  |
 
 **Usage Locations:**
 
@@ -2179,32 +2163,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 2257](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L2257)
-
----
-
-<a id='mainwp-site-changes-table-pages-length'></a>
-### `mainwp_site_changes_table_pages_length`
-
-* Display the table.
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$pages_length` |  | 
-`$this->table_id_prefix` |  |
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`$pages_length` |  | 
-`$this->table_id_prefix` |  |
-
-**Usage Locations:**
-
-- [modules/logs/classes/class-log-events-list-table.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-events-list-table.php), [line 524](https://github.com/mainwp/mainwp/blob/master/modules/logs/classes/class-log-events-list-table.php#L524)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 2259](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L2259)
 
 ---
 
@@ -2419,7 +2378,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 1995](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L1995)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 1997](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L1997)
 
 ---
 
@@ -2451,9 +2410,9 @@ Version | Description
 **Usage Locations:**
 
 - [class/class-mainwp-post-site-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-site-handler.php), [line 470](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-site-handler.php#L470)
-- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 1458](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L1458)
-- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 1498](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L1498)
-- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 2090](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L2090)
+- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 1444](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L1444)
+- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 1484](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L1484)
+- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 2083](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L2083)
 
 ---
 
@@ -2521,17 +2480,15 @@ Version | Description
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$group` | `object` | tag created.
-`'updated'` |  | 
-`$data` |  |
+`$group` | `object` | group created.
+`'created'` |  |
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$group` | `object` | tag created.
-`'updated'` |  | 
-`$data` |  |
+`$group` | `object` | group created.
+`'created'` |  |
 
 **Usage Locations:**
 
@@ -2563,7 +2520,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 2078](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L2078)
+- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 2071](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L2071)
 
 ---
 
@@ -2609,7 +2566,7 @@ Argument | Type | Description
 **Usage Locations:**
 
 - [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1554](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1554)
-- [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1976](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1976)
+- [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1971](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1971)
 
 ---
 
@@ -2628,7 +2585,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-system-utility.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-utility.php), [line 1655](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-utility.php#L1655)
+- [class/class-mainwp-system-utility.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-utility.php), [line 1654](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-system-utility.php#L1654)
 
 ---
 

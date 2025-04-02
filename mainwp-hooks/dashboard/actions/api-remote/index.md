@@ -23,7 +23,7 @@ Hooks for API endpoints and remote communication with child sites.
 - [`kinsta_api_form_top`](#kinsta-api-form-top) - Action: kinsta_api_form_top
 - [`linode_api_form_bottom`](#linode-api-form-bottom) - Action: linode_api_form_bottom
 - [`linode_api_form_top`](#linode-api-form-top) - Action: linode_api_form_top
-- [`mainwp_curl_http_version`](#mainwp-curl-http-version) - Method try visit.
+- [`mainwp_curl_http_version`](#mainwp-curl-http-version) - Fetch uptime urls.
 - [`mainwp_decrypt_key_value`](#mainwp-decrypt-key-value) - Method decrypt_api_keys
 - [`mainwp_encrypt_key_value`](#mainwp-encrypt-key-value) - Method encrypt_api_keys
 - [`mainwp_is_rest_api_request`](#mainwp-is-rest-api-request) - Whether this is a REST API request.
@@ -304,17 +304,21 @@ Version | Description
 <a id='mainwp-curl-http-version'></a>
 ### `mainwp_curl_http_version`
 
-* Method try visit.
-
-Try connecting to Child Site via cURL.
+* Fetch uptime urls.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
+`$website->id` |  |
+
+**Arguments**
+
+Argument | Type | Description
+-------- | ---- | -----------
 `false` |  | 
-`$url` | `string` | Child Site URL.
+`$website->id` |  |
 
 **Usage Locations:**
 
@@ -609,7 +613,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [includes/rest-api/controller/version2/class-mainwp-rest-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-controller.php), [line 1388](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-controller.php#L1388)
+- [includes/rest-api/controller/version2/class-mainwp-rest-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-controller.php), [line 1384](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-controller.php#L1384)
 
 ---
 
@@ -713,7 +717,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 2360](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L2360)
+- [includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php), [line 2346](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-sites-controller.php#L2346)
 
 ---
 
@@ -734,7 +738,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [includes/rest-api/controller/version2/class-mainwp-rest-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-controller.php), [line 410](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-controller.php#L410)
+- [includes/rest-api/controller/version2/class-mainwp-rest-controller.php](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-controller.php), [line 406](https://github.com/mainwp/mainwp/blob/master/includes/rest-api/controller/version2/class-mainwp-rest-controller.php#L406)
 
 ---
 

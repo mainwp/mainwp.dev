@@ -10,10 +10,10 @@ This section provides documentation for all filters hooks available in the MainW
 - [Content Management](content-management/index.md) (195 hooks)
 - [Extensions & Integration](extensions-integration/index.md) (6 hooks)
 - [Security & Monitoring](security-monitoring/index.md) (46 hooks)
-- [Site Management](site-management/index.md) (141 hooks)
+- [Site Management](site-management/index.md) (139 hooks)
 - [System & Settings](system-settings/index.md) (24 hooks)
 - [UI & Display](ui-display/index.md) (95 hooks)
-- [Updates & Maintenance](updates-maintenance/index.md) (219 hooks)
+- [Updates & Maintenance](updates-maintenance/index.md) (218 hooks)
 - [User Management](user-management/index.md) (50 hooks)
 - [Miscellaneous](misc/index.md) (65 hooks)
 
@@ -47,13 +47,13 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp-activated`](system-settings/index.md#mainwp-activated) - MainWP_System constructor.
 - [`mainwp-after-posting-bulkpage-result`](content-management/index.md#mainwp-after-posting-bulkpage-result) - After posting a new page
 - [`mainwp-after-posting-bulkpost-result`](content-management/index.md#mainwp-after-posting-bulkpost-result) - After posting a new post
-- [`mainwp-bulkposting-done`](content-management/index.md#mainwp-bulkposting-done) - Method posting()
+- [`mainwp-bulkposting-done`](content-management/index.md#mainwp-bulkposting-done) - Method posting_posts()
 - [`mainwp-extension-sites-edit`](site-management/index.md#mainwp-extension-sites-edit) - Method render_edit_site()
 - [`mainwp-getcustompage-backups`](content-management/index.md#mainwp-getcustompage-backups) - Backups Subpages
 - [`mainwp-getextensions`](extensions-integration/index.md#mainwp-getextensions) - Method init_menu()
 - [`mainwp-getmetaboxes`](ui-display/index.md#mainwp-getmetaboxes) - Method apply_filter()
 - [`mainwp-getprimarybackup-activated`](backups-restoration/index.md#mainwp-getprimarybackup-activated) - Method admin_init()
-- [`mainwp-getprimarybackup-methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Gets MainWP Set Options.
+- [`mainwp-getprimarybackup-methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Method get_columns()
 - [`mainwp-getsubpages-backups`](content-management/index.md#mainwp-getsubpages-backups) - Instantiate Legacy Backups Menu.
 - [`mainwp-getsubpages-page`](content-management/index.md#mainwp-getsubpages-page) - Method init_menu()
 - [`mainwp-getsubpages-plugins`](updates-maintenance/index.md#mainwp-getsubpages-plugins) - Plugins Subpages
@@ -63,7 +63,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp-getsubpages-sites`](content-management/index.md#mainwp-getsubpages-sites) - Initiate menu.
 - [`mainwp-getsubpages-themes`](updates-maintenance/index.md#mainwp-getsubpages-themes) - Themes Subpages
 - [`mainwp-getsubpages-user`](content-management/index.md#mainwp-getsubpages-user) - This hook allows you to add extra sub pages to the User page via the 'mainwp-getsubpages-user' filter.
-- [`mainwp-manage-sites-edit`](site-management/index.md#mainwp-manage-sites-edit) - Method render_new_site_add_new_site()
+- [`mainwp-manage-sites-edit`](site-management/index.md#mainwp-manage-sites-edit) - Method render_edit_site()
 - [`mainwp-post-posting-page`](content-management/index.md#mainwp-post-posting-page) - Method posting()
 - [`mainwp-post-posting-post`](content-management/index.md#mainwp-post-posting-post) - Method posting_posts()
 - [`mainwp-pre-posting-posts`](content-management/index.md#mainwp-pre-posting-posts) - Filter is being replaced with mainwp_pre_posting_posts.
@@ -88,7 +88,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_add_new_user_sidebar_top`](user-management/index.md#mainwp-add-new-user-sidebar-top) - Action: mainwp_add_new_user_sidebar_top
 - [`mainwp_added_extension_menu`](ui-display/index.md#mainwp-added-extension-menu) - Adds Extension to the navigation menu
 - [`mainwp_added_new_group`](site-management/index.md#mainwp-added-new-group) - New Group Added
-- [`mainwp_added_new_site`](site-management/index.md#mainwp-added-new-site) - This action is documented in class\class-mainwp-manage-sites-view.php
+- [`mainwp_added_new_site`](site-management/index.md#mainwp-added-new-site) - New site added
 - [`mainwp_admin_enqueue_scripts`](misc/index.md#mainwp-admin-enqueue-scripts) - Method admin_enqueue_scripts()
 - [`mainwp_admin_footer`](content-management/index.md#mainwp-admin-footer) - Action: mainwp_admin_footer
 - [`mainwp_admin_menu`](ui-display/index.md#mainwp-admin-menu) - Action: mainwp_admin_menu
@@ -162,13 +162,12 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_after_users_table`](user-management/index.md#mainwp-after-users-table) - Action: mainwp_after_users_table
 - [`mainwp_after_wp_config_section`](system-settings/index.md#mainwp-after-wp-config-section) - Action: mainwp_after_wp_config_section
 - [`mainwp_after_wp_update`](updates-maintenance/index.md#mainwp-after-wp-update) - Action: mainwp_after_wp_update
-- [`mainwp_ajax_add_action`](site-management/index.md#mainwp-ajax-add-action) - Init ajax actions.
+- [`mainwp_ajax_add_action`](updates-maintenance/index.md#mainwp-ajax-add-action) - Init ajax actions.
 - [`mainwp_all_disablemenuitems`](ui-display/index.md#mainwp-all-disablemenuitems) - Method admin_footer()
 - [`mainwp_alter_login_user`](user-management/index.md#mainwp-alter-login-user) - Filter: mainwp_alter_login_user
 - [`mainwp_api_manager_upgrade_package_url`](updates-maintenance/index.md#mainwp-api-manager-upgrade-package-url) - **Arguments**
 - [`mainwp_api_manager_upgrade_url`](updates-maintenance/index.md#mainwp-api-manager-upgrade-url) - Get Upgrade URL.
 - [`mainwp_applypluginsettings_{$ext_dir_slug}`](updates-maintenance/index.md#mainwp-applypluginsettings-ext-dir-slug) - Apply plugin settings
-- [`mainwp_auto_updates_sync_data_before_run`](site-management/index.md#mainwp-auto-updates-sync-data-before-run) - Method handle_cron_auto_updates()
 - [`mainwp_automatic_disable_uptime_monitoring_check`](security-monitoring/index.md#mainwp-automatic-disable-uptime-monitoring-check) - Method cron_uptime_check
 - [`mainwp_available_updates_count_custom_fields_data`](updates-maintenance/index.md#mainwp-available-updates-count-custom-fields-data) - Method sites_available_updates_count()
 - [`mainwp_backups_remote_settings`](backups-restoration/index.md#mainwp-backups-remote-settings) - Render Backup Options.
@@ -244,7 +243,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_bulkpost_editor_settings`](content-management/index.md#mainwp-bulkpost-editor-settings) - Renders bulkpost to edit.
 - [`mainwp_bulkpost_select_sites_settings`](site-management/index.md#mainwp-bulkpost-select-sites-settings) - Renders bulkpost to edit.
 - [`mainwp_bulkpost_tags_handle`](content-management/index.md#mainwp-bulkpost-tags-handle) - Method add_tags_handle()
-- [`mainwp_bulkposting_done`](content-management/index.md#mainwp-bulkposting-done) - Posting page completed
+- [`mainwp_bulkposting_done`](content-management/index.md#mainwp-bulkposting-done) - Posting post completed
 - [`mainwp_cache_icon_expired`](updates-maintenance/index.md#mainwp-cache-icon-expired) - Gets a plugin|theme icon to output.
 - [`mainwp_cards_per_row`](content-management/index.md#mainwp-cards-per-row) - Filter: mainwp_cards_per_row
 - [`mainwp_check_site_result`](site-management/index.md#mainwp-check-site-result) - Method check_site()
@@ -319,7 +318,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_cron_jobs_table_features`](ui-display/index.md#mainwp-cron-jobs-table-features) - Filter: mainwp_cron_jobs_table_features
 - [`mainwp_cronload_action`](misc/index.md#mainwp-cronload-action) - Action: mainwp_cronload_action
 - [`mainwp_curl_curlopt_resolve`](site-management/index.md#mainwp-curl-curlopt-resolve) - Fetch uptime urls.
-- [`mainwp_curl_http_version`](api-remote/index.md#mainwp-curl-http-version) - Method try visit.
+- [`mainwp_curl_http_version`](api-remote/index.md#mainwp-curl-http-version) - Fetch uptime urls.
 - [`mainwp_currentuserallowedaccessgroups`](site-management/index.md#mainwp-currentuserallowedaccessgroups) - Filter: mainwp_currentuserallowedaccessgroups
 - [`mainwp_currentuserallowedaccesssites`](user-management/index.md#mainwp-currentuserallowedaccesssites) - Filter: mainwp_currentuserallowedaccesssites
 - [`mainwp_currentusercan`](user-management/index.md#mainwp-currentusercan) - Method \mainwp_current_user_can()
@@ -336,12 +335,12 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_db_free_result`](misc/index.md#mainwp-db-free-result) - Method free_result().
 - [`mainwp_db_install_tables`](updates-maintenance/index.md#mainwp-db-install-tables) - Method install()
 - [`mainwp_decrypt_key_value`](api-remote/index.md#mainwp-decrypt-key-value) - Method decrypt_api_keys
-- [`mainwp_default_emails_fields`](system-settings/index.md#mainwp-default-emails-fields) - Method get_defaults_email_settings_value().
+- [`mainwp_default_emails_fields`](system-settings/index.md#mainwp-default-emails-fields) - Get default email notifications values.
 - [`mainwp_default_settings_indicator`](system-settings/index.md#mainwp-default-settings-indicator) - Method render_not_default_indicator().
 - [`mainwp_default_template_locate`](updates-maintenance/index.md#mainwp-default-template-locate) - Render the email notification edit form.
 - [`mainwp_default_template_source_dir`](updates-maintenance/index.md#mainwp-default-template-source-dir) - Locate a template and return the path for inclusion.
-- [`mainwp_delete_key_file`](site-management/index.md#mainwp-delete-key-file) - Method update_compatible_site_api_key
-- [`mainwp_delete_site`](site-management/index.md#mainwp-delete-site) - *Arguments*
+- [`mainwp_delete_key_file`](updates-maintenance/index.md#mainwp-delete-key-file) - Method update child api key.
+- [`mainwp_delete_site`](site-management/index.md#mainwp-delete-site) - This action is documented in pages\page-mainwp-manage-sites-handler.php
 - [`mainwp_detect_premium_plugins_update`](updates-maintenance/index.md#mainwp-detect-premium-plugins-update) - Filter: mainwp_detect_premium_plugins_update
 - [`mainwp_detect_premium_themes_update`](updates-maintenance/index.md#mainwp-detect-premium-themes-update) - Filter: mainwp_detect_premium_themes_update
 - [`mainwp_detect_premiums_updates`](updates-maintenance/index.md#mainwp-detect-premiums-updates) - Filter: mainwp_detect_premiums_updates
@@ -354,14 +353,13 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_edit_posts_before_submit_button`](content-management/index.md#mainwp-edit-posts-before-submit-button) - Action: mainwp_edit_posts_before_submit_button
 - [`mainwp_encrypt_key_value`](api-remote/index.md#mainwp-encrypt-key-value) - Method encrypt_api_keys
 - [`mainwp_enqueue_script_gridster`](content-management/index.md#mainwp-enqueue-script-gridster) - Method admin_init()
-- [`mainwp_escape_content`](content-management/index.md#mainwp-escape-content) - Handles the saving item.
+- [`mainwp_escape_content`](content-management/index.md#mainwp-escape-content) - Edit subscription Post
 - [`mainwp_extension_card_bottom`](extensions-integration/index.md#mainwp-extension-card-bottom) - Action: mainwp_extension_card_bottom
 - [`mainwp_extension_card_top`](extensions-integration/index.md#mainwp-extension-card-top) - Action: mainwp_extension_card_top
 - [`mainwp_extension_sites_edit_tablerow`](site-management/index.md#mainwp-extension-sites-edit-tablerow) - Method render_edit_site()
 - [`mainwp_extensions_help_item`](extensions-integration/index.md#mainwp-extensions-help-item) - Action: mainwp_extensions_help_item
 - [`mainwp_extensions_page_top_header`](content-management/index.md#mainwp-extensions-page-top-header) - Method render_header()
 - [`mainwp_extensions_top_header_after_tab`](ui-display/index.md#mainwp-extensions-top-header-after-tab) - Method render_header()
-- [`mainwp_favorites_enable_schedule_items_update`](updates-maintenance/index.md#mainwp-favorites-enable-schedule-items-update) - *Arguments*
 - [`mainwp_favorites_themes`](updates-maintenance/index.md#mainwp-favorites-themes) - Render the Themes table for the Install Themes Tab.
 - [`mainwp_fetch_uptime_chunk_size_urls`](security-monitoring/index.md#mainwp-fetch-uptime-chunk-size-urls) - Check uptime monitors.
 - [`mainwp_fetch_uptime_disable_check_multi_exec`](security-monitoring/index.md#mainwp-fetch-uptime-disable-check-multi-exec) - Apply disable check multi exec.
@@ -385,7 +383,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_getextensions`](extensions-integration/index.md#mainwp-getextensions) - Method init_menu()
 - [`mainwp_getmetaboxes`](ui-display/index.md#mainwp-getmetaboxes) - Method on_load_page_dashboard()
 - [`mainwp_getprimarybackup_activated`](backups-restoration/index.md#mainwp-getprimarybackup-activated) - Method admin_init()
-- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - Gets MainWP Set Options.
+- [`mainwp_getprimarybackup_methods`](backups-restoration/index.md#mainwp-getprimarybackup-methods) - This filter is documented in ../pages/page-mainwp-server-information-handler.php
 - [`mainwp_getsubpages_api_backups`](content-management/index.md#mainwp-getsubpages-api-backups) - This hook allows you to add extra sub pages to the client page via the 'mainwp_getsubpages_cost_tracker' filter.
 - [`mainwp_getsubpages_backups`](content-management/index.md#mainwp-getsubpages-backups) - Instantiate Legacy Backups Menu.
 - [`mainwp_getsubpages_client`](content-management/index.md#mainwp-getsubpages-client) - Method init_menu()
@@ -409,7 +407,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_header_right`](content-management/index.md#mainwp-header-right) - Filter: mainwp_header_right
 - [`mainwp_header_title`](content-management/index.md#mainwp-header-title) - Filter: mainwp_header_title
 - [`mainwp_help_sidebar_content`](content-management/index.md#mainwp-help-sidebar-content) - Action: mainwp_help_sidebar_content
-- [`mainwp_html_regression_largest_change_scope`](site-management/index.md#mainwp-html-regression-largest-change-scope) - *Arguments*
+- [`mainwp_html_regression_largest_change_scope`](updates-maintenance/index.md#mainwp-html-regression-largest-change-scope) - Method mainwp_upgrade_plugintheme()
 - [`mainwp_http_check_email_footer`](security-monitoring/index.md#mainwp-http-check-email-footer) - HTTP Check Email Footer
 - [`mainwp_http_check_email_header`](security-monitoring/index.md#mainwp-http-check-email-header) - HTTP Check Email Header
 - [`mainwp_import_users_modal_bottom`](user-management/index.md#mainwp-import-users-modal-bottom) - Action: mainwp_import_users_modal_bottom
@@ -440,7 +438,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_limit_updates_all`](updates-maintenance/index.md#mainwp-limit-updates-all) - Limits number of updates to process.
 - [`mainwp_load_text_domain`](updates-maintenance/index.md#mainwp-load-text-domain) - Method localization()
 - [`mainwp_locate_template`](misc/index.md#mainwp-locate-template) - Filer: mainwp_locate_template
-- [`mainwp_log_action`](misc/index.md#mainwp-log-action) - Schedules a purge of records.
+- [`mainwp_log_action`](misc/index.md#mainwp-log-action) - Debugging log.
 - [`mainwp_log_do_to_db`](ui-display/index.md#mainwp-log-do-to-db) - Method log_to_db()
 - [`mainwp_log_specific`](misc/index.md#mainwp-log-specific) - MainWP_Logger constructor.
 - [`mainwp_log_specific_actions`](content-management/index.md#mainwp-log-specific-actions) - Renders action logs page.
@@ -449,7 +447,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_log_to_db_data`](ui-display/index.md#mainwp-log-to-db-data) - Method log_to_db()
 - [`mainwp_log_to_db_priority`](ui-display/index.md#mainwp-log-to-db-priority) - Method log_to_db()
 - [`mainwp_logger_keep_days`](security-monitoring/index.md#mainwp-logger-keep-days) - Method check_log_daily()
-- [`mainwp_logger_to_db`](misc/index.md#mainwp-logger-to-db) - Method log()
+- [`mainwp_logger_to_db`](content-management/index.md#mainwp-logger-to-db) - Renders action logs page.
 - [`mainwp_logs_manage_table_bottom`](ui-display/index.md#mainwp-logs-manage-table-bottom) - Action: mainwp_logs_widget_bottom
 - [`mainwp_logs_manage_table_top`](ui-display/index.md#mainwp-logs-manage-table-top) - Action: mainwp_logs_manage_table_top
 - [`mainwp_logs_widget_bottom`](ui-display/index.md#mainwp-logs-widget-bottom) - Action: mainwp_logs_widget_bottom
@@ -487,9 +485,9 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_manage_posts_sidebar_bottom`](content-management/index.md#mainwp-manage-posts-sidebar-bottom) - Action: mainwp_manage_posts_sidebar_bottom
 - [`mainwp_manage_posts_sidebar_top`](content-management/index.md#mainwp-manage-posts-sidebar-top) - Action: mainwp_manage_posts_sidebar_top
 - [`mainwp_manage_sites_action`](site-management/index.md#mainwp-manage-sites-action) - Action: mainwp_manage_sites_action
-- [`mainwp_manage_sites_edit`](site-management/index.md#mainwp-manage-sites-edit) - Edit site
+- [`mainwp_manage_sites_edit`](site-management/index.md#mainwp-manage-sites-edit) - This action is documented in ../pages/page-mainwp-manage-sites.php
 - [`mainwp_manage_sites_email_settings`](site-management/index.md#mainwp-manage-sites-email-settings) - Action: mainwp_manage_sites_email_settings
-- [`mainwp_manage_sites_force_use_ipv4`](site-management/index.md#mainwp-manage-sites-force-use-ipv4) - Method check_site()
+- [`mainwp_manage_sites_force_use_ipv4`](site-management/index.md#mainwp-manage-sites-force-use-ipv4) - Method mainwp_testwp()
 - [`mainwp_manage_sites_navigation_items`](site-management/index.md#mainwp-manage-sites-navigation-items) - Method render_managesites_header()
 - [`mainwp_manage_sites_optimize_loading`](site-management/index.md#mainwp-manage-sites-optimize-loading) - Method render_all_sites()
 - [`mainwp_manage_sites_table_columns_defs`](site-management/index.md#mainwp-manage-sites-table-columns-defs) - Display the table.
@@ -593,12 +591,12 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_page_navigation`](content-management/index.md#mainwp-page-navigation) - Filter: mainwp_page_navigation
 - [`mainwp_page_navigation_menu`](content-management/index.md#mainwp-page-navigation-menu) - Method render_page_navigation()
 - [`mainwp_pagefooter_extensions`](content-management/index.md#mainwp-pagefooter-extensions) - Method render_extensions_groups()
-- [`mainwp_pagefooter_settings`](content-management/index.md#mainwp-pagefooter-settings) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_pagefooter_sites`](content-management/index.md#mainwp-pagefooter-sites) - This action is documented in ../pages/page-mainwp-manage-sites.php
+- [`mainwp_pagefooter_settings`](content-management/index.md#mainwp-pagefooter-settings) - Render settings
+- [`mainwp_pagefooter_sites`](content-management/index.md#mainwp-pagefooter-sites) - Render Tabs.
 - [`mainwp_pagefooter_tags`](content-management/index.md#mainwp-pagefooter-tags) - Sites Page Footer
 - [`mainwp_pageheader_extensions`](content-management/index.md#mainwp-pageheader-extensions) - Method render_extensions_groups()
-- [`mainwp_pageheader_settings`](content-management/index.md#mainwp-pageheader-settings) - This action is documented in ../pages/page-mainwp-manage-sites.php
-- [`mainwp_pageheader_sites`](content-management/index.md#mainwp-pageheader-sites) - This action is documented in ../pages/page-mainwp-manage-sites.php
+- [`mainwp_pageheader_settings`](content-management/index.md#mainwp-pageheader-settings) - Render settings
+- [`mainwp_pageheader_sites`](content-management/index.md#mainwp-pageheader-sites) - Render Tabs.
 - [`mainwp_pageheader_tags`](content-management/index.md#mainwp-pageheader-tags) - Sites Page header
 - [`mainwp_pages_actions_bar_left`](content-management/index.md#mainwp-pages-actions-bar-left) - Action: mainwp_pages_actions_bar_left
 - [`mainwp_pages_actions_bar_right`](content-management/index.md#mainwp-pages-actions-bar-right) - Action: mainwp_pages_actions_bar_right
@@ -634,7 +632,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_post_created`](content-management/index.md#mainwp-post-created) - Method posting_bulk_handler()
 - [`mainwp_post_posting_page`](content-management/index.md#mainwp-post-posting-page) - Posting page
 - [`mainwp_post_posting_post`](content-management/index.md#mainwp-post-posting-post) - Posting post
-- [`mainwp_posting_bulkpost_post_status`](content-management/index.md#mainwp-posting-bulkpost-post-status) - Page status
+- [`mainwp_posting_bulkpost_post_status`](content-management/index.md#mainwp-posting-bulkpost-post-status) - Post status
 - [`mainwp_posting_post_selected_by`](content-management/index.md#mainwp-posting-post-selected-by) - Method posting_posts()
 - [`mainwp_posting_post_selected_sites`](content-management/index.md#mainwp-posting-post-selected-sites) - Method posting_posts()
 - [`mainwp_posting_selected_clients`](content-management/index.md#mainwp-posting-selected-clients) - Method posting_posts()
@@ -684,7 +682,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_recent_posts_before_pending_list`](content-management/index.md#mainwp-recent-posts-before-pending-list) - Action: mainwp_recent_posts_before_pending_list
 - [`mainwp_recent_posts_before_publised_list`](content-management/index.md#mainwp-recent-posts-before-publised-list) - Action: mainwp_recent_posts_before_publised_list
 - [`mainwp_recent_posts_before_trash_list`](content-management/index.md#mainwp-recent-posts-before-trash-list) - Action: mainwp_recent_posts_before_trash_list
-- [`mainwp_recent_posts_pages_number`](content-management/index.md#mainwp-recent-posts-pages-number) - Sets number of recent posts & pages
+- [`mainwp_recent_posts_pages_number`](content-management/index.md#mainwp-recent-posts-pages-number) - This filter is documented in ../widgets/widget-mainwp-recent-posts.php
 - [`mainwp_recent_posts_widget_bottom`](content-management/index.md#mainwp-recent-posts-widget-bottom) - Action: mainwp_recent_posts_widget_bottom
 - [`mainwp_recent_posts_widget_title`](content-management/index.md#mainwp-recent-posts-widget-title) - *Arguments*
 - [`mainwp_recent_posts_widget_top`](content-management/index.md#mainwp-recent-posts-widget-top) - Action: mainwp_recent_posts_widget_top
@@ -711,7 +709,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_rest_prepare_cost`](api-remote/index.md#mainwp-rest-prepare-cost) - Filter product reviews object returned from the REST API.
 - [`mainwp_rest_prepare_site`](api-remote/index.md#mainwp-rest-prepare-site) - Filterobject returned from the REST API.
 - [`mainwp_rest_routes_clients_controller_filter_allowed_fields_by_context`](client-reports/index.md#mainwp-rest-routes-clients-controller-filter-allowed-fields-by-context) - Get client by tag id.
-- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](site-management/index.md#mainwp-rest-routes-sites-controller-filter-allowed-fields-by-context) - *Arguments*
+- [`mainwp_rest_routes_sites_controller_filter_allowed_fields_by_context`](site-management/index.md#mainwp-rest-routes-sites-controller-filter-allowed-fields-by-context) - Get sites by tag id.
 - [`mainwp_rest_routes_sites_controller_get_allowed_fields_by_context`](site-management/index.md#mainwp-rest-routes-sites-controller-get-allowed-fields-by-context) - *Arguments*
 - [`mainwp_rest_{$type}_object_query`](api-remote/index.md#mainwp-rest-type-object-query) - Filter the query arguments for a request.
 - [`mainwp_save_bulkpage`](content-management/index.md#mainwp-save-bulkpage) - Action: mainwp_save_bulkpage
@@ -719,11 +717,11 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_screen_options_modal_bottom`](ui-display/index.md#mainwp-screen-options-modal-bottom) - Action: mainwp_screen_options_modal_bottom
 - [`mainwp_screen_options_modal_top`](ui-display/index.md#mainwp-screen-options-modal-top) - Action: mainwp_screen_options_modal_top
 - [`mainwp_screen_options_pulse_control`](ui-display/index.md#mainwp-screen-options-pulse-control) - Method render_header_actions()
-- [`mainwp_secure_request`](security-monitoring/index.md#mainwp-secure-request) - Method admin_init()
+- [`mainwp_secure_request`](security-monitoring/index.md#mainwp-secure-request) - Method security_nonce().
 - [`mainwp_security_issues_list_item_column`](security-monitoring/index.md#mainwp-security-issues-list-item-column) - Action: mainwp_security_issues_list_item_column
 - [`mainwp_security_issues_list_item_title`](security-monitoring/index.md#mainwp-security-issues-list-item-title) - *Arguments*
 - [`mainwp_security_issues_list_item_title_url`](security-monitoring/index.md#mainwp-security-issues-list-item-title-url) - *Arguments*
-- [`mainwp_security_issues_stats`](security-monitoring/index.md#mainwp-security-issues-stats) - Filters security issues
+- [`mainwp_security_issues_stats`](security-monitoring/index.md#mainwp-security-issues-stats) - This filter is documented in ../pages/page-mainwp-security-issues.php
 - [`mainwp_security_issues_widget_bottom`](security-monitoring/index.md#mainwp-security-issues-widget-bottom) - Action: mainwp_security_issues_widget_bottom
 - [`mainwp_security_issues_widget_title`](security-monitoring/index.md#mainwp-security-issues-widget-title) - *Arguments*
 - [`mainwp_security_issues_widget_top`](security-monitoring/index.md#mainwp-security-issues-widget-top) - Action: mainwp_security_issues_widget_top
@@ -744,7 +742,6 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_sidebar_pages`](content-management/index.md#mainwp-sidebar-pages) - Method render_header_actions()
 - [`mainwp_site_actions_saved_days_number`](site-management/index.md#mainwp-site-actions-saved-days-number) - Method sync_site()
 - [`mainwp_site_added`](site-management/index.md#mainwp-site-added) - Fires immediately after a new website is added.
-- [`mainwp_site_changes_table_pages_length`](site-management/index.md#mainwp-site-changes-table-pages-length) - Display the table.
 - [`mainwp_site_deleted`](site-management/index.md#mainwp-site-deleted) - *Arguments*
 - [`mainwp_site_health_monitoring_email_footer`](site-management/index.md#mainwp-site-health-monitoring-email-footer) - Site Health Monitoring Email Footer
 - [`mainwp_site_health_monitoring_email_header`](site-management/index.md#mainwp-site-health-monitoring-email-header) - Site Health Monitoring Email Header
@@ -906,7 +903,7 @@ This section provides documentation for all filters hooks available in the MainW
 - [`mainwp_uptime_monitoring_timeout_values`](security-monitoring/index.md#mainwp-uptime-monitoring-timeout-values) - Method get_timeout_values
 - [`mainwp_uptime_monitoring_update_monitor_data`](updates-maintenance/index.md#mainwp-uptime-monitoring-update-monitor-data) - Method handle_save_settings
 - [`mainwp_uptime_monitoring_uptime_data`](security-monitoring/index.md#mainwp-uptime-monitoring-uptime-data) - Method handle response fetch uptime.
-- [`mainwp_user_action`](user-management/index.md#mainwp-user-action) - Fires immediately after new user action.
+- [`mainwp_user_action`](user-management/index.md#mainwp-user-action) - Fires immediately after user action.
 - [`mainwp_users_actions_bar_left`](user-management/index.md#mainwp-users-actions-bar-left) - Users actions bar (left)
 - [`mainwp_users_actions_bar_right`](user-management/index.md#mainwp-users-actions-bar-right) - Users actions bar (right)
 - [`mainwp_users_bulk_action`](user-management/index.md#mainwp-users-bulk-action) - Action: mainwp_users_bulk_action

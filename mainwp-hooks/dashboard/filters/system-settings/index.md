@@ -22,7 +22,7 @@ Hooks related to general settings and system configuration.
 - [`mainwp_before_save_general_settings`](#mainwp-before-save-general-settings) - Action: mainwp_before_save_general_settings
 - [`mainwp_before_wp_config_section`](#mainwp-before-wp-config-section) - Action: mainwp_before_wp_config_section
 - [`mainwp_clear_and_lock_options`](#mainwp-clear-and-lock-options) - Clean and Lock extension options
-- [`mainwp_default_emails_fields`](#mainwp-default-emails-fields) - Method get_defaults_email_settings_value().
+- [`mainwp_default_emails_fields`](#mainwp-default-emails-fields) - Get default email notifications values.
 - [`mainwp_default_settings_indicator`](#mainwp-default-settings-indicator) - Method render_not_default_indicator().
 - [`mainwp_init_load_all_options`](#mainwp-init-load-all-options) - Method load_all_options()
 - [`mainwp_log_system_query`](#mainwp-log-system-query) - Method log_system_query
@@ -134,7 +134,7 @@ Fires after save email settings.
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$settings_emails` |  |
+`$emails_settings` |  |
 
 **Changelog**
 
@@ -145,7 +145,7 @@ Version | Description
 **Usage Locations:**
 
 - [class/class-mainwp-notification-settings.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php), [line 87](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php#L87)
-- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1918](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1918)
+- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1911](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1911)
 
 ---
 
@@ -189,7 +189,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1645](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1645)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1639](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1639)
 
 ---
 
@@ -230,8 +230,7 @@ Fires before save email settings.
 Argument | Type | Description
 -------- | ---- | -----------
 `$type` |  | 
-`$update_settings` |  | 
-`$website` |  |
+`$update_settings` |  |
 
 **Changelog**
 
@@ -242,7 +241,7 @@ Version | Description
 **Usage Locations:**
 
 - [class/class-mainwp-notification-settings.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php), [line 76](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-notification-settings.php#L76)
-- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1905](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1905)
+- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1898](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1898)
 
 ---
 
@@ -286,7 +285,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1607](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1607)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1601](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1601)
 
 ---
 
@@ -312,7 +311,7 @@ Argument | Type | Description
 <a id='mainwp-default-emails-fields'></a>
 ### `mainwp_default_emails_fields`
 
-* Method get_defaults_email_settings_value().
+* Get default email notifications values.
 
 **Arguments**
 
@@ -320,9 +319,9 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 `$recipients` |  | 
-`$type` | `string` | setting type to get default value.
-`$field` | `string` | setting field to get default value.
-`$general` | `bool` | general setting.
+`$type` | `string` | Email type.
+`$field` | `string` | Field name.
+`$general` | `bool` | General or individual site settings.
 
 **Arguments**
 
@@ -330,9 +329,9 @@ Argument | Type | Description
 -------- | ---- | -----------
 `array()` |  | 
 `$recipients` |  | 
-`$type` | `string` | setting type to get default value.
-`$field` | `string` | setting field to get default value.
-`$general` | `bool` | general setting.
+`$type` | `string` | Email type.
+`$field` | `string` | Field name.
+`$general` | `bool` | General or individual site settings.
 
 **Usage Locations:**
 
@@ -415,7 +414,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-db.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db.php), [line 3281](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db.php#L3281)
+- [class/class-mainwp-db.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db.php), [line 3242](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-db.php#L3242)
 
 ---
 

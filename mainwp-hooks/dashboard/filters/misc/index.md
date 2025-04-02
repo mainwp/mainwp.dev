@@ -44,7 +44,7 @@ Miscellaneous hooks that don't fit into other categories.
 - [`mainwp_is_enable_schedule_job`](#mainwp-is-enable-schedule-job) - Method init_mainwp_cron()
 - [`mainwp_license_deactivated_alert_plain_text`](#mainwp-license-deactivated-alert-plain-text) - Method cron_deactivated_licenses_alert()
 - [`mainwp_locate_template`](#mainwp-locate-template) - Filer: mainwp_locate_template
-- [`mainwp_log_action`](#mainwp-log-action) - Schedules a purge of records.
+- [`mainwp_log_action`](#mainwp-log-action) - Debugging log.
 - [`mainwp_log_specific`](#mainwp-log-specific) - MainWP_Logger constructor.
 - [`mainwp_log_status`](#mainwp-log-status) - MainWP_Logger constructor.
 - [`mainwp_logger_to_db`](#mainwp-logger-to-db) - Method log()
@@ -129,7 +129,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1534](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1534)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1528](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1528)
 
 ---
 
@@ -816,21 +816,17 @@ Version | Description
 <a id='mainwp-log-action'></a>
 ### `mainwp_log_action`
 
-* Schedules a purge of records.
+* Debugging log.
+
+Sets logging for debugging purpose.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'module log :: purge logs schedule start.'` |  | 
-`MainWP_Logger::LOGS_AUTO_PURGE_LOG_PRIORITY` |  |
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`'module log :: purge logs schedule start.'` |  | 
-`MainWP_Logger::LOGS_AUTO_PURGE_LOG_PRIORITY` |  |
+`'API Backups :: ' . $message` |  | 
+`MainWP_Logger::API_BACKUPS_LOG_PRIORITY` |  | 
+`$log_color` | `int` | Log color.
 
 **Usage Locations:**
 

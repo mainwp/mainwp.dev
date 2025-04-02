@@ -138,15 +138,15 @@ Version | Description
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$inserted` |  | 
-`$new_suspended` | `bool` | true\|false.
+`$client` | `object` | client data.
+`$suspended` | `bool` | true\|false.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$inserted` |  | 
-`$new_suspended` | `bool` | true\|false.
+`$client` | `object` | client data.
+`$suspended` | `bool` | true\|false.
 
 **Changelog**
 
@@ -157,7 +157,7 @@ Version | Description
 **Usage Locations:**
 
 - [class/class-mainwp-post-handler.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-handler.php), [line 1111](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-post-handler.php#L1111)
-- [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 1371](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L1371)
+- [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 1353](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L1353)
 
 ---
 
@@ -964,7 +964,7 @@ Render second top header.
 
 **Usage Locations:**
 
-- [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 579](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L579)
+- [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 565](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L565)
 
 ---
 

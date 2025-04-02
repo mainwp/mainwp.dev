@@ -11,14 +11,14 @@ Hooks for backup creation, management, and restoration processes.
 ## Hooks in this Category
 
 - [`mainwp-getprimarybackup-activated`](#mainwp-getprimarybackup-activated) - Method admin_init()
-- [`mainwp-getprimarybackup-methods`](#mainwp-getprimarybackup-methods) - Gets MainWP Set Options.
+- [`mainwp-getprimarybackup-methods`](#mainwp-getprimarybackup-methods) - Method get_columns()
 - [`mainwp_add_backuptask`](#mainwp-add-backuptask) - Add backup task.
 - [`mainwp_ajax_add_action`](#mainwp-ajax-add-action) - Init ajax actions.
 - [`mainwp_backups_remote_settings`](#mainwp-backups-remote-settings) - Render Backup Options.
 - [`mainwp_backuptask_column_destination`](#mainwp-backuptask-column-destination) - Column Destination.
 - [`mainwp_backuptask_remotedestinations`](#mainwp-backuptask-remotedestinations) - Get backup tasks and site ID.
 - [`mainwp_getprimarybackup_activated`](#mainwp-getprimarybackup-activated) - Method admin_init()
-- [`mainwp_getprimarybackup_methods`](#mainwp-getprimarybackup-methods) - Gets MainWP Set Options.
+- [`mainwp_getprimarybackup_methods`](#mainwp-getprimarybackup-methods) - This filter is documented in ../pages/page-mainwp-server-information-handler.php
 
 ---
 
@@ -48,15 +48,9 @@ Argument | Type | Description
 <a id='mainwp-getprimarybackup-methods'></a>
 ### `mainwp-getprimarybackup-methods`
 
-* Gets MainWP Set Options.
+* Method get_columns()
 
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`array($primary_methods)` |  | 
-`'4.0.7.2'` |  | 
-`'mainwp_getprimarybackup_methods'` |  |
+Combine all columns.
 
 **Arguments**
 
@@ -220,7 +214,7 @@ Argument | Type | Description
 <a id='mainwp-getprimarybackup-methods'></a>
 ### `mainwp_getprimarybackup_methods`
 
-* Gets MainWP Set Options.
+* This filter is documented in ../pages/page-mainwp-server-information-handler.php
 
 **Arguments**
 

@@ -238,7 +238,7 @@ Argument | Type | Description
 
 * Get Child Site Stats.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 141](class/class-mainwp-child-stats.php#L141-L358)
+Source: [./sources/mainwp-child/class/class-mainwp-child-stats.php](class/class-mainwp-child-stats.php), [line 141](class/class-mainwp-child-stats.php#L141-L358)
 
 **Usage Locations:**
 
@@ -364,7 +364,7 @@ Argument | Type | Description
 
 * Purge Nginx Helper cache.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 716](class/class-mainwp-child-cache-purge.php#L716-L729)
+Source: [./sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 716](class/class-mainwp-child-cache-purge.php#L716-L729)
 
 **Usage Locations:**
 
@@ -608,7 +608,7 @@ The login process handler.
 
 * Purge WP Fastest Cache.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 818](class/class-mainwp-child-cache-purge.php#L818-L831)
+Source: [./sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 818](class/class-mainwp-child-cache-purge.php#L818-L831)
 
 **Usage Locations:**
 

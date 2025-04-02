@@ -194,7 +194,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1543](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1543)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1537](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1537)
 
 ---
 
@@ -399,7 +399,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1187](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1187)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1181](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1181)
 
 ---
 
@@ -418,7 +418,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1507](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1507)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1501](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1501)
 
 ---
 
@@ -433,13 +433,13 @@ Fires at the bottom of the Overview page (after the last widget).
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'dashboard'` |  |
+`'insights'` |  |
 
 **Changelog**
 
 Version | Description
 ------- | -----------
-`4.1` |
+`4.6` |
 
 **Usage Locations:**
 
@@ -541,7 +541,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1455](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1455)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1449](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1449)
 
 ---
 
@@ -577,13 +577,13 @@ Fires at the top of the Overview page (before first widget).
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'dashboard'` |  |
+`'insights'` |  |
 
 **Changelog**
 
 Version | Description
 ------- | -----------
-`4.1` |
+`4.6` |
 
 **Usage Locations:**
 
@@ -697,7 +697,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1143](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1143)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1137](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1137)
 
 ---
 
@@ -722,7 +722,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1161](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1161)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1155](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1155)
 
 ---
 
@@ -860,7 +860,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1408](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1408)
+- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1401](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1401)
 
 ---
 
@@ -1004,7 +1004,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [modules/logs/pages/page-log-manage-insights-events-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php), [line 201](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php#L201)
+- [modules/logs/pages/page-log-manage-insights-events-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php), [line 200](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php#L200)
 
 ---
 
@@ -1029,7 +1029,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [modules/logs/pages/page-log-manage-insights-events-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php), [line 187](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php#L187)
+- [modules/logs/pages/page-log-manage-insights-events-page.php](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php), [line 186](https://github.com/mainwp/mainwp/blob/master/modules/logs/pages/page-log-manage-insights-events-page.php#L186)
 
 ---
 
@@ -1044,7 +1044,7 @@ Fires at the bottom of the widget.
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'core'` |  |
+`'users'` |  |
 
 **Changelog**
 
@@ -1083,7 +1083,7 @@ Fires at the top of the widget.
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'core'` |  |
+`'users'` |  |
 
 **Changelog**
 
@@ -1824,7 +1824,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1461](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1461)
+- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 1454](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L1454)
 - [pages/page-mainwp-overview.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php), [line 230](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-overview.php#L230)
 
 ---
@@ -2121,7 +2121,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1976](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1976)
+- [class/class-mainwp-manage-sites-list-table.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php), [line 1971](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-list-table.php#L1971)
 
 ---
 

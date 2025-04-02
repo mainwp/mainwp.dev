@@ -75,7 +75,6 @@ Hooks for managing updates to plugins, themes, and WordPress core.
 - [`mainwp_detect_premium_plugins_update`](#mainwp-detect-premium-plugins-update) - Filter: mainwp_detect_premium_plugins_update
 - [`mainwp_detect_premium_themes_update`](#mainwp-detect-premium-themes-update) - Filter: mainwp_detect_premium_themes_update
 - [`mainwp_detect_premiums_updates`](#mainwp-detect-premiums-updates) - Filter: mainwp_detect_premiums_updates
-- [`mainwp_favorites_enable_schedule_items_update`](#mainwp-favorites-enable-schedule-items-update) - *Arguments*
 - [`mainwp_favorites_themes`](#mainwp-favorites-themes) - Render the Themes table for the Install Themes Tab.
 - [`mainwp_forced_get_plugin_theme_icon`](#mainwp-forced-get-plugin-theme-icon) - Gets a plugin icon via API from WordPress.org
 - [`mainwp_get_plugin_theme_icon`](#mainwp-get-plugin-theme-icon) - Gets a plugin icon via API from WordPress.org
@@ -538,7 +537,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1850](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1850)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1844](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1844)
 
 ---
 
@@ -601,8 +600,8 @@ Fires before plugin/theme/translation update actions.
 Argument | Type | Description
 -------- | ---- | -----------
 `$information` |  | 
-`$type` |  | 
-`$list_items` |  | 
+`'plugin'` |  | 
+`implode(',', $pluginsToUpdateNow)` |  | 
 `$website` |  |
 
 **Changelog**
@@ -613,12 +612,12 @@ Version | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 671](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L671)
-- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 760](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L760)
-- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 841](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L841)
+- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 672](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L672)
+- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 761](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L761)
+- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 842](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L842)
 - [class/class-mainwp-cron-jobs-batch.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-batch.php), [line 274](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-batch.php#L274)
 - [class/class-mainwp-cron-jobs-batch.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-batch.php), [line 343](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-batch.php#L343)
-- [class/class-mainwp-hooks.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php), [line 1449](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php#L1449)
+- [class/class-mainwp-hooks.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php), [line 1445](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php#L1445)
 - [pages/page-mainwp-updates-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-updates-handler.php), [line 1162](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-updates-handler.php#L1162)
 
 ---
@@ -1107,7 +1106,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1785](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1785)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1779](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1779)
 
 ---
 
@@ -1168,8 +1167,8 @@ Fires before plugin/theme/translation update actions.
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$type` |  | 
-`$list_items` |  | 
+`'plugin'` |  | 
+`implode(',', $pluginsToUpdateNow)` |  | 
 `$website` |  |
 
 **Changelog**
@@ -1180,12 +1179,12 @@ Version | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 647](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L647)
-- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 734](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L734)
-- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 816](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L816)
+- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 648](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L648)
+- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 735](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L735)
+- [class/class-mainwp-cron-jobs-auto-updates.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php), [line 817](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-auto-updates.php#L817)
 - [class/class-mainwp-cron-jobs-batch.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-batch.php), [line 252](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-batch.php#L252)
 - [class/class-mainwp-cron-jobs-batch.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-batch.php), [line 316](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-cron-jobs-batch.php#L316)
-- [class/class-mainwp-hooks.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php), [line 1431](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php#L1431)
+- [class/class-mainwp-hooks.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php), [line 1427](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-hooks.php#L1427)
 - [pages/page-mainwp-updates-handler.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-updates-handler.php), [line 1144](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-updates-handler.php#L1144)
 
 ---
@@ -1543,7 +1542,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 1358](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L1358)
+- [pages/page-mainwp-client.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php), [line 1340](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-client.php#L1340)
 
 ---
 
@@ -1704,7 +1703,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 1652](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L1652)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 1654](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L1654)
 
 ---
 
@@ -1807,27 +1806,6 @@ Argument | Type | Description
 **Usage Locations:**
 
 - [class/class-mainwp-premium-update.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-premium-update.php), [line 90](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-premium-update.php#L90)
-
----
-
-<a id='mainwp-favorites-enable-schedule-items-update'></a>
-### `mainwp_favorites_enable_schedule_items_update`
-
-* *Arguments*
-
-Argument | Type | Description
--------- | ---- | -----------
-`true` |  |
-
-**Arguments**
-
-Argument | Type | Description
--------- | ---- | -----------
-`true` |  |
-
-**Usage Locations:**
-
-- [class/class-mainwp-uptime-monitoring-schedule.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-schedule.php), [line 57](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-schedule.php#L57)
 
 ---
 
@@ -2205,7 +2183,7 @@ Version | Description
 
 * Render the Themes table for the Install Themes Tab.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-themes.php](pages/page-mainwp-themes.php), [line 1732](pages/page-mainwp-themes.php#L1732-L1926)
+Source: [./sources/mainwp-dashboard/pages/page-mainwp-themes.php](pages/page-mainwp-themes.php), [line 1732](pages/page-mainwp-themes.php#L1732-L1926)
 
 **Usage Locations:**
 
@@ -3911,7 +3889,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 2010](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L2010)
+- [pages/page-mainwp-manage-sites.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php), [line 2003](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-manage-sites.php#L2003)
 
 ---
 
@@ -3960,7 +3938,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 2359](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L2359)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 2361](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L2361)
 
 ---
 
@@ -5416,7 +5394,7 @@ Updates actions top content.
 
 Argument | Type | Description
 -------- | ---- | -----------
-`$current_tab` |  |
+`$active_tab` |  |
 
 **Changelog**
 

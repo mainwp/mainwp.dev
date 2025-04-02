@@ -30,11 +30,11 @@ Hooks related to security checks, uptime monitoring, and site health.
 - [`mainwp_monitoring_sitestable_prepare_extra_view`](#mainwp-monitoring-sitestable-prepare-extra-view) - Prepair the items to be listed.
 - [`mainwp_monitoring_sitestable_prepared_items`](#mainwp-monitoring-sitestable-prepared-items) - Action: mainwp_monitoring_sitestable_prepared_items
 - [`mainwp_monitoring_table_features`](#mainwp-monitoring-table-features) - Filter: mainwp_monitoring_table_features
-- [`mainwp_secure_request`](#mainwp-secure-request) - Method admin_init()
+- [`mainwp_secure_request`](#mainwp-secure-request) - Method security_nonce().
 - [`mainwp_security_issues_list_item_column`](#mainwp-security-issues-list-item-column) - Action: mainwp_security_issues_list_item_column
 - [`mainwp_security_issues_list_item_title`](#mainwp-security-issues-list-item-title) - *Arguments*
 - [`mainwp_security_issues_list_item_title_url`](#mainwp-security-issues-list-item-title-url) - *Arguments*
-- [`mainwp_security_issues_stats`](#mainwp-security-issues-stats) - Filters security issues
+- [`mainwp_security_issues_stats`](#mainwp-security-issues-stats) - This filter is documented in ../pages/page-mainwp-security-issues.php
 - [`mainwp_security_issues_widget_bottom`](#mainwp-security-issues-widget-bottom) - Action: mainwp_security_issues_widget_bottom
 - [`mainwp_security_issues_widget_title`](#mainwp-security-issues-widget-title) - *Arguments*
 - [`mainwp_security_issues_widget_top`](#mainwp-security-issues-widget-top) - Action: mainwp_security_issues_widget_top
@@ -78,7 +78,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 730](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L730)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 733](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L733)
 
 ---
 
@@ -99,7 +99,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 730](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L730)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 733](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L733)
 
 ---
 
@@ -512,16 +512,15 @@ Version | Description
 <a id='mainwp-secure-request'></a>
 ### `mainwp_secure_request`
 
-* Method admin_init()
+* Method security_nonce().
 
-Handles the uploading of a file.
+Handle security nonce.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'qq_nonce'` |  | 
-`'qq_nonce'` |  |
+`$action` | `string` | security action.
 
 **Usage Locations:**
 
@@ -610,23 +609,23 @@ Argument | Type | Description
 <a id='mainwp-security-issues-stats'></a>
 ### `mainwp_security_issues_stats`
 
-* Filters security issues
-
-Filters the default security checks and enables user to disable certain checks.
+* This filter is documented in ../pages/page-mainwp-security-issues.php
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
 `false` |  | 
-`$information` | `object` | Object containing data from che chid site related to security issues.<br>Available options: 'db_reporting', 'php_reporting'.
-`$website` | `object` | Object containing child site data.
+`$securityStats` |  | 
+`$pWebsite` |  |
 
-**Changelog**
+**Arguments**
 
-Version | Description
-------- | -----------
-`4.1` |
+Argument | Type | Description
+-------- | ---- | -----------
+`false` |  | 
+`$securityStats` |  | 
+`$pWebsite` |  |
 
 **Usage Locations:**
 
@@ -729,7 +728,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 772](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L772)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 775](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L775)
 
 ---
 
@@ -768,7 +767,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 792](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L792)
+- [class/class-mainwp-manage-sites-view.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php), [line 795](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-manage-sites-view.php#L795)
 
 ---
 
@@ -837,7 +836,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 705](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L705)
+- [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 708](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L708)
 
 ---
 
@@ -973,7 +972,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 734](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L734)
+- [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 737](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L737)
 
 ---
 
@@ -1063,7 +1062,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 767](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L767)
+- [class/class-mainwp-uptime-monitoring-edit.php](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php), [line 770](https://github.com/mainwp/mainwp/blob/master/class/class-mainwp-uptime-monitoring-edit.php#L770)
 
 ---
 

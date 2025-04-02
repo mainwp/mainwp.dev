@@ -350,7 +350,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 491](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L491)
+- [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 486](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L486)
 
 ---
 
@@ -371,7 +371,7 @@ Argument | Type | Description
 
 **Usage Locations:**
 
-- [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 491](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L491)
+- [class/class-mainwp-child-install.php](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php), [line 486](https://github.com/mainwp/mainwp-child/blob/master/class/class-mainwp-child-install.php#L486)
 
 ---
 
@@ -617,7 +617,7 @@ Argument | Type | Description
 
 * Purge Swis Performance plugin cache.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 369](class/class-mainwp-child-cache-purge.php#L369-L389)
+Source: [./sources/mainwp-child/class/class-mainwp-child-cache-purge.php](class/class-mainwp-child-cache-purge.php), [line 369](class/class-mainwp-child-cache-purge.php#L369-L389)
 
 **Usage Locations:**
 
@@ -676,7 +676,7 @@ Argument | Type | Description
 
 * Hide a single notice.
 
-Source: [../sources/mainwp-child/class/class-mainwp-child-db-updater-wc.php](class/class-mainwp-child-db-updater-wc.php), [line 222](class/class-mainwp-child-db-updater-wc.php#L222-L230)
+Source: [./sources/mainwp-child/class/class-mainwp-child-db-updater-wc.php](class/class-mainwp-child-db-updater-wc.php), [line 222](class/class-mainwp-child-db-updater-wc.php#L222-L230)
 
 **Usage Locations:**
 

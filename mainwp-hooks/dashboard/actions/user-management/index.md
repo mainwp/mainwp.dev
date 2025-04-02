@@ -50,7 +50,7 @@ Hooks related to user management, roles, and capabilities.
 - [`mainwp_manage_users_sidebar_top`](#mainwp-manage-users-sidebar-top) - Action: mainwp_manage_users_sidebar_top
 - [`mainwp_module_log_get_role_list_separator`](#mainwp-module-log-get-role-list-separator) - Tries to find a label for the record's user_role.
 - [`mainwp_new_user_password_complexity`](#mainwp-new-user-password-complexity) - Filter: mainwp_new_user_password_complexity
-- [`mainwp_user_action`](#mainwp-user-action) - Fires immediately after new user action.
+- [`mainwp_user_action`](#mainwp-user-action) - Fires immediately after user action.
 - [`mainwp_users_actions_bar_left`](#mainwp-users-actions-bar-left) - Users actions bar (left)
 - [`mainwp_users_actions_bar_right`](#mainwp-users-actions-bar-right) - Users actions bar (right)
 - [`mainwp_users_bulk_action`](#mainwp-users-bulk-action) - Action: mainwp_users_bulk_action
@@ -287,7 +287,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1896](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1896)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1890](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1890)
 
 ---
 
@@ -463,7 +463,7 @@ Version | Description
 
 **Usage Locations:**
 
-- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1873](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1873)
+- [pages/page-mainwp-server-information.php](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php), [line 1867](https://github.com/mainwp/mainwp/blob/master/pages/page-mainwp-server-information.php#L1867)
 
 ---
 
@@ -910,23 +910,27 @@ Argument | Type | Description
 <a id='mainwp-user-action'></a>
 ### `mainwp_user_action`
 
-* Fires immediately after new user action.
+* Fires immediately after user action.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
 `$website` |  | 
-`'created'` |  | 
-`$data` |  |
+`$pAction` |  | 
+`$data` |  | 
+`$extra` |  | 
+`$optimize` |  |
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
 `$website` |  | 
-`'created'` |  | 
-`$data` |  |
+`$pAction` |  | 
+`$data` |  | 
+`$extra` |  | 
+`$optimize` |  |
 
 **Changelog**
 
@@ -1133,7 +1137,7 @@ Argument | Type | Description
 
 * Renders Users Table.
 
-Source: [../sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 805](pages/page-mainwp-user.php#L805-L832)
+Source: [./sources/mainwp-dashboard/pages/page-mainwp-user.php](pages/page-mainwp-user.php), [line 805](pages/page-mainwp-user.php#L805-L832)
 
 **Usage Locations:**
 

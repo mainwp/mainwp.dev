@@ -18,7 +18,7 @@ Hooks for backup creation, management, and restoration processes.
 - [`itsec_has_external_backup`](#itsec-has-external-backup) - Check if backup exists.
 - [`itsec_scheduled_external_backup`](#itsec-scheduled-external-backup) - Check if there is a shedualed backup.
 - [`mainwp_backup`](#mainwp-backup) - Save backup stream.
-- [`mainwp_child_reports_log`](#mainwp-child-reports-log) - Backupbuddy Client Reports log.
+- [`mainwp_child_reports_log`](#mainwp-child-reports-log) - Add support for the reporting system.
 - [`mainwp_reports_backupbuddy_backup`](#mainwp-reports-backupbuddy-backup) - Create BackupBuddy Client Reports log.
 - [`mainwp_reports_backupwordpress_backup`](#mainwp-reports-backupwordpress-backup) - Add BackUpWordPress data to the reports database table.
 - [`mainwp_reports_backwpup_backup`](#mainwp-reports-backwpup-backup) - Create BackWPup MainWP Client Reports log.
@@ -230,19 +230,19 @@ Argument | Type | Description
 <a id='mainwp-child-reports-log'></a>
 ### `mainwp_child_reports_log`
 
-* Backupbuddy Client Reports log.
+* Add support for the reporting system.
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'backupbuddy'` |  |
+`'backupwordpress'` |  |
 
 **Arguments**
 
 Argument | Type | Description
 -------- | ---- | -----------
-`'backupbuddy'` |  |
+`'backupwordpress'` |  |
 
 **Usage Locations:**
 
