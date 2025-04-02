@@ -15,6 +15,9 @@ includes_dir: dox-theme/_includes
 sass:
   sass_dir: dox-theme/_sass
   style: compressed
+  load_paths:
+    - _sass
+    - dox-theme/_sass
 
 # Collections
 collections:
