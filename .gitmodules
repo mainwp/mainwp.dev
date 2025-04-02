@@ -1,2 +1,9 @@
-# This file is intentionally empty to prevent Git from treating directories as submodules
-# It helps avoid false positives in CI environments while maintaining a clean repository structure
+[submodule "sources/mainwp-child"]
+    path = sources/mainwp-child
+    url = https://github.com/mainwp/mainwp-child.git
+    ignore = dirty
+
+[submodule "sources/mainwp-dashboard"]
+    path = sources/mainwp-dashboard
+    url = https://github.com/mainwp/mainwp.git
+    ignore = dirty
