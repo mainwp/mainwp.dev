@@ -45,13 +45,13 @@ MainWP uses specific terminology to distinguish between different types of add-o
 
 Use this decision tree to determine whether you should build an Extension or an Integration:
 
-```mermaid
+<pre><code class="language-mermaid">
 flowchart TD
     A[Do you need to connect with\na third-party service or plugin?] -->|Yes| B[Integration]
     A -->|No| C[Extension]
     B --> D[Examples: WooCommerce Integration,\nGoogle Analytics Integration]
     C --> E[Examples: Advanced Uptime Monitor,\nAdvanced Reports Extension]
-```
+</code></pre>
 
 ## Who These Guides Are For
 
