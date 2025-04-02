@@ -72,27 +72,12 @@
           });
         </script>
 
-        <!-- Mermaid -->
+        <!-- Mermaid - Simple Implementation -->
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
         <script>
-          // Wait until the DOM is fully loaded
-          document.addEventListener("DOMContentLoaded", function() {
-            // Find all code blocks that have been marked as mermaid (Jekyll renders these with "language-mermaid")
-            var mermaidBlocks = document.querySelectorAll("pre code.language-mermaid");
-
-            mermaidBlocks.forEach(function(codeBlock) {
-              // Create a new div with class "mermaid"
-              var mermaidDiv = document.createElement("div");
-              mermaidDiv.className = "mermaid";
-              // Set its content to the text inside the code block
-              mermaidDiv.innerHTML = codeBlock.innerText;
-              // Replace the entire <pre> element (the parent of the <code>) with our new div
-              codeBlock.parentNode.parentNode.replaceChild(mermaidDiv, codeBlock.parentNode);
-            });
-
-            // Initialize Mermaid; this scans the document for elements with class "mermaid" and renders them
-            mermaid.initialize({ startOnLoad: true });
-          });
+          // Just initialize Mermaid with default settings
+          // This will find and render all elements with class="mermaid"
+          mermaid.initialize({ startOnLoad: true });
         </script>
 
         {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
