@@ -26,6 +26,7 @@ jobs:
           git config --global diff.ignoreSubmodules all
           git config --global fetch.recurseSubmodules false
           git config --global submodule.recurse false
+          git config --global submodule.active false
           echo "Git configuration:"
           git config --list
 
