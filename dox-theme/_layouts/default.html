@@ -72,17 +72,9 @@
           });
         </script>
 
-        <!-- Mermaid Implementation -->
+        <!-- Mermaid - Absolute Minimum Implementation -->
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            // First try standard initialization
-            mermaid.initialize({ startOnLoad: true });
-            
-            // If that doesn't work, explicitly run Mermaid
-            mermaid.run({ querySelector: '.mermaid' });
-          });
-        </script>
+        <script>mermaid.initialize({ startOnLoad: true });</script>
 
         {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
             <!-- Google Analytics -->
