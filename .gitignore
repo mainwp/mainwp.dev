@@ -28,6 +28,7 @@ build/
 dist/
 deploy/
 tmp/
+highlightdoc/
 
 # MainWP specific
 mainwp-hooks-old/

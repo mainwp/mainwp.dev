@@ -12,7 +12,7 @@
         <link rel="shortcut icon" href="{{ '/favicon.ico' | absolute_url }}" type="image/x-icon">
 
         <!-- Theme styles -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/dox-theme/assets/css/style.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
     </head>
     <body>
         {% include header.html %}
@@ -58,7 +58,8 @@
                             {% endif %}
                         </div>
                         <div class="c-post__content">
-                            {{ content }}
+                            {% assign content_with_hidden_h1 = content | replace_first: '<h1', '<div class="content-title" style="display: none;"' | replace_first: '</h1>', '</div>' %}
+                            {{ content_with_hidden_h1 }}
                         </div>
                         {% if page.previous or page.next %}
                             <div class="c-post__footer">
@@ -92,7 +93,7 @@
         <!-- Theme scripts -->
         <script src="{{ site.baseurl }}/dox-theme/assets/js/vendor/jquery.min.js" defer></script>
         <!-- Highlight.js -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/dox-theme/assets/css/style.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/php.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>

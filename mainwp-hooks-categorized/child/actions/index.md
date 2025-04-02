@@ -1,0 +1,127 @@
+# MainWP Child Actions
+
+This section provides documentation for all actions hooks available in the MainWP Child plugin.
+
+## Categories
+
+- [Backups & Restoration](backups-restoration/index.md) (20 hooks)
+- [Connection & Authentication](connection-authentication/index.md) (3 hooks)
+- [Content Handling](content-handling/index.md) (9 hooks)
+- [Security & Monitoring](security-monitoring/index.md) (13 hooks)
+- [System & Settings](system-settings/index.md) (4 hooks)
+- [Updates & Maintenance](updates-maintenance/index.md) (30 hooks)
+- [User Operations](user-operations/index.md) (4 hooks)
+- [Miscellaneous](misc/index.md) (27 hooks)
+
+## All Actions (Alphabetical)
+
+- [`active_plugins`](updates-maintenance/index.md#active-plugins) - *Arguments*
+- [`admin_enqueue_scripts`](security-monitoring/index.md#admin-enqueue-scripts) - Method is_asset_in_admin()
+- [`check_passwords`](security-monitoring/index.md#check-passwords) - Edit existing user.
+- [`check_requirements_auto_backup_wptc`](backups-restoration/index.md#check-requirements-auto-backup-wptc) - Save the WP Time Capsule settings - backups section.
+- [`comment_email`](content-handling/index.md#comment-email) - Get recent comments.
+- [`deprecated_hook_run`](misc/index.md#deprecated-hook-run) - Support old WP version 4.0.
+- [`error_log_mainwp_lines`](content-handling/index.md#error-log-mainwp-lines) - Render the error log content.
+- [`error_log_mainwp_logs`](content-handling/index.md#error-log-mainwp-logs) - Render the error log content.
+- [`get_backup_before_update_setting_wptc`](updates-maintenance/index.md#get-backup-before-update-setting-wptc) - Get backup process progress.
+- [`get_bbu_note_view`](backups-restoration/index.md#get-bbu-note-view) - Get backup process progress.
+- [`get_restore_to_staging_request_wptc`](backups-restoration/index.md#get-restore-to-staging-request-wptc) - Start the restore process.
+- [`gpi_check_status`](security-monitoring/index.md#gpi-check-status) - Method save_settings()
+- [`https_local_ssl_verify`](connection-authentication/index.md#https-local-ssl-verify) - *Arguments*
+- [`illegal_user_logins`](user-operations/index.md#illegal-user-logins) - Edit existing user.
+- [`is_any_staging_process_going_on`](backups-restoration/index.md#is-any-staging-process-going-on) - Get backup process progress.
+- [`is_restore_to_staging_wptc`](backups-restoration/index.md#is-restore-to-staging-wptc) - Start the restore process.
+- [`itsec_has_external_backup`](backups-restoration/index.md#itsec-has-external-backup) - Check if backup exists.
+- [`itsec_scheduled_external_backup`](backups-restoration/index.md#itsec-scheduled-external-backup) - Check if there is a shedualed backup.
+- [`mainwp-child-get-total-size`](updates-maintenance/index.md#mainwp-child-get-total-size) - Get total size of Child Site installation.
+- [`mainwp-child-init-subpages`](content-handling/index.md#mainwp-child-init-subpages) - Initiate MainWP Child Plugin pages.
+- [`mainwp-site-sync-others-data`](misc/index.md#mainwp-site-sync-others-data) - Get other stats data.
+- [`mainwp_backup`](backups-restoration/index.md#mainwp-backup) - Save backup stream.
+- [`mainwp_before_post_update`](updates-maintenance/index.md#mainwp-before-post-update) - Hook: `mainwp_before_post_update`
+- [`mainwp_branding_role_cap_enable_contact_form`](user-operations/index.md#mainwp-branding-role-cap-enable-contact-form) - Filter 'mainwp_branding_role_cap_enable_contact_form'
+- [`mainwp_child_actions_save_data`](user-operations/index.md#mainwp-child-actions-save-data) - Log handler.
+- [`mainwp_child_actions_saved_number_of_days`](security-monitoring/index.md#mainwp-child-actions-saved-number-of-days) - Method to check actions data.
+- [`mainwp_child_after_newpost`](content-handling/index.md#mainwp-child-after-newpost) - Build New Post.
+- [`mainwp_child_after_update`](updates-maintenance/index.md#mainwp-child-after-update) - Method to_update_plugins()
+- [`mainwp_child_authed_download_params`](connection-authentication/index.md#mainwp-child-authed-download-params) - Method where_authed_redirect()
+- [`mainwp_child_before_send_close_message`](misc/index.md#mainwp-child-before-send-close-message) - Action: process before send close message.
+- [`mainwp_child_before_send_feedback_message`](misc/index.md#mainwp-child-before-send-feedback-message) - Action: process send feedback message.
+- [`mainwp_child_before_update`](updates-maintenance/index.md#mainwp-child-before-update) - Method to_update_plugins()
+- [`mainwp_child_before_update_plugin_theme`](updates-maintenance/index.md#mainwp-child-before-update-plugin-theme) - Action before update plugin, theme.
+- [`mainwp_child_before_update_wp`](updates-maintenance/index.md#mainwp-child-before-update-wp) - Action before update WP.
+- [`mainwp_child_branding_init_options`](system-settings/index.md#mainwp-child-branding-init-options) - Filter 'mainwp_child_branding_init_options'
+- [`mainwp_child_contact_support_mail_headers`](misc/index.md#mainwp-child-contact-support-mail-headers) - Send support email.
+- [`mainwp_child_db_updater_sync_data`](updates-maintenance/index.md#mainwp-child-db-updater-sync-data) - Get sync data.
+- [`mainwp_child_deactivation`](updates-maintenance/index.md#mainwp-child-deactivation) - Method deactivation()
+- [`mainwp_child_extra_execution`](misc/index.md#mainwp-child-extra-execution) - Filter 'mainwp_child_extra_execution'
+- [`mainwp_child_forced_get_total_size`](updates-maintenance/index.md#mainwp-child-forced-get-total-size) - Get total size of Child Site installation.
+- [`mainwp_child_get_total_size`](updates-maintenance/index.md#mainwp-child-get-total-size) - Get total size of Child Site installation.
+- [`mainwp_child_hide_update_notice`](updates-maintenance/index.md#mainwp-child-hide-update-notice) - After admin bar render.
+- [`mainwp_child_init_subpages`](content-handling/index.md#mainwp-child-init-subpages) - Initiate MainWP Child Plugin pages.
+- [`mainwp_child_install_plugin_theme`](updates-maintenance/index.md#mainwp-child-install-plugin-theme) - Method after_installed()
+- [`mainwp_child_installPluginTheme`](updates-maintenance/index.md#mainwp-child-installplugintheme) - Method after_installed()
+- [`mainwp_child_mu_plugin_enabled`](updates-maintenance/index.md#mainwp-child-mu-plugin-enabled) - Method deactivation()
+- [`mainwp_child_plugin_action`](updates-maintenance/index.md#mainwp-child-plugin-action) - Method delete_plugins()
+- [`mainwp_child_plugin_health_check_max_plugins_to_batch`](updates-maintenance/index.md#mainwp-child-plugin-health-check-max-plugins-to-batch) - *Arguments*
+- [`mainwp_child_plugin_row_meta`](updates-maintenance/index.md#mainwp-child-plugin-row-meta) - MainWP Child Plugin meta data.
+- [`mainwp_child_reports_log`](misc/index.md#mainwp-child-reports-log) - Record BackWPup MainWP Child Reports log.
+- [`mainwp_child_reports_log`](backups-restoration/index.md#mainwp-child-reports-log) - Add support for the reporting system.
+- [`mainwp_child_reports_log`](system-settings/index.md#mainwp-child-reports-log) - Add support for the reporting system.
+- [`mainwp_child_site_stats`](misc/index.md#mainwp-child-site-stats) - Get Child Site Stats.
+- [`mainwp_child_theme_action`](updates-maintenance/index.md#mainwp-child-theme-action) - Method theme_action()
+- [`mainwp_child_theme_health_check_max_themes_to_batch`](updates-maintenance/index.md#mainwp-child-theme-health-check-max-themes-to-batch) - *Arguments*
+- [`mainwp_child_unique_id`](misc/index.md#mainwp-child-unique-id) - Method get_site_unique_id()
+- [`mainwp_child_woocom_get_data`](misc/index.md#mainwp-child-woocom-get-data) - Get Woocommerce reports old.
+- [`mainwp_child_woocom_report_data`](misc/index.md#mainwp-child-woocom-report-data) - Woocommerce report data.
+- [`mainwp_child_woocom_sync_data`](misc/index.md#mainwp-child-woocom-sync-data) - Sync Woocommerce data.
+- [`mainwp_create_post_custom_author`](connection-authentication/index.md#mainwp-create-post-custom-author) - Update post data.
+- [`mainwp_reports_backupbuddy_backup`](backups-restoration/index.md#mainwp-reports-backupbuddy-backup) - Create BackupBuddy Client Reports log.
+- [`mainwp_reports_backupwordpress_backup`](backups-restoration/index.md#mainwp-reports-backupwordpress-backup) - Add BackUpWordPress data to the reports database table.
+- [`mainwp_reports_backwpup_backup`](backups-restoration/index.md#mainwp-reports-backwpup-backup) - Create BackWPup MainWP Client Reports log.
+- [`mainwp_reports_maintenance`](updates-maintenance/index.md#mainwp-reports-maintenance) - Method maintenance_db()
+- [`mainwp_reports_sucuri_scan`](security-monitoring/index.md#mainwp-reports-sucuri-scan) - Save sucuri stream.
+- [`mainwp_reports_wordfence_scan`](security-monitoring/index.md#mainwp-reports-wordfence-scan) - Method do_reports_log()
+- [`mainwp_reports_wptimecapsule_backup`](backups-restoration/index.md#mainwp-reports-wptimecapsule-backup) - Add WP Time Capsule data to the reports database table.
+- [`mainwp_site_sync_others_data`](misc/index.md#mainwp-site-sync-others-data) - Get other stats data.
+- [`mwp_premium_perform_update`](updates-maintenance/index.md#mwp-premium-perform-update) - Method upgrade_plugin()
+- [`mwp_premium_update_check`](updates-maintenance/index.md#mwp-premium-update-check) - Check for premium updates.
+- [`mwp_premium_update_notification`](updates-maintenance/index.md#mwp-premium-update-notification) - Check for premium updates.
+- [`nonce_user_logged_out`](user-operations/index.md#nonce-user-logged-out) - Filter whether the user who generated the nonce is logged out.
+- [`phpmailer_init`](security-monitoring/index.md#phpmailer-init) - Check destination email.
+- [`plugins_api`](updates-maintenance/index.md#plugins-api) - Method to_update_plugins()
+- [`rt_nginx_helper_purge_all`](misc/index.md#rt-nginx-helper-purge-all) - Purge Nginx Helper cache.
+- [`run_gpi`](content-handling/index.md#run-gpi) - Method do_check_pages()
+- [`sanitize_file_name`](misc/index.md#sanitize-file-name) - Filters a sanitized filename string.
+- [`sanitize_file_name_chars`](misc/index.md#sanitize-file-name-chars) - Filters the list of characters to remove from a filename.
+- [`save_settings_revision_limit_wptc`](system-settings/index.md#save-settings-revision-limit-wptc) - Save the WP Time Capsule settings - backups section.
+- [`staging_status_wptc`](backups-restoration/index.md#staging-status-wptc) - Get backup process progress.
+- [`swis_clear_complete_cache`](updates-maintenance/index.md#swis-clear-complete-cache) - Purge Swis Performance plugin cache.
+- [`update_white_labling_settings_wptc`](updates-maintenance/index.md#update-white-labling-settings-wptc) - Process the sigin response info.
+- [`updraft_backupnow_options`](backups-restoration/index.md#updraft-backupnow-options) - *Arguments*
+- [`updraftplus_accept_archivename`](backups-restoration/index.md#updraftplus-accept-archivename) - Restore all downloaded backups from history.
+- [`updraftplus_checkzip_end_{$type}`](security-monitoring/index.md#updraftplus-checkzip-end-type) - Restore all downloaded backups from history.
+- [`updraftplus_checkzip_{$type}`](security-monitoring/index.md#updraftplus-checkzip-type) - Restore all downloaded backups from history.
+- [`updraftplus_com_link`](system-settings/index.md#updraftplus-com-link) - *Arguments*
+- [`updraftplus_dbscan_urlchange`](security-monitoring/index.md#updraftplus-dbscan-urlchange) - Analyse old database file.
+- [`updraftplus_dbscan_urlchange_www_append_warning`](security-monitoring/index.md#updraftplus-dbscan-urlchange-www-append-warning) - *Arguments*
+- [`updraftplus_dirlist_sanitize_text_field()`](security-monitoring/index.md#updraftplus-dirlist-sanitize-text-field) - Check disk space used.
+- [`updraftplus_http_to_https_additional_warning`](misc/index.md#updraftplus-http-to-https-additional-warning) - *Arguments*
+- [`updraftplus_https_to_http_additional_warning`](misc/index.md#updraftplus-https-to-http-additional-warning) - *Arguments*
+- [`updraftplus_importforeign_backupable_plus_db`](backups-restoration/index.md#updraftplus-importforeign-backupable-plus-db) - Restore all downloaded backups from history.
+- [`updraftplus_migrator_addon_link`](misc/index.md#updraftplus-migrator-addon-link) - *Arguments*
+- [`updraftplus_msg_unfinishedbackup`](backups-restoration/index.md#updraftplus-msg-unfinishedbackup) - *Arguments*
+- [`updraftplus_print_active_job_continue`](misc/index.md#updraftplus-print-active-job-continue) - *Arguments*
+- [`updraftplus_showbackup_date`](backups-restoration/index.md#updraftplus-showbackup-date) - Date label.
+- [`user_profile_update_errors`](updates-maintenance/index.md#user-profile-update-errors) - Edit existing user.
+- [`woocommerce_dashboard_status_widget_sales_query`](misc/index.md#woocommerce-dashboard-status-widget-sales-query) - *Arguments*
+- [`woocommerce_hide_{$name}_notice`](updates-maintenance/index.md#woocommerce-hide-name-notice) - Hide a single notice.
+- [`woocommerce_reports_order_statuses`](misc/index.md#woocommerce-reports-order-statuses) - *Arguments*
+- [`wp_login`](misc/index.md#wp-login) - Method login()
+- [`wp_logout`](misc/index.md#wp-logout) - Method login()
+- [`wp_logout`](security-monitoring/index.md#wp-logout) - Method parse_login_required()
+- [`wpfc_clear_all_cache`](misc/index.md#wpfc-clear-all-cache) - Purge WP Fastest Cache.
+- [`wphb_clear_page_cache`](content-handling/index.md#wphb-clear-page-cache) - Purge WP Hummingbird cache.
+- [`wpvivid_get_mainwp_sync_data`](misc/index.md#wpvivid-get-mainwp-sync-data) - Sync other data from $data[] and merge with $information[]
+- [`wpvivid_handle_mainwp_action`](content-handling/index.md#wpvivid-handle-mainwp-action) - Post MainWP data.
+- [`{$event}`](backups-restoration/index.md#event) - Backup now.
+- [`{$hook_name}`](misc/index.md#hook-name) - Support old WP version 4.0.

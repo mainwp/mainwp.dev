@@ -84,6 +84,7 @@ This project is for creating a documentation platform (MainWP.dev) for developer
    - Core settings in _sass/settings/_core.scss
    - Follow Dox theme's SCSS organization pattern
    - Maintain separation of concerns in SCSS files
+   - **Dark Mode Only (Current):** Light mode functionality was removed (3/30/2025) to simplify CSS and resolve persistent theme-switching/styling bugs. The theme currently enforces dark mode only. Re-implementing light mode is a future task.
 
 ### Documentation Standards
 1. **File Organization**:
@@ -130,3 +131,31 @@ This project is for creating a documentation platform (MainWP.dev) for developer
    - Break large tasks into sub-tasks
    - Save progress regularly
    - Document error patterns and solutions
+
+### Documentation Navigation Structure
+- **Front Matter Pattern**: Each main documentation page requires:
+  * layout: documentation-single
+  * title: Page title
+  * description: Brief page description
+  * navigation: Array of sections with items containing id/title pairs
+- **Section Organization**: 
+  * Group related content under logical section titles
+  * Each navigation item must correspond to a heading with matching ID
+  * Use consistent heading levels (h2 for sections, h3 for subsections)
+- **Asset Path Handling**:
+  * Use site.baseurl for all internal asset paths
+  * Avoid absolute_url filter which can cause path resolution issues
+  * Maintain consistent path structure across all templates
+
+### Jekyll / GitHub Pages Deployment Debugging
+- **`baseurl`/`url`**: Ensure `baseurl` (e.g., `/repo-name`) and `url` (e.g., `https://org.github.io`) in `_config.yml` are correct for project sites to ensure asset/link paths resolve properly.
+- **Build Logs**: Use `jekyll build --verbose` in GitHub Actions to get detailed logs for diagnosing build issues.
+- **Verify `_site`**: Add a workflow step (`ls -la _site`) before deployment to confirm the contents of the build output directory.
+- **File Conflicts**: Check verbose build logs for "Conflict:" messages, often caused by static files (e.g., `index.html`) overwriting processed files (e.g., `index.md`). Resolve by removing/renaming the static file.
+- **`exclude` List**: Use `_config.yml`'s `exclude` list diligently to prevent unwanted source/config/temporary files from being copied into `_site`. Remember Jekyll copies non-excluded, non-underscored/dotted files by default.
+- **Deployment Action**: Use standard actions like `JamesIves/github-pages-deploy-action` with `folder: _site` to deploy the built site correctly.
+- **JS Listener Debugging**: If JS interactions fail without console errors, verify listener attachment using DevTools ("Event Listeners" tab) or add `console.log` statements inside listeners to check if they fire. Check for CSS interference (`z-index`, `position`, `display`, `pointer-events`). Consider JS execution timing (`defer`, `DOMContentLoaded`).
+- **Workflow Log Verification**: Always check workflow logs against the specific commit hash they ran on to ensure analysis reflects the correct code state.
+- **CSS Variable Application**: Be aware that CSS custom properties defined via SCSS variables (e.g., `--dox-z-index-header: #{$dox-z-index-header};` in `:root`) might not always compute correctly in the browser (observed `z-index: auto` instead of `1000`). If a CSS variable isn't working as expected, verify its definition in `:root` and its computed value in DevTools. As a workaround, setting the style directly in the component's SCSS (e.g., `z-index: 1000;`) can bypass the variable issue.
+- **CSS Specificity and !important**: When browser computed styles don't match the assigned CSS values despite using direct values (not variables), use `!important` flag as a last resort to override any potential specificity conflicts. This was necessary for dropdown background colors that remained transparent despite multiple approaches.
+- **JavaScript Navigation Timing**: The dropdown menu hover behavior in `navigation.js` needed modification to prevent immediate closing when mouse moves from parent link toward dropdown content. Such hover interactions benefit from a small delay (150-300ms) before closing dropdowns. Also, add event handlers to both parent items AND dropdown elements to maintain the open state when hovering over dropdown content.

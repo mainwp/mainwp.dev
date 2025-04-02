@@ -111,11 +111,57 @@ pre[class*="language-"] {
 
 /* Line Numbers */
 .line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 1em; /* Align with code content padding */
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
     border-right: 1px solid #2d2e2c;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    padding: 0;
+}
+
+.line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+    pointer-events: none;
+    color: #aaaaaa;
+    height: 1.5em; /* Match line-height of code */
 }
 
 .line-numbers-rows > span:before {
+    content: counter(linenumber);
     color: #aaaaaa;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    pre[class*="language-"] {
+        font-size: 0.85rem;
+        padding: 0.75rem;
+    }
+
+    pre[class*="language-"].line-numbers {
+        padding-left: 3.2em;
+    }
+
+    .line-numbers .line-numbers-rows {
+        font-size: 0.85rem;
+        width: 2.5em;
+        left: -3.2em; /* Match the padding-left of code block */
+        top: 0.75rem; /* Match the padding of code block */
+    }
+
+    .line-numbers-rows > span:before {
+        padding-right: 0.5rem;
+    }
 }
 
 /* Line Highlight */
