@@ -31,14 +31,14 @@ A MainWP WooCommerce integration allows you to centrally manage and monitor WooC
 
 The integration works by communicating between the MainWP Dashboard and WooCommerce on child sites:
 
-```mermaid
+<pre class="mermaid">
 flowchart TD
     A[MainWP Dashboard] -->|API Request| B[MainWP Child]
     B -->|WC API Request| C[WooCommerce]
     C -->|WC API Response| B
     B -->|API Response| A
     D[WooCommerce Data] -->|Stored During Sync| A
-```
+</pre>
 
 ## Step 1: Setting Up WooCommerce API Access
 

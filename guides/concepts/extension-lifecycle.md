@@ -16,7 +16,7 @@ This guide applies to both extensions and integrations, with specific considerat
 
 The MainWP add-on development lifecycle consists of several distinct phases:
 
-```mermaid
+<pre class="mermaid">
 flowchart TD
     A[Planning] --> B[Development]
     B --> C[Testing]
@@ -24,7 +24,7 @@ flowchart TD
     D --> E[Maintenance]
     E --> F[Updates]
     F --> C
-```
+</pre>
 
 Each phase has specific goals, activities, and deliverables that contribute to creating a successful extension.
 
