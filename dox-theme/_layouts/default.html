@@ -74,7 +74,22 @@
 
         <!-- Mermaid -->
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-        <script>mermaid.initialize({startOnLoad:true});</script>
+        <script>
+          // Convert code blocks marked as mermaid into divs with the "mermaid" class
+          document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("pre code.language-mermaid").forEach(function(codeBlock) {
+              // Create a new div with class 'mermaid'
+              var mermaidDiv = document.createElement("div");
+              mermaidDiv.className = "mermaid";
+              // Use the code block's inner text as the Mermaid definition
+              mermaidDiv.innerHTML = codeBlock.innerText;
+              // Replace the entire <pre> element with our new div
+              codeBlock.parentNode.replaceWith(mermaidDiv);
+            });
+            // Initialize Mermaid after transforming code blocks
+            mermaid.initialize({ startOnLoad: true });
+          });
+        </script>
 
         {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
             <!-- Google Analytics -->
