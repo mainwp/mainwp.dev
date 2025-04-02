@@ -43,12 +43,12 @@ A brief introduction to the topic that explains:
 - Why this is important for MainWP developers
 - How this fits into the broader MainWP ecosystem
 
-<pre class="mermaid">
+```mermaid
 flowchart TD
     A[First Step] --> B[Second Step]
     B --> C[Third Step]
     C --> D[Final Result]
-</pre>
+```
 
 ## Step 1: First Major Step
 

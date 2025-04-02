@@ -6,24 +6,24 @@ This reference guide documents common patterns and architectures for integrating
 
 Use this decision tree to help you choose the right pattern for your integration needs:
 
-<pre class="mermaid">
+```mermaid
 flowchart TD
-    Start[Start] --> Q1{Are you using an\nexisting API client?}
-    Q1 -->|Yes| Q1a{Does it match your\nneeds exactly?}
+    Start[Start] --> Q1{Are you using an<br>existing API client?}
+    Q1 -->|Yes| Q1a{Does it match your<br>needs exactly?}
     Q1 -->|No| Q2
     
-    Q1a -->|Yes| P1[Use Adapter Pattern\nto integrate it]
+    Q1a -->|Yes| P1[Use Adapter Pattern<br>to integrate it]
     Q1a -->|No| Q2
     
-    Q2{Do you need multiple\nAPI client types?}
+    Q2{Do you need multiple<br>API client types?}
     Q2 -->|Yes| P2[Use Factory Pattern]
     Q2 -->|No| Q3
     
-    Q3{Do you need a single\nconsistent instance?}
+    Q3{Do you need a single<br>consistent instance?}
     Q3 -->|Yes| P3[Use Singleton Pattern]
     Q3 -->|No| P4[Use Basic API Client]
     
-    P1 --> Auth{Authentication\nMethod?}
+    P1 --> Auth{Authentication<br>Method?}
     P2 --> Auth
     P3 --> Auth
     P4 --> Auth
@@ -62,7 +62,7 @@ flowchart TD
     
     Rate -->|Token bucket| R1[Token Bucket Pattern]
     Rate -->|Constant rate| R2[Leaky Bucket Pattern]
-</pre>
+```
 
 ## Overview
 
