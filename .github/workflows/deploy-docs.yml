@@ -122,22 +122,7 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      # Explicitly copy missing JS vendor files into _site
-      - name: Copy JS Vendor Files
-        run: |
-          echo "Copying JS vendor files into _site..."
-          mkdir -p _site/dox-theme/assets/js/vendor # Ensure target dir exists
-          if [ -d "dox-theme/assets/js/vendor" ]; then
-            cp -R dox-theme/assets/js/vendor/* _site/dox-theme/assets/js/vendor/
-            echo "Vendor files copied."
-          else
-            # This check should pass now, but keep for safety
-            echo "Source vendor directory not found!"
-            exit 1
-          fi
-          echo "Verifying copy..."
-          ls -la _site/dox-theme/assets/js/vendor/
-
+      # Verify build output and compiled assets
       - name: Verify Build Output
         run: |
           echo "--- Workspace Root Contents ---"
@@ -146,6 +131,9 @@ jobs:
           ls -la _site
           echo "--- _site/dox-theme/assets/js/ Contents (Recursive) ---"
           ls -laR _site/dox-theme/assets/js/ || echo "Directory _site/dox-theme/assets/js/ not found"
+          echo "--- Compiled CSS Content ---"
+          echo "style.css contents:"
+          cat _site/dox-theme/assets/css/style.css || echo "style.css not found!"
       
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
