@@ -1,0 +1,2 @@
+# This file is intentionally empty to prevent Git from treating directories as submodules
+# It helps avoid false positives in CI environments while maintaining a clean repository structure
