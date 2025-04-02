@@ -72,12 +72,16 @@
           });
         </script>
 
-        <!-- Mermaid - Simple Implementation -->
+        <!-- Mermaid Implementation -->
         <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
         <script>
-          // Just initialize Mermaid with default settings
-          // This will find and render all elements with class="mermaid"
-          mermaid.initialize({ startOnLoad: true });
+          document.addEventListener("DOMContentLoaded", function() {
+            // First try standard initialization
+            mermaid.initialize({ startOnLoad: true });
+            
+            // If that doesn't work, explicitly run Mermaid
+            mermaid.run({ querySelector: '.mermaid' });
+          });
         </script>
 
         {% if site.dox.google_analytics.tracking_code and jekyll.environment == 'production' %}
