@@ -6,7 +6,7 @@ This reference guide documents common patterns and architectures for integrating
 
 Use this decision tree to help you choose the right pattern for your integration needs:
 
-```mermaid
+<pre class="mermaid">
 flowchart TD
     Start[Start] --> Q1{Are you using an\nexisting API client?}
     Q1 -->|Yes| Q1a{Does it match your\nneeds exactly?}
@@ -62,7 +62,7 @@ flowchart TD
     
     Rate -->|Token bucket| R1[Token Bucket Pattern]
     Rate -->|Constant rate| R2[Leaky Bucket Pattern]
-```
+</pre>
 
 ## Overview
 
