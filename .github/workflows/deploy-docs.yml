@@ -133,7 +133,7 @@ jobs:
           ls -laR _site/dox-theme/assets/js/ || echo "Directory _site/dox-theme/assets/js/ not found"
           echo "--- Compiled CSS Content ---"
           echo "style.css contents:"
-          cat _site/dox-theme/assets/css/style.css || echo "style.css not found!"
+          cat _site/assets/css/style.css || echo "style.css not found!"
       
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
