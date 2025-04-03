@@ -423,10 +423,10 @@
 
                 // Find all code blocks
                 const codeBlocks = document.querySelectorAll('pre:not(.no-copy) > code');
-                
+
                 codeBlocks.forEach(codeBlock => {
                     const pre = codeBlock.parentElement;
-                    
+
                     // Create wrapper if needed
                     let wrapper = pre.parentElement;
                     if (!wrapper.classList.contains('code-block')) {
@@ -434,43 +434,43 @@
                         wrapper.className = 'code-block';
                         pre.parentNode.insertBefore(wrapper, pre);
                         wrapper.appendChild(pre);
-                        
+
                         // Add header with language label and copy button
                         const header = document.createElement('div');
                         header.className = 'code-header';
-                        
+
                         // Try to extract language from class
                         let language = 'code';
                         const langClass = codeBlock.className.match(/language-(\w+)/) || codeBlock.className.match(/hljs language-(\w+)/);
                         if (langClass && langClass[1]) {
                             language = langClass[1].toUpperCase();
                         }
-                        
+
                         const langLabel = document.createElement('span');
                         langLabel.className = 'language-label';
                         langLabel.textContent = language;
-                        
+
                         const copyBtn = document.createElement('button');
                         copyBtn.className = 'copy-button';
                         copyBtn.textContent = 'Copy';
-                        
+
                         header.appendChild(langLabel);
                         header.appendChild(copyBtn);
                         wrapper.insertBefore(header, pre);
                     }
                 });
-                
+
                 // Add click event to all copy buttons
                 document.addEventListener('click', function(event) {
                     if (event.target.matches('.copy-button')) {
                         const button = event.target;
                         const codeBlock = button.closest('.code-block');
                         const codeElement = codeBlock.querySelector('code');
-                        
+
                         navigator.clipboard.writeText(codeElement.textContent).then(() => {
                             button.textContent = 'Copied!';
                             button.classList.add('copied');
-                            
+
                             setTimeout(() => {
                                 button.textContent = 'Copy';
                                 button.classList.remove('copied');
@@ -482,5 +482,13 @@
         </script>
 
         
+        
+        <!-- Mermaid - Following implementation docs exactly -->
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            mermaid.initialize({ startOnLoad: true });
+          });
+        </script>
     </body>
 </html>
