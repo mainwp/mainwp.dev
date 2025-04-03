@@ -31,14 +31,14 @@ A MainWP social media integration allows you to centrally manage and monitor soc
 
 The integration works by communicating between the MainWP Dashboard and social media platforms via child sites:
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     A[MainWP Dashboard] -->|API Request| B[MainWP Child]
     B -->|Social Media API Request| C[LinkedIn API]
     C -->|API Response| B
     B -->|API Response| A
     D[Social Media Data] -->|Stored During Sync| A
-```
+</div>
 
 ## Step 1: Setting Up LinkedIn API Access
 
