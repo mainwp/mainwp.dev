@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Getting Started with MainWP Development</title>
+        <meta name="description" content="A comprehensive guide to start building MainWP add-ons and integrations">
+
+        <link rel="canonical" href="https://mainwp.github.io/mainwp.dev/guides/templates/getting-started-template/">
+        <link rel="shortcut icon" href="https://mainwp.github.io/mainwp.dev/favicon.ico" type="image/x-icon">
+
+        <!-- Theme styles -->
+        <link rel="stylesheet" href="/mainwp.dev/assets/css/style.css">
+    </head>
+    <body>
+        <header class="c-header">
+    <div class="o-container">
+        <div class="c-header__inner">
+            <div class="c-header__brand">
+                <a href="/mainwp.dev/" class="c-logo">
+                    <span class="c-logo__text">
+                        <span class="c-logo__text--main">Main</span><span class="c-logo__text--wp">WP</span>
+                        <span class="c-logo__text--dev">.dev</span>
+                    </span>
+                </a>
+            </div>
+
+            <button class="c-nav-trigger js-nav-trigger" aria-label="Toggle navigation">
+                <span class="c-nav-trigger__icon"></span>
+            </button>
+
+            <div class="c-nav-wrap">
+                <nav class="c-nav" role="navigation">
+                    <ul class="c-nav__list">
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/documentation/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Documentation
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/getting-started/" role="menuitem">
+                                                Getting Started
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/installation/" role="menuitem">
+                                                Installation
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/documentation/configuration/" role="menuitem">
+                                                Configuration
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/guides/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Guides
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/best-practices/" role="menuitem">
+                                                Best Practices
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/how-to/" role="menuitem">
+                                                How-to
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/concepts/" role="menuitem">
+                                                Concepts
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/guides/reference/" role="menuitem">
+                                                Reference
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/mainwp-hooks/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        Hooks
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/mainwp-hooks/dashboard/" role="menuitem">
+                                                Dashboard Hooks
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/mainwp-hooks/child/" role="menuitem">
+                                                Child Hooks
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                            <li class="c-nav__item">
+                                
+                                    <a class="c-nav__link" href="/mainwp.dev/source-code/" data-dropdown aria-expanded="false" aria-haspopup="true">
+                                        API
+                                    </a>
+                                    <div class="c-nav__dropdown" role="menu">
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/source-code/dashboard/" role="menuitem">
+                                                Dashboard API
+                                            </a>
+                                        
+                                            <a class="c-nav__dropdown-link" href="/mainwp.dev/source-code/child/" role="menuitem">
+                                                Child API
+                                            </a>
+                                        
+                                    </div>
+                                
+                            </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="c-header__actions">
+                <!-- Theme toggle button removed -->
+                <a href="https://github.com/mainwp" class="c-header__github" target="_blank" rel="noopener noreferrer" aria-label="MainWP on GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C19.1375 20.1625 22 16.4125 22 12C22 6.475 17.525 2 12 2Z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="c-breadcrumbs">
+    <div class="o-container">
+        <nav class="c-breadcrumbs__nav" aria-label="Breadcrumb">
+            <ol class="c-breadcrumbs__list">
+                <li class="c-breadcrumbs__item">
+                    <a href="/mainwp.dev/" class="c-breadcrumbs__link">Home</a>
+                </li>
+                
+                
+                    
+                        
+                        <li class="c-breadcrumbs__item">
+                            <a href="/mainwp.dev/guides" class="c-breadcrumbs__link">Guides</a>
+                        </li>
+                    
+                
+                    
+                        
+                        <li class="c-breadcrumbs__item">
+                            <a href="/mainwp.dev/templates" class="c-breadcrumbs__link">Templates</a>
+                        </li>
+                    
+                
+                    
+                        <li class="c-breadcrumbs__item">
+                            <span class="c-breadcrumbs__text">Getting Started with MainWP Development</span>
+                        </li>
+                    
+                
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+
+        <div class="o-container">
+            <div class="o-row">
+                <div class="o-col-3@md">
+                    <div class="c-page-nav">
+                        <div class="c-page-nav__header">
+                            <h2 class="c-page-nav__title">Getting Started with MainWP Development</h2>
+                        </div>
+                        <div class="c-page-nav__content">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="o-col-9@md">
+                    <div class="c-post">
+                        <div class="c-post__header">
+                            <h1 class="c-post__title">Getting Started with MainWP Development</h1>
+                            
+                                <div class="c-post__desc">
+                                    A comprehensive guide to start building MainWP add-ons and integrations
+                                </div>
+                            
+                        </div>
+                        <div class="c-post__content">
+                            
+                            <p>Welcome to MainWP development! This guide will walk you through the essential steps to start building add-ons for MainWP, whether you’re creating a standalone extension or integrating with a third-party service.</p>
+
+<h2 id="your-development-journey">Your Development Journey</h2>
+
+<p>Follow these steps to begin your MainWP development journey:</p>
+
+<div class="mermaid">
+flowchart LR
+    A[1. Setup Environment] --&gt; B[2. Choose Add-on Type]
+    B --&gt; C1[3a. Create Basic Extension]
+    B --&gt; C2[3b. Create Basic Integration]
+    C1 --&gt; D[4. Test &amp; Deploy]
+    C2 --&gt; D
+    
+    style A fill:#4CAF50,stroke:#388E3C,color:white
+    style B fill:#2196F3,stroke:#1976D2,color:white
+    style C1 fill:#FFC107,stroke:#FFA000,color:white
+    style C2 fill:#FFC107,stroke:#FFA000,color:white
+    style D fill:#9C27B0,stroke:#7B1FA2,color:white
+</div>
+
+<h2 id="step-1-set-up-your-development-environment">Step 1: Set Up Your Development Environment</h2>
+
+<div class="progress-indicator">
+<strong>You are here:</strong> Step 1 of 4
+</div>
+
+<p>Before you start coding, you’ll need to set up a proper development environment.</p>
+
+<h3 id="essential-requirements">Essential Requirements</h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />WordPress installation (local or development server)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />MainWP Dashboard plugin installed and activated</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />At least one child site connected to your MainWP Dashboard</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Code editor (VS Code, PhpStorm, or similar)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Basic understanding of PHP and WordPress plugin development</li>
+</ul>
+
+<h3 id="quick-setup-instructions">Quick Setup Instructions</h3>
+
+<ol>
+  <li>Install a local WordPress development environment like:
+    <ul>
+      <li><a href="https://localwp.com/">LocalWP</a> (recommended for beginners)</li>
+      <li><a href="https://www.apachefriends.org/">XAMPP</a></li>
+      <li><a href="https://www.mamp.info/">MAMP</a></li>
+    </ul>
+  </li>
+  <li>Install and activate the MainWP Dashboard plugin:
+    <ul>
+      <li>Download from <a href="https://wordpress.org/plugins/mainwp/">WordPress.org</a></li>
+      <li>Or install directly from your WordPress admin area</li>
+    </ul>
+  </li>
+  <li>Connect at least one child site:
+    <ul>
+      <li>Install WordPress on another local site</li>
+      <li>Install and activate the MainWP Child plugin</li>
+      <li>Connect it to your MainWP Dashboard</li>
+    </ul>
+  </li>
+  <li>Install the MainWP Development Extension:
+    <ul>
+      <li>Clone from <a href="https://github.com/mainwp/mainwp-development-extension">GitHub</a></li>
+      <li>Or download the ZIP file and install manually</li>
+    </ul>
+  </li>
+</ol>
+
+<p>For detailed instructions, see the <a href="../how-to/setup-environment.md">Setting Up a Development Environment</a> guide.</p>
+
+<h2 id="step-2-choose-your-add-on-type">Step 2: Choose Your Add-on Type</h2>
+
+<div class="progress-indicator">
+<strong>Next step:</strong> Step 2 of 4
+</div>
+
+<p>MainWP uses specific terminology to distinguish between different types of add-ons:</p>
+
+<ul>
+  <li><strong>Extension</strong>: An add-on that works WITHOUT requiring a third-party plugin or API</li>
+  <li><strong>Integration</strong>: An add-on that works WITH a third-party plugin or API</li>
+</ul>
+
+<h3 id="which-type-should-you-build">Which Type Should You Build?</h3>
+
+<p>Use this decision tree to determine whether you should build an Extension or an Integration:</p>
+
+<div class="mermaid">
+flowchart TD
+    A["Do you need to connect with\nthird-party service or plugin?"] --&gt;|Yes| B[Integration]
+    A --&gt;|No| C[Extension]
+    B --&gt; D["Examples: WooCommerce Integration,\nGoogle Analytics Integration"]
+    C --&gt; E["Examples: Advanced Uptime Monitor,\nAdvanced Reports Extension"]
+    
+    style A fill:#2196F3,stroke:#1976D2,color:white
+    style B fill:#FFC107,stroke:#FFA000,color:white
+    style C fill:#FFC107,stroke:#FFA000,color:white
+    style D fill:#9E9E9E,stroke:#757575,color:white
+    style E fill:#9E9E9E,stroke:#757575,color:white
+</div>
+
+<h3 id="extension-examples">Extension Examples</h3>
+
+<p>Extensions are standalone add-ons that extend MainWP’s functionality without requiring third-party services:</p>
+
+<ul>
+  <li><strong>Advanced Uptime Monitor</strong>: Monitors website uptime directly through MainWP</li>
+  <li><strong>Advanced Reports</strong>: Generates custom reports based on MainWP data</li>
+  <li><strong>Maintenance Extension</strong>: Schedules and manages maintenance tasks</li>
+</ul>
+
+<h3 id="integration-examples">Integration Examples</h3>
+
+<p>Integrations connect MainWP with third-party plugins or services:</p>
+
+<ul>
+  <li><strong>WooCommerce Integration</strong>: Manages WooCommerce stores through MainWP</li>
+  <li><strong>Google Analytics Integration</strong>: Displays Google Analytics data in MainWP</li>
+  <li><strong>Yoast SEO Integration</strong>: Manages Yoast SEO settings across sites</li>
+</ul>
+
+<h2 id="step-3a-create-a-basic-extension">Step 3a: Create a Basic Extension</h2>
+
+<div class="progress-indicator">
+<strong>Next step (if building an Extension):</strong> Step 3a of 4
+</div>
+
+<p>If you’re building a standalone extension, follow these steps:</p>
+
+<ol>
+  <li>Start with the MainWP Development Extension template</li>
+  <li>Customize the plugin information</li>
+  <li>Implement your core functionality</li>
+  <li>Create admin pages and settings</li>
+  <li>Test thoroughly</li>
+</ol>
+
+<p>For detailed instructions, see the <a href="../how-to/create-basic-extension.md">Creating a Basic Extension</a> guide.</p>
+
+<h2 id="step-3b-create-a-basic-integration">Step 3b: Create a Basic Integration</h2>
+
+<div class="progress-indicator">
+<strong>Next step (if building an Integration):</strong> Step 3b of 4
+</div>
+
+<p>If you’re building an integration with a third-party service, follow these steps:</p>
+
+<ol>
+  <li>Start with the MainWP Development Extension template</li>
+  <li>Customize the plugin information</li>
+  <li>Implement third-party API connectivity</li>
+  <li>Create admin pages and settings</li>
+  <li>Implement data synchronization</li>
+  <li>Test thoroughly</li>
+</ol>
+
+<p>For detailed instructions, see the <a href="../how-to/create-basic-integration.md">Creating a Basic Integration</a> guide.</p>
+
+<h2 id="step-4-test-and-deploy-your-add-on">Step 4: Test and Deploy Your Add-on</h2>
+
+<div class="progress-indicator">
+<strong>Final step:</strong> Step 4 of 4
+</div>
+
+<p>Before releasing your add-on, make sure to:</p>
+
+<ol>
+  <li>Test on multiple child sites</li>
+  <li>Check for any errors or warnings</li>
+  <li>Ensure compatibility with different WordPress versions</li>
+  <li>Package your add-on for distribution</li>
+  <li>Create documentation for users</li>
+</ol>
+
+<p>For detailed instructions, see the <a href="../how-to/packaging-distribution.md">Packaging and Distribution</a> guide.</p>
+
+<h2 id="essential-resources">Essential Resources</h2>
+
+<h3 id="documentation">Documentation</h3>
+
+<ul>
+  <li><a href="../../source-code/dashboard/">MainWP Dashboard API Documentation</a></li>
+  <li><a href="../../source-code/child/">MainWP Child API Documentation</a></li>
+  <li><a href="../../mainwp-hooks/dashboard/">MainWP Dashboard Hooks</a></li>
+  <li><a href="../../mainwp-hooks/child/">MainWP Child Hooks</a></li>
+</ul>
+
+<h3 id="tools-and-templates">Tools and Templates</h3>
+
+<ul>
+  <li><a href="https://github.com/mainwp/mainwp-development-extension">MainWP Development Extension on GitHub</a></li>
+  <li><a href="https://github.com/mainwp/mainwp-api-client-php">MainWP API Client PHP on GitHub</a></li>
+</ul>
+
+<h3 id="community-support">Community Support</h3>
+
+<ul>
+  <li><a href="https://mainwp.com/forum/">MainWP Community Forum</a></li>
+  <li><a href="https://kb.mainwp.com/">MainWP Documentation</a></li>
+  <li><a href="https://github.com/mainwp">MainWP on GitHub</a></li>
+</ul>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>After completing the getting started process, explore these topics to enhance your MainWP development skills:</p>
+
+<ul>
+  <li><a href="../how-to/actions-filters.md">Using MainWP Actions &amp; Filters</a></li>
+  <li><a href="../how-to/admin-interfaces.md">Building Admin Interfaces</a></li>
+  <li><a href="../how-to/data-storage.md">Data Storage and Retrieval</a></li>
+  <li><a href="../how-to/debugging.md">Debugging Add-ons</a></li>
+  <li><a href="../how-to/third-party-apis.md">Working with Third-Party APIs</a> (for Integrations)</li>
+</ul>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="c-footer">
+    <div class="o-container">
+        <div class="c-footer__inner">
+            <div class="c-footer__grid">
+                <div class="c-footer__column">
+                    <div class="c-footer__brand">
+                        <span class="c-logo">
+                            <span class="c-logo__text">
+                                <span class="c-logo__text--main">Main</span><span class="c-logo__text--wp">WP</span>
+                            </span>
+                        </span>
+                        <p class="c-footer__description">
+                            The ultimate WordPress management solution for agencies and developers.
+                        </p>
+                    </div>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Documentation</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="/mainwp.dev/guides/how-to/create-basic-extension/">Getting Started</a></li>
+                        <li><a href="/mainwp.dev/guides/">Extension Development</a></li>
+                        <li><a href="/mainwp.dev/mainwp-hooks/">Hooks Reference</a></li>
+                        <li><a href="/mainwp.dev/rest-api/">REST API</a></li>
+                    </ul>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Resources</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="https://mainwp.com/support/">Support</a></li>
+                        <li><a href="https://mainwp.com/mainwp-extensions/">Extensions</a></li>
+                        <li><a href="https://mainwp.com/blog/">Blog</a></li>
+                        <li><a href="https://mainwp.com/about/">About</a></li>
+                    </ul>
+                </div>
+                <div class="c-footer__column">
+                    <h4 class="c-footer__heading">Community</h4>
+                    <ul class="c-footer__list">
+                        <li><a href="https://mainwp.com/community/">Forums</a></li>
+                        <li><a href="https://github.com/mainwp">GitHub</a></li>
+                        <li><a href="https://twitter.com/MainWP">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/mainwp/">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-footer__bottom">
+                <div class="c-footer__copyright">
+                    <p>&copy; 2025 MainWP. All rights reserved.</p>
+                </div>
+                <div class="c-footer__meta">
+                    <ul class="c-footer__meta-list">
+                        <li><a href="https://mainwp.com/terms/">Terms</a></li>
+                        <li><a href="https://mainwp.com/privacy/">Privacy</a></li>
+                        <li><a href="https://mainwp.com/contact/">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+.c-footer {
+    padding: 4rem 0 2rem;
+    background-color: var(--mainwp-dark-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--mainwp-dark-text);
+}
+
+.c-footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.c-footer__description {
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+.c-footer__heading {
+    color: var(--mainwp-dark-text);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.c-footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-footer__list li {
+    margin-bottom: 0.5rem;
+}
+
+.c-footer__list a {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+}
+
+.c-footer__list a:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+.c-footer__bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-footer__copyright p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+.c-footer__meta-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.c-footer__meta-list a {
+    color: var(--mainwp-dark-text);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--dox-transition-base);
+}
+
+.c-footer__meta-list a:hover {
+    color: var(--mainwp-primary);
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .c-footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .c-footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .c-footer__bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .c-footer__meta-list {
+        justify-content: center;
+    }
+}
+</style>
+
+
+        <!-- Theme scripts -->
+        <script src="/mainwp.dev/dox-theme/assets/js/vendor/jquery.min.js" defer></script>
+        <!-- Highlight.js -->
+        <link rel="stylesheet" href="/mainwp.dev/assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/php.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/xml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/css.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
+        <!-- Theme functionality -->
+        <script src="/mainwp.dev/dox-theme/assets/js/theme-toggle.js" defer></script>
+        <script src="/mainwp.dev/dox-theme/assets/js/scripts.js" defer></script>
+        <script src="/mainwp.dev/dox-theme/assets/js/page-nav.js" defer></script>
+        <script src="/mainwp.dev/dox-theme/assets/js/navigation.js" defer></script>
+        <!-- Code block functionality -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Initialize Highlight.js
+                hljs.configure({
+                    ignoreUnescapedHTML: true
+                });
+                hljs.highlightAll();
+
+                // Find all code blocks
+                const codeBlocks = document.querySelectorAll('pre:not(.no-copy) > code');
+
+                codeBlocks.forEach(codeBlock => {
+                    const pre = codeBlock.parentElement;
+
+                    // Create wrapper if needed
+                    let wrapper = pre.parentElement;
+                    if (!wrapper.classList.contains('code-block')) {
+                        wrapper = document.createElement('div');
+                        wrapper.className = 'code-block';
+                        pre.parentNode.insertBefore(wrapper, pre);
+                        wrapper.appendChild(pre);
+
+                        // Add header with language label and copy button
+                        const header = document.createElement('div');
+                        header.className = 'code-header';
+
+                        // Try to extract language from class
+                        let language = 'code';
+                        const langClass = codeBlock.className.match(/language-(\w+)/) || codeBlock.className.match(/hljs language-(\w+)/);
+                        if (langClass && langClass[1]) {
+                            language = langClass[1].toUpperCase();
+                        }
+
+                        const langLabel = document.createElement('span');
+                        langLabel.className = 'language-label';
+                        langLabel.textContent = language;
+
+                        const copyBtn = document.createElement('button');
+                        copyBtn.className = 'copy-button';
+                        copyBtn.textContent = 'Copy';
+
+                        header.appendChild(langLabel);
+                        header.appendChild(copyBtn);
+                        wrapper.insertBefore(header, pre);
+                    }
+                });
+
+                // Add click event to all copy buttons
+                document.addEventListener('click', function(event) {
+                    if (event.target.matches('.copy-button')) {
+                        const button = event.target;
+                        const codeBlock = button.closest('.code-block');
+                        const codeElement = codeBlock.querySelector('code');
+
+                        navigator.clipboard.writeText(codeElement.textContent).then(() => {
+                            button.textContent = 'Copied!';
+                            button.classList.add('copied');
+
+                            setTimeout(() => {
+                                button.textContent = 'Copy';
+                                button.classList.remove('copied');
+                            }, 2000);
+                        });
+                    }
+                });
+            });
+        </script>
+
+        
+        
+        <!-- Mermaid - Following implementation docs exactly -->
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            mermaid.initialize({ startOnLoad: true });
+          });
+        </script>
+    </body>
+</html>
