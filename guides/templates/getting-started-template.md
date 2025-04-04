@@ -1,10 +1,3 @@
----
-layout: documentation-single
-title: Getting Started with MainWP Development
-description: A comprehensive guide to start building MainWP add-ons and integrations
-permalink: /guides/templates/getting-started-template/
----
-
 Getting Started with MainWP Development
 
 Welcome to MainWP development! This guide will walk you through the essential steps to start building add-ons for MainWP whether you're creating a standalone extension or integrating with a third-party service.
@@ -15,10 +8,10 @@ Follow these steps to begin your MainWP development journey:
 
 <div class="mermaid">
 flowchart LR
-    A["1. Setup Environment"] --> B["2. Choose Add-on Type"]
-    B --> C1["3a. Create Basic Extension"]
-    B --> C2["3b. Create Basic Integration"]
-    C1 --> D["4. Test & Deploy"]
+    A[1. Setup Environment] --> B[2. Choose Add-on Type]
+    B --> C1[3a. Create Basic Extension]
+    B --> C2[3b. Create Basic Integration]
+    C1 --> D[4. Test & Deploy]
     C2 --> D
 
     style A fill:#4CAF50stroke:#388E3Ccolor:white
