@@ -1,9 +1,4 @@
----
-layout: documentation-single
-title: Getting Started with MainWP Development
-description: A comprehensive guide to start building MainWP add-ons and integrations
-permalink: /guides/templates/getting-started-template/
----
+# Getting Started with MainWP Development
 
 Welcome to MainWP development! This guide will walk you through the essential steps to start building add-ons for MainWP, whether you're creating a standalone extension or integrating with a third-party service.
 
@@ -81,10 +76,21 @@ Use this decision tree to determine whether you should build an Extension or an 
 
 <div class="mermaid">
 flowchart TD
-    A["Do you need to connect with\nthird-party service or plugin?"] -->|Yes| B[Integration]
-    A -->|No| C[Extension]
-    B --> D["Examples: WooCommerce Integration,\nGoogle Analytics Integration"]
-    C --> E["Examples: Advanced Uptime Monitor,\nAdvanced Reports Extension"]
+    A["Do you need to connect with a
+    third-party service or plugin?"]
+    B[Integration]
+    C[Extension]
+    D["Examples:
+    WooCommerce Integration
+    Google Analytics Integration"]
+    E["Examples:
+    Advanced Uptime Monitor
+    Advanced Reports Extension"]
+    
+    A -->|Yes| B
+    A -->|No| C
+    B --> D
+    C --> E
     
     style A fill:#2196F3,stroke:#1976D2,color:white
     style B fill:#FFC107,stroke:#FFA000,color:white
