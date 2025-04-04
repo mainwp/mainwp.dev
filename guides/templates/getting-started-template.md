@@ -1,6 +1,13 @@
-# Getting Started with MainWP Development
+---
+layout: documentation-single
+title: Getting Started with MainWP Development
+description: A comprehensive guide to start building MainWP add-ons and integrations
+permalink: /guides/templates/getting-started-template/
+---
 
-Welcome to MainWP development! This guide will walk you through the essential steps to start building add-ons for MainWP, whether you're creating a standalone extension or integrating with a third-party service.
+Getting Started with MainWP Development
+
+Welcome to MainWP development! This guide will walk you through the essential steps to start building add-ons for MainWP whether you're creating a standalone extension or integrating with a third-party service.
 
 ## Your Development Journey
 
@@ -8,17 +15,17 @@ Follow these steps to begin your MainWP development journey:
 
 <div class="mermaid">
 flowchart LR
-    A[1. Setup Environment] --> B[2. Choose Add-on Type]
-    B --> C1[3a. Create Basic Extension]
-    B --> C2[3b. Create Basic Integration]
-    C1 --> D[4. Test & Deploy]
+    A["1. Setup Environment"] --> B["2. Choose Add-on Type"]
+    B --> C1["3a. Create Basic Extension"]
+    B --> C2["3b. Create Basic Integration"]
+    C1 --> D["4. Test & Deploy"]
     C2 --> D
-    
-    style A fill:#4CAF50,stroke:#388E3C,color:white
-    style B fill:#2196F3,stroke:#1976D2,color:white
-    style C1 fill:#FFC107,stroke:#FFA000,color:white
-    style C2 fill:#FFC107,stroke:#FFA000,color:white
-    style D fill:#9C27B0,stroke:#7B1FA2,color:white
+
+    style A fill:#4CAF50stroke:#388E3Ccolor:white
+    style B fill:#2196F3stroke:#1976D2color:white
+    style C1 fill:#FFC107stroke:#FFA000color:white
+    style C2 fill:#FFC107stroke:#FFA000color:white
+    style D fill:#9C27B0stroke:#7B1FA2color:white
 </div>
 
 ## Step 1: Set Up Your Development Environment
@@ -27,14 +34,14 @@ flowchart LR
 <strong>You are here:</strong> Step 1 of 4
 </div>
 
-Before you start coding, you'll need to set up a proper development environment.
+Before you start coding you'll need to set up a proper development environment.
 
 ### Essential Requirements
 
 - [ ] WordPress installation (local or development server)
 - [ ] MainWP Dashboard plugin installed and activated
 - [ ] At least one child site connected to your MainWP Dashboard
-- [ ] Code editor (VS Code, PhpStorm, or similar)
+- [ ] Code editor (VS Code PhpStorm or similar)
 - [ ] Basic understanding of PHP and WordPress plugin development
 
 ### Quick Setup Instructions
@@ -57,7 +64,7 @@ Before you start coding, you'll need to set up a proper development environment.
    - Clone from [GitHub](https://github.com/mainwp/mainwp-development-extension)
    - Or download the ZIP file and install manually
 
-For detailed instructions, see the [Setting Up a Development Environment](../how-to/setup-environment.md) guide.
+For detailed instructions see the [Setting Up a Development Environment](../how-to/setup-environment.md) guide.
 
 ## Step 2: Choose Your Add-on Type
 
@@ -78,14 +85,14 @@ Use this decision tree to determine whether you should build an Extension or an 
 flowchart TD
     A[Do you need to connect with a third-party service or plugin?] -->|Yes| B[Integration]
     A -->|No| C[Extension]
-    B --> D[Examples: WooCommerce Integration, Google Analytics Integration]
-    C --> E[Examples: Advanced Uptime Monitor, Advanced Reports Extension]
-    
-    style A fill:#2196F3,stroke:#1976D2,color:white
-    style B fill:#FFC107,stroke:#FFA000,color:white
-    style C fill:#FFC107,stroke:#FFA000,color:white
-    style D fill:#9E9E9E,stroke:#757575,color:white
-    style E fill:#9E9E9E,stroke:#757575,color:white
+    B --> D[Examples: WooCommerce Integration Google Analytics Integration]
+    C --> E[Examples: Advanced Uptime Monitor Advanced Reports Extension]
+
+    style A fill:#2196F3stroke:#1976D2color:white
+    style B fill:#FFC107stroke:#FFA000color:white
+    style C fill:#FFC107stroke:#FFA000color:white
+    style D fill:#9E9E9Estroke:#757575color:white
+    style E fill:#9E9E9Estroke:#757575color:white
 </div>
 
 ### Extension Examples
@@ -110,7 +117,7 @@ Integrations connect MainWP with third-party plugins or services:
 <strong>Next step (if building an Extension):</strong> Step 3a of 4
 </div>
 
-If you're building a standalone extension, follow these steps:
+If you're building a standalone extension follow these steps:
 
 1. Start with the MainWP Development Extension template
 2. Customize the plugin information
@@ -118,7 +125,7 @@ If you're building a standalone extension, follow these steps:
 4. Create admin pages and settings
 5. Test thoroughly
 
-For detailed instructions, see the [Creating a Basic Extension](../how-to/create-basic-extension.md) guide.
+For detailed instructions see the [Creating a Basic Extension](../how-to/create-basic-extension.md) guide.
 
 ## Step 3b: Create a Basic Integration
 
@@ -126,7 +133,7 @@ For detailed instructions, see the [Creating a Basic Extension](../how-to/create
 <strong>Next step (if building an Integration):</strong> Step 3b of 4
 </div>
 
-If you're building an integration with a third-party service, follow these steps:
+If you're building an integration with a third-party service follow these steps:
 
 1. Start with the MainWP Development Extension template
 2. Customize the plugin information
@@ -135,7 +142,7 @@ If you're building an integration with a third-party service, follow these steps
 5. Implement data synchronization
 6. Test thoroughly
 
-For detailed instructions, see the [Creating a Basic Integration](../how-to/create-basic-integration.md) guide.
+For detailed instructions see the [Creating a Basic Integration](../how-to/create-basic-integration.md) guide.
 
 ## Step 4: Test and Deploy Your Add-on
 
@@ -143,7 +150,7 @@ For detailed instructions, see the [Creating a Basic Integration](../how-to/crea
 <strong>Final step:</strong> Step 4 of 4
 </div>
 
-Before releasing your add-on, make sure to:
+Before releasing your add-on make sure to:
 
 1. Test on multiple child sites
 2. Check for any errors or warnings
@@ -151,7 +158,7 @@ Before releasing your add-on, make sure to:
 4. Package your add-on for distribution
 5. Create documentation for users
 
-For detailed instructions, see the [Packaging and Distribution](../how-to/packaging-distribution.md) guide.
+For detailed instructions see the [Packaging and Distribution](../how-to/packaging-distribution.md) guide.
 
 ## Essential Resources
 
@@ -175,7 +182,7 @@ For detailed instructions, see the [Packaging and Distribution](../how-to/packag
 
 ## Next Steps
 
-After completing the getting started process, explore these topics to enhance your MainWP development skills:
+After completing the getting started process explore these topics to enhance your MainWP development skills:
 
 - [Using MainWP Actions & Filters](../how-to/actions-filters.md)
 - [Building Admin Interfaces](../how-to/admin-interfaces.md)
