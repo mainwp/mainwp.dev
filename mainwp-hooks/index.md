@@ -1,26 +1,3 @@
----
-layout: documentation-single
-title: MainWP Hooks Documentation
-description: Comprehensive documentation for all hooks available in the MainWP ecosystem.
-navigation:
-  - title: Hook Types
-    items:
-      - id: dashboard-hooks
-        title: Dashboard Hooks
-      - id: child-hooks
-        title: Child Hooks
-  - title: Usage Guide
-    items:
-      - id: using-hooks
-        title: Using Hooks
-      - id: actions
-        title: Actions
-      - id: filters
-        title: Filters
-      - id: contributing
-        title: Contributing
----
-
 # MainWP Hooks Documentation
 
 This section provides comprehensive documentation for all hooks (actions and filters) available in the MainWP ecosystem.

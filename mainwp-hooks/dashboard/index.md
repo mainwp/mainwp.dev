@@ -1,22 +1,3 @@
----
-layout: documentation-single
-title: MainWP Dashboard Hooks
-description: Documentation for all hooks available in the MainWP Dashboard plugin.
-navigation:
-  - title: Actions
-    items:
-      - id: actions
-        title: Actions Overview
-      - id: action-categories
-        title: Action Categories
-  - title: Filters
-    items:
-      - id: filters
-        title: Filters Overview
-      - id: filter-categories
-        title: Filter Categories
----
-
 # MainWP Dashboard Hooks
 
 This section provides documentation for all hooks (actions and filters) available in the MainWP Dashboard plugin.
