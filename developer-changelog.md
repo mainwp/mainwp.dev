@@ -246,6 +246,15 @@ Each entry includes:
 ## 🔧 Core Changes
 
 ### MainWP Dashboard
-- 🟢 **Added** [v5.4.1 - March 2025]: Added new params for non-mainwp-changes REST API endpoint
+- 🟢 **Added** [v5.4.0.5 - March 2025]: Added new params for non-mainwp-changes REST API endpoint
 - 'actions' - To support for `action` logs query.
 - 'contexts' - To support for `context` logs query.
+
+
+# April 15, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.0.5 - March 2025]: Excluded the Site Changes count information from REST API endpoints by default, while leaving it as option to optimize the query performance.
+- 'total_count' - To support for `total_count` logs query.
