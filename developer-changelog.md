@@ -258,3 +258,5 @@ Each entry includes:
 ### MainWP Dashboard
 - 🟢 **Added** [v5.4.0.5 - April 2025]: Excluded the Site Changes count information from REST API endpoints by default, while leaving it as option to optimize the query performance.
 - 'total_count' - To support for `total_count` logs query.
+
+- 🟢 **Added** [v5.4.0.5 - April 2025]: Added the `$clients` as the 6th parameter to the `mainwp_getdbsites` filter so extensions can get sites info by clients selection.
