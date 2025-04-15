@@ -229,3 +229,32 @@ Each entry includes:
 
 ### MainWP Dashboard
 - 🟠 **Changed** [v5.4.0.3 - March 2025]: function name changed `get_none_mainwp_actions_log()` to `get_none_mainwp_actions_log_for_rest_api()` - in the file: class/class-mainwp-db-site-actions.php
+
+
+# April 3, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.0.4 - April 2025]: Added new hooks: mainwp_connect_http_request_headers to support custom request headers.
+
+- 🟢 **Added** [v5.4.0.4 - April 2025]: Added new hooks: mainwp_uptime_monitor_check_result to support custom uptime monitor results.
+
+
+# April 7, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.0.5 - March 2025]: Added new params for non-mainwp-changes REST API endpoint
+- 'actions' - To support for `action` logs query.
+- 'contexts' - To support for `context` logs query.
+
+
+# April 15, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.0.5 - March 2025]: Excluded the Site Changes count information from REST API endpoints by default, while leaving it as option to optimize the query performance.
+- 'total_count' - To support for `total_count` logs query.
