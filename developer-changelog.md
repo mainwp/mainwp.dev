@@ -260,3 +260,21 @@ Each entry includes:
 - 'total_count' - To support for `total_count` logs query.
 
 - 🟢 **Added** [v5.4.0.5 - April 2025]: Added the `$clients` as the 6th parameter to the `mainwp_getdbsites` filter so extensions can get sites info by clients selection.
+
+# April 16, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - April 2025]: Added hook: mainwp_individual_updates_tabs
+ to support generate custom updates tabs.
+
+
+ # April 23, 2025
+
+## 🔧 Core Changes
+
+### MainWP Lighthouse Extension
+- 🟢 **Added** [v5.1.1 - April 2025]: Added hook: mainwp_lighthouse_next_start_timestamp
+ to support tweaks next audit start time.
+
