@@ -278,3 +278,17 @@ Each entry includes:
 - 🟢 **Added** [v5.1.1 - April 2025]: Added hook: mainwp_lighthouse_next_start_timestamp
  to support tweaks next audit start time.
 
+
+# April 23, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - April 2025]: Added hook: mainwp_log_system_query_params
+ to support tweaks log system query params.
+ - Added hook: mainwp_module_log_record_inserted
+ to support action after insert custom log data.
+ - Added hook: mainwp_custom_log_enabled_log_priority
+ to support check if custom log enabled by priority.
+
+
