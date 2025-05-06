@@ -292,3 +292,32 @@ Each entry includes:
  to support check if custom log enabled by priority.
 
 
+# April 28, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - April 2025]:
+- Added hooks:  mainwp_manage_events_sites_changes_optimize_view too support an optimize view for sites changes
+- Added: param optimize_view for non-mainwp-changes rest api enpoint to support an optimize query sites changes data
+
+# May 2, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - May 2025]: Added hooks:
+mainwp_get_cron_jobs_init, mainwp_module_log_enable_insert_log_type for development
+
+# May 6, 2025
+
+## 🔧 Core Changes
+
+### MainWP Pro Reports Extension
+- 🟢 **Added** [v5.0.6 - May 2025]: Added template hooks: mainwp_pro_reports_template_general_misc_top, mainwp_pro_reports_template_general_misc_bottom,
+mainwp_pro_reports_template_summary_top, mainwp_pro_reports_template_summary_bottom, mainwp_pro_reports_template_general_top, mainwp_pro_reports_template_general_bottom
+To support custom templates content.
+
+
+
+
