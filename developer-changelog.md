@@ -278,3 +278,56 @@ Each entry includes:
 - 🟢 **Added** [v5.1.1 - April 2025]: Added hook: mainwp_lighthouse_next_start_timestamp
  to support tweaks next audit start time.
 
+
+# April 23, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - April 2025]: Added hook: mainwp_log_system_query_params
+ to support tweaks log system query params.
+ - Added hook: mainwp_module_log_record_inserted
+ to support action after insert custom log data.
+ - Added hook: mainwp_custom_log_enabled_log_priority
+ to support check if custom log enabled by priority.
+
+
+# April 28, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - April 2025]:
+- Added hooks:  mainwp_manage_events_sites_changes_optimize_view too support an optimize view for sites changes
+- Added: param optimize_view for non-mainwp-changes rest api enpoint to support an optimize query sites changes data
+
+# May 2, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.1 - May 2025]: Added hooks:
+mainwp_get_cron_jobs_init, mainwp_module_log_enable_insert_log_type for development
+
+# May 6, 2025
+
+## 🔧 Core Changes
+
+### MainWP Pro Reports Extension
+- 🟢 **Added** [v5.0.6 - May 2025]: Added template hooks: mainwp_pro_reports_template_general_misc_top, mainwp_pro_reports_template_general_misc_bottom,
+mainwp_pro_reports_template_summary_top, mainwp_pro_reports_template_summary_bottom, mainwp_pro_reports_template_general_top, mainwp_pro_reports_template_general_bottom
+To support custom templates content.
+
+
+
+# May 8, 2025
+
+## 🔧 Core Changes
+
+### MainWP Child
+- 🟢 **Added** [v5.4.0.7 - May 2025]: Added hook: mainwp_child_prepared_reports_data
+To support custom reports data in child sites.
+
+
+
+
