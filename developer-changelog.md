@@ -320,4 +320,14 @@ To support custom templates content.
 
 
 
+# May 8, 2025
+
+## 🔧 Core Changes
+
+### MainWP Child
+- 🟢 **Added** [v5.4.0.7 - May 2025]: Added hook: mainwp_child_prepared_reports_data
+To support custom reports data in child sites.
+
+
+
 
