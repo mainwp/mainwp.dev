@@ -330,4 +330,13 @@ To support custom reports data in child sites.
 
 
 
+# May 12, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟠 **Changed** [v5.4.1 - May 2025]: Correct hook name: mainwp_favorites_enable_schedule_items_update to mainwp_uptime_monitors_enable_schedule_notifications
+
+
+
 
