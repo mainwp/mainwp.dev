@@ -330,4 +330,37 @@ To support custom reports data in child sites.
 
 
 
+# May 12, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟠 **Changed** [v5.4.0.9 - May 2025]: Correct hook name: mainwp_favorites_enable_schedule_items_update to mainwp_uptime_monitors_enable_schedule_notifications
+
+
+# May 13, 2025
+
+## 🔌 API Changes
+
+### MainWP Dashboard
+
+- 🟢 **Added** [v5.4.1 - March 2025]: Added new parameters to the non-mainwp-changes REST API endpoint
+- 'optimize_with_meta' - Supports retrieving optimization meta data when the 'optimize_view' parameter is set to 1.
+
+# June 4, 2025
+
+## 🔧 Core Changes
+
+### MainWP Pro Reports Extension
+- 🟢 **Added** [v5.0.10 - June 2025]: Added template hooks: mainwp_pro_reports_agency_template_summary_bottom to support custom reports template.
+
+# June 9, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟠 **Changed** [v5.4.1 - June 2025]:
+- Removed: Column `object_id` of the [prefix_]wp_logs, [prefix_]wp_logs_archive tables.
+- Added: new columns log_type_id, user_login fields for tables: [prefix_]wp_logs, [prefix_]wp_logs_archive tables.
+- Changed: columns changed so the output of REST API endpoint: `non-mainwp-changes` was changed as follow, added new field: `log_type_id`, removed field: `object_id`.
 
