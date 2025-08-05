@@ -364,3 +364,26 @@ To support custom reports data in child sites.
 - Added: new columns log_type_id, user_login fields for tables: [prefix_]wp_logs, [prefix_]wp_logs_archive tables.
 - Changed: columns changed so the output of REST API endpoint: `non-mainwp-changes` was changed as follow, added new field: `log_type_id`, removed field: `object_id`.
 
+
+# Aug 05, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.0.18 - Aug 2025]: Added hook: mainwp_save_cached_icons_file_ext, mainwp_before_save_cached_icons to support before saving cached icons.
+- 🟢 **Added** [v5.4.0.18 - Aug 2025]: Support format 'selected_sites' as string of site ids, separated by comma, for client add new and edit client endpoints:
+wp-json/mainwp/v2/clients/add
+wp-json/mainwp/v2/clients/{ID}/edit
+- 🟢 **Added** [v5.4.0.18 - Aug 2025]: 'selected_sites' response info for client add new and edit client endpoints:
+wp-json/mainwp/v2/clients/add
+wp-json/mainwp/v2/clients/{ID}/edit
+
+### MainWP Child
+
+- 🟢 **Added** [v5.4.0.12 - Aug 2025]: Added hook: mainwp_child_stats_get_plugin_info support hook to plugins info for sync data.
+
+
+
+
+
+
