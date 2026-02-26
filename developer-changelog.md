@@ -364,3 +364,141 @@ To support custom reports data in child sites.
 - Added: new columns log_type_id, user_login fields for tables: [prefix_]wp_logs, [prefix_]wp_logs_archive tables.
 - Changed: columns changed so the output of REST API endpoint: `non-mainwp-changes` was changed as follow, added new field: `log_type_id`, removed field: `object_id`.
 
+
+# Aug 05, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+- 🟢 **Added** [v5.4.0.18 - Aug 2025]: Added hook: mainwp_save_cached_icons_file_ext, mainwp_before_save_cached_icons to support before saving cached icons.
+- 🟢 **Added** [v5.4.0.18 - Aug 2025]: Support format 'selected_sites' as string of site ids, separated by comma, for client add new and edit client endpoints:
+wp-json/mainwp/v2/clients/add
+wp-json/mainwp/v2/clients/{ID}/edit
+- 🟢 **Added** [v5.4.0.18 - Aug 2025]: 'selected_sites' response info for client add new and edit client endpoints:
+wp-json/mainwp/v2/clients/add
+wp-json/mainwp/v2/clients/{ID}/edit
+
+### MainWP Child
+
+- 🟢 **Added** [v5.4.0.12 - Aug 2025]: Added hook: mainwp_child_stats_get_plugin_info support hook to plugins info for sync data.
+
+
+# Aug 5, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+
+- 🟢 **Added** [v5.4.0.19 - Aug 2026]: Added hook mainwp_before_save_cached_icons to customize website query parameters.
+
+
+# Aug 12, 2025
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+
+- 🟢 **Added** [v5.4.0.19 - Aug 2026]: Added hook mainwp_get_sql_websites, mainwp_get_sql_websites_by_params to customize website query parameters.
+
+
+# Feb 25, 2026
+
+## 🔧 Core Changes
+
+### MainWP Dashboard
+
+- 🟢 **Added** [v6.0 - Feb 2026]:
+Added $snapshot_info parameter, hook: mainwp_client_deleted
+Added hook mainwp_menu_excluded_warm_cache_item to support excluded warm cache menu item.
+Added hook mainwp_warm_cache_excluded_pages to support excluded warm cache pages.
+Added hook mainwp_invalidate_warm_cache_pages Fire action to Invalide warm cache pages
+Added hook mainwp_invalidate_warm_cache_pages Fire action to Invalide warm cache pages
+Added hook mainwp_widget_updates_actions_top Action fire before Updates actions top content.
+Added hook mainwp_shutdown Action fire before shutdown.
+Added hook mainwp_unhooks_remove_unwanted_hooks To support remove unwanted hooks.
+Added hook mainwp_unhooks_is_enabled To enabled remove unwanted hooks.]
+Added hook mainwp_unhooks_active_plugins_files To get unhooks active plugins files.
+Added hook mainwp_unhooks_default_excluded_pages To get default excluded pages.
+Added hook mainwp_unhooks_list To get remove hooks list.
+Added hook mainwp_unhooks_get_types To get unhooks types.
+Added hook mainwp_unhooks_url_params To get unhooks url params.
+Added hook mainwp_module_log_enable_insert_log_type To enable log types.
+Added hook mainwp_site_go_to_wpadmin Action fire before go to wpadmin.
+Added hook mainwp_widget_updates_actions_top Action fire before widget updates actions top.
+Added hook mainwp_get_avaiable_add_ons To get avaiable add-ons.
+Added hook mainwp_before_empty_manage_sites_placeholder Action fire before manage sites placeholder.
+Added hook mainwp_after_empty_manage_sites_placeholder Action fire after manage sites placeholder.
+Added hook mainwp_after_site_synced Action fire after sites synced.
+Added hook mainwp_after_save_settings Action fire after save settings.
+Added hook mainwp_check_site_access Allows to override or extend Team access control.
+Added hook mainwp_cost_tracker_update_cost Allows for cost tracker update or insert.
+Added hook mainwp_cost_tracker_deleted Allows for cost tracker delete cost.
+Added hook mainwp_insert_update_client Action fire after insert/update client.
+
+### MainWP Child
+
+- 🟢 **Added** [v6.0 - Feb 2026]:
+
+Added hook mainwp_child_actions_data_clean Action to support clean actions logs on the child site.
+
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
