@@ -48,3 +48,6 @@ memory-bank/
 # Cache
 *.log
 .cache/
+
+# Local paths
+/~/
