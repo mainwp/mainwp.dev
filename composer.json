@@ -4,5 +4,10 @@
     "type": "project",
     "require": {
         "phpdocumentor/phpdocumentor": "^3.7.1"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.31"
+        }
     }
 }
